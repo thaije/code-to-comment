@@ -1,3 +1,0 @@
-python translate.py --size=350 --num_layers=3 --steps_per_checkp
-oint=50 --decode
-
