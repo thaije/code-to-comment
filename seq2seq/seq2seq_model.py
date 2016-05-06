@@ -68,8 +68,7 @@ class Seq2SeqModel(object):
       learning_rate: learning rate to start with.
       learning_rate_decay_factor: decay learning rate by this much when needed.
       use_lstm: if true, we use LSTM cells instead of GRU cells.
-      num_samples: number of samples for sampled softmax.
-      forward_only: if set, we do not construct the backward pass in the model.
+      num_samples: number of sampo not construct the backward pass in the model.
     """
     self.source_vocab_size = source_vocab_size
     self.target_vocab_size = target_vocab_size

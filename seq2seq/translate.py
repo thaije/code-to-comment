@@ -40,6 +40,7 @@ import os
 import random
 import sys
 import time
+from subprocess import call
 
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
@@ -65,6 +66,8 @@ tf.app.flags.DEFINE_integer("code_vocab_size", 40000, "Program vocabulary size."
 tf.app.flags.DEFINE_integer("en_vocab_size", 40000, "English vocabulary size.")
 tf.app.flags.DEFINE_string("data_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/data/django/", "Data directory")
 tf.app.flags.DEFINE_string("train_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/train/django/", "Training directory.")
+tf.app.flags.DEFINE_string("dev_en_file", "dev/20pt.en", "The file path to the English dev file, relative from the data_dir.")
+tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
 tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
@@ -80,6 +83,8 @@ FLAGS = tf.app.flags.FLAGS
 # See seq2seq_model.Seq2SeqModel for details of how they work.
 _buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
 
+dev_en_file = FLAGS.data_dir + FLAGS.dev_en_file
+translated_dev_code = FLAGS.data_dir + FLAGS.translated_dev_code
 
 def read_data(source_path, target_path, max_size=None):
   """Read data from source and target files and put into buckets.
@@ -117,6 +122,67 @@ def read_data(source_path, target_path, max_size=None):
             break
         source, target = source_file.readline(), target_file.readline()
   return data_set
+
+
+
+
+def translate_file(source_path, target_path, sess, model):
+    """ Translates a file by feeding it line by line to the model """
+
+    with tf.gfile.GFile(source_path, mode="r") as source_file:
+        with tf.gfile.GFile(target_path, mode="w") as translated_file:
+            # Create model and load parameters.
+            model.batch_size = 1  # We decode one sentence at a time.
+
+            # Load vocabularies.
+            code_vocab_path = os.path.join(FLAGS.data_dir, "vocab%d.code" % FLAGS.code_vocab_size)
+            en_vocab_path = os.path.join(FLAGS.data_dir, "vocab%d.en" % FLAGS.en_vocab_size)
+            code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
+            _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
+            sentence = source_file.readline()
+            counter = 0
+
+            # translate the sentence
+            while sentence:
+                counter += 1
+                # Get token-ids for the input sentence.
+                token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), code_vocab)
+
+                # Quick fix to catch sentences outside buckets
+                buckets = [b for b in xrange(len(_buckets)) if _buckets[b][0] > len(token_ids)]
+                if buckets:
+                    bucket_id = min(buckets)
+                else:
+                    # print ("line %d with tokens %d" % (counter, len(token_ids)))
+                    translated_file.write("\n")
+                    sentence = source_file.readline()
+                    continue
+
+                # # Which bucket does it belong to?
+                # bucket_id = min([b for b in xrange(len(_buckets))
+                #                 if _buckets[b][0] > len(token_ids)])
+
+                # Get a 1-element batch to feed the sentence to the model.
+                encoder_inputs, decoder_inputs, target_weights = model.get_batch( 
+                                                {bucket_id: [(token_ids, [])]}, bucket_id)
+
+                # Get output logits for the sentence.
+                _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                                                 target_weights, bucket_id, True)
+
+                # This is a greedy decoder - outputs are just argmaxes of output_logits.
+                outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+
+                # If there is an EOS symbol in outputs, cut them at that point.
+                if data_utils.EOS_ID in outputs:
+                    outputs = outputs[:outputs.index(data_utils.EOS_ID)]
+
+                # write translation to the defined translation file
+                # print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]))
+                translated_file.write(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]) + "\n")
+
+                sentence = source_file.readline()
+    return True
 
 
 def create_model(session, forward_only):
@@ -178,7 +244,7 @@ def train():
       start_time = time.time()
       encoder_inputs, decoder_inputs, target_weights = model.get_batch(
           train_set, bucket_id)
-      _, step_loss, _ = model.step(sess, encoder_inputs, decoder_inputs,
+      _, step_loss, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
                                    target_weights, bucket_id, False)
       step_time += (time.time() - start_time) / FLAGS.steps_per_checkpoint
       loss += step_loss / FLAGS.steps_per_checkpoint
@@ -192,7 +258,7 @@ def train():
                "%.2f" % (model.global_step.eval(), model.learning_rate.eval(),
                          step_time, perplexity))
         # Decrease learning rate if no improvement was seen over last 3 times.
-        if len(previous_losses) > 2 and loss >= max(previous_losses[-3:]):
+        if len(previous_losses) > 2 and loss > max(previous_losses[-3:]):
           sess.run(model.learning_rate_decay_op)
         previous_losses.append(loss)
         # Save checkpoint and zero timer and loss.
@@ -212,49 +278,63 @@ def train():
 
           eval_ppx = math.exp(eval_loss) if eval_loss < 300 else float('inf')
           print("  eval: bucket %d perplexity %.2f" % (bucket_id, eval_ppx))
+  
+
+        # translate_file(code_dev, translated_dev_code, sess, model)
+
+        # run model on complete dev file
+        # if(translate_file(code_dev, translated_dev_code, sess, model)):
+        #     print ("Code translated")
+        #     os.system("perl multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
+
         sys.stdout.flush()
 
 
 def decode():
-  with tf.Session() as sess:
-    # Create model and load parameters.
-    model = create_model(sess, True)
-    model.batch_size = 1  # We decode one sentence at a time.
+    with tf.Session() as sess:
+        # Create model and load parameters.
+        model = create_model(sess, True)
+        model.batch_size = 1  # We decode one sentence at a time.
 
-    # Load vocabularies.
-    code_vocab_path = os.path.join(FLAGS.data_dir,
-                                 "vocab%d.code" % FLAGS.code_vocab_size)
-    en_vocab_path = os.path.join(FLAGS.data_dir,
-                                 "vocab%d.en" % FLAGS.en_vocab_size)
-    code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
-    _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
+        # Load vocabularies.
+        code_vocab_path = os.path.join(FLAGS.data_dir,
+           "vocab%d.code" % FLAGS.code_vocab_size)
+        en_vocab_path = os.path.join(FLAGS.data_dir,
+           "vocab%d.en" % FLAGS.en_vocab_size)
+        code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
+        _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
 
-    # Decode from standard input.
-    sys.stdout.write("> ")
-    sys.stdout.flush()
-    sentence = sys.stdin.readline()
-    while sentence:
-      # Get token-ids for the input sentence.
-      token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), code_vocab)
-      # Which bucket does it belong to?
-      bucket_id = min([b for b in xrange(len(_buckets))
-                       if _buckets[b][0] > len(token_ids)])
-      # Get a 1-element batch to feed the sentence to the model.
-      encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-          {bucket_id: [(token_ids, [])]}, bucket_id)
-      # Get output logits for the sentence.
-      _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
-                                       target_weights, bucket_id, True)
-      # This is a greedy decoder - outputs are just argmaxes of output_logits.
-      outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
-      # If there is an EOS symbol in outputs, cut them at that point.
-      if data_utils.EOS_ID in outputs:
-        outputs = outputs[:outputs.index(data_utils.EOS_ID)]
-      # Print out French sentence corresponding to outputs.
-      print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]))
-      print("> ", end="")
-      sys.stdout.flush()
-      sentence = sys.stdin.readline()
+        # Decode from standard input.
+        sys.stdout.write("> ")
+        sys.stdout.flush()
+        sentence = sys.stdin.readline()
+        while sentence:
+            # Get token-ids for the input sentence.
+            token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), code_vocab)
+
+            # print (token_ids)
+
+            # Which bucket does it belong to?
+            bucket_id = min([b for b in xrange(len(_buckets))
+                            if _buckets[b][0] > len(token_ids)])
+            # Get a 1-element batch to feed the sentence to the model.
+            encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+            {bucket_id: [(token_ids, [])]}, bucket_id)
+
+            # Get output logits for the sentence.
+            _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+            target_weights, bucket_id, True)
+            # This is a greedy decoder - outputs are just argmaxes of output_logits.
+            outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+
+            # If there is an EOS symbol in outputs, cut them at that point.
+            if data_utils.EOS_ID in outputs:
+                outputs = outputs[:outputs.index(data_utils.EOS_ID)]
+            # Print out French sentence corresponding to outputs.
+            print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]))
+            print("> ", end="")
+            sys.stdout.flush()
+            sentence = sys.stdin.readline()
 
 
 def self_test():
