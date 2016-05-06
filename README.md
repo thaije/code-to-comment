@@ -12,3 +12,5 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 - add --size=XX to change size of LSTM layer to XX (default 256)
 - add --num_layers=XX to change number of LSTM layers to XX (default 3)
 - add --steps_per_checkpoint=XX to change amount of steps per evaluation output to XX(default 200)
+- add --code_vocab_size=XX to change the vocabulary size to XX (default 3000)
+- add --en_vocab_size=XX to change the vocabulary size to XX (default 3000)
