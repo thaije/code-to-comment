@@ -74,6 +74,8 @@ tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
                             "How many training steps to do per checkpoint.")
 tf.app.flags.DEFINE_boolean("decode", False,
                             "Set to True for interactive decoding.")
+tf.app.flags.DEFINE_boolean("bleu", False,
+                            "Set to true to calculate BLEU score of dev set during execution.")
 tf.app.flags.DEFINE_boolean("self_test", False,
                             "Run a self-test if this is set to True.")
 
@@ -283,9 +285,9 @@ def train():
         # translate_file(code_dev, translated_dev_code, sess, model)
 
         # run model on complete dev file
-        # if(translate_file(code_dev, translated_dev_code, sess, model)):
-        #     print ("Code translated")
-        #     os.system("perl multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
+        if(FLAGS.bleu and translate_file(code_dev, translated_dev_code, sess, model)):
+            print ("Code translated")
+            os.system("perl multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
 
         sys.stdout.flush()
 
