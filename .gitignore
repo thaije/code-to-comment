@@ -1,3 +1,2 @@
-/seq2seq/train/*
 *.pyc
 /seq2seq/*.pyc

@@ -14,3 +14,4 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 - add --steps_per_checkpoint=XX to change amount of steps per evaluation output to XX(default 200)
 - add --code_vocab_size=XX to change the code vocabulary size to XX (default 3000)
 - add --en_vocab_size=XX to change the English vocabulary size to XX (default 3000)
+
