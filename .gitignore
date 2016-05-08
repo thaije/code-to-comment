@@ -1,2 +1,9 @@
 *.pyc
 /seq2seq/*.pyc
+/seq2seq/train/check*
+/seq2seq/train/trans*
+/seq2seq/data/summarization
+/seq2seq/data/django/vocab*
+/seq2seq/data/django/dev/trans*
+/seq2seq/data/django/dev/20pt.ids*
+/seq2seq/data/django/train/20pt.ids*

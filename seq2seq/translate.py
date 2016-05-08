@@ -49,6 +49,8 @@ import tensorflow as tf
 import data_utils
 import seq2seq_model
 
+from evaluation.meteor.meteor import Meteor
+
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
@@ -64,8 +66,9 @@ tf.app.flags.DEFINE_integer("size", 256, "Size of each model layer.")
 tf.app.flags.DEFINE_integer("num_layers", 2, "Number of layers in the model.")
 tf.app.flags.DEFINE_integer("code_vocab_size", 3000, "Program vocabulary size.")
 tf.app.flags.DEFINE_integer("en_vocab_size", 3000, "English vocabulary size.")
-tf.app.flags.DEFINE_string("data_dir", "/home/haije/implementations/seq2seq/data/django/", "Data directory")
-tf.app.flags.DEFINE_string("train_dir", "/home/haije/implementations/seq2seq/train/django/", "Training directory.")
+tf.app.flags.DEFINE_string("data_dir", "/home/haije/implementations/seq2seq/data/", "Data directory")
+tf.app.flags.DEFINE_string("train_dir", "/home/haije/implementations/seq2seq/train/", "Training directory.")
+tf.app.flags.DEFINE_string("dataset", "django", "Specify the name of which dataset to use.")
 tf.app.flags.DEFINE_string("dev_files", "dev/20pt", "The file path to the English dev file, relative from the data_dir.")
 tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
@@ -74,23 +77,23 @@ tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
                             "How many training steps to do per checkpoint.")
 tf.app.flags.DEFINE_boolean("decode", False,
                             "Set to True for interactive decoding.")
-tf.app.flags.DEFINE_boolean("bleu", False,
-                            "Set to true to calculate BLEU score of dev set during execution.")
 tf.app.flags.DEFINE_boolean("self_test", False,
                             "Run a self-test if this is set to True.")
 tf.app.flags.DEFINE_boolean("evaluate", False, 
                             "Run evaluation metrics on the output.")
 
 FLAGS = tf.app.flags.FLAGS
+data_dir = FLAGS.data_dir  + FLAGS.dataset + "/"
+dev_code_file = data_dir + FLAGS.dev_files + ".code"
+dev_en_file = data_dir + FLAGS.dev_files + ".en"
+translated_dev_code = data_dir + FLAGS.translated_dev_code
 
 # We use a number of buckets and pad to the closest one for efficiency.
 # See seq2seq_model.Seq2SeqModel for details of how they work.
-_buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
+# _buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
+_buckets = [(5, 10), (10, 15), (20, 25), (40, 50), (1000,70), (2000,100)]
 # _buckets = [(5, 10), (10, 15), (20, 25), (40, 50),(80,100),(160,200),(340,400),(680,800),(1360,1600),(2720,3200)]
 
-dev_code_file = FLAGS.data_dir + FLAGS.dev_files + ".code"
-dev_en_file = FLAGS.data_dir + FLAGS.dev_files + ".en"
-translated_dev_code = FLAGS.data_dir + FLAGS.translated_dev_code
 
 def read_data(source_path, target_path, max_size=None):
   """Read data from source and target files and put into buckets.
@@ -137,9 +140,9 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
         model.batch_size = 1  # We decode one sentence at a time.
 
         # Load vocabularies.
-        code_vocab_path = os.path.join(FLAGS.data_dir,
+        code_vocab_path = os.path.join(data_dir,
            "vocab%d.code" % FLAGS.code_vocab_size)
-        en_vocab_path = os.path.join(FLAGS.data_dir,
+        en_vocab_path = os.path.join(data_dir,
            "vocab%d.en" % FLAGS.en_vocab_size)
         code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
         _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
@@ -198,73 +201,6 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
                 
 
 
-# def translate_file(source_path, target_path, sess, model):
-    # """ Translates a file by feeding it line by line to the model """
-
-    # with tf.gfile.GFile(source_path, mode="r") as source_file:
-        # with tf.gfile.GFile(target_path, mode="w") as translated_file:
-            # # Create model and load parameters.
-            # model.batch_size = 1  # We decode one sentence at a time.
-
-            # # Load vocabularies.
-            # code_vocab_path = os.path.join(FLAGS.data_dir, "vocab%d.code" % FLAGS.code_vocab_size)
-            # en_vocab_path = os.path.join(FLAGS.data_dir, "vocab%d.en" % FLAGS.en_vocab_size)
-            # code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
-            # _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
-            # sentence = source_file.readline()
-            # counter = 0
-
-            # # translate the sentence
-            # while sentence:
-                # counter += 1
-                
-                
-                 # encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-                                                                                        # dev_set, bucket_id)
-
-                # _, eval_loss, _ = model.step(sess, encoder_inputs, decoder_inputs,
-                                                    # target_weights, bucket_id, True)
-                    
-                # # Get token-ids for the input sentence.
-                # token_ids = data_utils.sentence_to_token_ids(tf.compat.as_bytes(sentence), code_vocab)
-
-                # # Quick fix to catch sentences outside buckets
-                # buckets = [b for b in xrange(len(_buckets)) if _buckets[b][0] > len(token_ids)]
-                # if buckets:
-                    # bucket_id = min(buckets)
-                # else:
-                    # # print ("line %d with tokens %d" % (counter, len(token_ids)))
-                    # translated_file.write("\n")
-                    # sentence = source_file.readline()
-                    # continue
-
-                # # # Which bucket does it belong to?
-                # # bucket_id = min([b for b in xrange(len(_buckets))
-                # #                 if _buckets[b][0] > len(token_ids)])
-
-                # # Get a 1-element batch to feed the sentence to the model.
-                # encoder_inputs, decoder_inputs, target_weights = model.get_batch( 
-                                                # {bucket_id: [(token_ids, [])]}, bucket_id)
-
-                # # Get output logits for the sentence.
-                # _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
-                                                 # target_weights, bucket_id, True)
-
-                # # This is a greedy decoder - outputs are just argmaxes of output_logits.
-                # outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
-
-                # # If there is an EOS symbol in outputs, cut them at that point.
-                # if data_utils.EOS_ID in outputs:
-                    # outputs = outputs[:outputs.index(data_utils.EOS_ID)]
-
-                # # write translation to the defined translation file
-                # translated_line = " ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]) + "\n"
-                # translated_file.write(translated_line)
-
-                # sentence = source_file.readline()
-    # return True
-
-
 def create_model(session, forward_only):
   """Create translation model and initialize or load parameters in session."""
   model = seq2seq_model.Seq2SeqModel(
@@ -285,10 +221,10 @@ def create_model(session, forward_only):
 def train():
   """Train a code->en translation model using WMT data."""
   # Prepare WMT data.
-  print("Preparing data in %s" % FLAGS.data_dir)
+  print("Preparing data in %s" % data_dir)
 
   code_train, en_train, code_dev, en_dev, _, _ = data_utils.prepare_data(
-      FLAGS.data_dir, FLAGS.code_vocab_size, FLAGS.en_vocab_size)
+      data_dir, FLAGS.code_vocab_size, FLAGS.en_vocab_size)
 
   with tf.Session() as sess:
     # Create model.
@@ -344,7 +280,7 @@ def train():
         # Save checkpoint and zero timer and loss.
         checkpoint_path = os.path.join(FLAGS.train_dir, "translate.ckpt")
         model.saver.save(sess, checkpoint_path, global_step=model.global_step)
-        step_time, loss = 0.0, 0.0
+        step_time, loss = 0.0, 0.0 
         # Run evals on development set and print their perplexity.
         for bucket_id in xrange(len(_buckets)):
           if len(dev_set[bucket_id]) == 0:
@@ -358,14 +294,6 @@ def train():
 
           eval_ppx = math.exp(eval_loss) if eval_loss < 300 else float('inf')
           print("  eval: bucket %d perplexity %.2f" % (bucket_id, eval_ppx))
-  
-
-        # translate_file(dev_en_file, translated_dev_code, sess, model)
-
-        # run model on complete dev file
-        # if(FLAGS.bleu and translate_file(dev_en_file, translated_dev_code, sess, model)):
-            # print ("Code translated")
-            # os.system("perl multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
 
         sys.stdout.flush()
 
@@ -377,9 +305,9 @@ def decode():
         model.batch_size = 1  # We decode one sentence at a time.
 
         # Load vocabularies.
-        code_vocab_path = os.path.join(FLAGS.data_dir,
+        code_vocab_path = os.path.join(data_dir,
            "vocab%d.code" % FLAGS.code_vocab_size)
-        en_vocab_path = os.path.join(FLAGS.data_dir,
+        en_vocab_path = os.path.join(data_dir,
            "vocab%d.en" % FLAGS.en_vocab_size)
         code_vocab, _ = data_utils.initialize_vocabulary(code_vocab_path)
         _, rev_en_vocab = data_utils.initialize_vocabulary(en_vocab_path)
@@ -438,15 +366,19 @@ def self_test():
 
 
 def main(_):
-  if FLAGS.self_test:
-    self_test()
-  elif FLAGS.decode:
-    decode()
-  elif FLAGS.evaluate:
-    translate_file()
-    os.system("perl ../multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
-  else:
-    train()
+    if FLAGS.self_test:
+        self_test()
+    elif FLAGS.decode:
+        decode()
+    elif FLAGS.evaluate:  
+        translate_file()
+        # meteor = Meteor()
+        # score, scores = meteor.compute_score(gts, res)
+        # score, scores = meteor.compute_score(dev_en_file, translated_dev_code)
+        # print ( "Meteor score: %0.3f" %  score)
+        os.system("perl evaluation/bleu/multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
+    else:
+        train()
 
 if __name__ == "__main__":
   tf.app.run()
