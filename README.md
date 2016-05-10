@@ -21,21 +21,21 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 
 ## Data info
 ### Distribution among buckets:
--English buckets:
--Bucket 10 has 6251 items
--Bucket 15 has 3049 items
--Bucket 25 has 3791 items
--Bucket 50 has 1790 items
--Bucket 100 has 146 items (not implemented)
--Bucket 2000 has 17 items (not implemented) 
+- English buckets:
+- Bucket 10 has 6251 items
+- Bucket 15 has 3049 items
+- Bucket 25 has 3791 items
+- Bucket 50 has 1790 items
+- Bucket 100 has 146 items (not implemented)
+- Bucket 2000 has 17 items (not implemented) 
 -----------------------------
--Code buckets:
--Bucket 5 has 3582 items  
--Bucket 10 has 6211 items
--Bucket 20 has 4109 items
--Bucket 40 has 946 items
--Bucket 100 has 178 items (not implemented)
--Bucket 2000 has 18 items (not implemented)
+- Code buckets:
+- Bucket 5 has 3582 items  
+- Bucket 10 has 6211 items
+- Bucket 20 has 4109 items
+- Bucket 40 has 946 items
+- Bucket 100 has 178 items (not implemented)
+- Bucket 2000 has 18 items (not implemented)
 
 
 
@@ -44,12 +44,12 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 ### Python / Django dataset
 
 #### Default: vocab=3000, layers=2 and size=256, lstm=attention
--global step 10400 learning rate 0.5000 step-time 0.23 perplexity 1.09
+- global step 10400 learning rate 0.5000 step-time 0.23 perplexity 1.09
 -  eval: bucket 0 perplexity 2.31
 -  eval: bucket 1 perplexity 2.22
 -  eval: bucket 2 perplexity 8.32
 -  eval: bucket 3 perplexity 24.29
--BLEU = 14.19(BP=1.000, ratio=1.071, hyp_len=41721, ref_len=38963)
+- BLEU = 14.19(BP=1.000, ratio=1.071, hyp_len=41721, ref_len=38963)
 -  1-gram: 39.1
 -  2-gram: 20.1
 -  3-gram:11.3
@@ -58,12 +58,12 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 #### Different layers / size
 
 ##### layers=2,  size = 512
--global step 6600 learning rate 0.4950 step-time 0.21 perplexity 1.28
+- global step 6600 learning rate 0.4950 step-time 0.21 perplexity 1.28
 -  eval: bucket 0 perplexity 1.30
 -  eval: bucket 1 perplexity 3.13
 -  eval: bucket 2 perplexity 5.72
 -  eval: bucket 3 perplexity 15.49
--BLEU = 13.94 (Bravity Penalty=1.000, Length ratio=1.042, Translated length=40586, Reference length=38963)
+- BLEU = 13.94 (Bravity Penalty=1.000, Length ratio=1.042, Translated length=40586, Reference length=38963)
 -  1-gram: 39.0
 -  2-gram: 20.1
 -  3-gram:11.1
@@ -71,53 +71,53 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 
   
 ##### layers=2, size=1000
--global step 4400 learning rate 0.5000 step-time 0.34 perplexity 1.33
+- global step 4400 learning rate 0.5000 step-time 0.34 perplexity 1.33
 -  eval: bucket 0 perplexity 1.34
 -  eval: bucket 1 perplexity 2.65
 -  eval: bucket 2 perplexity 5.15
 -  eval: bucket 3 perplexity 14.88
--BLEU = 13.39 (Bravity Penalty=1.000, Length ratio=1.029, Translated length=40074, Reference length=38963)
+- BLEU = 13.39 (Bravity Penalty=1.000, Length ratio=1.029, Translated length=40074, Reference length=38963)
 -  1-gram: 39.4
 -  2-gram: 19.6
 -  3-gram:10.6
 -  4-gram: 3.9
--Accuracy is: 0.1393246477
+- Accuracy is: 0.1393246477
 
 With more steps:
--global step 7400 learning rate 0.5000 step-time 0.35 perplexity 1.11
+- global step 7400 learning rate 0.5000 step-time 0.35 perplexity 1.11
 -  eval: bucket 0 perplexity 1.78
 -  eval: bucket 1 perplexity 2.65
 -  eval: bucket 2 perplexity 6.00
 -  eval: bucket 3 perplexity 34.64
--BLEU = 14.18 (Bravity Penalty=1.000, Length ratio=1.065, Translated length=41500, Reference length=38963)
+- BLEU = 14.18 (Bravity Penalty=1.000, Length ratio=1.065, Translated length=41500, Reference length=38963)
 -  1-gram: 39.9
 -  2-gram: 20.3
 -  3-gram:11.2
 -  4-gram: 4.5
--Accuracy is: 0.149162456793
+- Accuracy is: 0.149162456793
 
   
 ##### layers=3, size=256
--global step 9000 learning rate 0.4901 step-time 0.21 perplexity 1.23
+- global step 9000 learning rate 0.4901 step-time 0.21 perplexity 1.23
 -  eval: bucket 0 perplexity 3.04
 -  eval: bucket 1 perplexity 3.20
 -  eval: bucket 2 perplexity 7.34
 -  eval: bucket 3 perplexity 18.86
--BLEU = 12.20 (Bravity Penalty=1.000, Length ratio=1.044, Translated length=40659, Reference length=38963)
+- BLEU = 12.20 (Bravity Penalty=1.000, Length ratio=1.044, Translated length=40659, Reference length=38963)
 -  1-gram: 36.8
 -  2-gram: 17.7
 -  3-gram:9.5
 -  4-gram: 3.6
--Accuracy is: 0.137995214039
+- Accuracy is: 0.137995214039
 
 
 ##### layers=3, size=1000
--global step 6400 learning rate 0.4950 step-time 0.45 perplexity 1.18
+- global step 6400 learning rate 0.4950 step-time 0.45 perplexity 1.18
 -  eval: bucket 0 perplexity 1.52
 -  eval: bucket 1 perplexity 3.62
 -  eval: bucket 2 perplexity 6.13
 -  eval: bucket 3 perplexity 26.06
--BLEU = 13.99 (Bravity Penalty=1.000, Length ratio=1.065, Translated length=41487, Reference length=38963)
+- BLEU = 13.99 (Bravity Penalty=1.000, Length ratio=1.065, Translated length=41487, Reference length=38963)
 -  1-gram: 39.4
 -  2-gram: 20.2
 -  3-gram:11.1
@@ -131,12 +131,12 @@ With more steps:
 
 #### Batch size
 ##### Different train batch size:  vocab=3000, 2 layers, size=256, train batch_size = 1, lstm=attention
--global step 11200 learning rate 0.4568 step-time 0.19 perplexity 6.50
+- global step 11200 learning rate 0.4568 step-time 0.19 perplexity 6.50
 -  eval: bucket 0 perplexity 1.59
 -  eval: bucket 1 perplexity 5.09
 -  eval: bucket 2 perplexity 2.32
 -  eval: bucket 3 perplexity 21.60
--BLEU = 7.54 (Bravity Penalty=0.931, Length ratio=0.933, Translated length=36362, Reference length=38963)
+- BLEU = 7.54 (Bravity Penalty=0.931, Length ratio=0.933, Translated length=36362, Reference length=38963)
 -  1-gram: 33.4
 -  2-gram: 13.6
 -  3-gram:6.4
@@ -163,34 +163,18 @@ Doesn't work, translated sentences are looked up one by one. Can't look up multi
 
 #### vocab=3000, 2 layers, size=256, lstm=normal (extra bucket) 
 
-Distribution among buckets:
-
-English buckets:
-Bucket 10 has 6251 items
-Bucket 15 has 3049 items
-Bucket 25 has 3791 items
-Bucket 50 has 1790 items
-Bucket 100 has 146 items (not implemented)
-Bucket 2000 has 17 items (not implemented) 
-----------------------------
-Code buckets:
-Bucket 5 has 3582 items  
-Bucket 10 has 6211 items
-Bucket 20 has 4109 items
-Bucket 40 has 946 items
-Bucket 100 has 178 items (not implemented)
-Bucket 2000 has 18 items (not implemented)
 
 
 
 
   
-  Possible things to tweak:
+  ## Possible things to tweak:
   - steps
-  - buckets
+  - Add buckets
   - size
   - layers
   - batch size
+  - tweak bleu method to ignore unnecessary spaces (e.g. " variable " becomes "variable")
   - reverse/ normal sentence
   - different tokenizer
   - vocab size
