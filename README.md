@@ -148,12 +148,38 @@ Doesn't work, translated sentences are looked up one by one. Can't look up multi
  
  
 #### Different vocab size
- 
 ##### Vocab size = 40.000
+global step 8400 learning rate 0.4950 step-time 0.19 perplexity 1.26
+  eval: bucket 0 perplexity 5.05
+  eval: bucket 1 perplexity 16.93
+  eval: bucket 2 perplexity 17.70
+  eval: bucket 3 perplexity 38.03
+BLEU = 12.65 (Bravity Penalty=1.000, Length ratio=1.035, Translated length=40310, Reference length=38963)
+  1-gram: 36.9
+  2-gram: 18.1
+  3-gram:9.9
+  4-gram: 3.9
+Accuracy is: 0.142249401755
+
+
+##### Vocab size = 40.000, size=1000
+global step 7400 learning rate 0.4950 step-time 0.53 perplexity 1.11
+  eval: bucket 0 perplexity 3.67
+  eval: bucket 1 perplexity 8.05
+  eval: bucket 2 perplexity 24.71
+  eval: bucket 3 perplexity 29.66
+BLEU = 15.30 (Bravity Penalty=1.000, Length ratio=1.033, Translated length=40249, Reference length=38963)
+  1-gram: 41.5
+  2-gram: 21.6
+  3-gram:12.2
+  4-gram: 5.0
+Accuracy is: 0.149428343526 
 
 
 
-#### vocab=40000, 2 layers, size=1000, lstm=attention (different vocab size + size)
+
+
+
 
 
 #### vocab=40000, 2 layers, size=256, lstm=normal (different lstm type) 
@@ -181,3 +207,4 @@ Doesn't work, translated sentences are looked up one by one. Can't look up multi
   - vocab size
   - different dataset
   - Meteor measure
+  - Train/test ratio
