@@ -90,9 +90,7 @@ translated_dev_code = data_dir + FLAGS.translated_dev_code
 
 # We use a number of buckets and pad to the closest one for efficiency.
 # See seq2seq_model.Seq2SeqModel for details of how they work.
-# _buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
-_buckets = [(5, 10), (10, 15), (20, 25), (40, 50), (1000,70), (2000,100)]
-# _buckets = [(5, 10), (10, 15), (20, 25), (40, 50),(80,100),(160,200),(340,400),(680,800),(1360,1600),(2720,3200)]
+_buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
 
 
 def read_data(source_path, target_path, max_size=None):
