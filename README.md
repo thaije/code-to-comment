@@ -21,15 +21,15 @@ Set of (Tensorflow) implementations which generate comments from code. Thesis fo
 
 ## Data info
 ### Distribution among buckets:
-- English buckets:
+English buckets:
 - Bucket 10 has 6251 items
 - Bucket 15 has 3049 items
 - Bucket 25 has 3791 items
 - Bucket 50 has 1790 items
 - Bucket 100 has 146 items (not implemented)
 - Bucket 2000 has 17 items (not implemented) 
------------------------------
-- Code buckets:
+______________________________________
+Code buckets:
 - Bucket 5 has 3582 items  
 - Bucket 10 has 6211 items
 - Bucket 20 has 4109 items
