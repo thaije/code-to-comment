@@ -206,8 +206,8 @@ def prepare_data(data_dir, code_vocabulary_size, en_vocabulary_size, tokenizer=N
 	"""
 
 	# Specify the data directories.
-	train_path = data_dir + "train/80pt"
-	dev_path = data_dir + "dev/20pt"
+	train_path = data_dir + "train/90pt"
+	dev_path = data_dir + "dev/10pt"
 
 	# Create vocabularies of the appropriate sizes.
 	en_vocab_path = os.path.join(data_dir, "vocab%d.en" % en_vocabulary_size)

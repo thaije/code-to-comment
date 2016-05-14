@@ -1,0 +1,1 @@
+call the method self . clear_checkbox_id with an argument name .
