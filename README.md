@@ -176,8 +176,38 @@ BLEU = 15.30 (Bravity Penalty=1.000, Length ratio=1.033, Translated length=40249
 Accuracy is: 0.149428343526 
 
 
+##### Vocab size = 40.000, size=1000, layers=3
+after 9800 steps BLEU ~13.30. Accuracy 14.xx
 
 
+
+#### More data: 17000 train 1805 test
+##### Default
+global step 5600 learning rate 0.4950 step-time 0.23 perplexity 1.58
+  eval: bucket 0 perplexity 1.55
+  eval: bucket 1 perplexity 3.02
+  eval: bucket 2 perplexity 6.59
+  eval: bucket 3 perplexity 13.44
+BLEU = 12.56 (Bravity Penalty=1.000, Length ratio=1.149, Translated length=20306, Reference length=17680)
+  1-gram: 38.6
+  2-gram: 18.1
+  3-gram:9.3
+  4-gram: 3.8
+Accuracy is: 0.17783933518
+
+
+# vocab: 4000, size=512
+global step 4800 learning rate 0.4950 step-time 0.22 perplexity 1.39
+  eval: bucket 0 perplexity 1.92
+  eval: bucket 1 perplexity 4.41
+  eval: bucket 2 perplexity 8.97
+  eval: bucket 3 perplexity 18.79
+BLEU = 12.32 (Bravity Penalty=1.000, Length ratio=1.167, Translated length=20635, Reference length=17680)
+  1-gram: 38.8
+  2-gram: 17.7
+  3-gram:9.0
+  4-gram: 3.7
+Accuracy is: 0.192243767313
 
 
 
