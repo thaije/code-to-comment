@@ -1,1 +1,5 @@
-call the method self . clear_checkbox_id with an argument name .
+try,
+call the method self.setdefault with arguments and root set to boolean True.
+if exception renamed, renamed to e, exception is caught,
+raise an ValueError exception with an argument string 'Unable to configure handle to %s' formated with name and name 
+if not,
