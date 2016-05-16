@@ -1,0 +1,1805 @@
+ ISO_8859_1 is a string ' iso-8859-1 ' , UTF_8 is a string ' utf-8 ' . 
+ derive class LimitedStream from the object base class , making it a new-style class . 
+ def initialization method __init__ with self class instance , stream , limit and buf_size set to integer value of the product 64*1024*1024 . 
+ substitute stream for self . stream . 
+ substitute limit for self . remaining . 
+ substitute empty bytes string for self . buffer . 
+ substitute buf_size for self . buf_size . 
+ define the method _read_limited with self class instance and size set to None as arguments . 
+ if size is None or size is greater than self . remaining , 
+ substitute self . remaining for size . 
+ if size equals to integer zero . 
+ return empty bytes string . 
+ read size number of bytes from self . stream stream , store the result in the result . 
+ decrement self . remaining by length of result . 
+ return result . 
+ define the method read with self class instance and size set to None as arguments . 
+ if size is None , 
+ add self . buffer and self . _read_limited method return value together , store it in result . 
+ substitute empty bytes string for self . buffer . 
+ otherwise if size is less than length of self . buffer , 
+ substitute first size elements of self . buffer for result . 
+ truncate first size number of elements of self . buffer . 
+ if not , 
+ call the method self . read_limited with length of self . buffer subtracted from size as argument , add result to self . buffer , store it in result . 
+ substitute empty bytes string for self . buffer . 
+ return result . 
+ define method readline with self class instance and size set to None . 
+ while newline character is not contained in self . buffer and , size is None or length of self . buffer is less than size , 
+ if size is not zero , 
+ call the self . _read_limiter with length of self . buffer subtracted from size as argument , store the result into chunk . 
+ if not , 
+ call the method self . _read_limited , store the return value into chunk . 
+ if chunk is empty , 
+ break the execution of the smallest enclosing loop . 
+ increment self . buffer by chunk . 
+ call the function BytesIO with self . buffer as argument , store the result is sio . 
+ if size is not empty , 
+ call the sio . readline method with size as an argument , substitute the result for line . 
+ if not , 
+ call the sio . readline method , substitute the result for line . 
+ call the sio . read method , substitute the result for self . buffer . 
+ return line . 
+ derive the class WSGIRequest from base class http . HttpRequest . 
+ define the initialization method __init__ with self class instance and environ as arguments . 
+ call the get_script_name function with environ as argument , substitute the result for script_name . 
+ call the get_path_info function with environ as argument , substitute the result for path_info . 
+ if path_info is empty , 
+ path_info is a character ' / ' . 
+ substitute environ for self . environ . 
+ substitute path_info for self . path_info . 
+ strip trailing ' / ' from the script_name string , remove first occurrence of ' / ' in path_info string , append second result to the first , separated with ' / ' , assign the result to self . path . 
+ substitute environ for self . META . 
+ assign path_info to the value under the ' PATH_INFO ' key of the self . META dictionary . 
+ assign script_name to the value under the ' SCRIP_NAME ' key of the self . META dictionary . 
+ convert value under the ' REQUEST_METHOD ' key of the environ dictionary to uppercase , substitute it for self . method . 
+ get the value under the ' CONTENT_TYPE ' key of environ dictionary , if the key doesnt exist get the empty string , 
+ use it to call the cgi . parse_header method , assign the result to the _ and content_params respectively . if string ' charset ' is contained in content_params , 
+ try , 
+ get the value under the ' charset ' key of content_params dictionary , use it to call the codec . lookup method . 
+ if exception LookupError is caught , 
+ do nothing . 
+ if not , 
+ get the value under the ' charset ' key of content_params dictionary , substitute it for self . encoding . 
+ self . _post_parse_error is boolean False . 
+ try , 
+ convert value under the ' CONTENT_LENGTH ' key of the environ dictionary to an integer , substitute it for content_length . 
+ if exception ValueError or TypeError is caught , 
+ content_length is integer 0 . 
+ self . _stream is a class instance of a LimitedStream class , initialized with self . environ dictionary value under the ' wsgi . input ' key , 
+ and content_length . self . _read_started is boolean False . 
+ self . resolver_match is None . 
+ define the method _get_scheme with self class instance as argument . 
+ return value under the ' wsgi . url_scheme ' key of self . environ dictionary . 
+ define the method _get_request with self class instance as argument . 
+ call the warnings . warn method with string ' `request . REQUEST` is deprecated , use `request . GET` or `request . POST` instead . ' , 
+ RemovedInDjango19Warning and integer 2 as arguments . if self does not have an ' _request ' attribute , 
+ call the datastructures . MergeDict with self . POST and self . GET as arguments , assign the result to self . _request . 
+ return self . _request . 
+ decorator cached_property . 
+ define method GET with self class instance as an argument . 
+ call the get_bytes_from_wsgi function with self . environ , string ' QUERY_STRING ' and empty string as arguments , substitute the return value for raw_query_string . 
+ evaluate the http . QueryDict method with raw_query_string and encoding set to self . _encoding as arguments , return the result . 
+ def _get_post method with self class instance as the argument . 
+ if self does not has an ' _post ' attribute . 
+ call the self . _load_post_and_files method . 
+ return self . _post . 
+ define the _set_post method with self class instance and post as the arguments . 
+ substitute post for self . _post . 
+ decorator cached_property . 
+ define COOKIES method with self as the argument . 
+ call get_str_from_wsgi function with self . environ , string ' HTTP_COOKIE ' and empty string as arguments , substitute it for raw_cookie . 
+ evaluate the function http . parse_cookie with raw_cookie as an argument , return the result . 
+ define _get_files method with self class instance as the argument . 
+ if self does not have ' _files ' attribute , 
+ call the method self . _load_post_and_files . 
+ return self . _files . 
+ _get_post is a getter function and _set_post is a setter function for POST attribute of this class . 
+ _get_files is getter function for FILES attribute of this class . 
+ _get_request is getter function for REQUEST attribute of this class . 
+ derive the WSGIHandler class from the base class base . BaseHandler . 
+ evaluate function Lock ( ) assign the result to initLock . 
+ substitute WSGIRequest for request_class . 
+ define private method __call__ with self class instance , environ and start_response as the arguments . 
+ if self . _request_middleware is None , 
+ with self . initLock , 
+ try , 
+ if self . _request_middleware is None , 
+ call the self . load_middleware method . 
+ if exception is caught , 
+ self . _request_middleware is None . 
+ re raise an exception . 
+ call the get_script_name function with environ as argument , use the result as an argument for call to the set_script_prefix function . 
+ call the signals . request_started . send method with sender set to self . __class__ as argument . 
+ try , 
+ call the self . request_class method with environ as an argument , substitute the result for request . 
+ if UnicodeDecodeError exception is caught , 
+ call the logger . warning method with string ' Bad Request ( UnicodeDecodeError ) ' , exec_info set to sys . exec_info ( ) and dictionary extra 
+ with one entry ' status_code ' is integer 400 , as arguments . call the http . HttpResponseBadRequest function , assign the result to the response . 
+ if not , 
+ call the self . get_response with request as the argument , substitute the result for response . 
+ substitute self . __class__ for response . _handler_class . 
+ replace ' %s ' in the string ' %s %s ' with response . status_code and response . reason_phrase , respectively , substitute it for status . 
+ convert to k and v to strings for every k and v in return value of the response . item method , response_headers is a list containing all the above iteration elements . 
+ for every c in return value of the method response . cookies . values , 
+ convert ' Set-Cookie ' to a string and convert the return value of method c . output ( header= ' ' ) call to a string , 
+ format the previous in a tuple , append the tuple to the response_headers . call the start_response function with force_str ( status ) method return value and response_headers as arguments . 
+ return response . 
+ define the get_path_info function with environ as the argument . 
+ call the function get_bytes_from_wsgi with environ , string ' PATH_INFO ' and character ' / ' as arguments , substitute the result for path_info . 
+ return path_info . decode method return value called with UTF_8 as the argument . 
+ define get_script_name function with environ as an argument . 
+ if settings . FORCE_SCRIPT_NAME is not None , 
+ evaluate the force_text function with settings . FORCE_SCRIPT_NAME as argument , return the result . 
+ call the get_bytes_from_wsgi function with environ , string ' SCRIPT_URL ' and empty strings as arguments , substitute the result for script_url . 
+ if script_url is false , 
+ call the get_bytes_from_wsgi function with environ , string ' REDIRECT_URL ' and empty strings as arguments , substitute the result for script_url . 
+ if script_url is true , 
+ call the get_bytes_from_wsgi function with environ , string ' PATH_INFO ' and empty strings as arguments , substitute the result for path_info . 
+ take all but the length of path_info last elements of script_url , substitute it for script_name . 
+ if not , 
+ call the get_bytes_from_wsgi function with environ , string ' SCRIPT_NAME ' and empty strings as arguments , substitute the result for script_name . 
+ return scrip_name . decode method result called with UTF_8 as argument . 
+ define the function get_bytes_from_wsgi with environ , key and default as arguments . 
+ convert key and default to strings , get the value under the key string key of the environ dictionary , if it does not exists use the , 
+ default string value , substitute it for value . return value if six . PY2 is true , if not return value . encode ( ISO_8859_1 ) . 
+ define the get_str_from_wsgi function with environ , key and default as arguments . 
+ convert key and default to strings , get the value under the key string key of the environ dictionary , if it does not exists use the , 
+ default string value , substitute it for value . return value if six . PY2 is true , if not return value . encode ( ISO_8859_1 ) . decode ( UTF_8 ) . 
+ from __future__ import unicode_literals into default name space . 
+ from django . conf import settings into default name space . 
+ from django . utils . module_loading import import_string into default name space . 
+ from django . core . mail . utils import CachedDnsName and DNS_NAME into default name space . 
+ from django . core . mail . message import EmailMessage , EmailMultiAlternatives , SafeMIMEText , SafeMIMEMultipart , 
+ DEFAULT_ATTACHMENT_MIME_TYPE , make_msgid , BadHeaderError and forbid_multi_line_headers into default name space . __all__ is a list of strings , ' CachedDnsName ' , ' DNS_NAME ' , ' EmailMessage ' , ' EmailMultiAlternatives ' , ' SafeMIMEText ' , 
+ ' SafeMIMEMultipart ' , ' DEFAULT_ATTACHMENT_MIME_TYPE ' , ' make_msgid ' , ' BadHeaderError ' , ' forbid_multi_line_headers ' , ' get_connection ' , ' send_mail ' , ' send_mass_mail ' , ' mail_admins ' and ' mail_managers ' . define function get_connection with backend set to None , fail_silently set to boolean False and dictionary kwds as arguments . 
+ call the function import_string with backend if exists or settings . EMAIL_BACKEND if not , store the result into klass . 
+ call the klass method with fail_silently set to fail_silently and dictionary arguments kwds as arguments , return the result . 
+ define send_mail funtion with subject , message , from_email , recipient_list , fail_silently set to boolean False , 
+ if connection exists dont modify it , if not call get_connection function with username set to auth_user , password set to auth_password , fail_silently set to fail_silently as arguments , assign it to connection . 
+ call the EmailMultiAlternatives function with , subject , message , from_email , recipient_list and connection set to connection , as arguments , assign the result to mail . 
+ if html_message is True , 
+ call the mail . attach_alternative method with html_message and string ' text/html ' as arguments . 
+ return the evaluated result of the mail . send method . 
+ define the function send_mass_mail with , datatuple , fail_silently set to False , auth_user set to None , auth_password set to None , 
+ if connection exists dont change it , if not call the get_connection function with username set to auth_user , 
+ password set to auth_password , fail_silently set to fail_silently as arguments , assign the result to connection . call the EmailMessage function wit subject , message , sender , recipient and connection set to connection , 
+ for every subject , message , sender and recipient in datatuple , store the results in the messages list . return evaluated result of the method connection . send_messages with messages as argument . 
+ define the function mail_admins with subject , message , fails_silently set to boolean False , connection set to None , 
+ if settings . ADMINS is false , 
+ return nothing . 
+ call the function EmailMultiAlternatives with settings . EMAIL_SUBJECT_PREFIX and subject converted to strings and concatenated , 
+ message , settings . SERVER_EMAIL , list of second elements of a for every a in settings . Managers and connection set to connection , as arguments , assign the result to mail . if html_message is true , 
+ call method mail . attach_alternative as html_message and string ' text/hmtl ' as arguments . 
+ call the mail . send method with fail_silently=fail_silently as argument . 
+ define the function mail_managers with subject , message , fails_silently set to boolean False , connection set to None , 
+ if settings . MANAGERS does not exist , 
+ return nothing . 
+ call the function EmailMultiAlternatives with settings . EMAIL_SUBJECT_PREFIX and subject converted to strings and concatenated , 
+ message , settings . SERVER_EMAIL , list of second elements of a for every a in settings . Managers and connection set to connection , as arguments , assign the result to mail . if html_message is true , 
+ call the mail . attach_alternative method with html_message and string ' text/html ' as arguments . 
+ call the mail . send method with fail_silently set to fail_silently as argument . 
+ derive the class BaseEmailBackend from the object base class . 
+ define the method __init__ with arguments: self , fail_silently set to boolean False and unpacked dictionary kwargs . 
+ substitute fail_silently for self . fail_silently . 
+ define the method open with argument self . 
+ do nothing . 
+ define the method close with argument self . 
+ do nothing 
+ define the method __enter__ with argument self . 
+ call the method self . open . 
+ return self . 
+ define the method __exit__ with arguments: self , exc_type , exc_value and traceback . 
+ call the method self . close . 
+ define the method send_messages with arguments self and email_messages . 
+ raise an NotImplementedError exception with argument string ' subclasses of BaseEmailBackend must override send_messages ( ) method ' . 
+ import module sys . 
+ import module threading . 
+ from django . core . mail . backends . base import BaseEmailBackend into default name space . 
+ from django . utils import six into default name space . 
+ derive the class EmailBackend from the BaseEmailBackend base class . 
+ define the __init__ method with arguments: self , unpacked list args and unpacked dictionary kwargs . 
+ pop the value under the ' stream ' key of the kwargs dictionary , if it exists replace it for self . stream , if not replace sys . stdout for self . stream . 
+ call the method threading . RLock , substitute the result for self . _lock . 
+ call the __init__ method from the base class of the EmailBackend class , with arguments: unpacked list args and unpacked dictionary kwargs . 
+ define the method write_message with arguments self and message . 
+ call the method message . message , substitute the result for msg . 
+ call the method msg . as_bytes , substitute the result for msg_data . 
+ if six . PY3 is boolean True , 
+ if method msg . get_charset evaluates to true , call the get_output_charset method on the return value of the msg . get_charset method , substitute the result for charset , otherwise if it is false , substitute the string ' utf-8 ' for charset . 
+ call the method msg_data . decode with argument charset , substitute the result for msg_data . 
+ call the method self . stream . write with argument string ' %s\n ' , with ' %s ' replaced with msg_data . 
+ write 79 ' - ' characters into self . stream file stream . 
+ write a newline into a self . stream file stream . 
+ define the method send_messages with arguments self and email_messages . 
+ if email_messages is false , 
+ return . 
+ msg_count is an integer 0 . 
+ call the method self . _lock , with the result , 
+ try , 
+ call the method self . open , substitute the result for stream_created . 
+ for every message in email_messages , 
+ call the method self . write_message with argument message . 
+ call the method self . stream . flush . 
+ increment msg_count by one . 
+ if stream_created is true , 
+ call the method self . close . 
+ if Exception exception is caught , 
+ if self . fail_silently is boolean False , 
+ raise an exception . 
+ return msg_count . 
+ from django . core . mail . backends . base import BaseEmailBackend into default name space . 
+ derive the class EmailBackend from the BaseEmailBackend base class . 
+ define the method send_messages with arguments self and email_messages . 
+ create list out of email_messages , return the length of the list . 
+ import module datetime . 
+ import module os . 
+ from django . conf import settings into default name space . 
+ from django . core . exceptions import ImproperlyConfigured into default name space . 
+ from django . core . mail . backends . console import EmailBackend as ConsoleEmailBackend into default name space . 
+ from django . utils import six into default name space . 
+ derive the class EmailBackend from the ConsoleEmailBackend base class . 
+ define the __init__ method with arguments: self , unpacked list args and unpacked dictionary kwargs . 
+ self . _fname is None . 
+ if ' file_path ' is contained in kwargs , 
+ pop the value under the ' file_path ' key of kwargs dictionary , substitute it for self . file_path . 
+ if not , 
+ get ' EMAIL_FILE_PATH ' from the settings , if it exists , substitute it for self . file_path , if not substitute None for self . file_path . 
+ if self . file_path is not an instance of six . string_types , 
+ raise an ImproperlyConfigured exception with argument string ' Path for saving emails is invalid: %r ' , replace ' %r ' with self . file_path . 
+ call the os . path . abspath with argument self . file_path , substitute the result for self . file_path . 
+ if self . file_path file path exists and it is not a directory , 
+ raise an ImproperlyConfigured exception with argument string ' Path for saving email messages exists , but is not a directory: %s ' , replace ' %s ' with self . file_path . 
+ otherwise if self . file_path file path doesnt exists , 
+ try , 
+ call the os . makedirs with argument self . file_path . 
+ if OSError , renamed to err , is caught , 
+ raise an ImproperlyConfigured exception with argument string ' Could not create directory for saving email messages: %s ( %s ) ' , 
+ replace ' %s ' with self . file_path and err , respectively . if self . file_path file is not writable , 
+ raise an ImproperlyConfigured exception with argument string ' Could not write to directory: %s ' , replace ' %s ' with self . file_path . 
+ set value under the ' stream ' key of kwargs dictionary to None . 
+ call the __init__ method of the base class of the EmailBackend class with arguments: unpacked list args and unpacked dictionary kwargs . 
+ define the method write_message with arguments self and message . 
+ call the as_bytes method on the return value of the message . message method append to it ' \n ' character , use it as the argument for the call to the self . stream . write method . 
+ write 79 ' - ' characters into self . stream file stream . 
+ write a newline character into self . stream file stream . 
+ define the method _get_filename with argument self . 
+ if self . _fname is None: 
+ call the strftime function with argument string " %Y%m%d-%H%M%S " on the return value of the function datetime . datetime . now , substitute the result for timestamp . 
+ fname is a string " %s-%s . log " , with ' %s ' replaced by timestamp and absolute value of the return value of the function id with argument self , respectively . 
+ join self . file_path and fname into a valid file path , substitute it for self . _fname . 
+ return self . _fname . 
+ define the method open with argument self . 
+ if self . stream is None: 
+ open the file in mode ' ab ' and with file name obtained by calling the self . _get_filename method . 
+ return boolean True . 
+ return boolean True . 
+ define the method close with argument self . 
+ try , 
+ if self . stream is not None , 
+ call the self . stream . close function . 
+ finally perform , 
+ self . stream is None . 
+ from django . core import mail into default name space . 
+ from django . core . mail . backends . base import BaseEmailBackend into default name space . 
+ derive the class EmailBackend from the BaseEmailBackend base class . 
+ define the method __init__ with arguments: self , unpacked list args and unpacked dictionary kwargs . 
+ call the method __init__ from the base class of EmailBackend class , with arguments: unpacked list args and unpacked dictionary kwargs . 
+ if mail doesnt have an ' outbox ' attribute , 
+ mail . outbox is an empty list . 
+ define the method send_messages with arguments self and messages . 
+ msg_count is integer 0 . 
+ for every message in messages , 
+ call the method message . message . 
+ increment mes_count by one . 
+ call the method mail . outbox . extend with messages . 
+ return msg_count . 
+ import module smtplib . 
+ import module ssl . 
+ import module threading . 
+ from django . conf import settings into default name space . 
+ from django . core . mail . backends . base import BaseEmailBackend into default name space . 
+ from django . core . mail . utils import DNS_NAME into default name space . 
+ from django . core . mail . message import sanitize_address into default name space . 
+ derive the class EmailBackend from the BaseEmailBackend base class . 
+ define the method __init__ with arguments: self , host set to None , port set to None , username set to None , password set to None , 
+ use_tls set to None , fail_silently set to False , use_ssl set to None , timeout set to None and unpacked dictionary kwargs . call the __init__ method from the base class of the EmailBackend class with argument fail_silently set to fail_silently . 
+ if host exists substitute it for self . host , if not substitute settings . EMAIL_HOST for self . host . 
+ if port exists substitute it for self . host , if not substitute settings . EMAIL_PORT for self . port . 
+ if username is None substitute settings . EMAIL_HOST_USER for self . username , if not substitute username for self . username . 
+ if password is None substitute settings . EMAIL_HOST_PASSWORD for self . username , if not substitute password for self . password . 
+ if use_tls is None substitute settings . EMAIL_USE_TLS for self . username , if not substitute use_tls for self . use_tls . 
+ if use_ssl is None substitute settings . EMAIL_USE_SSL for self . username , if not substitute use_ssl for self . use_ssl . 
+ substitute timeout for self . timeout . 
+ if self . use_ssl and self . use_tls are boolean True , 
+ raise an ValueError exception with argument string " EMAIL_USE_TLS/EMAIL_USE_SSL are mutually exclusive , so only set one of those settings to True . " . 
+ self . connection is None . 
+ call the method threading . RLock , substitute the result for self . _lock . 
+ define the method open with argument self . 
+ if self . connection is true , 
+ return boolean False , 
+ substitute smtplib . SMTP_SSL for connection_class if self . use_ssl is true , if not substitute smtplib . SMTP for connection_class . 
+ connection_params is a dictionary with 1 initial entry: return value of the function DNS_NAME . get_fqdn for ' local_hostname ' . 
+ if self . timeout is not None , 
+ set value under the ' timeout ' key of the connection_params to self . timeout . 
+ try , 
+ self . connection is a instance of a class contained in connection_class , instantiated with arguments: self . host , self . port , 
+ and unpacked dictionary connection_params . if self . use_ssl and self . use_tls are false , 
+ call the method self . connection . ehlo . 
+ call the method self . connection . starttls . 
+ call the method self . connection . ehlo . 
+ if self . username and self . password are true , 
+ call the method self . connection . login with arguments self . username and self . password . 
+ return boolean True . 
+ if smtplib . SMTPException exception is caught , 
+ if self . fail_silently is boolean False , 
+ raise an exception . 
+ define the method close with argument self . 
+ if self . connection is None , 
+ return nothing . 
+ try , 
+ try , 
+ call the method self . connection . quit . 
+ if ssl . SSLError or smtplib . SMTPServerDisconnected exception occurred , 
+ call the method self . connection . close . 
+ if smtplib . SMTPException exception is caught , 
+ if self . fail_silently is boolean True , 
+ return nothing . 
+ raise an exception . 
+ finally perform , 
+ self . connection is None . 
+ define the method send_messages with arguments self and email_message . 
+ if email_messages is false , 
+ return nothing . 
+ call the method self . _lock , with the return value , 
+ call the method self . open , substitute the result for the new_conn_created . 
+ if self . connection is false , 
+ return nothing . 
+ num_sent is an integer 0 . 
+ for every message in email_messages: 
+ call the method self . _send with argument message , substitute the result for sent . 
+ if sent is true , 
+ increment num_sent by one . 
+ if new_conn_created is true , 
+ call the self . close method . 
+ return num_sent . 
+ define the method _send with arguments self and email_message . 
+ call the email_message . recipients method , if it evaluates to false , 
+ return boolean False . 
+ call the function sanitize_address with arguments email_message . from_email and email_message . encoding , substitute the result for from_email . 
+ call the function sanitize_address with arguments addr and email_message . encoding , for every addr in return value of the function email_message . recipients , store the results in a recipients list . 
+ call the function email_message . message , substitute the result for message . 
+ try , 
+ call the method self . connection . sendmail with arguments: from_email , recipients and return value of the function message . as_bytes . 
+ if smtplib . SMTPException exception is caught , 
+ if self . fail_silently is false , 
+ raise an exception . 
+ return boolean False . 
+ return boolean True . 
+ from __future__ import unicode_literals into default name space . 
+ import module mimetypes . 
+ import module os . 
+ import module random . 
+ import module sys . 
+ import module time . 
+ from email import charset as Charset , encoders as Encoders , message_from_string and generator . 
+ from email . message import Message into default name space . 
+ from email . mime . text import MIMEText into default name space . 
+ from email . mime . multipart import MIMEMultipart into default name space . 
+ from email . mime . base import MIMEBase into default name space . 
+ from email . mime . message import MIMEMessage into default name space . 
+ from email . header import Header into default name space . 
+ from email . utils import formatdate , getaddresses , formataddr and parseaddr into default name space . 
+ from django . conf import settings into default name space . 
+ from django . core . mail . utils import DNS_NAME into default name space . 
+ from django . utils . encoding import force_text into default name space . 
+ from django . utils import six into default name space . 
+ call the function Charset . Charset with argument string ' utf-8 ' , substitute the result for utf8_charset . 
+ utf8_charset . body_encoding is None . 
+ DEFAULT_ATTACHMENT_MIME_TYPE is a string ' application/octet-stream ' . 
+ derive the class BadHeaderError from the ValueError base class . 
+ do nothing . 
+ define the function make_msgid with argument idstring set to None . 
+ call the function time . time , substitute the result for timeval . 
+ call the function time . gmtime with argument timeval , use string ' %Y%m%d%H%M%S ' and the previous result as an argument for the call to the time . strftime function , substitute the result for utcdate . 
+ try , 
+ call the function os . getpid , substitute it for pid . 
+ if AttributeError exception is caught , 
+ pid is integer 1 . 
+ call the function random . randrange with argument integer 100000 , substitute the result for randint . 
+ if idstring is None , 
+ idstring is an empty string . 
+ if not , 
+ append idstring to the ' . ' character , substitute it for idstring . 
+ substitute DNS_NAME for idhost . 
+ msgid is a string ' <%s . %s . %s%s@%s> ' , replace ' %s ' with utcdate , pid , randint , idstring and idhost , respectively . 
+ return msgid . 
+ ADDRESS_HEADERS is a set containing strings: ' from ' , ' sender ' , ' reply-to ' , ' to ' , ' cc ' , ' bcc ' , ' resent-from ' , ' resent-sender ' , 
+ ' resent-to ' , ' resent-cc ' and ' resent-bcc ' . define the function forbid_multi_line_headers with arguments: name , val and encoding . 
+ if encoding does not exists substitute it for settings . DEFAULT_CHARSET . 
+ call the function force_text with argument val , substitute it for val . 
+ if characters ' \n ' or ' \r ' are contained in val , 
+ raise an BadHeaderError exception with argument string " Header values can ' t contain newlines ( got %r for header %r ) " , 
+ where ' %r ' are replaced by val and name , respectively . try , 
+ call the method val . encode with argument string ' ascii ' . 
+ if UnicodeEncodeError exception is caught , 
+ convert name to lower case , if it is contained in ADDRESS_HEADERS , s 
+ call the function sanitize_address with arguments addr and encoding , for every addr in return value of the getadresses function with tuple containing val as argument , join all the results into a string separated by ' , ' , substitute the result for val . 
+ if not , 
+ call the encode function on the Header class instance , created with arguments val and encoding , substitute the result for val . 
+ if not , 
+ if name converted to lower case equals to string ' subject ' , 
+ call the encode function on the Header class instance , created with argument val , substitute the result for val . 
+ return name converted to a string and val . 
+ define the function sanitize_address with arguments addr and encoding . 
+ if addr is a instance of six . string_types , 
+ call the parseaddr function with return value of the force_text with argument addr , as argument , substitute the result for addr . 
+ nm and addr are addr . 
+ try , 
+ call the encode function on the Header class instance , created with arguments nm and encoding , substitute the result for nm . 
+ if UnicodeEncodeError exception is caught , 
+ call the encode function on the Header class instance , created with arguments nm and string ' utf-8 ' , substitute the result for nm . 
+ try , 
+ call the addr . encode method with string ' ascii ' as an argument . 
+ if UnicodeEncodeError exception is caught , 
+ if character ' @ ' is contained in addr , 
+ call the addr . split method with character ' @ ' and integer 1 as arguments , substitute the result for localpart and domain , respectively . 
+ instantiate Header class with localpart and encoding , convert it to a string , substitute the result for localpart . 
+ call the decode function with argument string ' ascii ' on the return value of the method domain . encode with argument string ' idna ' substitute the result for domain . 
+ join localpart and domain in a string separated by ' @ ' character , substitute it for addr . 
+ if not , 
+ call the encode function on the Header class instance , created with arguments addr and encoding , substitute the result for addr . 
+ call the formataddr function with argument tuple containing 2 elements nm and addr . 
+ derive the class MIMEMixin . 
+ define the method as_string with arguments self and unixfrom set to boolean False . 
+ fp is a instance of a class six . StringIO . 
+ g is an instance of a class generator . Generator called with fp and mangle_from_ set to False . 
+ call the method g . flatten with arguments self and unixfrom set to unixfrom . 
+ call the method fp . getvalue , return the result . 
+ if six . PY2 is boolean True , 
+ substitute as_string for as_bytes . 
+ if not , 
+ define the method as_bytes with arguments self and unixfrom set to boolean False . 
+ fp is a instance of a class six . BytesIO . 
+ g is an instance of a class generator . BytesGenerator called with fp and mangle_from_ set to False . 
+ call the method g . flatten with arguments self and unixfrom set to unixfrom . 
+ call the method fp . getvalue , return the result . 
+ derive the class SafeMIMEMessage from the MIMEMixin and MIMEMessage base class . 
+ define the method __setitem__ with arguments self , name and val . 
+ call the function forbid_multi_line_headers with 3 arguments: name , val and string ' ascii ' , substitute the result for name and val , respectively . 
+ call the method MIMEMessage . __setitem__ with arguments self , name and val . 
+ derive the class SafeMIMEText from the MIMEMixin and MIMEText base class . 
+ define the __init__ method with arguments: self , text , subtype and charset . 
+ substitute charset for self . encoding . 
+ if charset equals to string ' utf-8 ' , 
+ call the method MIMEText . __init__ with 4 arguments: self , text , subtype and None . 
+ delete the value under the ' Content-Transfer-Encoding ' key of self dictionary . 
+ if integers 3 and 2 in a tuple are smaller than the sys . version_info and sys . version_info is smaller than integers 3 , 4 and 4 in a tuple , respectively , 
+ call the method text . encode with argument utf8_charset . output_charset , substitute the result for payload . 
+ call the method payload . decode with 2 arguments: string ' ascii ' and string ' surrogateescape ' , substitute the result for self . _payload . 
+ call the method self . set_charset with utf8_charset as an argument . 
+ if not , 
+ call the method payload . decode with 2 arguments: text and utf8_charset , substitute the result for self . _payload . 
+ call the method self . replace_header with argument string ' Content-Type ' , ' text/%s; charset= " %s " ' , where ' %s ' symbols are replaced by: 
+ subtype and charset , respectively . if not , 
+ call the method MIMEText . __init__ with 4 arguments: self , text , subtype and charset . 
+ define the method __setitem__ with arguments self , name and val . 
+ call the function forbid_multi_line_headers with 3 arguments: name , val and self . encoding , substitute the result for name and val , respectively . 
+ call the method MIMEText . __setitem__ with arguments self , name and val . 
+ derive the class SafeMIMEMultipart from the MIMEMixin and MIMEMultipart base class . 
+ define the method __init__ with 6 arguments: self , _subtype set to string ' mixed ' , boundary set to None , _subparts set to None , 
+ encoding set to None and unpacked dictionary _params . substitute encoding for self . encoding . 
+ call the method MIMEMultipart . __init__ with 5 arguments: self , _subtype , boundary , _subparts and unpacked dictionary _params . 
+ define the method __setitem__ with arguments self , name and val . 
+ call the function forbid_multi_line_headers with 3 arguments: name , val and self . encoding , substitute the result for name and val , respectively . 
+ call the method MIMEMultipart . __setitem__ with arguments self , name and val . 
+ derive the class EmailMessage from the object base class . 
+ content_subtype is a string ' plain ' . 
+ mixed_subtype is a string ' mixed ' . 
+ encoding is None . 
+ define the method __init__ with 10 arguments: self , subject set to an empty string , body set to an empty string , 
+ if to is true , 
+ if to is not an six . string_types instance raise an error with message string ' " to " argument must be a list or tuple ' . 
+ put to into a list , assign it to self . to . 
+ if not , 
+ self . to is an empty list . 
+ if cc is true , 
+ if cc is not an six . string_types instance raise an error with message string ' " cc " argument must be a list or tuple ' . 
+ put cc into a list , assign it to self . cc . 
+ if not , 
+ self . cc is an empty list . 
+ if bcc is true , 
+ if bcc is not an six . string_types instance raise an error with message string ' " bcc " argument must be a list or tuple ' . 
+ put bcc into a list , assign it to self . bcc . 
+ if not , 
+ self . bcc is an empty list . 
+ if from_email exists substitute from_email for self . from_email , if not substitute settings . DEFAULT_FROM_EMAIL for self . from_email . 
+ substitute subject for self . subject . 
+ substitute body for self . body . 
+ if attachments exists substitute it for self . attachments , if not attachments is an empty list . 
+ if headers exists substitute it for self . extra_headers , if not extra_headers is an empty dictionary . 
+ substitute connection for self . connection . 
+ define the method get_connection with arguments self and fail_silently set to boolean False . 
+ from django . core . mail import get_connection into default name space . 
+ if self . connection is false , 
+ call the function get_connection with argument fail_silently set to fail_silently , substitute it for self . connection . 
+ return self . connection . 
+ define the method message with argument self . 
+ if self . encoding exists substitute it for encoding , if not substitute settings . DEFAULT_CHARSET for encoding . 
+ msg is a instance of a SafeMIMEText class created with arguments: self . body , self . content_subtype and encoding . 
+ call the self . _create_message method with argument msg , substitute it for msg . 
+ substitute self . subject for value under the ' Subject ' key of msg dictionary . 
+ call the method self . extra_headers . get with string ' From ' and self . from_email as arguments , substitute the result for value under the ' From ' key of msg dictionary . 
+ call the method self . extra_headers . get with arguments: string ' To ' and joined string from self . to elements separated by ' , ' , 
+ substitute the result for value under the ' To ' key of msg dictionary . if self . cc is true , 
+ join elements of self . cc into a string separated by ' , ' , substitute the result for value under the ' Cc ' key of msg dictionary . 
+ call the key . lower method for every key in self . extra_headers , join the results into a header_names . 
+ if ' date ' is not in header_names , 
+ call the formatdate function , substitute it for value under the ' Date ' key of msg dictionary . 
+ if message-id ' is not in header_names , 
+ call the make_msgid function , substitute it for value under the ' Message-ID ' key of msg dictionary . 
+ for every name and value in return value of the method self . extra_headers . items , 
+ convert name to lower case if it equals to string ' from ' or ' to , 
+ skip this loop execution , 
+ substitute value for value under name key of msg dictionary . 
+ return msg . 
+ define the method recipients with argument self . 
+ add together self . to , self . cc and self . bcc , return the result . 
+ define the method send with arguments self and fail_silently set to boolean False . 
+ call the method self . recipients , if it evaluates to false , 
+ return an integer 0 . 
+ call the method self . get_connection with argument fail_silently , on the result call the method send_messages with one argument: list containing self , return the result . 
+ define the method attach with 4 arguments: self , filename set to None , content set to None and mimetype set to None . 
+ if filename is an instance of MIMEBase , 
+ if content is not None raise an error . 
+ if mimetype is not None raise an error . 
+ append filename to the self . attachments list . 
+ if not , 
+ if content is not None raise an error . 
+ append a tuple containing 3 elements: filename , content , mimetype to self . attachments list . 
+ define the method attach_file with arguments self , path and mimetype set to None . 
+ call the os . path . basename with path as argument , substitute the result for filename . 
+ open file named path in ' rb ' mode , with file descriptor as f , 
+ read the whole file f , substitute the result for content . 
+ call the method self . attach with arguments filename , content and mimetype . 
+ define the method _create_message with arguments self and msg . 
+ call the method self . _create_attachments with argument msg , return the result . 
+ define the method _create_attachments with arguments self and msg . 
+ if self . attachments is true , 
+ if self . encoding exists substitute it for encoding , if not substitute settings . DEFAULT_CHARSET for encoding . 
+ substitute msg for body_msg . 
+ msg is an instance of a class SafeMIMEMultipart , created with arguments: _subtype set to self . mixed_subtype and encoding set to encoding . 
+ if self . body is true , 
+ call the method msg . attach with an argument body_msg . 
+ for every attachment in self . attachments , 
+ if attachment is an instance of MIMEBase , 
+ call the method msg . attach with an argument attachment . 
+ if not , 
+ call the method self . _create_attachment with an unpacked list attachment as an argument , use the result as an argument for the call to the msg . attach method . 
+ return msg . 
+ define the method _create_mime_attachment with arguments self , content and mimetype . 
+ call the method mimetype . split with arguments: character ' / ' and integer 1 , substitute the result for basetype and subtype , respectively . 
+ if basetype equals a string ' text ' , 
+ if self . encoding exists substitute it for encoding , if not substitute settings . DEFAULT_CHARSET for encoding . 
+ attachment is an instance of a class SafeMIMEText , created with arguments: content , subtype and encoding . 
+ otherwise if basetype equals a string ' message ' and subtype equals a string ' rfc822 ' , 
+ if content is an instance of a EmailMessage class , 
+ call the method content . message , substitute the result for content . 
+ otherwise if content is not an instance of Message class , 
+ call the message_from_string function with an argument content , substitute the result for content . 
+ attachment is an instance of a class SafeMIMEMessage , created with the arguments content and subtype . 
+ if not , 
+ attachment is an instance of a class MIMEBase , created with the arguments basetype and subtype . 
+ call the method attachment . set_payload with an argument content . 
+ call the method Encoders . encode_base64 with an argument attachment . 
+ return attachment . 
+ define the method _create_attachment with 4 arguments: self , filename , content and mimetype set to None . 
+ if mimetype is None , 
+ call the mimetypes . guess_type with an argument filename , assign the result to the mimetype and _ , respectively . 
+ if mimetype is None , 
+ substitute DEFAULT_ATTACHMENT_MIME_TYPE for mimetype . 
+ call the method self . _create_mime_attachment with the arguments content and mimetype , substitute the result for attachment . 
+ if filename is true , 
+ try , 
+ call the method filename . encode with an argument string ' ascii ' 
+ if UnicodeEncodeError exception is caught , 
+ if six . PY2 is true , 
+ call the method filename . encode with an argument string ' utf-8 ' , substitute the result for filename . 
+ filename is a tuple containing 3 initial elements: string ' utf-8 ' , and empty string and filename . 
+ call the method attachment . add_header with 3 arguments: string ' Content-Disposition ' , string ' attachment ' and filename set to filename . 
+ return attachment . 
+ derive the class EmailMultiAlternatives from the EmailMessage base class . 
+ alternative_subtype is a string ' alternative ' . 
+ define the method __init__ with 11 arguments: self , subject set to an empty string , body set to an empty string , 
+ call the method __init__ from the base class of the EmailMultiAlternatives class , with 9 arguments: subject , body , from_email , to , 
+ bcc , connection , attachments , headers and cc . if alternatives exists substitute it for self . alternatives , if not self . alternatives is an empty list . 
+ define the method attach_alternative with arguments self , content and mimetype . 
+ if content is None , raise an error . 
+ if mimetype is None , raise an error . 
+ append a tuple containing 2 elements: content and mimetype , to the self . alternatives list . 
+ define the method _create_message with arguments self and msg . 
+ call the method self . _create_alternatives with an argument msg , use it as an argument for the call to the self . _create_attachments method , return the result . 
+ define the method _create_alternatives with arguments self and msg . 
+ if self . encoding exists substitute it for encoding , if not substitute settings . DEFAULT_CHARSET for encoding . 
+ if self . alternatives is true , 
+ substitute msg for body_msg . 
+ msg is an instance of a class SafeMIMEMultipart , created with the arguments: _subtype set to self . alternative_subtype and encoding set to encoding . 
+ if self . body is true , 
+ call the msg . attach with an argument body_msg . 
+ for every alternative in self . alternatives , 
+ call the method self . _create_mime_attachment with unpacked list alternative as an argument , use the result as an argument for the call to the msg . attach method . 
+ return msg . 
+ import module socket . 
+ derive class CachedDnsName from the object base class . 
+ define the method __str__ with argument self . 
+ evaluate the self . get_fqdn method , return the result . 
+ define the method get_fqdn with argument self . 
+ if self doesnt have an attribute ' _fqdn ' , 
+ call the function socket . getfqdn , substitute the result for self . _fqdn . 
+ return self . _fqdn . 
+ DNS_NAME is a instance of CachedDnsName class . 
+ from __future__ import unicode_literals into default name space . 
+ import module collections . 
+ from importlib import import_module into default name space . 
+ import module os . 
+ import module sys . 
+ import module django . 
+ from django . apps import apps into default name space . 
+ from django . conf import settings into default name space . 
+ from django . core . exceptions import ImproperlyConfigured into default name space . 
+ from django . core . management . base import BaseCommand , CommandError , CommandParser and handle_default_options into default name space . 
+ from django . core . management . color import color_style into default name space . 
+ from django . utils import lru_cache into default name space . 
+ from django . utils import six into default name space . 
+ define the function find_commands with an argument management_dir . 
+ join management_dir and string ' commands ' into a file path name , substitute it for command_dir . 
+ try , 
+ for every f in return value of the os . listdir function called with an argument command_dir , append f without 3 last elements to a list , only if f doesnt start with character ' _ ' and doesnt ends with string ' . py ' , return the resulting list . 
+ if OSError exception is caught , 
+ return an empty list . 
+ define the function load_command_class with arguments: app_name and name . 
+ replace ' %s ' in string ' %s . management . commands . %s ' with app_name and name , respectively , use it as an result for the call to the 
+ import_module function , substitute the result for module . return an instance of the module . Command class . 
+ decorator lru_cache . lru_cache with an argument maxsize set to None . 
+ define the function get_commands . 
+ commands is an dictionary containing elements: string ' django . core ' for every name in the function find_commands return value , called with first element of __path__ as an argument . 
+ if settings . configured is false , 
+ return commands . 
+ for every app_config in reversed list created out of the return value of the function apps . get_app_configs , 
+ join app_config . path and string ' management ' into a file path , substitute it for path . 
+ call the method commands . update , with an argument dictionary containing entries: app_config_name for name , for every name in return value of the function find_commands , called with an argument path . 
+ return commands . 
+ define the function call_command with 3 arguments: name , unpacked list args and unpacked dictionary options . 
+ try , 
+ call the function get_commands , substitute the value under the name key of the return value , for app_name . 
+ if KeyError exception is caught , 
+ raise an CommandError exception with an argument string " Unknown command: %r " , with ' %r ' replaced by name . 
+ if app_name is an instance of BaseCommand , 
+ substitute app_namefor command . 
+ if not , 
+ call the function load_command_class with arguments: app_name and name , substitute the result for command . 
+ all the method command . create_parser with arguments: empty and name , substitute the result for parser . 
+ if command . use_argparse is true , 
+ call the method parser . parse_args with an argument args set to args , substitute the result for defaults . 
+ create dictionary out of the unpacked dictionary options , using defaults . _get_kwargs as a mapping function , substitute the result for defaults . 
+ if not , 
+ call the method parser . parse_args with an arguments args set to an empty list , assign the result for defaults and _ , respectively . 
+ create dictionary out of the unpacked dictionary options , using defaults . __dict__ as a mapping function , substitute the result for defaults . 
+ call the command . execute method with arguments: unpacked list args and unpacked dictionary defaults , return the result . 
+ derive the class ManagementUtility from object base class . 
+ define the method __init__ with arguments: self class instance and argv set to None . 
+ if argv is true , substitue it for self . argv , if not substitute sys . argv for self . argv . 
+ call the function os . path . basename with first element of self . argv as an argument , substitute the result for self . prog_name . 
+ self . settings_exception is None . 
+ define the method main_help_text with arguments: self class instance and commands_only set to boolean False . 
+ if commands_only is true , 
+ call the function get_commands , call the method keys on the result , substitute sorted result for usage . 
+ if not , 
+ usage is a list containing 4 entries: an empty string , string " Type ' %s help <subcommand> ' for help on a specific subcommand . " , 
+ where ' %s ' is replaced with self . prog_name , an empty string and string " Available subcommands: " . call the method collections . defaultdict with a argument: lambda function without arguments that returns an empty list , 
+ substitute the result for commands_dict . for every name and app in return value of the function six . iteritems calle with return argument of function get_commands as an arugment , 
+ if app equals a string ' django . core ' , 
+ app is a string ' django ' 
+ if not , 
+ call the method app . rpartition with an argument ' . ' , substitute last element of the result for app . 
+ append name to the value of under the app key of the commands_dict . 
+ call the color_style function , substitute the result for style . 
+ for every app in sorted return value of the commands_dict . keys function , 
+ append an empty string to usage . 
+ call the style . NOTICE method with an argument string " [ %s ] " , where ' %s ' is replaced with app , append the result to usage . 
+ for every name in sorted value under the app key of the commands_dict dictionary , 
+ append string " %s " , where ' %s ' is replaced by name to the usage . 
+ if self . settings_exception is not None , 
+ call the method style . NOTICE with an argument string " Note that only Django core commands are listed as settings are not properly configured ( error: %s ) . " , where ' %s ' is replaced by self . settings_exception , append the result to usage . 
+ join usage elements in a string separated by newline characters , return it . 
+ define the method fetch_command , with arguments self and subcommand . 
+ call the function get_commands , substitute it for commands . 
+ try , 
+ substitute value under the subcommand key of the commands dictionary for app_name . 
+ if KeyError exception is caught , 
+ call settings . INSTALLED_APPS . 
+ call the method sys . stderr . write with an argument string " Unknown command: %r\nType ' %s help ' for usage . \n " , 
+ where ' %r ' is replaced with subcommand and ' %s ' is replaced with self . prog_name . call the function sys . exit with an argument integer 1 . 
+ if app_name is an instance of BaseCommands . 
+ substitute app_name for klass . 
+ if not , 
+ call the function load_command_class with arguments app_name and subcommand , substitute the result for klass . 
+ return klass . 
+ define the method autocomplete with an argument self . 
+ if string ' DJANGO_AUTO_COMPLETE ' is not contained in os . environ , 
+ return nothing . 
+ slit by whitespace the value under the ' COMP_WORDS ' key of the os . environ dictionary , substitute the result without the first element for cwords . 
+ convert to an integer value under the ' COMP_CWORD ' key of the os . environ dictionary , substitute it for cword . 
+ try , 
+ substitute cwords element at the cword decremented by 1 index for curr . 
+ if IndexError exception is caugh , 
+ curr is an empty string . 
+ call the function get_commands , convert the result to a list , append string ' help ' to it , substitute it for subcommands . 
+ options is a list containing a tuple with 2 entries: string ' --help ' and None . 
+ if cword equlals a integer 1 , 
+ filter all the subcommands element through the lambda function with an argument x , that evaluates the method x . startswith , 
+ with an argument curr , sort the result and join it in a list separated with blank spaces , print it to the standard output . otherwise if first element of cwords is contanied in subcommands and is not equal to string ' help ' , 
+ call the method self . fetch_command with first element of cwords as an argument , substitute it for subcommand_cls . 
+ if first element of cwords equals a string ' runfcgi ' , 
+ from django . core . servers . fastcgi import FASTCGI_OPTIONS into default namespace , 
+ append tuple containing two entries: k and integer 1 to options , for every k in FASTCGI_OPTIONS . 
+ otherwise if first element of cwords is contanied in tuple with 8 entries: ' dumpdata ' , ' sql ' , ' sqlall ' , ' sqlclear ' , ' sqlcustom ' , 
+ try , 
+ call the method apps . get_app_configs , substitute the result for app_configs . 
+ append tuple containing two entries: app_config . label and integer 0 to options , for every app_config in app_configs . 
+ if ImportError exception is caught , 
+ do nothing . 
+ call the method subcommand_cls . create_parser with 2 argument an empty string an first element of cwords , substitute it for parser . 
+ if subcommand_cls . use_argparse is true , 
+ append to options a tuple containing 2 entries: firs element of sorted list of the s_opt . option_strings , 
+ and evaluated boolean expression s_opt . nargs doesnt equal to integer 0 , for every s_opt in parser . _actions , only if s_opt . option_strings is true , if not , 
+ append to options a tuple containing 2 entries: result of the method s_opt . get_opt_string and s_opt . nargs , 
+ for every s_opt in parser . option_list . for every x in slice of cwords from the second element to the element at the cword decremented by 1 index , 
+ split x by character ' = ' and append first element of the result to the prev_opts list . for every opt in options , if first element of opt is not contained in prev_opts , append opt to the list , substitute it for options . 
+ append tuple containing 2 elements: k and v to a list , for every k and v in options , only if k starts with curr , 
+ sort the result and substitute it for options . for every option in options , 
+ substitute first element of options for opt_label . 
+ if second element of options is true , 
+ append ' = ' to opt_label . 
+ print opt_label to the standard output . 
+ call the function sys . exit with an integer 1 as an argument . 
+ define the method execute with an argument self , 
+ try , 
+ substitute first element of self . argv for subcommand . 
+ if IndexError exception is caught , 
+ subcommand is a string ' help ' . 
+ parser is an instance of CommandParser class , created with 3 arguments , None , usage as a string " % ( prog ) s subcommand [ options ] [ args ] " and add_help set to boolean False . 
+ call the method parser . add_argument with an argument string ' --settings ' . 
+ call the method parser . add_argument with an argument string ' --pythonpath ' . 
+ call the method parser . add_argument with arguments: string ' args ' and nargs set to ' * ' . 
+ try , 
+ call the method parser . parse_known_args wiht an argument self . argv , without the first two elements , assign the result for options , 
+ and args , respectively . call the method handle_default_options with an argument options . 
+ if CommandError exception is caught , 
+ do nothing . 
+ no_settings_commands is a list containing entries: ' help ' , ' version ' , ' --help ' , ' --version ' , ' -h ' , ' compilemessages ' , ' makemessages ' , 
+ ' startapp ' and ' startproject ' . try , 
+ call the settings . INSTALLED_APPS . 
+ if ImproperlyConfigured renamed to exc , exception is caught , 
+ substitute exc for self . settings_exception , 
+ if subcommand is contained in no_settings_commands , 
+ call the method settings . configure . 
+ if settings . configured is true , 
+ call the method django . setup . 
+ call the method self . autocomplete . 
+ if subcommand equals to a string ' help ' . 
+ if string ' --commands ' is contained in args , 
+ call the method self . main_help_text with an argument commands_only set to boolean True , append new line to it , write it to sys . stdout . 
+ otherwise , length of options . args is lesser than integer 1 , 
+ call the method self . main_help_text append new line to it , write it to sys . stdout . 
+ if not , 
+ call the method self . fetch_command with first element of options . args as argument , on the result call the method print_help , 
+ with 2 arguments: self . prog_name and first element of options . args . otherwise if subcommand equals a string ' version ' or self . argv , without the first element equals a list containing a string ' --version ' 
+ call the method django . get_version append new line to it , write it to sys . stdout . 
+ if self . argv , without the first element is contained in a tuple with 2 entries: a list containing a string ' --help ' , 
+ and a list containing a string ' -h ' , call the method self . main_help_text , append new line to it , write it to sys . stdout . 
+ if not , 
+ call the method self . fetch_command with an argument command , call the method run_from_argv on the result with an argument self . argv . 
+ define the function execute_from_command_line with an argument argv set to None . 
+ utility is a instance of ManagementUtility class , created with an argument argv . 
+ call the method utility . execute . 
+ from __future__ import unicode_literals into default name space . 
+ import module os . 
+ import module sys . 
+ import module warnings . 
+ from argparse import ArgumentParser into default name space . 
+ from optparse import OptionParser into default name space . 
+ import module django . 
+ from django . core import checks into default name space . 
+ from django . core . exceptions import ImproperlyConfigured into default name space . 
+ from django . core . management . color import color_style and no_style into default name space . 
+ from django . utils . deprecation import RemovedInDjango19Warning and RemovedInDjango20Warning into default name space . 
+ from django . utils . encoding import force_st into default name space . 
+ derive the class CommandError from the base class Exception . 
+ do nothing . 
+ derive the CommandParser class from the ArgumentParser base class . 
+ define the method __init__ with arguments: self , cmd and unpacked dictionary kwargs . 
+ substitute cmd for self . cmd . 
+ call the method __init__ from the base class of the CommandParser class , with unpacked dictionary kwargs as argument . 
+ define the method parse_args with 3 arguments: self , args set to None and namespace set to None . 
+ if self . cmd has an attribute ' missing_args_message ' and next statement is not true: args is true or any arg doesnt start with ' - ' for arg in args , 
+ call the method self . error with an argument self . cmd . missing_args_message . 
+ call the parse_args method with arguments args and namespace , from the base class of the CommandParser class . 
+ define the method error with arguments self and message . 
+ if self . cmd . _called_from_command_line is true , 
+ call the method error with an argument message , from the base class of the class CommandParser . 
+ if not , 
+ raise an CommandError exception with an argument string " Error: %s " , with ' %s ' replaced by message . 
+ define the function handle_default_options with an argument options . 
+ if options . settings is true , 
+ substitute options . settings for value under the ' DJANGO_SETTINGS_MODULE ' key of the os . environ dictionary . 
+ if options . pythonpath is true , 
+ insert options . pythonpath at the beginning of sys . path . 
+ derive the OutputWrapper class from the object base class . 
+ define the method __init__ with 4 arguments: self , out , style , func set to None and endings set to newline character . 
+ substitute out for self . _out . 
+ substitute None for self . style_func . 
+ if out has an ' isatty ' argument and return value of the function out . isatty is true , 
+ substitute style_func for self . style_func . 
+ substitute ending for self . ending . 
+ define the method __getattr__ with arguments self and name . 
+ get name attribute of the self . _out object , return it . 
+ define the method write with 4 arguments: self , msg , style_func with None and ending set None . 
+ if ending is None substitute self . ending for ending . 
+ if ending is true and msg doesnt end with ending , 
+ append ending to msg . 
+ if f is not None append it to a list for every f in tuple containing 3 elements: style_func , self . style_func , 
+ and lambda function returning x for x , substitute the firs element of resulting list for style_func . call the function style_func with an argument msg , use the result as an argument for the call to the function force_str , 
+ use the result as an argument for the call to the function self . _out . write . derive the BaseCommand class from the object base class . 
+ options_list is an empty tuple . 
+ help is an empty string . 
+ args is an empty string . 
+ _called_from_command_line is boolean False . 
+ can_import_settings is boolean True . 
+ output_transaction is boolean False . 
+ leave_locale_alone is boolean False . 
+ define the method __init__ with an argument self . 
+ call the function color_style , substitute the result for self . style . 
+ if self has an ' requires_model_validation ' attribute , has_old_option is boolean True , otherwise it is boolean False . 
+ if self has an ' requires_system_checks ' attribute , has_new_option is boolean True , otherwise it is boolean False . 
+ if has_old_option is true , 
+ call the function warnings . warn with 2 arguments: string ' " requires_model_validation " is deprecated ' 
+ ' in favor of " requires_system_checks " . ' and RemovedInDjango19Warning . if has_old_option and has_new_option are both true , 
+ raise an ImproperlyConfigured exception wiht an argument string ' Command %s defines both " requires_model_validation " ' 
+ ' and " requires_system_checks " , which is illegal . Use only " requires_system_checks " . ' , replace ' %s ' for self . __class__ . __name__ . call the method self . requires_system_checks with an argument: self . requires_system_checks if has_new_option is true , 
+ or if it is false , but has_old_option is true use self . requires_model_validation , if they are both false use boolean True as an argument . property decorator , 
+ define the method use_argparse with an argument self , 
+ convert self . option_list into a boolean , return the inverted value . 
+ define the method get_version with an arguments self . 
+ call the function django . get_version , return the result . 
+ define the method usage with arguments self and subcommand . 
+ substitute ' %s ' in the string ' %%prog %s [ options ] %s ' with subcommand and self . args , respectively , substitute it for usage . 
+ if self . help is true , 
+ join usage and self . help into a string , separated by 2 new line characters , return it . 
+ if not , 
+ return usage . 
+ define the method create_parser with 3 arguments: self , prog_name and subcommand . 
+ if self . use_argparse is false , 
+ call the function warnings . warn with 2 arguments: string " OptionParser usage for Django management commands " 
+ " is deprecated , use ArgumentParser instead " and RemovedInDjango20Warning . parser is an instance of the object OptionParser , created with arguments: prog set to prog_name , 
+ usage set to return value of the method self . usage called with an argument subcommand , version set to return value of the method self . get_version . call the method parser . add_option with 8 arguments: string ' -v ' , string ' --verbosity ' , action set to string ' store ' , 
+ dest set to string ' verbosity ' , default set to string ' 1 ' , type set to string ' choice ' , choices is a list containing elements: ' 0 ' , ' 1 ' , ' 2 ' , ' 3 ' , and help as a string ' Verbosity level; 0=minimal output , 1=normal output , 2=verbose output , 3=very verbose output ' . call the method parser . add_option with 2 arguments: string ' --settings ' and help as a string ' The Python path to a settings module , e . g . " myproject . settings . main " . If this isn\ ' t provided , the DJANGO_SETTINGS_MODULE environment variable will be used . ' . 
+ call the method parser . add_option with 2 arguments: string ' --pythonpath ' and help set to string ' A directory to add to the Python path , e . g . " /home/djangoprojects/myproject " . ' . 
+ call the method parser . add_option with 3 arguments: string ' --traceback ' , action set to a string ' store_true ' , 
+ and help= ' Raise on exception ' . call the method parser . add_option with 5 arguments: string ' --no-color ' , action set to a string ' store_true ' , 
+ dest set to string ' no_color ' default set to boolean False and help set to a string " Don ' t colorize the command output . " . for every opt in self . option_list , 
+ call the method parser . add_option with an argument opt . 
+ if not , 
+ parser is an instance of CommandParser class , created with 3 arguments: self , prog as a string created by joining: 
+ os . path . basename ( prog_name ) and subcommand , separated by whitespace and description set to self . help , if exists , or None , otherwise . call the method parser . add_option with 3 arguments: string ' --version ' , action set to string ' version ' , 
+ and version set to result of the method self . get_version . call the method parser . add_option with 8 arguments: string ' -v ' , string ' --verbosity ' , action set to string ' store ' , 
+ dest set to string ' verbosity ' , default set to string ' 1 ' , type set to int , choices is a list , containing integers: 0 , 1 , 2 and 3 , call the method parser . add_option with 2 arguments: string ' --settings ' and help as a string ' The Python path to a settings module , e . g . " myproject . settings . main " . If this isn\ ' t provided , the DJANGO_SETTINGS_MODULE environment variable will be used . ' 
+ call the method parser . add_option with 2 arguments: string ' --pythonpath ' and help set to a string ' A directory to add to the Python path , e . g . " /home/djangoprojects/myproject " . ' 
+ call the method parser . add_option with 3 arguments: string ' --traceback ' , action set to a string ' store_true ' , 
+ and help set to string ' Raise on exception ' . call the method parser . add_option with 5 arguments: string ' --no-color ' , action is string ' store_true ' , dest is string ' no_color ' , 
+ default is boolean False , and help is a string " Don ' t colorize the command output . " . if self . args is true , 
+ call the method parser . add_argument with 2 arguments: string ' args ' and nargs set to ' * ' . 
+ call the method self . add_arguments with an argument parser . 
+ return parser 
+ define the method add_arguments with an argument self and parser . 
+ do nothing 
+ define the method print_help with 3 arguments: self , prog_name and subcommand . 
+ call the method self . create_parser with arguments prog_name and subcommand . 
+ call the method parser . print_help . 
+ define the method run_from_argv with arguments self and argv . 
+ self . _called_from_command_line is boolean True . 
+ call the method self . create_parser with first and second element of argv , substitute the result for parser . 
+ if self . use_argparse is true , 
+ call the method parser . parse_args with argv , without the first 2 elements , substitute the result for options . 
+ call the function vars with an argument options , substitute the result for cmd_options . 
+ if ' args ' is contained in options , 
+ substitute options . args for args . 
+ delete value under the ' args ' key of the cmd_options dictionary . 
+ if not , 
+ args is an empty tuple . 
+ if not , 
+ call the method parser . parse_args with argv , without the first 2 elements , substitute the result for options and args . 
+ call the function vars with an argument options , substitute the result for cmd_options . 
+ call the function handle_default_options with an argument options . 
+ try , 
+ call the method self . execute , with 2 arguments: unpacked list args and unpacked dictionary cmd_options . 
+ if Exception , renamed to e , exception is caught , 
+ if options . traceback is true or e is not CommandError instance , 
+ raise an exception . 
+ if it exists , get ' stderr ' attribute of self , substitute it for stderr , if not , stderr is an instance of OutputWrapper class , 
+ created with arguments sys . stderr and self . style . ERROR . replace ' %s ' in string ' %s: %s ' with e . __class__ . __name__ and e , respectively , write it to the stderr stream . 
+ call the function sys . exit with an argument integer 1 . 
+ define the method execute with 3 arguments: self , unpacked list args and unpacked dictionary options . 
+ self . stdout is an instance of OutputWrapper class created with an argument: value under the ' stdout ' key of the options dictionary , 
+ if the key doesnt exists use sys . stdout as an argument . if value under the ' no_color ' key of the options dictionary . 
+ call the function no_style , substitute the result for self . style . 
+ self . stderr is an OutputWrapper object instance , created with value under the ' stderr ' key of the options dictionary as an argument , 
+ if the key doesnt exists use sys . stderr as an argument . if not , 
+ self . stderr is an instance of an OutputWrapper object , created with 2 arguments: value under the ' stderr ' key of the options dictionary , if it doesnt exists use the sys . stderr instead , and self . style . ERROR . 
+ if self . can_import_settings is true , 
+ from django . conf import settings into default namespace , 
+ saved_locale is None . 
+ if self . leave_locale_alone is false , 
+ if self . can_import_settings is false , 
+ raise an CommandError exception with an argument string , " Incompatible values of ' leave_locale_alone ' " 
+ " ( %s ) and ' can_import_settings ' ( %s ) command options . " , replace ' %s ' with self . leave_locale_alone and self . can_import_settings . from django . utils import translation into default namespace . 
+ call the method translation . get_language , substitute th result for saved_locale . 
+ call the method translation . activate with an argument string ' en-us ' . 
+ try , 
+ if self . requires_system_checks is true and values under the ' skip_validation ' and ' skip_checks ' keys of the options dictionary are false , 
+ call the method self . check , 
+ call the method self . handle with 2 arguments unpacked list args and unpacked dictionary options , substitute the result for output . 
+ if output is true , 
+ if self . output_transaction is true , 
+ from django . db import connections and DEFAULT_DB_ALIAS into default namespace . 
+ get the value under the ' database ' key of the options dictionary , if it doesnt exists use the DEFAULT_DB_ALIAS to address an element 
+ from the connections list , substitute it for connection . call the method connection . ops . start_transaction_sql , if it evaluates to true , 
+ call the method connection . ops . start_transaction_sql , use the result as an argument for the call to the method self . style . SQL_KEYWORD , 
+ write the result to the self . stdout stream . write output to self . stdout stream . 
+ if self . output_transaction is true , 
+ call the method connection . ops . end_transaction_sql , use the result as the argument for the call to the method self . style . SQL_KEYWORD , 
+ append the result to the ' \n ' string , write it to self . stdout . finally perform , 
+ if saved_locale is not None , 
+ call the method translation . activate with an argument saved_locale . 
+ define the method with 3 arguments: self , app_config set to None and display_num_errors set to boolean False . 
+ if app_config is None , 
+ app_configs is not None . 
+ if not , 
+ app_configs is a list containing app_config . 
+ call the method self . check with 2 arguments app_configs set to app_configs , display_num_errors set to display_num_errors , return the result . 
+ define the method check with 4 arguments: self , app_configs set to None , tags set to None , display_num_errors set to boolean False . 
+ call the method checks . run_checks with 2 arguments: app_configs set to app_configs , tags set t tags , substitute the result for all_issues . 
+ msg is an empty string . 
+ visible_issue_count is an integer 0 . 
+ if all_issues is true , 
+ append e to debugs list for every e in all_issues , if e . level is lesser than checks . INFO and result of the method e . is_silenced in false . 
+ append e to infos list for every e in all_issues , if checks . INFO is lesser or equal to e . level , 
+ and e . level is lesser than checks . WARNING and result of the method e . is_silenced in false . append e to warnings list for every e in all_issues , if checks . WARNING is lesser than or equal to e . level , 
+ and e . level is lesser than checks . WARNING and result of the method e . is_silenced in false . append e to errors list for every e in all_issues , if checks . ERROR is lesser than or equal to e . level , 
+ and e . level is lesser than checks . CRITICAL . append e to criticals list for every e in all_issues , if checks . CRITICAL is lesser than or equal to e . level . 
+ sorted_issues is a list of tuples with 5 entries: criticals and ' CRITICALS ' , errors and ' ERRORS ' , warnings and ' WARNINGS ' , 
+ infos , ' INFOS ' for every issues and group_name in sorted_issues , 
+ if issues is true , 
+ increment visible_issue_count for length of issues . 
+ if e . is_serious method evaluates to true , call the function color_style , on the result call the method ERROR with result of the force_str called with an argument e , if not call the function color_style on the result call the method ERROR with result of the force_str called with an argument e , for every e in issues , formatted is a tuple containing the previous result . 
+ sort elements formatted , join them in the list separated with newline character , substitute the result for formatted . 
+ substitute ' %s ' in the string ' \n%s:\n%s\n ' , with group_name and formatted , substitute the result for msg . 
+ if msg is true , 
+ replace ' %s ' in string " System check identified some issues:\n%s " with msg , substitute it for msg . 
+ if display_num_errors is true , 
+ if msg is true , 
+ append newline character to msg . 
+ append string " System check identified %s ( %s silenced ) . " to msg , replace first ' %s ' for: string " no issues " , 
+ if visible_issue_count equals to integer 0 , or for string " 1 issue " if visible_issue_count equals integer 1 , or for string " %s issues " , with ' %s ' replaced by visible_issue_count , subtract visible_issue_count from length of all_issues , and substitute it for second ' %s ' in the stirting string . if any element in the return value of the e . is_serious method is true , and if return value of the method e . is_silenced is false , 
+ for every e in all_issues , raise an CommandError with argument msg , 
+ otherwise if msg and visible_issue_count are true , 
+ write msg to self . stderr stream . 
+ otherwise if msg is true , 
+ write msg to self . stderr stream . 
+ define the method handle with 3 arguments: self , unpacked args and unpacked dictionary options . 
+ raise an NotImplementedError exception with an argument string ' subclasses of BaseCommand must provide a handle ( ) method ' . 
+ derive the AppCommand class from the BaseCommand base class . 
+ missing_args_message is an string " Enter at least one application label . " . 
+ define the method add_arguments with self and parser as arguments . 
+ call the method parser . add_argument with 4 arguments: string ' args ' , metavar set to ' app_label ' , nargs set to ' + ' , 
+ and help set to string ' One or more application label . ' . define the method handle with 3 arguments: self , unpacked list app_labels and unpacked dictionary options . 
+ from django . apps import apps into default name space . 
+ try , 
+ call the method apps . get_app_config with an argument app_lable , for every app_label in app_labels , append the results to app_configs list . 
+ if LookupError or ImportError , renamed to e , exceptions are caught , 
+ raise an CommandError with an argument string " %s . Are you sure your INSTALLED_APPS setting is correct? " , with ' %s ' replaced by e . 
+ output is an empty list . 
+ for eery app_config in app_configs , 
+ call the self . handle_app_config method with app_config and options as arguments , substitute the result for app_output . 
+ if app_output is true , 
+ append app_output to output . 
+ join elements of output into a string , separated by newline characters , return it . 
+ define the method handle_app_config with 3 arguments: self , app_config and unpacked dictionary options . 
+ try , 
+ substitute self . handle_app for handle_app . 
+ if AttributeError exception is caught , 
+ raise an NotImplementedError with an argument string " Subclasses of AppCommand must provide a handle_app_config ( ) method . " . 
+ if not , 
+ call the function warnings . warn with 3 argument: string " AppCommand . handle_app ( ) is superseded by AppCommand . handle_app_config ( ) . " , 
+ RemovedInDjango19Warning and stacklevel set to integer 2 . if app_config . models_module is None , 
+ raise an CommandError with an argument string " AppCommand cannot handle app ' %s ' in legacy mode because it doesn ' t have a models module . " , where ' %s ' is replaced by app_config . label . 
+ call the function handle_app with 2 arguments: app_config . models_module and unpacked dictionary options . 
+ derive the LabelCommand class from the BaseCommand base class . 
+ label is a string ' label ' 
+ substitute string " Enter at least one %s . " , with ' %s ' replaced by label , for missing_args_message . 
+ define the method add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 3 arguments: string ' args ' , metavar set to self . label and nargs set to ' + ' . 
+ define the method handle with 3 arguments: self , unpacked list labels and unpacked dictionary options . 
+ output is an empty list . 
+ for every label in labels , 
+ call the method self . handle_label with 2 arguments: label and unpacked dictionary options , substitute the result for label_output . 
+ if label_output is true , 
+ append label_output to output . 
+ join output into a string , separated by newline characters , return it . 
+ define the method handle_label with 3 arguments: self , label and unpacked dictionary options . 
+ raise an NotImplementedError exception with an argument string ' subclasses of LabelCommand must provide a handle_label ( ) method ' . 
+ derive the NoArgsCommand class from the BaseCommand base class . 
+ args is an empty string . 
+ define the method __init__ with an argument self . 
+ call the function warnings . warn with 2 arguments: string " NoArgsCommand class is deprecated and will be removed in Django 2 . 0 . " 
+ " Use BaseCommand instead , which takes no arguments by default . " and RemovedInDjango20Warning . call the __init__ method from the base class of the NoArgsCommand class . 
+ define the method handle with 3 arguments: self , unpacked list args and unpacked dictionary options . 
+ if args is true , 
+ raise an CommandError exception with an argument string " Command doesn ' t accept any arguments " . 
+ call the self . handle_noargs method with with unpacked dictionary options as argument , return the result . 
+ define the method handle_noargs with 2 arguments: self and unpacked dictionary options . 
+ raise an NotImplementedError with an argument string ' subclasses of NoArgsCommand must provide a handle_noargs ( ) method ' . 
+ import module os . 
+ import module sys . 
+ from django . utils import termcolors into default name space . 
+ define the function supports_color , without arguments . 
+ substitute sys . platform for plat . 
+ evaluate the logic expression , plat does not equals to string ' Pocket PC ' , and plat does not equals to string ' win32 ' 
+ or string ' ANICON ' is in os . environ , substitute the evaluated boolean for supported_platform . if sys . stdout has an attribute named ' isatty ' and call to the sys . stdout . isatty returns boolean True , substitute True for is_a_tty . 
+ if supported_platform is False or is_a_tty is False , 
+ return boolean False . 
+ return boolean True . 
+ define function color_style , without input arguments . 
+ call the function supports_color , if evaluates to False , 
+ substitute return value of function no_style for style . 
+ if not , 
+ get the value under the key ' DJANGO_COLORS ' of os . environ dictionary , if key doesnt exists return empty string , assign the result to DJANGO_COLORS . 
+ call the function termcolors . parse_color_setting with DJANGO_COLORS as an argument , assign the result to color_settings . 
+ if color_setting is True , 
+ define class dummy . 
+ do nothing . 
+ style is an instance of the dummy class . 
+ for every role in termcolors . PALETTES list at the index termcolors . NOCOLOR_PALETTE , 
+ assign the value of the dictionary color_settings under the key role to format , if key doesnt exist assign the empty dictionary . 
+ sets the role attribute of the style object to the value of the call to the termcolors . make_style function with dictionary format as an argument . 
+ substitute style . ERROR for style . ERROR_OUTPUT . 
+ if not , 
+ substitute return value of function no_style for style . 
+ return style . 
+ define function no_style , without input arguments . 
+ define class dummy . 
+ define private method __getattr__ with self class instance and attr as the arguments . 
+ create lambda identity function which returns x for input parameter x , return the function . 
+ return an instance of a dummy class . 
+ from __future__ import unicode_literals into default name space . 
+ from django . apps import apps into default name space . 
+ from django . core import checks into default name space . 
+ from django . core . checks . registry import registry into default name space . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is a string " Checks the entire Django project for potential problems . " . 
+ requires_system_checks is boolean False . 
+ define the method add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 3 arguments: string ' args ' , metavar set to string ' app_label ' and nargs set to ' * ' . 
+ call the method parser . add_argument with 5 arguments: string ' --tag ' , string ' -t ' , action set to string ' append ' , 
+ dest set to string ' tags ' and help set to string ' Run only checks labeled with given tag . ' . call the method parser . add_argument with 4 arguments: string ' --list-tags ' , action set to string ' store_true ' , 
+ dest set to string ' list_tags ' and help set to string ' List available tags . ' . define method handle with arguments self , unapcked list app_labels and unpacked dictionary options . 
+ if value under the ' list_tags ' key of options dictionay is true , 
+ call the method registry . tags_available , sort the result and join it into a string , separate by newlines , write it to self . stdout . 
+ return nothing . 
+ if app_labels is true , 
+ call the method apps . get_app_config with an argument app_label , for every app_label in app_labels , append the results to a list , 
+ substitute the resulting list for app_config . if not , 
+ app_configs is None . 
+ get the value under the ' tags ' key of the options dictionary , if it exists substitute it for tags , if not , tags is None . 
+ if tags exists and if all elements in the return value of the method checks . tag_exists called with an argument tag , 
+ for every tag in tags , are false , for every tag in tags , if return value of the method checks . tag_exists called with an argument tag , evaluates to false , 
+ use tag as an argument to call the iterator method next , substitute the result for invalid_tag . raise an CommandError exception with an argument string ' There is no system check with the " %s " tag . ' , where ' %s ' is replaced with invalid_tag . 
+ call the method self . check with arguments: app_configs set to app_configs , tags set to tags , display_num_errors set to boolean True . 
+ from __future__ import unicode_literals into default name space . 
+ import module codecs . 
+ import module glob . 
+ import module os . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . core . management . utils import find_command and popen_wrapper into default name space . 
+ from django . utils . _os import npath and upath into default name space . 
+ define the function has_bom with fn as argument . 
+ open the file fn in read mode , with file descriptor as f , 
+ read 4 bytes from file f and store it in sample . 
+ evaluate the boolean expression , if first three characters of sample equals to string of bytes ' \xef\xbb\xbf\ ' , 
+ of if sample starts with codecs . BOM_UTF16_LE or sample starts with codecs . BOM_UTF16_BE , return the evaluated boolean expression . define the function is_writable with path as argument , 
+ try , 
+ with open file path in append mode , 
+ call the os . utime unction , with path and None as arguments . 
+ if IOError or OSError exceptions occurred , 
+ return boolean False . 
+ return boolean True . 
+ derive class Command from base class BaseCommand . 
+ help is string ' Compiles . po files to . mo files for use with builtin gettext support . ' . 
+ requires_system_checks is boolean False . 
+ leave_locale_alone is boolean True . 
+ program is string ' msgfmt ' 
+ program_options is list containing string ' --check-format ' . 
+ define method add_arguments with self class instance and parser as arguments . 
+ call the method parser . add_argument with string ' --locale ' , string ' -l ' , dest set to string ' locale ' , action set to string ' append ' , 
+ default as an empty list and help as an string ' Locale ( s ) to process ( e . g . de_AT ) . Default is to process all . Can be used multiple times . ' . call the method parser . add_argument with string ' --exclude ' , string ' -x ' , dest set to string ' exclude ' , action set to string ' append ' , 
+ default as an empty list and help as an string ' Locales to exclude . Default is none . Can be used multiple times . ' . define the handle method with self class instance and dictionary **options as arguments . 
+ get the value under the key ' locale ' of the options dictionary , substitute it for locale . 
+ get the value under the key ' exclude ' of the options dictionary , substitute it for exclude . 
+ get the value under the key ' exclude ' of the options dictionary , convert it to an integer , substitute it for exclude . 
+ if evaluation of the function find_command with self . program as argument equals to None , 
+ raise CommandError exception , with sring " Can ' t find %s . Make sure you have GNU gettext tools 0 . 15 or newer installed . " as argument , substitute ' %s ' with self . program . 
+ basedirs is a list containing tuple with strings , ' conf/locale ' and ' locale ' . 
+ if value under the ' DJANGO_SETTINGS_MODULE ' key of os . environ dictionary exists . 
+ from django . conf import settings into default name space . 
+ call function update with path as the argument , for every path in settings . LOCALE_PATHS , extend basedirs list with previous items . 
+ create a list out of basedir elements for which function os . path . isdir returns true , apply the os . path . abspath function on every element , and put the results in a list , basedir is set of previous list elements . 
+ if basedirs is empty , 
+ raise CommandError exception with string " This script should be run from the Django Git checkout or your project or app tree , or with the settings module specified . " , as argument . 
+ all_locales is an empty string . 
+ for every basedir in basedirs , 
+ locale_dirs is a list of elements from the list of path names that maths the basedir path with ' /* ' wild card characters for which call to the os . path . isdir returned true , assign it to locale_dirs . 
+ extend all_locales list with the elements of locale_dirs list on which os . path . basename function was applied . 
+ take locale or all_locales , whichever is not empty , respectively , and substitute it for locales . 
+ locales is relative complement of set exclude in set locales . 
+ for every basedir in basedirs , 
+ if locales in not empty , 
+ join basedir , l and string ' LC_MESSAGES ' into a path separated by ' / ' for every l in locales , assign the list to dirs . 
+ if not , 
+ dirs is a list containing basedir . 
+ locations is an empty list . 
+ for every ldir in dirs , 
+ for dirpath , dirnames and filenames , respectively , in directory tree tuple starting from the ldir , 
+ extend locations with tuple containing dirpath and f , for every f in filenames , only if it ends with string ' . po ' . 
+ if locations is not empty , 
+ call the self . compile_messages with locations as argument , 
+ define compile_messages method with self class instance and locations as a arguments . 
+ for every i and tuple containing dirpath and f , in enumerated list of locations , 
+ if self . verbosity is greater than integer 0 , 
+ call the self . stdout . write method with string ' processing file %s in %s\n ' as argument , replacing all the occurrences of ' %s ' with f and dirpath , respectively . 
+ po_path is a string containing joined directory path from dirpath and f . 
+ evaluate function has_bom with po_path as argument . 
+ raise CommandError exception with string " The %s file has a BOM ( Byte Order Mark ) . Django only supports . po files encoded in UTF-8 and without any BOM . " , with ' %s ' replaced with po_path , as argument . 
+ call os . path . splitext function with po_path as argument , substitute the first element of the result for base_path . 
+ if i equals to integer 0 and 
+ call the self . stderr . write , with string " The po files under %s are in a seemingly not writable location . mo files will not be updated/created . " as argument , with ' %s ' replaced by dirpath . 
+ return nothing . 
+ extend self . program list with self . program_options , string ' -o ' , 
+ return value of the npath function with string ' . mo ' appended to the base_path as argument , and return value of the npath function with string ' . po ' appended to the base_path as argument , substitute it for args . call the popen_wrapper with args as the argument , assign the result to the output , errors and status , respectively . 
+ if status is True , 
+ if errors is True , 
+ msg is a string " Execution of %s failed: %s " , with ' %s ' replaced by self . program and errors . 
+ if not , 
+ msg is a string " Execution of %s failed " , with ' %s ' replaced by self . program . 
+ raise CommandError exception with msg as argument . 
+ from django . conf import settings into default name space . 
+ from django . core . cache import caches into default name space . 
+ from django . core . cache . backends . db import BaseDatabaseCache into default name space . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . db import connections , router , transaction , models and DEFAULT_DB_ALIAS into default name space . 
+ from django . db . utils import DatabaseError into default name space . 
+ from django . utils . encoding import force_text into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is an string " Creates the tables needed to use the SQL cache backend . " . 
+ requires_system_checks is boolean False . 
+ define the method add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 4 arguments: string ' args ' , metavar set to string ' table_name ' , nargs set to ' * ' character , 
+ and help set to a string ' Optional table names . Otherwise , settings . CACHES is used to find cache tables . ' . call the method parser . add_argument with 5 arguments: string ' --database ' , action set to string ' store ' , dest as a string ' database ' , 
+ default set to DEFAULT_DB_ALIAS and help set to a string: ' Nominates a database onto which the cache tables will be installed . Defaults to the " default " database . ' define the method handle with arguments self , unpacked list tablenames and unpacked dictionary options . 
+ get value under the ' database ' key of the options dictionary , substitute it for db . 
+ get the value under the ' verbosity ' key of the options dictionary , convet it to an integer and substitute for self . verbosity . 
+ if length of tablenames is greater than zero , 
+ for every tablename in tablenames , 
+ call the method self . create_table with arguments: db and tablename . 
+ if not , 
+ for every cache_alias in settings . CACHES , 
+ substitute value under the cache_alias key of the caches dictionary for cache . 
+ if cache is an instance of BaseDatabaseCache , 
+ all the method self . create_table with arguments: db and cache . _table . 
+ define the method create_table with arguments self , database and tablename . 
+ cache is an instance of BaseDatabaseCache class , created with arguments: tablename and an empty dictionary . 
+ call the method router . allow_migrate with 2 arguments: database and cache . cache_model_class , if it evaluates to false , 
+ return nothing . 
+ substitute value under the database key of the connections dictionary for connection . 
+ if tablename is contained in return value of the method connection . introspection . table_names , 
+ if self . verbosity is greater than integer 0 , 
+ replace ' %s ' in string " Cache table ' %s ' already exists . " with tablename , write it to the self . stdout stream . 
+ return nothing . 
+ fields is an tuple containing 3 entries: return value of the method models . CharField called with 4 arguments: 
+ name set to a string ' cache_key ' , max_length set to integer 255 , unique set to boolean True and primary_key set to boolean True , return value of the method models . TextField called with argument name set to a string ' value ' , and return value of the method models . DateTimeField called with 2 arguments: name set to string ' expires ' and db_index set to True . table_output is an empty list . 
+ index_output is an empty list . 
+ substitute connection . ops . quote_name for qn . 
+ for every f in fields , 
+ field_output is an list containing 2 elements: return value of the function qn called with an argument f . name , 
+ and return value of the function f . db_type called with an argument connection set to connection . if f . null is false , append string append " NOT NULL " to field_output , otherwise append " NULL " to field_output . 
+ if f . primary_key is true , 
+ append string " PRIMARY KEY " to field_output . 
+ otherwise if f . unique is true , 
+ append string " UNIQUE " to field_output . 
+ if f . db_index is true , 
+ if f . unique is true , substitute " UNIQUE " for unique , otherwise unique is an empty string . 
+ replace ' %s ' in string " CREATE %sINDEX %s ON %s ( %s ) ; " with: unique , return value of the function qn called with an argument: 
+ a string ' %s_%s ' , where ' %s ' is replaced with tablename and f . name , respectively , return value of the function qn called with an argument tablename and return value of the function qn called with an argument f . name . join field_output elements into a string , separated by whitespaces , append it to table_output . 
+ full_statement is a list containing: string " CREATE TABLE %s ( " , where %s is replaced by result of the function qn called with an argument tablename . 
+ for every i and line in enumerated iterable table_output , 
+ replace %s in string ' %s%s ' with: line and character ' , ' if i is lesser than length of table_output decremented by one , 
+ or with an empty string if its not , append the resulting string to full_statement . append string ' ) ; ' to full_statement . 
+ evaluate method transaction . atomic with arguments: using set to database and savepoint set to connection . features . can_rollback_ddl , 
+ with the result , evaluate method connection . cursor , with return value as curs , 
+ try , 
+ join full_statement into a string , separated by newlines , use it as an argument for the call to the method curs . execute . 
+ if DatabaseError , renamed to e , exception is caught , 
+ raise an CommandError with an argument string " Cache table ' %s ' could not be created . \nThe error was: %s . " , replace ' %s ' with: 
+ tablename and return value of the function force_text called with an argument e , respectively . for every statement in index_output , 
+ execute statement on the database that curs points to . 
+ if self . verbosity is greater than integer 1 , 
+ replace ' %s ' in string " Cache table ' %s ' created . " with tablename , write it to self . stdout . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . db import connections and DEFAULT_DB_ALIAS into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is a tuple containing a string " Runs the command-line client for specified database , or the default database if none is provided . " . 
+ requires_system_checks is boolean False . 
+ define the method add_arguments with self and parser . 
+ call the method parser . add_argument with arguments: string ' --database ' , action set to string ' store ' , dest set to string ' database ' , 
+ default set to DEFAULT_DB_ALIAS and help set to string ' Nominates a database onto which to open a shell . Defaults to the " default " database . ' . define the method handle with arguments self and unpacked dictionary options . 
+ get the value under the ' database ' key of the options dictionary , use it as a key to access the element under the connections dictionary , substitute it for connection . 
+ try , 
+ call the method connection . client . runshell . 
+ if OSError exception is caught , 
+ raise an CommandError exception with an argument string ' You appear not to have the %r program installed or on your path . ' , 
+ from django . core . management . base import BaseCommand into default name space . 
+ define the function module_to_dict with 2 arguments: module and omittable as a lambda function with an argument k , 
+ return dictionary created out of tuple elements k and printable representation of v , 
+ for every k and v in return value of the method module . __dict__ . items , only if result of the method omittable called with an argument k is false . derive the class Command from the BaseCommand base class . 
+ requires_system_checks is boolean False . 
+ define the method add_arguments with 2 arguments self and parser . 
+ call the method parser . add_argument with 5 arguments: string ' --all ' , action set to string ' store_true ' , dest set to string ' all ' , 
+ default set to boolean False and help set to a string ' Display all settings , regardless of their value . Default values are prefixed by " ### " . ' define the method handle with arguments self and unpacked dictionary options . 
+ from django . conf import settings , global_settings into default name space . 
+ call the method settings . _setup . 
+ call the function module_to_dict with an argument settings . _wrapped , substitute it for user_settings . 
+ call the function module_to_dict with an argument global_settings , substitute it for default_settings . 
+ output is an empty string . 
+ for every key in sorted list of user_settings , 
+ if key is not contained in default_settings , 
+ replace ' %s ' in string " %s = %s ### " with key and value under the key key of the user_setting dictionary , append it to the output . 
+ otherwise if value under the key key of the user_settings dictionary is not equal to the value under the key key of the default_settings dictionary , 
+ replace ' %s ' in string " %s = %s " with key and value under the key key of the user_setting dictionary , append it to the output . 
+ otherwise if value under the key ' all ' of the options dictionary is true , 
+ replace ' %s ' in string " ### %s = %s " with key and value under the key key of the user_setting dictionary , append it to the output . 
+ join elements of the output into a string , separated by newlies , return the string . 
+ import module warnings . 
+ from collections import OrderedDict into default name space . 
+ from django . apps import apps into default name space . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . core import serializers into default name space . 
+ from django . db import router and DEFAULT_DB_ALIAS into default name space . 
+ from django . utils . deprecation import RemovedInDjango19Warning into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is a tuple containing a string " Output the contents of the database as a fixture of the given " 
+ " format ( using each model ' s default manager unless --all is specified ) . " . define the method add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 4 arguments: string ' args ' , metavar set to string ' app_label [ . ModelName ] ' , 
+ nargs set to ' * ' and help is a string ' Restricts dumped data to the specified app_label or app_label . ModelName . ' . call the method parser . add_argument with 4 arguments: string ' --format ' , default set to string ' json ' , 
+ dest set to ' format ' and help is a string ' Specifies the output serialization format for fixtures . ' . call the method parser . add_argument with 5 arguments: string ' --indent ' , default set to None , dest set to ' indent ' , 
+ type set to int and help is a string ' Specifies the indent level to use when pretty-printing output . ' . call the method parser . add_argument with 5 arguments: string ' --database ' , default set to string ' store ' , dest set to ' database ' , 
+ add set to DEFAULT_DB_ALIAS and help is ' Nominates a specific database to dump fixtures from . Defaults to the " default " database . ' . call the method parser . add_argument with 6 arguments: string ' -e ' , string ' --exclude ' , dest set to ' exclude ' , action set to ' append ' , 
+ default is a an empty list and help is a string ' ( use multiple --exclude to exclude multiple apps/models ) . ' . call the method parser . add_argument with 6 arguments: string ' -n ' , string ' --natural ' , action is string ' store_true ' , dest is string ' use_natural_keys ' , 
+ default is boolean False and help is a string ' Use natural keys if they are available ( deprecated: use --natural-foreign instead ) . ' . call the method parser . add_argument with 5 arguments: string ' --natural-foreign ' , action set to string ' store_true ' , 
+ dest is string ' use_natural_foreign_keys ' , default is boolean False and help is a string ' Use natural foreign keys if they are available . ' . call the method parser . add_argument with 5 arguments: string ' --natural-primary ' , action set to ' store_true ' , 
+ dest is ' use_natural_primary_keys ' , default is boolean False and help is a string ' Use natural primary keys if they are available . ' . call the method parser . add_argument with 6 arguments: string ' -a ' , string ' --all ' , action set to ' store_true ' , 
+ dest is ' use_base_manager ' , default is boolean False and help is a string ' ( use multiple --exclude to exclude multiple apps/models ) . ' . call the method parser . add_argument with 3 arguments: string ' --pks ' , dest set to string ' primary_keys ' , 
+ and help is a string " Only dump objects with given primary keys . Accepts a comma separated list of keys . " " This option will only work when you specify one model . " . call the method parser . add_argument with 5 arguments: string ' -o ' , string ' --output ' , default is None , dest set to string ' output ' , 
+ and help is a string ' Specifies file to which the output is written . ' . define the method handle with arguments self , unpacked list app_labels and unpacked dictionary options . 
+ get the value under the ' format ' key of the options dictionary , substitute the result for format . 
+ get the value under the ' indent ' key of the options dictionary , substitute the result for indent . 
+ get the value under the ' database ' key of the options dictionary , substitute the result for database . 
+ get the value under the ' exclude ' key of the options dictionary , substitute the result for exclude . 
+ get the value under the ' output ' key of the options dictionary , substitute the result for output . 
+ get the value under the ' traceback ' key of the options dictionary , substitute the result for traceback . 
+ get the value under the ' use_natural_keys ' key of the options dictionary , substitute the result for use_natural_keys . 
+ if use_natural_keys is true , 
+ call the function warnings . warn with an argument string " ``--natural`` is deprecated; use ``--natural-foreign`` instead . " , 
+ and RemovedInDjango19Warning . get the value under the ' use_natural_foreign_keys ' key of the options dictionary , substitute the result for use_natural_foreign_keys . 
+ get the value under the ' use_natural_primary_keys ' key of the options dictionary , substitute the result for use_natural_primary_keys . 
+ get the value under the ' use_base_manager ' key of the options dictionary , substitute the result for use_base_manager . 
+ get the value under the ' primary_keys ' key of the options dictionary , substitute the result for pks . 
+ if pks is true , 
+ split string pks by ' , ' , substitute the result for primary_keys . 
+ if not , 
+ primary_keys is an empty list . 
+ excluded_apps is an empty set . 
+ excluded_models is an empty set . 
+ for every exclude in excludes , 
+ if ' . ' is contained in exclude , 
+ try , 
+ call the method apps . get_model with exclude as an argument , substitute it for model . 
+ if LookupError exception is caught , 
+ raise an CommandError exception with an argument string ' Unknown model in excludes: %s ' , where ' %s ' is replaced with exclude . 
+ add model to excluded_models set . 
+ if not , 
+ try , 
+ call the method apps . get_app_config with an argument exclude , substitute the result for app_config . 
+ if LookupError exception is caught , 
+ raise CommandError with an argument string ' Unknown app in excludes: %s ' , where ' %s ' is replaced with exclude . 
+ add app_config to excluded_apps set . 
+ if length of app_labels equals integer 0 , 
+ if primary_keys is true , 
+ raise an CommandError exception with an argument string " You can only use --pks option with one model " . 
+ app_list is an instance of OrderedDict class , created with an argument a tuple containing elements: app_config and None , 
+ for every app_config in return value of the method apps . get_app_configs , only if app_config . models_module is not None , and app_config is not contained in excluded_apps . if not , 
+ if length of app_labels is greater than integer 1 and primary_keys is true , 
+ raise an CommandError exception with an argument string " You can only use --pks option with one model " . 
+ app_list is an instance of a class OrderedDict . 
+ for every label in app_labels , 
+ try , 
+ split label by ' . ' , assign the result to app_label and model_label , respectively . 
+ try , 
+ call the method apps . get_app_config with an argument app_label , substitute the result for app_config . 
+ if LookupError exception is caught , 
+ raise CommandError with an argument string ' Unknown app in excludes: %s ' , where ' %s ' is replaced with exclude . 
+ if app_config . models_module is None or app_config is contained in excluded_apps , 
+ skip this loop iteration . 
+ try , 
+ call the method app_config . get_model with an argument model_label , substitute the result for model . 
+ if LookupError exception is caught , 
+ raise CommandError with an argument string ' Unknown model: %s ' , where ' %s ' is replaced with app_label and model_label , respectively . 
+ call the method app_list . setdefault with 2 arguments app_config and an empty list , substitute the result for app_list_value . 
+ if app_list_value is not None , 
+ if mode is not contained in app_list_value , 
+ append model to app_list_value . 
+ if ValueError exception is caught , 
+ if primary_keys is true , 
+ raise an CommandError exception with an argument string " You can only use --pks option with one model " . 
+ substitute label for app_label . 
+ try , 
+ call the method apps . get_app_config with an argument app_label , substitute the result for app_config . 
+ if LookupError exception is caught , 
+ raise CommandError with an argument string ' Unknown application: %s ' , where ' %s ' is replaced with app_label . 
+ if app_config . models_module is None or app_config is contained in excluded_apps 
+ skip this loop iteration . 
+ value under the app_config key of the app_list is None . 
+ if format is not contained in return value of the method serializers . get_public_serializer_formats , 
+ try , 
+ call the method serializers . get_serializer with an argument format . 
+ if serializers . SerializerDoesNotExist exception is caught , 
+ do nothing . 
+ raise CommandError with an argument string ' Unknown serialization format: %s ' , where ' %s ' is replaced with format . 
+ define the function get_objects . 
+ call the method app_list . items , use the result as an argument for the call to the function sort_dependencies , for every model in result , 
+ if model is contained in excluded_models , 
+ skip this loop iteration . 
+ if model . _meta . proxy is false and return value of the function router . allow_migrate called with arguments using and model is true , 
+ if use_base_manager is true , 
+ substitute model . _base_manager for objects . 
+ if not , 
+ substitute model . _default_manager for objects . 
+ call the method objects . using with an argument using , call the method order_by on the result with an argument model . _meta . pk . name , 
+ substitute the result for queryset . if primary_keys is true , 
+ call the method queryset . filter with an argument pk__in set to primary_keys , substitute the result for queryset . 
+ for every obj in result of the method queryset . iterator , 
+ yield obj , as an return value of the generator . 
+ try , 
+ self . stdout . ending is None . 
+ open the output file in writing mode if output is true , assign the file descriptor to stream , otherwise stream is None . 
+ try , 
+ call the method serializers . serialize with 6 arguments: format , result of the function get_objects , indent set to indent , 
+ use_natural_foreign_keys set to use_natural_foreign_keys , use_natural_primary_keys set to use_natural_primary_keys , and stream set to stream , if the stream is true , otherwise stream set to self . stdout . finally perform , 
+ if stream is true , 
+ close the file stream . 
+ if Exception , renamed to e , exception is caught , 
+ if show_traceback is true , 
+ raise an exception . 
+ raise CommandError with an argument string " Unable to serialize database: %s " , where ' %s ' is replaced with e . 
+ define the function sort_dependencies with an argument app_list . 
+ model_dependencies is an empty list . 
+ models is an empty set . 
+ for every app_config and model_list in app_list , 
+ if model_list is None , 
+ call the method app_config . get_models , substitute the result fr model_list . 
+ for every model in model_list , 
+ add model to models set . 
+ if model has an ' natural_key ' attribute , 
+ get ' dependencies ' attribute of the model . natural_key , substitute it for deps , if the attribute doesnt exist , deps in an empty list . 
+ if deps is true , 
+ for every dep in deps call the method apps . get_model with an argument dep , and append the result to the list , substitute it for deps . 
+ if not , 
+ deps is an empty list . 
+ for every field in model . _meta . fields , 
+ if field . rel has an ' to ' attribute , 
+ substitute field . rel . to with rel_model . 
+ if rel_model has an attribute ' natural_key ' and rel_model is not equal to model , 
+ append rel_model to deps . 
+ for every field in model . _meta . many_to_many , 
+ if field . rel . through . _meta . auto_created is true , 
+ substitute field . rel . to for rel_model . 
+ if rel_model has an ' natural_key ' attribute and rel_model is not equal to model , 
+ append rel_model to deps . 
+ append a tuple containing 2 elements: model and deps to model_dependencies . 
+ call the methof model_dependencies . reverse . 
+ model_list is an empty list . 
+ while model_dependencies is true , 
+ skipped is an empty list . 
+ changed is boolean False . 
+ while model_dependencies is true , 
+ remove first element from model_dependencies , assign it to model and deps , respectively . 
+ found is boolean True . 
+ for every d in deps , if d is not contained in models and d is contained in model_list add boolean True to a tuple , 
+ otherwise add boolean False , for every candidate in the result perform following , if candidate is false , 
+ found is boolean False . 
+ if found is true , 
+ append model to model_list . 
+ changed is boolean True . 
+ if not , 
+ append a tuple containing 2 elemetns: model and deps , to skipped . 
+ if changed is false , 
+ raise an CommandError with argument: string " Can ' t resolve dependencies for %s in serialized app list . " , where ' %s ' is replaced with: 
+ model . _meta . app_label and model . _meta . object_name joined into a string , with separator ' . ' , result joined into a string , separated by string ' , ' for every model and deps in sorted list of elements skipped sorted by key: return value of the lambda function with an argument obj , and result the __name__ field of the first element of obj . substitute skipped for model_dependencies . 
+ return model_list . 
+ import module sys . 
+ from importlib import import_module into default name space . 
+ from django . apps import apps into default name space . 
+ from django . db import connections , router , transaction and DEFAULT_DB_ALIAS into default name space . 
+ from django . core . management import call_command into default name space . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . core . management . color import no_style into default name space . 
+ from django . core . management . sql import sql_flush and emit_post_migrate_signal into default name space . 
+ from django . utils . six . moves import input into default name space . 
+ from django . utils import six into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is a tuple containing a string: ' Removes ALL DATA from the database , including data added during ' 
+ ' migrations . Unmigrated apps will also have their initial_data fixture reloaded . Does not achieve a " fresh install " state . ' define the add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 5 arguments: string ' --noinput ' , action set to string ' store_false ' , 
+ dest set to string ' interactive ' , default set to boolean True , help as a string ' Tells Django to NOT prompt the user for input of any kind . ' . call the method parser . add_argument with 5 arguments: string ' --database ' , action set to string ' store ' , dest as a string ' database ' , 
+ default set to DEFAULT_DB_ALIAS and help as a string ' Nominates a database to flush . Defaults to the " default " database . ' . call the method parser . add_argument with 5 arguments: string ' --no-initial-data ' , action set to string ' store_false ' , 
+ dest set to string ' load_initial_data ' , default=True and help as a string ' Tells Django not to load any initial data after database synchronization . ' . define the method handle with arguments self and unpacked dictionary options . 
+ substitute value under the ' database ' key of the options dictionary for database . 
+ substitute value under the database key of the connections dictionary for connection . 
+ substitute value under the ' verbosity ' key of the options dictionary for verbosity . 
+ substitute value under the ' interactive ' key of the options dictionary for interactive . 
+ get the value ' reset_sequences ' key of the options dictionary , if it exists substitute it for reset_sequences , otherwise reset_sequences is boolean True . 
+ get the value ' allow_cascade ' key of the options dictionary , if it exists substitute it for allow_cascade , otherwise allow_cascade is boolean False . 
+ get the value ' inhibit_post_migrate ' key of the options dictionary , if it exists substitute it for inhibit_post_migrate , otherwise inhibit_post_migrate is boolean False . 
+ call the function no_style , substitute it for self . style . 
+ for every app_config in return value of the method apps . get_app_configs , 
+ try , 
+ call the function import_module with 2 arguments: string . management and app_config . name . 
+ if ImportError exception is caught , 
+ do nothing . 
+ call the method sql_flush with 5 arguments: self . style , connection , only_django set to boolean True , 
+ reset_sequences set to reset_sequences , allow_cascade set to allow_cascade , substitute the result for sql_list . if interactive is true , 
+ request user input from the standard input , assign it o confirm , with the query string: " You have requested a flush of the database . " 
+ " This will IRREVERSIBLY DESTROY all data currently in the %r database , and return each table to an empty state . " " Are you sure you want to do this? " Type ' yes ' to continue , or ' no ' to cancel: " , where ' %s ' is replaced with value under the ' NAME ' key of the connection . settings_dict dictionary . if not , 
+ confirm is a string ' yes ' . 
+ if confirm equals a string ' yes ' , 
+ try , 
+ call the method transaction . atomic with 2 arguments: using set to database , savepoint set to connection . features . can_rollback_ddl , 
+ with the result , call the method connection . cursor , with the result as cursor , 
+ for every sql in sql_list , 
+ call the method cursor . execute with an argument sql . 
+ if Exception , renamed to e , exception is caught , 
+ new_msg is a tuple containing a string: " Database %s couldn ' t be flushed . Possible reasons:\n " 
+ " * The database isn ' t running or isn ' t configured correctly . \n * At least one of the expected database tables doesn ' t exist . \n " " * The SQL was invalid . \nHint: Look at the output of ' django-admin . py sqlflush ' . That ' s the SQL this command wasn ' t able to run . \n " " The full error: %s " , where ' %s ' is replaced by value under the ' NAME ' key of the connection . settings_dict dictionary and e . call the function six . reraise with 3 arguments: CommandError , CommandError created with argument new_msg , 
+ and third element of the return value of the function sys . exc_info . if inhibit_post_migrate is false , 
+ call the method self . emit_post_migrate with arguments verbosity , interactive and database . 
+ if value under the ' load_initial_data ' key of the options dictionary is true , 
+ call the function call_command with 3 arguments: string ' loaddata ' , string ' initial_data ' and unpacked dictionary options . 
+ if not , 
+ write string " Flush cancelled . \n " to self . stdout stream . 
+ class static method , 
+ define the method emit_post_migrate with arguments verbosity , interactive and database . 
+ all_models is an empty list . 
+ for every app_config in return value of the method apps . get_app_configs , 
+ call the method router . get_migratable_models with arguments app_config , database and include_auto_created set to boolean True , 
+ extend all_models list with the result . call the function emit_post_migrate_signal with 4 arguments: all_models converted into a set , verbosity , interactive and database . 
+ from __future__ import unicode_literals into default name space . 
+ from collections import OrderedDict into default name space . 
+ import module keyword . 
+ import module re . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . db import connections and DEFAULT_DB_ALIAS into default name space . 
+ derive the class Command from the BaseCommand base class . 
+ help is an string " Introspects the database tables in the given database and outputs a Django model module . " . 
+ requires_system_checks is boolean False . 
+ db_module is a string ' django . db ' . 
+ define the method add_arguments with arguments self and parser . 
+ call the method parser . add_argument with 5 arguments: string ' --database ' , action set to string ' store ' , dest as a string ' database ' , 
+ default set to DEFAULT_DB_ALIAS and help as a string ' Nominates a database to introspect . Defaults to using the " default " database . ' . define the method handle with 2 arguments: self and unpacked dictionary options . 
+ try , 
+ for every line in return value of the method self . handle_inspection called with an argument options , 
+ append new line to line , write it to self . stdout stream . 
+ if NotImplementedError exception is caught , 
+ raise an CommandError exception with an argument " Database inspection isn ' t supported for the currently selected database backend . " . 
+ define the method handle_inspection with 2 argument: self and options . 
+ get value under the ' database ' key of the options dictionary , use it as a key to get the value from the connections dictionary , 
+ substitute the result for connection . get the value under the ' table_name_filter ' key of the options dictionary , substitute it for table_name_filter . 
+ table2model is a lambda function with an argument table_name , return value is the return value of the re . sub method , 
+ called with 3 arguments: raw string ' [ ^a-zA-Z0-9 ] ' , empty string and result of the method table_name . title . strip_prefix is a lambda function with an argument s , return value is s without the first element if s starts with string ' u ' ' , 
+ otherwise returns s . call the method connection . cursor , with the result as cursor , 
+ yield string " # This is an auto-generated Django model module . " as the result . 
+ yield string " # You ' ll have to do the following manually to clean this up: " as the result . 
+ yield string " # * Rearrange models ' order " as the result . 
+ yield string " # * Make sure each model has one field with primary_key=True " as the result . 
+ yield string " # * Remove `managed = False` lines if you wish to allow Django to create , modify , and delete the table " as the result . 
+ yield string " # Feel free to rename the models , but don ' t rename db_table values or field names . " as the result . 
+ yield string " # " as the result . 
+ yield string " # Also note: You ' ll have to insert the output of ' django-admin . py sqlcustom [ app_label ] ' " as the result . 
+ yield string " # into your database . " as the result . 
+ yield string " from __future__ import unicode_literals " as the result . 
+ yield and empty string as the result . 
+ yield string ' from %s import models ' % self . db_module as the result , where " %s " is replaced with self . db_module . 
+ known_models is an empty list . 
+ for every table_name in return value of the method connection . introspection . table_names called with an argument cursor , 
+ if table_name_filter is not None and table_name_filter is callable object , 
+ call the function table_name_filter with an argument table_name , if it evaluates to true , 
+ skip this loop iteration , 
+ yield and empty string as the result . 
+ yield and empty string as the result . 
+ yield string ' from %s import models ' % self . db_module as the result , where " %s " is replaced with result of the call to the function , 
+ table2model with an argument table_name . call the function table2model with an argument table_name , append the result to known_models . 
+ try , 
+ call the method connection . introspection . get_relations with 2 arguments cursor , table_name and substitute the result for relations . 
+ if NotImplementedError exception is caught , 
+ relations is an empty dictionary . 
+ try , 
+ call the method connection . introspection . get_relations with 2 arguments cursor , table_name and substitute the result for indexes . 
+ if NotImplementedError exception is caught , 
+ indexes is an empty dictionary . 
+ used_column_names is an empty list . 
+ for every i and row in enumerated result of the method connection . introspection . get_table_description called with arguments: cursor and table_name , 
+ comment_notes is an empty list . 
+ extra_params is an instance of the class OrderedDict . 
+ substitute first element of row for column_name . 
+ if i is contained in relations , is_relation is boolean True , otherwise is_relation is boolean False . 
+ call the method self . normalize_col_name with 3 arguments column_name , used_column_names , is_relation , assign the result to att_name , params and notes , respectively . 
+ add params to extra_params dictionary . 
+ extend comment_notes list with notes . 
+ append att_name to used_column_names list . 
+ if column_name is contained in indexes , 
+ if value under the ' primary_key ' key of the dictionary contained under the column_name key of the dictionary indexes is true , 
+ value under the ' primary_key ' key of the extra_params dictionary is boolean True , 
+ otherwise if , if value under the ' unique ' key of the dictionary contained under the column_name key of the dictionary indexes is true , 
+ value under the ' unique ' key of the extra_params dictionary is boolean True , 
+ if is_relation is true , 
+ if second element of the i-th row of relations equals table_name , rel_to is string ' self ' , 
+ otherwise call the method table2model with second element of the i-th row of relations and substitute it for rel_to . if rel_to is contained in known_models , 
+ append rel_to to string ' ForeignKey ( , substitute the result for field_type . 
+ if not , 
+ append rel_to to string ' ForeignKey ( , append character " ' " to it , substitute the result for field_type . 
+ if not , 
+ call the method self . get_field_type with 3 arguments connection , table_name and row , assign the result to field_type , field_params , 
+ field_notes , respectively . add field_params to extra_params dictionary . 
+ extend comment_notes list with field_notes . 
+ append ' ( ' to field_type . 
+ if att_name equals string ' id ' and extra_params equals a dictionary with 1 entry: boolean True for ' primary_key ' , 
+ if field_type equals a string ' AutoField ( ' , 
+ skip this loop iteration . 
+ otherwise if field_type equals a string ' IntegerField ( ' and connection . features . can_introspect_autofield is false , 
+ append string ' AutoField? ' to comment_notes . 
+ if seventh element of row is true , 
+ if field_type equals a string ' BooleanField ( ' , 
+ field_type is a string ' NullBooleanField ( ' 
+ if not , 
+ value under the ' blank ' key of the extra_params dictionary is boolean True . 
+ if field_type is not equal to string ' TextField ( ' or string ' CharField ( ' , 
+ value under the ' null ' key of the extra_params dictionary is boolean True . 
+ field_desc is a string ' %s = %s%s ' , where ' %s ' is replaced with: att_name , an empty string if ' . ' is contained in field_type , 
+ or with string ' models . ' if it is not and field_type . if extra_params is true , 
+ if field_desc doesnt end with ' ( ' , 
+ append string ' , ' to field_desc . 
+ in string ' %s=%s ' replace ' %s ' with k and return value of the function strip_prefix with an argument printable representation of v , 
+ for every k and v in return value of the extra_params . items method , join all results into a string separated by a string ' , ' , substitute it for field_desc . append string ' ) ' to field_desc . 
+ if comment_notes is true , 
+ join elements of comment_notes into a string , separated by whitespaces , append it to the string ' # ' , append the result to field_desc . 
+ yield string ' %s ' , where ' %s ' is replaced with field_desc . 
+ for meta_line in return value of the method self . get_meta called with an argument table_name . 
+ yield meta_line as the result . 
+ define the method normalize_col_name with 4 arguments: self , col_name , used_column_names and is_relation . 
+ field_params is an empty dictionary . 
+ field_notes is an empty list . 
+ convert col_name to lowercase , substitute the result for new_name . 
+ if new_name is not equal to col_name , 
+ append string ' Field name made lowercase . ' to field_notes . 
+ if is_relation , 
+ if new_name ends with string ' _id ' , 
+ substitute new_name , without the last 3 elements for new_name . 
+ if not , 
+ substitute col_name for value under the ' db_column ' key of the field_params dictionary . 
+ cal the method re . subn with 3 arguments: raw string ' \W ' , string ' _ ' and new_name . 
+ if num_repl is greater than integer 0 , 
+ append string ' Field renamed to remove unsuitable characters . ' to field_notes . 
+ call the method new_name . find , with an argument string ' __ ' , if it evaluates to greater or equal than integer 0 , 
+ while the result of the method new_name . find , called with an argument string ' __ ' is greater or equals integer 0 , 
+ replace all the occurrences of ' __ ' with ' _ ' in new_name . 
+ convert col_name to lowercase , on the result call the method find with an argument string ' __ ' , if the result is greater of equal to integer 0 , 
+ append string " Field renamed because it contained more than one ' _ ' in a row . " to field_notes . 
+ if new_name starts with a string ' _ ' , 
+ convert new_name to a string and append it to string ' field ' , substitute the result for new_name . 
+ append string " Field renamed because it started with ' _ ' . " to field_notes . 
+ if new_name ends with a string ' _ ' , 
+ convert new_name to a string and append string ' field ' to it , substitute the result for new_name . 
+ append string " Field renamed because it ended with ' _ ' . " to field_notes . 
+ call the method keyword . iskeyword with an argument new_name , if it evaluates to true , 
+ append string ' _field ' to new_name . 
+ append string " Field renamed because it was a Python reserved word . " to field_notes . 
+ if first element of new_name is digit , 
+ convert new_name to a string and append it to string ' number_ ' , substitute the result for new_name . 
+ append string " Field renamed because it wasn ' t a valid Python identifier . " to field_notes . 
+ if new_name is contained in used_column_names , 
+ num is an integer 0 . 
+ in string ' %s_%d ' , replace ' %s ' with new_name and ' %d ' with num , while the result is contained in used_column_names , 
+ increment num by one . 
+ in string ' %s_%d ' , replace ' %s ' with new_name and ' %d ' with num , substitute the result for new_name . 
+ append string " Field renamed because of name conflict . " to field_notes . 
+ if col_name is not equal to new_name and field_notes is true , 
+ substitute col_name for value under the ' db_column ' key of the field_params dictionary . 
+ return new_name , field_params and field_notes . 
+ define the method get_field_type with 4 arguments: self , connection , table_name and row . 
+ field_params is an instance of a class OrderedDict . 
+ field_notes is an empty list . 
+ try , 
+ call the method connection . introspection . get_field_type with 2 arguments: second element of row and row , substitute the result for field_type . 
+ if KeyError exception is caught , 
+ field_type is a string ' TextField ' . 
+ append a string ' This field type is a guess . ' to field_notes . 
+ if field_type is a tuple , 
+ substitute field_type for field_type and new_params , respectively . 
+ call the method field_params . update with an argument new_params . 1 
+ if field_type equals a string CharField ' and fourth element of row is true , 
+ convert fourth element of row to an integer , substitute it for value under the ' max_digits ' key of the field_params . 
+ if field_type equals a string ' DecimalField ' , 
+ if fifth and sixth elements of row are None , 
+ append string ' max_digits and decimal_places have been guessed , as this database handles decimal fields as float ' to field_notes . 
+ if fifth element of row is not None , substitute it for value under the ' max_digits ' key of the field_params , 
+ otherwise , value under the ' max_digits ' key of the field_params is integer 10 . if sixth element of row is not None , substitute it for value under the ' decimal_places ' key of the field_params , 
+ otherwise , value under the ' decimal_places ' key of the field_params is integer 5 . if not 
+ substitute fifth element of row for value under the ' max_digits ' key of the field_params . 
+ substitute sixth element of row for value under the ' decimal_places ' key of the field_params . 
+ return field_type , field_params and field_notes . 
+ define the method get_meta with arguments self and table_name . 
+ return the list , containing 4 elements: an empty string , string " class Meta: " , string " managed = False " , 
+ from __future__ import unicode_literals into default name space . 
+ import module glob . 
+ import module gzip . 
+ import module os . 
+ import module warnings . 
+ import module zipfile . 
+ from django . apps import apps into default name space . 
+ from django . conf import settings into default name space . 
+ from django . core import serializers into default name space . 
+ from django . core . management . base import BaseCommand and CommandError into default name space . 
+ from django . core . management . color import no_style into default name space . 
+ from django . db import connections , router , transaction , DEFAULT_DB_ALIAS , IntegrityError and DatabaseError into default name space . 
+ from django . utils import lru_cache into default name space . 
+ from django . utils . encoding import force_text into default name space . 
+ from django . utils . functional import cached_property into default name space . 
+ from django . utils . _os import upath into default name space . 
+ from itertools import product into default name space . 
+ try , 
+ import bz2 . 
+ has_bz2 is boolean True . 
+ if ImportError exception is caught , 
+ has_bz2 is boolean False . 
+ derive the class Command from the BaseCommand base class . 
+ help is an string ' Installs the named fixture ( s ) in the database . ' . 
+ missing_args_message is a tuple containing a string " No database fixture specified . Please provide the " 
+ " path of at least one fixture in the command line . " define the method add_arguments with 2 arguments: self and parser . 
+ call the method parser . add_argument with 4 arguments: string ' args ' , metavar set to string ' fixture ' , nargs set to ' + ' , 
+ and help set to ' Fixture labels . ' . call the method parser . add_argument with 5 arguments: string ' --database ' , action set to string ' store ' , dest as a string ' database ' , 
+ default set to DEFAULT_DB_ALIAS and help as a string ' Nominates a specific database to load fixtures into . Defaults to the " default " database . ' call the method parser . add_argument with 5 arguments: string ' --app ' , action as a string ' store ' , dest as a string ' app_label ' , 
+ default set to None , help is a string ' Only look for fixtures in the specified app . ' . call the method parser . add_argument with 6 arguments: string ' --ignorenonexistent ' , string ' -i ' , action as a string ' store_true ' , 
+ dest as a string ' ignore ' , default set to boolean False and help set to string ' Ignores entries in the serialized data for fields that do not currently exist on the model . ' . define the method handle with 3 arguments: self , unpacked list fixture_labels and unpacked dictionary options . 
+ get the value under the ' ignore ' key of the options dictionary , substitute it for self . ignore . 
+ get the value under the ' database ' key of the options dictionary , substitute it for self . database . 
+ get the value under the ' app_label ' key of the options dictionary , substitute it for self . app_label . 
+ get the value under the ' hide_empty ' key of the options dictionary , if the key exists substitute it for self . hide_empty , 
+ if not , self . hide_empty is boolean False . get the value under the ' verbosity ' key of the options dictionary , substitute it for self . verbosity . 
+ call the method transaction . atomic with an argument using set to self . using , with the result , 
+ call the method self . loaddata with an argument fixture_labels . 
+ call the method transaction . get_autocommit with an argument self . using , if it evaluates to true , 
+ get the value under the self . using key of the connections dictionary , call the method close on it . 
+ define the method loaddata with 2 arguments self and fixture_labels . 
+ get the value under the self . using key of the connections dictionary , substitute it for connection . 
+ self . fixture_count is integer 0 . 
+ self . loaded_object_count is integer 0 . 
+ self . fixture_object_count is integer 0 . 
+ self . models is an empty set . 
+ call the method serializers . get_public_serializer_formats , substitute the result for self . serialization_formats . 
+ self . compression_formats is an dictionary with 3 initial entries: tuple containing 2 elements: open and string ' rb ' for None , 
+ tuple with 2 arguments: gzip . GzipFile and string ' rb ' for ' gz ' , tuple with 2 arguments: SingleZipReader and string ' r ' for ' gzip ' . if has_bz2 is true , 
+ substitute tuple with 2 elements: bz2 . BZ2File and string ' r ' for value under the ' bz2 ' key of the self . compression_formats dictionary . 
+ call the method connection . constraint_checks_disabled , with the result perform , 
+ for every fixture_label in fixture_labels , 
+ call the method self . load_label with an argument fixture_label . 
+ for model in self . models append model . _meta . db_table to a list , substitute the resulting list for table_names . 
+ try , 
+ call the method connection . check_constraints with an arguments table_names set to table_names . 
+ if Exception , renamed to e , exception is caught , 
+ e . args is a tuple , containing 1 element: string " Problem installing fixtures: %s " , where ' %s ' is replaced with e . 
+ raise an exception . 
+ if self . loaded_object_count is greater than zero , 
+ call the method connection . ops . sequence_reset_sql with 2 arguments: return value of the no_style and self . models , 
+ substitute the result for sequence_sql . if sequence_sql is true , 
+ if self . verbosity is grater than , or equal to integer 2 , 
+ write a string " Resetting sequences\n " to self . stdout stream . 
+ call the method connection . cursor , with the result renamed to cursor , perform the following , 
+ for every line in sequence_sql , 
+ call the method cursor . execute with an argument line . 
+ if self . verbosity is greater of equal to integer 1 , 
+ if self . fixture_count equals integer 0 and self . hide_empty is true , 
+ do nothing . 
+ otherwise if self . fixture_object_count equals self . loaded_object_count , 
+ call the method self . stdout . write with an argument string " Installed %d object ( s ) from %d fixture ( s ) " , 
+ where ' %d ' is replaced with self . loaded_object_count and self . fixture_count , respectively . if not , 
+ call the method self . stdout . write with an argument string " Installed %d object ( s ) ( of %d ) from %d fixture ( s ) " , 
+ substitute ' %d ' with self . loaded_object_count , self . fixture_object_count and self . fixture_count . define the method load_label with self and fixture_label as arguments . 
+ for every fixture_file , fixture_dir and fixture_name in return value of the method self . find_fixtures called with an argument fixture_label , 
+ call the function os . path . basename with an argument fixture_file , use the result as an argument for the call to the method , 
+ self . parse_name , assign the result to _ , ser_fmt and cmp_fmt , respectively . get the value under the cmp_fmt key of the self . compression_formats dictionary , assign it to open_method and mode . 
+ call the function open_method with arguments: fixture_file and mode , substitute the result for fixture . 
+ try , 
+ increment self . fixture_count by one . 
+ objects_in_fixture is integer 0 . 
+ loaded_objects_in_fixture is integer 0 . 
+ if self . verbosity is greater or equal to integer 2 , 
+ call the method self . stdout . write with an argument string " Installing %s fixture ' %s ' from %s . " , 
+ substitute ' %s ' with ser_fmt , fixture_name and return value of the function humanize called with an argument fixture_dir . call the method serializers . deserialize with 4 arguments: ser_fmt , fixture , using set to self . using , 
+ and ignorenonexistent set to self . ignore , substitute the result for objects . for every obj in objects , 
+ increment objects_in_fixture by one . 
+ call the method router . allow_migrate with 2 arguments: self . using and obj . object . __class__ , if it evaluates to true , 
+ increment loaded_objects_in_fixture by one . 
+ add obj . object . __class__ to self . models set . 
+ try , 
+ call the method obj . save with an argument using set to self . using . 
+ if DatabaseError or IntegrityError , renamed to e , exceptions are caught , 
+ e . args is a tuple containing string " Could not load % ( app_label ) s . % ( object_name ) s ( pk=% ( pk ) s ) : % ( error_msg ) s , 
+ where ' % ( app_label ) s ' is replaced for obj . object . _meta . app_label , ' % ( object_name ) s ' is replaced with obj . object . _meta . object_name , ' % ( pk ) s ' is replaced with obj . object . pk and ' % ( error_msg ) s ' is replaced with result of the function force_text with an argument e . raise an exceptions 
+ increment self . loaded_object_count by loaded_objects_in_fixture . 
+ increment self . fixture_object_count by objects_in_fixture . 
+ if Exception , renamed to e , exception is caught , 
+ if e is not an instance of CommandError class , 
+ e . args is a tuple containing string " Problem installing fixture ' %s ' : %s " , where ' %s ' is replaced with fixture_file , e . 
+ raise an exception . 
+ finally perform , 
+ call the method fixture . close . 
+ if objects_in_fixture equals integer 0 , 
+ call the method warnings . warn with 2 arguments: string " No fixture data found for ' %s ' . ( File format may be invalid . ) " , 
+ where ' %s ' is replaced with fixture_name , and RuntimeWarning . decorator method lru_cache . lru_cache with an argument maxsize set to None . 
+ define the method find_fixtures with arguments: self and fixture_label . 
+ call the method self . parse_name with an argument fixture_label , substitute the result for fixture_name , ser_fmt , cmp_fmt , respective . 
+ databases is a list containing 2 elements: self . using and None . 
+ call the method self . compression_formats . keys , convert it to list , substitute it for cmp_fmts if cmp_fmt is None , 
+ otherwise cmp_fmts is a list containing cmp_fmt . call the method serializers . get_public_serializer_formats , substitute the result for ser_fmts if ser_fmt is None , 
+ otherwise ser_fmts is a list containing ser_fmt . if self . verbosity is greater or equal to integer 2 , 
+ call the method self . stdout . write with an argument string " Loading ' %s ' fixtures . . . " , where ' %s ' is replaced with fixture_name . 
+ if fixture_name is an absolute file path , 
+ call the method os . path . dirname with an argument fixture_name , append it to a list , substitute resulting list for fixture_dirs . 
+ call the method os . path . basename with an argument fixture_name , substitute the result for fixture_name . 
+ if not , 
+ substitute self . fixture_dirs for fixture_dirs . 
+ if os . path . sep is contained in fixture_name , 
+ join dir_ and return value of the function os . path . dirname called with an argument fixture_name into a valid file path , 
+ append it to a list , perform the previous for every dir_ in fixture_dirs , substitute the resulting list for fixture_dirs . call the method os . path . basename with an argument fixture_name , substitute the result for fixture_name . 
+ for every ext in combo , if ext is true , join it to a string , separated by ' . ' , put the result in a tuple , 
+ perform the previous for every combo in result of the function product called with 3 arguments: databases , ser_fmts and cmp_fmts , substitute the result for suffixes . join fixture_name and suffix into a string , separated by ' . ' for every suffix in suffixes , put the results in set , substitute it for targets . 
+ fixture_files is an empty list . 
+ for every fixture_dir in fixture_dirs , 
+ if self . verbosity is greater or equals to integer 2 . 
+ call the method self . stdout . write with an argument string " Checking %s for fixtures . . . " , 
+ where ' %s ' is replaced with result of the function humanize , called with an argument fixture_dir . fixture_files_in_dir is an empty list . 
+ join fixture_dir , fixture_name with appended character ' * ' into a valid file path , 
+ use it as an argument for the call to the glob . iglob , for every candidate in result , call the method os . path . basename with an argument candidate , is result is contained in targets , 
+ append tuple containing 3 elements: candidate , fixture_dir and fixture_name to list fixture_files_in_dir . 
+ if self . verbosity is greater or equals integer 2 and fixture_files_in_dir is false , 
+ call the method self . stdout . write with an argument string " No fixture ' %s ' in %s . " , where ' %s ' is replaced with fixture_name , 
+ and result of the function humanize called with an argument fixture_dir . if length of fixture_files_in_dir is greater than 1 , 
+ raise an CommandError exception with an argument string " Multiple fixtures named ' %s ' in %s . Aborting . " , where ' %s ' is replaced with: 

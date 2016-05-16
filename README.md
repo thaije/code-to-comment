@@ -196,7 +196,7 @@ BLEU = 12.56 (Bravity Penalty=1.000, Length ratio=1.149, Translated length=20306
 Accuracy is: 0.17783933518
 
 
-# vocab: 4000, size=512
+##### vocab: 4000, size=512
 global step 4800 learning rate 0.4950 step-time 0.22 perplexity 1.39
   eval: bucket 0 perplexity 1.92
   eval: bucket 1 perplexity 4.41
@@ -209,6 +209,46 @@ BLEU = 12.32 (Bravity Penalty=1.000, Length ratio=1.167, Translated length=20635
   4-gram: 3.7
 Accuracy is: 0.192243767313
 
+##### vocab: 4000, size=512 More steps
+global step 13000 learning rate 0.4901 step-time 0.26 perplexity 1.05
+  eval: bucket 0 perplexity 2.01
+  eval: bucket 1 perplexity 6.82
+  eval: bucket 2 perplexity 13.18
+  eval: bucket 3 perplexity 88.26
+BLEU = 12.31 (Bravity Penalty=1.000, Length ratio=1.169, Translated length=20669, Reference length=17680)
+  1-gram: 37.9
+  2-gram: 17.3
+  3-gram:8.9
+  4-gram: 3.9
+Accuracy is: 0.198337950139
+
+
+#### Compare translated file with spaced reference file for BLEU
+##### 2x512, vocab 4000, 
+global step 6400 learning rate 0.4950 step-time 0.22 perplexity 1.24
+  eval: bucket 0 perplexity 1.59
+  eval: bucket 1 perplexity 5.98
+  eval: bucket 2 perplexity 8.13
+  eval: bucket 3 perplexity 22.40
+BLEU = 26.93 (Bravity Penalty=0.862, Length ratio=0.871, Translated length=20435, Reference length=23462)
+  1-gram: 68.2
+  2-gram: 38.0
+  3-gram:24.2
+  4-gram: 15.2
+Accuracy is: 0.186149584488
+
+##### Same with more steps
+global step 9200 learning rate 0.4950 step-time 0.23 perplexity 1.13
+  eval: bucket 0 perplexity 2.18
+  eval: bucket 1 perplexity 4.04
+  eval: bucket 2 perplexity 18.51
+  eval: bucket 3 perplexity 45.24
+BLEU = 26.89 (Bravity Penalty=0.871, Length ratio=0.879, Translated length=20625, Reference length=23462)
+  1-gram: 67.6
+  2-gram: 37.5
+  3-gram:23.9
+  4-gram: 15.0
+Accuracy is: 0.183379501385
 
 
 
