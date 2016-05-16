@@ -66,10 +66,10 @@ tf.app.flags.DEFINE_integer("size", 256, "Size of each model layer.")
 tf.app.flags.DEFINE_integer("num_layers", 2, "Number of layers in the model.")
 tf.app.flags.DEFINE_integer("code_vocab_size", 3000, "Program vocabulary size.")
 tf.app.flags.DEFINE_integer("en_vocab_size", 3000, "English vocabulary size.")
-tf.app.flags.DEFINE_string("data_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/data/", "Data directory")
-tf.app.flags.DEFINE_string("train_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/train/", "Training directory.")
+tf.app.flags.DEFINE_string("data_dir", "/home/haije/implementations/seq2seq/data/", "Data directory")
+tf.app.flags.DEFINE_string("train_dir", "/home/haije/implementations/seq2seq/train/", "Training directory.")
 tf.app.flags.DEFINE_string("dataset", "django", "Specify the name of which dataset to use.")
-tf.app.flags.DEFINE_string("dev_files", "dev/10pt.spaced", "The file path to the English dev file, relative from the data_dir.")
+tf.app.flags.DEFINE_string("dev_files", "dev/10pt", "The file path to the English dev file, relative from the data_dir.")
 tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
@@ -86,6 +86,7 @@ FLAGS = tf.app.flags.FLAGS
 data_dir = FLAGS.data_dir  + FLAGS.dataset + "/"
 dev_code_file = data_dir + FLAGS.dev_files + ".code"
 dev_en_file = data_dir + FLAGS.dev_files + ".en"
+test_en_file = data_dir + FLAGS.dev_files + ".spaced.en"
 translated_dev_code = data_dir + FLAGS.translated_dev_code
 
 # We use a number of buckets and pad to the closest one for efficiency.
@@ -331,7 +332,7 @@ def evaluate():
     # score, scores = meteor.compute_score(gts, res)
     # score, scores = meteor.compute_score(dev_en_file, translated_dev_code)
     # print ( "Meteor score: %0.3f" %  score)
-    os.system("perl evaluation/bleu/multi-bleu.perl " + dev_en_file + "<" + translated_dev_code)
+    os.system("perl evaluation/bleu/multi-bleu.perl " + test_en_file + "<" + translated_dev_code)
     calc_accuracy(translated_dev_code, dev_en_file)
         
 def decode():
@@ -412,4 +413,6 @@ def main(_):
         train()
 
 if __name__ == "__main__":
-  tf.app.run()
+    tf.app.run()
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
+    tf.Session(config = tf.ConfigProto(gpu_options = gpu_options))

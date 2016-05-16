@@ -1,0 +1,6 @@
+2x512
+vocab=4000
+steps=6000
+test_file=1805 lines
+tokenizer_en=default
+tokenizer_code=default

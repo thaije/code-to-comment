@@ -25,6 +25,8 @@ class Meteor:
         # Used to guarantee thread safety
         self.lock = threading.Lock()
 
+    # gts = reference list
+    # res = hypotheses
     def compute_score(self, gts, res):
         assert(gts.keys() == res.keys())
         imgIds = gts.keys()
