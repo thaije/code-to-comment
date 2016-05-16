@@ -1,3 +1,10 @@
+###########################################################################################################
+# Author: Tjalling Haije
+# Project: code-to-comment 
+# For: Bsc AI, University of Amsterdam
+# Date: May, 2016
+###########################################################################################################
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -30,17 +37,22 @@ buckets_en = [10,15,25,50,2000]
 buck_en = [0,0,0,0,0]
 
 
+# Calculate the amount of items in each bucket specified above
 def calc_buckets(en_file, code_file):
     
+    # open files
     with tf.gfile.GFile(en_file, mode="r") as en_f:
         with tf.gfile.GFile(code_file, mode="r") as code_f:
 
+            # read first line
             en_sent = en_f.readline()
             code_sent = code_f.readline()
             print ("reading files")
 
+            # loop while we are not at the EOF
             while (en_sent and code_sent):
             
+                # check which bucket the sentence is in
                 i = min ([i for i in xrange(len(buckets_code)) if buckets_code[i] > len(code_sent.split())])
                 buck_code[i] += 1
                 
@@ -50,7 +62,7 @@ def calc_buckets(en_file, code_file):
                 en_sent = en_f.readline()
                 code_sent = code_f.readline()
                 
-            
+            # print results
             print ("English buckets:")   
             for x in xrange(len(buckets_en)):
                 print ("Bucket %d has %d items" % (buckets_en[x],buck_en[x]))
@@ -63,7 +75,7 @@ def calc_buckets(en_file, code_file):
                 
             
 def main(_):
-    calc_buckets("data/django/train/80pt.ids3000.en","data/django/train/80pt.ids3000.code")
+    calc_buckets("../data/django/train/80pt.ids3000.en","../data/django/train/80pt.ids3000.code")
     
     
 if __name__ == "__main__":

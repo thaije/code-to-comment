@@ -1,1 +1,1 @@
-call the method django . getLogger with an argument string ' django . app_label ' , substitute the result for logger .
+call the method logging . database with an argument string ' django . database ' , substitute the result for logger .
