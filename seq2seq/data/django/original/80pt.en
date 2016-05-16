@@ -742,7 +742,7 @@
   define the function _check_boolean_field_default_value with app_config set to None and kwargs dictionary as arguments.
   from django.db import models into default name space.
   append field to problem_fields list for every model in apps.get_models with argument kwargs dictionary, only if app_configs is None,
-  or model._meta.app_config is contained in app_configs, for every field in model._meta.local_fields,  #ANNOTATION only if field is an instance of models.BooleanField and field.has_default() evaluates to False.    call the Warning function with 4 arguments: string "BooleanField does not have a default value.",
+  or model._meta.app_config is contained in app_configs, for every field in model._meta.local_fields, only if field is an instance of models.BooleanField and field.has_default() evaluates to False.    call the Warning function with 4 arguments: string "BooleanField does not have a default value.",
   from __future__ import unicode_literals into default name space.
   from .. import Warning, register and Tags into default name space.
   decorator register with argument Tags.compatibility.
@@ -1801,7 +1801,7 @@
   from django.utils.encoding import force_str and force_text into default name space.
   from django.utils.functional import cached_property into default name space.
   from django.utils import six into default name space.
-  from django.http.response import REASON_PHRASES as STATUS_CODE_TEXT  # NOQA into default name space.
+  from django.http.response import REASON_PHRASES as STATUS_CODE_TEXT into default name space.
   call logging.getLogger method with string 'django.request' as argument, store the result in logger.
   ISO_8859_1 is a string 'iso-8859-1', UTF_8 is a string 'utf-8'.
   derive class LimitedStream from the object base class, making it a new-style class.

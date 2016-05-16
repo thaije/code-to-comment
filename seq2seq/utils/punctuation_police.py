@@ -34,6 +34,7 @@ def space_punctuation():
                     dev_sent = re.sub('\s{2,}', ' ', dev_sent)
 
                     # write the new lines to the files
+                    dev_sent = dev_sent.rstrip()
                     output_dev_file.write(dev_sent + "\n")
 
                     # read new sentences

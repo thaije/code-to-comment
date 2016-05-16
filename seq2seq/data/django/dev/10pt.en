@@ -459,8 +459,9 @@ return boolean False.
 define the method _list_cache_files with argument self.
 if self._dir file path does not exists,
 return an empty list.
-for every fname in return value of the glob.glob1 function called with 2 arguments: self._dir and , self.cache_suffix converted to a string, appended to the character '*', call os.path.join with self._dir and fname as arguments,
-filelist is a list containing all the previous results.derive the class CacheClass from the base class FileBasedCache.
+for every fname in return value of the glob.glob1 function called with 2 arguments: self._dir and , self.cache_suffix converted to a string, appended to the character '*', call os.path.join with self._dir and fname as arguments, filelist is a list containing all the previous results.
+return filelist.
+derive the class CacheClass from the base class FileBasedCache.
 do nothing.
 import module time.
 try,
@@ -735,11 +736,12 @@ increment weight by integer 2.
 if string 'django.middleware.clickjacking.XFrameOptionsMiddleware' is not contained in settings.MIDDLEWARE_CLASSES set,
 increment weight by integer 2.
 if weight is greater or equal to integer 6,
-call the Warning function with 3 arguments: hint tuple containing one string, Django 1.6 introduced a new default test runner. It looks like this project was generated using Django 1.5 or earlier. You should ensure your tests are all running & behaving
-as expected. See https://docs.djangoproject.com/en/dev/releases/1.6/#new-test-runner for more information.",return an empty list.
+call the Warning function with 3 arguments: hint tuple containing one string, Django 1.6 introduced a new default test runner. It looks like this project was generated using Django 1.5 or earlier. You should ensure your tests are all running & behaving as expected. See https://docs.djangoproject.com/en/dev/releases/1.6/#new-test-runner for more information.", obj set to None and id set to a string '1_6.W001', put the result into a list and return it.
+if not,
+return an empty list.
 define the function _check_boolean_field_default_value with app_config set to None and kwargs dictionary as arguments.
 from django.db import models into default name space.
-append field to problem_fields list for every model in apps.get_models with argument kwargs dictionary, only if app_configs is None, or model._meta.app_config is contained in app_configs, for every field in model._meta.local_fields,  #ANNOTATION only if field is an instance of models.BooleanField and field.has_default() evaluates to False.
+append field to problem_fields list for every model in apps.get_models with argument kwargs dictionary, only if app_configs is None, or model._meta.app_config is contained in app_configs, for every field in model._meta.local_fields, only if field is an instance of models.BooleanField and field.has_default() evaluates to False.
  call the Warning function with 4 arguments: string "BooleanField does not have a default value.",
 from __future__ import unicode_literals into default name space.
 from .. import Warning, register and Tags into default name space.
@@ -751,8 +753,9 @@ return errors.
 define the function _check_middleware_classes with app_config set to None and kwargs dictionary as arguments.
 from django.conf import settings into default name space.
 call the function settings.is_overridden with argument string 'MIDDLEWARE_CLASSES', if the result is boolean False,
-call the Warning function with 4 arguments: string "MIDDLEWARE_CLASSES is not set.", hint tuple containing one string, "Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware,
-django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removedreturn an empty list.
+call the Warning function with 4 arguments: string "MIDDLEWARE_CLASSES is not set.", hint tuple containing one string, "Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.", obj set to None, and id set to a string '1_7.W001', put the result into a list and return it.
+if not,
+return an empty list.
 from __future__ import unicode_literals into default name space.
 from django.utils.encoding import python_2_unicode_compatible and force_st into default name space.
 DEBUG is integer 10.
@@ -830,8 +833,9 @@ if receiver is an instance of types.FunctionType type,
 description is a string "The '%s' function" replaced by value of receiver.__name__.
 if not,
 description is a string "An instance of the '%s' class" with '%s' replaced by value of receiver.__class__.__name__.
-call the Error function with 4 arguments, string "%s was connected to the '%s' signal with a lazy reference to the '%s' sender, which has not been installed." with all the '%s' replaced by values of description, name and reference joined into a string delimited by '.', respectively,
-obj set to receiver.__module__, hint set to None and id set to string 'signals.E001', append the result to errors.from __future__ import unicode_literals into default name space.
+call the Error function with 4 arguments, string "%s was connected to the '%s' signal with a lazy reference to the '%s' sender, which has not been installed." with all the '%s' replaced by values of description, name and reference joined into a string delimited by '.', respectively, obj set to receiver.__module__, hint set to None and id set to string 'signals.E001', append the result to errors.
+return errors.
+from __future__ import unicode_literals into default name space.
 from itertools import chain into default name space.
 from django.utils.itercompat import is_iterable into default name space.
 derive the class Tags with base class object.
@@ -1611,8 +1615,9 @@ define the function file_complete with arguments self and file_size.
 if self.activated is boolean False,
 return nothing.
 set file pointer at the beginning of the self.file file.
-initialize the object of a InMemoryUploadedFile class with arguments: file set to self.file, field_name set to self.field_name, name set to self.file_name, content_type set to self.content_type, size set to file_size, charset set to self.charset,
-and content_type_extra set to self.content_type_extra, return it.call the import_string with arguments path, call the return function with arguments: unpacked list args and unpacked dictionary kwargs, return the result.
+initialize the object of a InMemoryUploadedFile class with arguments: file set to self.file, field_name set to self.field_name, name set to self.file_name, content_type set to self.content_type, size set to file_size, charset set to self.charset, and content_type_extra set to self.content_type_extra, return it.
+define the function load_handler with arguments: path, unpacked list args and unpacked dictionary kwargs.
+call the import_string with arguments path, call the return function with arguments: unpacked list args and unpacked dictionary kwargs, return the result.
 derive class FileProxyMixin from the base class object, making it a new-style class.
 define lambda function that returns self.file.encoding field, use it as an argument for property function, put the result in encoding.
 define lambda function that returns self.file.fileno field, use it as an argument for property function, put the result in fileno.
@@ -1740,8 +1745,9 @@ call the function debug.technical_404_response with request and e as arguments, 
 if not,
 call the method self.get_exception_response with request, resolver and integer 404 as the arguments, assign the result to response.
 if exception PermissionDenied is caught,
-substitute '%s' in 'Forbidden (Permission denied): %s' with request.path, extra is an dictionary with two pairs of elements, 'status_code' with value 403, and 'request with value request,
-respectively use the previous as the arguments for the call to the logger.warning function.if exception SuspiciousOperation as e is caught,
+substitute '%s' in 'Forbidden (Permission denied): %s' with request.path, extra is an dictionary with two pairs of elements, 'status_code' with value 403, and 'request with value request, respectively use the previous as the arguments for the call to the logger.warning function.
+call the method self.get_exception_response with request, resolver and integer 403 as the arguments, assign the result to response.
+if exception SuspiciousOperation as e is caught,
 substitute '%s' in 'django.security.%s' with the name of the type of the class object e, use it as the argument for the call to the, function logging.getLogger, assign the result to the security_logger.
 evaluate the function force_text with e as an argument, extra is an dictionary with two pair of elements, 'status code' with integer value of 400 and 'request' with value request, respectively use the previous to call the function security_logger.error.
 if settings.DEBUG is True,
@@ -1766,8 +1772,9 @@ return response.
 define the method handle_uncaught_exception with self class instance, request, resolver and exec_info as arguments.
 if settings.DEBUG_PROPAGATE_EXCEPTIONS is True,
 raise an exception.
-substitute '%s' in 'Internal Server Error: %s' with request.path, exc_info set to exc_info, extra is an dictionary with two pairs of elements 'status_code' with value 500, and 'request with value request,
-respectively use the previous as the arguments for the call to the logger.error function.evaluate debug.technical_500_response with request and list of arguments exec_info, return the result.
+substitute '%s' in 'Internal Server Error: %s' with request.path, exc_info set to exc_info, extra is an dictionary with two pairs of elements 'status_code' with value 500, and 'request with value request, respectively use the previous as the arguments for the call to the logger.error function.
+if settings.DEBUG is True,
+evaluate debug.technical_500_response with request and list of arguments exec_info, return the result.
 if resolver.urlconf_module is None:
 call the function reraise from the module six, with list of arguments exec_info.
 call the resolver.resolve_error_handler with integer 500 as the argument, assign the resulting tuple elements to the callback, and param_dict, respectively.
@@ -1794,5 +1801,5 @@ from django.utils.deprecation import RemovedInDjango19Warning into default name 
 from django.utils.encoding import force_str and force_text into default name space.
 from django.utils.functional import cached_property into default name space.
 from django.utils import six into default name space.
-from django.http.response import REASON_PHRASES as STATUS_CODE_TEXT  # NOQA into default name space.
+from django.http.response import REASON_PHRASES as STATUS_CODE_TEXT into default name space.
 call logging.getLogger method with string 'django.request' as argument, store the result in logger.

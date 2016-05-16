@@ -10,6 +10,7 @@ import os
 import sys
 import subprocess
 import re
+import copy
 
 
 # The original Django dataset seemed to have been split wrong at certain comments
@@ -19,8 +20,8 @@ import re
 def fix_newlined_comments(): 
     with tf.Session() as sess:
 
-        input_file = "../data/django/train/90pt.en"
-        output_file = "../data/django/train/90pt.fixed.en"
+        input_file = "../data/django/original/90pt.en"
+        output_file = "../data/django/train/90pt.en"
         split_at = "   " # three spaces
 
         with tf.gfile.GFile(input_file, mode="r") as inp_file:
@@ -29,6 +30,7 @@ def fix_newlined_comments():
                 # get initial sentences
                 input_sent = inp_file.readline()
                 prev_sent = ""
+                counter = 1
 
                 # loop while we haven't reached the EOF
                 while(input_sent):
@@ -36,16 +38,25 @@ def fix_newlined_comments():
                     # split line at triple space, and add the first part to the previous line
                     line = input_sent.split("   ")
                     if (len(line) > 1):
-                        prev_sent = prev_sent.rstrip() # remove the newline from the previous line
-                        prev_sent = prev_sent + " " + line[0] + "\n"
-                        input_sent = line[1]
+
+                        prev_sent = prev_sent.rstrip()
+                        length = len(line)
+
+                        # append all comment sections to the previous line
+                        # except the last one
+                        for x in xrange(0, len(line)-1):
+                            prev_sent += " " + line[x]
+                        prev_sent += "\n"
+
+                        # our current line is the last item in the list
+                        input_sent = line[len(line)-1]
 
                     # write to the output file and read the next line
                     if (prev_sent != ""):
                         outp_file.write(prev_sent)
                     prev_sent = input_sent
                     input_sent = inp_file.readline()    
-
+                    counter += 1
 
 
                 # because we write the previous line each time, we need to add the last line at the end
