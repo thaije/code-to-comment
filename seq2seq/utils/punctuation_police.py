@@ -16,8 +16,8 @@ import re
 def space_punctuation(): 
     with tf.Session() as sess:
 
-        dev_file = "../data/django/dev/10pt.en"
-        output_dv_file = "../data/django/dev/10pt.spaced.en"
+        dev_file = "../data/django/dev/10pt.random.en"
+        output_dv_file = "../data/django/dev/10pt.random.spaced.en"
 
         # open files
         with tf.gfile.GFile(dev_file, mode="r") as dev_file:
