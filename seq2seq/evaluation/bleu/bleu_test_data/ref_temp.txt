@@ -1,5 +1,1 @@
-try,
-call the method self.configure_root with 2 arguments: root and boolean True.
-if StandardError, renamed to e, exception is caught,
-raise an ValueError exception with an argument string 'Unable to configure root logger: %s' formated with e.
-if not,
+ call logging . getLogger method with string ' django . request ' as argument , store the result in logger . 

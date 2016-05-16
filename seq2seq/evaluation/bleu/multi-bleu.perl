@@ -157,16 +157,16 @@ $bleu = $brevity_penalty * exp((my_log( $bleu[1] ) +
 				my_log( $bleu[2] ) +
 				my_log( $bleu[3] ) +
 				my_log( $bleu[4] ) ) / 4) ;
-printf "BLEU = %.2f, %.1f/%.1f/%.1f/%.1f (BP=%.3f, ratio=%.3f, hyp_len=%d, ref_len=%d)\n",
+printf "BLEU = %.2f (Bravity Penalty=%.3f, Length ratio=%.3f, Translated length=%d, Reference length=%d)\n  1-gram: %.1f \n  2-gram: %.1f \n  3-gram:%.1f \n  4-gram: %.1f \n",
     100*$bleu,
-    100*$bleu[1],
-    100*$bleu[2],
-    100*$bleu[3],
-    100*$bleu[4],
     $brevity_penalty,
     $length_translation / $length_reference,
     $length_translation,
-    $length_reference;
+    $length_reference,
+    100*$bleu[1],
+    100*$bleu[2],
+    100*$bleu[3],
+    100*$bleu[4],;
 
 sub my_log {
   return -9999999999 unless $_[0];

@@ -18,7 +18,7 @@ def calc_bleu():
             with tf.gfile.GFile(trans_file, mode="r") as translated_file:
                 with tf.gfile.GFile(bl_file, mode="w") as bleu_file:
 
-					# get initial sentences
+                    # get initial sentences
                     sent_src = source_file.readline()
                     sent_trans = translated_file.readline()
                     counter = 0
