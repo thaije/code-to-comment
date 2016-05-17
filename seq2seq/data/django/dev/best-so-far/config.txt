@@ -1,6 +1,7 @@
 2x512
-vocab=4000
-steps=6000
-test_file=1805 lines
+vocab=5000
+steps=6200
+test_file=1805 lines randomized
+django errors fixed
 tokenizer_en=default
 tokenizer_code=default

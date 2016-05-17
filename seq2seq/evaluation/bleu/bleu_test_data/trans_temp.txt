@@ -1,1 +1,1 @@
-call the method logging . database with an argument string ' django . database ' , substitute the result for logger .
+call the function get_format with an argument string ' = ' , substitute the first element of the result for html .

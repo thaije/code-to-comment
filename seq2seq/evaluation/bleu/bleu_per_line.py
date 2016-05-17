@@ -16,9 +16,9 @@ import subprocess
 def calc_bleu(): 
     with tf.Session() as sess:
 
-        src_file = "../../data/django/dev/best-so-far/10pt.spaced.en"
+        src_file = "../../data/django/dev/best-so-far/10pt.random.spaced.en"
         trans_file = "../../data/django/dev/best-so-far/translated.en"
-        cd_file = "../../data/django/dev/best-so-far/10pt.code"
+        cd_file = "../../data/django/dev/best-so-far/10pt.random.code"
         temp_ref = "bleu_test_data/ref_temp.txt"
         temp_trans = "bleu_test_data/trans_temp.txt"
         bl_file = "bleu.txt"

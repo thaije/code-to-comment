@@ -107,6 +107,8 @@ class Seq2SeqModel(object):
 
     # The seq2seq function: we use embedding for the input and attention.
     def seq2seq_f(encoder_inputs, decoder_inputs, do_decode):
+      # return tf.nn.seq2seq.basic_rnn_seq2seq(
+      #   encoder_inputs, decoder_inputs, cell)
       return tf.nn.seq2seq.embedding_attention_seq2seq(
           encoder_inputs, decoder_inputs, cell,
           num_encoder_symbols=source_vocab_size,
