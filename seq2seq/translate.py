@@ -69,7 +69,7 @@ tf.app.flags.DEFINE_integer("en_vocab_size", 3000, "English vocabulary size.")
 tf.app.flags.DEFINE_string("data_dir", "/home/haije/implementations/seq2seq/data/", "Data directory")
 tf.app.flags.DEFINE_string("train_dir", "/home/haije/implementations/seq2seq/train/", "Training directory.")
 tf.app.flags.DEFINE_string("dataset", "django", "Specify the name of which dataset to use.")
-tf.app.flags.DEFINE_string("dev_files", "dev/10pt", "The file path to the English dev file, relative from the data_dir.")
+tf.app.flags.DEFINE_string("dev_files", "dev/10pt.random", "The file path to the English dev file, relative from the data_dir.")
 tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
@@ -134,7 +134,8 @@ def read_data(source_path, target_path, max_size=None):
 
 
 def translate_file(source_path=dev_code_file, target_path=translated_dev_code): 
-    with tf.Session() as sess:
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
+    with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
         # Create model and load parameters.
         model = create_model(sess, True)
         model.batch_size = 1  # We decode one sentence at a time.
@@ -219,86 +220,87 @@ def create_model(session, forward_only):
 
 
 def train():
-  """Train a code->en translation model using WMT data."""
-  # Prepare WMT data.
-  print("Preparing data in %s" % data_dir)
+    """Train a code->en translation model using WMT data."""
+    # Prepare WMT data.
+    print("Preparing data in %s" % data_dir)
 
-  code_train, en_train, code_dev, en_dev, _, _ = data_utils.prepare_data(
-      data_dir, FLAGS.code_vocab_size, FLAGS.en_vocab_size)
+    code_train, en_train, code_dev, en_dev, _, _ = data_utils.prepare_data(
+        data_dir, FLAGS.code_vocab_size, FLAGS.en_vocab_size)
+    
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
+    with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
+        # Create model.
+        print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
+        model = create_model(sess, False)
 
-  with tf.Session() as sess:
-    # Create model.
-    print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
-    model = create_model(sess, False)
+        # Read data into buckets and compute their sizes.
+        print ("Reading development and training data (limit: %d)."
+               % FLAGS.max_train_data_size)
+        dev_set = read_data(code_dev, en_dev)
+        train_set = read_data(code_train, en_train, FLAGS.max_train_data_size)
+        train_bucket_sizes = [len(train_set[b]) for b in xrange(len(_buckets))]
+        train_total_size = float(sum(train_bucket_sizes))
 
-    # Read data into buckets and compute their sizes.
-    print ("Reading development and training data (limit: %d)."
-           % FLAGS.max_train_data_size)
-    dev_set = read_data(code_dev, en_dev)
-    train_set = read_data(code_train, en_train, FLAGS.max_train_data_size)
-    train_bucket_sizes = [len(train_set[b]) for b in xrange(len(_buckets))]
-    train_total_size = float(sum(train_bucket_sizes))
+        # A bucket scale is a list of increasing numbers from 0 to 1 that we'll use
+        # to select a bucket. Length of [scale[i], scale[i+1]] is proportional to
+        # the size if i-th training bucket, as used later.
+        train_buckets_scale = [sum(train_bucket_sizes[:i + 1]) / train_total_size
+                               for i in xrange(len(train_bucket_sizes))]
 
-    # A bucket scale is a list of increasing numbers from 0 to 1 that we'll use
-    # to select a bucket. Length of [scale[i], scale[i+1]] is proportional to
-    # the size if i-th training bucket, as used later.
-    train_buckets_scale = [sum(train_bucket_sizes[:i + 1]) / train_total_size
-                           for i in xrange(len(train_bucket_sizes))]
+        # This is the training loop.
+        step_time, loss = 0.0, 0.0
+        current_step = 0
+        previous_losses = []
+        while True:
+            # Choose a bucket according to data distribution. We pick a random number
+            # in [0, 1] and use the corresponding interval in train_buckets_scale.
+            random_number_01 = np.random.random_sample()
+            bucket_id = min([i for i in xrange(len(train_buckets_scale))
+                           if train_buckets_scale[i] > random_number_01])
 
-    # This is the training loop.
-    step_time, loss = 0.0, 0.0
-    current_step = 0
-    previous_losses = []
-    while True:
-        # Choose a bucket according to data distribution. We pick a random number
-        # in [0, 1] and use the corresponding interval in train_buckets_scale.
-        random_number_01 = np.random.random_sample()
-        bucket_id = min([i for i in xrange(len(train_buckets_scale))
-                       if train_buckets_scale[i] > random_number_01])
+            # Get a batch and make a step.
+            start_time = time.time()
+            encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+              train_set, bucket_id)
+            _, step_loss, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                                       target_weights, bucket_id, False)
+            step_time += (time.time() - start_time) / FLAGS.steps_per_checkpoint
+            loss += step_loss / FLAGS.steps_per_checkpoint
+            current_step += 1
 
-        # Get a batch and make a step.
-        start_time = time.time()
-        encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-          train_set, bucket_id)
-        _, step_loss, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
-                                   target_weights, bucket_id, False)
-        step_time += (time.time() - start_time) / FLAGS.steps_per_checkpoint
-        loss += step_loss / FLAGS.steps_per_checkpoint
-        current_step += 1
+            # evaluate the model every 5000 steps
+            # if current_step % 5000 == 0:
+                # evaluate()
+            
+            # Once in a while, we save checkpoint, print statistics, and run evals.
+            if current_step % FLAGS.steps_per_checkpoint == 0:
+                # Print statistics for the previous epoch.
+                perplexity = math.exp(loss) if loss < 300 else float('inf')
+                print ("global step %d learning rate %.4f step-time %.2f perplexity "
+                       "%.2f" % (model.global_step.eval(), model.learning_rate.eval(),
+                                 step_time, perplexity))
+                # Decrease learning rate if no improvement was seen over last 3 times.
+                if len(previous_losses) > 2 and loss > max(previous_losses[-3:]):
+                    sess.run(model.learning_rate_decay_op)
+                previous_losses.append(loss)
+                # Save checkpoint and zero timer and loss.
+                checkpoint_path = os.path.join(FLAGS.train_dir, "translate.ckpt")
+                model.saver.save(sess, checkpoint_path, global_step=model.global_step)
+                step_time, loss = 0.0, 0.0 
+                # Run evals on development set and print their perplexity.
+                for bucket_id in xrange(len(_buckets)):
+                    if len(dev_set[bucket_id]) == 0:
+                        print("  eval: empty bucket %d" % (bucket_id))
+                        continue
+                    encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+                        dev_set, bucket_id)
 
-        # evaluate the model every 5000 steps
-        # if current_step % 5000 == 0:
-            # evaluate()
-        
-        # Once in a while, we save checkpoint, print statistics, and run evals.
-        if current_step % FLAGS.steps_per_checkpoint == 0:
-            # Print statistics for the previous epoch.
-            perplexity = math.exp(loss) if loss < 300 else float('inf')
-            print ("global step %d learning rate %.4f step-time %.2f perplexity "
-                   "%.2f" % (model.global_step.eval(), model.learning_rate.eval(),
-                             step_time, perplexity))
-            # Decrease learning rate if no improvement was seen over last 3 times.
-            if len(previous_losses) > 2 and loss > max(previous_losses[-3:]):
-                sess.run(model.learning_rate_decay_op)
-            previous_losses.append(loss)
-            # Save checkpoint and zero timer and loss.
-            checkpoint_path = os.path.join(FLAGS.train_dir, "translate.ckpt")
-            model.saver.save(sess, checkpoint_path, global_step=model.global_step)
-            step_time, loss = 0.0, 0.0 
-            # Run evals on development set and print their perplexity.
-            for bucket_id in xrange(len(_buckets)):
-                if len(dev_set[bucket_id]) == 0:
-                    print("  eval: empty bucket %d" % (bucket_id))
-                    continue
-                encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-                    dev_set, bucket_id)
+                    _, eval_loss, _ = model.step(sess, encoder_inputs, decoder_inputs,
+                                               target_weights, bucket_id, True)
 
-                _, eval_loss, _ = model.step(sess, encoder_inputs, decoder_inputs,
-                                           target_weights, bucket_id, True)
-
-                eval_ppx = math.exp(eval_loss) if eval_loss < 300 else float('inf')
-                print("  eval: bucket %d perplexity %.2f" % (bucket_id, eval_ppx))
-            sys.stdout.flush()
+                    eval_ppx = math.exp(eval_loss) if eval_loss < 300 else float('inf')
+                    print("  eval: bucket %d perplexity %.2f" % (bucket_id, eval_ppx))
+                sys.stdout.flush()
 
         
 def calc_accuracy(trans_file, ref_file):
@@ -327,13 +329,16 @@ def calc_accuracy(trans_file, ref_file):
             print ("Accuracy is: %s" % accuracy )
 
 def evaluate():
-    translate_file()
-    # meteor = Meteor()
-    # score, scores = meteor.compute_score(gts, res)
-    # score, scores = meteor.compute_score(dev_en_file, translated_dev_code)
-    # print ( "Meteor score: %0.3f" %  score)
-    os.system("perl evaluation/bleu/multi-bleu.perl " + test_en_file + "<" + translated_dev_code)
-    calc_accuracy(translated_dev_code, dev_en_file)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
+    with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
+    
+        translate_file()
+        # meteor = Meteor()
+        # score, scores = meteor.compute_score(gts, res)
+        # score, scores = meteor.compute_score(dev_en_file, translated_dev_code)
+        # print ( "Meteor score: %0.3f" %  score)
+        os.system("perl evaluation/bleu/multi-bleu.perl " + test_en_file + "<" + translated_dev_code)
+        calc_accuracy(translated_dev_code, dev_en_file)
         
 def decode():
     with tf.Session() as sess:
@@ -414,5 +419,5 @@ def main(_):
 
 if __name__ == "__main__":
     tf.app.run()
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
-    tf.Session(config = tf.ConfigProto(gpu_options = gpu_options))
+    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
+    # tf.Session(config = tf.ConfigProto(gpu_options = gpu_options))
