@@ -1,1 +1,1 @@
-call the function get_format with an argument string ' = ' , substitute the first element of the result for html .
+call the function get_format with an argument <unk> , substitute the first element of the result for input_format .

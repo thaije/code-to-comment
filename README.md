@@ -389,10 +389,14 @@ after 9800 steps BLEU ~13.30. Accuracy 14.xx
 - Accuracy is: 0.273684210526
 
 
-#### vocab=3000, 2 layers, size=256, lstm=normal (extra bucket) 
+#### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, vocab=5000, beam search=7 (torch implementation)
+35 epochs, 296 steps each = 10360 steps
+BLEU = 51.80, 79.1/63.1/53.1/44.4 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len=24092)
 
-
-
+#### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, vocab=5000, beam search=7, repl unk with source attention words (torch implementation)
+32 epochs, 296 steps each = 9400 steps
+BLEU = 52.58, 79.7/63.9/54.0/45.5 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len=24092)
+Accuracy is: 0.413850415512
 
 
   
