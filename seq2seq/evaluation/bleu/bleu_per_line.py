@@ -45,28 +45,27 @@ def calc_bleu():
                         while(sent_src and sent_trans and sent_code):
 
                             # check accuracy
-                            counter += 1
                             if ("".join(sent_src.split()) == "".join(sent_trans.split())):
                                 equal += 1
 
 
-                            # sys.stdout.write('Calculating: %d ' % counter)
-                            # sys.stdout.flush()
-                            # counter += 1
+                            sys.stdout.write('Calculating: %d ' % counter)
+                            sys.stdout.flush()
+                            counter += 1
 
-                            # # write the current two lines to two temp files
-                            # with tf.gfile.GFile(temp_ref, mode="w") as ref_temp:
-                            #     with tf.gfile.GFile(temp_trans, mode="w") as trans_temp:
-                            #         ref_temp.write(sent_src)
-                            #         trans_temp.write(sent_trans)
+                            # write the current two lines to two temp files
+                            with tf.gfile.GFile(temp_ref, mode="w") as ref_temp:
+                                with tf.gfile.GFile(temp_trans, mode="w") as trans_temp:
+                                    ref_temp.write(sent_src)
+                                    trans_temp.write(sent_trans)
 
-                            # # us the two files to calc the bleu score
+                            # use the two files to calc the bleu score
 
-                            # bleu_file.write("Original comment: " + sent_src)
-                            # bleu_file.write("// " + sent_trans)
-                            # bleu_file.write("Code line %d: %s" % (counter,sent_code))
-                            # output = os.popen("perl multi-bleu.perl " + temp_ref + " < " + temp_trans).read()
-                            # bleu_file.write(output + "\n\n")
+                            bleu_file.write("Original comment: " + sent_src)
+                            bleu_file.write("// " + sent_trans)
+                            bleu_file.write("Code line %d: %s" % (counter,sent_code))
+                            output = os.popen("perl multi-bleu.perl " + temp_ref + " < " + temp_trans).read()
+                            bleu_file.write(output + "\n\n")
 
 
                             sent_code = code_file.readline()
