@@ -1,0 +1,9 @@
+for gen in xrange(3):
+        gc.collect(gen)
+        scanner.dump_all_objects(
+            format_str.format("gc-gen-{}".format(gen))
+        )
+
+x=8
+7==5
+x != 3;

@@ -41,7 +41,7 @@ def get_docstrings(source):
             yield (node, getattr(node, 'name', None), lineno, docstring)
 
 
-def print_docstrings(source, module='<string>'):
+def generate_pairs(source, module='<string>'):
     """Parse Python source code from file or string and print docstrings 
     and line numbers. Only print for functions/methods, and only with 
     a non-empty docstring.
@@ -59,14 +59,21 @@ def print_docstrings(source, module='<string>'):
         key=lambda x: (NODE_TYPES.get(type(x[0])), x[1]))
     grouped = groupby(docstrings, key=lambda x: NODE_TYPES.get(type(x[0])))
     
+    i = 0
+
     for type_, group in grouped:
         for node, name, lineno, docstring in group:
 
             print('-' * 50)
 
+            print i
+            i += 1
+            print "Line:" , lineno
+
             # only use functions
-            if not isinstance(node,ast.FunctionDef):
+            if not (isinstance(node,ast.FunctionDef) or isinstance(node,ast.ClassDef)):
                 print " Not an function, skipping"
+                print node
                 continue
 
             # only use code with an non-empty docstring
@@ -78,8 +85,16 @@ def print_docstrings(source, module='<string>'):
             lineno = lineno - 2
             sourceCode = getSourceCode(lineno, source)
 
+            if "Class" in sourceCode:
+                print "Class definition, skipping"
+                continue
+
+            print "normal comments:" , ('# ' in sourceCode)
+            print "doc strings:" , sourceCode.count('"""')
+            print node 
+
             # skip the function if it contains normal comments
-            hasComments = ('# ' in sourceCode)
+            hasComments = ('# ' in sourceCode) or (sourceCode.count('"""') >= 4)
             if hasComments:
                 print "contains comments, skipping"
                 continue
@@ -91,6 +106,7 @@ def print_docstrings(source, module='<string>'):
             print "Name:" , name
             print "Docstring:" , docstring , "\n"
             print "Source code: \n", sourceCode
+
 
 
 # Get the line number of the last object in the node 
@@ -119,18 +135,6 @@ def getSourceCode(firstLine, source):
 
     return functionCode
 
-
-    # # previous method of finding the last line in the 
-    # lastBody = node.body[-1]
-    # exception = False
-
-    # while not exception:
-    #     try:
-    #         lastBody = lastBody.body[-1]
-    #     except:
-    #         exception = True
-
-    # return lastBody.lineno
 
 
 def removeCommentsAndDocstrings(source):
@@ -198,4 +202,4 @@ if __name__ == '__main__':
     import sys
     
     with open(sys.argv[1]) as fp:
-        print_docstrings(fp)
+        generate_pairs(fp)
