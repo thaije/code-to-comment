@@ -1,0 +1,40 @@
+# = number of lines in .py files which start with '# '. So is in fact less, because of multi line comments.
+""" = amount of string literal comments 
+size = amount of files / total size of whole repository
+
+
+edx:
+#:	28.151 (short comments of 1-2 lines)
+""":	17.350 (mostly short descriptive strings of short functions)
+size:	8500 files / 100 mb
+link:	https://github.com/edx/edx-platform
+
+pandas:
+#:	18.562 (notes / todo / comments, most comments 1-4 lines long)
+""":	3000 (mostly long def/func descriptions with parameters and such)
+size:	1000 files / 30mb
+link: 	https://github.com/pydata/pandas
+
+salt: 
+#: 	30.029 (Mostly multi-line comments for small pieces of code
+""": 	1112 
+size:	4000 files / 40mb
+link:	https://github.com/saltstack/salt 
+
+django: 
+#:	21.050	(Descriptive comments, some 1 line, some 30 lines)
+""":	6450 (mostly short descriptions of short functions)
+size:	8000 files / 40mb
+link:	https://github.com/django/django
+
+scikit:
+#:	13104 (author stuff at beginning of files, others mostly very short single-line descriptive comments, e.g. Check data, or Reduce)
+""":	2400
+size:	1200 files / 14mb
+link:	https://github.com/scikit-learn/scikit-learn
+
+linux:
+/*:	870.000 (author stuff at top of each file, rest are long function descriptions and short comments)
+size:	58.000 files / 650mb
+link:	https://github.com/torvalds/linux
+

@@ -1,1 +1,1 @@
- call logging . getLogger method with string ' django . request ' as argument , store the result in logger . 
+call the function get_format with an argument string ' DATE_INPUT_FORMATS ' , substitute the first element of the result for input_format .

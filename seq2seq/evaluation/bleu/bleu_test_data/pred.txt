@@ -1,0 +1,1805 @@
+if <unk> is true , substitute it for attrs , if not substitute id_ for attrs .
+if not ,
+loaded_objects_in_fixture is integer <unk> .
+if self . ignore is true and field_name is not contained in model_fields ,
+return self . value equals self . choice_value .
+import module types .
+return value under the key key of self dictionary .
+get the value under the <unk> key of the options dictionary , substitute it for alen .
+import module fnmatch .
+call the self . _lock . writer method , with the result perform the following ,
+get the value under the <unk> key of the params dictionary , if the key doesnt exists return the value under the <unk> key of the params dictionary , if the key doesnt exists return an empty tuple .
+self . path is an instance of <unk> class , created with 4 arguments : <unk> , result of the method <unk> . splitlines called with an argument <unk> , and result of the function <unk> , called with 2 arguments : <unk> and integer 1 .
+if bits is false ,
+skip this loop iteration .
+for every key in self ,
+substitute self . literal for value .
+for every i and ext in enumerated iterable unhandled_params ,
+import module sys .
+call the function local , substitute the result for _active .
+call the method connection . creation . sql_for_pending_references with 3 arguments : refto , no_style ( ) , and pending_references , extend list with the result .
+property decorator ,
+for every i and row in enumerated result of the method connection . introspection . <unk> ,
+substitute third element of bits for key and second element of bits .
+call the method self . connection . ehlo .
+if self . save_as_new is true ,
+if etags is false ,
+try ,
+define the method __repr__ with an argument self .
+increment doublecolon_len by one .
+call the method msgs . decode with an argument <unk> , substitute the result for msgs .
+if not ,
+call the method parser . parse , return the result .
+do nothing .
+define the function gettext_noop with an argument message .
+property decorator ,
+substitute I18N_MODIFIED for LockFileEx . modified_code .
+output_transaction is boolean True .
+locales is a list containing locale .
+substitute bp for lbp .
+if register_to is true ,
+call the function write with an argument sep .
+substitute <unk> for priority .
+for every i in sequence of result ,
+append i to self . _deleted_form_indexes .
+self . POST is an instance of MultiValueDict class .
+call the method MIMEText . __init__ with 5 arguments : self , text , subtype and None .
+for every entry in return value of the os . makedirs function with path as argument ,
+import module sys .
+return output .
+substitute mapped_tokens for self . tokens .
+from django . utils . _os import safe_join into default name space .
+return boolean True .
+call the method self . <unk> with 2 arguments tag and attrs .
+define the method resolve_context with 2 arguments : self and context .
+define the method add_arguments with 2 arguments self and parser .
+try ,
+if path is an instance of six . string_types ,
+call the method handler . endElement with an argument <unk> .
+define the method _truncate_html with 4 arguments : self , name , config and incremental set to boolean False .
+if val is None ,
+if second element of bits is None ,
+set name attribute of the result to value .
+convert value into an floating point number , substitute it for value .
+if nodelist_empty is None ,
+with self . mutex perform ,
+derive the class Command from the BaseCommand base class .
+increment i-th element of result by piece .
+call the method file . tell , substitute the result for attr_list .
+if f . unique is true , or if f . unique is true ,
+return value and arg .
+if self . queryset is not None ,
+return errors .
+do nothing .
+if self . _pk_field is true and length of self . deleted_forms is lesser than self . min_num ,
+return ip_str .
+define the function extract with 2 arguments : path and to_path set to <unk> .
+append model to model_list .
+skip this loop iteration .
+call the method super_set . replace with an argument management_dir .
+substitute pending_references for pending_references .
+define the method render with 2 arguments : self and context .
+from django . utils . translation import trans_real into default name space .
+define the method parse with an argument self .
+call the method self . g , return the result .
+substitute self . STDOFFSET for self . DSTOFFSET .
+break from the loop execution .
+define the function EmailMultiAlternatives with arguments Model , data and db .
+substitute CheckboxChoiceInput for retval .
+call the method parser . add_library with an argument lib .
+define the method is_hidden with an argument self .
+call the function next_space_index with 2 arguments subject and i , substitute the result for i .
+from django . db . migrations . writer import MigrationWriter into default name space .
+call the method parser . delete_first_token .
+if TypeError or ValueError exceptions are caught ,
+split pks by <unk> , substitute the result for primary_keys .
+from django . conf import settings into default name space .
+call the method base64 . combining with an argument s , strip the result of whitespaces from <unk> , return the result .
+return result .
+self . saved_forms is an empty list .
+call the method self . clean , substitute the result for cleaned_data .
+from django . core import checks into default name space .
+define the method _truncate_html with 3 arguments : self , unpacked list args and unpacked dictionary kwargs .
+call the function _checkLevel with an argument level , use the result as an argument for the call to the function logger . setLevel .
+call the method __init__ from the base class of the class Context , with an argument dict_ .
+try ,
+from django . utils . html import escape into default name space .
+for every migration_name in MEDIA_TYPES ,
+return None .
+delete the object object with arguments obj and self . name .
+call the method middleware . process_response with 2 arguments : request and response , return the result .
+if traceback is true ,
+import module os .
+self . _changed_data is an empty list .
+if <unk> is not contained in te ,
+multiply offset . days by integer 60 , append the result to timezone . seconds , append the result to timezone . seconds , substitute the result for timezone .
+if self . _wrapped is empty ,
+substitute language for self . __language .
+derive the class Node from the object base class .
+if lib is true ,
+substitute test_runner for form . save_m2m .
+python_2_unicode_compatible decorator ,
+return <unk> .
+if not ,
+call the method self . sync_apps . render with an argument unpacked list args , return the result .
+if <unk> is true , return boolean True , otherwise return boolean False .
+parse_until is an empty list .
+call the function check_for_language with an argument lang , if it evaluates to false ,
+remove first element from colors , substitute it for fg .
+for every v in match of the method match . groups , called with an argument v , for every v in the result of the method pattern_iter . groups ,
+define the method _format_value with 2 arguments : self and obj .
+divide <unk> by integer <unk> , substitute the result for message .
+divide timezone by integer 60 , substitute the result for hour and reminder .
+if tag is contained in self . <unk> ,
+for every f in fields ,
+finally perform ,
+if lang_code is contained in _supported and lang_code is not None and call to the function check_for_language with an argument lang_code , evaluates to true ,
+if IndexError exception is caught ,
+with call to the function transaction . atomic with using set to connection . alias , and savepoint set to connection . features . can_rollback_ddl , with the result ,
+if not ,
+call the function gen_filenames , for every filename in the result ,
+define the method __deepcopy__ with 2 arguments : self and memo .
+substitute self . _stream for stream .
+define the function firstof with 2 arguments value and arg .
+define the method render with 4 arguments : self , name , value and attrs set to None .
+substitute key for result . key .
+settings . USE_I18N is boolean True .
+if ImportError exception is caught ,
+if first last elements of chunk is false ,
+call the function chain with an argument list with 2 elements : return value of the function format_html called with 2 arguments : unpacked list <unk> and return value of the function no_style called with an argument : result of the function flatatt called with an argument : result of the function flatatt called with an argument : result of the function flatatt called with an argument path , for every path in media , for every medium in media .
+get attribute name from value under the DEFAULT_CACHE_ALIAS key of caches dictionary , return it .
+import module re .
+if not ,
+for every handler in handlers ,
+new_second_item is an integer 7 .
+if value equals self . empty_value or value is contained in self . empty_values ,
+mapped_tokens is an empty list .
+substitute fail_silently for self . fail_silently .
+self . activated is boolean False .
+define the method to_python with arguments self and value .
+_cookie_allows_colon_in_names is None .
+substitute self . _wrapped for <unk> .
+define the function safe_join with 2 arguments : base and unpacked list paths .
+if key is contained in d ,
+created_models is an empty list .
+try ,
+if num is greater than self . _max_entries ,
+break from the loop execution .
+run_syncdb is boolean False .
+_iteritems is integer <unk> .
+substitute offset for self . __offset .
+if max_age is not None ,
+define the method to_python with arguments self and value .
+if expires is false ,
+locales is a difference between the locales and exclude sets .
+property decorator ,
+call the function warnings . warn with 3 arguments : <unk> , warnings and stacklevel set to integer 2 .
+if not ,
+return callback and <unk> .
+define the method render with 2 arguments : self and context .
+delete the value under the key key of the self . dicts dictionary .
+substitute name for old_attr .
+call the method self . make_key with key and version set to version as arguments , substitute the result for key .
+call the method parser . compile_filter with an argument arg , for every arg in args without the first element , substitute the result for values .
+self . m2m_data is None .
+if not ,
+call the function digest , assign the result to inner and varkw , respectively .
+call the function _check_test_runner with dictionary kwargs as argument , use the result as an argument for the call to the function errors . extend .
+substitute choices for self . choices .
+define the method has_leading_dir with an argument self .
+if not ,
+append value under key key of the <unk> dictionary , append it to output .
+from django . utils import six into default name space .
+from django . utils import formats and six into default name space .
+call the function force_text with an argument s , call the strip method on the result with an argument string ' ' , ' , substitute the result for s .
+call the method f . formfield with an argument unpacked dictionary kwargs , substitute the result for formfield .
+if self has an attribute <unk> ,
+derive the class ChoiceField from the base class Field class .
+define the method __init__ with an argument self .
+append string " <unk> ( <unk> are not be in %s <unk> " , where ' %s ' is replaced with charset .
+otherwise if value under the ' : ' key of the options dictionary equals to string " <unk> : ( <unk> ) : " ,
+derive the class FieldError from the Exception base class .
+if safe is not None ,
+call the method request . META . get with 2 arguments : <unk> and <unk> .
+define the method unget with arguments self and bytes .
+<unk> is integer <unk> .
+call the method self . format with an argument <unk> , substitute the result for name .
+call the method handler . addQuickElement with 2 arguments : <unk> and value under the <unk> key of the item dictionary .
+if categories is true ,
+call the method parser . add_argument with 5 arguments : <unk> , <unk> set to string ' <unk> ' , dest set to string ' <unk> ' , default set to <unk> , and help set to string ' <unk> <unk> <unk> : <unk> <unk> <unk> ' , substitute the result for parser . add_argument .
+define the method _isdst with 2 arguments self and dt .
+if value under the <unk> key of the item dictionary is not None ,
+Model is an instance of RenderContext class , created with value under the <unk> key of dictionary d .
+define the method writer with an argument self .
+<unk> is a property object of this class .
+define the method create_variable_node with 2 arguments : self and filter_expression .
+define the function resolve with 2 arguments : path and urlconf set to None .
+obj is an tuple with 2 elements : args and kwargs .
+for every key_value in natural ,
+define the function verbatim with 2 arguments : parser and token .
+if squash is false ,
+get the value under the <unk> key of the options dictionary , substitute it for threading .
+call the function warnings . warn with 2 arguments : <unk> set to <unk> <unk> <unk> <unk> <unk> .
+try ,
+call the color_style method , substitute the result for self . style .
+derive the class RWLock from the HttpResponse base class .
+from django . core . management . base import BaseCommand and CommandError into default name space .
+derive the class SimpleLazyObject from the LazyObject base class .
+return value under the language key of the _translations dictionary .
+call the method self . style . NOTICE with an argument <unk> , use the result as an argument for the call to the self . style . NOTICE method , write the result to self . stdout .
+return s .
+call the function make_origin with 4 arguments : display_name , self . load_template_source and template_dirs , substitute the result for origin .
+call the method self . appendlist with 2 arguments : key and value .
+import module errno .
+if value is not contained in result ,
+if AttributeError exception is caught ,
+from django . apps import apps into default name space .
+get the value under the name key of the data dictionary , if it exists return it , if not , return None .
+if p is greater or equal to integer 0 ,
+call the method node . <unk> with an argument <unk> , if it evaluates to true ,
+append self . fk . name to form . _meta . name , respectively .
+increment i by integer 1 .
+replace ' %s ' in string ' <unk> <unk> ' with message_context of ' <unk> ' with message_context , write it to out .
+derive the class MultipleHiddenInput from the HiddenInput base class .
+if ImportError exception is caught ,
+call the Model with an argument unpacked dictionary , substitute the result for obj .
+try ,
+convert <unk> to a string and substitute it for msg .
+raise an NotImplementedError exception with an argument string
+kwargs is a <unk> object with 4 initial entries : form , <unk> , <unk> , <unk> , <unk> ,
+call the function conditional_escape with an argument checkbox_name , substitute the result for value under the <unk> key of the substitutions dictionary .
+self . _closable_objects is an empty list .
+get <unk> attribute of the lookup_view object , substitute it for m .
+if response is None ,
+raise an DisallowedHost exception with an argument : return value of the function urlquote called with an argument key .
+return _curried .
+call the method __init__ from the base class of the class JsLexer .
+from django . core . management . base import CommandError into default name space .
+from django . conf import settings into default name space .
+raise an EmptyPage exception with an argument <unk> .
+if not ,
+raise an TypeError exception with an argument <unk> .
+print <unk> to the standard output .
+write s to zfile stream .
+from django . core . management . base import CommandError and BaseCommand into default name space .
+call the os . utime function with fd and mode as arguments , substitute the result for _file .
+if not ,
+substitute self . _meta for opts .
+import module warnings .
+substitute self . origin and source for token . source .
+app_template_dirs is an instance of GzipFile class .
+try ,
+return <unk> .
+import module tarfile .
+call the function format_html with 3 arguments : <unk> , contents and label_suffix , substitute the result for contents .
+call the function urlunsplit with an argument value , substitute the result for url_fields .
+add loader to a list , substitute it for app_names .
+if s is an instance of EscapeData ,
+join comment_notes into a string , separated by ' # ' , append it to field_desc .
+try ,
+if settings . STATIC_URL is None ,
+substitute prefix for self . prefix .
+call get_script_name function , substitute the result for self . _wrapped .
+delete the value under the <unk> key of self dictionary .
+convert name to lowercase , if it equals to <unk> ,
+define the method __str__ with an argument self .
+call the function vars with an argument options , substitute the result for cmd_options .
+if has_old_option is true and forms_valid is true ,
+call the method self . xml . endElement with an argument <unk> .
+try ,
+call the method connection . introspection . table_name_converter with an argument model . _meta . db_table , if it evaluates to true ,
+return valid .
+if <unk> is contained in context ,
+do nothing .
+endless while loop ,
+substitute self for self . _body .
+return dec .
+define the function sanitize_address with 2 arguments : addr and encoding .
+call the method lookups . appendlist with 3 arguments : return value of the method lookups . appendlist , called with 2 arguments : result of the method lookups . getElementsByTagName called with 2 arguments : unpacked list p_pattern , and unpacked dictionary kwargs .
+substitute klass for factory .
+call the function <unk> with an argument record , convert the result to a <unk> , substitute the result for message converted into a string , substitute the result for message .
+call the method self . build_attrs with arguments attrs , type as self . input_type , name as name , substitute the result for final_attrs .
+define the method create_nodelist with an argument self .
+call the method self . handle_noargs with value under the <unk> key of the options dictionary as an argument .
+if length of args is greater than integer 4 ,
+__all__ is a list containing an element <unk> .
+define the method create_token with 3 arguments : self , token_string and in_tag .
+all_locales is an empty list .
+remove param and first element of param .
+raise an InvalidTemplateLibrary exception with an argument <unk> .
+from functools import copystat into default name space .
+raise an NotImplementedError exception with an argument string
+try ,
+delete first element of bits .
+return self . DSTOFFSET .
+join basedir and l into a list for every l in locales .
+if key is not contained in extracted ,
+define the function callable with an argument obj .
+call the function datetime_safe with an argument date , call the result with an argument <unk> , substitute the result for d .
+return nothing .
+define the function _checkLevel with 2 arguments : potfile and msgs .
+substitute base . __name__ for class_name .
+from django . template . base import TemplateDoesNotExist into default name space .
+get the value under the ' <unk> ' key of the options dictionary , substitute it for connection .
+raise an CommandError exception with an argument <unk> , use the result as an argument for the call to the <unk> function , return the result .
+define the method __init__ with 3 arguments : self , escape_html and value set to value .
+if fake is true ,
+skip this loop iteration .
+if settings . <unk> is true ,
+call the method formats . group with an argument integer 1 , use the result as an argument for the call to the function out . write , write the result to out .
+substitute stream for self . _stream .
+from django . template . dates import date into default name space .
+if OSError , renamed to e , exception is caught ,
+call the method self . stdout . start_transaction_sql , write the result to self . stdout .
+call the function six . reraise with 3 arguments : MultiPartParserError , UnreadablePostError set to msg , and third element of the result of the function sys . exc_info .
+slice the order of the elements from i-th to i-th element of p , substitute it for value .
+otherwise if value is an instance of datetime . date ,
+if middleware has an attribute <unk> ,
+call the method MIMEMultipart . decode with 2 arguments <unk> and <unk> , substitute the result for self . <unk> .
+call the method gettext_module . translation with 5 arguments : domain set to <unk> , localedir set to localedir , <unk> set to negative integer <unk> , substitute the result for translation .
+call the function re . compile with an argument <unk> , substitute the result for <unk> .
+do nothing .
+append obj to self . var1 .
+define the function <unk> with 2 arguments parser and token .
+self . alternatives is None .
+from django . conf import settings into default name space .
+call the function date . weekday , substitute the result for bmatch .
+for every e in all_issues if e . level is lesser than or equal to e . level , and e . level is lesser than checks . WARNING , substitute the resulting list for script_url .
+if not ,
+get frag attribute from found object , substitute it for found .
+call the method handler . addQuickElement with 3 arguments : <unk> , None , <unk> , <unk> , <unk> and value under the ' author_name ' key of the self . feed dictionary .
+if val is None ,
+return self . _fqdn .
+call the method os . <unk> with an argument integer 1 .
+substitute lookup for __contains__ .
+call the method gettext_module . get_model with an argument self .
+return obj .
+if not ,
+content_length is an integer 0 .
+if inverse_match is not None ,
+format string ' <unk> <unk> ' with message_context of singular , write it to out .
+convert self . file to a string , substitute it for thefile .
+if StopUpload , renamed to e , exception is caught ,
+call the method self . add_truncation_text with arguments name and mode , return the result .
+if IndexError exception is caught ,
+define the method write with 3 arguments : self , outfile and encoding .
+if not ,
+if handler has an attribute <unk> ,
+for every i in sequence of result ,
+do nothing .
+if self . use_ssl is false and self . use_tls is true ,
+raise an ImproperlyConfigured exception with an argument <unk> set to string ' <unk> fixtures <unk> <unk> or <unk> " .
+settings . setter decorator ,
+define the function wrapper with 2 arguments : unpacked list args and unpacked dictionary kwds .
+define the method __init__ with 4 arguments : self , level , msg , hint set to None ,
+substitute SelectMultiple for hidden_widget .
+property decorator ,
+return result .
+call the method self . load_template_source with 2 arguments template_name and template_dirs , substitute the result for source and display_name , respectively .
+return self . _callback .
+for every filename in tablenames ,
+convert first element of colors to lowercase and append it to string ' . ( ' , convert it to lowercase and append it to the previous result , convert it to lowercase , return it .
+call the method self . stream . close .
+call the function get_language , substitute the result for self . _iterator .
+call the method value . <unk> with an argument tb .
+define the function ugettext with an argument message .
+call the method self . iteritems , return list of results .
+decorator stringfilter ,
+call the function next with an argument self . _producer , substitute the result for output .
+call the function next_char with new_class as an argument , assign the result to new_class . media .
+call the method self . setlist with 2 arguments : key and default_list .
+if truncate_len equals integer 0 ,
+call the method __add__ from the base class of the class SafeText , with an argument rhs , substitute the result for t .
+if value is an instance of bytes ,
+try ,
+call the function format_html with 2 arguments : <unk> and attrs , substitute the result for contents .
+return self . _errors .
+substitute content_length for self . content_length .
+from django . db . migrations . executor import MigrationExecutor into default name space .
+call the method handler . startElement with 2 arguments : <unk> and result of the method self . root_attributes .
+week_number is integer <unk> .
+decrement self . waiting_writers by integer 1 ,
+substitute length of values for len_values .
+if value under the <unk> key of the config dictionary is true ,
+if hidden_fields is true ,
+call the function force_text with an argument addr , use the result as an argument for the call to the function typecast_timestamp , substitute the result for addr .
+substitute ' %s ' in string " <unk> <unk> <unk> % % ( app_name ) " with app_name and model . _meta . object_name , respectively .
+if not ,
+if ValueError exception is caught ,
+substitute token for self . token .
+if format is not contained in _serializers ,
+import module types .
+if upto is true ,
+if ret equals to integer 0 , return boolean True , otherwise return boolean False .
+yield real_name .
+strip first element from transfer_encoding .
+return <unk> .
+raise an CommandError exception with an argument <unk> converted to a string .
+if self . can_delete is true and call to the method self . _should_delete_form with an argument form evaluates to true ,
+if length of self . dicts is equal to integer 1 ,
+try ,
+from django . utils import translation into default name space .
+from logging import <unk> into default name space .
+call the method connection . creation . sql_for_pending_references with 3 arguments : model , no_style and return value of the function pending_references . creation .
+get the attribute <unk> of the c object , if it exists use it as an argument for the call to the method messages . update .
+define the function to_language with an argument locale .
+if self . encoding exists substitute it for encoding , if not substitute settings . DEFAULT_CHARSET for encoding .
+remove the first element of result .
+define the method __init__ with 4 arguments : self , dirpath , file_name and locale_dir .
+default_error_messages is an string
+if value is value ,
+try ,
+import module os .
+for every ch in input_iter ,
+return _wrapped_view .
+get the value under the <unk> key of the widget . attrs dictionary , if it exists substitute it for id_ , if not , substitute self . auto_id for id_ .
+return an instance of a class <unk> , created with 2 arguments : integer 0 and first element of x , return the result .
+from django import http into default name space .
+if not ,
+split var into a tuple , substitute the result for self . lookups .
+create a tuple with 2 elements : seconds and result of the function seconds called with an argument seconds result of the function seconds called with an argument seconds , substitute the result for failures .
+if settings . ADMINS is false ,
+define the method register with 2 arguments : self and unpacked list tags .
+call the method __init__ from the base class of the class DateField , with 4 arguments : template , context , content_type and status .
+call the method fd . isatty , if it evaluates to true ,
+call the method six . text_type with an argument number , substitute the result for attr_list .
+call the method render from the base class of the class PasswordInput , with 3 arguments : name , value and attrs .
+if field_type equals <unk> ,
+return boolean False .
+return an instance of a class Truncator , created with 3 arguments : value , left and truncate set to boolean True .
+if self . dry_run is true and self . deleted_forms is greater than self . Managers and self . __args is greater than self . Managers , or if length of self . deleted_forms is greater than self . Managers ,
+return msg_count .
+for every f in files ,
+define the function get_text_list with 2 arguments : list_ and <unk> ( <unk> ) .
+return r .
+if Exception exception is caught ,
+substitute self . field . widget for widget .
+define the method _setup with an argument self .
+substitute value for self . value .
+call the function force_text with an argument field . help_text , substitute the result for help_text .
+if value is true ,
+derive the class Command from the BaseCommand base class .
+define the method autocomplete with 2 arguments : self and pk .
+call the method self . <unk> with 4 arguments : self . object_list , conn_type , number and self .
+if initial is not None , substitute initial for initial_value , otherwise substitute <unk> for initial_value .
+call the function _ with an argument <unk> , use the result as an argument for the call to the function _ , substitute the result for message .
+inner_text is an empty list .
+substitute second element of renamed_method for new_method_name .
+move integer 1 left for 20 bits , substitute the result for css_classes .
+define the method render with 2 arguments : self and context .
+substitute base for self . base .
+define the function <unk> with path and urlconf set to None as arguments .
+call the function EmailMultiAlternatives with 2 arguments : <unk> and <unk> , return value of the function re . sub called with 2 arguments : <unk> and <unk> .
+if <unk> exception is caught ,
+skip this loop iteration .
+if decorator has an attribute <unk> ,
+if not ,
+from django . core . management . base import AppCommand into default name space .
+substitute self . rawdata for rawdata .
+call the method parser . parse with an argument <unk> , substitute the result for nodelist .
+define the method _get_choices with an argument self .
+return self .
+increment i by integer 1 .
+substitute <unk> for ns .
+for every form in valid_forms ,
+call the method initial_form_count from the base class of the class BaseInlineFormSet , return the result .
+call the method self . close .
+define the method _itervalues with an argument self .
+define the function <unk> with 2 arguments value and tags .
+call the method self . instance . unget with an argument exclude set to exclude .
+call the function mark_for_escaping with an argument value , return the result .
+for every path in paths ,
+return cache_key .
+try ,
+for every elt in list_ call the method bytes_to_text with 2 arguments : elt and self . encoding , for every elt in list_ .
+if exclude is not None ,
+return self . content .
+if settings . DEBUG is true ,
+if not ,
+call the method self . xml . startElement with 2 arguments : <unk> and integer <unk> .
+if iri is None ,
+call the method self . can_read . release .
+derive the class DictWrapper from the _LazyDescr base class .
+remove idx and idx into a list , substitute the result for value .
+if ttl is not None ,
+result is an empty list .
+call the function _get_timezone_name , if it evaluates to true ,
+if not ,
+divide is integer <unk> .
+if filters is true ,
+define the function save_m2m .
+if IndexError exception is caught ,
+call the function locks . modules with an argument sys . modules , on the result call the function is_library_missing with an argument settings . modules .
+try ,
+if exception is caught ,
+append d to self . fed .
+if not ,
+call the method field . to_python with an argument field_node , strip the result of whitespaces from both ends , substitute the result for value .
+call the function <unk> with an argument value , substitute the result for value .
+derive the class EndToken from the base class TokenBase .
+if KeyError exception is caught ,
+if settings . USE_TZ is true ,
+from django . utils import translation into default name space .
+define the function save_m2m .
+call the method datetime_safe . new_date with an argument value , substitute the result for value .
+define the method hidden_fields with an argument self .
+return boolean True .
+define the method copy with an argument self .
+call the method self . validate_key with argument key .
+substitute <unk> for id .
+define the function get_standard_processors .
+return dec .
+define the function include_is_allowed with an argument date .
+decorator function register . tag with an argument <unk> .
+get <unk> attribute from the options object , if it exists substitute it for self . exclude , if not self . exclude is None .
+from django . conf import settings into default name space .
+substitute i for self . pointer .
+append an empty string to field_notes .
+if old_path has an attribute <unk> ,
+return an instance of <unk> class , created with an argument urlconf .
+define the function get_deserializer with an argument middleware_class .
+define the method clean with arguments self and value .
+return line .
+derive the class NumberInput from the TextInput base class .
+classmethod decorator ,
+define the method tzname with 2 arguments self and dt .
+define the method autocomplete with an argument self .
+output_transaction is boolean False .
+skip this loop iteration .
+call the function six . text_type with 3 arguments : request . __class__ . __name__ , path and six . text_type , use the result as an argument for the call to the function force_str , use the result as an argument for the call to the function force_str , return the result .
+substitute nodelist_empty for self . nodelist_empty .
+define the method __init__ with 4 arguments : self , name , nodelist and parent set to None .
+default is integer <unk> .
+raise an ValueError exception with an argument <unk> converted to a string .
+if StandardError , renamed to e , exception is caught ,
+call the method self . file . close , return the result .
+substitute serializers for serializers .
+if m is false ,
+substitute i-th element of self . initial for the value under the <unk> key of the defaults dictionary .
+categories is a list containing results of the function force_text called with an argument c , for every c in categories .
+if templatetags_modules is false ,
+substitute obj_pk . pk for obj_pk .
+if not ,
+define the function <unk> with 2 arguments parser and token .
+sum arg and arg , substitute the result for arg .
+call the function _ with an argument <unk> , return the result .
+call the method date . year with arguments date . year , date . day and date . day .
+if migrations_directory file path exists ,
+if IndexError exception is caught ,
+from django . utils import six into default name space .
+if dec_part is true ,
+INFO is integer 300 .
+return result .
+if Resolver404 exception is caught ,
+decorator register with an argument Tags . compatibility .
+if self . _dir file path doesnt exists ,
+<unk> is an instance of object class .
+define the method urlconf_module with an argument self .
+if app_config . label is contained in loader . migrated_apps ,
+if os . name equals <unk> ,
+call the function conf , substitute the result for params .
+return template_name .
+if not ,
+try ,
+for every opt in options , if contained in the first element of <unk> is not contained in the first element of the result , substitute it for options .
+skip this loop iteration .
+for every v in self . value call the function force_text with an argument v , for every v in self . value .
+substitute i for p .
+substitute self . _current for self . _current .
+call the function timezone . get_current_timezone , substitute the result for current_timezone .
+decorator function register . filter with an argument is_safe set to boolean True .
+substitute settings . <unk> for self . password and settings . <unk> , respectively .
+if _default is None ,
+derive the class Command from the AppCommand base class .
+if TypeError or ValueError exceptions are caught ,
+from importlib import import_module into default name space .
+return self . size .
+call the method parser . compile_filter with an argument value , append the result to args .
+return an instance of FixedOffset class , created with 3 arguments : salt , value , key and result of the function digest . digest .
+__all__ is a tuple containing 2 elements : <unk> and <unk> .
+define the method __repr__ with an argument self .
+remove original_path argument .
+call the method __init__ from the base class of the class URLValidator .
+call the method self . _init_translation_catalog with an argument token .
+from __future__ import unicode_literals into default name space .
+if field_value is not None ,
+define the method __init__ with 4 arguments : self , required set to boolean True , widget set to boolean True ,
+raise an ValueError exception with an argument <unk> set to <unk> .
+define the function <unk> with an argument etag_str .
+substitute conditions_nodelists for self . conditions_nodelists .
+if InputStreamExhausted exception is caught ,
+if value has an attribute <unk> and value is not an instance of six . text_type class ,
+import module os .
+call the method domain_part . encode with an argument <unk> , call the method decode on the result with an argument <unk> , substitute the result for domain_part .
+call the method parser . add_argument with 5 arguments : <unk> , action set to <unk> , <unk> set to <unk> , <unk> set to <unk> , <unk> set to <unk> <unk> <unk> . <unk> " .
+substitute complain for __setitem__ .
+if row_data is contained in seen_data ,
+return a tuple with 2 elements : return value of the function _generator . join called with an argument l , and return value of the function pformat called with an argument l .
+if fk_name is true ,
+call the function force_text with an argument value , substitute the result for value under the <unk> key of the final_attrs dictionary .
+call the function func with 2 arguments : unpacked list args and unpacked dictionary kwargs , use the result as an argument for the call to the function mark_safe , return the result .
+return the result of the method self . check_migrations , return the result .
+try ,
+from django . utils . six . moves import MONTHS into default name space .
+call the method self . stdout . flush .
+if ValueError , TypeError or OverflowError exceptions are caught ,
+call the method router . get_migratable_models with arguments app_config and connection . alias , substitute the result for app_models .
+get the value under the header converted to lowercase key of the self . _headers dictionary , substitute it for value under the header converted to lowercase .
+call the method form . save_m2m .
+substitute second element of bits for remaining_bits .
+call the signals . request_finished . send method with sender set to self . __starttag_text as argument .
+call the method parser . add_argument with 5 arguments : <unk> , default set to DEFAULT_DB_ALIAS , and help set to a string ' <unk> to print print the SQL to print the SQL to . ' .
+from email . message import sql_all into default name space .
+substitute args for self . args .
+substitute request for self . request .
+if <unk> is not contained in ip_str ,
+if help_texts is not None ,
+attrs is an empty list .
+write string ' <unk> ) ' to out .
+define the function random with an argument value .
+unpack is a tuple with 2 elements : sys . stdout and <unk> set to sys . stdout . isatty .
+write title to the self . stdout stream .
+derive the class SimpleCookie from the http_cookies . SimpleCookie base class .
+convert values into a list , substitute it for values .
+if self . connection is true ,
+define the method setdefault with 3 arguments : self , key and default set to None .
+return msg .
+if KeyError exception is caught ,
+define the function MovedModule with an argument move .
+return msg .
+append <unk> to plural . contents .
+substitute app_name for command .
+if not ,
+join func . __class__ . __module__ , func . __name__ and func . __name__ , substitute the result for self . html_initial_id .
+import module bpython .
+substitute first element of the result for tagname .
+derive the class CacheHandler from the object base class .
+define the method get_nodes_by_type with 2 arguments : self and nodetype .
+substitute sysid for self . sysid .
+if data is true , substitute it for an empty list .
+if charset equals to <unk> ,
+call the function os . <unk> , if it evaluates to greater than integer 0 ,
+derive the class Context from the BaseContext base class .
+define the function do_ifequal with 3 arguments : format , var_node and serializers set to None .
+define the method __init__ with 4 arguments : self , urlconf_name , default_kwargs set to None , app_name set to None and namespace set to None .
+if commit is false ,
+substitute value under the ns key of the resolver . _levelNames dictionary for app_list .
+break from the loop execution .
+return key and owner .
+otherwise if self . _meta . exclude is true and field . exclude is contained in self . _meta . exclude ,
+if app_dir is not a directory ,
+join dirpath and filename into a file path , use it as an argument for the call to the function os . path . join .
+define the method compress with 2 arguments : self and data_list .
+otherwise if value is not an instance of ConvertingList and value is an instance of list type ,
+if end ends with <unk> ,
+call the function logging_config_func with an argument value .
+buffer_types is a length of existing .
+call the function allow_lazy with 2 arguments : result of the function six . text_type and six . text_type .
+call the method __init__ from the base class of the class LoaderOrigin , with an argument display_name .
+if loader is an instance of tuple or list types ,
+return s .
+do nothing .
+if not ,
+call the method parser . print_help with an argument clean_data .
+WARNING is integer <unk> .
+define the function abspathu with an argument path .
+try ,
+call the method obj . save with arguments using set to self . using .
+call the function lines with an argument lines , join the result into a string , return the result .
+get the value under the <unk> key of the self . options dictionary , if it is true ,
+append f . name to exclude .
+append field to field_notes .
+call the function os . makedirs with argument self . default_locale_path .
+call the method self . as_widget with 3 arguments : tp , attrs and unpacked dictionary kwargs , return the result .
+return result .
+call the method connection . introspection . <unk> with an argument <unk> set to boolean True , substitute the result for tables .
+substitute <unk> for output .
+call the function curry with 2 arguments : _proxy_method and method set to connection . decode , substitute the result for decode .
+raise an ImportError exception with an argument <unk> .
+if value is an instance of list type ,
+derive the class BoundaryIter from the six . Iterator base class .
+convert host to a string and return it .
+substitute i-th element of self . forms for form .
+substitute kwargs for self . kwargs .
+if f . unique is true ,
+increment self . loaded_object_count by objects_in_fixture .
+if not ,
+call the method self . connection . <unk> with arguments from_email , sysid and message . status_code , substitute the result for self . connection .
+call the method apps . get_model with 2 arguments <unk> and <unk> .
+call the method self . stdout . write with argument <unk> , use the result as an argument for the call to the self . stdout . write method .
+if UnicodeDecodeError exception is caught ,
+convert self . name into boolean and return it .
+call the method operator . <unk> with an argument integer 0 , substitute the result for default_translation .
+from django . core . mail . backends . base import BaseEmailBackend into default name space .
+join app_dir and <unk> into a file path , append the result to sql_files .
+try ,
+for every regex in return value of the function chain , called with an argument ,
+call the method self . __bytes_cast , return the result .
+define the method __init__ with 2 arguments : self and nodelist .
+raise an ValidationError with 2 arguments : value under the <unk> key of the self . error_messages dictionary and code set to <unk> .
+if _cached_modules equals _cached_modules ,
+call the function Node with 3 arguments : criticals and return value of the method Node . filter , called with 2 arguments : token . <unk> and an empty list , substitute the result for decorator .
+for every lib in builtins ,
+derive the class LocalTimezone from the RssFeed base class .
+call the function self . path with argument name , use the result as an argument for the call to the function datetime . fromtimestamp , use the result as an argument for the call to the function datetime . fromtimestamp , return the result .
+for every format in self . input_formats ,
+substitute i-th element of tokens for token .
+call the function io . open with orig_file and encoding set to settings . FILE_CHARSET as arguments , with the result renamed to fp , perform the following :
+do nothing .
+for every bit in bits ,
+call the function urlresolvers . set_urlconf with urlconf as the argument .
+delete self . STDOFFSET .
+get the id of the self object , use it as a key to obtain the value from the memo dictionary , substitute self with it .
+if self . help is true ,
+if value under the <unk> key of the item dictionary is not None ,
+if to is true ,
+if not ,
+define the function remove_tags with 2 arguments : html and tags .
+call the method __init__ from the base class of the DebugLexer class , with arguments template_string and origin .
+call the method parser . add_argument with 5 arguments : <unk> , metavar set to <unk> , nargs set to <unk> , <unk> set to <unk> , <unk> set to <unk> <unk> .
+child_nodelists is a tuple with 2 elements : <unk> and <unk> .
+call the method related . natural_key , substitute the result for value .
+close the file fd .
+define the method new_file with 4 arguments : self , field_name , file_name , content_type , content_length , content_length , charset and content_type_extra set to None .
+substitute <unk> for cls . _delegate_bytes for cls . django_template_source .
+for every obj in return value of the function inspect . load called with arguments : stream and opening set to imported_objects , and unpacked dictionary options ,
+define the function <unk> with an argument value .
+args is an empty tuple .
+call the method self . _create_attachments with an argument msg , use the result as an argument for the call to the self . _create_attachments method , return the result .
+call the method datetime . datetime . strptime with 2 arguments : result of the function force_str called with an argument value , and format , return the result .
+raise TemplateSyntaxError (
+if value is not None ,
+if not ,
+if id_for_label is true ,
+for every message in messages ,
+try ,
+for every cat in value under the <unk> key of the item dictionary ,
+property decorator ,
+if not ,
+from importlib import import_module into default name space .
+if expires is lesser than now ,
+call the method <unk> . decode with an argument charset , substitute the result for msg_data .
+define the function reverse with 4 arguments : viewname , urlconf set to None , args set to None , prefix set to None , current_app set to None and current_app set to None .
+convert value into an floating point number , substitute it for value .
+define the method __setattr__ with self , name and value as arguments .
+if doublecolon_start equals integer -1 ,
+if fp is an instance of unicode and fp . encoding is not None and fp is not None ,
+define the method upload_complete with arguments self and field .
+_cached_filenames is an empty list .
+if PY3 is true ,
+append mw_instance . fetchone to the standard list .
+get the value under the <unk> key of the options dictionary , substitute it for self . load_initial_data .
+call the method m . end , substitute the result for rest and rest , respectively .
+return an instance of a class <unk> , created with an argument words .
+define the method __init__ with 3 arguments : self , input_data and first .
+if not ,
+_meth_func is integer <unk> .
+if id_ is true ,
+if self . allow_folders is true ,
+get <unk> attribute of the _active object , if it exists substitute it for t , if not t is None .
+substitute WSGIRequest for smart_str .
+get the value under the ' <unk> ' key of the options dictionary , substitute it for connection .
+try ,
+import module base64 .
+define the function python_2_unicode_compatible with an argument klass .
+derive the class DisallowedHost from the SuspiciousOperation base class .
+import module time .
+try ,
+raise an ValueError exception with an argument string " <unk> <unk> of config value under the <unk> key .
+add k to excluded_models set .
+substitute EscapeBytes for self . months .
+otherwise if domain equals to <unk> equals to <unk> , or if domain equals to <unk> equals to <unk> ,
+define the method id_for_label with 2 arguments : self and id_ .
+call the function msvcrt . get_osfhandle with return value of the function BaseForm , use the result as an argument for the call to the function msvcrt .
+if use_grouping is true ,
+call the function _trans . gettext_noop with an argument message , return the result .
+return nothing .
+if self . to_field_name is true , substitute it for key , otherwise substitute <unk> for key .
+define the method root_attributes with an argument self .
+call the function safe_join with 2 arguments template_dir and template_name , yield the result .
+call the method self . tag with 2 arguments : function_name and compile_func .
+call the method formats . sanitize_separators with an argument value , substitute the result for value .
+define the method nud with 2 arguments : self and parser .
+import module warnings .
+return lib .
+<unk> is an empty list .
+call the method executor . loader . <unk> with an argument apps , call the method <unk> on the result with an argument apps , call the method <unk> on the result , substitute the result for autodetector .
+decorator function register . filter with an argument is_safe set to boolean True .
+raise an CommandError exception with an argument <unk> ,
+<unk> is an instance of a RegexValidator class , created with 3 arguments : _string_concat , return value of the function _ called with an argument <unk> , return value is the result of the function _ called with an argument <unk> .
+return filelist .
+if TypeError of six . PY2 is true , call the function six . PY2 with an argument six . PY2 .
+if lang is None ,
+append a tuple with 2 elements : filename and content , to self . attachments .
+return <unk> <unk> with self . __class__ . __name__ , self . level , self . hint , self . hint , self . hint , self . hint and self . hint , respectively .
+call the method self . update with an argument unused_char .
+from django . http . utils import get_current_timezone_name and get_exception_reporter_filter into default name space .
+call the function _add_doc with 2 arguments : statement and <unk> .
+call the method __init__ from the base class of the class MultiWidget , with an argument attrs .
+define the method __init__ with 2 arguments : self and name .
+call the method self . stdout . write with <unk> as argument , write the result to self . stdout .
+if not ,
+decrement remaining by length of buf .
+call the method parser . add_argument with 2 arguments : <unk> set to the return value of the call to the parser . add_argument method and <unk> as the arguments .
+if Exception , renamed to e , exception is caught ,
+raise an CommandError exception with an argument <unk> , use the result as an argument for the call to the function CommandError , respectively .
+call the method message . replace with 2 arguments : <unk> and string " <unk> ( <unk> ) ( <unk> ) " , replace ' %s ' with <unk> of <unk> converted to a string , return the result .
+substitute python_reloader for int2byte .
+if self . use_natural_primary_keys is false or obj doesnt have <unk> ,
+define the method reader_enters with an argument self .
+if not ,
+context is an instance of Context class , created with 4 arguments : unpacked dictionary options , unpacked list fixture_labels and <unk> set to boolean False .
+define the function strip_spaces_between_tags with an argument value .
+import module tarfile .
+if self . decimal_places is not None and decimals is greater than self . decimal_places ,
+define the method __enter__ with an argument self .
+get the value under the <unk> key of the temp_lib dictionary , if it doesnt exists return value under the <unk> key of the cls dictionary , if the key doesnt exists return an empty list , if not , return an empty string .
+for every form in self . _ordering ,
+if VariableDoesNotExist exception is caught ,
+<unk> is None .
+call the function ConvertingTuple with an argument value , substitute the result for value .
+call the method m . groups , substitute first element of the result for d .
+call the method connection . NOTICE with an argument string ' <unk> ' , substitute the last element of the result for script_name .
+if self . max_digits is not None ,
+x is an integer 0 .
+substitute <unk> for field_type .
+from django . utils . <unk> import normalize into default name space .
+call the method handler . addQuickElement with 2 arguments : <unk> and value under the <unk> key of the item dictionary , call the method handler . addQuickElement with an argument value .
+if not ,
+set attr . name attribute of Module_six_moves_urllib_response object to attr .
+substitute self . waiting_readers for t .
+call the function allow_lazy with an argument chars , substitute the result for chars .
+call the method __init__ from the base class of the class HttpResponse , with 2 arguments : unpacked list args , and unpacked dictionary kwargs .
+try ,
+if initial is not None ,
+define the method validate_unique with an argument self .
+call the method tempfile . NamedTemporaryFile with an argument suffix set to <unk> , substitute the result for file .
+old_handler is None .
+raise an ValidationError with 3 arguments : value under the <unk> key of the self . error_messages dictionary , code set to <unk> , and params set to <unk> .
+convert value into an integer and substitute it for value .
+for every k in sorted_items ,
+substitute value under the field . error_messages key of the self . fields dictionary for error_messages .
+define the function get_tag_uri with an argument request .
+convert locale to lowercase , return it .
+join statements into a string , return it .
+return func .
+define lambda function that returns self . file . __init__ field , use it as an argument for property function , put the result in __init__ .
+for every k in self . keyOrder append list containing elements of self . keyOrder , return the resulting list .
+if value is None ,
+if stream_or_string is an instance of bytes ,
+return boolean False .
+if ImportError exception is caught ,
+call the method self . importer with an argument used , substitute the result for found .
+call the method self . validators . remove with an argument self . _regex_validator .
+return self . _client .
+call the function os . chmod with arguments path and stat . <unk> .
+call the method connection . introspection . table_names with an argument cursor , for every loop in the result ,
+otherwise if over_bytes is true ,
+return the value under the format key of the _serializers dictionary , return it .
+if close is true ,
+substitute serialize for __str__ .
+try ,
+try ,
+call the method m . groups , substitute first element of the result for idx .
+substitute second element of elt for param .
+define the method _get_choices with an argument self .
+from django . utils . datastructures import MultiValueDict into default name space .
+define the method <unk> with an argument self .
+return result .
+update item dictionary with kwargs .
+get the value under the backend key of the request . COOKIES dictionary , substitute it for lang_code .
+upto is integer 0 .
+raise an CommandError with an argument <unk> .
+define the method incr_version with 3 arguments : self , length and truncate .
+derive the class <unk> from logging . Filter base class .
+for every char in fmt ,
+for every state in return value of manifest . items method ,
+sort elements of modules into a list , return it .
+call the method calendar . NOTICE , convert the result to a integer , use it as an argument for the call to the function calendar , convert the result into a integer , return it .
+if arg is None ,
+property decorator ,
+join statements into a string , return it .
+define the method __init__ with 4 arguments : self , max_length set to None , min_length set to None , unpacked list args and unpacked dictionary kwargs .
+call the function <unk> , substitute the result for location .
+if KeyError exception is caught ,
+finally perform ,
+substitute <unk> for self . app_label .
+remove dirname from the dirnames .
+define the function get_system_encoding with an argument url .
+return data .
+from django . conf import settings into default name space .
+return an instance of a class RegexURLResolver , created with 2 arguments : <unk> and an empty list .
+substitute attrs for attrs .
+substitute DEFAULT_MAX_NUM for NamedTemporaryFile .
+get the value under the <unk> key of the disposition dictionary , substitute it for file_name .
+if length of self . initial is true , return boolean True , otherwise initial_forms is boolean False .
+if self . level is greater or equal to ERROR , return boolean True , otherwise return boolean False .
+if transfer_encoding is not None ,
+try ,
+define the function <unk> with 2 arguments value and arg set to None .
+leave_locale_alone is boolean True .
+models is integer <unk> .
+for every node in self . nodelist_loop ,
+substitute CacheEntry for self . _encoding .
+increment i by integer 1 , substitute the result for i .
+otherwise if field . rel is true and field . rel is an instance of models . ManyToManyRel ,
+val is None .
+substitute _iteritems for iteritems .
+convert self . host into a string , substitute it for self . connection .
+call the function get_library with an argument taglib , substitute the result for lib .
+call the method self . build_attrs with an argument id , substitute the result for pluralmatch .
+if path is not contained in self . _js ,
+if value under the <unk> key of options dictionary is None ,
+return FormSet .
+define the function curry with 3 arguments : argset , unpacked list args and unpacked dictionary kwargs .
+call the method parser . next_token , substitute the result for token .
+decorator function register . filter with an argument is_safe set to boolean False .
+call the function func with an argument path .
+call the method formats . number_format with 2 arguments : number and new_file_name , use the result as an argument for the call to the function mark_safe , return the result .
+define the method __getinitargs__ with an argument self .
+from django . utils . six . moves import ProjectState as _ExpatParser into default name space .
+define the function <unk> .
+substitute cls . __text_cast for cls . __unicode__ .
+if self . verbosity is greater or equal to integer 2 ,
+loaded_objects_in_fixture is integer <unk> .
+define the method __hash__ with an argument self .
+call the method self . _archive . close .
+from django . utils . formats import localize into default name space .
+define the method __init__ with 4 arguments : self , data set to None , files set to None , auto_id set to None , error_class set to None , error_class set to None and error_class set to an empty tuple .
+define the method created_time with 2 arguments : self and options .
+from django . utils . safestring import SafeData and EscapeData into default name space .
+define the method serialize with 3 arguments : self , queryset and unpacked dictionary options .
+convert value to lowercase , return it .
+if ValueError exception is caught ,
+append filename to filenames .
+append first element of elt to piece .
+for every base in reversed list new_class . local_fields ,
+import module os .
+get <unk> attribute of the _active object , if it exists substitute it for t , if not t is None .
+from django . core . validators import cookie_date into default name space .
+delete the value under the key key of self . _expire_info dictionary .
+if not ,
+zip field . rel . to . _meta . pk . pk . pk . pk and return value of the function smart_text , called with an argument v .
+property decorator ,
+return media .
+define the method handle_merge with arguments self , node and field .
+if end is lesser than integer 0 ,
+call the function os . umask with an argument umask .
+call the function re . compile with 2 arguments : <unk> and re . IGNORECASE , substitute the result for <unk> .
+call the function re . compile with 2 arguments : regex and re . UNICODE , substitute the result for unichr .
+obj is an instance of Node class , created with arguments : connector set to self . connector and negated set to self . negated .
+update self . default_args dictionary with self . default_args .
+if only_initial is false ,
+call the function sql_destroy_indexes with 3 arguments : app_config , self . style and connection , substitute the result for statements .
+if ValidationError , renamed to e , exception is caught ,
+call the function traceback . <unk> with an argument error_class , substitute second element of the result for filename .
+derive the class metaclass from the meta base class .
+return <unk> .
+substitute the last element of self . template_string for view_path .
+decorator stringfilter ,
+if ValueError exception is caught ,
+return first element of source and second element of params .
+call the method os . path . basename with an argument : first element of self . argv , substitute the result for self . prog_name .
+try ,
+call the method qs . using with an argument form . instance . get_all_field_names , substitute the result for qs .
+substitute nonlocal_root for translation . __cause__ .
+opt_dict is an instance of a class <unk> , created with 5 arguments : substitutions , an empty integer 0 , and integer 2 .
+append <unk> to comment_notes .
+import module sys .
+define the method <unk> with 4 arguments : self , key , delta set to integer 1 and version set to None .
+call the function reraise with 3 arguments : None , record , and None , substitute the result for exc_info .
+define the method __str__ with an argument self .
+call the function get_default_timezone , use the result as an argument for the call to the function _get_timezone_name , return the result .
+import module sys .
+derive the class Literal from the object base class .
+if LookupError exception is caught ,
+define the method as_string with arguments self and unixfrom set to boolean False .
+substitute old_method_name for self . old_method_name .
+call the method self . path with argument name , substitute the result for full_path .
+define the method handle with arguments self and unpacked dictionary options .
+call the method stream_or_string . read , substitute the result for stream_or_string .
+return an empty list .
+if TypeError or ValueError exceptions are caught ,
+otherwise if token . token_type equals integer 1 ,
+call the method to_delete . open ( ) .
+if length of list_ equals integer 0 ,
+return a list with 3 elements : display_name , second_item and old_style_list .
+define the function python_reloader with environ , default and default as arguments .
+if NotImplementedError exception is caught ,
+convert s to an integer , substitute it for value .
+define the method clean with arguments self and value .
+append a string " ( <unk> handlers for application <unk> % ( <unk> in app_config . label .
+define the method __bool__ with an argument self .
+if extend is boolean True ,
+call the method open_tags . index with an argument tagname , substitute the result for i .
+call the method domain . encode with an argument <unk> , call the method decode on the result with an argument <unk> , substitute the result for domain .
+from django . utils . encoding import force_text and iri_to_uri into default name space .
+write string ' # <unk> % % % " to out .
+write <unk> to self . stdout stream .
+import module tarfile .
+substitute BOOL for LockFileEx . modified_code .
+from django . utils import six into default name space .
+define the method __iter__ with an argument self .
+derive the class Command from the AppCommand base class .
+call the method new_name . find with an argument <unk> , if it evaluates to greater or equal to integer 0 ,
+return an instance of a class cls . year , called with 4 arguments : date , date . month , field . day , result of the function time . microsecond , and time . microsecond , and time . second , return the result .
+call the method MIMEMultipart . __init__ with 4 arguments : self , _subtype , boundary , iterations and unpacked dictionary resultclasses .
+if filename ends with extensions and filename is contained in extra_files ,
+call the method middleware . fetchone with an argument request , substitute the result for result .
+define the method render with 2 arguments : self and context .
+skip this loop iteration .
+return <unk> .
+define the function get_bytes_from_wsgi with environ , default and default as arguments .
+derive the class JsLexer from the XMLGenerator base class .
+call the method _trans . ngettext with 3 arguments : singular , plural and number , return the result .
+return <unk> .
+write <unk> to the self . stdout stream .
+call the function getInnerText with an argument k , for every k in keys , call the function getInnerText with an argument k , substitute the result for field_value .
+call the function os . <unk> , if it evaluates to greater than integer 0 ,
+if locale_dir is false ,
+call the method parser . add_argument with 5 arguments : <unk> , metavar set to <unk> , nargs set to <unk> , <unk> set to <unk> <unk> , use the result as an argument for the call to the method parser . delete_first_token .
+call the method self . writer_leaves .
+templatetags_modules is an empty list .
+from django . forms import autoreload into default name space .
+call the connection . cursor method , substitute the result for cursor .
+return the value under the self . initial_form_count key of the self . forms dictionary .
+call the method g . flatten with 2 arguments : self and unixfrom set to unixfrom .
+for every opt in tuple with 4 elements : <unk> , <unk> and <unk> ,
+define the method close with argument self .
+derive the class StreamingHttpResponse from the SuspiciousOperation base class .
+delete the value under the key key of self . _cache dictionary .
+return <unk> .
+define the method _get_name with an argument self .
+if second element of url_fields is false ,
+substitute file . name for filename .
+otherwise if <unk> is contained in part ,
+otherwise if maxsize is None ,
+define the method extract with 2 arguments self and filename .
+call the os . <unk> function .
+if i is greater than sys . LANGUAGES_BIDI ,
+define the method utcoffset with 2 arguments self and dt .
+if self . _wrapped is empty ,
+append termios to the end of attr_list .
+if self . empty is true ,
+raise TemplateSyntaxError (
+format is a lambda function with 3 arguments : parent_model , integer 0 , integer 0 ,
+from django . utils . six . moves import xrange into default name space .
+skipped is a list containing an element <unk> .
+call the function select_template with an argument file_name , substitute the result for t .
+call the function register_serializer with 2 arguments : <unk> and <unk> .
+yield <unk> .
+if self . parent_instance is not None ,
+if dklen is false ,
+define the method __getitem__ with 2 arguments : self and idx .
+derive the class Command from the BaseCommand base class .
+substitute WSGIServer for int2byte .
+call the method termios . <unk> with arguments fd , termios . <unk> and sender .
+do nothing .
+if sep is an instance of unicode ,
+call the function lazy with 2 arguments : ugettext and six . text_type , substitute the result for ugettext_lazy .
+if field is not contained in self . fields ,
+call the function activate with an argument self . _iterator .
+call the method copy . deepcopy with 2 arguments : self . _wrapped and memo , return the result .
+call the function register_serializer with 3 arguments : <unk> , string ' <unk> , %s ( <unk> ) ( <unk> ) ( <unk> ) ( <unk> ) ( <unk> ) ) , <unk> ) * ( <unk> ) ) ,
+define the function smart_split .
+get the value under the <unk> key of the options dictionary , use it as the key to get the value from the connections dictionary , substitute the result for connection .
+import module fnmatch .
+define the method default with 2 arguments : self and o .
+for every locale in locales ,
+raise an StopIteration exception .
+call the method connection . creation . <unk> with arguments verbosity set to verbosity , <unk> set to boolean False , and content_type set to boolean False .
+define the method _init_translation_catalog with an argument self .
+call the function _parse_date_fmt , for every field in result ,
+define the function <unk> with length of length and <unk> set to integer <unk> as arguments .
+define the method make_key with self class instance , key and version defaulting to None as arguments .
+substitute path and var2 for self . path and self . extra_headers , respectively , respectively , respectively .
+evaluate the function limit_choices_to , substitute the result for limit_choices_to .
+increment i by j , substitute the result for i .
+call the method parser . add_argument with 5 arguments : <unk> , default set to DEFAULT_DB_ALIAS , and help set to a string ' <unk> to print print the SQL to print the SQL to . ' .
+errors is an empty list .
+define the method invalid_block_tag with 3 arguments : self , token , command and parse_until set to None .
+if not ,
+call the method Model . _meta . get_field with 2 arguments : <unk> and None . _meta . pk , substitute the result for value under the medium key of the data dictionary . _meta . pk .
+define the method __init__ with 3 arguments : self , unpacked list args and unpacked dictionary kwargs .
+if value under the <unk> key of the self . feed dictionary is not None ,
+define the method id_for_label with 2 arguments : self and id_ .
+if f . path file path exists ,
+if opts . is_usable is true ,
+return None .
+if dirname is true , return boolean True , otherwise return boolean False .
+raise an CommandError exception with an argument <unk> is not a valid port <unk> <unk> with self . port .
+call the method options . get with an argument <unk> , substitute the result for database .
+do nothing .
+call the function c with an argument unpacked dictionary kwargs , substitute the result for result .
+if middleware has an attribute <unk> ,
+call the method dot_re . sub with 2 arguments : <unk> and text , return the result .
+if <unk> is contained in path and return value of the function path . find called with an argument <unk> is not equal to path and return value of the function path . find called with an argument <unk> is not contained in path ,
+<unk> is a list containing 2 elements : <unk> and raw string " <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> ( <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> ) <unk> <unk> " , replace ' %s ' with : <unk> and <unk> set to integer <unk> and <unk> .
+define the function no_style .
+if mtime is greater or equal to integer 2 ,
+define the method __deepcopy__ with 2 arguments : self and memo .
+from django . utils . _os import safe_join into default name space .
+call the method compiled_parent . items , for every refto and unused in the result ,
+substitute path_info for self . path_info .
+call the method changes . items , for every app_label and unused in the result ,
+define the function get_internal_wsgi_application .
+if VariableDoesNotExist exception is caught ,
+try ,
+substitute Command for <unk> .
+substitute length of version for l .
+call the function bound_func with 2 arguments : unpacked list args and unpacked dictionary m_kwargs , use the result as an argument for the call to the function rfc3339_date , use the result as an argument for the call to the function rfc3339_date , return the result .
+if UnicodeEncodeError exception is caught ,
+return j .
+yield palette .
+if nodelist is an instance of NodeList class ,
+_meth_self is an empty list .
+return s .
+call the function compile_string with 3 arguments : full_module_name , flags , integer 0 , integer 0 , integer 0 and fragment , respectively .
+from django . utils . deconstruct import deconstructible into default name space .
+call the function normalize with an argument quoted_url , use the first element of the result as an argument for the call to the function normalize , substitute the first element of the result for old_umask .
+if block_name is contained in parser . __loaded_blocks ,
+if can_fail is true ,
+substitute changeset for cache . cache .
+for every name in formatters ,
+define the function parse_color_setting with 2 arguments : request and response .
+define the function __wrapper__ with 2 arguments : unpacked list args and unpacked dictionary kw .
+if filename is not contained in _error_files ,
+return self . _encoding .
+define the method __len__ with an argument self .
+try ,
+call the function next with an argument bits , substitute the result for bit .
+call the function _i18n_cache_key_suffix with request and cache_key as arguments , return the result .
+if initial_value is callable object ,
+call the method form . add_initial_prefix with an argument name , substitute the result for self . match_re .
+from django . core . exceptions import MiddlewareNotUsed into default name space .
+call the method self . _get_scheme , return the result .
+call the method self . _delete with argument fname .
+call the function force_bytes , use the result as an argument for the call to the function hashlib . md5 , use the result as an argument for the call to the function hashlib . md5 , substitute the result for url .
+derive the class StreamingHttpResponse from the base class CharField class .
+try ,
+derive the class Loader from the Storage base class .
+if middleware has an attribute <unk> ,
+if not ,
+define the function is_naive with an argument value .
+define the method __init__ with 4 arguments : self , subject set to <unk> , body set to <unk> , body set to None ,
+define the function compile_string with 2 arguments : src and dst .
+if not ,
+if self . verbosity is greater or equal to integer 1 ,
+define the function mail_admins with 3 arguments : sep , format_string and <unk> .
+define the method popitem with an argument self .
+call the method token . split_contents , substitute the result for args .
+try ,
+define the method __delattr__ with 2 arguments : self and name .
+if not ,
+if not ,
+from django . utils . xmlutils import SimplerXMLGenerator into default name space .
+self . default_locale_path is None .
+call the method handler . endElement with an argument <unk> .
+register . tag decorator ,
+if length of words is greater than length ,
+if namespaces is true ,
+define the function url with 2 arguments : parser and token .
+import fcntl .
+if self . warning is an instance of Exception ,
+return settings . TEMPLATE_STRING_IF_INVALID .
+call the method parser . expression with an argument bp , substitute the result for self . second .
+for every model in model_list ,
+help is a string created by a mapping function , substitute the result for help .
+<unk> is a instance of a RegexValidator class , created with 3 arguments : <unk> , return value of the function _ called with an argument <unk> , return value is the result of the function _ , called with an argument <unk> set to a string , and <unk> <unk> <unk> .
+if loader is an instance of six . string_types ,
+raise an ContentNotRenderedError exception .
+define the method receive_data_chunk with arguments self , raw_data and start .
+from email . mime . message import BaseLoader into default name space .
+if Model . SMTPException exception is caught ,
+if BLOCK_CONTEXT_KEY is a tuple with 3 elements : self . name , and value under the BLOCK_CONTEXT_KEY key of the render_context dictionary and value under the BLOCK_CONTEXT_KEY key of the render_context dictionary .
+add digits to digits , substitute the result for str_hidden .
+if IOError exception is caught ,
+if LookupError exception is caught ,
+substitute length of text for end .
+with lock ,
+substitute name and nodelist for self . name and self . parent , respectively .
+define the method get_fqdn with an argument self .
+do nothing .
+code is an integer <unk> .
+if Exception , renamed to e , exception is caught ,
+call the method self . main_help_text . write with an argument commands_only set to boolean True , append the result to sys . stdout .
+call the method time . localtime with an argument stamp , substitute the result for tt .
+add delta and delta , return the result .
+if not ,
+import module itertools .
+substitute _urllib_robotparser_moved_attributes for file .
+for every attr in boundarystream ,
+do nothing .
+import module os .
+get the value under the <unk> key of the options dictionary , substitute it for using .
+define the function constant_time_compare with 2 arguments : url and safe set to <unk> .
+for every app_config in app_configs ,
+define the method as_text with 2 arguments : self and subject .
+for every field , messages in errors . error_dict . items method return value ,
+define the function <unk> with an argument value .
+from collections import FASTCGI_OPTIONS into default name space .
+return boolean False .
+while i is smaller than length of subject and i-th element of subject is an empty space ,
+if i is greater or equal to the result of the method self . initial_form_count , and i is greater than self . min_num ,
+call the function force_text with first element of choice as an argument , substitute the result for self . choice_value .
+call the method role . <unk> , substitute the result for role .
+if code is None ,
+from django . db import connections , router , transaction , DEFAULT_DB_ALIAS , DEFAULT_DB_ALIAS and DatabaseError into default name space .
+call the function hook , substitute the result for lexer .
+try ,
+from django . core . exceptions import FASTCGI_OPTIONS into default name space .
+e . args is a tuple containing 2 elements : strings and help is a tuple containing 2 elements : fixture_file and e , for e . args .
+from django . db . migrations . multipart import reduce into default name space .
+call the method parser . compile_filter with an argument , , use the result as an argument for the call to the method parser . compile_filter , substitute the result for filter_expr .
+call the function valid_ident with an argument seconds , substitute the result for seconds .
+self . waiting_readers is integer 0 .
+append <unk> of the <unk> <unk> from the <unk> <unk> of <unk> . __class__ . __name__ . __name__ .
+try ,
+return e .
+append f . name to exclude .
+convert value to an integer , convert it to a integer , return it .
+call the function re . compile with an argument <unk> , use the result as an argument for the call to the function re . compile , substitute the result for file_list .
+import this module .
+call the method data . getlist with an argument name , return the result .
+otherwise if ch equals <unk> ,
+if messages is not an instance of ValidationError ,
+define the function escape with an argument text .
+define the method strptime with 3 arguments : self , value and format .
+define the method dumps with 2 arguments : self and obj .
+substitute self . none_value for self . day_none_value .
+if six . PY3 is true ,
+call the method handler . endElement with an argument <unk> .
+try ,
+return default_key_func .
+if fset is not None ,
+self . _post is an instance of QueryDict class created with arguments <unk> and encoding set to self . _encoding , self . _files is an instance of QueryDict class .
+raise an ValueError exception with an argument <unk> converted to a string .
+call the method __deepcopy__ with an argument memo from the base class of the class ChoiceField , substitute the result for result .
+if not ,
+remove first element from colors .
+if not ,
+if inplural is true ,
+from django . conf import settings into default name space .
+args is an empty list .
+raise an ViewDoesNotExist exception with an argument <unk> .
+raise an CommandError exception with an argument <unk> , use the result as an argument for the call to the <unk> function , raise an exception , with <unk> as an argument .
+if ext is true ,
+if level is not contained in logging . LANGUAGES_BIDI ,
+schemes is a list with 5 elements : <unk> , <unk> , <unk> and <unk> .
+define the method __init__ with 3 arguments : self , file and name set to None .
+if self . verbosity is greater or equal to integer 2 ,
+define the method clean with arguments self , data and initial set to None .
+define the method __iter__ with an argument self .
+call the method self . add_truncation_text with 2 arguments : <unk> and truncate , substitute the result for opfunc .
+if ImproperlyConfigured , renamed to exc , exception is caught ,
+join self . dirpath and thefile into a file path , substitute it for work_file .
+if key is contained in cache ,
+call the method self . setFeature with 2 arguments : handler . <unk> and boolean False .
+requires_system_checks is boolean False .
+substitute value under the name key of the lib . tags dictionary for value under the name key of the temp_lib . tags .
+import module re .
+define the function all_valid with an argument m .
+from django . conf import settings into default name space .
+call the function allow_lazy with 2 arguments : display_name and six . text_type , substitute the result for exit_code .
+return wrapper .
+call the function kw with 2 arguments : integer <unk> and <unk> , substitute the result for value under the <unk> key of the kw dictionary .
+from django . utils . deprecation import RemovedInDjango19Warning into default name space .
+return boolean True .
+child_nodelists is a tuple with 2 elements : <unk> and <unk> .
+msg is a tuple with 2 elements : old_file_name and fdel , respectively .
+define the function default with 2 arguments value and arg .
+raise an TemplateDoesNotExist exception .
+call the method self . data . replace with 2 arguments : month and day , increment the result by integer 1 , multiply the result by integer 1 , substitute the result for jan1_weekday .
+return <unk> .
+help is a tuple containing a string : the result of the function database called with an argument string " <unk> the contents of the database to <unk> <unk> if the given <unk> <unk> <unk> " .
+property decorator ,
+call the method parser . add_argument with 5 arguments : <unk> , action set to integer <unk> , dest set to integer <unk> , default set to boolean True , default set to boolean True , and help set to integer <unk> .
+value is not None ,
+yield integer <unk> .
+return a tuple with 2 elements : reversed and result of the call to the function _len with an argument , return value converted to integer 0 .
+call the method self . _should_delete_form with 2 arguments source and msg .
+if link is not None ,
+derive the class Command from the BaseCommand base class .
+if msg is true ,
+define the method __repr__ with an argument self .
+define the method _set_name with an argument self .
+call the function sys . exc_info , substitute the result for <unk> and tb , respectively .
+call the function thread . start_new_thread with main_func and args as arguments .
+call the function mark_safe with an argument message , return the result .
+break from the loop execution .
+substitute pos for SafeString .
+import module glob .
+call the method self . __class__ with 3 arguments : <unk> , mutable set to boolean True , encoding set to self . encoding , substitute the result for result .
+append tuple with 2 elements : f . name and formfield .
+substitute newline for end .
+clean_data is an empty list .
+call the function smart_text with 3 arguments : field_value , value , value under the <unk> key of the options dictionary and strings_only set to boolean True , substitute the result for field_value .
+substitute <unk> for widget . input_type .
+call the method json . loads with an argument stream_or_string , substitute the result for objects .
+define the function <unk> with 2 arguments : unpacked list args and unpacked dictionary kwargs .
+register is an instance of Library class .
+define the method value_from_datadict with 4 arguments : self , data , files and name .
+create directories from the elements in filename .
+call the function sys . exc_info , substitute the result for exc_info .
+return the_path .
+if <unk> is None substitute self . ending for ending , if not substitute ending for ending .
+call the method self . path with argument name , substitute the result for full_path .
+return boolean False .
+return <unk> .
+call the function pgettext_lazy . isleap with 3 arguments : self . objects , self . stream , self . options and unpacked dictionary options .
+from __future__ import unicode_literals into default name space .
+if not ,
+return an instance of op class .
+return integer 0 .
+call the function pickle . dumps with value and pickle . HIGHEST_PROTOCOL as the arguments , substitute the result for pickled .
+return an empty list .
+define the method _has_changed with arguments self , initial and data .
+raise an ValidationError with arguments protocol and code set to <unk> .
+call the method self . format_output with 2 arguments template_name and template_dirs , return the result .
+if name is true , substitute it for function_name , if not substitute func . __name__ for function_name , otherwise substitute func . __name__ for function_name .
+substitute the length of middle for middle .
+call the function datetime with an argument unpacked list kw , return the result .
+substitute view_name for self . view_name .
+call the method httpd . set_urlconf with an argument new_params .
+define the method accessed_time with 2 arguments : self and name .
+return nothing .
+substitute app_name for self . app_name .
+raise an ImportError exception .
+define the function to_locale with 2 arguments : language and module_name set to boolean False .
+append form to self . saved_forms .
+substitute func for value under the <unk> key of the self . __dict__ dictionary .
+call the import_string with an argument dotted_path , substitute the result for attr .
+try ,
+post is a tuple with 2 elements : return value of the function pformat called with an argument : result of the function pformat called with an argument : result of the call to the function pformat with an argument request . POST .
+targets is a list containing tuple with two elements app_label and None .
+raise an AttributeError with an argument self . warning .
+if size is None ,
+call the method self . _lib . Client with an argument self . _servers , substitute the result for client .
+substitute _ for _ .
+call the function random . <unk> with an argument <unk> , substitute the result for str_hidden .
+join app_dir and domain into a list , substitute it for addr .
+if remaining is None ,
+from django . core . management . base import CommandError into default name space .
+call the method nodelist . render , use the result as an argument for the call to the function _slugify , return the result .
+call the method translation . activate with an argument settings . LANGUAGE_CODE .
+substitute csrf_token for value under the <unk> key of the wsgi_opts dictionary .
+if self . data . minute equals integer 0 and self . data . hour equals integer 0 ,
+call the method self . config . addHandler with an argument value under the f key of the self . config dictionary .
+self . _view_middleware is an empty list .
+call the method signing . get_cookie_signer with 2 arguments : salt set to key and salt set to max_age , call the method unsign on the result , substitute the result for value .
+do nothing .
+raise an <unk> exception with an argument <unk> , use the result as an argument for the call to the <unk> function , substitute the result for <unk> .
+write string " Installing custom <unk> " to self . stdout stream .
+skip this loop iteration .
+call the function template_localtime with arguments obj and context . use_tz , substitute the result for obj .
+if not ,
+substitute resolver_match for callback , and param_dict , respectively .
+read lambda function that returns self . file . read field , use it as an argument for property function , put the result in read .
+define the method __enter__ with an argument self .
+for every dirname in list out of files ,
+if app_labels is true ,
+call the method self . _truncate_html with 3 arguments : token . source , and msg , return the result .
+call the mail . send method , return the result .
+for every _ and nodelist in self . conditions_nodelists ,
+call the method self . fields . values , for every field in result ,
+convert data into a string , substitute it for data .
+call the function escape with an argument lead , substitute the result for lead and trail , respectively .
+try ,
+call the method qs . <unk> with 2 arguments : <unk> and limit set to boolean True , substitute the result for value under the f . name key of the data dictionary .
+import module re .
+from django . db import connections and DEFAULT_DB_ALIAS into default name space .
+property decorator ,
+call the method self . extra_headers . get with 2 arguments : <unk> and string ' . %s ' , substitute the result for value under the <unk> key of msg dictionary .
+convert format_type to an integer , convert the result to a integer , substitute it for self . _num_pages converted to an integer .
+method lru_cache . lru_cache with an argument maxsize set to None , as a decorator ,
+if not ,
+define the method sign with arguments self and value .
+define the method __init__ with 2 arguments : self and escape_html .
+LOCK_SH is integer <unk> .
+define the method load_template with 3 arguments : self , template_name , template_dirs set to None .
+derive the class LoadNode from Node base class .
+token is an instance of Token class , created with 2 arguments : TOKEN_BLOCK and block_content .
+for every name in return value of the function _parse_date_fmt , called with an argument first element of renamed_method , for every name in sorted .
+import module calendar .
+call the method queryset . none , substitute the result for qs .
+raise an ValidationError with 2 arguments : value under the <unk> key of the self . error_messages dictionary and code set to <unk> .
+if value under the <unk> key of the self . feed dictionary is not None ,
+if value is false ,
+if StandardError , renamed to e , exception is caught ,
+calculate the length of plan_node .
+signals is an integer <unk> .
+call the method lookups . appendlist with 3 arguments : pattern . name , tuple with 2 elements : bits and p_pattern , and pattern . default_args .
+define the method __str__ with an argument self .
+register . tag decorator ,
+define the method write_message with arguments self and message .
+if smtplib . SMTPException exception is caught ,
+is_usable is not None .
+call the function custom_sql_for_model with 3 arguments : model , style and connection , extend the output with the result .
+default_validators is an list with 2 elements : 2 elements : 2 elements : integer 2 and an empty list .
+define the method getlist with 2 arguments : self and key .
+define the method __iter__ with an argument self .
+deps is an empty list .
+if AttributeError exception is caught ,
+if not ,
+call the method self . clear_checkbox_name with an argument name , substitute the result for default_translation .
+raise CommandError (
+if self . match is None or call to the method self . match_re . search with an argument f , evaluates to true ,
+from django . utils import six into default name space .
+if value under the <unk> key of the item dictionary is not None ,
+return endpos .
+define the method __init__ with 4 arguments : self , template_string , origin set to None and name set to None .
+from django . core . serializers . python import Deserializer as trans into default name space .
+substitute regex for self . regex .
+define the method handle_noargs with 2 arguments : self and shell set to None .
+raise an NotImplementedError with an argument string " subclasses of Storage must provide a <unk> ( ) method <unk> .
+if register_to is true ,
+call the method __init__ from the base class of the class TemplateIfParser , with 2 arguments : unpacked list args , and unpacked dictionary kwargs .
+define the method writer_leaves with an argument self .
+call the method self . file . __enter__ .
+calculate is a instance of a class <unk> , created with an argument dt . year .
+output is an empty list .
+convert path into a string , substitute it for path .
+call the method __init__ from the base class of the class BaseTemporalField , with 2 arguments : unpacked list args , and unpacked dictionary kwargs .
+call the method handler . addQuickElement with 2 arguments : <unk> and value under the <unk> key of the self . feed dictionary .
+raise an ValueError exception with an argument <unk> , for <unk> <unk> is a lambda function with 2 arguments : <unk> <unk> is not a ForeignKey <unk> . _meta . app_label and pkg_name , respectively .
+try ,
+if value under the <unk> key of the item dictionary is true and value under the <unk> key of the item dictionary is true ,
+call the method dot_re . split with 2 arguments : length of result of the method msgs . split , join the result into a string , substitute the result for msgs .
+otherwise if first element of g equals <unk> ,
+call the method app . <unk> with an argument <unk> , substitute the result without the first element for app .
+otherwise if tzinfo is not None ,
+needs_multipart_form is boolean False .
+append node to nodelist .
+define the method value_from_datadict with 4 arguments : self , data , files and name .
+define the function _long_to_bin with 2 arguments : protocol and unpack_ipv4 .
+define the function make_middleware_decorator with an argument dirname .
+substitute schemes for self . schemes .
+call the method self . to_python with an argument value , strip the result of whitespaces from both ends , substitute the result for value .
+derive the class RegexURLResolver from the MIMEMixin base class .
+define the method __init__ with 4 arguments : self , _subtype , name , value , attrs and choices .
+otherwise if first element of args equals to <unk> ,
+call the function os . stat with an argument os . <unk> , if the result starts with <unk> ,
+call the method self . add_library with an argument lib .
+define the function dec with an argument func .
+if value under the <unk> key of the self . feed dictionary is not None ,
+append app_name to invalid_apps .
+call the function new_method_proxy with an argument operator . LANGUAGES , substitute the result for __contains__ .
+define the function <unk> with an argument s .
+from django . db import models into default name space .
+for every localedir in reversed list settings . LOCALE_PATHS ,
+call the method form . is_valid , if it evaluates to false ,
+define the method __init__ with 4 arguments : self , regex , urlconf_name , default_kwargs , default_kwargs , attrs set to None and namespace set to None .
+define the function parse_color_setting with an argument model .
+substitute link for UnlockFileEx and var2 , result of the link function .
+if <unk> is contained in ip_str ,
+get the value under the field . name key of the self . _current dictionary , call the iterator method on the result , substitute the resulting list for value under the field . name key of the self . _current dictionary .
+attrs is a dictionary created with 2 elements : attrs and unpacked dictionary <unk> , substitute the result for attrs .
+if dt is None , call the method dt . _isdst with an argument dt , substitute the result for is_dst .
+substitute old_setting for self . negate .
+call the function func with 2 arguments : unpacked list args and unpacked dictionary kwargs , return the result .
+define the method __iter__ with an argument self .
+from django . core . signals import request_finished into default name space .
+raise an Resolver404 exception with an argument <unk> .
+if version is None ,
+substitute self . fixture_object_count for self . fixture_object_count .
+substitute silent for self . silent .
+call the function new_method_proxy with an argument bool , substitute the result for __bool__ .
+call the function module . Command , return the result .
+with lock ,
+substitute node for bit .
+with self . mutex perform ,
+if second element of bits is None ,
+raise an exception .
+call the method attrs . setdefault with 2 arguments : <unk> and step .
+call the method self . extend_nodelist with 3 arguments : nodelist , opname as an empty tuple , and token as an empty tuple .
+update zfile dictionary with sub_match . kwargs .
+raise CommandError (
+define the method __init__ with 3 arguments : self , digits and sign set to <unk> .
+get <unk> attribute of the _active object , if it exists substitute it for t , if not t is None .
+call the function next with an argument input_iter , assign the result to tmpdir and escaped , respectively .
+if timeout is None ,
+from django . utils . encoding import force_st into default name space .
+call the method settings . is_overridden with an argument <unk> , if it evaluates to false ,
+join elements of self . vals into a <unk> , substitute it for ret .
+call the method handler . addQuickElement with 2 arguments : <unk> and cat .
+from __future__ import unicode_literals into default name space .
+help is a tuple containing 2 elements : _subtype and help for ' model ' .
+raise an NotImplementedError with an argument string " <unk> of BaseCache must provide a <unk> <unk> " .
+raise an ValidationError with 2 arguments : value under the <unk> key of the self . error_messages dictionary and code set to <unk> .
+derive the class JsLexer from the BaseArchive base class .
+substitute connection_reset for self . connection_reset .
+for every namespace and tempdir in pattern . <unk> method return value , for every namespace and tb in the result ,
+call the method callback . rindex with an argument <unk> , substitute the result for dot .
+_meth_self is a <unk> .
+raise an DisallowedHost exception with an argument <unk> set to string " <unk> only be <unk> <unk> " .
+define the method as_ul with an argument self .
+self . bad_cookies is an empty set .
+if not ,
+from django . core . serializers import base into default name space .
+call the method cursor . close .
+if not ,
+raise an InvalidTemplateLibrary exception with an argument <unk> , <unk> <unk> <unk> <unk> % ( taglib_module ) " .
+if not ,
+define the method __init__ with 4 arguments : self , location set to None , base_url set to None , ipv6 set to None and directory_permissions_mode set to None .
+try ,
+decorator stringfilter ,
+try ,
+for every e in self call the method self . join , join the results in a string , return the result .
+update self . __dict__ dictionary with state .
+call the method initial_form_count from the base class of the class BaseModelFormSet , return the result .
+substitute settings . MEDIA_URL for base_url .
+self . pointer is an integer 0 .
+define the function wrapper with 2 arguments : unpacked list args and unpacked dictionary kwds .
+return boolean False .
+answer is integer <unk> .
+try ,
+if ImportError exception is caught ,
+for every char in key ,
+ns_pattern is a integer <unk> .
+define the method __repr__ with an argument self .
+call the function get_bytes_from_wsgi with environ , <unk> and <unk> as arguments , substitute the result for script_url .
+call the method content . encode with an argument <unk> , substitute the result for content .
+define the method media with an argument self .
+derive the class Error from base class CheckMessage .
+if greater is greater than or equal to integer 6 and return value of the method calendar . isleap called with an argument self . data . year , evaluates to true ,
+if pofile is true ,
+break from the loop execution .
+call the function user_function with 2 arguments : unpacked list args and unpacked dictionary kwds , substitute the result for result .
+substitute file . mode for self . mode .
+define the method delete_many with 3 arguments : self , keys , and version set to None .
+call the method s . encode with an argument <unk> , return the result .
+define the method add_fields with arguments self , form and index .
+get the type of the self object , call the __bool__ method on the result with an argument self , return the result .
+child_nodelists is a tuple with 2 elements : <unk> and <unk> .
+get attr attribute from the self object , if it exists substitute it for nodelist , if not nodelist is None .
+derive the class DeserializationError from the Exception base class .
+call the method self . get with key and newretval as arguments , use the result as an argument for the call to the self . get method .
+from django . utils import six into default name space .
+define the method __call__ with arguments self and value .
+return plural_suffix .
+while self . tokens is true ,
+call the method __init__ from the base class of the EmailBackend class with arguments : unpacked list args , and unpacked dictionary kwargs .
+call the method handler . addQuickElement with 2 arguments : <unk> and value under the <unk> key of the self . feed dictionary .
+call the method self . requires_system_checks . copy , substitute the result for errors .
+define the method __init__ with 2 arguments : self and source .
+write errors to self . stdout stream .
+otherwise if item_type equals all_unique_checks ,
+derive the class RendererMixin from the object base class .
+define the method date with an argument self .
+if app_config is None ,
+if not ,
+call the method data . get with an argument self . _iterator , substitute the result for m .
+substitute settings . ROOT_URLCONF for urlconf .
+call the method <unk> . finditer with an argument text , for every bit in result ,
+substitute <unk> for value under the <unk> key of the _format_cache dictionary .
+settings . setter decorator ,
+increment i by integer 1 .
+call the method HTMLParser . __init__ with an argument self .
+from django . db import models and DEFAULT_DB_ALIAS into default name space .
+if length of bits is greater than integer 2 ,
+data_set is a set created with return value of the function force_text called with an argument value , for every value in data .
+yield it and boolean True .
+define the method __getstate__ with an argument self .
+call the function <unk> with an argument ip_str , substitute the result for ip_str .
+substitute collect and DebugParser for lexer_class and parser_class , respectively .
+if six . PY3 is true ,
+raise an exception .
+write errors to command . stdout .
+define the method prepare_value with 2 arguments : self and value .
+name is an empty list .
+if format_module_path is true ,
+call the method readline . <unk> with an argument <unk> .
+get config dictionary element under <unk> key , if it exists substitute it for name , if not , name is an empty string .
+define the method __str__ with an argument self .
+derive the class Command from the AppCommand base class .
+define the method _add_installed_apps_translations with an argument self .
+for every app_label in app_labels ,
+if settings . USE_TZ is not None ,
+sum offset and length of self . __starttag_text , substitute the result for offset .
+if KeyError exception is caught ,
+increment nesting by one .
+if name is not contained in parser . _namedCycleNodes ,
+call the method self . main_help_text . write , use the result as an argument for the call to the function sys . stdout . write .
+define the method start_object with arguments self and obj .
+compare is a <unk> function with 4 elements : <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> and <unk> .
+return data .
+call the method base64 . <unk> with length of s as an argument , use the result as an argument for the call to the method base64 . <unk> , return the length of the result .
+call the function allow_lazy with an argument mod_name , substitute the result for mod_name .
+if tok starts with <unk> ,
+for every program in template_name_list ,
+if f . <unk> is true ,
+return last element of self . dicts .
+define the function get_unbound_function with an argument unbound .
+substitute value under the <unk> key of the options dictionary for app_label .
+if self . domain equals integer <unk> ,
+if imatch is true ,
+return last last elements of output .
+call the method shutil . unget with 2 arguments : the_path and ignore_failures .
+if self . _num_pages is true ,
+if file path doesnt exists ,
+call the function pickle . loads with argument pickled , return the result .
+return s .
+text_type is a string .
+return <unk>
+try ,
+do nothing .
+return data .
+call the function conditional_escape with 2 arguments : force_text and value , substitute the result for value .
+buffer_types is a tuple with 2 elements : addr and port .
+if not ,
+raise an StopIteration exception .
+if settings . configured is true ,
+call the method run_from_argv from the base class of the class Command , with an argument argv .
+call the function _trans . get_language , return the result .
+call the method __copy__ from the base class of the class Context , substitute the result for duplicate .
+for every handler in handlers ,
+return an instance of <unk> class , created with an argument timezone .
+if key and version are not None , return boolean True , otherwise return boolean False .
+if can_fail is true ,
+define the method strptime with arguments self and value .
+from django . apps import apps into default name space .
+call the function _ with an argument <unk> set to a string , substitute the result for message .
+from django . utils . safestring import mark_safe and SafeData into default name space .
+call the function validate_ipv46_address .
+multiply is a <unk> object with <unk> , <unk> and <unk> .
+from django . utils import six into default name space .
+if not ,
+define the function python_reloader with 3 arguments : model , form , fields set to create_models , exclude set to None ,
+call the function _slugify with an argument value , substitute the result for new_value .
+call the function get_exception_reporter_filter with an argument ip_str , substitute the result for step .
+if self . asvar is true ,
+remove attr dictionary entry under the attr key .
+allow_multiple_selected is boolean False .
+import module tempfile .
+call the method __init__ from the base class of the class ComboField , with 2 arguments : unpacked list args , and unpacked dictionary kwargs .
+call the function trim_whitespace with an argument request , use the result as an argument for the call to the method to_delete . update .
+call the method token . split_contents , substitute the result for bits .
+call the os . makedirs function with self . _dir and <unk> as arguments .
+derive the class Serializer from the base . Serializer base class .
+if not ,
+substitute save_m2m for self . test_runner .
+call the method self . _cache . decr with key and delta as arguments , substitute the result for val .
+derive the class HttpResponseRedirectBase from the HttpResponse base class .
+return ret .
+call the method fp . write with an argument data .
+call the function new_method_proxy with an argument str , substitute the result for __str__ .
+call the function convert_old_style_list with an argument best_doublecolon_len , substitute the result for forms_valid .
+to_unicode is a list containing tuple with 2 elements : <unk> and <unk> .
+call the function call_command with 4 arguments : <unk> , <unk> , verbosity set to self . verbosity , connection set to boolean True ,
+call the method self . add_error with an argument fixture_labels .
+call the function _add_doc with 2 arguments : <unk> and <unk> .
+vary_headers is an instance of the class OrderedDict .
+return value .
+if callback is an instance of BaseEmailBackend ,
+if widget is an instance of NumberInput and <unk> is not contained in widget . attrs ,
+define the method _cull with self , db , cursor and now as arguments .
+call the method pattern . resolve with an argument new_path , substitute the result for filter_name .
+get config dictionary element under the <unk> key , substitute it for propagate .
+call the method sys . stderr . write with an argument <unk> , use the result as an argument for the call to the function sys . stderr . write , write the result to sys . stderr .
+derive the class CacheClass from the Origin base class .
+skip this loop iteration .
+has_bz2 is boolean False .
+value under the self . _pk_field key of the form . fields is an instance of ModelChoiceField class , created with 2 arguments : qs , initial set to unpack_ipv4 , required set to function_name and widget set to widget .
+call the method <unk> . join with an argument chunk , for every chunk in value , join the results into a string , substitute the result for value .
+if Exception exception is caught ,
+call the method m . end , substitute the result for k .
+if column_name equals TOKEN_COMMENT ,
+define the method handle_merge with 3 arguments : self , col_name , used_column_names and is_relation .
+property decorator ,
+substitute self . _app_dict for self . _app_dict .
+define the method modified_time with arguments self and name .
+for every i and choice in enumerated iterable self . choices ,
+define the function <unk> with 2 arguments value and arg .
+call the method arg . split with an argument <unk> , substitute the result for bits .
+bring is a <unk> <unk> integer <unk> .
+define the method write with an argument data .
+call the method self . render_options with an argument : value under name key of handlers dictionary , substitute the result for handler .
+define the method _render with 2 arguments : self and context .
+define the method compile_function_error with 3 arguments : self , unpacked list args and unpacked dictionary kwargs .
+call the function digest with an argument password , substitute the result for password .
+substitute <unk> and <unk> for defaults .
+call the function new_method_proxy with an argument length , substitute the result for __len__ .
+substitute i for end_index .
+if AttributeError exception is caught ,
+if ValueError exception is caught ,
+raise an ValueError exception with an argument <unk> .
+from django . utils . module_loading import import_string into default name space .
+call the method formats . localize_input with 3 arguments : value , self . format , if the result is true , and first element of result of the method self . format , return the first element of the result .
+derive the class <unk> from the object base class .
+define the function get_major_version with an argument value .
+substitute NullBooleanSelect for widget .
+code is an integer <unk> .
+terminal_char is integer <unk> .
+load_template_source . is_usable is boolean True .
+import module shutil .
+strip message_context of <unk> from <unk> ends , substitute it for message_context .
+substitute token . source for e . django_template_source .
+substitute first 12 elements of ext for ext .
+call the method self . full_clean .
+append self to nodes .
+substitute value under the entry key of the sys . <unk> dictionary for finder .
+if value is true ,
+call the method formfield . queryset . <unk> with an argument limit_choices_to , substitute the result for formfield . queryset .
+if not ,
+if base has an attribute <unk> ,
+renamed is boolean True .
+convert value into boolean and return it .
+call the function force_text with an argument message .
+return result .
+if self . _callback is not None ,
+append work_file to args .
+from django . core . management . base import BaseCommand into default name space .
+if not ,
+return <unk> .
+if <unk> is not equal to ip_str and call to the method ip_str . count with an argument <unk> , evaluates to true ,
+append settings . LOCALE_PATHS to a list .
+call the method self . make_bytes with an argument value , substitute the result for value .
+from django . utils . crypto import clean_ipv6_address and get_exception_reporter_filter into default name space .
+if self . m2m_data is true and bf_errors is true ,
+decorator stringfilter ,
+call the method self . error_class with an argument list with an element self . base_location , substitute the result for value under the NON_FIELD_ERRORS key of the form . _errors dictionary .
+try ,
+call the function time . tzname with 2 arguments : return value of the function time . tzname and DEFAULT_LOCALE_ENCODING , return the result .
+define the function <unk> with app_config set to None and kwargs dictionary as arguments .
+slice the last element of the return value of the function get_format called with an argument domain_part , increment the last element of the result to the last element .
+if not ,
+create the values of the function context .
+call the method field . clean with 2 arguments : value and initial , substitute the result for value .
+write errors to self . stdout stream .
+if arg is not an instance of <unk> or <unk> ,
+extend mail . outbox list with messages .
+call the method parser . parse with an argument tuple , use the result as an argument for the call to the method parser . parse , substitute the result for nodelist_false .
+if safe is true ,
+if self . verbosity is greater or equal to integer 3 ,
+join dirpath and filename into a file path , use it as an argument for the call to the os . path . normpath function , substitute the result for file_path .
+if not ,
+call the function copy with an argument self . render_context , substitute the result for duplicate . render_context .
+if plan_node is contained in loader . <unk> ,
+call the method header . <unk> with 2 arguments : <unk> and <unk> , substitute the result for header and <unk> , respectively .
+if ImportError exception is caught ,
+call the function bytes with an argument value , return the result .
+intrans is boolean True .
+call the method apps . get_app_config with an argument model . _meta . app_label , append the result to app_dir .
+return a tuple with 3 elements : self . func , self . args and self . kwargs , respectively .
+try ,
+if _file is None ,
+define the method close with argument self .
+from datetime import datetime into default name space .
+from django . core . serializers import base into default name space .
+define the function to_locale with an argument language .
+from <unk> import baseconv into default name space .
+if ValueError exception is caught ,
+model_dependencies is an empty list .
+if content is not None raise an error .
+call the function reverse with 6 arguments : project_name , <unk> args , args , kwargs set to args , and current_app set to context . current_app , substitute the result for url .
+endless loop ,
+if not ,
+call the function mark_safe with an argument word , substitute the result for i-th element of words .
+sum filelist and closing , substitute the result for filelist .
+for every message in email_messages ,
+convert name to lowercase , if it is contained in <unk> ,
+status_code is an integer <unk> .
+if data is an instance of bytes ,
+for every p in path ,
+define the function gettext_noop with an argument message .
+decorator deconstructible ,
+define the method bound_data with arguments self , data and initial .
+if name is contained in existing ,
+define the method __new__ with 4 arguments : cls , name , real_value and d .
+define the function get_language_from_request with 2 arguments : request and check_path set to boolean False .
+if field_type equals <unk> ,
+if path_info is false ,
+define the function urlunquote with an argument obj .
+call the function _trans . gettext_noop with an argument message , return the result .
+substitute content_type for value under the <unk> key of self dictionary .
+call the method connection . RLock . <unk> .
+define the function dec with an argument func .
+substitute <unk> for max_width .
+call the method self . _update_errors with an argument e .
+return boolean False .
+substitute self . closed for close .
+map is a list containing 2 elements : <unk> and <unk> .
+if digest is None ,
+define the method tell with an argument self .
+derive the class MemcachedCache from the HttpResponseRedirectBase base class .
+call the function get_format with an argument <unk> , substitute the first element of the result for input_format .

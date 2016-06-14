@@ -157,7 +157,7 @@ $bleu = $brevity_penalty * exp((my_log( $bleu[1] ) +
 				my_log( $bleu[2] ) +
 				my_log( $bleu[3] ) +
 				my_log( $bleu[4] ) ) / 4) ;
-printf "BLEU = %.2f (Bravity Penalty=%.3f, Length ratio=%.3f, Translated length=%d, Reference length=%d)\n  1-gram: %.1f \n  2-gram: %.1f \n  3-gram:%.1f \n  4-gram: %.1f \n",
+printf "BLEU = %.2f (Bravity Penalty=%.3f, Length ratio=%.3f, Translated length=%d, Reference length=%d) \n(%.1f / %.1f / %.1f / %.1f)",
     100*$bleu,
     $brevity_penalty,
     $length_translation / $length_reference,
