@@ -20,8 +20,12 @@ from __future__ import print_function
 
 import gzip
 import os
+import sys
 import re
 import tarfile
+import StringIO
+import tokenize
+import utils.analyze as structurer
 
 from six.moves import urllib
 
@@ -46,11 +50,39 @@ _DIGIT_RE = re.compile(br"\d")
 
 
 def basic_tokenizer(sentence):
-  """Very basic tokenizer: split the sentence into a list of tokens."""
-  words = []
-  for space_separated_fragment in sentence.strip().split():
-    words.extend(re.split(_WORD_SPLIT, space_separated_fragment))
-  return [w for w in words if w]
+    """Very basic tokenizer: split the sentence into a list of tokens."""
+    words = []
+    for space_separated_fragment in sentence.strip().split():
+        words.extend(re.split(_WORD_SPLIT, space_separated_fragment))
+    return [w for w in words if w]
+
+
+def python_tokenizer(sentence):
+    """ Call python tokenizer """
+
+    sentence = sentence.strip()
+    buf = StringIO.StringIO(sentence)
+    token_list = []
+    for token in tokenize.generate_tokens(buf.readline):
+        token_list.append(token[1])
+
+    # print (get_structure(token_list))
+
+    return get_structure(token_list)
+     
+
+
+def get_structure(token_list):
+    new_token_list = []
+
+    for token in token_list:
+        new_token_list.append(token)
+        new_token_list.append(structurer.getType(token))
+
+    # print (new_token_list)
+    # sys.exit(0)
+
+    return new_token_list
 
 
 def create_vocabulary(vocabulary_path, data_path, max_vocabulary_size,
@@ -186,47 +218,51 @@ def data_to_token_ids(data_path, target_path, vocabulary_path,
 
 
 def prepare_data(data_dir, code_vocabulary_size, en_vocabulary_size, tokenizer=None):
-	"""Get WMT data into data_dir, create vocabularies and tokenize data.
+    """Get WMT data into data_dir, create vocabularies and tokenize data.
 
-	Args:
-		data_dir: directory in which the data sets will be stored.
-		code_vocabulary_size: max size of the code vocabulary to create and use.
-		en_vocabulary_size: max size of the English vocabulary to create and use.
-		tokenizer: a function to use to tokenize each data sentence;
-		  if None, basic_tokenizer will be used.
+    Args:
+        data_dir: directory in which the data sets will be stored.
+        code_vocabulary_size: max size of the code vocabulary to create and use.
+        en_vocabulary_size: max size of the English vocabulary to create and use.
+        tokenizer: a function to use to tokenize each data sentence;
+          if None, basic_tokenizer will be used.
 
-	Returns:
-	A tuple of 6 elements:
-	  (1) path to the token-ids for Code training data-set,
-	  (2) path to the token-ids for English training data-set,
-	  (3) path to the token-ids for Code development data-set,
-	  (4) path to the token-ids for English development data-set,
-	  (5) path to the Code vocabulary file,
-	  (6) path to the English vocabulary file.
-	"""
+    Returns:
+    A tuple of 6 elements:
+      (1) path to the token-ids for Code training data-set,
+      (2) path to the token-ids for English training data-set,
+      (3) path to the token-ids for Code development data-set,
+      (4) path to the token-ids for English development data-set,
+      (5) path to the Code vocabulary file,
+      (6) path to the English vocabulary file.
+    """
 
-	# Specify the data directories.
-	train_path = data_dir + "train/90pt.random"
-	dev_path = data_dir + "dev/10pt.random"
+    # tokenizer = python_tokenizer
 
-	# Create vocabularies of the appropriate sizes.
-	en_vocab_path = os.path.join(data_dir, "vocab%d.en" % en_vocabulary_size)
-	code_vocab_path = os.path.join(data_dir, "vocab%d.code" % code_vocabulary_size)
-	create_vocabulary(en_vocab_path, train_path + ".en", en_vocabulary_size, tokenizer)
-	create_vocabulary(code_vocab_path, train_path + ".code", code_vocabulary_size, tokenizer)
+    print (tokenizer)
 
-	# Create token ids for the training data.
-	en_train_ids_path = train_path + (".ids%d.en" % en_vocabulary_size)
-	code_train_ids_path = train_path + (".ids%d.code" % code_vocabulary_size)
-	data_to_token_ids(train_path + ".en", en_train_ids_path, en_vocab_path, tokenizer)
-	data_to_token_ids(train_path + ".code", code_train_ids_path, code_vocab_path, tokenizer)
+    # Specify the data directories.
+    train_path = data_dir + "train/90pt.random"
+    dev_path = data_dir + "dev/10pt.random"
 
-	# Create token ids for the development data.
-	en_dev_ids_path = dev_path + (".ids%d.en" % en_vocabulary_size)
-	code_dev_ids_path = dev_path + (".ids%d.code" % code_vocabulary_size)
-	data_to_token_ids(dev_path + ".en", en_dev_ids_path, en_vocab_path, tokenizer)
-	data_to_token_ids(dev_path + ".code", code_dev_ids_path, code_vocab_path, tokenizer)
+    # Create vocabularies of the appropriate sizes.
+    en_vocab_path = os.path.join(data_dir, "vocab%d.en" % en_vocabulary_size)
+    code_vocab_path = os.path.join(data_dir, "vocab%d.code" % code_vocabulary_size)
+    create_vocabulary(en_vocab_path, train_path + ".en", en_vocabulary_size, tokenizer)
+    create_vocabulary(code_vocab_path, train_path + ".code", code_vocabulary_size, python_tokenizer)
 
-	return (code_train_ids_path, en_train_ids_path,
-      	code_dev_ids_path, en_dev_ids_path,
-      	code_vocab_path, en_vocab_path)
+    # Create token ids for the training data.
+    en_train_ids_path = train_path + (".ids%d.en" % en_vocabulary_size)
+    code_train_ids_path = train_path + (".ids%d.code" % code_vocabulary_size)
+    data_to_token_ids(train_path + ".en", en_train_ids_path, en_vocab_path, tokenizer)
+    data_to_token_ids(train_path + ".code", code_train_ids_path, code_vocab_path, python_tokenizer)
+
+    # Create token ids for the development data.
+    en_dev_ids_path = dev_path + (".ids%d.en" % en_vocabulary_size)
+    code_dev_ids_path = dev_path + (".ids%d.code" % code_vocabulary_size)
+    data_to_token_ids(dev_path + ".en", en_dev_ids_path, en_vocab_path, tokenizer)
+    data_to_token_ids(dev_path + ".code", code_dev_ids_path, code_vocab_path, python_tokenizer)
+
+    return (code_train_ids_path, en_train_ids_path,
+        code_dev_ids_path, en_dev_ids_path,
+        code_vocab_path, en_vocab_path)
