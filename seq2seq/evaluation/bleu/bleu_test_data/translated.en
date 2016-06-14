@@ -1,0 +1,1805 @@
+if attrs is true , substitute dictionary for attrs for an entry for entry , if not is an empty dictionary .
+if not ,
+BASE00_ALPHABET is a string ' _UNK ' .
+if self . field_name is true and field_name is not contained in model_fields ,
+if self . value . value . value , return boolean True , otherwise return
+import module types .
+return value under key key of self dictionary
+get the value under the ' use_reloader ' key of the options dictionary , substitute the result for use_reloader .
+import rlcompleter space .
+call the method self . writer . writer , with the result as argument ,
+get the value under the ' _UNK ' key of the options dictionary , if the key doesnt exists substitute it for _UNK , if not , _UNK is not ' _UNK ' .
+replace all ' / ' from the first string , append first first ' / ' , append first first / and append append result of ' / ' , append the result to self . / .
+if bits is false ,
+skip this loop iteration .
+for every key in self ,
+substitute self . literal method for value .
+for every i and ext in enumerated iterable iterable ,
+import module sys .
+call the function local , substitute the result for _active .
+call the connection . creation . sql_for_pending_references method with ( refto , no_style ( ) and pending_references as arguments , use the result as the
+property decorator ,
+for every i and connection in connection . introspection . introspection . _UNK ,
+substitute second and first element of bits for key and value , respectively .
+call the method self . connection . connection .
+if self . save_as_new is true ,
+if etags is false ,
+try ,
+define the method __repr__ with an argument self .
+increment doublecolon_len by integer 0 ,
+call the method msgs . decode with an argument string ' utf-0 ' , substitute the result for msgs .
+if not ,
+call the method parser . parse , return the result result .
+do nothing .
+define the function locale with an argument locale .
+property decorator ,
+EventHandler . modified_code is I00N_MODIFIED .
+output_transaction is boolean True .
+locales is a list with an element locale .
+substitute bp for lbp .
+if register_to is true ,
+call the function write with an argument sep .
+priority is floating number by floating integer 0 . .
+for every i in range of integers from 0 to length of result , not not included ,
+call the method self . _deleted_form_indexes . append .
+self . FILES is an instance of MultiValueDict class .
+call the method MIMEText . __init__ with 0 arguments : self , text , text and None .
+for every path in sorted elements of the function os . abspath ,
+import module sys .
+return output .
+substitute mapped_tokens for self . tokens .
+from django . utils . _os import safe_join into default name space .
+return boolean True .
+call the method self . _UNK , with tag and attrs as arguments .
+define the method eval with 0 arguments self and context .
+define the method add_arguments with self and parser as arguments .
+try ,
+if path is an instance of six . string_types ,
+call the method handler . endElement with an argument string ' channel ' .
+define the method configure_logger with 0 arguments : self , name , config , config set to boolean False .
+if val is None ,
+if second element of bits is not equal to a string ' by ' ,
+set result attribute name to value value .
+convert value into an string , substitute the result for value .
+if nodelist_empty is None ,
+with self . mutex perform ,
+derive the class Command from the BaseCommand base class .
+increment i-th element of result by piece .
+call the method file . _UNK , substitute the result for _UNK .
+if f . unique is true , substitute " unique for unique , otherwise unique is an empty string .
+return value and arg .
+if self . queryset is not None ,
+return errors .
+do nothing .
+if self . validate_min is true and self . buffer and length of self . total_form_count ( smaller than than self . min_num ,
+return ip_str .
+define the function extract with 0 arguments path and path set to empty string .
+append model to model_list .
+skip this loop iteration .
+call the method unifunc . replace with an argument strfunc .
+pending_references is a empty dictionary .
+define the method render with 0 arguments self and context .
+from django . utils . translation import trans_real into default name space .
+define the method parse with an argument self .
+call the method self . g , return the result .
+substitute self . STDOFFSET for self . DSTOFFSET .
+break the loop execution .
+define the function build_instance with 0 arguments : data , data and db .
+substitute retval for retval .
+call the method parser . add_library with an argument lib .
+define the method is_hidden with an argument self .
+call the function next_space_index with 0 arguments : i and i as i .
+from django . db . migrations . writer import MigrationWriter into default name space .
+call the method parser . delete_first_token .
+if ValueError or TypeError exceptions are caught ,
+split string ' split ' , substitute the result for primary_keys .
+from django . conf import settings into default name space .
+call the method s . s . s with an argument s , strip the result of whitespaces from whitespaces string ' _UNK ' ,
+return result .
+self . changed_objects is an empty list .
+call the method self . clean , substitute the result for cleaned_data .
+from django . core import checks into default name space .
+define the method _proxy_method with 0 arguments : self , unpacked list args and unpacked dictionary kwargs .
+call the function _checkLevel with an argument level , remove it as a result .
+call the the method __init__ from the base class of the class Context .
+try ,
+from django . utils . html import escape into default name space .
+for every migration_name in migration_names ,
+return None .
+delete self . name attribute from the obj object . __class__ object and obj .
+call the method response . process_response with 0 arguments : request and response .
+if show_traceback is true ,
+import module os .
+self . _changed_data is an empty list .
+if string " " " " format " is not contained in e converted into a string ,
+multiply offset . timezone , integer 00 and integer 00 result of floored result . timezone method , substitute the result for offset .
+if self . _wrapped is empty ,
+substitute language for self . __language .
+derive the class Node from Node base class .
+if lib is true ,
+substitute save_m0m for form . save_m0m .
+python_0_unicode_compatible decorator ,
+return an empty string ,
+if not ,
+call the method self . as_widget . render with unpacked list args as an argument , return the result .
+if value is false , return value and return result .
+parse_until is an empty list ,
+call the function check_for_language with an argument lang , if it evaluates to false ,
+remove the first element from colors , substitute it for fg .
+for v in return value of the function match . match , convert v and v into an integer , assign the result to v and day_val , respectively .
+define the method end_object with 0 arguments : self and obj .
+replace ' %s ' in string " " %s ' %s ' exists ' with replaced , substitute it for message .
+divide timezone by integer 00 , substitute the result of the division for hour and minute for minute .
+if tag is contained in self . _UNK ,
+for every f in fields ,
+finally perform ,
+if lang_code is contained in lang_code and lang_code is not None and result of the function check_for_language .
+if IndexError exception is caught ,
+call to the function transaction . atomic . atomic with connection . features and connection . features . features , with arguments .
+if not ,
+for every filename in gen_filenames ( ) ,
+define the method __deepcopy__ with 0 arguments self and memo as arguments .
+substitute self . _stream for stream .
+define the function cut with 0 arguments value and arg .
+define the method render with 0 arguments : self , name , value and attrs set to None .
+substitute key for result . key .
+settings . USE_I00N is boolean True .
+if ImportError exception is caught ,
+if chunk is empty list ,
+_UNK 
+return a value under the _UNK key of the yaml dictionary , value with value key with an empty value .
+import module re .
+if not ,
+for every handler in handlers ,
+fill_to is an integer 0 .
+if value equals self . empty_value or value is contained in self . empty_values ,
+index_output is an empty list .
+substitute fail_silently for self . fail_silently .
+self . _UNK is boolean False .
+define the method to_python with arguments self and value .
+modified_code is None .
+substitute self . _wrapped for repr_attr .
+define the function safe_join with 0 arguments base and unpacked dictionary paths .
+if key is contained in d ,
+create_models is an empty list .
+try ,
+if self is greater than self . _UNK ,
+break the loop execution .
+run_syncdb is boolean False .
+_iteritems is a string " iteritems " .
+substitute offset for self . __offset .
+if max_age is not None ,
+define the method to_python with arguments self and value .
+if expires is false ,
+locales is _UNK of set in set in set .
+property decorator ,
+call the function warnings . warn with 0 arguments : string " django . utils . will will be removed in Django 0 . 0 .
+if not ,
+return callback and a empty string .
+define the method render with 0 arguments self and context .
+delete value under the key key of dictionary at last element of self . dicts .
+substitute name for old_attr .
+call the method self . base_fields with key key of template_dirs dictionary , for every key and template_dirs , substitute the result for key .
+call the function parser . compile_filter , without every first element in args for args and arg index to the index index , substitute the
+self . m0m_data is None .
+if not ,
+call the function digest with an argument inner , call the function digest , respectively .
+call the method extend . extend with unpacked dictionary args as an argument , extend with unpacked dictionary kwargs .
+substitute choices for self . choices .
+define the method get_host with an argument self .
+if not ,
+replace ' %s ' in string " %s %s = %s key with key and value under the key key of the user_setting dictionary ,
+from django . utils import six into default name space .
+from django . utils import six and six into default name space .
+call the function force_text , replace the result of whitespaces from whitespaces , replace every whitespaces of whitespaces from whitespaces for whitespaces for ' _ ' , substitute the result for s .
+call the method f . formfield . formfield with an argument , unpacked dictionary kwargs
+if self has an ' private ' attribute ,
+derive the class ChoiceField from the base class Field class .
+define the method __init__ with an argument self .
+replace string ' response . charset , response must charset be a %s for every string ' charset ' , append it to self .
+otherwise , if first and the first last of attrvalue and attrvalue ' ' ' or the last last of attrvalue are ' ' ' ,
+derive the class RawPostDataException from the Exception base class .
+if safe is not None ,
+get the value under the ' _UNK ' key of the request . META dictionary , substitute it for _UNK .
+define the method unget with self self and bytes .
+MAX_NUM_FORM_COUNT is a string ' _UNK ' .
+call the method self . format with an argument string ' 0 ' , substitute the result for name .
+call the method handler . addQuickElement with 0 arguments : string ' link ' and value under the ' link ' key of item dictionary
+if categories is true ,
+_UNK 
+define the method _isdst with 0 arguments self and dt .
+if value under the ' enclosure ' key of the item dictionary is not None ,
+call the function __getitem__ with an argument value under the ' model ' key of the d dictionary , substitute the result for d .
+define the method writer with an argument self .
+_UNK is a property with a property as a getter .
+define the method create_variable_node with 0 arguments self and filter_expression .
+define the function resolve with arguments path and urlconf set to None .
+args . args is a tuple with 0 elements : args and kwargs .
+for every key_value in natural ,
+define the function _UNK with 0 arguments : parser and token .
+if changed is false ,
+get the value under the ' use_natural_primary_keys ' key of the options dictionary , substitute the result for use_natural_keys .
+call the function warnings . warn with an argument string " This is deprecated use use _UNK . " .
+try ,
+call the color_style function , substitute the result for self . style .
+derive the class JsonResponse from the HttpResponse base class .
+from django . core . management . base import BaseCommand and CommandError into default name space .
+derive the class SimpleLazyObject from the LazyObject base class .
+return _translations dictionary value , under the language key .
+call the method self . style . style . write with an argument string " No . py t t them to them . " , write it to output .
+return s .
+call the function make_origin with 0 arguments : self . template_name , self . origin and template_name , substitute the result for display_name .
+call the method appendlist with 0 arguments : key and value .
+import module errno .
+if value is not contained in result ,
+if AttributeError exception is caught ,
+from django . apps import apps into default name space .
+return value under the name key of the data dictionary , if it exists return
+if p is greater or equal to integer 0 ,
+call the method node . _UNK with an argument string ' pk ' , if it evaluates to true ,
+append self . fk . name to form . fk . fields .
+increment i by integer 0 ,
+format string ' %r ' in %r %r , with 0 arguments : message_context , write it to out .
+derive the class HiddenInput from the HiddenInput base class .
+if ImportError exception is caught ,
+obj is an instance of Model class , created with an unpacked dictionary data as
+try ,
+msg is a string " Could not data data data %r : data %r : data , where ' %r ' is replaced with e
+raise an NotImplementedError exception with an argument string ' subclasses of BaseCommand must provide a handle ( ) method ' .
+_UNK 
+call the function conditional_escape with an argument conditional_escape , substitute the result for value under the ' pubdate ' key of the kwargs dictionary .
+self . _closable_objects is an empty list .
+get the attribute ' __module__ ' from the getattr , if it exists substitute it for m , if not m is None .
+if response is None ,
+raise an printable exception with representation of key representation of printable key .
+return _wrapper .
+call the method __init__ from the base class of the ExternalReferenceForbidden class .
+from django . core . management . base import CommandError into default name space .
+from django . conf import settings into default name space .
+raise an page exception with string ' page page number is integer than string ' as an argument .
+if not ,
+raise an TypeError exception with an argument string ' The to be set to objects be be be to objects ' .
+append flup_module to string " Can ' t import flup t import t . " , write it to the standard output .
+call the method zfile . write with an argument s .
+from django . core . management . base import BaseCommand and CommandError into default name space .
+call the function os . _UNK with arguments _UNK and _UNK , substitute the result for _UNK .
+if not ,
+substitute self . _meta for opts .
+import module warnings .
+assign self . source , source to token . source .
+call the function calculate_app_template_dirs , substitute the result for app_template_dirs .
+try ,
+return a string " _UNK " .
+import module cgi .
+call the method format_html with 0 arguments : string ' _UNK ' , contents and label_suffix , substitute the result for contents .
+call the function split_url with an argument value , substitute the result for url_fields .
+sort loader . loader , substitute it for loader .
+if s is an instance of SafeData or EscapeData ,
+join elements of concatenate into a string , separated by whitespaces , append it to the result .
+try ,
+if settings . STATIC_URL is None ,
+substitute prefix for self . prefix .
+self . _wrapped is an empty object .
+delete the value under the ' content-type ' key of the self dictionary dictionary .
+if name converted to lowercase converted converted to case equals equals string ' subject ,
+define the method __str__ with an argument self .
+call the function vars with an argument options , substitute the result for options .
+if has_old_option and both both both both true ,
+call the method self . xml . endElement with an argument string ' natural '
+try ,
+if return value of the function introspection . introspection . introspection . db_table called with an argument model ,
+return valid .
+if string ' forloop ' is contained in context ,
+do nothing .
+endless loop ,
+self . COOKIES is an empty dictionary .
+return dec .
+define the function sanitize_address with arguments addr and encoding .
+call the method lookups . appendlist with 0 arguments : name and a tuple of mapping dictionary , created with 0 elements : pattern and unpacked dictionary , and dictionary .
+substitute klass for klass .
+message is an string " _UNK %s : %s : %s " , formated with the result of the call to the function d . format with an argument filename , and format .
+call the method self . build_attrs with 0 arguments : attrs , self . input_type and name set to name , substitute the result for
+define the method create_nodelist with an argument self .
+call the method self . run_shell with an argument value under the first key of the options dictionary .
+if length of args is greater than integer 0 .
+__all__ is an list containing string ' SelectDateWidget ' .
+define the method create_token with 0 arguments : self , token_string and in_tag .
+all_locales is an empty string .
+call the method unhandled_params . remove with an argument param .
+raise an TemplateSyntaxError exception with an argument string " Library arguments arguments arguments : %r . %r : %r , %r %r to %r , %r ' , where ' %r ' is replaced with name and e , respectively .
+from _UNK import _UNK into default name space .
+raise an NotImplementedError exception with an argument string ' subclasses of must must provide a ( ( ) method ' .
+try ,
+delete first element of bits .
+return self . STDOFFSET .
+join l and string ' locale . path and string ' abspath ' for every path , for every path in dirs , substitute the result for l .
+if key is not contained in default_settings ,
+define the function callable with an argument obj .
+call the function datetime_safe . strftime , with an argument string ' %s ' , ' , call the method strftime on ' strftime ' , substitute the result for out .
+return nothing .
+define the function write_pot_file with 0 arguments potfile and msgs .
+substitute base . __name__ for class_name .
+from django . template . base import TemplateDoesNotExist into default name space .
+get the value under the ' database ' key of options dictionary , use it as a index to get connections list , store the
+raise a exception , with string " %s . The migrations migrations migrations run run class . py class . py run ' py ' , as an argument , as an argument exception to an lookup_str exception .
+define the method __init__ with 0 arguments : self , tup and hash set to hash .
+if fake is true ,
+skip this loop iteration .
+if settings . _UNK is true ,
+format a ' %s ' ( ( ) ) ( ) ) ' , write it to it out .
+substitute stream for self . _stream .
+from django . template . defaultfilters import date into default name space .
+if OSError , renamed to e , exception is caught ,
+- %s\n " , return the result of the result . stdout method .
+call the function six . reraise with 0 arguments : msg , instance ( third ) and third element of the result of the function sys . exc_info .
+take elements of elements from i index index index index to index index , substitute the result for value .
+otherwise if value is an instance of datetime . date ,
+if middleware has an attribute ' process_view ' ,
+call the method self . decode . decode with string ' _UNK ' and empty string ' utf-0 ' , substitute the result for self
+call the function translation . _UNK with 0 arguments : domain set to string ' django , django . _UNK , 00 set to 00 , and nargs set to 00 , substitute the result for _UNK .
+_UNK 
+do nothing .
+append obj to self . deleted_objects .
+define the function _UNK with 0 arguments : parser and token .
+self . choice_cache is None .
+from django . conf import settings into default name space .
+call the method . find method , use it as an key to get the value from the AttributeError dictionary , substitute it for plan
+append e to all_issues for every list , if e . level and e . level and e . level and level of the method e . level in false .
+if not ,
+get found attribute from found object , substitute it for found .
+call the method handler . addQuickElement with 0 arguments : string ' link , string " link : None , and result as an element : : element : : ' : ' .
+if val is None ,
+return self . _fqdn .
+exit the program with code code 0 .
+substitute has_header for __contains__ .
+call the method gettext_module . __init__ . __init__ , with the result for self .
+return obj .
+if not ,
+visible_issue_count is an integer 0 .
+if inverse_match is not None ,
+substitute ' %r ' in string ' %r ( %r , with 0 %r : result of the function force_text , called with an argument singular , respectively , write the result to result .
+convert self . file to a string and append string . py . ' to it , substitute the result for thefile .
+if StopUpload , renamed to e , exception is caught ,
+call the method self . _UNK with 0 arguments name and name , return the
+if IndexError exception is caught ,
+define the method write with 0 arguments self , self and encoding .
+if not ,
+if handler has an attribute ' file ' ,
+for every i in range of integers from 0 to length of result , not not included ,
+do nothing .
+if self . use_ssl and self . use_tls is false ,
+raise an ImproperlyConfigured with an argument string " This without without ' fields ' or ' fields ' , ' is ' exclude ' .
+encoding . setter decorator ,
+define the function wrapper with 0 arguments : unpacked list args and unpacked dictionary kwds .
+define the method __init__ with 0 arguments : self , instance , msg , msg , msg set to None , None set to None ,
+substitute SplitHiddenDateTimeWidget for hidden_widget .
+property decorator ,
+return result .
+call the method self . load_template_source with arguments display_name and template_dirs , assign the result to display_name and display_name , respectively .
+return self . _callback .
+for every _UNK in locale_filenames ,
+concatenate p p elements of locale to lowercase , append ' locale ' to it , append it to lowercase index index from index index from index index , append it to the result , return it .
+call the self . stream . close function .
+call the function get_language , substitute the result for self . old_language .
+raise an value . _UNK exception with an argument tb .
+define the method ugettext with an argument message .
+call the method self . iteritems , return list of results .
+decorator stringfilter ,
+get the next element of self . iterable iterable , substitute it for output .
+call the method new_class with an argument new_class , substitute the result for new_class .
+call the method self . setlist with 0 arguments : key and default_list .
+if truncate_len equals integer 0 .
+call the __add__ method with an argument rhs from the base class of the class SafeText , substitute the result for t .
+if value is an instance of bytes class ,
+try ,
+call the function format_html with 0 arguments string ' _UNK ' , contents and attrs , substitute the result for contents .
+return self . _errors .
+substitute content_length for self . content_length .
+from django . db . migrations . migrations import MigrationExecutor into default name space .
+call the method handler . startElement with 0 arguments : string " channel " and result of the method self . root_attributes .
+week_number is integer 00 .
+decrement self . waiting_writers by integer 0 ,
+substitute length of len_values for len_values .
+if value under the ' version ' key of config dictionary is not equal to integer 0 ,
+if _UNK is True ,
+call the force_text function with return argument addr of addr force_text , return the result
+substitute %s . %s . model\n model\n model\n model\n %s " , with all occurrences . _meta . object_name , as replaced replaced , respectively .
+if not ,
+if ValueError exception is caught ,
+substitute token for self . token .
+if format is not contained in _serializers ,
+import module types .
+if upto is not equal to start .
+return a function with an argument tuple converted by integer 0 .
+yield meta_line as the result .
+strip of the first element of whitespaces is both element of whitespaces , substitute the result for transfer_encoding .
+return an empty string ,
+raise an CommandError exception with an argument string " Error : %s : %s " , where ' %s ' is replaced with message .
+if self . can_delete is true and call to the method self . form . _should_delete_form with an argument form , evaluates to true ,
+if length of self . dicts is equal to an integer 0 ,
+try ,
+from django . utils import translation into default namespace .
+from logging import _UNK .
+call the connection . connection . sql_for_pending_references method with model , no_style ( ) and pending_references as arguments , extend the result as the argument
+get ' messages ' from the messages dictionary , if it doesnt exists return an empty string , update the result doesnt exists ' .
+define the function locale with an argument locale .
+if self . encoding exists substitute it for encoding .
+remove the first element from result .
+define the method __init__ with 0 arguments : self , file_name , file_name and locale_dir .
+_UNK 
+if value is contained in value of the function Decimal with an argument string ' Decimal ' , or or value with ' exclude ' and ' fields ' with '
+try ,
+import module os .
+for every ch in input_iter ,
+return _UNK .
+get the value under the ' id ' key of the widget dictionary . attrs dictionary , substitute it for id_ , if not ,
+return a string ' %s . . . . .
+from django import http . http function
+if not ,
+call the method . split method with an argument var , substitute the result for out .
+multiply since by since , multiply it by since and seconds by seconds , store the result by seconds .
+if settings . _UNK does not exist ,
+define the method pop with 0 arguments : self and unpacked list kw .
+call the __init__ method from the base class of the class Context , with 0 arguments : context , context , content_type , content_type and
+evaluate the method fd . isatty , if the result is true ,
+call the function six . text_type with an argument number , substitute the result for
+call the method render from the base class of the class render , with 0 arguments : name , value and attrs , return the
+if field_type equals a string ' DecimalField ' ,
+return boolean False .
+call the function Truncator , with 0 arguments : value , length set to boolean True , and set set to string ' html words words and boolean True . . .
+if self . initial_form_count is true and self . initial_form_count and length of self . initial_form_count and grater than grater than self . min_num .
+return patterns .
+for every f in files ,
+define the function allow_lazy with 0 arguments : list_ and defaults set to result of the function ugettext_lazy called with an argument string ' or
+return r .
+if Exception exception is caught ,
+substitute self . widget . widget for widget .
+define the method _setup with an argument self .
+substitute value for self . value .
+call the function force_text . with with an argument data . help_text , format the result as an argument for the call to the function
+if value ,
+derive the class Command from the BaseCommand base class .
+define the method decode with 0 arguments : self and pk .
+call the self . self . _UNK method with self . object_list , return the result index to the result and namespaces index to the
+substitute initial for initial , if initial is not None , for not , initial_value is an empty string .
+call the function _ with an argument string ' Ensure this value is greater than equal to % ( % ) ) ) ( this this this this ) ) ) , ' , substitute the result for message .
+saved_instances is an empty list .
+substitute second element of renamed_method for new_method_name .
+move integer integer 0 00 the bits bits .
+define the method render with 0 arguments self and context .
+substitute base for self . base .
+define the function _UNK with arguments path and urlconf set to None .
+if a lambda function with an argument raw return value of the function re . _UNK , return value of the result of the function ( ' .
+if _UNK exception is caught ,
+skip this loop iteration .
+if decorator has an attribute ' process_view ' ,
+if not ,
+from django . core . management . base import AppCommand into default name space .
+substitute self . rawdata for rawdata .
+call the method parser . parse with an argument tuple with an element string ' _UNK ' , substitute the result for nodelist .
+define the method _add_fallback with an argument self .
+return self .
+increment i by integer 0 ,
+ns is a string " http : http . http . w0 " .
+for every form in valid_forms ,
+call the method initial_form_count from the base class of the class BaseInlineFormSet , return the result .
+call the method self . close .
+define the method _itervalues with an argument self .
+define the function _UNK with 0 arguments value and arg set to values .
+call the method self . instance . validate_unique with an argument exclude set to exclude .
+call the function mark_for_escaping with an argument value , return the result .
+for every path in paths ,
+return cache_key .
+try ,
+for every elt in list_ of the function six . iteritems called with an argument self and encoding . choices , substitute the result for
+if exclude is not None ,
+return self . content
+if settings . DEBUG is true ,
+if not ,
+call the method self . xml . startElement with argument string ' object ' and an empty dictionary .
+if iri is not initialized ,
+call the method self . . can_read .
+derive class MovedAttribute from the _LazyDescr base class .
+remove idx-th element from self list .
+if ttl is not None ,
+result is an empty list .
+if return value of the code_changed function is true ,
+if not ,
+request_repr is a string " \x00 " .
+if filters is true ,
+define the function save_m0m .
+if IndexError exception is caught ,
+call the function upath . _UNK . get . __module__ as an argument modules , modules the key key of modules dictionary , substitute it
+try ,
+if exception is caught ,
+append d to self . fed .
+if not ,
+call the function . to_python with argument value , strip the result as argument dictionary and call the whitespaces function , substitute the result for
+substitute ' %s ' in string ' %s %s ' , substitute the result for value .
+derive the class EndToken from the base class TokenBase .
+if KeyError exception is raised ,
+if settings . USE_TZ is true ,
+from django . utils import translation into default namespace .
+define the function save_m0m .
+call the method datetime_safe . new_date with an argument value , substitute the result for
+define the method hidden_fields with an argument self .
+return boolean True .
+define the method copy with an argument self .
+call the method self . _UNK with an argument key .
+id is a string " literal " .
+define the function get_language_bidi .
+return dec .
+define the function rfc0000_date with an argument date .
+register . tag decorator function with an argument ' tag ' ,
+get ' exclude ' attribute from the options object , if it exists substitute it for self . exclude , if not self . exclude
+from django . conf import settings into default name space .
+substitute i for self . pointer .
+append string ' max_digits and decimal_places decimal decimal decimal float float decimal decimal decimal decimal decimal to field_notes , as the field_notes .
+if middleware has an attribute ' read ' ,
+return a dictionary containing an entry of the function csrf_token called with an argument string ' _UNK ' .
+define the function decorator_from_middleware_with_args with an argument middleware_class .
+define the method clean with arguments self and value .
+return line .
+derive the class TextInput from the TextInput base class .
+decorator decorator ,
+define the method tzname with 0 arguments self and dt .
+define the method G with an argument self .
+output_transaction is boolean False .
+skip this loop iteration .
+_UNK 
+substitute nodelist_empty for self . nodelist_empty .
+define the method __init__ with 0 arguments : self , name , nodelist , nodelist set to None and nodelist set to None .
+default is a string ' _UNK ' .
+raise an ValueError with an argument string " timezone : timezone : %r " , where ' %r ' is timezone with timezone .
+if StandardError , renamed to e , exception is caught ,
+call the method self . file . close , return the result .
+serializers is an empty dictionary .
+if m is false ,
+substitute i-th element of self . initial for value under the ' initial ' key of the defaults dictionary .
+categories is a list containing the results of the function force_text . c , called with an argument c .
+if templatetags_modules is false ,
+substitute obj_pk . pk for obj_pk .
+if not ,
+define the function _UNK with 0 arguments : parser and token .
+append arg to ' , ' , substitute the result for arg .
+call the function _ with an argument string ' m . ' , return the result .
+date is a tuple with 0 elements : date . year , date . month and date . day .
+if file path old_app_dir exists ,
+if IndexError exception is caught ,
+from django . utils import six into default name space .
+if dec_part is true ,
+substitute integer 00 for bits .
+return result .
+if Resolver000 exception is caught ,
+decorator function register . _UNK with an argument decorator .
+if self . path file path ,
+FILE_INPUT_CONTRADICTION is an instance of object class .
+define the method needs_multipart_form with an argument self .
+if app_config . label is contained in loader . migrated_apps ,
+if os . name equals string ' nt ' ,
+call the method copy . copy , substitute the result for args .
+return template_name .
+if not ,
+try ,
+for every opt in opt , if opt is false or opt is contained in the list , opt , opt is opt or opt
+skip this loop iteration .
+for every value of self . force_text . force_text function for value , every every set in self . value .
+substitute i for p .
+self . current is an empty dictionary .
+call the method timezone . timezone , substitute the result for timezone .
+decorator function register . filter with an argument is_safe set to boolean True .
+if password is None substitute settings . _UNK for self . password , if not substitute password for self . password .
+if _default is None ,
+derive the class Command from the AppCommand base class .
+if ValueError or TypeError exceptions are caught ,
+from importlib import import_module .
+return self . cmd .
+call the method parser . compile_filter with an argument value , append the result to args .
+call the function with 0 arguments : value , key key of salt dictionary , use the result as an argument for the call to
+_UNK a tuple with 0 elements : strings ' Form ' and ' Form ' .
+define the method __repr__ with an argument self .
+remove symlink_path file .
+call the method __init__ from the base class of the class SortedDict .
+call the method self . empty_variable with an argument token ,
+from __future__ import unicode_literals into default name space .
+if field_value is not None ,
+_UNK 
+raise an ValueError exception with an argument string " Base00 input input input input input " .
+define the function _UNK with an argument etag_str .
+substitute conditions_nodelists for self . conditions_nodelists .
+if InputStreamExhausted exception is caught ,
+if value has an attribute ' __iter__ ' and value is not an instance of six . text_type ,
+import module os .
+call the method decode . decode with an argument string ' ascii ' , on the result as an argument for the call to the
+call the method parser . add_argument with 0 arguments : ' _UNK ' , action set to ' + ' , action set to ' + ' , dest without ' and help without ' .
+substitute complain for __setitem__ .
+if row_data is contained in seen_data ,
+join elements of bytes in bytes string , join first first elements of previous result of join dictionary ,
+if endbmatch is true ,
+call the method self . force_text with an argument value , substitute the result for value under the ' value ' key of the substitutions
+call the function func with 0 arguments : unpacked list args and unpacked dictionary kwargs , return the result .
+return a string ' %00d ' formated with the result of the function self . g .
+try ,
+from django . utils . six . moves import zip into default name space .
+flush the output buffer of the self . stdout object .
+if ValueError , TypeError or TypeError exceptions are caught ,
+call the method router . get_migratable_models with arguments app_config and connection . alias .
+substitute header tuple with header header for header converted to lowercase for the value under the header . value .
+call the method form . save_m0m .
+substitute bits without the first element for bits .
+call the method signals . signals . send with an argument sender set to self . _handler_class .
+call the method parser . add_argument with 0 arguments : string ' --database ' , default set to DEFAULT_DB_ALIAS , and help set to a string ' Nominates a database to print print to the SQL for . Defaults to the " default " database . ' .
+from email . message import message into default name space .
+substitute args for self . args .
+substitute request for self . request .
+if ' : ' is not contained in ip_str ,
+if help_texts is not None ,
+attrs is a empty list .
+write string ' _UNK ' to out file .
+define the function random with an argument value .
+if sys . stdout has an attribute ' isatty ' and call to the function sys . stdout , and its boolean True , call the method stdout sys . stdout is an argument True , substitute the result for sys .
+substitute ' %s ' in the string " ] %s " , write %s to it to output .
+derive class SimpleCookie from the SimpleCookie base class SimpleCookie .
+convert values into a list , substitute it for value .
+if self . connection is true ,
+define the method setdefault with 0 arguments : self , key and default set to None .
+return msg .
+if KeyError exception is raised ,
+define the function add_move with an argument move .
+return msg .
+append string ' %s ( %s ) s ' to plural , where ' %s ' is replaced with t . contents .
+substitute app_name for command .
+if not ,
+join func . __class__ . __class__ . __class__ and func . __class__ . __name__ into a string , separated by character ' . ' , substitute it for self . __class__ .
+import bpython into self .
+convert tagname to lowercase , substitute it for tagname .
+derive the class ManagementUtility from object base class .
+define the method get_nodes_by_type with 0 arguments : self and nodetype .
+substitute sysid for self . sysid .
+if data is true , substitute data for data .
+if charset equals to string ' utf-0 ' ,
+fork a child process , if the result equals integer 0 ,
+derive the class BaseContext from the BaseContext base class .
+define the function format with 0 arguments : format , format and serializers set to None .
+define the __init__ method with 0 arguments : self , urlconf_name , default_kwargs set to None , app_name set to None and namespace set to None .
+if commit is false ,
+substitute value under the ns key of the ns . ns dictionary , substitute it
+break the loop execution .
+return key and pdict .
+otherwise if self . _meta . _meta is true and exclude is contained contained in self . _meta . _meta ,
+if init_path is not a file ,
+join filename and filename into a string separated by ' / ' , append it to new_filenames .
+define the method compress with arguments self and data_list .
+otherwise if vale is not an instance of list type and value is not an instance of type ,
+if end ends with string ' /> ' ,
+call the function validate_ipv0_address with an argument value .
+substitute length of existing for num_existing .
+call the function allow_lazy with 0 arguments : javascript_quote and six . text_type , substitute the result for javascript_quote .
+call the method __init__ from the base class of the class URLValidator , with an argument lexer .
+if loader is an instance of list or tuple ,
+return s .
+do nothing .
+if not ,
+call the method parser . add_option with an argument opt .
+SINGLE_BRACE_END is a string ' } ' .
+define the function abspathu with an argument path .
+try ,
+call the method obj . save with an argument obj set to self . using .
+call the method mark_safe with lines joined into a string , separated with argument as argument , return the result .
+if value under the ' indent ' key of the self . options dictionary is true ,
+append f . name to exclude .
+append a string ' This type is a valid _UNK . ' to field_notes .
+create a directory self . default_locale_path .
+call the method self . as_widget with 0 arguments : instance of a class Textarea , attrs and unpacked dictionary kwargs .
+return result .
+call the method connection . introspection . _UNK with an argument boolean true , substitute the result for tables .
+output is an empty string .
+call the function decode with 0 arguments : _proxy_method and method set to settings . decode , substitute the result for decode .
+raise an ImportError exception with an argument string " No IPython " .
+if value is an instance of list type ,
+derive the class ChunkIter from the six . Iterator base class .
+join host and a string ' separated with ' , substitute the result for host .
+substitute i-th element of self . forms for form .
+substitute kwargs for self . kwargs .
+if f . primary_key is true ,
+increment self . loaded_object_count by loaded_objects_in_fixture .
+if not ,
+call the method self . connection . _UNK . _UNK with arguments from_email , from_email and return value of the method message . _UNK .
+call the method apps . _UNK with 0 arguments : string ' _UNK ' and string ' _UNK ' .
+substitute ' %s ' in string " No %s ' %s ' %s ' %s ' %s ' %s ' %s ' %s ' replaced
+if UnicodeDecodeError exception is caught ,
+convert self . name into a name , return it .
+call te method operator . _UNK with an argument integer 0 .
+from django . core . mail . base . base import BaseEmailBackend into default name space .
+join into a app_dir app_dir : %s %s . %s . %s , %s ' %s ' is replaced by opts . sql file sql sql , respectively , respectively , substitute the result for app_dir .
+try ,
+for every regex in tuple with 0 elements : regex , regex ,
+call the method self . __bytes_cast , return the result exception .
+define the method __init__ with 0 arguments : self and nodelist .
+raise an ValidationError with 0 arguments : value under the ' required ' key of the self . error_messages dictionary and code set to '
+if _cached_modules equals to module_values ,
+decorator is an instance of class Node , created with 0 arguments : instance of decorator class . created , created with 0 arguments : decorator and instance of python_0_unicode_compatible . python_0_unicode_compatible .
+for every lib in builtins ,
+derive the class LocalTimezone from the ReferenceLocalTimezone base class .
+call the method self . path . _UNK with an argument self . path .
+for every format in self . input_formats ,
+substitute i-th element of tokens for token .
+call the function io . open with 0 arguments : potfile , string ' FILE_CHARSET ' and encoding set to settings . FILE_CHARSET , with the result renamed to fp ,
+do nothing .
+for every bit in bits ,
+call the method _UNK . _UNK with arguments as arguments .
+delete self . _get .
+substitute result for value of the memo class of the memo dictionary .
+if self . help is true ,
+if value under the ' author_email ' key of the item dictionary is not None ,
+if to is true ,
+if not ,
+define the function remove_tags with 0 arguments : html and html .
+call the method __init__ from the base class of the class SortedDict , with 0 arguments : template_string and origin .
+call the method parser . add_argument with 0 arguments : string ' args ' , metavar set to help , nargs set to string ' * ( ) ' , help set to help of help ( fixture ) ' .
+child_nodelists is a tuple with 0 elements strings ' nodelist_true ' and ' nodelist_false ' .
+call the method value . natural_key , substitute the result for value .
+close close file descriptor .
+define the method __init__ with 0 arguments : self , file_name , file_name , file_name , content_type set to None , content_type set to None .
+if cls is contained in cls . _delegate_bytes , return boolean True , otherwise is
+for every obj in return value of the generator . load method with 0 arguments : return value of SafeLoader dictionary , created with 0 arguments : unpacked dictionary stream and options dictionary ,
+define the function _UNK with an argument value .
+args is an empty tuple .
+call the method self . _create_alternatives with an argument msg , use it as an argument for the call to the self . stdout .
+call the method datetime . datetime . strptime called with arguments value converted into a list , return the result converted into a result of
+raise an TemplateSyntaxError exception with an argument string " ' %s ' . tag must be be tag : %s : %s ' . " , where ' %s ' is replaced with elements and data .
+if value is not None ,
+if not ,
+if id_for_label is true ,
+for every message in messages ,
+try ,
+for every item in value under ' categories ' key of item dictionary ,
+property decorator ,
+if not ,
+from importlib import import_module .
+if operations is lesser than PB ,
+call the method decode . decode with argument charset , substitute the result for charset
+define the function reverse with 0 elements : args , args set to None , args set to None , kwargs set to None , kwargs set to None , kwargs set to None .
+convert value into an floating point point point number by number .
+define the method _UNK with 0 arguments : self , name and value .
+if doublecolon_start equals integer -0 ,
+if fp is an instance of file and fp is an instance of fp . encoding ,
+define the method handle_m0m_field with self class instance and field as arguments .
+_cached_filenames is an empty list .
+if PY0 is true ,
+append _UNK to _UNK . .
+get the value from the ' load_initial_data ' key of the options dictionary , substitute it for self . load_initial_data .
+call the method m . end , slice list starting from result as starting index to the end , substitute the result for rest .
+return elements of words joined in a string , separated with whitespaces .
+define the method __init__ with 0 arguments self , states and first as the first .
+if not ,
+_meth_func is a string " _UNK " .
+if id_ is true ,
+if self . allow_folders is true ,
+get ' value ' attribute of the _active object , if it exists substitute it for t , if not t is None .
+substitute _UNK _UNK .
+get the value under the ' database ' key of options dictionary , use it as a index to get connections list , store the
+try ,
+import module base00 .
+define function python_0_unicode_compatible , with klass as an argument .
+derive the class _UNK from the _UNK base class .
+import module time .
+try ,
+raise an ValueError exception with an argument string " Unknown version version : %s " formated with value under ' version ' key of config
+add k to seen .
+substitute MONTHS for self . months .
+otherwise if domain equals a string ' django . py . py and ' file_ext ' is contained in django . py ,
+define the method id_for_label with 0 arguments : self and id_ .
+call the method _UNK . _UNK with argument as an argument , substitute the result for _UNK .
+if use_grouping is true ,
+call the method _trans . gettext with an argument message .
+return nothing .
+substitute self . pk , substitute if key for pk .
+define the method root_attributes with an argument self .
+call the function safe_join with 0 arguments template_dir and template_name .
+call the method self . tag with 0 arguments : function_name and compile_func .
+call the method formats . sanitize_separators with an argument value , substitute the result for
+define the method nud with 0 arguments : self and parser .
+import module warnings .
+return lib .
+non_capturing_groups is an empty list .
+call the function apps . apps , return value of the call to the method loader . loader . autodetector , and return value of the call to the function apps .
+decorator function register . filter with an argument is_safe set to boolean True .
+raise an CommandError exception with an argument string " t t t t t t %s : %s " , where ' %s ' is replaced with url , url and e .
+_UNK is a instance of a class created , created with 0 arguments : value of value of this function _ ' , called with arguments : string ' Enter ' and digits .
+return exit_code .
+if six . PY0 is true , _BASE00_DECODE_ERROR is TypeError , _BASE00_DECODE_ERROR is TypeError . Error , otherwise _BASE00_DECODE_ERROR is TypeError .
+if lang is None ,
+append a tuple containing 0 elements : filename , filename and mimetype .
+_UNK 
+update self dictionary with updates dictionary with an argument dictionary .
+from django . utils . http import fix_location_header and conditional_content_removal into default name space .
+call the function _add_doc with 0 arguments : host and string " " . " exception " , for _UNK .
+call the method __init__ from the base class of the class SortedDict , called with an argument attrs .
+define the method __init__ with 0 arguments : self and name .
+replace ' %s ' in string " table table ' %s ' %s ' %s ' with self . stream , write it to it
+if not ,
+decrement remaining by length of the emitting .
+call the method add_argument . add_argument , with string ' app_label ' , label set to string ' label label of the application containing the application . ' as arguments .
+if Exception , renamed to e , exception is caught ,
+raise an CommandError exception with an argument string " t ' t doesn more more arguments arguments ' .
+replace every occurrence of string ' message ' in string ' \n ' , replace all all occurrence of message for message , substitute it for message .
+substitute _UNK _UNK .
+if self . use_natural_primary_keys is false and obj doesnt have a ' natural_key ' argument .
+define the method M with an argument self .
+if not ,
+return an instance of a dictionary Context , created with 0 arguments : context set to unpacked dictionary locale , for unpacked dictionary locale , and the result for options ,
+define the function strip_spaces_between_tags with an argument value .
+import module cgi .
+if self . decimal_places is not None and decimal_places is grater than self . decimal_places
+define the method __enter__ with an argument self .
+return a value under the ' _UNK ' _UNK ' , return value under the ' _UNK ' key of the _UNK dictionary , _UNK to string ' _UNK ' , return empty True .
+for every form in self . extra_forms ,
+if VariableDoesNotExist exception is caught ,
+directory_created is an empty dictionary .
+value is an instance of ConvertingTuple class , created with an argument value .
+call the method self . m . get , use the first element of result for key key for key , substitute the result for
+split connection . index .
+if self . decimal_places is not None and self . decimal_places is not None and decimal_places is grater than the self . decimal_places ,
+x is integer 0 .
+field_type is a string ' NullBooleanField ( ( '
+from django . utils . _UNK import normalize into default name space .
+call the method handler . addQuickElement with 0 arguments : string ' link ' and result of the function rfc0000_date called with an argument item
+if not ,
+set attr . name attribute of the Module_six_moves_urllib_robotparser object to attr .
+substitute self . t for t .
+call the function allow_lazy with an argument chars , substitute the result for chars .
+call the method __init__ from the base class of the class ContextDict , with 0 arguments : unpacked list args and unpacked dictionary kwargs .
+try ,
+if initial is not None ,
+define the method validate_unique with an argument self .
+call the method . _UNK method with the property set to negative set as the argument . _UNK .
+old_handler is None .
+raise an ValidationError with 0 arguments : value under the ' pk ' key of the self dictionary params is an entry : params with entry , pk set to an entry for pk pk for value .
+convert value to an integer .
+for every k in resultclasses ,
+get the value under the name key of self . error_messages dictionary , substitute error_messages field of the result for error_messages .
+define the function _UNK with request as an argument .
+convert locale to lowercase , return it .
+join statements into a string , separated by newlines , return it .
+return func .
+compare is a lambda class with self . initial and self . input_type is true ,
+append value under k key of self dictionary to a list , for every k in self . keyOrder .
+if value is None ,
+if stream_or_string is an instance of bytes ,
+return boolean False .
+if ImportError exception is caught ,
+call the method self . importer with an argument used , substitute the result for
+remove self . _regex_validator from self . validators .
+return self . _UNK .
+access mode mode of mode mode . _UNK . _UNK path .
+for every cursor in return value of the method connection . introspection . introspection . table_names called with an argument cursor ,
+otherwise if bmatch is true ,
+return the value under the format key of the _serializers dictionary , return the result
+if close is true ,
+substitute serialize for __str__ .
+try ,
+try ,
+call the method m . groups , substitute the first element of the result for idx .
+substitute second element of elt for elt .
+define the method _get_choices with an argument self .
+from django . utils . datastructures import MultiValueDict into default name space .
+define the method _UNK with an argument self .
+return result .
+update dictionary item with an argument dictionary .
+get the value under the lang_code key of the request . request dictionary , substitute it for lang_code .
+upto is integer 0 .
+raise an CommandError exception with an argument string " %s ' t template template %s . %s . replace ' , where ' %s ' is replaced with self . template and template , respectively .
+define the method _text_words with 0 arguments : self , length and truncate length .
+derive the class _UNK from logging . _UNK base class .
+for every char in fmt ,
+call the method states . items , for every state and state in the result ,
+reverse the list modules of modules , return them .
+call the method self . data . data , use the result into an argument for the call to the function calendar . data .
+if arg is None ,
+property decorator ,
+join statements into a string , separated by newlines , return it .
+define the method __init__ with 0 arguments : self , max_length set to None , min_length set to None , unpacked list args and unpacked dictionary kwargs .
+call the method self . get_full_path , append the result to string ' // ' , substitute it for location .
+if KeyError exception is raised ,
+finally perform ,
+substitute string ' _UNK ' for self . _UNK .
+remove dirname from the dirnames .
+define the function split_url with an argument url .
+return data .
+from django . conf import settings into default name space .
+return an instance of a class RegexURLResolver created with 0 arguments : raw string ' ^/ ' and a list containing an element raw .
+if attrs is false , make it an empty dictionary .
+substitute _UNK _UNK .
+get the value under the ' filename ' key of the disposition dictionary , substitute it for file_name .
+substitute length with self . initial and self . initial is not , substitute the result for initial .
+return self . fk is greater .
+if transfer_encoding is not None ,
+try ,
+define the function _UNK with 0 arguments value and arg set to None .
+leave_locale_alone is boolean True .
+models is ' ' '
+for every node in self . nodelist_loop ,
+substitute max_expr for self . max_expr .
+increment i by integer 0 , substitute the result for i .
+otherwise if field . rel is true and field . rel is an instance of models . models ,
+val is None .
+substitute _iteritems for iteritems .
+self . connection .
+call the function get_library with an argument lib , substitute the result for lib .
+call the method self . build_attrs with an argument field set to id_ field field field field field field field field field field field ,
+if path is not contained in self . path ,
+if value under the ' daemonize ' of options dictionary is None ,
+return FormSet .
+define the function curry with 0 arguments : unpacked list args and unpacked dictionary kwargs .
+call the method parser . next_token , substitute the result for token .
+decorator function register . filter with an argument is_safe set to boolean False .
+call the function func with an argument func .
+call the method formats . number_format with 0 arguments : value and number element , use the result as an argument for the call to
+define the method _add_local_translations with an argument self .
+from django . utils . six . moves import _UNK as _UNK into default name space .
+define the function get_language_bidi .
+substitute cls . __text_cast for cls . __text_cast .
+if self . verbosity is greater or equal to integer 0 ,
+month_field is a string ' _UNK ' .
+define the method __hash__ with an argument self .
+call the method self . _archive . close .
+from django . utils . formats import localize into default name space .
+define the method __init__ with 0 arguments : self , data set to None , files set to None , auto_id set to None , auto_id set to None , auto_id set to None , prefix set to None ,
+define the method handle_inspection with self and options as arguments .
+from django . utils . safestring import SafeData and EscapeData into default name space .
+define the method queryset with self class instance , queryset and unpacked dictionary options as arguments .
+convert value to lowercase , return the result .
+if ValueError exception is caught ,
+append filename to filename .
+increment piece by piece of piece by piece .
+for every base in new_class . __mro__ in reversed order ,
+import module os .
+get ' value ' attribute of the _active object , if it exists substitute it for t , if not t is None .
+from django . core . validators import EMPTY_VALUES into default name space .
+self . _UNK dictionary value under the key key .
+if not ,
+if lambda function with an argument v , return value is the result of the function smart_text . _meta . _meta . to_python . to_python and return value of the function smart_text function called of the result .
+property decorator ,
+return media .
+define the method _handle_fk_field_node with self class node , node and field as arguments .
+if end is lesser than integer 0 ,
+call the method os . umask with an argument umask .
+call the function re . compile with 0 arguments : raw string ' ? ? ? ? ? ? ? ? ' and re . IGNORECASE , substitute the result for _UNK .
+call the function re . compile with arguments regex and re . UNICODE .
+obj is an instance of Node class , created with 0 arguments : negated set to self . negated and negated set to negated .
+call the method kwargs . update with an argument dictionary .
+if only_initial is false ,
+call the function sql_destroy_indexes with 0 arguments : app_config , self . style and connection , substitute the result for statements .
+if ValidationError , renamed to e , exception is caught ,
+call the traceback . _UNK method with argument last an argument last last element of the last to last element .
+derive the class metaclass from the meta base class .
+return a string " UTC " .
+substitute self . template_string list from elements .
+decorator stringfilter ,
+if ValueError exception is caught ,
+return a list containing first element of params and a list containing params .
+call the function os . path . path . first with first element of self . argv , substitute the result for self . argv
+try ,
+call the method form . instance . using with an argument self . db . db , substitute the result for qs .
+translation . _info is an empty dictionary .
+substitute integers 0 , 0 0 , 0 for 0 elements , NEXT and PREV , respectively .
+append string ' AutoField ? ' to comment_notes .
+import module sys .
+define the method _UNK with 0 arguments : self , key , otherwise set to None and dklen set to None .
+exc_info is a tuple with 0 elements : None of method record . getMessage . None .
+define the method __str__ with an argument self .
+call the function get_default_timezone , use the result as an argument for the call to
+import module sys .
+derive the class BadSerializer from the object base class .
+if LookupError exception is caught ,
+define the method save_new_objects with self self and unixfrom set to boolean False .
+substitute old_method_name for self . old_method_name .
+self the self . path method with path as an argument , substitute the result
+define the method handle with self class instance and unpacked dictionary options .
+call the stream_or_string . read function , substitute the result for stream_or_string .
+return an empty list .
+if ValueError or TypeError exceptions are caught ,
+otherwise if token . token_type equals integer 0 ,
+call the method file . open . open , with an argument file ,
+if length of list_ equals integer 0 ,
+return list with 0 elements : first_item , and list , and list for default_list
+define the function _UNK with environ , key and default as arguments .
+if NotImplementedError exception is caught ,
+convert s to integer of base 00 , substitute it for value .
+define the method clean with arguments self and value .
+replace ' %s ' in string " Running handlers for application %s " with app_config . label , print it to it .
+define the method __bool__ with an argument self .
+if extend is boolean True ,
+get the index of the first index of tagname , substitute it for i .
+call the method domain . decode with an argument string ' ascii ' , substitute the result for value .
+from django . utils . encoding import force_text and force_text into default name space .
+substitute ' %s ' in string ' %s ' , write it to it file out , write it to self . stdout stream .
+write string " _UNK _UNK _UNK to _UNK self . stdout stream .
+import module cgi .
+EventHandler . modified_code is FILE_MODIFIED .
+from django . utils import six into default name space .
+define the method __iter__ with an argument self .
+derive the class Command from the AppCommand base class .
+if the result of the ' new_name . find ( an argument verbosity ' , if it evaluates to greater than equal to integer 0
+call the function time . date with 0 arguments : date . year , time . time , time . time , time . time , time . time , time . time , time . time , time . time , and time . time .
+call the method MIMEText . __init__ , with self , stream , M , unpacked M , unpacked dictionary _params .
+if filename ends with filename or filename is contained in extra_files ,
+call the method . middleware . get_nodes_by_type with an argument request , substitute the result
+define the method render with 0 arguments self and context .
+skip this loop iteration .
+return an empty string ,
+define the function _UNK with environ , key and default as arguments .
+derive the class _UNK from the _UNK base class .
+call the method _trans . npgettext with 0 arguments singular , plural and number , return the result .
+return string ' 0 ' .
+substitute ' %s ' %s ' in self . stdout . _UNK file fixtures with argument " . " .
+call the function getInnerText with argument k , strip the result of the method strip dictionary for every k .
+fork a child process , if the result equals integer 0 ,
+if locale_dir is false ,
+call the method parser . add_argument . add_argument with 0 arguments : string ' _UNK ' , nargs is a string ' _UNK or models or models . ' .
+call the method self . writer_leaves .
+templatetags_modules is an empty list .
+from django . forms import Form into default name space .
+call the method connection . cursor , substitute the result for cursor .
+call the self . forms . initial_form_count , return the result of forms forms from forms index from forms index index index as the index
+call the method g . g with arguments self and unixfrom set to unixfrom .
+for every opt in list containing 0 elements : strings ' fields ' , ' fields ' and ' localized_fields ' ,
+define the method close with an argument self .
+derive the class _UNK from the _UNK base class .
+self . _UNK dictionary value under the key key .
+return an empty string ,
+define the method _UNK with an argument self .
+if second element of the url_fields is false ,
+substitute file . name for filename .
+otherwise if ' = ' is contained in part ,
+otherwise if maxsize is None ,
+define the function with arguments self and filename .
+call the method os . _UNK .
+if i is greater than sys . maxint ,
+define the method utcoffset with 0 arguments self and dt .
+if self . _wrapped is empty ,
+fourth fourth fourth fourth : termios termios . _UNK and termios exception .
+if self . empty is true ,
+raise an TemplateSyntaxError exception with an argument string " " %s ' keyword argument keyword keyword argument %s " , where ' %s ' are replaced with name and param .
+_UNK a function _UNK with 0 elements : _UNK , _UNK and _UNK as 0 _UNK .
+from django . utils . six . moves import six into default name space .
+msguniq_options is an list with elements : string ' _UNK ' .
+call the function select_template with an argument file_name , substitute the result for t .
+call the function django with 0 arguments : string ' django . utils . encoding ' , ' and encoding as an ' utils '
+yield and empty string as the result .
+if self . parent_instance is not None ,
+if dklen is false ,
+define the method __getitem__ with 0 arguments : self and idx .
+derive the class Command from the BaseCommand base class .
+substitute WSGIServer for httpd_cls .
+call the method termios . _UNK . _UNK with arguments , termios and termios as arguments .
+do nothing .
+if sep is an instance of unicode ,
+call the function lazy with 0 arguments : ugettext and six . text_type , substitute ugettext_lazy .
+if field is not contained in self . fields ,
+call the method activate with an argument self . old_language .
+call the method copy . deepcopy with 0 arguments : self . _wrapped and memo , return the result .
+return the _UNK class with 0 elements : string ' widget ' and ' widget ' , ' , and ' attrs ' and attrs , with every tuple and tuples of the attrs dictionary , and attrs dictionary and attrs '
+define the function code_changed .
+get the value under the ' database ' key of the options dictionary , use it as a key to get the value from the
+import module inspect .
+define the method _UNK with 0 arguments self and o .
+for every locale in locales ,
+raise an StopIteration exception .
+call the method connection . _UNK . _UNK . _UNK with 0 arguments : _UNK set to verbosity , verbosity set to boolean False of interactive set to boolean False .
+define the method namespace_dict with an argument self .
+for every field in return value of the function _parse_date_fmt ,
+define the function constant_time_compare with 0 arguments : length set to integer 00 ,
+define the method _UNK with 0 arguments : self , key and version set to None .
+substitute match , match and match for self . path , self . match .
+call the function limit_choices_to , substitute the result for limit_choices_to .
+i is the i of i of i i .
+call the method parser . add_argument with 0 arguments : string ' --database ' , default set to DEFAULT_DB_ALIAS , and help set to a string ' Nominates a database to print print to the SQL for . Defaults to the " default " database . ' .
+errors is an empty list .
+define the method command with 0 arguments : self , token , command and parse_until as None .
+if not ,
+call the method pk . pk . pk . pk . pk as an argument pk value of pk dictionary , for value under the pk dictionary pk ' key of the pk dictionary .
+define the method __init__ with 0 arguments : self , unpacked list args and unpacked dictionary kwargs .
+if value under the ' language ' key of the self . feed dictionary is not None ,
+define the method id_for_label with 0 arguments : self and id_ .
+if f is a file ,
+if opts . _delegate_bytes is true ,
+return None .
+if dirname is true , append dirname is a string separated separated by ' ' ' , otherwise return absolute list dirname ' .
+raise an CommandError exception with an argument string " %r is a valid valid valid . " , where ' %r ' is replaced with
+get the value under the ' database ' key of the options dictionary , substitute it for database .
+do nothing .
+call the method c . sort with an argument dictionary kwargs , substitute result for
+if middleware has an attribute ' process_response ' ,
+call the method sub . sub with 0 arguments ' \n ' and text , return the result .
+_UNK 
+_UNK 
+define function no_style , without input arguments .
+if proto is greater than or equal to integer 0 ,
+define the method __deepcopy__ with 0 arguments self and memo as arguments .
+from django . utils . _os import safe_join into default name space .
+for every refto and refs in return value of the method references . items . items ,
+substitute path_info for self . path_info .
+for every app_label and other_dict in result of the method changes . items ,
+define the function get_internal_wsgi_application .
+if VariableDoesNotExist exception is caught ,
+try ,
+substitute Command for _UNK .
+version is a lambda function with argument value as value and every value of the function version , called with argument x , and version
+call the function lazy with 0 arguments : unpacked list args and unpacked dictionary kwargs , created with elements of unpacked dictionary kwargs , return
+if UnicodeEncodeError exception is caught ,
+return j .
+yield _UNK ,
+if nodelist is an instance of TextNode and TextNode is not an instance of class node .
+tried_modules is an empty list .
+return s .
+_UNK a function _UNK with _UNK , _UNK , _UNK and _UNK as arguments .
+from django . utils . utils import deconstructible into default name space .
+call the function force_text with argument argument as an argument , use the result as an argument for the call to the function force_bytes .
+if block_name is contained in parser . __loaded_blocks ,
+if can is true ,
+substitute changeset for get_git_changeset . cache .
+for every name in formatters ,
+define the function conditional_content_removal with request and response as the arguments .
+define the function __wrapper__ with 0 arguments : unpacked list args and unpacked dictionary kw .
+if filename is not contained in _error_files ,
+return self . _encoding .
+define the method __len__ with an argument self .
+try ,
+call the method next with an argument bits , substitute the result for bits .
+call the function _i00n_cache_key_suffix with request and request as arguments .
+if initial_value is an callable object ,
+call the method form . add_initial_prefix with an argument name , substitute the result for self . name .
+from django . core . _UNK import _UNK into default name space .
+call the method self . _get_scheme , return the result .
+call the method self . _UNK with an argument localedir .
+call force_bytes . find function with the argument value , use the result as an argument for the call to the force_bytes function , store
+derive the class RegexField from the base class CharField class .
+try ,
+derive the class EmailMultiAlternatives from the EmailMessage base class .
+if middleware has an attribute ' process_response ' ,
+if not ,
+define the function is_naive with an argument value .
+_UNK 
+define the function _UNK with 0 arguments : src and list .
+if not ,
+if self . verbosity is greater or equal to integer 0 ,
+define the function format_html_join with 0 arguments : format_string , format_string and format_string .
+define the method popitem with an argument self .
+call the method token . split_contents , substitute the result for args .
+try ,
+define the method _UNK with 0 arguments self and name .
+if not ,
+if not ,
+from django . utils . xmlutils import SimplerXMLGenerator into default name space .
+self . default_locale_path is None .
+call the method handler . endElement with an argument string ' item ' .
+register . tag decorator ,
+if length of words is greater than length ,
+if namespaces is true ,
+define the function url with 0 arguments : parser and token .
+import _UNK _UNK .
+if self . warning is an instance of Exception class ,
+return settings . TEMPLATE_STRING_IF_INVALID .
+call the method parser . expression with an argument expression , substitute it for self . expression .
+for every model in model_list ,
+help is a string " _UNK an first set of migrations from migrations into a first one . " .
+call the function add_to_builtins with 0 arguments : value , return value of the call call to function six . _UNK with 0 arguments : string ' Enter ' , string ' or ' or ' .
+if loader is an instance of six . string_types ,
+raise an exception .
+define the method _UNK with 0 arguments self , command and hash as a length .
+from email . message . message import message into default name space .
+if Model . DoesNotExist exception is caught ,
+if BLOCK_CONTEXT_KEY is contained in None and call to the method self . name . name from value under the key key of render_context dictionary ,
+subtract decimals from digits , substitute the result for digits .
+if IOError exception is caught ,
+if LookupError exception is caught ,
+substitute length of text for end .
+with lock ,
+substitute parent name , parent and self . name , self . nodelist , self . nodelist and self . nodelist , respectively .
+define the method build_potfiles with an argument self .
+do nothing .
+code is a string ' max_value '
+if Exception , renamed to e , exception is caught ,
+call the method self . main_help_text . write with an argument line set to boolean True , write it set to it set to sys
+call the method time . localtime with an argument stamp , substitute the result for
+append _UNK elements , return the result .
+if not ,
+import module itertools .
+substitute _UNK for _UNK .
+for every attr in _urllib_error_moved_attributes ,
+do nothing .
+import module os .
+get the value under the ' database ' key of the options dictionary , substitute it for database .
+define the function urlquote_plus with 0 arguments : url and safe set to an empty string .
+for every app_config in app_configs ,
+define the method format_subject with 0 arguments : self and subject .
+call the function errors . error_dict . items , for every field and errors in the result ,
+define the function _UNK with an argument value .
+from collections import defaultdict into default name space .
+return boolean False .
+while i is lesser than length of subject and i-th element of subject is an empty space or tab character .
+if i is greater than or equal to the result of the method self . initial_form_count . initial_form_count , and i is greater than or
+call the function force_text with first element of choice as an argument , substitute the result for self . choice_value .
+convert uppercase to uppercase .
+if code is None ,
+from django . db import connections , router , transaction , transaction and DEFAULT_DB_ALIAS into default name space .
+lexer is an instance of JsLexer class .
+try ,
+from django . core . exceptions import _UNK into default name space .
+e . args is a tuple , containing tuple with 0 : : %s ' %s ' , where ' %s ' is replaced with taglib , respectively .
+from django . db . migrations . migrations import MigrationAutodetector into default name space .
+call the method parser . compile_filter with an argument string " _UNK " , substitute the result for result .
+substitute seconds by seconds .
+self . waiting_readers is integer 0 .
+join callback . __class__ . __class__ " , " .
+try ,
+return e .
+append f . name to exclude .
+convert value and arg into a integers , return sum sum .
+call the function re . compile with an argument raw string ' %s , _UNK , 0} , 0} , where ' %s ' is replaced with regex , regex , __M , substitute the result for RFC000_DATE .
+import module keyword .
+call the method data . getlist with an argument name .
+otherwise if ch equals a string ' : ' ,
+if message is not an instance of ValidationError ,
+define the function escape with an argument text .
+define the method strptime with arguments self , value and format as the value .
+define the method end_object with self and obj obj .
+substitute self . none_value for self . _encoding .
+if six . PY0 is true ,
+call the method handler . endElement with an argument string ' author ' .
+try ,
+return doy .
+if fset is not None ,
+self . _post is an instance of QueryDict created with arguments : an empty string and encoding set to self . _encoding , self . _files is an instance of class MultiValueDict .
+raise an ValueError exception with an argument string ' Unknown level : %r ' formated with level .
+call the method __deepcopy__ from the base class of the class ChoiceField , with an argument memo , substitute the result for result .
+if not ,
+remove first element of unhandled_params .
+if not ,
+if inplural is true ,
+from django . conf import settings into default name space .
+args is an empty list .
+raise an ViewDoesNotExist exception with an argument string " Could import import %s . %s . %s . %s ' does not %s is not integer 0 .
+raise an CommandError exception , with an argument string " The ' %s ' has migrations . Please has the migrations migrations migrations has an used migrations . " , where ' %s ' is replaced for app_config .
+if ext is true ,
+if level is not contained in logging . _levelNames ,
+meta is a list containing 0 elements : ' http ' , ' https ' and ' _UNK ' .
+define the method __init__ with 0 arguments : self , name , name and name set to None .
+if self . verbosity is greater or equal to integer 0 ,
+define the method clean with 0 arguments : self , initial and initial set to None .
+define the method __iter__ with an argument self .
+call the method self . add_truncation_text with 0 arguments : an empty string and truncate , substitute it for truncate .
+if ImproperlyConfigured renamed to exc , exception is caught ,
+join self . dirpath and thefile in a string , substitute the result for work_file .
+if key is contained in cache ,
+call the method self . setFeature . _UNK with 0 arguments : handler . _UNK and boolean False .
+requires_system_checks is boolean False .
+substitute value under the name key of the tags . tags dictionary for value under the name key of the tags dictionary .
+import module re .
+define the function m with an argument m .
+from django . conf import settings into default name space .
+call the function allow_lazy with 0 arguments : urlquote and six . text_type , substitute the result for urlquote .
+return wrapper .
+get the value under the ' microsecond ' key of the kw dictionary , to the result of the kw dictionary , substitute the result for value under the ' _UNK ' key of the kw dictionary .
+from django . utils . deprecation import RemovedInDjango00Warning into default name space .
+return boolean True .
+child_nodelists is a tuple with 0 elements strings ' nodelist_true ' and ' nodelist_false ' .
+substitute ' %s ' in string ' complain : formatted , with app_or_project and app_or_project , substitute the result for msg .
+define the function default with 0 arguments value and arg .
+raise an TemplateDoesNotExist exception .
+call the method self . data . find . increment with 0 arguments : second integer 0 and increment jan0_weekday decremented integer 0 , integer integer 0 and increment increment increment integer 0 , substitute the result for data .
+return an empty string ,
+help is a string " containing the instance of the SQL SQL called , with the database database of database database is a value of the given database . " .
+property decorator ,
+_UNK 
+year_val and month_val and month_val set to None .
+db_module is a string ' django . db ' .
+return shift function shift , if the result is integer by integer 00 , return boolean True .
+raise an self . source_error exception with 0 arguments : source and msg .
+if link is not None ,
+derive the class Command from the BaseCommand base class .
+if msg is true ,
+define the method __repr__ with an argument self .
+define the method more with an argument self .
+call the function os . exc_info , substitute the result for _UNK , exc_info and tb , respectively .
+call the function thread . start_new_thread with main_func and args as arguments .
+call the function mark_safe with an argument message , return the result .
+break the loop execution .
+substitute pos for end_text_pos .
+import module glob .
+call the method self . __class__ with 0 arguments : an empty string , result is boolean True , substitute it for self . encoding
+append a tuple with 0 elements : f . name and formfield to field_list .
+substitute end for end .
+all_files is an empty list .
+call the method smart_text with 0 arguments : value under the ' fk ' key of the options dictionary , if the key doesnt exists and settings . encoding for encoding .
+widget . input_type is a string ' hidden ' .
+call the json . json function with an argument name , substitute the result for
+define the function _UNK with 0 arguments unpacked list args and unpacked dictionary kwargs .
+register is an instance of Library class .
+define the method value_from_datadict with 0 arguments : self , data , files and name set to None .
+create directories from the elements in filename .
+call the function sys . exc_info with an argument exc_info .
+return the_path .
+if ending is None substitute self . ending for ending .
+self the self . path method with path as an argument , substitute the result
+return boolean False .
+return an empty string ,
+call the function options . dump with 0 arguments : self . stream , self . stream and unpacked dictionary options .
+from __future__ import unicode_literals into default name space .
+if not ,
+call the function op , return the result .
+return split .
+call the method _UNK . _UNK with arguments _UNK and _UNK , substitute the result for _UNK .
+return an empty list .
+define the method _has_changed with 0 arguments : self , initial and data .
+raise an ValidationError exception with 0 arguments : error_message and code as a string ' invalid ' .
+call the method self . get_template_sources with 0 arguments : template_name and template_dirs , return
+if name is true , substitute it for function_name , if not function_name , _decorated_function from field . _decorated_function attribute , if __name__ exists ,
+substitute elements of middle from length of opening index to the end , for middle .
+call the function datetime with an argument unpacked list kw , return the result .
+substitute view_name for self . view_name .
+call the method httpd . _UNK with an argument _UNK .
+define the method _UNK with 0 arguments self and name .
+return nothing .
+substitute app_name for self . app_name .
+raise an ImportError exception .
+define the function to_locale with 0 arguments language and language set to boolean False .
+append form to self . saved_forms .
+substitute func for value under the ' func ' key of the self dictionary . __dict__ dictionary .
+call the function import_string with an argument attr , substitute the result for attr .
+try ,
+get is a tuple containing elements of the function pformat with an argument generated and if the result of pformat . pformat , called with an argument request set to None .
+targets is a list containing tuple with elements , app_label and None .
+raise raise an self . warning .
+if size is None ,
+call the self self . _UNK . _UNK with self . _UNK . _UNK , substitute the result for absolute_max .
+pending_references is an empty dictionary .
+call the function random . _UNK with argument _UNK _UNK .
+join domain and domain in a string ' @ ' in a domain , substitute it for addr .
+if remaining is None ,
+from django . core . management . base import CommandError into default name space .
+call the method nodelist . render , return an instance of Context class , use the result as an argument for the instance of Context
+call the method translation . activate with an argument settings . LANGUAGE_CODE .
+substitute csrf_token for value under the ' csrf_token ' key of csrf_token dictionary .
+if self . data . data . minute equals integer 0 and self . data . hour equals integer 0 ,
+get the value under f . _UNK dictionary key of dictionary under dictionary _UNK ' key of config dictionary , use it as an argument
+self . _UNK is an empty list .
+call the method signing . salt with an argument salt set to key of salt and salt . max_age method and max_age set to max_age set .
+do nothing .
+raise an AttributeError exception with an argument string ' seconds seconds %s %s ' %s ' ' , where ' %s ' is replaced by
+write the string " Installing SQL . . . \n " to the standard output .
+skip this loop iteration .
+call the function template_localtime with 0 arguments : obj and context . use_tz , substitute the result for obj .
+if not ,
+substitute format into a value and format .
+read is an property file from its method self . __class__ . read method is read .
+define the method __enter__ with an argument self .
+for dirname in dirs ,
+if app_labels is true ,
+call the method self . source_error with 0 arguments : token . source and msg , return the result .
+return the result of the mail . send method return the result .
+for every _ and nodelist in self . conditions_nodelists ,
+call the method self . fields . fields , for every field in result ,
+convert data to string , substitute it for data .
+call the function escape with an argument trail , substitute the result for lead , escape and trail for trail .
+try ,
+call the method f . _UNK with 0 arguments : data and data set to a list and data . name key to boolean True , and the result for value under the ' _UNK ' key of data dictionary .
+import module re .
+from django . db import connections and DEFAULT_DB_ALIAS into default name space .
+property decorator ,
+call the method self . extra_headers . get with arguments : string ' self ' , string ' does ' and a string , substitute the result for value under the ' separated ' of the msg dictionary .
+convert orphans by a floating point self . per_page , convert convert result to an integer and substitute it for self . per_page .
+decorator lru_cache . lru_cache with an argument maxsize set to None .
+if not ,
+define the method sign with arguments self and value .
+define the method __init__ with 0 arguments : self and tagtype .
+SINGLE_BRACE_START is a string ' _UNK ' .
+define the method load_template with 0 arguments : self , template_name , template_dirs set to None .
+derive the class Node from Node base class .
+token is an instance of Token class , created with 0 arguments : TOKEN_BLOCK and
+match is an dictionary containing elements : django . core . core .
+import module calendar .
+call the method queryset . none , substitute it for qs .
+raise an ValidationError with 0 arguments : value under the ' invalid ' key of the self . error_messages dictionary and code set to '
+if value under the ' feed_url ' key of the self . feed dictionary is not None ,
+if value is false ,
+if StandardError , renamed to e , exception is caught ,
+substitute length of bits for prefixed .
+self is a string ' limit_value ' ,
+call the method lookups . appendlist with 0 arguments : pattern . name and a tuple containing 0 elements .
+define the method __str__ with an argument self .
+register . tag decorator ,
+define the method write_message with arguments self and message .
+if smtplib . SMTPException exception is caught ,
+if resource_string is not None ,
+call the method connection . extend with 0 arguments : style , style and connection , extend the result with the result .
+substitute first elements of bits for bits and bits , respectively , respectively , respectively
+define the method getlist with 0 arguments : self and key .
+define the method __iter__ with an argument self .
+deps is an empty list .
+if AttributeError exception is caught ,
+if not ,
+call the method self . clear_checkbox_name with an argument name , substitute the result for
+raise an CommandError exception with an argument string " No . %s ' %s ' in %s in %s . " .
+if self . match is None or call to the method self . match_re . search . search with an argument f ,
+from django . utils import six into default name space .
+if value under the ' pubdate ' key of the item dictionary is not None ,
+return endpos .
+define the method __init__ with 0 arguments : self , origin , origin set to None and name set to None .
+from django . core . serializers . python import Deserializer as PythonDeserializer into default name space .
+substitute regex for self . regex .
+define the method shell with self class instance and shell set to None as an arguments .
+raise an NotImplementedError with an argument string ' subclasses of must must must ( a ( ( ) method ' .
+if register_to is true ,
+call the method __init__ from the base class of the class TemplateIfParser , with 0 arguments : unpacked list args and unpacked dictionary kwargs .
+define the method _UNK with an argument self .
+call the method self . file . close .
+syear is a string " %00d " formated with dt . year .
+output is an empty list .
+convert path to a string , substitute the result for path .
+call the method __init__ from the base class of the class SortedDict , with 0 arguments : unpacked list args and unpacked dictionary kwargs .
+call the method handler . addQuickElement with 0 arguments : string ' description ' and value under the ' description ' key of the self
+raise an ValueError exception with an argument string " ' %s ' %s . no no no one . " , , where ' %s ' is replaced with arguments . app_label . app_label , respectively .
+try ,
+if values under " author_name " and " author_email " keys of the item dictionary are both true ,
+join msgs into a string separated by newlines , join ' and ' into newlines into newlines , substitute the result for msgs .
+otherwise if first element of g equals a string ' " ' ,
+call the app . _UNK method with an argument ' . ' , substitute last element of the result for app .
+otherwise if tzinfo is not None ,
+needs_multipart_form is boolean False .
+append node to nodelist .
+define the method value_from_datadict with 0 arguments : self , data , files and name set to None .
+define the function ip_address_validators with arguments protocol and unpack_ipv0 .
+define the function dirname with an argument dirname .
+substitute schemes for self . schemes .
+call the method self . to_python with an argument value , strip the result ends of the result for sides .
+derive the class LocaleRegexProvider with LocaleRegexProvider as base class .
+define the method __init__ with 0 arguments self , name , value , attrs , attrs and choices as choices .
+otherwise if first element of second row of args equals a string ' 0 ' ,
+call the function os . stat with an argument path . path , and stat is not equal equal stat stat . path .
+call the method self . add_library with an argument lib .
+define the function dec with an argument func ,
+if value under the ' feed_url ' key of the self . feed dictionary is not None ,
+append app_name to the app_name .
+call the function new_method_proxy with an argument operator . text_type , substitute the result for
+define the function _UNK with an argument s .
+from django . db import models into default name space .
+reverse settings . LOCALE_PATHS order in settings , for every order in the result .
+call the form . is_valid method , if it evaluates to false ,
+define the __init__ method __init__ with 0 arguments : self , regex , urlconf_name , app_name set to None , app_name set to None and namespace set to None .
+define the method model with model as an argument .
+substitute link for link , result , key and result , respectively .
+if string ' : : : ' is contained in ip_str ,
+for name of self . name is a None , for every value of the data . name value of the data dictionary .
+unpack dictionary is a dictionary with 0 elements : attrs for a dictionary for entry , if if it through attrs of attrs for dictionary
+if dt is None , dt is boolean False , otherwise otherwise result to is_dst .
+substitute negate for self . negate .
+call the function func with 0 arguments : unpacked list args and unpacked dictionary kwargs
+define the method __iter__ with an argument self .
+from django . core . signals import request_finished into default name space .
+raise an NotImplementedError exception with an argument dictionary containing 0 entries : ' path ' and ' tried ' for tried .
+if version is None ,
+self . _reverse_dict is an empty dictionary .
+substitute silent for self . silent .
+call the function new_method_proxy with an argument bool , substitute the result for _UNK .
+return an instance of the module . Command class .
+with lock ,
+substitute node for bit .
+with self . mutex perform ,
+if _UNK element of bits is not equal to a string ' as ' ,
+raise an exception .
+if ' step ' key of the attrs dictionary does it exists as an argument string .
+call the method self . nodelist with 0 arguments : token , instance of token class , created with an argument token . contents ,
+call the method kwargs . update with an argument kwargs . kwargs .
+raise an CommandError exception with an argument string " matches matches migration . Please app app ' %s ' . Please be more more . " , where ' %s ' is replaced with migration_name and app_label .
+define the initialization function with self class instance , digits and sign defaulting to ' - ' as arguments .
+get ' value ' attribute of the _active object , if it exists substitute it for t , if not t is None .
+get the next element of the iterable , assign the result for ch and escaped
+if size is None ,
+from django . utils . encoding import force_str into default name space .
+if settings . _UNK method with string ' _UNK ' ,
+join elements of self . vals into a string number into string ' , substitute the result for ret .
+call the method handler . addQuickElement with 0 arguments : string ' category ' and cat .
+from __future__ import unicode_literals into default name space .
+help is an string " Prints the SQL statements statements statements statements statements module the module module name module s name ) s s . " .
+raise a NotImplementedError with an argument string ' subclasses of must must must ( a _UNK ( ) method ' .
+raise an ValidationError with 0 arguments : value under the ' invalid ' key of the self . error_messages dictionary and code set to '
+derive the class TarArchive from the BaseArchive base class .
+substitute _meth_self for self . _UNK .
+for every namespace and tuple containing : prefix and prefix . prefix ,
+call the method callback . rindex with an argument string ' character ' , substitute the result for project_name .
+url_markup_template is a string ' <a <a ' _UNK ' _UNK ' _UNK ' .
+raise an AttributeError exception with an argument string " The can be be be one . " .
+define the method negate with an argument self .
+self . bad_cookies is an empty set .
+if not ,
+from django . core . serializers import base into default name space .
+call the method cursor . close ,
+if not ,
+raise an ImportError exception with an argument string " Unable ImportError : %s %s : %s " , where ' %s ' is replaced with
+if not ,
+define the method __init__ with 0 arguments : self , _UNK set to None , _UNK set to None , None ,
+try ,
+decorator stringfilter ,
+try ,
+for every e in self . convert convert into a string , separated by newlines into a string , separated by newlines , join '
+add state dictionary to state dictionary state . __dict__ dictionary .
+call the method initial_form_count from the base class of the class BaseModelFormSet , return the result .
+substitute settings . _UNK for settings .
+self . pointer is integer 0 .
+define the function wrapper with 0 arguments : unpacked list args and unpacked dictionary kwds .
+return boolean False .
+substitute ' n ' for answer .
+try ,
+if ImportError exception is caught ,
+for every key in dict_ ,
+ns_pattern is an empty string .
+define the method __repr__ with an argument self .
+call the get_bytes_from_wsgi function with environ , string ' _UNK ' and empty empty as arguments , substitute the result for script_url .
+call the method content . encode with an argument string ' utf-0 ' , substitute it for content .
+define the method media with an argument self .
+derive the class _UNK from the _UNK base class .
+if jan0_weekday equals integer 0 or if jan0_weekday . year and jan0_weekday equals to integer 0 .
+if _win is true ,
+break the loop execution .
+call the function user_function with 0 arguments unpacked list args and unpacked dictionary kwds , substitute the result for result .
+substitute logger . file to self . message .
+define the method _UNK with 0 arguments : self , version and version set to None as None .
+return e . encode method , encode a result .
+define the method add_fields with 0 arguments : self , form and index .
+get the type of self object , call its method __bool__ on return an argument , return the result .
+child_nodelists is a tuple with 0 elements : strings ' nodelist_loop ' and ' nodelist_empty ' .
+get attr attribute of self object , if it exists substitute it for nodelist , if not nodelist is None .
+derive the class DeserializationError from the Exception base class .
+get the value under the key of the self dictionary , if it doesnt not return key , substitute the result for result .
+from django . utils import six into default name space .
+define the method __call__ with arguments self and value .
+return plural_suffix .
+while self . tokens is true ,
+call the method __init__ from the base class of the class SortedDict , with 0 arguments : unpacked list args and unpacked dictionary kwargs .
+call the method handler . addQuickElement with 0 arguments : string ' feed_copyright ' and value under the ' link ' key of the self
+and errors set to the result of self . copy . copy .
+define the method __init__ with 0 arguments : self and source .
+write errors to self . stdout .
+otherwise if item_type equals FILE ,
+derive the class RendererMixin from the object base class .
+define the method date with an argument self .
+if app_config is None ,
+if not ,
+format self . data string with name , use it as the key for the data dictionary , substitute the result for m .
+substitute settings . ROOT_URLCONF for urlconf .
+call the method bit . finditer with an argument text , for every bit in result ,
+value under the " " " key of the wsgi_opts dictionary is a string ' url ' .
+encoding . setter decorator ,
+increment i by integer 0 ,
+call the method initialization . __init__ with an argument self .
+from django . db import models and DEFAULT_DB_ALIAS into default name space .
+if length of bits is greater than integer 0 ,
+for every value of the force_text force_text , called with value of the function force_text called with an argument data .
+yield representative and boolean True .
+define the method __getstate__ with an argument self .
+call the function _explode_shorthand_ip_string with an argument ip_str .
+substitute DebugLexer and DebugParser for lexer_class and parser_class .
+if six . PY0 is true ,
+raise an exception .
+call the method stdout . stdout . write with an argument errors .
+define the method prepare_value with arguments self and value .
+name is an empty list .
+if format_module_path is true ,
+call the method readline . _UNK with an argument string ' _UNK : _UNK " .
+get config dictionary element under ' name ' , if it exists substitute it for name , if not , name is an empty string
+define the method __str__ with an argument self .
+derive the class Command from the AppCommand base class .
+define the method is_secure with an argument self .
+for every app_label in app_labels ,
+if settings . FORCE_SCRIPT_NAME is not None ,
+increment the offset by the offset by the self . __starttag_text .
+if KeyError exception is raised ,
+append ' = ' to opt_label ) .
+if name is not contained in parser . _namedCycleNodes ,
+call the method self . stdout . write new new line to it , write it to sys . stdout .
+define the method start_object with self and obj .
+_UNK 
+return data .
+call the s s . s s s s of s of s s to s s , return the length of s s to s s s to integer 0000 , return the result .
+call the function unescape_string_literal with an argument unescape_string_literal , substitute the result for unescape_string_literal .
+if tok starts with " " " ,
+for every program in messages ,
+if f . token_type is true ,
+return value under the key key of dictionary in last element of self . dicts .
+define the function get_unbound_function with an argument unbound .
+substitute the value under the ' app_label ' key of options dictionary for app_label .
+if self . domain equals to string ' djangojs ' ,
+if imatch is true ,
+return reversed list output .
+call the function shutil . move with arguments the_path and guessed_path .
+if self . show_traceback is true ,
+if target_dir path doesnt exists ,
+call the method baseconv . _UNK with an argument _UNK .
+return s .
+substitute str for text_type .
+format string ' \x0b[%sm ' with RESET , return the result .
+try ,
+do nothing .
+return data .
+map elements of value through force_text , substitute the result for value .
+server_address is a tuple containing elements elements with addr and addr .
+if not ,
+raise an InputStreamExhausted exception ,
+if settings . configured ,
+call the run_from_argv method from the base class of the Command class with argv as a argument .
+call the function _trans . get_language , return the result .
+call the the method __copy__ from the base class of the class Context , substitute the result for duplicate .
+for every handler in handlers ,
+return a dictionary with 0 elements : return value of the function self . _ . _ , called with an argument string ' _
+get the value under the key key of dictionary key , if not not not None exists , not not return None , return not
+if can is true ,
+define the method valid_value with arguments self and value .
+from django . apps import apps into default name space .
+call a function _ with a string ' Enter a valid value . ' as an argument exception .
+from django . utils . safestring import mark_safe and mark_safe into default name space .
+call the function ip .
+is an dictionary with 0 initial entries : ' _UNK for ' _UNK ' and ' _UNK ' for ' _UNK ' .
+from django . utils import six into default name space .
+if not ,
+_UNK 
+call the function _strip_once with an argument value , substitute the result for new_value .
+call the function _unpack_ipv0 with an argument ip_str , substitute the result for _UNK .
+if self . asvar is true ,
+remove entry at the attr key of the declared_fields dictionary .
+allow_multiple_selected is boolean False .
+import module tempfile .
+call the method __init__ with 0 arguments : unpacked list args and unpacked dictionary kwargs , from the base class of the class kwargs .
+call the function updates with an argument dictionary with updates dictionary with updates .
+call the method token . split_contents , substitute the result for bits .
+a a _UNK os . _UNK . _UNK with arguments and _UNK .
+derive Serializer from the base . Serializer base class .
+if not ,
+substitute save_m0m for self . save_m0m .
+call the method self . _UNK with key key and self dictionary _UNK , substitute the result for result .
+derive the class HttpResponseNotModified from the HttpResponse base class .
+return ret .
+write data to fp .
+call the function new_method_proxy with an argument str , substitute the result for __str__ .
+sum best_doublecolon_start and best_doublecolon_start , substitute the result for best_doublecolon_end ,
+_UNK is a list containing a string ' _UNK ( _UNK : _UNK . _UNK , _UNK _UNK ) ' _UNK ' , _UNK _UNK _UNK ) ' _UNK ' and _UNK _UNK .
+call the method call_command . add_argument with string ' loaddata , connection , connection , connection , connection set to connection , connection set to connection , app_label set to connection , app_label set to connection . app_label , app_label set to boolean True , connection set to connection .
+call the method self . loaddata with an argument fixture_labels .
+call the function check_programs with 0 arguments : strings ' msgattrib ' , ' msgattrib ' and ' msgattrib ' .
+validate_email is an instance of EmailValidator class .
+return value .
+if callback is an instance of functools . partial object ,
+if widget is an instance of NumberInput class , and string ' widget ' is not contained in widget . attrs ,
+define the method with with self , instance , db and db as arguments .
+substitute pattern method pattern . resolve with an argument _UNK .
+get value under the ' propagate ' key of the config dictionary , if it exists substitute it for propagate , if not propagate is
+call the method sys . stderr . write with an argument string " fork %s\n : %s\n %s\n %s\n %s\n %s\n " , formated with e . errno and e .
+derive the class _UNK from the _UNK base class .
+skip this loop iteration .
+_called_from_command_line is boolean False .
+value under the self . name . name key of form form . fields dictionary is an instance of ModelChoiceField class , created with 0 arguments : widget , widget as boolean False , and widget as widget .
+call the self . make_bytes . convert method with an argument chunk , join the result in a string ' separated ' .
+if Exception exception is caught ,
+call the method m . end , substitute the result for k .
+if TYPE equals to RAW ,
+define the method normalize_col_name with 0 arguments : self , col_name , used_column_names and used_column_names as an empty list .
+property decorator ,
+self . _app_dict is an empty dictionary .
+define the method _UNK with 0 arguments self and name .
+for every i and choice in self . choices ,
+define the function _UNK with 0 arguments value and arg .
+split arg by ' , ' , substitute the result for bits .
+truncate is a string ' % ( % ) s " % ( % ) " " formated with % ) ' % ' , substitute the result for quote .
+define the function write with an argument data .
+call the method self . add_prefix with an argument value under name key of handlers dictionary , substitute the result for handler .
+define the method eval with 0 arguments self and context as context .
+define the method _proxy_method with 0 arguments : self , unpacked list args and unpacked dictionary kwargs .
+call the function digest with an argument password , call the method password on the result , substitute the result for password .
+defaults is an dictionary with 0 initial : self . auto_id . auto_id , for ' auto_id ' and self . auto_id for ' auto_id ' , and prefix of the result for dictionary .
+call the function new_method_proxy with an argument len , substitute the result for __len__ .
+substitute i for end_index .
+if AttributeError exception is caught ,
+if ValueError exception is caught ,
+raise an ValueError exception with an argument string " Unable to convert %r %r " formated with value .
+from django . utils . module_loading import import_string into default name space .
+call the method formats . formats with 0 arguments : self . value and return true , if the result , if the result .
+derive the class _UNK from the object base class .
+define the function _strip_once with an argument value .
+substitute NumberInput for widget .
+code is a string ' min_length '
+terminal_char is an string ' > ' .
+is_usable . is_usable is boolean True .
+import module shutil .
+strip message_context of ' ' ' characters from both ends , substitute the result for message_context .
+substitute token . source for e . django_template_source .
+substitute elements elements of elements of ext for ext .
+call the method self . full_clean .
+append to nodes .
+substitute the value under the key key of the sys . _UNK dictionary for finder
+if value ,
+call the method formfield . formfield . _UNK with an argument formfield , substitute the result for queryset . queryset .
+if not ,
+if base has an ' declared_fields ' attribute ,
+forms_valid is boolean True .
+return value converted into a boolean .
+call the function force_text with an argument message , return the result .
+return result .
+if self . _callback is not None ,
+append work_file to args .
+from django . core . management . base import BaseCommand into default name space .
+if not ,
+return string ' _UNK ' .
+if ' : : ' is not contained in ip_str and ip_str of ip_str of ' : ' in ip_str is not equal to integer 0 ,
+convert settings . LOCALE_PATHS into a list and extend list self . extend .
+call the method self . make_bytes , substitute it for value .
+from django . utils . crypto import constant_time_compare and constant_time_compare into default name space .
+if self . data . data and save_m0m are true ,
+decorator stringfilter ,
+call the method self . error_class . error_class , substitute the result for value under the result key of the form dictionary . error_class dictionary
+try ,
+call the function force_text with 0 arguments : value under the key key of the time . time and DEFAULT_LOCALE_ENCODING .
+define the function _UNK with 0 arguments : set to None and unpacked dictionary kwargs .
+sum last elements of elements of pieces at the last last elements of pieces at the last element of pieces at the last element of
+if not ,
+resolved_args is a list containing context context , substitute it for resolved_args .
+call the method filed . clean with arguments value and initial , substitute the result for value .
+write errors to self . stdout .
+if arg is not equal to string ' off ' ,
+call the method mail . outbox . extend with messages as an argument .
+call the method parser . parse with an argument tuple with an element end_tag , substitute the result for nodelist_false .
+if safe is true ,
+if self . verbosity is greater or equal to integer 0 ,
+join os and os ' path into valid file path , substitute it for filename .
+if not ,
+call the function copy with an argument self . render_context , substitute the result for render_context . render_context .
+if plan_node is contained in loader . _UNK ,
+convert header string ' _ ' and convert header with lowercase , replace replace occurrences of the call to the uppercase .
+if ImportError exception is caught ,
+call the function bytes with an argument value , return the result .
+intrans is boolean True .
+call the method apps . apps . _UNK with an argument model . path .
+substitute first element of the index . args . elements , self . func and self . args .
+try ,
+if _UNK is None ,
+define the method close with an argument self .
+from datetime datetime datetime into default name space .
+from django . core . serializers import base into default name space .
+define the function to_locale with an argument language .
+from _UNK _UNK into default name space .
+if ValueError exception is caught ,
+model_dependencies is an empty list .
+if content is not None raise an error .
+call the function reverse with 0 arguments : args . args , args as args . args , args as args , kwargs as args . args , substitute the result for args .
+endless loop ,
+if not ,
+substitute i-th function of mark_safe for i-th value of the result for i-th element of
+sum _cached_filenames , new_filenames and _cached_filenames , store the result in filelist .
+for every message in email_messages ,
+convert name to lowercase , if it is contained in case ,
+status_code is an integer 000 .
+if data is an instance of bytes ,
+for every p in path ,
+define the function locale with an argument locale .
+decorator deconstructible ,
+define the method bound_data with self self , initial and initial as arguments .
+if name is contained in existing ,
+define the method __new__ with 0 arguments : cls , name , d and d .
+define the function get_language_from_request with 0 arguments : request and check_path set to boolean False .
+if field_type equals a string ' ( ( ' ,
+if path_info is empty ,
+define the function deconstruct with an argument obj .
+call the method _trans . gettext_noop with an argument message .
+substitute content_type for value under the ' Content-Type ' key of the self dictionary .
+call the method connection . connection . _UNK .
+define the function dec with an argument func ,
+__version__ is a string " 0 . 0 . 0 .
+call the method self . _update_errors with an argument e .
+return boolean False .
+substitute self . _UNK for unichr .
+Migration is a list containing an instance of a class , created with 0 arguments : strings . _UNK , " robotparser " , " robotparser " , substitute the result for robotparser .
+if digest is None ,
+define the method tell with an argument self .
+derive the class HttpResponsePermanentRedirect from the HttpResponseRedirectBase base class .
+call the function get_format with an argument string ' DATE_INPUT_FORMATS ' , substitute the first element of the result for input_format .
