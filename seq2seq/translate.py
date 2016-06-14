@@ -179,6 +179,8 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
                     # Get output logits for the sentence.
                     _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
                                                                     target_weights, bucket_id, True)
+                                                                    
+                                                                    
                     # This is a greedy decoder - outputs are just argmaxes of output_logits.
                     outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
 
