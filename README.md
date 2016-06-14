@@ -399,6 +399,20 @@ BLEU = 52.58, 79.7/63.9/54.0/45.5 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len
 Accuracy is: 0.413850415512
 
 
+#### spaced, python tokenizer, 2x512, vocab=5000, no beamsearch, structure alternate 
+global step 6200 learning rate 0.5000 step-time 0.30 perplexity 1.15
+  eval: bucket 0 perplexity 1.53
+  eval: bucket 1 perplexity 5.15
+  eval: bucket 2 perplexity 9.95
+  eval: bucket 3 perplexity 27.91
+BLEU = 58.12 (Bravity Penalty=0.885, Length ratio=0.891, Translated length=21476, Reference length=24092)
+  1-gram: 85.3
+  2-gram: 70.6
+  3-gram:60.3
+  4-gram: 51.2
+Accuracy is: 0.472576177285
+
+
   
   ## Possible things to tweak:
   - steps
