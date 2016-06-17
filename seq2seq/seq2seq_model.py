@@ -254,8 +254,6 @@ class Seq2SeqModel(object):
       the constructed batch that has the proper format to call step(...) later.
     """
 
-    print ("In get_batch")
-
     encoder_size, decoder_size = self.buckets[bucket_id]
     encoder_inputs, decoder_inputs = [], []
 
@@ -298,11 +296,5 @@ class Seq2SeqModel(object):
         if length_idx == decoder_size - 1 or target == data_utils.PAD_ID:
           batch_weight[batch_idx] = 0.0
       batch_weights.append(batch_weight)
-
-    print ("Encoder inputs")
-    print (batch_encoder_inputs)
-
-    print ("ending in get_batch")
-    sys.exit(0)
 
     return batch_encoder_inputs, batch_decoder_inputs, batch_weights

@@ -3,3 +3,14 @@
 /seq2seq/train/check*
 /seq2seq/train/trans*
 /seq2seq/data/summarization
+/seq2seq/data/train
+/seq2seq/data/djangoCode/vocab*
+/seq2seq/data/djangoCode/dev/10pt.random.ids*
+/seq2seq/data/djangoCode/train/90pt.random.ids*
+/seq2seq/data/allCode/vocab*
+/seq2seq/data/allCode/dev/10pt.random.ids*
+/seq2seq/data/allCode/train/90pt.random.ids*
+/seq2seq/data/django/vocab*
+/seq2seq/data/django/dev/10pt.random.ids*
+/seq2seq/data/django/train/90pt.random.ids*
+
