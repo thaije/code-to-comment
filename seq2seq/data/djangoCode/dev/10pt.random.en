@@ -1,0 +1,1305 @@
+Checking for the localized "products_delivered" field
+When there is an inherited manager we shouldn't get any warning  and 'objects' shouldn't be created.
+The migration isn't applied backward.
+Redirect to scheme not in allowed list
+Clear the ImageFields one at a time.
+Make sure the correct choice is selected
+Always return True. This is a way to tell if the user has been authenticated in templates.
+Confirm JS patterns have been applied to JS files.
+Test the custom ``django_date_extract method``, in particular against fields which clash with strings passed to it (e.g. 'day') - see 12818__. __: http://code.djangoproject.com/ticket/12818
+Check FKey lookups that are allowed, so that popups produced by  ForeignKeyRawIdWidget, on the basis of ForeignKey.limit_choices_to,  are allowed to work.  As ``limit_choices_to`` can be a callable, invoke it here.
+The order of the (empty) values, annotate and extra clauses doesn't  matter
+The normal client allows the post
+Test inline formsets where the inline-edited object has a custom  primary key that is not the fk to the parent object.
+The Last-Modified header is set to the most recent sitemap lastmod. Test sitemaps are sorted by lastmod in descending order.
+Given a lookup_type of 'year', 'month', 'day', 'hour', 'minute' or 'second', returns the SQL that truncates the given datetime field field_name to a datetime object with only the given specificity, and a tuple of parameters.
+FormSet allows us to use multiple instance of the same form on 1 page. For now,  the best way to create a FormSet is by using the formset_factory function.
+Handle implicit many-to-many tables created by AddField.
+-*- coding: utf-8 -*-
+Test creating a model with a raster field on a db without raster support.
+Then, we let every list filter modify the queryset to its liking.
+-*- encoding: utf-8 -*-  This file is distributed under the same license as the Django package.
+Returns True if the form needs to be multipart-encoded, i.e. it has FileInput. Otherwise, False.
+A field value of None means the value is raw.
+verify no "odd" PKs left
+Since dictsort uses template.Variable under the hood, it can sort on keys like 'foo.bar'.
+Getting the substitution string depending on whether the coordinates have   a Z dimension.
+An atomic operation is properly rolled back inside a non-atomic migration.
+Ignore "tablespace already exists" error when keepdb is on.
+In MySQL, microsecond-level precision isn't always available. You'll  lose microsecond-level precision once the data is saved.
+Test that gen_filenames also yields from locale dirs in installed apps.
+Test the state alteration (it should still be there!)  Test the database alteration  And test reversal
+exercises ForeignKey.get_db_prep_value()
+e4: started 10 days after assignment, long duration
+model has no __str__ method  Emulate model instance creation via the admin  Message should contain non-ugly model verbose name
+This override makes get_response optional during the  MIDDLEWARE_CLASSES deprecation.
+Attaches a file with the given filename and content. The filename can be omitted and the mimetype is guessed, if not provided. If the first parameter is a MIMEBase subclass it is inserted directly into the resulting message attachments.
+mixed Text and Char
+Regression for 24505 -- Two ManyToManyFields with the same "to" model  and related_name set to '+'.
+Filters out m2m objects from reverse relations.  Returns (old_relation, new_relation) tuples.
+The password field should be readonly, so anything  posted here should be ignored; the form will be  valid, and give back the 'initial' value for the  password field.
+No clashes between self and outer query should be possible.
+Ensure the content of the channel is correct
+Some convenience aliases
+Test inserting a large batch with objects having primary key set mixed together with objects without PK set.
+Re-convert to a TIMESTAMP because EXTRACT only handles the date part  on DATE values, even though they actually store the time part.
+Parse a date in an unaccepted format; get an error
+Check that the parsed result does a round trip to default format
+Make a fake graph
+Sets or unsets the "needs rollback" flag -- for *advanced use* only. When `rollback` is `True`, it triggers a rollback when exiting the innermost enclosing atomic block that has `savepoint=True` (that's the default). Use this to force a rollback without raising an exception. When `rollback` is `False`, it prevents such a rollback. Use this only after rolling back to a known-good state! Otherwise, you break the atomic block and data corruption may occur.
+Create ctypes double array with input and write data
+map_srid in operlayers.html template must not be localized.
+-*- coding: utf-8 -*-
+User values() won't defer anything (you get the full list of  dictionaries back), but it still works.
+_set_single
+XXX: there is no semantic division between forms here, there  probably should be. It might make sense to render each form as a  table row with each field as a td.
+tests that this query does not raise a DatabaseError due to the full  subselect being (erroneously) added to the GROUP BY parameters  force execution of the query
+ParentListTests models
+Test null bytes (18982)
+If the form is valid, save the associated model.
+Test that ContentFile can accept both bytes and unicode and that the retrieved content is of the same type.
+If QUERY_STRING is absent or empty, we want to extract it from the URL.  WSGI requires latin-1 encoded strings. See get_path_info().
+Template node class used by ``get_current_timezone_tag``.
+Dump the current contents of the database as a JSON fixture
+Get the previous valid month.
+Verify OGR geometry.
+Call each receiver with whatever arguments it can accept.  Return a list of tuple pairs [(receiver, response), ... ].
+-*- coding: utf-8 -*-
+Check all inline model admin classes.
+Algo from GvR:  http://neopythonic.blogspot.co.uk/2009/01/detecting-cycles-in-directed-graph.html
+Make state
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior
+If a GEOS geometry isn't passed in, try to construct one.  Getting the envelope for automatic zoom determination.  TODO: Add support for more GMarkerOptions
+Return extra attributes to place on each item (i.e. item/entry) element.
+Emit the post_migrate signal for every application.
+datetime.now(tz=utc) is slower, as documented in django.utils.timezone.now
+Logically, qs1 and qs2, and qs3 and qs4 should be the same.
+Both rings in this geometry are not closed.
+Validates the given value against all of self.fields, which is a list of Field instances.
+Don't render the HTML 'required' attribute as it may cause  incorrect validation for extra, optional, and deleted  forms in the formset.
+Check if the JavaScript i18n view returns a complete language catalog if the default language is en-us, the selected language has a translation available and a catalog composed by djangojs domain translations of multiple Python packages is requested. See 13388, 3594 and 13514 for more details.
+16656 - Check urlize accepts more TLDs
+Return a list of parent classes leading to `model` (ordered from closest to most distant ancestor). This has to handle the case where `model` is a grandparent or even more distant relation.
+`filename` may include a path as returned by FileField.upload_to.
+Regression for 17439
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date  FIRST_DAY_OF_WEEK =
+Cells of the change list table should contain the field name in their class attribute Refs 11195.
+The ContentType entry was not found in the cache, therefore we  proceed to load or create it.  Start with get() and not get_or_create() in order to use  the db_for_read (see 20401).  Not found in the database; we proceed to create it. This time  use get_or_create to take care of any race conditions.
+See ticket 15617
+Test queryset filtering.
+A localized IntegerField's widget renders to a text input without any number input specific attributes.
+You can restrict a form to a subset of the complete list of fields  by providing a 'fields' argument. If you try to save a  model created with such a form, you need to ensure that the fields  that are _not_ on the form have default values, or are allowed to have  a value of None. If a field isn't specified on a form, the object created  from the form can't provide a value for that field!
+delete form if odd PK
+testing for ticket 14930 issues
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date  SHORT_DATETIME_FORMAT =
+Instance-level attrs are *not* carried over to as_textarea(), as_text() and  as_hidden():
+The "upper" filter messes up entities (which are case-sensitive), so it's not safe for non-escaping purposes.
+remove current from todo's nodes & dependencies
+check that it returns the right thing
+Start IPython >= 1.0
+Setting the SRID, if given.
+25723 - Referenced model registration lookup should be run against the field's model registry.
+Regression for 17530 - should be able to cope with forward references when the fixtures are not in the same files or directories.
+Must have at 3-6 bits in the tag
+Compression is performed on responses with streaming content.
+Don't use PRAGMA because that causes issues with some transactions
+This takes into account the situation where the lookup is a  lookup to a related geographic field, e.g., 'address__point'.
+Ensure that no date hierarchy links display with empty changelist.
+make an integer out of the number
+Check for NaN, Inf and -Inf values. We can't compare directly for NaN,  since it is never equal to itself. However, NaN is the only value that  isn't equal to itself, so we can use this to identify NaN
+If item is option 3, it should be a ListFilter...  ...  but not a FieldListFilter.
+If this migration can be run in reverse.  Some operations are impossible to reverse, like deleting data.
+AND
+Check that filter_horizontal is a sequence of field names.
+Grand-parent super
+Alters a field's database column (e.g. null, max_length) to the provided new field
+Make a receiver  Connect it
+Report progress
+Set a foreign key set with an object from a different database
+Parse a time in a valid, but non-default format, get a parsed result
+Return a maxlength attribute equal to max_length.
+The cache can be emptied using clear
+Wrapper for loading templates from eggs via pkg_resources.resource_string.
+24075 - A ContentType shouldn't be created or deleted if the model isn't available.
+Useful for very coarse version differentiation.
+There are objects in the test tablespace which prevent dropping it  The easy fix is to drop the test user -- but are we allowed to do so?
+Check the opposite of assertLocationComment()
+Tests that unicode makes the roundtrip intact
+Pass a custom field name to latest() to change the field that's used  to determine the latest object.
+Making sure TypeError is thrown when trying to set with an   incompatible type.
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior
+The first phase is generating all the operations for each app  and gathering them into a big per-app list.  We'll then go through that list later and order it and split  into migrations to resolve dependencies caused by M2Ms and FKs.
+do the whole thing in one shot if no limit was provided.
+Maps ("app_label", "modelname") tuples to lists of functions to be  called when the corresponding model is ready. Used by this class's  `lazy_model_operation()` and `do_pending_operations()` methods.
+Create the table  Ensure there's no age field  Add some rows of data  Add a not-null field  Ensure the field is right afterwards  BooleanField are stored as TINYINT(1) on MySQL.
+Reset global state when LANGUAGES setting has been changed, as some languages should no longer be accepted.
+since size is not None here, len(self.buffer) < size
+Test html_message argument to mail_managers
+Person is not proxied by StatusPerson subclass.
+It's possible to construct a Form dynamically by adding to the self.fields  dictionary in __init__(). Don't forget to call Form.__init__() within the  subclass' __init__().
+Test that opening the backend with non empty username/password tries to authenticate against the SMTP server.
+Build locale list
+Handle POSTed bulk-edit data.
+FileField.save_form_data() considers None to mean "no change" rather than "clear".
+Returns all leaf nodes - that is, nodes with no dependents in their app. These are the "most current" version of an app's schema. Having more than one per app is technically an error, but one that gets handled further up, in the interactive command - it's usually the result of a VCS merge and needs some user input.
+Otherwise, execute the QuerySet in self.queryset to determine the  choices dynamically. Return a fresh ModelChoiceIterator that has not been  consumed. Note that we're instantiating a new ModelChoiceIterator *each*  time _get_choices() is called (and, thus, each time self.choices is  accessed) so that we can ensure the QuerySet has not been consumed. This  construct might look complicated but it allows for lazy evaluation of  the queryset.
+http://bugs.python.org/issue2193 is fixed in Python 3.3+.
+Since ``my_doodad.do_not_call_in_templates`` is True, the template  system will not try to call our doodad.  We can access its attributes  as normal, and we don't have access to the dict that it returns when  called.
+Building the map options hash.
+The list of directories to search for fixtures
+Normal geodetic distance lookup (uses `distance_sphere` on PostGIS.
+reload database
+Output
+Testing using different variations of parameters and using models  with different projected coordinate systems.
+Check that signals still work when model inheritance is involved
+simple translation of a string with interpolation
+Value of DEFAULT_CACHE_ALIAS from django.core.cache
+SerializerDoesNotExist is instantiated with the nonexistent format
+Inheritance from a template with a space in its name should work.
+After iterating the storage engine directly, the used flag is set.  The data does not disappear because it has been iterated.
+A series of tests for django-admin.py when using a settings.py file thatdoesn't contain the test application.
+Returns the name of the metadata column used to store the feature table name.
+With SSL_REDIRECT True, the middleware redirects any non-secure requests to the https:// version of the same URL.
+Test that an ImproperlyConfigured is raised if no link could be found for the item(s).
+Date filtering was failing with NULL date values in SQLite  (regression test for 3501, among other things).
+Dynamically defining our error-checking function with the  given offset.
+One-to-one fields still work if you create your own primary key
+A late-binding cursor variable that can be passed to Cursor.execute as a parameter, in order to receive the id of the row created by an insert statement.
+Testing SRID keyword on fromstr(), and on Polygon rings.
+CustomUploadError is the error that should have been raised
+When time zone support is enabled, convert "now" to the user's time  zone so Django's definition of "Today" matches what the user expects.
+Test with list_editable fields
+This line turns on the ValidationError; it avoids the model erroring  when its own __init__() is called when creating form.instance.
+should_contain = <h1>Change model with string primary key</h1>
+change
+NUMBER_GROUPING =  -*- encoding: utf-8 -*-  This file is distributed under the same license as the Django package.
+Reading from request is allowed after accessing request contents as POST or body.
+Success on popups shall be rendered from template in order to allow easy customization.
+Revert to the old iteration count and ...
+admin for 18433
+Signal that the save is complete
+don't use the manager because we want to ensure the site exists  with pk=1, regardless of whether or not it already exists.
+Check height/width fields of model, if defined.
+If it doesn't appear to be a reloaded module then we expect  a RuntimeError.
+Test that, when using multiple databases, we use the db_for_read (see 20401).
+Ensure we don't allow directory-traversal.  This is tested directly on _key_to_file, as load() will swallow  a SuspiciousOperation in the same way as an IOError - by creating  a new session, making it unclear whether the slashes were detected.
+SELECT ST_AsGeoJson("geoapp_city"."point", 8, 1) FROM "geoapp_city"  WHERE "geoapp_city"."name" = 'Houston';  This time we include the bounding box by using the `bbox` keyword.
+Makes sure that makemigrations announces the migration at the default verbosity level.
+Warn if SECURE_CONTENT_TYPE_NOSNIFF isn't True.
+Check leading zeros are not stripped (17481)
+User not in database
+Add single vote per item to self.votes. Parameter can be any iterable.
+make sure the key doesn't keep its old value in case of failure to set (memcached's 1MB limit)
+Mark value safe so i18n does not break with <sup> or <sub> see 19988
+A property that works with subclasses by wrapping the decorated functions of the base class.
+A series of tests for manage.py when using a settings.py file thatdoesn't contain the test application.
+Register a callable as an inclusion tag: @register.inclusion_tag('results.html') def show_results(poll): choices = poll.choice_set.all() return {'choices': choices}
+Some more tests!
+Used to invalidate/disable this lazy stream. Replaces the producer with an empty list. Any leftover bytes that have already been read will still be reported upon read() and/or next().
+-*- encoding: utf-8 -*-  This file is distributed under the same license as the Django package.
+Load a fixture that doesn't exist
+Init with instances instead of strings
+Regression for 10248 - Annotations work with dates()
+Cookie pickling bug is fixed in Python 2.7.9 and Python 3.4.3+  http://bugs.python.org/issue22775
+Invalid UTF-8 encoding in bytestrings should raise a useful error
+Older, deprecated class name (for backwards compatibility purposes).
+Transactions Django handles transactions in three different ways. The default is to commit each transaction upon a write, but you can decorate a function to get commit-on-success behavior. Alternatively, you can manage the transaction manually.
+A class that will quack like a Django model _meta class.This allows cache operations to be controlled by the router
+Create an author through the m2m interface
+The pgpass temporary file needs to be encoded using the system locale.
+The MyPerson model should be generating the same database queries as the Person model (when the same manager is used in each case).
+When pagination is enabled, it's better to do a cheap query  than to load the unpaginated queryset in memory.
+Testing the mutability of Geometry Collections  Creating a random point.  Testing the assignment
+reST roles
+Ensure that a regex lookup does not trip on non-ASCII characters.
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  Kept ISO formats as they are in first position
+Now doing length on a projected coordinate system.
+Test the structure and content of feeds generated by Atom1Feed.
+Simulate cache.add() failing to add a value. In that case, the  default value should be returned.
+This is the thread-local connection, not the main connection.
+regression for 24611
+Initializing the keyword arguments dictionary for both PostGIS  and SpatiaLite.
+Cleans a dictionary of credentials of potentially sensitive info before sending to less secure functions. Not comprehensive - intended for user_login_failed signal
+If a widget has no id, label_tag just returns the text with no surrounding <label>.
+The super calls needs to happen first for the settings override.
+Test the state alteration  Test the database alteration  And test reversal
+Known side effect: updating file access/modified time to current time if  it is writable.
+Methods with multiple arguments should have all their arguments displayed, but omitting 'self'.
+Collect all validation errors in a single list, which we'll  raise at the end of clean(), rather than raising a single  exception for the first error we encounter. Skip duplicates.
+Work out string form of "to"
+Original query done on PostGIS, have to adjust AlmostEqual tolerance  for Oracle.
+String & Binary fields, just subclasses
+Filter with band index transform.
+the actual value depends on the system time zone of the host
+Put 2XX first, since it should be the common case
+Checking the given cache option.
+Confirm they're selected after clicking inactive buttons: ticket 26575
+Given a dictionary of data and this widget's name, returns the value of this widget. Returns None if it's not provided.
+Load migrations from disk/DB
+Don't need DB flushing for these tests, so can use unittest.TestCase as base class
+No change permission on books, so no inline
+We add csrf_protect here so this function can be used as a utility  function for any view, without having to repeat 'csrf_protect'.
+Serialize functools.partial() arguments  Add any imports needed by arguments
+Use a pytz timezone as local time
+var and name are legacy attributes, being left in case they are used  by third-party subclasses of this Node.
+Make sure the correct choice is selected
+A date lookup can be performed using a string search
+A new file should update dimensions.
+Test that the decorators preserve the decorated function's docstring, name and attributes.
+Equivalence testing, a Geometry may be compared with another Geometry or a WKT representation.
+getpass on Windows only supports prompt as bytestring (19807)
+Deep copy of a QuerySet doesn't populate the cache
+A successful commit means that the database connection works.
+sort instance collections
+Returns True if there is a chance this operation references the given model name (as a string), with an optional app label for accuracy. Used for optimization. If in doubt, return True; returning a false positive will merely make the optimizer a little less efficient, while returning a false negative may result in an unusable optimized migration.
+Defaulting the WKT value to a blank string -- this  will be tested in the JavaScript and the appropriate  interface will be constructed.
+HTTP headers as a bytestring.
+alternative ways of setting relation:
+If this is an F expression, then we don't really want  a placeholder and instead substitute in the column  of the expression.
+If you don't specify a value or default value for all required fields, you will get an error.
+Another request with same user should not create any new users.
+To fix 'item in perms.someapp' and __getitem__ interaction we need to  define __iter__. See 18979 for details.
+Any field name that is not present in field_names does not exist.  Also, ordering by m2m fields is not allowed.
+List of all issues generated by system checks that should be silenced. Light  issues like warnings, infos or debugs will not generate a message. Silencing  serious issues like errors and criticals does not result in hiding the  message, but Django will not stop you from e.g. running server.
+msg = Items must be selected in order to perform actions on them. No items have been changed.
+Creating countries  Creating People
+!/usr/bin/env python
+Gather fields/field descriptions.  ForeignKey is a special case since the field will actually be a  descriptor that returns the other object
+and you can't accidentally assign to a `content` attribute.
+If you call save() with invalid data, you'll get a ValueError.
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date
+If it's a callable, call it  Run it through the field's get_db_prep_save method so we can send it  to the database.
+Distribute test cases across workers. Return an identifier of each test case with its result in order to use imap_unordered to show results as soon as they're available. To minimize pickling errors when getting results from workers: - pass back numeric indexes in self.subsuites instead of tests - make tracebacks picklable with tblib, if available Even with tblib, errors may still occur for dynamically created exception classes such Model.DoesNotExist which cannot be unpickled.
+Force re-evaluation
+Use 'format' to change the way a value is displayed.
+handle non-named groups
+There are two options for replacing |today|: either, you set today to some  non-false value, then it is used:  today = ''  Else, today_fmt is used as the format for a strftime call.
+We could just do view_func.csrf_exempt = True, but decorators  are nicer if they don't have side-effects, so we return a new  function.
+Return "app_label.model_label.manager_name".
+Since it's in memory, we'll never have multiple chunks.
+Fake views for testing url reverse lookup
+Test lookups.
+exact is implied and should be the same
+Deletes objects found from the given queryset in single direct SQL query. No signals are sent, and there is no protection for cascades.
+This isn't a real primary/replica database, so restore the original from other
+Handle the raw input from the client. Parameters: :input_data: An object that supports reading via .read(). :META: ``request.META``. :content_length: The (integer) value of the Content-Length header from the client. :boundary: The boundary from the Content-Type header. Be sure to prepend two '--'.
+get_or_create should work with virtual fields (content_object)
+Make sure the MapWidget js is passed in the form media and a MapWidget is actually created
+Parse a date in a valid format, get a parsed result
+Case-insensitive aliases for some GDAL/OGR Drivers.  For a complete list of original driver names see  http://www.gdal.org/ogr_formats.html (vector)  http://www.gdal.org/formats_list.html (raster)  vector  raster
+-*- encoding: utf-8 -*-
+A formset mix-in that lets a form decide if it's to be deleted. Works for BaseFormSets. Also works for ModelFormSets with 14099 fixed. form.should_delete() is called. The formset delete field is also suppressed.
+-*- coding: utf-8 -*-
+Tests --plan output of showmigrations command with squashed migrations.
+Remove a book from the m2m
+original hashed password contains $
+List of objects published in a given month.
+On Python 3, %E9 is converted to the unicode replacement character by parse_qsl
+vector  raster
+APPEND_SLASH should not redirect to unknown resources.
+Create a book and author on the other database
+If not properly quoted digits would be interpreted as an int.  Manual quoting is fragile and could trip on quotes. Refs xyz.
+Now modify that inline
+Check that queries work across m2m joins
+Regression for 17343
+Delete the Book object, which will cascade onto the pet
+Having our buffer in the SRID of the transformation and of the field  -- should get the same results. The first buffer has no need for  transformation SQL because it is the same SRID as what was given  to `transform()`.  The second buffer will need to be transformed,  however.
+form.instance.left will be None if the instance was not constructed  by form.full_clean().
+Returns the placeholder for the spatial column for the given value.
+Gather many-to-many fields.
+Test with invalid dict lookup parameter  Test with invalid string lookup parameter
+Test that custom context data can be passed to templates for title and description.
+Multiple compilations should not alter the generated query.
+Field flags
+The patterns below are used to generate SQL pattern lookup clauses when  the right-hand side of the lookup isn't a raw string (it might be an expression  or the result of a bilateral transformation).  In those cases, special characters for LIKE operators (e.g. \, *, _) should be  escaped on database side.  Note: we use str.format() here for readability as '%' is used as a wildcard for  the LIKE operator.
+Regression test for 18051
+The notice and error handler C function callback definitions.  Supposed to mimic the GEOS message handler (C below):   typedef void (*GEOSMessageHandler)(const char *fmt, ...);
+Circular M2M relations with explicit through models should be serializable This test tests the circularity with explicit natural_key.dependencies
+Regression test for 12560
+Ordering on related tables should be possible, even if the table is  not otherwise involved.
+Find the link
+Update persistent cookie data.
+Getting the coordinate dimension of the geometry field.
+transform() should no-op if source & dest SRIDs match,  regardless of whether GDAL is available.
+Wait for the live server to be ready  Clean up behind ourselves, since tearDownClass won't get called in  case of errors.
+16919 -- The ``password_reset_confirm`` view should pass the user  object to the ``SetPasswordForm``, even on GET requests.  For this test, we render ``{{ form.user }}`` in the template  ``registration/password_reset_confirm.html`` so that we can test this.
+For retrieving the envelope of the geometry.
+Cast a geography to a geometry field for an aggregate function that expects a geometry input.
+Initializing the procedure arguments.
+Expected params_and_context __doc__
+Ticket 21643
+If mimetype suggests the file is text but it's actually  binary, read() will raise a UnicodeDecodeError on Python 3.
+fill the template cache
+There's a bug in Django/cx_Oracle with respect to string handling under Python 3 (essentially, they treat Python 3 strings as Python 2 strings rather than unicode). This makes some tests here fail under Python 3, so we mark them as expected failures until someone fixes them in 23843.
+Since the real purpose of the exempt decorator is to suppress  the middleware's functionality, let's make sure it actually works...
+If you specify an existing primary key, but different other fields, then you will get an error and data will not be updated.
+Version of os.path.abspath that uses the unicode representation of the current working directory, thus avoiding a UnicodeDecodeError in join when the cwd has non-ASCII characters.
+-*- coding: utf-8 -*-
+Binary data is serialized as base64
+Reverse m2m queries are supported (i.e., starting at the table that  doesn't have a ManyToManyField).
+For backwards compatibility,  set style for ERROR_OUTPUT == ERROR
+callable_obj was a documented kwarg in Django 1.8 and older.
+first two asserts are just sanity checks, this is the kicker:
+Disabled fields are generally not transmitted by user agents.  The value from the form's initial data is used.
+Check that an F() object referring to related column works correctly in group by.
+Load fixture 6, JSON file with dynamic ContentType fields. Testing ManyToOne.
+Only pre-fill the ordering field for initial forms.
+2:30 happens twice, once before DST ends and once after
+Casts times into the format expected by the backend
+Other unicode values are MIME-encoded (there's no way to pass them as bytes).
+Returns the relative path to the file on disk for the given URL.
+Delete the object on the other database
+Signal that the upload has completed.
+ensure filter link exists  ensure link works  ensure changelist contains only valid objects
+MySQL spatial indices can't handle NULL geometries.
+regex is either a string representing a regular expression, or a  translatable string (using ugettext_lazy) representing a regular  expression.
+Not-necessarily-technical managers of the site. They get broken link  notifications and other various emails.
+The master app registry is always ready when the tests run.  Non-master app registries are populated in __init__.
+This object makes sure __eq__ will not be called endlessly.
+That is... there is one user on each database
+The contents in "linebreaks" are escaped according to the current autoescape setting.
+24483 - ProjectState.from_apps should not destructively consume Field.choices iterators.
+'Julia' with accented 'u':
+1 (select related `T` instances)  + 1 (select related `U` instances)  + 2 (delete `T` instances in batches)  + 1 (delete `s`)
+Default formats to be used when parsing dates and times from input boxes,  in order  See all available format string here:  http://docs.python.org/library/datetime.htmlstrftime-behavior  * Note that these format strings are different from the ones to display dates
+If true, '()' will be appended to :func: etc. cross-reference text.
+Test response msg for RequestSite.save NotImplementedError
+Getting the area units of the geographic field.  TODO: Do we want to support raw number areas for geodetic fields?
+Calling an internal method purely so that we can trigger a "raw" save.
+We have change perm on books, so we can add/change/delete inlines
+Log out
+No value has been selected yet
+Specify a specific model twice
+Quick booleans for the type of this spatial backend, and  an attribute for the spatial database version tuple (if applicable)
+Since we just bypassed this class' get_queryset(), we must manage  the reverse relation manually.
+Valid user with incorrect password
+Safe to use .replace() because UTC doesn't have DST
+HACK: This depends on internals of our TestCase subclasses  Detect fixture loading by counting SQL queries, should be zero
+Shortcut to access the srid of this GDALRaster.
+MySQL doesn't support tz-aware datetimes
+For non-field values, the value is either a method, property or  returned via a callable.
+For testing that auth backends can be referenced using a convenience import
+List/Tuple/Dictionary methods support
+Name of the time zone of the database connection.
+TextField.to_python() should return a string.
+Returns the field name and direction for an order specification. For example, '-foo' is returned as ('foo', 'DESC'). The 'default' param is used to indicate which way no prefix (or a '+' prefix) should sort. The '-' prefix always sorts the opposite way.
+Logout should send user_logged_out signal if custom user was logged in.
+Return `True` if this view should contain the full list of objects in the given year.
+Making sure LayerMapping.make_multi works right, by converting  a Point25D into a MultiPoint25D.
+Swallow the intentional error raised in the sub-transaction.
+Create the table  Ensure the field is right to begin with  Ensure the field is not unique  Make sure the FK constraint is present  Alter the ForeignKey to OneToOneField  Ensure the field is right afterwards  Ensure the field is unique now  Make sure the FK constraint is present
+The XML serializer handles everything as strings, so comparisons  need to be performed on the stringified value
+Formfield initial values   If the model has default values for some fields, they are used as the formfield  initial values.
+callables display the callable name.  lambdas display as "lambda" + index that they appear in list_display.
+Run the development server. Turn off auto-reloading because it causes  a strange error -- it causes this handle() method to be called  multiple times.
+Should throw TypeError on this input
+General substitutions.
+Parses a string and return a datetime.datetime.This function supports time zone offsets. When the input contains one, the output uses a timezone with a fixed offset from UTC. Raises ValueError if the input is well formatted but not a valid datetime. Returns None if the input isn't well formatted.
+Check that CsrfTokenNode works when a CSRF cookie is set
+If the response has an xframe_options_exempt attribute set to False then it still sets the header, but if it's set to True then it doesn't.
+Restricts the set of installed apps used by get_app_config[s]. available must be an iterable of application names. set_available_apps() must be balanced with unset_available_apps(). Primarily used for performance optimization in TransactionTestCase. This method is safe is the sense that it doesn't trigger any imports.
+Make a plan that represents just the requested migrations and show SQL  for it
+then get the original's file content..
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date  DATETIME_FORMAT =  SHORT_DATETIME_FORMAT =  FIRST_DAY_OF_WEEK =
+You can use 'in' to test for membership...  ... but there will often be more efficient ways if that is all you need:
+Make sure the correct choice is selected
+Object in by reference, return its value.
+Check that the parsed result does a round trip to the same format
+set by only removing what's necessary.
+Changing TIME_ZONE may issue a query to set the database's timezone,  hence TestCase.
+Create and return the ``ArgumentParser`` which will be used to parse the arguments to this command.
+Check the `change_view` link has the correct querystring.
+We have to handle the possibility that the QuerySet we just got back  contains some prefetch_related lookups. We don't want to trigger the  prefetch_related functionality by evaluating the query. Rather, we need  to merge in the prefetch_related lookups.  Copy the lookups in case it is a Prefetch object which could be reused  later (happens in nested prefetch_related).  Don't need to clone because the manager should have given us a fresh  instance, so we access an internal instead of using public interface  for performance reasons.
+ctypes factory classes
+_set_list
+Returns ``True`` if you can expect multiple chunks. NB: If a particular file representation is in memory, subclasses should always return ``False`` -- there's no good reason to read from memory in chunks.
+Sanitize the file name so that it can't be dangerous.  Just use the basename of the file -- anything else is dangerous.
+Make sure the correct queryset is returned
+Test with more lengthy content (also catching performance regressions)
+Work out the new value for index_together, taking renames into  account
+This will store a list of language information dictionaries for the given language codes in a context variable. The language codes can be specified either as a list of strings or a settings.LANGUAGES style list (or any sequence of sequences whose first items are language codes). Usage:: {% get_language_info_list for LANGUAGES as langs %} {% for l in langs %} {{ l.code }} {{ l.name }} {{ l.name_translated }} {{ l.name_local }} {{ l.bidi|yesno:"bi-directional,uni-directional" }} {% endfor %}
+Line is from Canberra to Sydney.  Query is for all other cities within  a 100km of that line (which should exclude only Hobart & Adelaide).
+Make sure the correct queryset is returned
+Encode the messages using the current encoder.
+Strips all [X]HTML tags.
+Constructing the keyword arguments for `mapping`, and  calling it on the data source.  This extra legwork is so that the dictionary definition comes  out in the same order as the fields in the model definition.
+Returns an HttpResponseRedirect to the appropriate URL for the arguments passed. The arguments could be: * A model: the model's `get_absolute_url()` function will be called. * A view name, possibly with arguments: `urls.reverse()` will be used to reverse-resolve the name. * A URL, which will be used as-is for the redirect location. By default issues a temporary redirect; pass permanent=True to issue a permanent redirect
+An alternate to calling clear() is to assign the empty set
+Means the file was moved or deleted before the tempfile  could unlink it.  Still sets self.file.close_called and  calls self.file.file.close() before the exception
+test valid inputs  test invalid inputs
+Let the cache expire and test again
+forwards  backwards
+-*- coding: utf-8 -*-
+Then make sure that it *does* pass validation and delete the object,  even though the data isn't actually valid.
+-*- coding: utf-8 -*-
+Actually create the database for the first connection  Configure all other connections as mirrors of the first one
+Test rfc2822_date() correctly formats date objects.
+Default short formatting for date objects. See all available format strings here:  http://docs.djangoproject.com/en/dev/ref/templates/builtins/date
+paths of requested packages
+CSS files shouldn't be touched by JS patterns.
+Were the tables there before?  Rebuild the graph to reflect the new DB state
+ModelChoiceField
+Passing "in" an empty list returns no results ...  ... but can return results if we OR it with another query.
+Custom managers can be used too.
+Need to do this explicitly since unregister_model() doesn't clear  the cache automatically (24513)
+Set a one-to-one relation with an object from a different database
+Test that the console backend can be pointed at an arbitrary stream.
+Should be able to use update_or_create from the m2m related manager to update a book. Refs 23611.
+Move the temporary file to a filename that has better  chances of being recognized by the archive utils
+Only actual departments should be present in employee__department's  list filter.
+Valid user with correct password'
+There is a similar test in `layermap` that uses the same data set,  but the County model here is a bit different.
+Did the field change?  Implement any model renames on relations; these are handled by RenameModel  so we need to exclude them from the comparison  Either both fields are m2m or neither is  We cannot alter between m2m and concrete fields
+Easy wrapper for sending a single message to a recipient list. All members of the recipient list will see the other recipients in the 'To' field. If auth_user is None, the EMAIL_HOST_USER setting is used. If auth_password is None, the EMAIL_HOST_PASSWORD setting is used. Note: The API for this method is frozen. New code wanting to extend the functionality should use the EmailMessage class directly.
+We need to get a file object for Pillow. We might have a path or we might  have to read the data into memory.
+Wrap the given object into a LazyObject
+Constructing the dictionary of the map options.
+Test passing optional query parameters
+Constructing a multi-geometry type to contain the single geometry
+Check that the parsed result does a round trip to default format
+we do not want to include the u"" or u'' prefix  so we build the string rather than interpolate the tuple
+You can also explicitly specify the related app.
+Request goes through middleware.
+Check that the response was a 302, and that  the attempt to get the redirection location returned 301 when retrieved
+Filter in an unprojected coordinate system.
+Gracefully fallback if a stale content type causes a  conflict as update_contenttypes will take care of asking the  user what should be done next.
+Make sure querysets with related fields can be pickled. If this  doesn't crash, it's a Good Thing.
+One for all locations, one that excludes New Mexico (Roswell).
+Returns the list of parameter names that are expected from the request's query string and that will be used by this filter.
+Test nonexistent email address. This should not fail because it would expose information about registered users.
+Displays the main admin index page, which lists all of the installed apps that have been registered in this site.
+Get the page without logging in. Should result in 302.
+TODO: why can't I make this ..app2
+A missing value means False because HTML form submission does not  send results for unselected checkboxes.
+Media properties can reference the media of their parents,  even if the parent media was defined using a class
+Get the previous valid week.
+With HSTS_SECONDS=3600, the middleware adds "strict-transport-security: max-age=3600" to the response.
+If SESSION_COOKIE_HTTPONLY is on, there's no warning about it.
+Load fixture 9, XML file with dynamic Permission fields. Testing ManyToMany.
+be careful to only replace the first slash in the path because of  http://test/something and http://test//something being different as  stated in http://www.ietf.org/rfc/rfc2396.txt
+Both the pet and the person have been deleted from the right database
+Zebras comes after Dreaming by name, but before on '-pubdate' which is the default sorting
+Can find a file in a subdirectory of a STATICFILES_DIRS directory.
+Inherit from a template with block wrapped in an {% if %} tag (in parent), still gets overridden
+Models for 23934
+Proxy access to the default Cache object's attributes. This allows the legacy `cache` object to be thread-safe using the new ``caches`` API.
+File extension may by .py, .pyc, etc. Compare only basename.
+Output an extra note if settings are not properly configured
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date
+Currently only Oracle supports calculating the perimeter on geodetic  geometries (without being transformed).  But should work fine when transformed to projected coordinates
+Ensure results are consistent across DB backends
+For testing when upper case letter in app name; regression for 4057
+-----------------------------------------------------------------  Check that pressing enter on a filtered option sends it properly  to the 'to' box.
+Escape CR and LF characters.
+Get the number of items to paginate by, or ``None`` for no pagination.
+A child that doesn't exist
+If the response supports deferred rendering, apply template  response middleware and then render the response  Complain if the template response middleware returned None (a common error).
+Records that a migration was unapplied.
+Test that a view implementing POST allows POST.
+item is option 2
+templates is an optional list of template engine definitions (structured like settings.TEMPLATES).
+Testing GoogleMap.scripts() output. See 20773.
+No need to check for `elif all_backwards` here, as that condition  would always evaluate to true.
+-*- coding: utf-8 -*-
+... but they will when the affected object is saved.
+self.query.select is a special case. These columns never go to  any model.
+Actions with no confirmation
+Gather actions from the admin site first
+Original geometry deletion should not crash the prepared one (21662)
+AllowsNullGFK doesn't require a content_type, so None argument should  also be allowed.  TaggedItem requires a content_type but initializing with None should  be allowed.
+"Alter" the field. This should not rename the DB table to itself.
+Splits fixture name in name, serialization format, compression format.
+19949 -- TemplateDoesNotExist exceptions should be cached.
+Test that we haven't broken normal encoding
+Test PostgreSQL full text search. These tests use dialogue from the 1975 film Monty Python and the Holy Grail. All text copyright Python (Monty) Pictures. Thanks to sacred-texts.com for the transcript.
+We need to define functions that get called later.)
+Querying for both NULL and Non-NULL values.
+Returns True if the name looks like a URL
+allow_empty but not allow_future: next_month should be empty (7164)
+self.assertLocationCommentPresent('django.po', 42, 'dirA', 'dirB', 'foo.py') verifies that the django.po file has a gettext-style location comment of the form `: dirA/dirB/foo.py:42` (or `: .\dirA\dirB\foo.py:42` on Windows) None can be passed for the line_number argument to skip checking of the :42 suffix part. A string token can also be passed as line_number, in which case it will be searched in the template, and its line number will be used. A msgid is a suitable candidate.
+Getting the string name for the Django field class (e.g., 'PointField').
+Centroid operation on point should be point itself
+In order to avoid list manipulation. Always  return a shallow copy of the results
+Tests that an appropriate error is raised if no auth backends are provided.
+If there are 5 or 6 bits, there is a user defined
+Tests for basic system checks of 'exclude' option values (12689)
+Copy nodata values to warped raster
+Check that the shortcut view does not catch an AttributeError raised by the model's get_absolute_url method. Refs 8997.
+Init state storage
+Backwards compatibility alias for django.templatetags.static.static().  Deprecation should start in Django 2.0.
+Connection types
+This fails if not using the highest pickling protocol on Python 2.
+User not in database
+Bug 11223
+A LookupError should be thrown for bogus encodings.
+If the form is permitted to be empty, and none of the form data has  changed from the initial data, short circuit any validation.
+Return the month for which this view should display data.
+Create an object with a manually specified PK
+Special-case implicit M2M tables
+First, generate the path for the names
+Using an offset without a limit is also possible.
+Callable defaults You can pass callable objects as the ``default`` parameter to a field. When the object is created without an explicit value passed in, Django will call the method to determine the default value. This example uses ``datetime.datetime.now`` as the default for the ``pub_date`` field.
+Testing the `step` keyword -- should get the same counties  regardless of we use a step that divides equally, that is odd,  or that is larger than the dataset.
+If we've been asked for a NOWAIT query but the backend does  not support it, raise a DatabaseError otherwise we could get  an unexpected deadlock.
+@skipIfDBFeature and @skipUnlessDBFeature cannot be chained. The  outermost takes precedence. Handle skipping manually instead.
+Update the cached related instance (if any) & clear the cache.
+The class we'll use for the test client self.client.  Can be overridden in derived classes.
+Nested queries are possible (although should be used with care, since  they have performance problems on backends like MySQL.
+First, test rendering individually
+Ensure string is valid in given charset
+-*- coding: utf-8 -*-
+Email subject *must not* contain newlines
+Regression test for 15117. Requires a TransactionTestCase on databases that delay integrity checks until the end of transactions, otherwise the exception is never raised.
+Check that the right middleware methods have been invoked
+urlconf_module might be a valid set of patterns, so we default to it
+Check that multi-inheritance doesn't cause field name shadowing.
+City information dictionary.
+Assign the article to the reporter.
+The empty string is accepted, even though it doesn't end in a slash.
+Non-existent cache keys return as None/default  get with non-existent keys
+We can't proxy this method through the `QuerySet` like we do for the  rest of the `QuerySet` methods. This is because `QuerySet.all()`  works by creating a "copy" of the current queryset and in making said  copy, all the cached `prefetch_related` lookups are lost. See the  implementation of `RelatedManager.get_queryset()` for a better  understanding of how this comes into play.
+Regression for 10064: select_related() plays nice with aggregates
+Chrome considers any URL with more than two slashes to be absolute, but  urlparse is not so flexible. Treat any url with three slashes as unsafe.  Forbid URLs like http:///example.com - with a scheme, but without a hostname.  In that URL, example.com is not the hostname but, a path component. However,  Chrome will still consider example.com to be the hostname, so we must not  allow this syntax.  Forbid URLs that start with control characters. Some browsers (like  Chrome) ignore quite a few control characters at the start of a  URL and might consider the URL as scheme relative.
+Delete the "uploaded" file to avoid clogging /tmp.
+Two-level with no redefinitions on second level
+Solve the lookup type from the lookup (eg: 'foobar__id__icontains')
+Tests that, when the middleware is disabled, an exception is not raised if 'fail_silently' = True
+Returns a 4-tuple extent for the `Extent` aggregate by converting the bounding box text returned by PostGIS (`box` argument), for example: "BOX(-90.0 30.0, -85.0 40.0)".
+Note that if a model is unmanaged we short-circuit and never try to install it
+Implicit ordering is also ignored
+cache table should not be created on 'default'  cache table should be created on 'other'  Queries:    1: check table doesn't already exist    2: create savepoint (if transactional DDL is supported)    3: create the table    4: create the index    5: release savepoint (if transactional DDL is supported)
+Set a reverse m2m with an object from a different database
+translation of a variable with a translated filter
+Context manager that captures queries executed by the specified connection.
+Parse a time in a valid format, get a parsed result
+Calling delete on an unset FileField should not call the file deletion process, but fail silently (20660).
+If the Exception is not CommandError it should always  raise the original exception.
+six.text_type(string_concat(...)) should not raise a TypeError - 4796
+The same request through a different middleware won't hit
+This method inspects the WKT of this SpatialReference, and will add EPSG authority nodes where an EPSG identifier is applicable.
+provided unknown key was cycled, not reused
+We need two different tests to check URLconf substitution -  one to check  it was changed, and another one (without self.urls) to check it was reverted on  teardown. This pair of tests relies upon the alphabetical ordering of test execution.
+Because multipart is used for large amounts of data i.e. file uploads,  we don't want the data held in memory twice, and we don't want to  silence the error by setting body = '' either.
+django.views.decorators.vary
+The app registry will not be ready at this point, so we cannot  use get_field().
+You can retrieve a single column on a base class with no fields  on an inherited model, its PK is also fetched, hence '3' deferred fields.
+Testing __getitem__ (doesn't work on Point or Polygon)
+Now check what happens if the router order is reversed.
+Fields on an inherited model can be referenced by an annotated field.
+A user with a UUID as primary key
+Default short formatting for datetime objects.  See all available format strings here:  http://docs.djangoproject.com/en/dev/ref/templates/builtins/date
+Get the name of the date field to be used to filter by.
+Tests for 11687 and 16676
+Three-level with no redefinitions on third level
+Check that no upgrade is triggered.
+Given a relative file path this ought to find an absolute file path. If the ``all`` parameter is ``False`` (default) only the first found file path will be returned; if set to ``True`` a list of all found files paths is returned.
+Verifies that inclusion tag result_list generates a table when with default ModelAdmin settings.
+Generate field operations
+3-tuple -> deprecated
+Set a foreign key set with an object from a different database
+Fields that have been added
+Populates a template variable with the static prefix, ``settings.STATIC_URL``. Usage:: {% get_static_prefix [as varname] %} Examples:: {% get_static_prefix %} {% get_static_prefix as static_prefix %}
+A view decorator that adds the specified headers to the Vary header of the response. Usage: @vary_on_headers('Cookie', 'Accept-language') def index(request): ... Note that the header names are not case-sensitive.
+The delete is actually 2 queries - one to find related objects,  and one to delete. Make sure that the discovery of related  objects is performed on the same database as the deletion.
+Models for 18263
+SQLite/Spatialite in-memory databases
+This check is kept for backwards-compatibility. See 3100.
+Find the maximum width of the line count, for use with zero padding  string format command
+One entry per manual page. List of tuples  (source start file, name, description, authors, manual section).
+Table Column Fields
+Return the minimum pixel value for this band.
+Ordering of points in the result of the union is not defined and  implementation-dependent (DB backend, GEOS version)
+Create the table  Create a row  The default from the new field is used in updating existing rows.  The database default should be removed.
+Custom logging configuration.
+Providing iterator functions that are not in all version of Python we support. Where possible, we try to use the system-native version and only fall back to these implementations if necessary.
+A GenericInlineModelAdmin raises problems if the ct_fk_field points to a field that isn't part of a GenericForeignKey.
+Monkey-patch os.makedirs, to simulate a normal call, a raced call,  and an error.
+makemigrations --check should exit with a non-zero status when there are changes to an app requiring migrations.
+We can also do the above query using UTF-8 strings.
+Check that the parsed result does a round trip to the same format
+When order fields are defined, including the pk itself, use them.
+Test the state alteration  Test the database alteration  Make sure the M2M field actually works  And test reversal
+Python 3 adds quotes around module name
+Testing intersection relation mask.
+-*- coding: utf-8 -*-
+Middleware that overrides custom HTTP auth user header.
+Confirm support for STDDEV and related stats functionsSQLite supports STDDEV as an extension package; so connection.ops.check_expression_support() can't unilaterally rule out support for STDDEV. We need to manually check whether the call works.
+-*- coding: utf-8 -*-
+URLField correctly validates IPv6 (#18779).
+Making sure there's only 1 `rss` element and that the correct  RSS version was specified.
+The non-optimized version works, too.
+Returns a list of all concrete fields on the model and its parents. Private API intended only to be used by Django itself; get_fields() combined with filtering of field properties is the public API for obtaining this field list.
+The custom_perms test messes with ContentTypes, which will  be cached; flush the cache to ensure there are no side effects  Refs 14975, 14925
+Non-string query should raise TypeError
+Regression test for 7173 Check that the name of the cache for the reverse object is correct.
+Returns a 6-tuple extent for the `Extent3D` aggregate by converting the 3d bounding-box text returned by PostGIS (`box3d` argument), for example: "BOX3D(-90.0 30.0 1, -85.0 40.0 2)".
+The number of days a password reset link is valid for
+For every non-leap year century, advance by  6 years to get into the 28-year repeat cycle
+Unlike BuiltinLookup, the GIS get_rhs_op() implementation should return  an object (SpatialOperator) with an as_sql() method to allow for more  complex computations (where the lhs part can be mixed in).
+Ensuring all children geometries (polygons and their rings) all  return the assigned spatial reference as well.
+For raster fields, assure input is None or a string, dict, or  raster instance.
+Custom fields will have a dotted path
+Retrieving the cities within a 20km 'donut' w/a 7km radius 'hole'  (thus, Houston and Southside place will be excluded as tested in  the `test02_dwithin` above).
+Regression test for 21473
+Disable auto loading of this model as we load it on our own
+Same test, but with read, not readline.
+Returns self.dicts as one dictionary
+clear out cached serializers to emulate yaml missing
+Both Login objs should have same description so that only the one  having smaller PK will be deleted.  Assumed that l1 which is created first has smaller PK.
+should be ordered by rank (defined by the ModelAdmin)
+Translators: please keep a non-breaking space (U+00A0)  between count and time unit.
+Consume the trailing '?', if necessary.
+This should delete both Restaurants, plus the related places, plus  the ItalianRestaurant.
+Failures
+Parse a date in a valid format, get a parsed result
+Admin-site-wide views.
+Test uncached access  Test cached access
+dt is ambiguous in Europe/Copenhagen. LocalTimezone guesses the  offset (and gets it wrong 50% of the time) while pytz refuses the  temptation to guess. In any case, this shouldn't crash.
+-*- coding: utf-8 -*-
+Tests that passing a view function to ``resolve_url`` will result in the URL path mapping to that view name.
+If outer transaction fails, no hooks from within it run.
+Now creating a second Parcel where the borders are the same, just  in different coordinate systems.  The center points are also the  same (but in different coordinate systems), and this time they  actually correspond to the centroid of the border.
+nl/formats.py has customized TIME_INPUT_FORMATS:  ['%H:%M:%S', '%H.%M:%S', '%H.%M', '%H:%M']
+Values list works the same way  All columns are returned for an empty values_list()
+adding a default part to our car - no signal listener installed
+Special URLs for particular regression cases.
+Ensure we can sort on a list_display field that is a Model method (column 3 is 'model_year' in ArticleAdmin)
+Only mess with locales if we can assume we have a working  settings file, because django.utils.translation requires settings  (The final saying about whether the i18n machinery is active will be  found in the value of the USE_I18N setting)  Deactivate translations, because django-admin creates database  content like permissions, and those shouldn't contain any  translations.
+A file was not uploaded, but there is initial data
+Strip the `u` prefix since we're importing unicode_literals
+Inform all validators that have implemented a password_changed() method that the password has been changed.
+InlineModelAdmin broken?
+Failing to initialize a backend keeps raising the original exception. Regression test for 24265.
+Host header without port
+Test spatial indices when available
+Regression test for 11270.
+Clear any cached formats.This method is provided primarily for testing purposes, so that the effects of cached formats can be removed.
+A simple article to test admin views. Test backwards compatibility.
+A service-specific account of type Bar.
+-*- coding: utf-8 -*-
+Tests for bug #15672 ('request' referenced before assignment)
+(First we need to know which order the keys fall in "naturally" on  your system, so we can put things in the wrong way around from  normal. A normal dict would thus fail.)
+<ul id="media"> <li> <label for="media_0"><input id="media_0" name="nestchoice" type="radio" value="unknown" /> Unknown</label> </li> <li>Audio<ul id="media_1"> <li> <label for="media_1_0"><input id="media_1_0" name="nestchoice" type="radio" value="vinyl" /> Vinyl</label> </li> <li><label for="media_1_1"><input id="media_1_1" name="nestchoice" type="radio" value="cd" /> CD</label></li> </ul></li> <li>Video<ul id="media_2"> <li><label for="media_2_0"><input id="media_2_0" name="nestchoice" type="radio" value="vhs" /> VHS</label></li> <li> <label for="media_2_1"> <input checked="checked" id="media_2_1" name="nestchoice" type="radio" value="dvd" /> DVD </label> </li> </ul></li> </ul>
+Expected no_params __doc__
+If the backend is Oracle, test that we can save a text longer  than 4000 chars and read it properly
+Test that update changes the right number of rows for an empty queryset when the update affects only a base table
+Some backends (Oracle at least) need parentheses  around the inner SQL in the negated case, even if the  inner SQL contains just a single expression.
+Inactive users may authenticate with the AllowAllUsersModelBackend.
+Simulate call to f.save()
+Test the to_language function
+GEOS may get the SRID from HEXEWKB  'POINT(5 23)' at SRID=4326 in hex form -- obtained from PostGIS  using `SELECT GeomFromText('POINT (5 23)', 4326);`.
+Verify that the child message header is not base64 encoded
+The "strict-transport-security" header is not added to responses going over an insecure connection.
+Spelling language.
+Create a book and author on the other database
+To support multiple relations to self, it's useful to have a non-None  related name on symmetrical relations for internal reasons. The  concept doesn't make a lot of sense externally ("you want me to  specify *what* on my non-reversible relation?!"), so we set it up  automatically. The funky name reduces the chance of an accidental  clash.  If the backwards relation is disabled, replace the original  related_name with one generated from the m2m field name. Django  still uses backwards relations internally and we need to avoid  clashes between multiple m2m fields with related_name == '+'.
+The county helper is called to ensure integrity of County models.
+The name of the Pygments (syntax highlighting) style to use.
+Takes the state from the previous migration, and mutates it so that it matches what this migration would perform.
+Delete any tables made for our models
+Email line length is limited to 998 chars by the RFC: https://tools.ietf.org/html/rfc5322section-2.1.1 Message body containing longer lines are converted to Quoted-Printable to avoid having to insert newlines, which could be hairy to do properly.
+This is just an example for testing purposes...
+Filter raster by geom.
+We have to special-case M2Ms as a list of comma-separated PKs.
+Static views
+Incrementing through each model field and OGR field in the  dictionary mapping.
+If we're adding the related instance, ignore its primary key  as it could be an auto-generated default which isn't actually  in the database.
+Assign a tag to model with same PK as the book above. If the JOIN  used in aggregation doesn't have content type as part of the  condition the annotation will also count the 'hi mom' tag for b.
+Insert some data
+Assigning a geometry and saving -- then UPDATE back to NULL.
+Inserting a CSRF cookie in a cookie-less request prevented caching.
+Initial values are supposed to be clean  value_from_datadict() gets the data from the data dictionaries.  Each widget type knows how to retrieve its own data, because some  widgets split data over several HTML fields.
+A URLs file that doesn't use the default  from django.conf.urls import *  import pattern.
+Tests that custom fields serialize and deserialize intact
+Create the table  Check that initial tables are there  Check that BookWeak doesn't have an FK constraint  Make a db_constraint=False FK  Make sure no FK constraint is present  Alter to one with a constraint  Make sure the new FK constraint is present  Alter to one without a constraint again  Make sure no FK constraint is present
+Test the non-required ImageField  Note: In Oracle, we expect a null ImageField to return '' instead of  None.
+Yields rendered strings that comprise all widgets in this BoundField. This really is only useful for RadioSelect widgets, so that you can iterate over individual radio buttons in a template.
+set_many takes a second ``timeout`` parameter
+The allowed option should appear twice; the limited option should not appear.
+A widget can enable inheritance of one media type by specifying extend as a tuple
+Remove all the parameters that are globally and systematically  ignored.
+A POST request to delete protected objects should display the page  which says the deletion is prohibited.
+Some other object  None
+First, a quick check to make sure lang_code is well-formed (21458)
+13704 - Check urlize handles IDN correctly
+Ensure GET on the add_view works.
+Regression for 10766 - Shouldn't be able to reference an aggregate  fields in an aggregate() call.
+Order by a field that isn't in list display, to be able to test  whether ordering is preserved.
+Add "show all" parameter to request
+Hard-coded processor for easier use of CSRF protection.
+Converts URLs in plain text into clickable links.
+Check that no upgrade is triggered
+Instances with deferred fields look the same as normal instances when we examine attribute values. Therefore, this method returns the number of deferred fields on returned instances.
+has_changed should compare model instance and primary key  see 18898
+Copy those methods from ManyToManyField because they don't call super() internally
+A ClearableFileInput should not mask exceptions produced while checking that it has a value.
+This failed.
+no app_name -> deprecated
+Filter down a queryset from self.queryset using the date from the  URL. This'll get passed as the queryset to DetailView.get_object,  which'll handle the 404
+Resolve the init field names and value positions
+Set initial cookie and session data.
+Let's munge the token in the path, but keep the same length,  in case the URLconf will reject a different length.
+Expected simple_two_params __doc__
+Add the auth router to the chain. TestRouter is a universal  synchronizer, so it should have no effect.
+Tests get_expire_at_browser_close with different settings and different  set_expiry calls
+Delete broken symlinks
+Rendering the default state with empty_label setted as string.
+Simulate a request the modifies the session
+Shortcut decorators for common cases based on ETag or Last-Modified only
+Tests for the union of two querysets. Bug 12252.
+Test send_mail without the html_message regression test for adding html_message parameter to send_mail()
+Staff should be able to login.
+Check that the parsed result does a round trip to the same format
+Aggregates are not allowed when inserting new data
+Attempting to import objects that depend on the GDAL library.  The  HAS_GDAL flag will be set to True if the library is present on  the system.
+Make sure the correct choices are selected
+Get the page without logging in. Should result in 403.
+Python module path where user will place custom format definition.  The directory where this setting is pointing should contain subdirectories  named as the locales, containing a formats.py file  (i.e. "myproject.locale" for myproject/locale/en/formats.py etc. use)
+import error: manage.py builtin commands shows useful diagnostic info when settings with import errors is provided (14130).
+Multiplying `z` by 2 for the next iteration.
+Case 3: POST with valid data (the success message).)
+memcached does not allow whitespace or control characters in keys  warnings.warn() crashes on Python 2 if message isn't  coercible to str.
+Strings shorter than 8 characters are rejected.
+Regression for 10572 - A subclass with no extra fields can defer  fields from the base class  You can defer a field on a baseclass when the subclass has no fields
+SQLite doesn't support tz-aware datetimes
+Don't display link to edit, because it either has no  admin or is edited inline.
+QuerySets implement is_compatible_query_object_type() to  determine compatibility with the given field.
+Getting the decimal value as a tuple.
+This Price instance generated by this form is not valid because the quantity  field is required, but the form is valid because the field is excluded from  the form. This is for backwards compatibility.
+21846 -- Check that `NestedObjects.collect()` doesn't trip (AttributeError) on the special notation for relations on abstract models (related_name that contains %(app_label)s and/or %(class)s).
+Inequality
+We need to set settings.DEBUG to True so we can capture the output SQL  to examine.
+Template objects should not be duplicated.
+Retrieve the sitemap. Check that priorities  haven't been rendered in localized format
+Make sure that the default URLconf template is shown shown instead of the technical 404 page, if the user has not altered their URLconf yet.
+Raster Data Source Routines
+-*- coding: utf-8 -*-
+Don't return class attributes if the class is the context:
+databases is an optional dictionary of database definitions (structured like settings.DATABASES).
+Ensure we don't allow directory-traversal
+Considering the current implementation of the signals framework,  stacklevel=5 shows the line containing the override_settings call.
+So it's a float... is it an int? If the original value contained a  dot or an "e" then it was a float, not an int.
+this feed has an `updated` element with the latest date
+Implements PBKDF2 as defined in RFC 2898, section 5.2 HMAC+SHA256 is used as the default pseudo random function. As of 2014, 100,000 iterations was the recommended default which took 100ms on a 2.7Ghz Intel i7 with an optimized implementation. This is probably the bare minimum for security given 1000 iterations was recommended in 2001. This code is very well optimized for CPython and is about five times slower than OpenSSL's implementation. Look in django.contrib.auth.hashers for the present default, it is lower than the recommended 100,000 because of the performance difference between this and an optimized implementation.
+You can specify descriptive text for a field by using the 'help_text' argument)
+interpret the naive datetime in local time to get the correct value
+Set data from bytes
+Use the length of the initial data if it's there, 0 otherwise.
+One for main employee, one for boss, one for serfs
+Ensure this field is even column-based  Both sides have through models; this is a no-op.
+The list of safe characters here is constructed from the "reserved" and  "unreserved" characters specified in sections 2.2 and 2.3 of RFC 3986:      reserved    = gen-delims / sub-delims      gen-delims  = ":" / "/" / "?" / "" / "[" / "]" / "@"      sub-delims  = "!" / "$" / "&" / "'" / "(" / ")"                    / "*" / "+" / "," / ";" / "="      unreserved  = ALPHA / DIGIT / "-" / "." / "_" / "~"  Of the unreserved characters, urllib.quote already considers all but  the ~ safe.  The % character is also added to the list of safe characters here, as the  end of section 3.1 of RFC 3987 specifically mentions that % must not be  converted.
+Check that '%' chars are escaped for query execution.
+Should be ~ sqrt(2)
+TODO: Fix Envelope() for Point geometries.
+Formats a time according to the given format.
+what to report as the origin for templates that come from non-loader sources  (e.g. strings)
+-*- coding: utf-8 -*-
+e3: started four days after assigned, medium duration
+We only need to add() if created because if we got an object back  from get() then the relationship already exists.
+as much precision in *seconds*
+Return additional keyword arguments for each individual formset form. index will be None if the form being constructed is a new empty form.
+signed_cookies backend should handle unpickle exceptions gracefully  by creating a new session
+First try to treat this variable as a number.  Note that this could cause an OverflowError here that we're not  catching. Since this should only happen at compile time, that's  probably OK.
+base  datetime
+No explicit date / datetime value -- no checks necessary
+The nocolor palette has all available roles.  Use that palette as the basis for populating  the palette as defined in the environment.
+The tablespaces to use for each model when not specified otherwise.
+microseconds are lost during a round-trip in the database  naive datetimes are interpreted in local time
+Otherwise, some detective work will be needed to figure  out whether the given database path is for the GeoIP country  or city databases.  GeoLite City database detected.  GeoIP Country database detected.
+Return all models that have a direct or indirect relationship to the given model. Relationships are either defined by explicit relational fields, like ForeignKey, ManyToManyField or OneToOneField, or by inheriting from another model (a superclass is related to its subclasses, but not vice versa). Note, however, that a model inheriting from a concrete model is also related to its superclass through the implicit *_ptr OneToOneField on the subclass.
+Check that login_required works on a simple view wrapped in a login_required decorator.
+Ensure that latest() overrides any other ordering specified on the query. Refs 11283.
+Rights.
+Save and check that everything is properly stored in the database ---
+-*- coding: utf-8 -*-
+We must promote any new joins to left outer joins so that when Q is  used as an expression, rows aren't filtered due to joins.
+The first o has 2 as its fk_rel__integer=1, thus it hits the  default=2 case. The other ones have 2 as the result as they have 2  fk_rel objects, except for integer=4 and integer=10 (created above).  The integer=4 case has one integer, thus the result is 1, and  integer=10 doesn't have any and this too generates 1 (instead of 0)  as ~Q() also matches nulls.
+Original translation.
+encode() and decode() expect the charset to be a native string.
+Regression for 7443
+MySQL backend does not support timezone-aware datetimes.
+If this view is operating on a single object, use  the class of that object
+When __name__ and __module__ match we assume the module  was reloaded and issue a warning. This use-case is  useful for REPL. Refs 23621.
+Consume enough data to mess up the parsing:
+Arbitrary limit for select_related to prevents infinite recursion.
+Fixtures. Fixtures are a way of loading data into the database in bulk. Fixure data can be stored in any serializable format (including JSON and XML). Fixtures are identified by name, and are stored in either a directory named 'fixtures' in the application directory, or in one of the directories named in the ``FIXTURE_DIRS`` setting.
+-*- coding: utf-8 -*-
+-*- encoding: utf-8 -*-  This file is distributed under the same license as the Django package.
+Construct a new model for the new state
+force the queryset (qs) for the subquery to be evaluated in its  current state
+Return display string for a database for use in various actions.
+We can't compare results directly (since different databases sort NULLs to  different ends of the ordering), but we can check that all results are  returned.
+RFC 3986 requires query string arguments to be in the ASCII range.  Rather than crash if this doesn't happen, we encode defensively.
+Import the 'management' module within each installed app, to register  dispatcher events.
+As you can see, 'Les Paradis Artificiels' is now a book belonging to  Charles Baudelaire.
+Using 0 in memcache sets a non-expiring timeout.
+The test cases use fixtures & translations from these apps.
+15092 - Also accept simple quotes
+Default formats to be used when parsing times from input boxes, in order  See all available format string here:  http://docs.python.org/library/datetime.htmlstrftime-behavior  * Note that these format strings are different from the ones to display dates
+Warn if SESSION_COOKIE_HTTPONLY is off and "django.contrib.sessions" is in INSTALLED_APPS.
+All POST parameters are shown.
+FieldFile needs access to its associated model field and an instance  it's attached to in order to work properly, but the only necessary  data to be pickled is the file's name itself. Everything else will  be restored later, by FileDescriptor below.
+Make sure that get_connection() accepts arbitrary keyword that might be used with custom backends.
+A POST-like request can pass a query string as data
+If registration is required for accessing this page, and the user isn't  logged in, redirect to the login page.
+Making sure the fields match to an appropriate OFT type.  Making sure we get the proper OGR Field instance, using  a string value index for the feature.
+Sort the models alphabetically within each app.
+Get the driver, name, and datatype of the target raster
+Same as above with the difference that there IS an 'en' translation available. The Javascript i18n view must return a NON empty language catalog with the proper English translations. See 13726 for more details.
+Note that dead weakref cleanup happens as side effect of using  the signal's receivers through the signals API. So, first do a  call to an API method to force cleanup.
+form is valid because required=False for field 'character'
+Test of raw query's optional ability to translate unexpected result column names to specific model fields
+Unfortunately with sqlite3 the in-memory test database cannot be closed,  and so it cannot be re-opened during testing.
+Any error having to do with uploading files.
+Check that list_per_page is an integer.
+No need to actually clone them, they'll never change
+The HTML attribute is maxlength, not max_length.
+Regression for 11256 - providing an aggregate name  that conflicts with a field name on the model raises ValueError
+Used when the exact number of bytes to read is unimportant. This procedure just returns whatever is chunk is conveniently returned from the iterator instead. Useful to avoid unnecessary bookkeeping if performance is an issue.
+generate an initial migration
+These are the points that are components of the aggregate geographic  union that is returned.  Each point  corresponds to City PK.
+Making sure the coordinate dimension is still 2D.
+We set an explicit pk instead of relying on auto-incrementation,  so we need to reset the database sequence. See 17415.
+Returns selected language's BiDi layout. * False = left-to-right layout * True = right-to-left layout
+Simulate a request that ends the session
+If we have more than the maximum digits allowed, then throw an  InvalidDecimal exception.
+Because floating-point arithmetic isn't exact, we set a tolerance  to pass into GEOS `equals_exact`.
+Test the non-required FileField
+A URL resolver that always matches the active language code as URL prefix. Rather than taking a regex argument, we just override the ``regex`` function to always return the active language-code as regex.
+Special case where we suspect a dot meant decimal separator (see 22171)
+Regression test for 10571
+3 fields + 2 submit buttons + 5 inline management form fields, + 2  hidden fields for inlines + 1 field for the inline + 2 empty form
+Increasing rounds from 4 to 6 means an increase of 4 in workload,  therefore hardening should run 3 times to make the timing the  same (the original encode() call already ran once).
+Field flags
+GEOSRelate returns a string, not a geometry.
+New objects can be created both with pk and the custom name
+In the same transaction on the main connection, perform a  queryset delete that covers the object deleted with the other  connection. This causes an infinite loop under MySQL InnoDB  unless we keep track of already deleted objects.
+Regression test for 10362 It is possible to call update() and only change a field in an ancestor model.
+overrides __unicode__ and is marked as html_safe
+pk can be used as a shortcut for the primary key name in any query.
+Ensure select_related together with only on a proxy model behaves as expected. See 17876.
+Check for recursive relations
+Saves the current session data to the database. If 'must_create' is True, a database error will be raised if the saving operation doesn't create a *new* entry (as opposed to possibly updating an existing entry).
+Check internal state
+Force a language via GET otherwise the gettext functions are a noop!
+If there is no __path__ attr, use __file__.
+Rendering should be u'' since this templatetag just logs,  it doesn't render any string.
+Session should still contain the modified value
+A child that exists, but will generate an import error if loaded
+Build a model instance. If the model instance doesn't have a primary key and the model supports natural keys, try to retrieve it from the database.
+12183 - Check urlize adds nofollow properly - see 12183
+Retrieving the history for an object using urlencoded form of primary key should work. Refs 12349, 18550.
+Import a dotted module path and return the attribute/class designated by the last name in the path. Raise ImportError if the import failed.
+Many-to-Many relation between models, where one of the PK's isn't an Autofield
+Skip validation for empty fields with blank=True. The developer  is responsible for making sure they have a valid value.
+Note: Wellington has an 'X' value of 174, so it will not be considered   to the left of CO.
+Returns all related objects pointing to the current model. The related objects can come from a one-to-one, one-to-many, or many-to-many field relation type. Private API intended only to be used by Django itself; get_fields() combined with filtering of field properties is the public API for obtaining this field list.
+Two different actions selected on the two forms...  ...but we clicked "go" on the top form.
+You can also mix and match position and keyword arguments, but  be sure not to duplicate field information.
+Monkeypatches
+A ModelAdmin with a custom get_queryset() method that uses only(), to test verbose_name display in messages shown after adding/editing Telegram instances. Note that the Telegram model defines a __str__ method. For testing fix for ticket 14529.
+List editable changes should be executed if the "Save" button is  used to submit the form - any action choices should be ignored.
+--- Union inside Structure by stackoverflow:3480240 ---
+HACK: datetime is an old-style class, create a new-style equivalent  so we can define additional attributes.
+-*- coding: utf-8 -*-
+Yields the forms in the order they should be rendered
+Model that defines height and width fields before the ImageField.
+Checking readonly field.  Checking readonly field in inline.
+The limit_choices_to on the parent field says that a parent object's  number attribute must be 10, so this should fail validation.
+No exception content is passed to the template, to not disclose any sensitive information.
+Return the empty_value_display set on ModelAdmin or AdminSite.
+Get same manager for different instances
+Test idempotency.
+Making sure `ST_Length3D` is used on for a projected  and 3D model rather than `ST_Length`.  `SELECT ST_Length(line) FROM geo3d_interstateproj2d;`  `SELECT ST_Length3D(line) FROM geo3d_interstateproj3d;`
+Allow TRUNCATE ... CASCADE and don't emit the post_migrate signal  when flushing only a subset of the apps  Flush the database
+Add an item to six.moves.
+http://cx-oracle.sourceforge.net/html/cursor.htmlCursor.statement  The DB API definition does not define this attribute.
+Save the object
+Return a BoundField instance that will be used when accessing the form field in a template.
+Save the m2m data on the form
+These deletes should be 'harmless' since they are done on child geometries
+Right number/type of migrations?
+Test that a repeated non-standard name doesn't affect all cookies. Ticket 15852
+Since we disabled constraint checks, we must manually check for  any invalid keys that might have been added
+-*- coding: utf-8 -*-
+SELECT AsSVG(geoapp_city.point, 0, 8) FROM geoapp_city WHERE name = 'Pueblo';  Even though relative, only one point so it's practically the same except for  the 'c' letter prefix on the x,y values.
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  DATE_INPUT_FORMATS =  TIME_INPUT_FORMATS =  DATETIME_INPUT_FORMATS =  NUMBER_GROUPING =
+Now testing setting the x and y
+We should allow further modification of the user just added i.e. the  'Save' button should behave like the 'Save and continue editing'  button except in two scenarios:  * The user has pressed the 'Save and add another' button  * We are adding a user in a popup
+Multiple paths to the same model (7110, 7125)
+In order to avoid premature loading of the relation tree  (expensive) we prefer checking if the field is a forward field.
+Base class for tag helper nodes such as SimpleNode and InclusionNode. Manages the positional and keyword arguments to be passed to the decorated function.
+Workaround for sphinx-build recursion limit overflow:  pickle.dump(doctree, f, pickle.HIGHEST_PROTOCOL)   RuntimeError: maximum recursion depth exceeded while pickling an object  Python's default allowed recursion depth is 1000 but this isn't enough for  building docs/ref/settings.txt sometimes.  https://groups.google.com/d/topic/sphinx-dev/MtRf64eGtv4/discussion
+model has __str__ method  Emulate model instance edit via the admin  Message should contain non-ugly model verbose name. Instance  representation is set by model's __str__()
+Schedules a field update. 'objs' must be a homogeneous iterable collection of model instances (e.g. a QuerySet).
+#15185 -- Allow no links from the 'change list' view grid.
+Create new session.
+Clear cached properties, after first accessing them to ensure they exist.
+Database assignments don't change
+A datetime object, with an additional class attribute to tell cx_Oracle to save the microseconds too.
+When dicts contain items whose values deconstruct to identical values,  those dicts should be considered equal for the purpose of detecting  state changes (even if the original values are unequal).
+Try the cached finder.  Implicit import machinery should be used.  Else see if the finder knows of a loader.
+UTC implementation taken from Python's docs. Used only when pytz isn't available.
+is_active is true by default  the is_active flag is saved
+with a mocked call_command(), this doesn't have any effect.
+Tests behavior of an ImageField with one dimensions field.
+FK to a model not registered with admin site. Raw ID widget should  have no magnifying glass link. See 16542
+Go through keyword arguments, and either save their values to our  instance, or raise an error.
+SQLite doesn't actually support most of these types, but it "does the right  thing" given more verbose field definitions, so leave them as is so that  schema inspection is more useful.  SQLite requires LIKE statements to include an ESCAPE clause if the value  being escaped has a percent or underscore in it.  See http://www.sqlite.org/lang_expr.html for an explanation.
+Create the operation  Test the state alteration  Make sure there's no table  Test the database alteration  And test reversal  And deconstruction
+Reference query:   SELECT ST_distance_sphere(point, ST_GeomFromText('LINESTRING(150.9020 -34.4245,150.8700 -34.5789)', 4326))   FROM distapp_australiacity ORDER BY name;  Testing equivalence to within a meter.
+Returns true if the DE-9IM intersection matrix for the two Geometries is T*T****** (for a point and a curve,a point and an area or a line and an area) 0******** (for two curves).
+Only required when autocommits_when_autocommit_is_off = True.
+Created model  Created field  Removed field  Removed model  Field being altered  order_with_respect_to being unset for a field  Field is removed and part of an index/unique_together  Unknown dependency. Raise an error.
+Verifies lazy object returned by reverse_lazy is coerced to text by resolve(). Previous to 21043, this would raise a TypeError.
+Other types of files may be assigned as well, but they need to have  the FieldFile interface added to them. Thus, we wrap any other type of  File inside a FieldFile (well, the field's attr_class, which is  usually FieldFile).
+Used specifically by the GEOSGeom_createPolygon and GEOSGeom_createCollection   GEOS routines
+Tests that ImageField can be pickled, unpickled, and that the image of the unpickled version is the same as the original.
+Imported for backwards compatibility and for the sake  of a cleaner namespace. These symbols used to be in  django/core/mail.py before the introduction of email  backends and the subsequent reorganization (See 10355)
+If list_display_links not defined, add the link tag to the first field
+Perform the action only on the selected objects
+Checking the index and returning the corresponding GEOS geometry.
+Set 'required' to False on the individual fields, because the  required validation will be handled by ComboField, not by those  individual fields.
+The error code is returned in the last argument, by reference. Check its value with `check_err` before returning the result.
+Get value and nodata exists flag  If the pixeltype is an integer, convert to int
+The centroid is equal to the centroid of the set of component Geometries of highest dimension (since the lower-dimension geometries contribute zero "weight" to the centroid).
+Regression for 15624 - Missing SELECT columns when using values, annotate  and aggregate in a single query
+Test for using index_together with a single list (22172)
+Short-form way of fetching all the default parameters  Unroll anything iterable for choices into a concrete list  Do correct kind of comparison  Work out path - we shorten it for known Django core fields  Return basic info - other fields should override this.
+MySQL doesn't support spatial indexes on NULL columns
+Store the original user-defined values for each option,  for use when serializing the model definition
+Width (X axis) in pixels.
+Test the creation of polygon 3D models.
+Ensuring that data was loaded from initial data fixtures.
+coding: utf-8
+Emulate behavior of django.contrib.staticfiles.views.serve() when it  invokes staticfiles' finders functionality.  TODO: Modify if/when that internal API is refactored
+Aggregates
+Build graph
+Phase 2  We're forcing a transaction on a non-transactional-DDL backend  Normal behaviour
+Testing len() and num_geom.
+confirm the search returned one object
+Check that max_num is an integer.
+First, with the date picker widget ---------------------------------  Check that the date picker is hidden  Click the calendar icon  Check that the date picker is visible  Press the ESC key  Check that the date picker is hidden again
+rhs should be an iterable; use batch_process_rhs() to  prepare/transform those values.
+astimezone() is safe here because the target timezone doesn't have DST
+Database assignments don't change
+update fields
+A builtin tag exists in both the index and detail
+This is not wanted behavior, but this is how Django has always  behaved for databases that do not return correct information  about matched rows for UPDATE.
+Should be able to use a ModelAdmin method in list_display that has the same name as a reverse model field ("sketch" in this case).
+The user can't delete sections yet, so they shouldn't see the "delete section" link.  Allow the user to delete sections too. Now they can see the "delete section" link.
+Tests that passing a URL path to ``resolve_url`` will result in the same url.
+Convert a binary string into a long integer This is a clever optimization for fast xor vector math
+Add elements in the root (i.e. feed/channel) element. Called from write().
+Check that the user has delete permission for the actual model
+Translators: please keep a non-breaking space (U+00A0)  between count and time unit.
+Test passing StringIO instance as content argument to save
+Now doing length on a projected coordinate system.
+Creates the SQL for this query. Returns the SQL string and list of parameters.
+Using a custom primary key By default, Django adds an ``"id"`` field to each model. But you can override this behavior by explicitly adding ``primary_key=True`` to a field.
+If the user submits a new file upload AND checks the clear checkbox, they get a validation error, and the bound redisplay of the form still includes the current file and the clear checkbox.
+Quoted-string format (CR not allowed)  Max length of domain name labels is 63 characters per RFC 1034.  Trailing newlines in username or domain not allowed
+Initially the pointer is NULL.
+Macintosh, Unix.
+Check for obvious errors. (This check prevents duck typing, but  it could be removed if it became a problem in practice.)
+Finds a requested static file in a location, returning the found absolute path (or ``None`` if no match).
+San Antonio in 'WGS84' (SRID 4326)
+Register an action to be available globally.
+Regression for 13433 - Make sure that EmailMessage doesn't mangle  'From ' in message body.
+Check that the ct_field and ct_fk_fields exist
+Make state  Right number/type of migrations?
+Expected inclusion_two_params_from_template __doc__
+Use a simple string for forward declarations.
+Sends a message to the managers, as defined by the MANAGERS setting.
+First check if we need to delete this cookie.  The session should be deleted only if the session is entirely empty  Save the session data and refresh the client cookie.  Skip session save for 500 responses, refs 3881.  The user is now logged out; redirecting to same  page will result in a redirect to the login page  if required.
+Overwrite the _get method of the fallback storage to prove it is not  used (it would cause a TypeError: 'NoneType' object is not callable).
+Create a book and author on the default database
+Base exception.
+Make sure that only actual authors are present in author's list filter
+Setting the parameter WKT with that of the transformed  geometry.
+-*- coding: utf-8 -*-
+Make state  Right number/type of migrations?
+Create the table  Ensure there's no age field  Add the new field  Ensure the field is right afterwards
+Return all index SQL statements (field indexes, index_together) for the specified model, as a list.
+This manager should be used for queries on related fields  so that geometry columns on Oracle and MySQL are selected  properly.
+If the destination file exists and allow_overwrite is False then raise an IOError
+Parse a date in a valid format, get a parsed result
+Hook for specifying custom readonly fields.
+Iterating over strings outputs safe characters.
+The *_FORMAT strings use the Django date format syntax,  see http://docs.djangoproject.com/en/dev/ref/templates/builtins/date
+token.split_contents() isn't useful here because this tag doesn't accept variable as arguments
+The thread should immediately block, but we'll sleep  for a bit to make sure.
+Every LazyStream must have a producer when instantiated. A producer is an iterable that returns a string each time it is called.
+Ensures that differing timezones are calculated correctly.
+If arguments are being passed in construction, it's being used as a decorator.  First, test with "defaults":
+Reference query:  SELECT ST_Distance(ST_Transform("distapp_censuszipcode"."poly", 32140),    ST_GeomFromText('<buffer_wkt>', 32140))  FROM "distapp_censuszipcode";
+For getting, x, y, z
+Uploaded files may have content type parameters available.
+Casts datetimes into the format expected by the backend
+With i18n_patterns(..., prefix_default_language=False), the default language (settings.LANGUAGE_CODE) should be accessible without a prefix.
+Forward
+Assume a class is decorated
+Check that readonly_fields refers to proper attribute or field.
+Prevent trailing spaces
+Log in
+_headers is a mapping of the lower-case name to the original case of  the header (required for working with legacy systems) and the header  value. Both the name of the header and its value are ASCII strings.  This parameter is set by the handler. It's necessary to preserve the  historical behavior of request_finished.
+... check if the password would get updated to the new count.
+Now, we test turning an unmanaged model into a managed model  Right number/type of migrations?
+content can be overridden
+Get all outgoing references from the model to be rendered  Directly related models are the models pointed to by ForeignKeys,  OneToOneFields, and ManyToManyFields.
+Model without any defined `Meta.ordering`. Refs 16819.
+Given a lookup_type of 'year', 'month', 'day', 'hour', 'minute' or 'second', returns the SQL that extracts a value from the given datetime field field_name, and a tuple of parameters.
+Ensure that has_module_permission() returns True for all users who have any permission for that module (add, change, or delete), so that the module is displayed on the admin index page.
+Test basic pointing  Test swap detection for swappable model  Test nonexistent (for now) model  Test on_delete  Test to_field preservation  Test related_name preservation
+Ensure that custom querysets are considered for the admin history view. Refs 21013.
+Normalizes CRLF and CR newlines to just LF.
+Raise exception for custom tags used in child with {% load %} tag in parent, not in child
+For testing HEX(EWKB).  `SELECT ST_AsHEXEWKB(ST_GeomFromText('POINT(0 1)', 4326));`  `SELECT ST_AsHEXEWKB(ST_GeomFromEWKT('SRID=4326;POINT(0 1 2)'));`
+Set data for entire dataset
+-*- coding: utf-8 -*-
+No CSRF cookie. For POST requests, we insist on a CSRF cookie,  and in this way we can avoid all CSRF attacks, including login  CSRF.
+A custom deconstructible object.
+Check the savecount stored on the object (see the model).
+TODO: this should be handled by some parameter to the ChangeList.
+Reverse dictionary for PostGIS geometry types not populated until  introspection is actually performed.
+Create the operation  Use a multi-line string with a comment to test splitting on SQLite and MySQL respectively
+The maximum number of items to display in a QuerySet.__repr__
+Height (Y axis) in pixels of the band.
+Check that the right middleware methods have been invoked
+SQLite lets objects be saved with an empty primary key, even though an  integer is expected. So we can't check for an error being raised in that  case for SQLite. Remove it from the suite for this next bit.  The primary key must be specified, so an error is raised if you  try to create an object without it.
+Returns the preserved filters querystring.
+..to apply each replacement pattern to the content  then save the processed result  or handle the case in which neither processing nor  a change to the original file happened
+Return the first day of the period.
+Test that empty value display can be set in ModelAdmin or individual fields.
+_request stores the current request object in subclasses that know  about requests, like TemplateResponse. It's defined in the base class  to minimize code duplication.  It's called self._request because self.request gets overwritten by  django.test.client.Client. Unlike template_name and context_data,  _request should not be considered part of the public API.
+Test that the constructor of ContentFile accepts 'name' (16590).
+Returns true if the elements in the DE-9IM intersection matrix for the two Geometries match the elements in pattern.
+Check that the parsed result does a round trip to the same format
+Create the table  Ensure there's no surname field  Create a row  Add new CharField with a default  Ensure field was added with the right default  And that the default is no longer set in the database.
+Tests that a message containing SafeData is keeping its safe status when retrieved from the message storage.
+A template view can be customized to return extra context.
+We capture the arguments to make returning them trivial
+Returns the value of this field in the given model instance.
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  Kept ISO formats as they are in first position
+Wraps a string in double quotes escaping contents as necessary.
+Acts as a decorator. Overrides list of registered system checks. Useful when you override `INSTALLED_APPS`, e.g. if you exclude `auth` app, you also need to exclude its system checks.
+Override this method to use a different test_func method.
+Some convoluted syntax for which parsing may differ between python versions
+-*- coding: utf-8 -*-
+If we can't find a field on the model that matches, it could  be an extra field on the form.
+Returns a sequence containing the fields to be displayed as filters in the right sidebar of the changelist page.
+Any apps in self.real_apps should have all their models included  in the render. We don't use the original model instances as there  are some variables that refer to the Apps object.  FKs/M2Ms from real apps are also not included as they just  mess things up with partial states (due to lack of dependencies)  Populate the app registry with a stub for each application.
+Running migrate with some migrations applied before their dependencies should not be allowed.
+Since this module gets imported in the application's root package,  it cannot import models from other applications at the module level.
+Ensure that multiple inlines with related_name='+' have correct form prefixes. Bug 16838.
+Clear the cache of an LRU cache object on entering and exiting.
+Add a Category object *after* the ModelMultipleChoiceField has already been  instantiated. This proves clean() checks the database during clean() rather  than caching it at time of instantiation.  Note, we are using an id of 1006 here since tests that run before  this may create categories with primary keys up to 6. Use  a number that will not conflict.
+The storage doesn't support get_modified_time() or failed
+Note that this could be accomplished in one try-except clause, but  instead we use get_or_create when creating unknown users since it has  built-in safeguards for multiple threads.
+Test that a view implementing GET and POST allows GET, HEAD, and POST.
+We need nsapp to be top-level so our multiple-paths tests can add another  location for it (if its inside a normal package with an __init__.py that  isn't possible). In order to avoid cluttering the already-full tests/ dir  (which is on sys.path), we add these new entries to sys.path temporarily.
+if it's not comparable return false
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  DATE_INPUT_FORMATS =  TIME_INPUT_FORMATS =  DATETIME_INPUT_FORMATS =
+The two new passwords do not match.
+Define a temporary environment for the subprocess
+No explicit time / datetime value -- no checks necessary
+If the items within a deconstructed object's args/kwargs have the same  deconstructed values - whether or not the items themselves are different  instances - then the object as a whole is regarded as unchanged.
+Reset setting based property values.
+Pillow doesn't recognize it as an image.
+OR
+Check that the parsed result does a round trip to default format
+First pickling
+Compression is performed on responses with a status other than 200 (10762).
+A DecimalField with decimal_places=0 should work (22272).
+Backwards-compatibility callables
+Does this quack like a Template?  If not, we'll try our cache, and get_template()
+With `manager_inheritance_from_future = True` 'objects'  shouldn't be created.
+Test for #13085 -- __len__() returns 0
+Copy data from the old table into the new table
+Testing the GEOS version regular expression.
+However, starting at 3 to 5 cannot use the squashed migration
+Returns true if data in any form differs from initial.
+Parses a string and return a datetime.date.Raises ValueError if the input is well formatted but not a valid date. Returns None if the input isn't well formatted.
+Make sure the correct queryset is returned
+The StatusPerson models should have its own table (it's using ORM-level inheritance).
+Prepare data for setting values in subsequent tests
+8149 - File objects with \r\n line endings should yield lines when iterated over.
+change the name to "Brooklyn Bridge" just to be a jerk.
+iterating over Unicode strings still yields bytestring chunks.  '\xc3\xa9' == unichr(233).encode('utf-8')
+fails on sqlite if output_field is not set explicitly on all  Values containing UUIDs
+The main form
+By default, the ordering is different from the swapped version
+Check for **kwargs
+Testing Feature.__iter__
+already closed
+Consume iterators upon assignment to allow repeated iteration.  Create a list of properly encoded bytestrings to support write().
+Potentially cleanse the request and any MultiValueDicts if they  are one of the frame variables.
+Make sure the correct queryset is returned
+Finally store the processed paths
+When there is a local manager we shouldn't get any warning  and 'objects' shouldn't be created.
+Exceptions are special - they've got state that isn't  in self.__dict__. We assume it is all in self.args.
+Subclasses can define fixtures which will be automatically installed.
+Returns the given hash, with only the first ``show`` number shown. The rest are masked with ``char`` for security reasons.
+Non-abstract child classes inherit some attributes from their  non-abstract parent (unless an ABC comes before it in the  method resolution order).
+Returns the HTTP request's PATH_INFO as a unicode string.
+This checks that get_prep_value is deferred properly
+Set this to True for nodes that must be first in the template (although  they can be preceded by text nodes.
+Generic field type description, usually overridden by subclasses
+We cannot simply use assertRaises because a SkipTest exception will go unnoticed
+<ul id="foo"> <li> <label for="foo_0"><input checked="checked" type="radio" id="foo_0" value="J" name="beatle" /> John</label> </li> <li><label for="foo_1"><input type="radio" id="foo_1" value="P" name="beatle" /> Paul</label></li> <li><label for="foo_2"><input type="radio" id="foo_2" value="G" name="beatle" /> George</label></li> <li><label for="foo_3"><input type="radio" id="foo_3" value="R" name="beatle" /> Ringo</label></li> </ul>
+Contexts can be constructed from unicode or UTF-8 bytestrings.
+This is a minimal valid WSGI environ dictionary, plus:  - HTTP_COOKIE: for cookie support,  - REMOTE_ADDR: often useful, see 8551.  See http://www.python.org/dev/peps/pep-3333/environ-variables
+Make sure the correct choice is selected
+Hexlify raster header
+No problems here - we aren't going to cascade, so we will fast  delete the objects in a single query.  We don't hit parameter amount limits for a, so just one query for  that + fast delete of the related objs.
+Does the Layer support random reading?
+Click 'Choose all' --------------------------------------------------  There 's no 'Choose all' button in vertical mode, so individually  select all options and click 'Choose'.
+Test for 17927 Initial values support for BaseGenericInlineFormSet.
+Email address that error messages come from.
+Repopulate the list of middlewares since it's already been populated  by setUp() before the MIDDLEWARE setting got overridden.
+Turn the "new in version" stuff (versionadded/versionchanged) into a  better callout -- the Sphinx default is just a little span,  which is a bit less obvious that I'd like.  FIXME: these messages are all hardcoded in English. We need to change  that to accommodate other language docs, but I can't work out how to make  that work.
+Make sure the inner query has at least one table in use.  The same for our new query.  There is only the base table in use in the query.  We can't do the delete using subquery.
+Arguments to filters are 'safe' and manipulate their input unescaped.
+Setting the dimension of the geometry field.
+When grouping without specifying ordering, we add an explicit "ORDER BY NULL"  portion in MySQL to prevent unnecessary sorting.
+Returns the message storage on the request if it exists, otherwise returns an empty list.
+Sets a header unless it has already been set.
+Wraps words at specified line length. Argument: number of characters to wrap the text at.
+Converts the input value into the expected Python data type, raising django.core.exceptions.ValidationError if the data can't be converted. Returns the converted value. Subclasses should override this.
+Unicode values can be cached  Test `set`
+Get the first parent's default_manager_name if there's one.
+Querying with combined q-objects should also strip the left outer join
+Aggregates can be used with F() expressions  ... where the F() is pushed into the HAVING clause
+small_value should be deleted, or set if configured to accept larger values
+Ensures the admin changelist shows correct values in the relevant column for rows corresponding to instances of a model in which a named group has been used in the choices option of a field.
+<User Model>.is_anonymous/is_authenticated must not be methods.
+An expression that can wrap another expression so that it can provide extra context to the inner expression, such as the output_field.
+Check non-cookie token for match.  Handle a broken connection before we've completed reading  the POST data. process_view shouldn't raise any  exceptions, so we'll ignore and serve the user a 403  (assuming they're still listening, which they probably  aren't because of the error).
+Skip when the relationship model wasn't found.
+Depend on the deletion of any possible non-proxy version of us  Depend on all bases  Generate creation operation  Depend on the deletion of any possible non-proxy version of us
+Ordering uses the 'rhs' ordering, unless it has none, in which case  the current ordering is used.
+-*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
+Check that context overrides context processors
+Users within the Django authentication system are represented by this model. Username, password and email are required. Other fields are optional.
+Check the error code returned (c_int).
+David is idolized by Anne and Chuck - add in reverse direction
+By default, forms append a hyphen between the prefix and the field name, but a  form can alter that behavior by implementing the add_prefix() method. This  method takes a field name and returns the prefixed field, according to  self.prefix.
+Immutable return value because it's cached and shared by callers.
+Raise exception if we don't have at least 2 args, first one integer.
+Don't cache responses that set a user-specific (and maybe security  sensitive) cookie in response to a cookie-less request.
+You can set a ChoiceField's choices after the fact.
+Returns True if the given session_key already exists.
+If we're adding a new object, ignore a parent's auto-generated key  as it will be regenerated on the save request.
+Override this method to customize the way permissions are checked.
+Test the state alteration  Test the database alteration  And test reversal
+Make sure raster fields are used only on backends with raster support.
+Check that the right middleware methods have been invoked
+Resave (=update)  Test default value
+emails.Util.parsedate does the job for RFC1123 dates; unfortunately  RFC7231 makes it mandatory to support RFC850 dates too. So we roll  our own RFC-compliant parsing.
+Both timesince and timeuntil should work on date objects (#17937).
+Return a list of 'TRUNCATE x;', 'TRUNCATE y;',  'TRUNCATE z;'... style SQL statements  Oracle does support TRUNCATE, but it seems to get us into  FK referential trouble, whereas DELETE FROM table works.  Since we've just deleted all the rows, running our sequence  ALTER code will reset the sequence to 0.
+Calculating the longitude value, using the degrees per pixel.
+We're emulating a WSGI server; we must call the close method  on completion.
+Make sure the default manager is always first since ordering chooses  the default manager.
+and then set the cache accordingly
+we shouldn't get a 500 error caused by a NoReverseMatch
+Check for ticket 13839
+This exception is raised by an upload handler that wants to skip a given file.
+Use a pytz timezone name as argument
+Now add in the indexes  Convert the sorted sets to lists
+Name of request header to grab username from.  This will be the key as  used in the request.META dictionary, i.e. the normalization of headers to  all uppercase and the addition of "HTTP_" prefix apply.
+When the content is rendered, all the callbacks are invoked, too.
+A validator designed for HStore to require/restrict keys.
+Makes sure that makemigrations exits when there are no changes to an app.
+Memcached does not accept keys longer than this.
+Helper: get a datetime.date object given a format string and a year, month, and day (only year is mandatory). Raise a 404 for an invalid date.
+Figure out where to redirect after the 'Save' button has been pressed when editing an existing object.
+The query passed to raw isn't a safe query to use with raw.
+Parse a time in a valid format, get a parsed result
+Check that the path in the response includes it (ignore that it's a 404)
+Check that the parsed result does a round trip to the same format
+XXX check Content-Length and truncate if too many bytes written?
+Make sure opening a connection creates a new file
+At the end of the deprecation:  raise NotImplementedError('subclasses of Storage must provide a get_created_time() method')
+Active superusers have all permissions.
+Called when serializing of an object starts.
+-*- encoding: utf-8 -*-  This file is distributed under the same license as the Django package.
+XXX For some reason SpatiaLite does something screwy with the Texas geometry here.  Also,  XXX it doesn't like the null intersection.
+Regression for 17158  This shouldn't raise an exception
+Translators: please keep a non-breaking space (U+00A0)  between count and time unit.
+Returns a list of the format modules found
+A '?' in referer is identified as a search engine source.
+Inheriting from object required on Python 2.  Ignore broken pipe errors, otherwise pass on
+This should never happen. I love comments like this, don't you?
+Returns any SQL necessary to drop the sequence for the given table. Returns None if no SQL is necessary.
+Store a list of column names which have already been used by other fields.
+Rename the through table  Repoint the FK to the other side  We need the field that points to the target model, so we can tell alter_field to change it -  this is m2m_reverse_field_name() (as opposed to m2m_field_name, which points to our model)  for self-referential models we need to alter field from the other end too
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  DATE_INPUT_FORMATS =  TIME_INPUT_FORMATS =  DATETIME_INPUT_FORMATS =
+This just checks that the uploaded data is JSON
+Ensure that earliest() overrides any other ordering specified on the  query. Refs 11283.
+Set the test environment  Use native strings for better compatibility
+Now, we test the custom pk field name  The field name the FK on the book model points to
+Generate the inner query.  Try to have as simple as possible subquery -> trim leading joins from  the subquery.
+Return a list of all help texts of all configured validators.
+MultipleChoiceField can also be used with the CheckboxSelectMultiple widget.
+Test that datetimes with timezones don't get trodden on.
+cleaned_data will include a key and value for *all* fields defined in the Form,  even if the Form's data didn't include a value for fields that are not  required. In this example, the data dictionary doesn't include a value for the  "nick_name" field, but cleaned_data includes it. For CharFields, it's set to the  empty string.
+This final query should only have seven tables (port, device and building  twice each, plus connection once). Thus, 6 joins plus the FROM table.
+Start building a data dictionary from the object.
+Valid UTF-8 sequences are encoded.
+-*- coding: utf-8 -*-
+Ensure domain for RequestSite always matches host header
+MySQL doesn't support tz-aware times
+An explicit link to the parent (we can control the attribute name).
+Check search_fields is a sequence.
+Build the list of media to be used by the formset.
+We are in a named capturing group. Extra the name and  then skip to the end.  We are in a named backreference.  Named backreferences have already consumed the  parenthesis.
+Print some useful info
+Nested operation, trailing comma is handled in upper OperationWriter._write()
+RemovedInDjango20Warning: Add template_dirs for compatibility  with old loaders
+Change User should not have access to add articles  make sure the view removes test cookie  Try POST just to make sure
+Template assertions work when a template is rendered multiple times.
+Variations for input (data, shape, expected result).
+Makes sure that makemigrations does not raise a CommandError when an unspecified app has conflicting migrations.
+Ordinate getting and setting routines
+Test that cloning a queryset does not get out of hand. While complete testing is impossible, this is a sanity check against invalid use of deepcopy. refs 16759.
+Then, add the path to the query's joins. Note that we can't trim  joins at this stage - we will need the information about join type  of the trimmed joins.
+No fields on a ModelForm should actually result in no fields.
+Reverse
+IE7 occasionally returns an error "Internet Explorer cannot  display the webpage" and doesn't load the next page. We just  ignore it.
+Monkeypatch interactive questioner to auto accept
+Sometimes (pretty much in formsets) we want to allow a form to pass validation  if it is completely empty. We can accomplish this by using the empty_permitted  argument to a form constructor.
+Pointer access property.  Raise an exception if the pointer isn't valid don't  want to be passing NULL pointers to routines --  that's very bad.
+An array of the parameter name, the name of their OpenLayers  counterpart, and the type of variable they are.
+Get the "needs rollback" flag -- for *advanced use* only.
+Some backends may have srid=-1
+Ticket 13815: check if <reverse>_isnull=False does not produce  faulty empty lists
+For some reason SpatiaLite does something screwy with the Texas geometry here.  Also, it doesn't like the null intersection.
+Removes whitespace between HTML tags, including tab and newline characters. Example usage:: {% spaceless %} <p> <a href="foo/">Foo</a> </p> {% endspaceless %} This example would return this HTML:: <p><a href="foo/">Foo</a></p> Only space between *tags* is normalized -- not space between tags and text. In this example, the space around ``Hello`` won't be stripped:: {% spaceless %} <strong> Hello </strong> {% endspaceless %}
+Subject-line prefix for email messages send with django.core.mail.mail_admins  or ...mail_managers.  Make sure to include the trailing space.
+Size of each "chunk" for get_iterator calls.  Larger values are slightly faster at the expense of more storage space.
+The middleware does not redirect secure requests.
+Always include SRID for less fragility; include spatial index if it's  not the default value.
+Reraise if it's a missing custom template.
+This could raise a DoesNotExist; that's correct behavior and will  make sure that only correct ctypes get stored in the cache dict.
+Models instances with deferred fields should still return the same  content types as their non-deferred versions (bug 10738).
+Not ambiguous.
+This lookup is used to test lookup registration.
+Make a fake graph  Use project state to make a new migration change set  Run through arrange_for_graph  Make sure there's a new name, deps match, etc.
+Testing SRID keyword on Point
+filename, actual mimetype
+Testing geodetic distance calculation with a non-point geometry  (a LineString of Wollongong and Shellharbour coords).
+Add a single condition inside parentheses for whatever  get_extra_restriction() returns.
+-*- coding: utf-8 -*-
+IE requires expires, so set it if hasn't been already.
+Test that a TransactionManagementError is raised when a select_for_update query is executed outside of a transaction.
+The *_INPUT_FORMATS strings use the Python strftime format syntax,  see http://docs.python.org/library/datetime.htmlstrftime-strptime-behavior  DATE_INPUT_FORMATS =  TIME_INPUT_FORMATS =  DATETIME_INPUT_FORMATS =  NUMBER_GROUPING =
+This is the main implementation of all the Form logic. Note that this  class is different than Form. See the comments by the Form class for more  information. Any improvements to the form API should be made to *this*  class, not to the Form class.
+Returns true if the DE-9IM intersection matrix for the two Geometries is FT*******, F**T***** or F***T****.
+-*- coding: utf-8 -*-
+Optional list or tuple of years to use in the "year" select box.
+This dollar is ok as it is escaped
+@method_decorator can be used to decorate a class and its methods.
+Test setting a fresh created model instance.
+No tablespace-related SQL

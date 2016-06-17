@@ -18,11 +18,11 @@ def calc_bleu():
 
         src_file = "../../data/django/dev/best-so-far/10pt.random.spaced.en"
         # trans_file = "../../data/django/dev/best-so-far/translated.en"
-        trans_file = "bleu_test_data/pred.txt"
+        trans_file = "bleu_test_data/translated.en"
         cd_file = "../../data/django/dev/best-so-far/10pt.random.code"
         temp_ref = "bleu_test_data/ref_temp.txt"
         temp_trans = "bleu_test_data/trans_temp.txt"
-        bl_file = "bleu.txt"
+        bl_file = "bleu2.txt"
 
 
 
@@ -61,7 +61,7 @@ def calc_bleu():
 
                             # use the two files to calc the bleu score
 
-                            bleu_file.write("Original comment: " + sent_src)
+                            # bleu_file.write("Original comment: " + sent_src)
                             bleu_file.write("// " + sent_trans)
                             bleu_file.write("Code line %d: %s" % (counter,sent_code))
                             output = os.popen("perl multi-bleu.perl " + temp_ref + " < " + temp_trans).read()

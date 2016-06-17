@@ -62,8 +62,8 @@ tf.app.flags.DEFINE_float("max_gradient_norm", 5.0,
                           "Clip gradients to this norm.")
 tf.app.flags.DEFINE_integer("batch_size", 64,
                             "Batch size to use during training.")
-tf.app.flags.DEFINE_integer("size", 512, "Size of each model layer.")
-tf.app.flags.DEFINE_integer("num_layers", 2, "Number of layers in the model.")
+tf.app.flags.DEFINE_integer("size", 256, "Size of each model layer.")
+tf.app.flags.DEFINE_integer("num_layers", 1, "Number of layers in the model.")
 tf.app.flags.DEFINE_integer("code_vocab_size", 5000, "Program vocabulary size.")
 tf.app.flags.DEFINE_integer("en_vocab_size", 5000, "English vocabulary size.")
 tf.app.flags.DEFINE_string("data_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/data/", "Data directory")
@@ -264,6 +264,9 @@ def train():
             start_time = time.time()
             encoder_inputs, decoder_inputs, target_weights = model.get_batch(
               train_set, bucket_id)
+
+            print (encoder_inputs)
+
             _, step_loss, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
                                        target_weights, bucket_id, False)
             step_time += (time.time() - start_time) / FLAGS.steps_per_checkpoint
