@@ -20,21 +20,16 @@ import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
-import data_utils
-import seq2seq_model
-
-from evaluation.meteor.meteor import Meteor
-
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
 _buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
-buckets_code = [5,10,20,40,2000]
-buck_code = [0,0,0,0,0]
+buckets_code = [5,10,20,40,100,250,2000]
+buck_code = [0,0,0,0,0,0,0]
 
 
-buckets_en = [10,15,25,50,2000]
-buck_en = [0,0,0,0,0]
+buckets_en = [10,15,25,50,100,200,2000]
+buck_en = [0,0,0,0,0,0,0]
 
 
 # Calculate the amount of items in each bucket specified above
@@ -75,7 +70,7 @@ def calc_buckets(en_file, code_file):
                 
             
 def main(_):
-    calc_buckets("../data/django/train/80pt.ids3000.en","../data/django/train/80pt.ids3000.code")
+    calc_buckets("../data/djangoCode/train/90pt.random.ids5000.en","../data/djangoCode/train/90pt.random.ids5000.code")
     
     
 if __name__ == "__main__":

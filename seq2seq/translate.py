@@ -68,7 +68,7 @@ tf.app.flags.DEFINE_integer("code_vocab_size", 5000, "Program vocabulary size.")
 tf.app.flags.DEFINE_integer("en_vocab_size", 5000, "English vocabulary size.")
 tf.app.flags.DEFINE_string("data_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/data/", "Data directory")
 tf.app.flags.DEFINE_string("train_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/train/", "Training directory.")
-tf.app.flags.DEFINE_string("dataset", "django", "Specify the name of which dataset to use.")
+tf.app.flags.DEFINE_string("dataset", "djangoCode", "Specify the name of which dataset to use.")
 tf.app.flags.DEFINE_string("dev_files", "dev/10pt.random", "The file path to the English dev file, relative from the data_dir.")
 tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
@@ -92,7 +92,7 @@ translated_dev_code = data_dir + FLAGS.translated_dev_code
 # We use a number of buckets and pad to the closest one for efficiency.
 # See seq2seq_model.Seq2SeqModel for details of how they work.
 # _buckets = [(5, 10), (10, 15), (20, 25), (40, 50), (100,60)]
-_buckets = [(5, 10), (10, 15), (20, 25), (40, 50)]
+_buckets = [(5, 10), (10, 15), (20, 25), (40, 50), (250,100)]
 
 
 def read_data(source_path, target_path, max_size=None):
