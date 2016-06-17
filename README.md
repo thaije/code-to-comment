@@ -413,6 +413,20 @@ BLEU = 58.12 (Bravity Penalty=0.885, Length ratio=0.891, Translated length=21476
 Accuracy is: 0.472576177285
 
 
+#### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, random train/test set
+global step 7000 learning rate 0.5000 step-time 0.27 perplexity 1.17
+  eval: bucket 0 perplexity 2.29
+  eval: bucket 1 perplexity 5.41
+  eval: bucket 2 perplexity 15.63
+  eval: bucket 3 perplexity 23.12
+BLEU = 55.05 (Bravity Penalty=0.874, Length ratio=0.881, Translated length=21229, Reference length=24092)
+  1-gram: 83.8
+  2-gram: 68.1
+  3-gram:57.4
+  4-gram: 48.1
+Accuracy is: 0.482548476454
+
+
   
   ## Possible things to tweak:
   - steps
