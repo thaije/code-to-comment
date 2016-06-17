@@ -28,7 +28,7 @@ def space_punctuation():
             while(dev_sent):
 
                 # add spaces around punctuation
-                dev_sent = re.sub('([.,\'\"\[\]\{\}\(\)])', r' \1 ', dev_sent)
+                dev_sent = re.sub('([.,`\'\"\[\]\{\}\(\)])', r' \1 ', dev_sent)
                 dev_sent = re.sub('\s{2,}', ' ', dev_sent)
 
                 # write the new lines to the files

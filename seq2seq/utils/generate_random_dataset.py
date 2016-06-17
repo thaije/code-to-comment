@@ -15,12 +15,12 @@ import random
 # this function adds spaces around all punctuation in the specified file, and writes it to the output file
 def gen_random_dataset(): 
 
-    input_code_file = "../data/djangoCode/all.code"
-    input_en_file = "../data/djangoCode/all.en"
-    output_dev_en_file = "../data/djangoCode/dev/10pt.random.en"
-    output_dev_code_file = "../data/djangoCode/dev/10pt.random.code"
-    output_train_code_file = "../data/djangoCode/train/90pt.random.code"
-    output_train_en_file = "../data/djangoCode/train/90pt.random.en"
+    input_code_file = "../data/allCode/all.code"
+    input_en_file = "../data/allCode/all.en"
+    output_dev_en_file = "../data/allCode/dev/10pt.random.en"
+    output_dev_code_file = "../data/allCode/dev/10pt.random.code"
+    output_train_code_file = "../data/allCode/train/90pt.random.code"
+    output_train_en_file = "../data/allCode/train/90pt.random.en"
 
 
 

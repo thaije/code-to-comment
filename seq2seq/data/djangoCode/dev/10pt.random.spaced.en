@@ -6,8 +6,8 @@ Clear the ImageFields one at a time .
 Make sure the correct choice is selected
 Always return True . This is a way to tell if the user has been authenticated in templates .
 Confirm JS patterns have been applied to JS files .
-Test the custom ``django_date_extract method`` , in particular against fields which clash with strings passed to it ( e . g . ' day ' ) - see 12818__ . __: http://code . djangoproject . com/ticket/12818
-Check FKey lookups that are allowed , so that popups produced by ForeignKeyRawIdWidget , on the basis of ForeignKey . limit_choices_to , are allowed to work . As ``limit_choices_to`` can be a callable , invoke it here .
+Test the custom ` ` django_date_extract method ` ` , in particular against fields which clash with strings passed to it ( e . g . ' day ' ) - see 12818__ . __: http://code . djangoproject . com/ticket/12818
+Check FKey lookups that are allowed , so that popups produced by ForeignKeyRawIdWidget , on the basis of ForeignKey . limit_choices_to , are allowed to work . As ` ` limit_choices_to ` ` can be a callable , invoke it here .
 The order of the ( empty ) values , annotate and extra clauses doesn ' t matter
 The normal client allows the post
 Test inline formsets where the inline-edited object has a custom primary key that is not the fk to the parent object .
@@ -46,7 +46,7 @@ Re-convert to a TIMESTAMP because EXTRACT only handles the date part on DATE val
 Parse a date in an unaccepted format; get an error
 Check that the parsed result does a round trip to default format
 Make a fake graph
-Sets or unsets the " needs rollback " flag -- for *advanced use* only . When `rollback` is `True` , it triggers a rollback when exiting the innermost enclosing atomic block that has `savepoint=True` ( that ' s the default ) . Use this to force a rollback without raising an exception . When `rollback` is `False` , it prevents such a rollback . Use this only after rolling back to a known-good state! Otherwise , you break the atomic block and data corruption may occur .
+Sets or unsets the " needs rollback " flag -- for *advanced use* only . When ` rollback ` is ` True ` , it triggers a rollback when exiting the innermost enclosing atomic block that has ` savepoint=True ` ( that ' s the default ) . Use this to force a rollback without raising an exception . When ` rollback ` is ` False ` , it prevents such a rollback . Use this only after rolling back to a known-good state! Otherwise , you break the atomic block and data corruption may occur .
 Create ctypes double array with input and write data
 map_srid in operlayers . html template must not be localized .
 -*- coding: utf-8 -*-
@@ -59,7 +59,7 @@ Test null bytes ( 18982 )
 If the form is valid , save the associated model .
 Test that ContentFile can accept both bytes and unicode and that the retrieved content is of the same type .
 If QUERY_STRING is absent or empty , we want to extract it from the URL . WSGI requires latin-1 encoded strings . See get_path_info ( ) .
-Template node class used by ``get_current_timezone_tag`` .
+Template node class used by ` ` get_current_timezone_tag ` ` .
 Dump the current contents of the database as a JSON fixture
 Get the previous valid month .
 Verify OGR geometry .
@@ -79,8 +79,8 @@ Validates the given value against all of self . fields , which is a list of Fiel
 Don ' t render the HTML ' required ' attribute as it may cause incorrect validation for extra , optional , and deleted forms in the formset .
 Check if the JavaScript i18n view returns a complete language catalog if the default language is en-us , the selected language has a translation available and a catalog composed by djangojs domain translations of multiple Python packages is requested . See 13388 , 3594 and 13514 for more details .
 16656 - Check urlize accepts more TLDs
-Return a list of parent classes leading to `model` ( ordered from closest to most distant ancestor ) . This has to handle the case where `model` is a grandparent or even more distant relation .
-`filename` may include a path as returned by FileField . upload_to .
+Return a list of parent classes leading to ` model ` ( ordered from closest to most distant ancestor ) . This has to handle the case where ` model ` is a grandparent or even more distant relation .
+ ` filename ` may include a path as returned by FileField . upload_to .
 Regression for 17439
 The *_FORMAT strings use the Django date format syntax , see http://docs . djangoproject . com/en/dev/ref/templates/builtins/date FIRST_DAY_OF_WEEK =
 Cells of the change list table should contain the field name in their class attribute Refs 11195 .
@@ -130,7 +130,7 @@ Making sure TypeError is thrown when trying to set with an incompatible type .
 The *_INPUT_FORMATS strings use the Python strftime format syntax , see http://docs . python . org/library/datetime . htmlstrftime-strptime-behavior
 The first phase is generating all the operations for each app and gathering them into a big per-app list . We ' ll then go through that list later and order it and split into migrations to resolve dependencies caused by M2Ms and FKs .
 do the whole thing in one shot if no limit was provided .
-Maps ( " app_label " , " modelname " ) tuples to lists of functions to be called when the corresponding model is ready . Used by this class ' s `lazy_model_operation ( ) ` and `do_pending_operations ( ) ` methods .
+Maps ( " app_label " , " modelname " ) tuples to lists of functions to be called when the corresponding model is ready . Used by this class ' s ` lazy_model_operation ( ) ` and ` do_pending_operations ( ) ` methods .
 Create the table Ensure there ' s no age field Add some rows of data Add a not-null field Ensure the field is right afterwards BooleanField are stored as TINYINT ( 1 ) on MySQL .
 Reset global state when LANGUAGES setting has been changed , as some languages should no longer be accepted .
 since size is not None here , len ( self . buffer ) < size
@@ -144,10 +144,10 @@ FileField . save_form_data ( ) considers None to mean " no change " rather than 
 Returns all leaf nodes - that is , nodes with no dependents in their app . These are the " most current " version of an app ' s schema . Having more than one per app is technically an error , but one that gets handled further up , in the interactive command - it ' s usually the result of a VCS merge and needs some user input .
 Otherwise , execute the QuerySet in self . queryset to determine the choices dynamically . Return a fresh ModelChoiceIterator that has not been consumed . Note that we ' re instantiating a new ModelChoiceIterator *each* time _get_choices ( ) is called ( and , thus , each time self . choices is accessed ) so that we can ensure the QuerySet has not been consumed . This construct might look complicated but it allows for lazy evaluation of the queryset .
 http://bugs . python . org/issue2193 is fixed in Python 3 . 3+ .
-Since ``my_doodad . do_not_call_in_templates`` is True , the template system will not try to call our doodad . We can access its attributes as normal , and we don ' t have access to the dict that it returns when called .
+Since ` ` my_doodad . do_not_call_in_templates ` ` is True , the template system will not try to call our doodad . We can access its attributes as normal , and we don ' t have access to the dict that it returns when called .
 Building the map options hash .
 The list of directories to search for fixtures
-Normal geodetic distance lookup ( uses `distance_sphere` on PostGIS .
+Normal geodetic distance lookup ( uses ` distance_sphere ` on PostGIS .
 reload database
 Output
 Testing using different variations of parameters and using models with different projected coordinate systems .
@@ -183,7 +183,7 @@ Check height/width fields of model , if defined .
 If it doesn ' t appear to be a reloaded module then we expect a RuntimeError .
 Test that , when using multiple databases , we use the db_for_read ( see 20401 ) .
 Ensure we don ' t allow directory-traversal . This is tested directly on _key_to_file , as load ( ) will swallow a SuspiciousOperation in the same way as an IOError - by creating a new session , making it unclear whether the slashes were detected .
-SELECT ST_AsGeoJson ( " geoapp_city " . " point " , 8 , 1 ) FROM " geoapp_city " WHERE " geoapp_city " . " name " = ' Houston ' ; This time we include the bounding box by using the `bbox` keyword .
+SELECT ST_AsGeoJson ( " geoapp_city " . " point " , 8 , 1 ) FROM " geoapp_city " WHERE " geoapp_city " . " name " = ' Houston ' ; This time we include the bounding box by using the ` bbox ` keyword .
 Makes sure that makemigrations announces the migration at the default verbosity level .
 Warn if SECURE_CONTENT_TYPE_NOSNIFF isn ' t True .
 Check leading zeros are not stripped ( 17481 )
@@ -265,7 +265,7 @@ msg = Items must be selected in order to perform actions on them . No items have
 Creating countries Creating People
 !/usr/bin/env python
 Gather fields/field descriptions . ForeignKey is a special case since the field will actually be a descriptor that returns the other object
-and you can ' t accidentally assign to a `content` attribute .
+and you can ' t accidentally assign to a ` content ` attribute .
 If you call save ( ) with invalid data , you ' ll get a ValueError .
 The *_FORMAT strings use the Django date format syntax , see http://docs . djangoproject . com/en/dev/ref/templates/builtins/date
 If it ' s a callable , call it Run it through the field ' s get_db_prep_save method so we can send it to the database .
@@ -282,7 +282,7 @@ Test lookups .
 exact is implied and should be the same
 Deletes objects found from the given queryset in single direct SQL query . No signals are sent , and there is no protection for cascades .
 This isn ' t a real primary/replica database , so restore the original from other
-Handle the raw input from the client . Parameters: :input_data: An object that supports reading via . read ( ) . :META: ``request . META`` . :content_length: The ( integer ) value of the Content-Length header from the client . :boundary: The boundary from the Content-Type header . Be sure to prepend two ' -- ' .
+Handle the raw input from the client . Parameters: :input_data: An object that supports reading via . read ( ) . :META: ` ` request . META ` ` . :content_length: The ( integer ) value of the Content-Length header from the client . :boundary: The boundary from the Content-Type header . Be sure to prepend two ' -- ' .
 get_or_create should work with virtual fields ( content_object )
 Make sure the MapWidget js is passed in the form media and a MapWidget is actually created
 Parse a date in a valid format , get a parsed result
@@ -303,7 +303,7 @@ Now modify that inline
 Check that queries work across m2m joins
 Regression for 17343
 Delete the Book object , which will cascade onto the pet
-Having our buffer in the SRID of the transformation and of the field -- should get the same results . The first buffer has no need for transformation SQL because it is the same SRID as what was given to `transform ( ) ` . The second buffer will need to be transformed , however .
+Having our buffer in the SRID of the transformation and of the field -- should get the same results . The first buffer has no need for transformation SQL because it is the same SRID as what was given to ` transform ( ) ` . The second buffer will need to be transformed , however .
 form . instance . left will be None if the instance was not constructed by form . full_clean ( ) .
 Returns the placeholder for the spatial column for the given value .
 Gather many-to-many fields .
@@ -322,7 +322,7 @@ Update persistent cookie data .
 Getting the coordinate dimension of the geometry field .
 transform ( ) should no-op if source & dest SRIDs match , regardless of whether GDAL is available .
 Wait for the live server to be ready Clean up behind ourselves , since tearDownClass won ' t get called in case of errors .
-16919 -- The ``password_reset_confirm`` view should pass the user object to the ``SetPasswordForm`` , even on GET requests . For this test , we render `` { { form . user } } `` in the template ``registration/password_reset_confirm . html`` so that we can test this .
+16919 -- The ` ` password_reset_confirm ` ` view should pass the user object to the ` ` SetPasswordForm ` ` , even on GET requests . For this test , we render ` ` { { form . user } } ` ` in the template ` ` registration/password_reset_confirm . html ` ` so that we can test this .
 For retrieving the envelope of the geometry .
 Cast a geography to a geometry field for an aggregate function that expects a geometry input .
 Initializing the procedure arguments .
@@ -360,7 +360,7 @@ That is . . . there is one user on each database
 The contents in " linebreaks " are escaped according to the current autoescape setting .
 24483 - ProjectState . from_apps should not destructively consume Field . choices iterators .
  ' Julia ' with accented ' u ' :
-1 ( select related `T` instances ) + 1 ( select related `U` instances ) + 2 ( delete `T` instances in batches ) + 1 ( delete `s` )
+1 ( select related ` T ` instances ) + 1 ( select related ` U ` instances ) + 2 ( delete ` T ` instances in batches ) + 1 ( delete ` s ` )
 Default formats to be used when parsing dates and times from input boxes , in order See all available format string here: http://docs . python . org/library/datetime . htmlstrftime-behavior * Note that these format strings are different from the ones to display dates
 If true , ' ( ) ' will be appended to :func: etc . cross-reference text .
 Test response msg for RequestSite . save NotImplementedError
@@ -384,7 +384,7 @@ Name of the time zone of the database connection .
 TextField . to_python ( ) should return a string .
 Returns the field name and direction for an order specification . For example , ' -foo ' is returned as ( ' foo ' , ' DESC ' ) . The ' default ' param is used to indicate which way no prefix ( or a ' + ' prefix ) should sort . The ' - ' prefix always sorts the opposite way .
 Logout should send user_logged_out signal if custom user was logged in .
-Return `True` if this view should contain the full list of objects in the given year .
+Return ` True ` if this view should contain the full list of objects in the given year .
 Making sure LayerMapping . make_multi works right , by converting a Point25D into a MultiPoint25D .
 Swallow the intentional error raised in the sub-transaction .
 Create the table Ensure the field is right to begin with Ensure the field is not unique Make sure the FK constraint is present Alter the ForeignKey to OneToOneField Ensure the field is right afterwards Ensure the field is unique now Make sure the FK constraint is present
@@ -407,12 +407,12 @@ Object in by reference , return its value .
 Check that the parsed result does a round trip to the same format
 set by only removing what ' s necessary .
 Changing TIME_ZONE may issue a query to set the database ' s timezone , hence TestCase .
-Create and return the ``ArgumentParser`` which will be used to parse the arguments to this command .
-Check the `change_view` link has the correct querystring .
+Create and return the ` ` ArgumentParser ` ` which will be used to parse the arguments to this command .
+Check the ` change_view ` link has the correct querystring .
 We have to handle the possibility that the QuerySet we just got back contains some prefetch_related lookups . We don ' t want to trigger the prefetch_related functionality by evaluating the query . Rather , we need to merge in the prefetch_related lookups . Copy the lookups in case it is a Prefetch object which could be reused later ( happens in nested prefetch_related ) . Don ' t need to clone because the manager should have given us a fresh instance , so we access an internal instead of using public interface for performance reasons .
 ctypes factory classes
 _set_list
-Returns ``True`` if you can expect multiple chunks . NB: If a particular file representation is in memory , subclasses should always return ``False`` -- there ' s no good reason to read from memory in chunks .
+Returns ` ` True ` ` if you can expect multiple chunks . NB: If a particular file representation is in memory , subclasses should always return ` ` False ` ` -- there ' s no good reason to read from memory in chunks .
 Sanitize the file name so that it can ' t be dangerous . Just use the basename of the file -- anything else is dangerous .
 Make sure the correct queryset is returned
 Test with more lengthy content ( also catching performance regressions )
@@ -422,8 +422,8 @@ Line is from Canberra to Sydney . Query is for all other cities within a 100km o
 Make sure the correct queryset is returned
 Encode the messages using the current encoder .
 Strips all [ X ] HTML tags .
-Constructing the keyword arguments for `mapping` , and calling it on the data source . This extra legwork is so that the dictionary definition comes out in the same order as the fields in the model definition .
-Returns an HttpResponseRedirect to the appropriate URL for the arguments passed . The arguments could be: * A model: the model ' s `get_absolute_url ( ) ` function will be called . * A view name , possibly with arguments: `urls . reverse ( ) ` will be used to reverse-resolve the name . * A URL , which will be used as-is for the redirect location . By default issues a temporary redirect; pass permanent=True to issue a permanent redirect
+Constructing the keyword arguments for ` mapping ` , and calling it on the data source . This extra legwork is so that the dictionary definition comes out in the same order as the fields in the model definition .
+Returns an HttpResponseRedirect to the appropriate URL for the arguments passed . The arguments could be: * A model: the model ' s ` get_absolute_url ( ) ` function will be called . * A view name , possibly with arguments: ` urls . reverse ( ) ` will be used to reverse-resolve the name . * A URL , which will be used as-is for the redirect location . By default issues a temporary redirect; pass permanent=True to issue a permanent redirect
 An alternate to calling clear ( ) is to assign the empty set
 Means the file was moved or deleted before the tempfile could unlink it . Still sets self . file . close_called and calls self . file . file . close ( ) before the exception
 test valid inputs test invalid inputs
@@ -448,7 +448,7 @@ Should be able to use update_or_create from the m2m related manager to update a 
 Move the temporary file to a filename that has better chances of being recognized by the archive utils
 Only actual departments should be present in employee__department ' s list filter .
 Valid user with correct password '
-There is a similar test in `layermap` that uses the same data set , but the County model here is a bit different .
+There is a similar test in ` layermap ` that uses the same data set , but the County model here is a bit different .
 Did the field change? Implement any model renames on relations; these are handled by RenameModel so we need to exclude them from the comparison Either both fields are m2m or neither is We cannot alter between m2m and concrete fields
 Easy wrapper for sending a single message to a recipient list . All members of the recipient list will see the other recipients in the ' To ' field . If auth_user is None , the EMAIL_HOST_USER setting is used . If auth_password is None , the EMAIL_HOST_PASSWORD setting is used . Note: The API for this method is frozen . New code wanting to extend the functionality should use the EmailMessage class directly .
 We need to get a file object for Pillow . We might have a path or we might have to read the data into memory .
@@ -482,7 +482,7 @@ Zebras comes after Dreaming by name , but before on ' -pubdate ' which is the de
 Can find a file in a subdirectory of a STATICFILES_DIRS directory .
 Inherit from a template with block wrapped in an { % if % } tag ( in parent ) , still gets overridden
 Models for 23934
-Proxy access to the default Cache object ' s attributes . This allows the legacy `cache` object to be thread-safe using the new ``caches`` API .
+Proxy access to the default Cache object ' s attributes . This allows the legacy ` cache ` object to be thread-safe using the new ` ` caches ` ` API .
 File extension may by . py , . pyc , etc . Compare only basename .
 Output an extra note if settings are not properly configured
 The *_FORMAT strings use the Django date format syntax , see http://docs . djangoproject . com/en/dev/ref/templates/builtins/date
@@ -491,7 +491,7 @@ Ensure results are consistent across DB backends
 For testing when upper case letter in app name; regression for 4057
 ----------------------------------------------------------------- Check that pressing enter on a filtered option sends it properly to the ' to ' box .
 Escape CR and LF characters .
-Get the number of items to paginate by , or ``None`` for no pagination .
+Get the number of items to paginate by , or ` ` None ` ` for no pagination .
 A child that doesn ' t exist
 If the response supports deferred rendering , apply template response middleware and then render the response Complain if the template response middleware returned None ( a common error ) .
 Records that a migration was unapplied .
@@ -499,7 +499,7 @@ Test that a view implementing POST allows POST .
 item is option 2
 templates is an optional list of template engine definitions ( structured like settings . TEMPLATES ) .
 Testing GoogleMap . scripts ( ) output . See 20773 .
-No need to check for `elif all_backwards` here , as that condition would always evaluate to true .
+No need to check for ` elif all_backwards ` here , as that condition would always evaluate to true .
 -*- coding: utf-8 -*-
  . . . but they will when the affected object is saved .
 self . query . select is a special case . These columns never go to any model .
@@ -516,7 +516,7 @@ We need to define functions that get called later . )
 Querying for both NULL and Non-NULL values .
 Returns True if the name looks like a URL
 allow_empty but not allow_future: next_month should be empty ( 7164 )
-self . assertLocationCommentPresent ( ' django . po ' , 42 , ' dirA ' , ' dirB ' , ' foo . py ' ) verifies that the django . po file has a gettext-style location comment of the form `: dirA/dirB/foo . py:42` ( or `: . \dirA\dirB\foo . py:42` on Windows ) None can be passed for the line_number argument to skip checking of the :42 suffix part . A string token can also be passed as line_number , in which case it will be searched in the template , and its line number will be used . A msgid is a suitable candidate .
+self . assertLocationCommentPresent ( ' django . po ' , 42 , ' dirA ' , ' dirB ' , ' foo . py ' ) verifies that the django . po file has a gettext-style location comment of the form ` : dirA/dirB/foo . py:42 ` ( or ` : . \dirA\dirB\foo . py:42 ` on Windows ) None can be passed for the line_number argument to skip checking of the :42 suffix part . A string token can also be passed as line_number , in which case it will be searched in the template , and its line number will be used . A msgid is a suitable candidate .
 Getting the string name for the Django field class ( e . g . , ' PointField ' ) .
 Centroid operation on point should be point itself
 In order to avoid list manipulation . Always return a shallow copy of the results
@@ -538,8 +538,8 @@ Create an object with a manually specified PK
 Special-case implicit M2M tables
 First , generate the path for the names
 Using an offset without a limit is also possible .
-Callable defaults You can pass callable objects as the ``default`` parameter to a field . When the object is created without an explicit value passed in , Django will call the method to determine the default value . This example uses ``datetime . datetime . now`` as the default for the ``pub_date`` field .
-Testing the `step` keyword -- should get the same counties regardless of we use a step that divides equally , that is odd , or that is larger than the dataset .
+Callable defaults You can pass callable objects as the ` ` default ` ` parameter to a field . When the object is created without an explicit value passed in , Django will call the method to determine the default value . This example uses ` ` datetime . datetime . now ` ` as the default for the ` ` pub_date ` ` field .
+Testing the ` step ` keyword -- should get the same counties regardless of we use a step that divides equally , that is odd , or that is larger than the dataset .
 If we ' ve been asked for a NOWAIT query but the backend does not support it , raise a DatabaseError otherwise we could get an unexpected deadlock .
 @skipIfDBFeature and @skipUnlessDBFeature cannot be chained . The outermost takes precedence . Handle skipping manually instead .
 Update the cached related instance ( if any ) & clear the cache .
@@ -557,14 +557,14 @@ City information dictionary .
 Assign the article to the reporter .
 The empty string is accepted , even though it doesn ' t end in a slash .
 Non-existent cache keys return as None/default get with non-existent keys
-We can ' t proxy this method through the `QuerySet` like we do for the rest of the `QuerySet` methods . This is because `QuerySet . all ( ) ` works by creating a " copy " of the current queryset and in making said copy , all the cached `prefetch_related` lookups are lost . See the implementation of `RelatedManager . get_queryset ( ) ` for a better understanding of how this comes into play .
+We can ' t proxy this method through the ` QuerySet ` like we do for the rest of the ` QuerySet ` methods . This is because ` QuerySet . all ( ) ` works by creating a " copy " of the current queryset and in making said copy , all the cached ` prefetch_related ` lookups are lost . See the implementation of ` RelatedManager . get_queryset ( ) ` for a better understanding of how this comes into play .
 Regression for 10064: select_related ( ) plays nice with aggregates
 Chrome considers any URL with more than two slashes to be absolute , but urlparse is not so flexible . Treat any url with three slashes as unsafe . Forbid URLs like http:///example . com - with a scheme , but without a hostname . In that URL , example . com is not the hostname but , a path component . However , Chrome will still consider example . com to be the hostname , so we must not allow this syntax . Forbid URLs that start with control characters . Some browsers ( like Chrome ) ignore quite a few control characters at the start of a URL and might consider the URL as scheme relative .
 Delete the " uploaded " file to avoid clogging /tmp .
 Two-level with no redefinitions on second level
 Solve the lookup type from the lookup ( eg: ' foobar__id__icontains ' )
 Tests that , when the middleware is disabled , an exception is not raised if ' fail_silently ' = True
-Returns a 4-tuple extent for the `Extent` aggregate by converting the bounding box text returned by PostGIS ( `box` argument ) , for example: " BOX ( -90 . 0 30 . 0 , -85 . 0 40 . 0 ) " .
+Returns a 4-tuple extent for the ` Extent ` aggregate by converting the bounding box text returned by PostGIS ( ` box ` argument ) , for example: " BOX ( -90 . 0 30 . 0 , -85 . 0 40 . 0 ) " .
 Note that if a model is unmanaged we short-circuit and never try to install it
 Implicit ordering is also ignored
 cache table should not be created on ' default ' cache table should be created on ' other ' Queries: 1: check table doesn ' t already exist 2: create savepoint ( if transactional DDL is supported ) 3: create the table 4: create the index 5: release savepoint ( if transactional DDL is supported )
@@ -592,13 +592,13 @@ Get the name of the date field to be used to filter by .
 Tests for 11687 and 16676
 Three-level with no redefinitions on third level
 Check that no upgrade is triggered .
-Given a relative file path this ought to find an absolute file path . If the ``all`` parameter is ``False`` ( default ) only the first found file path will be returned; if set to ``True`` a list of all found files paths is returned .
+Given a relative file path this ought to find an absolute file path . If the ` ` all ` ` parameter is ` ` False ` ` ( default ) only the first found file path will be returned; if set to ` ` True ` ` a list of all found files paths is returned .
 Verifies that inclusion tag result_list generates a table when with default ModelAdmin settings .
 Generate field operations
 3-tuple -> deprecated
 Set a foreign key set with an object from a different database
 Fields that have been added
-Populates a template variable with the static prefix , ``settings . STATIC_URL`` . Usage:: { % get_static_prefix [ as varname ] % } Examples:: { % get_static_prefix % } { % get_static_prefix as static_prefix % }
+Populates a template variable with the static prefix , ` ` settings . STATIC_URL ` ` . Usage:: { % get_static_prefix [ as varname ] % } Examples:: { % get_static_prefix % } { % get_static_prefix as static_prefix % }
 A view decorator that adds the specified headers to the Vary header of the response . Usage: @vary_on_headers ( ' Cookie ' , ' Accept-language ' ) def index ( request ) : . . . Note that the header names are not case-sensitive .
 The delete is actually 2 queries - one to find related objects , and one to delete . Make sure that the discovery of related objects is performed on the same database as the deletion .
 Models for 18263
@@ -626,20 +626,20 @@ Middleware that overrides custom HTTP auth user header .
 Confirm support for STDDEV and related stats functionsSQLite supports STDDEV as an extension package; so connection . ops . check_expression_support ( ) can ' t unilaterally rule out support for STDDEV . We need to manually check whether the call works .
 -*- coding: utf-8 -*-
 URLField correctly validates IPv6 ( #18779 ) .
-Making sure there ' s only 1 `rss` element and that the correct RSS version was specified .
+Making sure there ' s only 1 ` rss ` element and that the correct RSS version was specified .
 The non-optimized version works , too .
 Returns a list of all concrete fields on the model and its parents . Private API intended only to be used by Django itself; get_fields ( ) combined with filtering of field properties is the public API for obtaining this field list .
 The custom_perms test messes with ContentTypes , which will be cached; flush the cache to ensure there are no side effects Refs 14975 , 14925
 Non-string query should raise TypeError
 Regression test for 7173 Check that the name of the cache for the reverse object is correct .
-Returns a 6-tuple extent for the `Extent3D` aggregate by converting the 3d bounding-box text returned by PostGIS ( `box3d` argument ) , for example: " BOX3D ( -90 . 0 30 . 0 1 , -85 . 0 40 . 0 2 ) " .
+Returns a 6-tuple extent for the ` Extent3D ` aggregate by converting the 3d bounding-box text returned by PostGIS ( ` box3d ` argument ) , for example: " BOX3D ( -90 . 0 30 . 0 1 , -85 . 0 40 . 0 2 ) " .
 The number of days a password reset link is valid for
 For every non-leap year century , advance by 6 years to get into the 28-year repeat cycle
 Unlike BuiltinLookup , the GIS get_rhs_op ( ) implementation should return an object ( SpatialOperator ) with an as_sql ( ) method to allow for more complex computations ( where the lhs part can be mixed in ) .
 Ensuring all children geometries ( polygons and their rings ) all return the assigned spatial reference as well .
 For raster fields , assure input is None or a string , dict , or raster instance .
 Custom fields will have a dotted path
-Retrieving the cities within a 20km ' donut ' w/a 7km radius ' hole ' ( thus , Houston and Southside place will be excluded as tested in the `test02_dwithin` above ) .
+Retrieving the cities within a 20km ' donut ' w/a 7km radius ' hole ' ( thus , Houston and Southside place will be excluded as tested in the ` test02_dwithin ` above ) .
 Regression test for 21473
 Disable auto loading of this model as we load it on our own
 Same test , but with read , not readline .
@@ -656,7 +656,7 @@ Admin-site-wide views .
 Test uncached access Test cached access
 dt is ambiguous in Europe/Copenhagen . LocalTimezone guesses the offset ( and gets it wrong 50% of the time ) while pytz refuses the temptation to guess . In any case , this shouldn ' t crash .
 -*- coding: utf-8 -*-
-Tests that passing a view function to ``resolve_url`` will result in the URL path mapping to that view name .
+Tests that passing a view function to ` ` resolve_url ` ` will result in the URL path mapping to that view name .
 If outer transaction fails , no hooks from within it run .
 Now creating a second Parcel where the borders are the same , just in different coordinate systems . The center points are also the same ( but in different coordinate systems ) , and this time they actually correspond to the centroid of the border .
 nl/formats . py has customized TIME_INPUT_FORMATS: [ ' %H:%M:%S ' , ' %H . %M:%S ' , ' %H . %M ' , ' %H:%M ' ]
@@ -666,7 +666,7 @@ Special URLs for particular regression cases .
 Ensure we can sort on a list_display field that is a Model method ( column 3 is ' model_year ' in ArticleAdmin )
 Only mess with locales if we can assume we have a working settings file , because django . utils . translation requires settings ( The final saying about whether the i18n machinery is active will be found in the value of the USE_I18N setting ) Deactivate translations , because django-admin creates database content like permissions , and those shouldn ' t contain any translations .
 A file was not uploaded , but there is initial data
-Strip the `u` prefix since we ' re importing unicode_literals
+Strip the ` u ` prefix since we ' re importing unicode_literals
 Inform all validators that have implemented a password_changed ( ) method that the password has been changed .
 InlineModelAdmin broken?
 Failing to initialize a backend keeps raising the original exception . Regression test for 24265 .
@@ -687,7 +687,7 @@ Some backends ( Oracle at least ) need parentheses around the inner SQL in the n
 Inactive users may authenticate with the AllowAllUsersModelBackend .
 Simulate call to f . save ( )
 Test the to_language function
-GEOS may get the SRID from HEXEWKB ' POINT ( 5 23 ) ' at SRID=4326 in hex form -- obtained from PostGIS using `SELECT GeomFromText ( ' POINT ( 5 23 ) ' , 4326 ) ;` .
+GEOS may get the SRID from HEXEWKB ' POINT ( 5 23 ) ' at SRID=4326 in hex form -- obtained from PostGIS using ` SELECT GeomFromText ( ' POINT ( 5 23 ) ' , 4326 ) ; ` .
 Verify that the child message header is not base64 encoded
 The " strict-transport-security " header is not added to responses going over an insecure connection .
 Spelling language .
@@ -714,7 +714,7 @@ Tests that custom fields serialize and deserialize intact
 Create the table Check that initial tables are there Check that BookWeak doesn ' t have an FK constraint Make a db_constraint=False FK Make sure no FK constraint is present Alter to one with a constraint Make sure the new FK constraint is present Alter to one without a constraint again Make sure no FK constraint is present
 Test the non-required ImageField Note: In Oracle , we expect a null ImageField to return ' ' instead of None .
 Yields rendered strings that comprise all widgets in this BoundField . This really is only useful for RadioSelect widgets , so that you can iterate over individual radio buttons in a template .
-set_many takes a second ``timeout`` parameter
+set_many takes a second ` ` timeout ` ` parameter
 The allowed option should appear twice; the limited option should not appear .
 A widget can enable inheritance of one media type by specifying extend as a tuple
 Remove all the parameters that are globally and systematically ignored .
@@ -756,7 +756,7 @@ Make sure the correct choices are selected
 Get the page without logging in . Should result in 403 .
 Python module path where user will place custom format definition . The directory where this setting is pointing should contain subdirectories named as the locales , containing a formats . py file ( i . e . " myproject . locale " for myproject/locale/en/formats . py etc . use )
 import error: manage . py builtin commands shows useful diagnostic info when settings with import errors is provided ( 14130 ) .
-Multiplying `z` by 2 for the next iteration .
+Multiplying ` z ` by 2 for the next iteration .
 Case 3: POST with valid data ( the success message ) . )
 memcached does not allow whitespace or control characters in keys warnings . warn ( ) crashes on Python 2 if message isn ' t coercible to str .
 Strings shorter than 8 characters are rejected .
@@ -766,7 +766,7 @@ Don ' t display link to edit , because it either has no admin or is edited inlin
 QuerySets implement is_compatible_query_object_type ( ) to determine compatibility with the given field .
 Getting the decimal value as a tuple .
 This Price instance generated by this form is not valid because the quantity field is required , but the form is valid because the field is excluded from the form . This is for backwards compatibility .
-21846 -- Check that `NestedObjects . collect ( ) ` doesn ' t trip ( AttributeError ) on the special notation for relations on abstract models ( related_name that contains % ( app_label ) s and/or % ( class ) s ) .
+21846 -- Check that ` NestedObjects . collect ( ) ` doesn ' t trip ( AttributeError ) on the special notation for relations on abstract models ( related_name that contains % ( app_label ) s and/or % ( class ) s ) .
 Inequality
 We need to set settings . DEBUG to True so we can capture the output SQL to examine .
 Template objects should not be duplicated .
@@ -779,7 +779,7 @@ databases is an optional dictionary of database definitions ( structured like se
 Ensure we don ' t allow directory-traversal
 Considering the current implementation of the signals framework , stacklevel=5 shows the line containing the override_settings call .
 So it ' s a float . . . is it an int? If the original value contained a dot or an " e " then it was a float , not an int .
-this feed has an `updated` element with the latest date
+this feed has an ` updated ` element with the latest date
 Implements PBKDF2 as defined in RFC 2898 , section 5 . 2 HMAC+SHA256 is used as the default pseudo random function . As of 2014 , 100 , 000 iterations was the recommended default which took 100ms on a 2 . 7Ghz Intel i7 with an optimized implementation . This is probably the bare minimum for security given 1000 iterations was recommended in 2001 . This code is very well optimized for CPython and is about five times slower than OpenSSL ' s implementation . Look in django . contrib . auth . hashers for the present default , it is lower than the recommended 100 , 000 because of the performance difference between this and an optimized implementation .
 You can specify descriptive text for a field by using the ' help_text ' argument )
 interpret the naive datetime in local time to get the correct value
@@ -822,7 +822,7 @@ If this view is operating on a single object , use the class of that object
 When __name__ and __module__ match we assume the module was reloaded and issue a warning . This use-case is useful for REPL . Refs 23621 .
 Consume enough data to mess up the parsing:
 Arbitrary limit for select_related to prevents infinite recursion .
-Fixtures . Fixtures are a way of loading data into the database in bulk . Fixure data can be stored in any serializable format ( including JSON and XML ) . Fixtures are identified by name , and are stored in either a directory named ' fixtures ' in the application directory , or in one of the directories named in the ``FIXTURE_DIRS`` setting .
+Fixtures . Fixtures are a way of loading data into the database in bulk . Fixure data can be stored in any serializable format ( including JSON and XML ) . Fixtures are identified by name , and are stored in either a directory named ' fixtures ' in the application directory , or in one of the directories named in the ` ` FIXTURE_DIRS ` ` setting .
 -*- coding: utf-8 -*-
 -*- encoding: utf-8 -*- This file is distributed under the same license as the Django package .
 Construct a new model for the new state
@@ -863,9 +863,9 @@ We set an explicit pk instead of relying on auto-incrementation , so we need to 
 Returns selected language ' s BiDi layout . * False = left-to-right layout * True = right-to-left layout
 Simulate a request that ends the session
 If we have more than the maximum digits allowed , then throw an InvalidDecimal exception .
-Because floating-point arithmetic isn ' t exact , we set a tolerance to pass into GEOS `equals_exact` .
+Because floating-point arithmetic isn ' t exact , we set a tolerance to pass into GEOS ` equals_exact ` .
 Test the non-required FileField
-A URL resolver that always matches the active language code as URL prefix . Rather than taking a regex argument , we just override the ``regex`` function to always return the active language-code as regex .
+A URL resolver that always matches the active language code as URL prefix . Rather than taking a regex argument , we just override the ` ` regex ` ` function to always return the active language-code as regex .
 Special case where we suspect a dot meant decimal separator ( see 22171 )
 Regression test for 10571
 3 fields + 2 submit buttons + 5 inline management form fields , + 2 hidden fields for inlines + 1 field for the inline + 2 empty form
@@ -910,7 +910,7 @@ No exception content is passed to the template , to not disclose any sensitive i
 Return the empty_value_display set on ModelAdmin or AdminSite .
 Get same manager for different instances
 Test idempotency .
-Making sure `ST_Length3D` is used on for a projected and 3D model rather than `ST_Length` . `SELECT ST_Length ( line ) FROM geo3d_interstateproj2d;` `SELECT ST_Length3D ( line ) FROM geo3d_interstateproj3d;`
+Making sure ` ST_Length3D ` is used on for a projected and 3D model rather than ` ST_Length ` . ` SELECT ST_Length ( line ) FROM geo3d_interstateproj2d; ` ` SELECT ST_Length3D ( line ) FROM geo3d_interstateproj3d; `
 Allow TRUNCATE . . . CASCADE and don ' t emit the post_migrate signal when flushing only a subset of the apps Flush the database
 Add an item to six . moves .
 http://cx-oracle . sourceforge . net/html/cursor . htmlCursor . statement The DB API definition does not define this attribute .
@@ -960,7 +960,7 @@ If list_display_links not defined , add the link tag to the first field
 Perform the action only on the selected objects
 Checking the index and returning the corresponding GEOS geometry .
 Set ' required ' to False on the individual fields , because the required validation will be handled by ComboField , not by those individual fields .
-The error code is returned in the last argument , by reference . Check its value with `check_err` before returning the result .
+The error code is returned in the last argument , by reference . Check its value with ` check_err ` before returning the result .
 Get value and nodata exists flag If the pixeltype is an integer , convert to int
 The centroid is equal to the centroid of the set of component Geometries of highest dimension ( since the lower-dimension geometries contribute zero " weight " to the centroid ) .
 Regression for 15624 - Missing SELECT columns when using values , annotate and aggregate in a single query
@@ -988,7 +988,7 @@ A builtin tag exists in both the index and detail
 This is not wanted behavior , but this is how Django has always behaved for databases that do not return correct information about matched rows for UPDATE .
 Should be able to use a ModelAdmin method in list_display that has the same name as a reverse model field ( " sketch " in this case ) .
 The user can ' t delete sections yet , so they shouldn ' t see the " delete section " link . Allow the user to delete sections too . Now they can see the " delete section " link .
-Tests that passing a URL path to ``resolve_url`` will result in the same url .
+Tests that passing a URL path to ` ` resolve_url ` ` will result in the same url .
 Convert a binary string into a long integer This is a clever optimization for fast xor vector math
 Add elements in the root ( i . e . feed/channel ) element . Called from write ( ) .
 Check that the user has delete permission for the actual model
@@ -996,13 +996,13 @@ Translators: please keep a non-breaking space ( U+00A0 ) between count and time 
 Test passing StringIO instance as content argument to save
 Now doing length on a projected coordinate system .
 Creates the SQL for this query . Returns the SQL string and list of parameters .
-Using a custom primary key By default , Django adds an `` " id " `` field to each model . But you can override this behavior by explicitly adding ``primary_key=True`` to a field .
+Using a custom primary key By default , Django adds an ` ` " id " ` ` field to each model . But you can override this behavior by explicitly adding ` ` primary_key=True ` ` to a field .
 If the user submits a new file upload AND checks the clear checkbox , they get a validation error , and the bound redisplay of the form still includes the current file and the clear checkbox .
 Quoted-string format ( CR not allowed ) Max length of domain name labels is 63 characters per RFC 1034 . Trailing newlines in username or domain not allowed
 Initially the pointer is NULL .
 Macintosh , Unix .
 Check for obvious errors . ( This check prevents duck typing , but it could be removed if it became a problem in practice . )
-Finds a requested static file in a location , returning the found absolute path ( or ``None`` if no match ) .
+Finds a requested static file in a location , returning the found absolute path ( or ` ` None ` ` if no match ) .
 San Antonio in ' WGS84 ' ( SRID 4326 )
 Register an action to be available globally .
 Regression for 13433 - Make sure that EmailMessage doesn ' t mangle ' From ' in message body .
@@ -1047,14 +1047,14 @@ _headers is a mapping of the lower-case name to the original case of the header 
 Now , we test turning an unmanaged model into a managed model Right number/type of migrations?
 content can be overridden
 Get all outgoing references from the model to be rendered Directly related models are the models pointed to by ForeignKeys , OneToOneFields , and ManyToManyFields .
-Model without any defined `Meta . ordering` . Refs 16819 .
+Model without any defined ` Meta . ordering ` . Refs 16819 .
 Given a lookup_type of ' year ' , ' month ' , ' day ' , ' hour ' , ' minute ' or ' second ' , returns the SQL that extracts a value from the given datetime field field_name , and a tuple of parameters .
 Ensure that has_module_permission ( ) returns True for all users who have any permission for that module ( add , change , or delete ) , so that the module is displayed on the admin index page .
 Test basic pointing Test swap detection for swappable model Test nonexistent ( for now ) model Test on_delete Test to_field preservation Test related_name preservation
 Ensure that custom querysets are considered for the admin history view . Refs 21013 .
 Normalizes CRLF and CR newlines to just LF .
 Raise exception for custom tags used in child with { % load % } tag in parent , not in child
-For testing HEX ( EWKB ) . `SELECT ST_AsHEXEWKB ( ST_GeomFromText ( ' POINT ( 0 1 ) ' , 4326 ) ) ;` `SELECT ST_AsHEXEWKB ( ST_GeomFromEWKT ( ' SRID=4326;POINT ( 0 1 2 ) ' ) ) ;`
+For testing HEX ( EWKB ) . ` SELECT ST_AsHEXEWKB ( ST_GeomFromText ( ' POINT ( 0 1 ) ' , 4326 ) ) ; ` ` SELECT ST_AsHEXEWKB ( ST_GeomFromEWKT ( ' SRID=4326;POINT ( 0 1 2 ) ' ) ) ; `
 Set data for entire dataset
 -*- coding: utf-8 -*-
 No CSRF cookie . For POST requests , we insist on a CSRF cookie , and in this way we can avoid all CSRF attacks , including login CSRF .
@@ -1082,7 +1082,7 @@ We capture the arguments to make returning them trivial
 Returns the value of this field in the given model instance .
 The *_INPUT_FORMATS strings use the Python strftime format syntax , see http://docs . python . org/library/datetime . htmlstrftime-strptime-behavior Kept ISO formats as they are in first position
 Wraps a string in double quotes escaping contents as necessary .
-Acts as a decorator . Overrides list of registered system checks . Useful when you override `INSTALLED_APPS` , e . g . if you exclude `auth` app , you also need to exclude its system checks .
+Acts as a decorator . Overrides list of registered system checks . Useful when you override ` INSTALLED_APPS ` , e . g . if you exclude ` auth ` app , you also need to exclude its system checks .
 Override this method to use a different test_func method .
 Some convoluted syntax for which parsing may differ between python versions
 -*- coding: utf-8 -*-
@@ -1113,7 +1113,7 @@ Compression is performed on responses with a status other than 200 ( 10762 ) .
 A DecimalField with decimal_places=0 should work ( 22272 ) .
 Backwards-compatibility callables
 Does this quack like a Template? If not , we ' ll try our cache , and get_template ( )
-With `manager_inheritance_from_future = True` ' objects ' shouldn ' t be created .
+With ` manager_inheritance_from_future = True ` ' objects ' shouldn ' t be created .
 Test for #13085 -- __len__ ( ) returns 0
 Copy data from the old table into the new table
 Testing the GEOS version regular expression .
@@ -1139,7 +1139,7 @@ Finally store the processed paths
 When there is a local manager we shouldn ' t get any warning and ' objects ' shouldn ' t be created .
 Exceptions are special - they ' ve got state that isn ' t in self . __dict__ . We assume it is all in self . args .
 Subclasses can define fixtures which will be automatically installed .
-Returns the given hash , with only the first ``show`` number shown . The rest are masked with ``char`` for security reasons .
+Returns the given hash , with only the first ` ` show ` ` number shown . The rest are masked with ` ` char ` ` for security reasons .
 Non-abstract child classes inherit some attributes from their non-abstract parent ( unless an ABC comes before it in the method resolution order ) .
 Returns the HTTP request ' s PATH_INFO as a unicode string .
 This checks that get_prep_value is deferred properly
@@ -1166,7 +1166,7 @@ Returns the message storage on the request if it exists , otherwise returns an e
 Sets a header unless it has already been set .
 Wraps words at specified line length . Argument: number of characters to wrap the text at .
 Converts the input value into the expected Python data type , raising django . core . exceptions . ValidationError if the data can ' t be converted . Returns the converted value . Subclasses should override this .
-Unicode values can be cached Test `set`
+Unicode values can be cached Test ` set `
 Get the first parent ' s default_manager_name if there ' s one .
 Querying with combined q-objects should also strip the left outer join
 Aggregates can be used with F ( ) expressions . . . where the F ( ) is pushed into the HAVING clause
@@ -1276,7 +1276,7 @@ Get the " needs rollback " flag -- for *advanced use* only .
 Some backends may have srid=-1
 Ticket 13815: check if <reverse>_isnull=False does not produce faulty empty lists
 For some reason SpatiaLite does something screwy with the Texas geometry here . Also , it doesn ' t like the null intersection .
-Removes whitespace between HTML tags , including tab and newline characters . Example usage:: { % spaceless % } <p> <a href= " foo/ " >Foo</a> </p> { % endspaceless % } This example would return this HTML:: <p><a href= " foo/ " >Foo</a></p> Only space between *tags* is normalized -- not space between tags and text . In this example , the space around ``Hello`` won ' t be stripped:: { % spaceless % } <strong> Hello </strong> { % endspaceless % }
+Removes whitespace between HTML tags , including tab and newline characters . Example usage:: { % spaceless % } <p> <a href= " foo/ " >Foo</a> </p> { % endspaceless % } This example would return this HTML:: <p><a href= " foo/ " >Foo</a></p> Only space between *tags* is normalized -- not space between tags and text . In this example , the space around ` ` Hello ` ` won ' t be stripped:: { % spaceless % } <strong> Hello </strong> { % endspaceless % }
 Subject-line prefix for email messages send with django . core . mail . mail_admins or . . . mail_managers . Make sure to include the trailing space .
 Size of each " chunk " for get_iterator calls . Larger values are slightly faster at the expense of more storage space .
 The middleware does not redirect secure requests .
