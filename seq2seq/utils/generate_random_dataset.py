@@ -23,8 +23,6 @@ def gen_random_dataset():
     output_train_en_file = "../data/allCode/train/90pt.random.en"
 
 
-
-
     # read the original files
     with open(input_code_file) as f:
         code_file = f.readlines()

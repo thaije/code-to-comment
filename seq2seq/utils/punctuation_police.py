@@ -14,8 +14,8 @@ import re
 # this function adds spaces around all punctuation in the specified file, and writes it to the output file
 def space_punctuation(): 
 
-    dev_file = "../data/djangoCode/dev/10pt.random.en"
-    output_dv_file = "../data/djangoCode/dev/10pt.random.spaced.en"
+    dev_file = "../data/allCode/dev/10pt.random.en"
+    output_dv_file = "../data/allCode/dev/10pt.random.spaced.en"
 
     # open files
     with open(dev_file) as dev_file:

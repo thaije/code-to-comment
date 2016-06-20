@@ -8,6 +8,7 @@ import sys
 import getDocStrings
 import getComments
 import fileinput
+import re
 
 
 directories = ["edx-platform-master", "django-master", "pandas-master", 
@@ -21,6 +22,9 @@ commentCodeExt = ".commentCode"
 commentExt = ".comment"
 docstringCodeExt = ".dsCode"
 docstringExt = ".ds"
+
+# the largest bucket, no need to get code-comment pairs larger than this
+maxBucket = [40,50]
 
 # retrieve a file list of files with comments and docstrings in the directory
 def getFileList(directory):
@@ -63,7 +67,7 @@ def getCommentPairs(files_w_comments, directory):
         counter += 1
 
         with open(file) as fp:
-            (x, y, z) = getComments.generate_pairs(fp, codeFile, commentFile)
+            (x, y, z) = getComments.generate_pairs(fp, codeFile, commentFile, maxBucket)
             normalComments += x
             inlineComments += y
             rejectedComments += z
@@ -94,7 +98,7 @@ def getDocStringPairs(files_w_doc_strings, directory):
         counter += 1
 
         with open(file) as fp:
-            (x,y) = getDocStrings.generate_pairs(fp, codeFile, commentFile)
+            (x,y) = getDocStrings.generate_pairs(fp, codeFile, commentFile, maxBucket)
             normalDocStrings += x
             rejectedDocStrings += y
 
@@ -138,6 +142,10 @@ def createReadableFormat(file, codeF, commentF, counter):
 
             # loop through the lines
             for i in xrange(len(codeLines)):
+
+                if "Parameters ----------" in commentLines[i]:
+                    commentLines[i] = commentLines[i].split("Parameters ----------")[0].strip()
+
                 if codeLines[i].strip() != '' and commentLines[i].strip() != '':
                     file.write("Pair : " + str(counter) + "\n")
                     file.write("Comment:" + commentLines[i].strip() + "\n")
@@ -168,6 +176,12 @@ def createTrainingFile(eFile, cFile, codeFileExtension, commentFileExtension, co
 
             # loop through the lines
             for i in xrange(len(codeLines)):
+
+                # any(x in a for x in b)
+
+                if "Parameters ----------" in commentLines[i]:
+                    commentLines[i] = commentLines[i].split("Parameters ----------")[0].strip()
+
                 if codeLines[i].strip() != '' and commentLines[i].strip() != '':
                     codeFile.write(codeLines[i].strip().replace("\n","") + "\n")
                     enFile.write(commentLines[i].strip().replace("\n","") + "\n")

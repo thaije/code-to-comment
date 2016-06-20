@@ -1,10 +1,13 @@
 from os.path import basename, splitext
 import sys
+import util 
+
 
 commentList = ["# ", "#!"]
 dsList = ["'''", '"""']
+commentExceptions = ["todo","to do"]
 
-def generate_pairs(source, codeFile, commentFile, module='<string>'):
+def generate_pairs(source, codeFile, commentFile, maxBucket, module='<string>'):
     # open the file
     if hasattr(source, 'read'):
         filename = getattr(source, 'name', module)
@@ -30,7 +33,7 @@ def generate_pairs(source, codeFile, commentFile, module='<string>'):
 
             # print "Current line " , i , ":" , line , " in file:" , filename
             # print "Found docstring"
-            (i, success) = filterDocString(source, i, codeFile, commentFile)
+            (i, success) = filterDocString(source, i, codeFile, commentFile, maxBucket)
             # print ">Returned line number:" , i, " with Success:", success
 
             # Throw an 'error' in case we are looping
@@ -57,7 +60,7 @@ def generate_pairs(source, codeFile, commentFile, module='<string>'):
 
     return (normalDocStrings, rejectedDocStrings)
 
-def filterDocString(source, startLine, codeFile, commentFile):
+def filterDocString(source, startLine, codeFile, commentFile, maxBucket):
 
     inComment = True
     comment = ""
@@ -127,7 +130,6 @@ def filterDocString(source, startLine, codeFile, commentFile):
 
                 # add text to the comment if it hasn't closed yet
                 if inComment:
-                    # print ">>add line to comment"
                     comment += line.strip().replace("#","") + " "
                     continue
 
@@ -135,36 +137,42 @@ def filterDocString(source, startLine, codeFile, commentFile):
 
                 # return true if we found the end of the annotated code
                 if indentation > currIndent:
-                    # only return true if we are in a function def
-                    if not isDef(source, startLine, i):
+                    code = util.cleanCode(code)
+                    # only return true if we are in a function def,
+                    # also no need to save code-comment pairs larger than maxBucket size
+                    if  not isDef(source, startLine, i) or \
+                        not (util.tokenize("".join(code)) < maxBucket[0] and util.tokenize(comment) < maxBucket[1]) or \
+                        (any(exc in comment.lower() for exc in commentExceptions)):
+
                         return (i, False)
 
                     # write to file
                     for j in xrange(len(code)):
                         codeF.write(code[j] + "\n")
                     codeF.write("!@#$%!@#$%!@#$%!@#$%!@#$%")
-                    commentF.write(comment + "\n!@#$%!@#$%!@#$%!@#$%!@#$%")
-
-                    # print "Comment:" , comment
-                    # print "Code:" , code, "\n"
+                    commentF.write(util.cleanComment(comment) + "\n!@#$%!@#$%!@#$%!@#$%!@#$%")
 
                     return(i, True)
                 
                 # if we are still here, add the current line to the code
-                # print ">>Append code"
                 code.append(line.strip())
 
             # print ">>Got to the end with i:" , globalI
             if comment != "" and code != []:
+                code = util.cleanCode(code)
+
                 # only return true if we are in a function def
-                if not isDef(source, startLine, i):
+                # also no need to save code-comment pairs larger than maxBucket size
+                if  not isDef(source, startLine, i) or \
+                    not (util.tokenize("".join(code)) < maxBucket[0] and util.tokenize(comment) < maxBucket[1]) or \
+                    (any(exc in comment.lower() for exc in commentExceptions)):
                     return (globalI+1, False)
 
                # write to file
                 for j in xrange(len(code)):
                     codeF.write(code[j] + "\n")
                 codeF.write("!@#$%!@#$%!@#$%!@#$%!@#$%")
-                commentF.write(comment + "\n!@#$%!@#$%!@#$%!@#$%!@#$%")
+                commentF.write(util.cleanComment(comment) + "\n!@#$%!@#$%!@#$%!@#$%!@#$%")
                 # codeF.write(" ".join([x.strip() for x in code]) + "\n")
 
                 # print "Comment:" , comment
@@ -172,6 +180,7 @@ def filterDocString(source, startLine, codeFile, commentFile):
                 return (globalI+1, True)
             else:
                 return (globalI+1, False)
+
 
 
 # check if we are in a function definition

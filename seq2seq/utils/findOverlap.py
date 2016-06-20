@@ -5,8 +5,8 @@
 # Date: June, 2016
 ###########################################################################################################
 
-testFile = "../data/django/dev/10pt.random"
-trainFile = "../data/django/train/90pt.random"
+testFile = "../data/allCode/dev/10pt.random"
+trainFile = "../data/allCode/train/90pt.random"
 
 extensions = [".en",".code"]
 
