@@ -1,0 +1,2057 @@
+n = 23149 X_test = X[:n, :] y_test = y[:n] X = X[n:, :] y = y[n:]
+video_html = get_preview_fragment(request, self.video, context).content self.assertNotRegexpMatches(video_html, "<select")
+span_element = rendered_html.find('span') self.assertEqual(span_element.text, 'Test text')
+mode_display_name = models.CharField(max_length=255)
+CourseEnrollment.enroll(self.honor_user, self.course_key, "honor")
+ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
+return self.type == other.get('type') and name_is_eq
+return token.application
+span_element = rendered_html.find('span') self.assertEqual(span_element.text, 'Welcome student')
+'contentserver',
+classes = np.unique(y)
+if result['requireType'] == 'require': world.wait(1) continue
+return self.best_params
+from django.core.wsgi import get_wsgi_application
+assert_equal(slo.get_n_splits(X, y, labels=l), n_iter)
+new_params = estimator.get_params() for param_name, original_value in original_params.items(): new_value = new_params[param_name]
+return self.prior.get_params()
+else: return OuterAtomic(using, savepoint, read_committed)
+response['X-XRDS-Location'] = get_xrds_url('xrds', request) return response
+_ = lambda text: text
+unenroll_email( course_id=ccx_key, student_email=instructor.email, email_students=send_email, email_params=email_params, )
+raise NotImplementedError()
+continue theano.tests.unittest_tools.verify_grad(op, [a.get_value()])
+if zmq is None: raise unittest.SkipTest
+inherited = String(scope=Scope.settings, default="the default") not_inherited = String(scope=Scope.settings, default="nothing")
+key = self.lti_consumer.consumer_key secret = SignatureValidator(self.lti_consumer).get_client_secret(key, None) self.assertEqual(secret, self.lti_consumer.consumer_secret)
+titles = [] for child in self._xmodule.get_child_descriptors(): titles.extend(child.get_content_titles()) return titles
+self.go_to_tab_and_assert_problem(1, self.problem1_name)
+self.setup_cohort_config(self.course_fixture) self.cohort_1_name = "Cohort 1" self.cohort_1_id = self.add_manual_cohort(self.course_fixture, self.cohort_1_name)
+self.assertTrue(views.is_course_passed(self.course, None, self.student, self.request))
+self.signal_handler.send("course_published", course_key=course_id.for_branch(None)) bulk_ops_record.has_publish_item = False
+MEDIA_ROOT = ENV_TOKENS.get('MEDIA_ROOT', MEDIA_ROOT) MEDIA_URL = ENV_TOKENS.get('MEDIA_URL', MEDIA_URL)
+X_embedded = 1e-4 * random_state.randn(n_samples, self.n_components)
+settings.DEFAULT_TEMPLATE_ENGINE['DIRS'].insert(0, theme_root / 'templates') edxmako.paths.add_lookup('main', theme_root / 'templates', prepend=True)
+return self.countdown > 0
+self.wait_for_page()
+self._iter_mode = resolve_iterator_class('sequential')
+self._mp_context = backend backend = "multiprocessing"
+from __future__ import unicode_literals
+params = dict(params.items())
+self.coefs_ = [] self.intercepts_ = []
+self.user.profile.country = restricted_country.country self.user.profile.save()
+dest_course_id = self._map_revision_to_branch(dest_course_id, revision=revision) return super(DraftVersioningModuleStore, self).clone_course( source_course_id, dest_course_id, user_id, fields=fields, **kwargs )
+#texinfo_no_detailmenu = False
+score[pred_or_true == 0.0] = 1.0
+return self.iterator()
+def __init__(cls, name, bases, dict): type.__init__(cls, name, bases, dict) cls.libv = LibVersion()
+if store.has_course(destination_course_key, ignore_case=True): raise DuplicateCourseError(source_course_key, destination_course_key)
+X1 = np.ones(18) kf = KFold(3) check_cv_coverage(kf, X1, y=None, labels=None, expected_n_iter=3)
+X, y = make_regression(n_samples=200, n_features=20, n_informative=5, shuffle=False, random_state=0, noise=10)
+for path in glob.glob(path): shutil.rmtree(path)
+import logging
+response = requests.delete(reset_config_url) self.assertEqual(response.status_code, 200)
+LogoutPage(self.browser).visit() StudioAutoAuthPage(self.browser, username=username, email=email, course_id=self.course_id, staff=staff).visit()
+log.info(u"deleting course from split-mongo: %s", course_key) self.delete_course_index(course_key)
+element = self.q(css=BANNER_SELECTOR) return element.visible and element.text[0].startswith("Welcome to the Open edX")
+MAX_IDEAL_BATCH_DURATION = 2
+batch_size = 1
+self.coach = UserFactory.create() self.mstore = modulestore()
+ticket_url = self._zendesk_instance.create_ticket(data=ticket) return zendesk.get_id_from_url(ticket_url)
+self.client.logout()
+client = APIClient() client.login(username=user.username, password=self.TEST_PASSWORD) return client
+email_body_plain = render_to_string('credit_notifications/credit_eligibility_email.txt', context) msg_alternative.attach(SafeMIMEText(email_body_plain, _subtype='plain', _charset='utf-8'))
+dir_name.rmtree_p() dir_name.mkdir_p()
+if len(cls.tags) == 0: raise ValueError("No tags specified for class {0}".format(cls.__name__))
+return self.mlp.get_weights()
+ind = rng.randint(0, X.shape[0], 20) sample_weight = np.bincount(ind, minlength=X.shape[0])
+repr(slo)
+U, s, V = linalg.svd(X, full_matrices=False)
+if verification_deadline is not None and mode_slug not in CourseMode.VERIFIED_MODES: raise forms.ValidationError("Verification deadline can be set only for verified modes.")
+tsvd = TruncatedSVD(n_components=52, random_state=42) Xt = tsvd.fit_transform(X) Xinv = tsvd.inverse_transform(Xt) assert_array_almost_equal(Xinv, Xdense, decimal=1)
+about_dictionary = { item.location.name: item.data for item in modulestore.get_items(course.id, qualifiers={"category": "about"}) }
+if settings.FEATURES.get('USE_CUSTOM_THEME') and message_key in messages.CUSTOM_THEME_OVERRIDES: message_dict = messages.CUSTOM_THEME_OVERRIDES
+self.store.revert_to_published(component.location, self.user_id) component = self.store.get_item(component.location) self.assertFalse(self.store.has_changes(component))
+if '.' not in tag_suffix: raise yaml.YAMLError("!import: tag suffix contains no '.'") return try_to_import(tag_suffix)
+about_location = self.make_course_key(org, course, run).make_usage_key('about', 'overview')
+length = arr.size if hasattr(arr, 'size') else len(arr) return np.nan if length == 0 else np.median(arr, *args, **kwargs)
+#html_theme_path = []
+html = module.get_problem_html()
+self.upload_asset(handout_filename)
+latex_interpreter = ParseAugmenter(math_expr, case_sensitive) latex_interpreter.parse_algebra()
+GRADES_UPDATED = Signal(providing_args=["username", "grade_summary", "course_key", "deadline"])
+continue
+if not organizations_enabled(): return [] from organizations import api as organizations_api return organizations_api.get_organization(organization_id)
+([], '', CourseMode.DEFAULT_MODE_SLUG),
+with make_image_file() as image_file: response = self.client.post(self.url, {'file': image_file}, format='multipart') self.check_response(response, 204)
+yield check_sample_weight_multiclass, cls
+first_checkpoint.add_verification_attempt(SoftwareSecurePhotoVerification.objects.create(user=self.user)) self.assertEqual(first_checkpoint.photo_verification.count(), 1)
+return self.entrance_exam_message_selector.is_present() \ and "You have passed the entrance exam" in self.entrance_exam_message_selector.text[0]
+if self.priors is None: self.class_prior_ = self.class_count_ / self.class_count_.sum()
+return super(NullBackend, self).clear()
+return self.conditional.get_weights()
+self.q(css=self._bounded_selector(".annotator-save")).first.click() self.wait_for_notes_invisibility("Note is saved.") self.wait_for_ajax() return self
+pred = grid_search.fit(train_data, target_train).predict(test_data) assert_array_equal(pred, target_test)
+self._update_password(staff_email, "updated") self._login(staff_email, "updated")
+staff_role = CourseStaffRole(course_key) staff_role.remove_users(*staff_role.users_with_role()) instructor_role = CourseInstructorRole(course_key) instructor_role.remove_users(*instructor_role.users_with_role())
+global custom_data_home custom_data_home = tempfile.mkdtemp() makedirs(join(custom_data_home, 'mldata')) globs['custom_data_home'] = custom_data_home return globs
+grading_policy.update(course_policy)
+finish_time = time() self._ddog_histogram(evt_time, 'delete_many.response_time', (finish_time - evt_time) * 1000)
+del results[-1] max_exceeded = True
+add_discussion(container, group_a_menu) container.duplicate(self.group_a_item_1_action_index)
+return self._data.get(key, default)
+test_string = "this string has no subtags" result = Ks.substitute_keywords_with_data( test_string, self.context, ) self.assertEquals(test_string, result)
+self.q(css='a.nav-item').filter(text=topic)[0].click()
+import matplotlib.pyplot as plt
+self.check_assertion_structure(assertion, response['results'][0])
+selected_numtolerance_inputs = [ key for key in a_dict if key.partition("_numtolerance_input_")[0] + "bc" in selected_choices ]
+with self.assertNumQueries(6): self._get_list()
+return "/wiki/" + self.article_name + "/_edit"
+return "is-editing" in self.q( css=self._bounded_selector(self.NAME_FIELD_WRAPPER_SELECTOR) )[0].get_attribute("class")
+self.table_entry.state = state self.creator_admin.save_model(self.request, self.table_entry, None, True)
+assert_raises(ValueError, cls().partial_fit, X2, y2[:-1], classes=np.unique(y2))
+xblock = modulestore().get_item(location) xblock.visible_to_staff_only = True self.store.update_item(xblock, self.user.id)
+y = column_or_1d(y, warn=True) _check_numpy_unicode_bug(y) self.classes_, y = np.unique(y, return_inverse=True) return y
+if index_entry is not None: self._update_head(course_key, index_entry, xblock.location.branch, new_id)
+sparse_results = sparse_classifier.staged_predict(X_test_sparse) dense_results = dense_classifier.staged_predict(X_test) for sprase_res, dense_res in zip(sparse_results, dense_results): assert_array_equal(sprase_res, dense_res)
+if ( tag == 'msup' and len(k) == 2 and gettag(k[1]) == 'mrow' and
+if hasattr(self, 'input_source'): return self.input_source else: return 'features'
+return thread_local_default_store
+weight = X[rows][:, cols].sum() cut = (X[row_complement][:, cols].sum() + X[rows][:, col_complement].sum()) return cut / weight
+self.fit_transform(X) return self
+class_=class_, selector=selector
+current_log_likelihood = None self.converged_ = False
+DarkLangConfig( released_languages=('es-419, en'), changed_by=self.user, enabled=True ).save()
+self.assertEqual(module.attempts, 1)
+self.assertEqual(response.status_code, 500) actual = json.loads(response.content)['detail'] self.assertIn('Call to E-Commerce API failed', actual)
+self.assert_no_matching_events_were_emitted({'event_type': self.USER_SETTINGS_CHANGED_EVENT_NAME})
+return data['user'].is_staff
+self._cache.delete(self._encode_root_cache_key(root_block_usage_key)) logger.info( "Deleted BlockStructure %r from the cache.", root_block_usage_key, )
+DATABASES = { 'default': { 'ENGINE': 'django.db.backends.sqlite3', 'ATOMIC_REQUESTS': True, },
+parent_xblock.save()
+url = url + '?' + query_parameters if query_parameters else url response = client.get(url) self.assertEqual(expected_status, response.status_code) return response
+self.import_page.upload_tarball(self.tarball_name) self.assertEqual(self.import_page.finished_target_url(), self.landing_page.url)
+self.assertIn(self.seq_loc, course.system.module_data)
+return self.find_css("#due_time").first.attrs('value')[0]
+self.setup_inference_procedure() return self.inference_procedure.mf(*args, **kwargs)
+url = BASE_URL + "/auto_auth" query_str = urllib.urlencode(self._params) if query_str: url += "?" + query_str return url
+for (label_to_value_map, label_to_value_func) in zip(label_to_value_maps, norb.label_to_value_funcs): for label, expected_value in six.iteritems(label_to_value_map): actual_value = label_to_value_func(label) assert expected_value == actual_value
+cov = EmpiricalCovariance(assume_centered=True) cov.fit(X) assert_array_equal(cov.location_, np.zeros(X.shape[1]))
+residual_threshold = np.median(np.abs(y - np.median(y)))
+r1sq = rnorm**2 - dampsq * xxnorm r1norm = sqrt(abs(r1sq)) if r1sq < 0: r1norm = -r1norm r2norm = rnorm
+self.mock_programs_api() self.mock_credentials_api(self.student, data={"results": []}, reset_url=False)
+mcc = assert_warns_message(RuntimeWarning, 'invalid value encountered', matthews_corrcoef, [0, 0, 0, 0], [0, 0, 0, 0])
+if request is not None and hasattr(request, 'META'): return get_ip(request) else: return default
+self._verify_branch_setting(ModuleStoreEnum.Branch.draft_preferred) _verify_revision_is_published(location)
+NUM_RANDOMIZATION_BINS = 20 MAX_RANDOMIZATION_BINS = 1000
+N_per_side = 5 Npts = N_per_side ** 2 n_neighbors = Npts - 1
+@wraps(LiveMonitorMsg.get_response) def get_response(self): return ChannelListResponse()
+return None
+is_hidden = False
+self._asides.append(aside)
+with open(os.path.join(os.path.dirname(__file__), 'data', filename)) as f: return f.read()
+return u"[{username}] {name}: {value}".format( name=self.name, value=self.value, username=self.user.username, )
+locked = self.is_content_locked(content) newrelic.agent.add_custom_parameter('contentserver.locked', locked)
+url(r'^user_api/', include('openedx.core.djangoapps.user_api.legacy_urls')),
+self.set_time("#due_time", time)
+if self.termination_criterion is None: return True else: return self.termination_criterion.continue_learning(self.model)
+return block_structure.get_transformer_block_field( block_key, cls, cls.MERGED_VISIBLE_TO_STAFF_ONLY, False )
+subset_choices = [correct_choice] rng.shuffle(incorrect_choices) subset_choices += incorrect_choices[:num_incorrect] rng.shuffle(subset_choices)
+threshold = min(step, np.sum(support_) - n_features_to_select)
+Xs = []
+return CourseLocator(org, course, run, deprecated=True)
+affiliate_id = 'test-partner' self.client.cookies[settings.AFFILIATE_COOKIE_NAME] = affiliate_id user = self.create_account_and_fetch_profile().user self.assertEqual(UserAttribute.get_user_attribute(user, settings.AFFILIATE_COOKIE_NAME), affiliate_id)
+dspace.np_validate(batch) return batch
+clf = GradientBoostingClassifier(loss='exponential', n_estimators=100, random_state=1)
+return self.q(css='.problem-header').text[0]
+return self.q(css=self.thread_selector + " " + selector)
+ii = -1
+return None, None
+for _ in range(2): get_user_credentials(staff_user)
+n_samples = 100 n_features = 500 rank = 5 k = 10
+problem = self.build_problem( choice_type='checkbox', choices=[False, False, True, True], credit_type='halves' )
+self._cohorted_discussions = json.dumps(value)
+self._deferred_print = [] return super(StandardReport, self).init_file( filename, lines, expected, line_offset)
+try: uidb64 = force_text(urlsafe_base64_encode(force_bytes(base36_to_int(uidb36)))) except ValueError:
+self.non_lin_name = "rectifier" self.left_slope = left_slope
+theano.compile.debugmode.default_make_thunk.append( get_unbound_function(BaseActs.make_thunk))
+self.problem = ItemFactory.create( category="problem", parent_location=self.library.location,
+with self.bulk_operations(source_course): source_structure = self._lookup_course(source_course).structure
+return self._descriptors[location.to_deprecated_string()]
+out_array[:, :, i] = tile_raster_images( X[i], img_shape, tile_shape, tile_spacing, scale_rows_to_unit_interval, output_pixel_vals)
+split_table = split_tables[0] __, rendered_height = split_table.wrap(0, 0) split_table.drawOn(self.pdf, table_left_padding, y_pos - rendered_height)
+ANALYTICS_DATA_URL = ENV_TOKENS.get("ANALYTICS_DATA_URL", ANALYTICS_DATA_URL) ANALYTICS_DATA_TOKEN = AUTH_TOKENS.get("ANALYTICS_DATA_TOKEN", ANALYTICS_DATA_TOKEN)
+self._params.update(l._params)
+assert_almost_equal(matthews_corrcoef(y_true, y_true), 1.0)
+check_array(X, accept_sparse='csr') return self
+self.assertTrue(allowance_section.is_add_allowance_popup_visible)
+dst_path = os.path.dirname(os.path.abspath(dst_filename)) dst_temp_filename=os.tempnam(dst_path);
+course_overview = CourseOverview.get_from_id(course.id) return self.serializer_class(course_overview, context={'request': self._get_request()}).data
+line_number = self.index_to_line_number(index) return self.line_number_to_end_index(line_number)
+tasks.update_course_structure.delay(unicode(course_key)) raise CourseStructureNotAvailableError
+expiration = attempt.created_at + timedelta(days=settings.VERIFY_STUDENT["DAYS_GOOD_FOR"]) before_expiration = expiration - timedelta(seconds=1) self.assertTrue(attempt.active_at_datetime(before_expiration))
+note = self.filter_by_id(self.notes, note_id) if note: note[0].update(note_info) return note else: return None
+return None
+self._test_email_address_failures(SESAddressBlacklistedError(554, "Email address is blacklisted"))
+course = self.get_item_from_modulestore(self.usage_key) self.assertNotIn(chapter1_usage_key, course.children) self.assertIn(chapter2_usage_key, course.children)
+return self._get_element_text(".group-visibility-label")
+raise NotImplementedError()
+unnorm_predict_proba = np.array([[0.005183999999999999, 0.02194787379972565]]) predict_proba = unnorm_predict_proba / np.sum(unnorm_predict_proba) assert_array_almost_equal(clf.predict_proba(X_test), predict_proba)
+for url in urls: self.assert_request_status_code(404, url)
+simplefilter('ignore')
+def downward_state(self, state): return state def downward_message(self, state): return state
+mean = X.mean(axis=1) if subtract_mean:
+S, rows, cols = make_checkerboard((30, 30), 3, noise=0.5, random_state=0)
+invalid_get_dict = MultiDict({'input': 'test'}) with self.assertRaises(ValueError): result = CapaModule.make_dict_of_responses(invalid_get_dict)
+from . import signals
+avg_X2 = np.dot(responsibilities.T, X * X) * norm avg_means2 = gmm.means_ ** 2 avg_X_means = gmm.means_ * weighted_X_sum * norm return avg_X2 - 2 * avg_X_means + avg_means2 + min_covar
+course_key = CourseKey.from_string(course_id) self.assertTrue(CreditCourse.objects.filter(course_key=course_key, enabled=enabled).exists())
+loc_str = unicode(location) max_score = self._max_scores_updates.get(loc_str) if max_score is None: max_score = self._max_scores_cache.get(loc_str) return max_score
+Xnan = np.array(X, dtype=np.float64) Xnan[0, 1] = np.nan LogisticRegression(random_state=0).fit(Xnan, Y1)
+self.video.click_player_button('fullscreen')
+if 'honor' not in course_mode_slugs: cert_status['status'] = CertificateStatuses.auditing return cert_status
+pipeline = preprocessing.Pipeline() pipeline.items.append(preprocessing.GlobalContrastNormalization(batch_size=5000)) pipeline.items.append(preprocessing.LeCunLCN((32,32)))
+language_preference = get_user_preference(self.real_user, LANGUAGE_KEY) if not language_preference: language_preference = settings.LANGUAGE_CODE return language_preference
+multi_db = True
+return self.q(css=self._bounded_selector(".check-all-inline-discussions:checked"))
+self.assertEqual(seed, module.seed)
+if not ccx: raise Http404 schedule = get_ccx_schedule(course, ccx) json_schedule = json.dumps(schedule, indent=4) return HttpResponse(json_schedule, content_type='application/json')
+with patch('capa.capa_problem.LoncapaProblem.grade_answers') as mock_grade: mock_grade.side_effect = exception_class(u"ȧƈƈḗƞŧḗḓ ŧḗẋŧ ƒǿř ŧḗşŧīƞɠ")
+user = CourseCreator.objects.get(user=user) if user.state != CourseCreator.GRANTED: user.state = CourseCreator.PENDING user.save()
+Y /= np.sum(Y, axis=1)[:, np.newaxis]
+text = text.rstrip('\r\n') self.tokens = [(token_type, text) + token[2:]] self.check_logical()
+ransac_estimator.fit(X, y)
+dict(safe_zip(range(-5, 6), range(-5, 6))),
+MobileApiConfig(video_profiles="youtube,mobile_high").save()
+self._reset() return self.partial_fit(X, y)
+'captionDataDir': getattr(self, 'data_dir', None),
+self.user.is_active = False self.user.save()
+xmin, xmax = plt.xlim() ymin, ymax = plt.ylim() coef = clf.coef_ intercept = clf.intercept_
+for ginput, expected in self.GOOD_DISPATCH_INPUTS: self.assertEquals(self.xmodule.parse_lti_2_0_handler_suffix(ginput), expected)
+tagger.sample_rate = 1 return None
+assert_false(X_sparse_unsorted.has_sorted_indices) assert_false(X_test_unsorted.has_sorted_indices)
+homework_grader = graders.AssignmentFormatGrader("Homework", 12, 2) homework_grader2 = graders.grader_from_conf(homework_grader)
+return [ credentials_factories.UserCredential( id=1, username='test', credential=credentials_factories.ProgramCredential( program_id=1 ) ), credentials_factories.UserCredential( id=2, username='test', credential=credentials_factories.ProgramCredential( program_id=2 ) ) ]
+y1 += [0]*n_classes y2 += [0]*n_classes
+self.assertFalse(res_json['success'])
+return '__file__' in globals()
+self.assertEqual(response.status_code, 400) res_json = json.loads(response.content)
+dset = fetch_mldata(dataname, transpose_data=False, data_home=tmpdir) assert_equal(dset.data.shape, (3, 2))
+self.client.logout() response = self.client.get(url, **{'HTTP_X_EDX_API_KEY': self.API_KEY}) self.assertEqual(response.status_code, status.HTTP_200_OK)
+UserFactory.create(username=self.USERNAME, email=self.EMAIL, password=self.PASSWORD)
+input_dict = {'1_2_1': 'Michigan'} correct_map = problem.grade_answers(input_dict) self.assertEquals(correct_map.get_hint('1_2_1'), "")
+db = DBSCAN(eps=0.3, min_samples=10).fit(X) core_samples_mask = np.zeros_like(db.labels_, dtype=bool) core_samples_mask[db.core_sample_indices_] = True labels = db.labels_
+err = ItemNotFoundError mock_get_course.return_value = err
+return self.runtime
+for course in store.get_courses(**kwargs): course_id = self._clean_locator_for_mapping(course.id) if course_id not in courses: courses[course_id] = course
+block_structure = BlockStructureModulestoreData(root_block_usage_key=0)
+return super(ConfigurationModelStrategy, self).setting(name, default, backend)
+with restrict_course(self.course.id): response = self.client.get( url, HTTP_X_FORWARDED_FOR=ip_address, REMOTE_ADDR=ip_address ) self.assertEqual(response.status_code, 200)
+admin = AdminFactory()
+credit_state = self.service.get_credit_state(self.user.id, self.course.id) self.assertNotIn('course_name', credit_state)
+'openedx.core.djangoapps.user_api.middleware.UserTagsEventContextMiddleware',
+self.dashboard_page.visit() self.assertTrue(self.dashboard_page.has_course( org=self.course_org, number=self.course_number, run=self.course_run ))
+self.t_ = None
+if verbose: print(msg + " Stopping.") return True
+errstring = "Error: too few arguments" with self.assertRaisesRegexp(CommandError, errstring): call_command('force_publish')
+email_id = kwargs.get('id', 0) return self.emails[email_id]
+_ = lambda text: text
+AutoAuthPage(self.browser, course_id=self.course_id).visit()
+data = payload.format(score=0.8) return self._send_lti2(data)
+assert_array_equal(lfw_pairs_train.target, [1, 1, 1, 1, 1, 0, 0, 0, 0, 0])
+with mock_order_endpoint(order_number=self.ORDER_NUMBER, exception=exceptions.HttpNotFoundError): response = self.client.get(self.path) self.assertEqual(response.status_code, 404)
+return self.func_to_count(param1, param2)
+UserPreference.objects.get_or_create( user=user, key=NOTIFICATION_PREF_KEY, defaults={ "value": UsernameCipher.encrypt(user.username) } )
+items = self._latest_history()['items'] self.assertItemsEqual(items, expected_items)
+imputer = Imputer(missing_values, strategy=strategy, axis=0) imputer.fit(sparse.csc_matrix(X)) X_trans = imputer.transform(sparse.csc_matrix(X.copy()))
+grouping_tag = grouping_tags[test_conditions['input_type']] self.assert_no_xpath(xml, "//{0}[@class='choicetextgroup_incorrect']".format(grouping_tag), self.context)
+solution_element.tag = 'targetedfeedback' targetedfeedbackset.append(solution_element)
+provider1 = self.configure_dummy_provider( enabled=True, icon_class='', icon_image=SimpleUploadedFile('icon.svg', '<svg><rect width="50" height="100"/></svg>'), )
+Z = Z.reshape(grid.shape[:-1]) plt.contourf(multiples, multiples, Z, cmap=plt.cm.Paired) plt.axis('off')
+import urllib.parse quote = urllib.parse.quote
+restart_django_servers()
+ret = generate_user_certificates( student, course_key, course=course, insecure=options['insecure'] )
+xmodule.save() return xmodule
+status = 'failed' reason = { 'final_grade': grade_summary['percent'], 'minimum_grade': min_grade }
+for password in ["", "a"]: params["password"] = password assert_password_error("A valid password is required")
+n_valid = valid_repr.shape[0] n_test = test_repr.shape[0]
+return os.sep.join(folders_list_in_path)
+for course_dir in source_dirs: _err_cnt, _warn_cnt = validate_data_source_paths(path(data_dir), course_dir) err_cnt += _err_cnt warn_cnt += _warn_cnt
+self.assertEqual(response.status_code, 403)
+#html_use_smartypants = True
+varname = tokens[0][0] self.functions_used.add(varname)
+if connection.commit_on_success_block_level == 0: if connection.features.autocommits_when_autocommit_is_off: connection.autocommit = True else: connection.set_autocommit(True)
+problem = "<problem>" for problem_type in args: problem += "<{problem_type}></{problem_type}>".format(problem_type=problem_type) problem += "</problem>" return problem
+<%block name="requirejs"> {expression} </%block>
+non_default_count = pos_count - pos_default_count for name in positional[:non_default_count]: annotation = annotations.get(name, _empty) parameters.append(Parameter(name, annotation=annotation, kind=_POSITIONAL_OR_KEYWORD))
+with self.assertRaises(ValueError): self.runtime.service(self.mock_block, 'user_tags').get_tag('fake_scope', self.key)
+self.client.get( pipeline.get_login_url(self.provider.provider_id, pipeline.AUTH_ENTRY_LOGIN))
+clf = svm.LinearSVC(penalty='l2', loss='hinge', dual=True, random_state=0) clf.fit(X, Y) assert_array_equal(clf.predict(T), true_result)
+n_samples = X.shape[0] sample_idxs = np.arange(n_samples)
+self.assertFalse(hasattr(user, 'profile'))
+SECRET_KEY = '85920908f28904ed733fe576320db18cabd7b6cd'
+from __future__ import unicode_literals
+with self.store.bulk_operations(key): course = self.store.get_course(key) return course
+self.q(css=self._bounded_selector(".check-cohort-inline-discussions")).first.click()
+activation_key = create_account(self.USERNAME, self.PASSWORD, self.EMAIL) activate_account(activation_key)
+mean_dist = np.mean(pairwise_distances(query, X, metric='cosine')) neighbors = lshf.radius_neighbors(query, radius=mean_dist, return_distance=False)
+cohort = CohortFactory(course_id=course_id, name=cohort_name) CourseCohortFactory(course_user_group=cohort, assignment_type=assignment_type) return cohort
+CourseEmailTemplate = apps.get_model("bulk_email", "CourseEmailTemplate") if not CourseEmailTemplate.objects.exists(): call_command("loaddata", "course_email_template.json")
+if not language: language = settings.LANGUAGE_CODE
+with mock_create_refund(status=200, response=[1, 2, 3]): self.send_signal() self.assertTrue(mock_send_notification.called)
+filtered_response = self.verify_response(params={'org': self.course.org, 'username': self.staff_user.username}) self.assertTrue(
+if hasattr(mod, 'run'): mod.run()
+GENERATE_PROFILE_SCORES = False
+self.f = tempfile.NamedTemporaryFile(delete=False) self.f.close()
+errstring = "Invalid course_key: 'foo/TestX/TS01/2015_Q7'." with self.assertRaisesRegexp(CommandError, errstring): call_command('delete_course', 'foo/TestX/TS01/2015_Q7')
+pass
+@functools.wraps(fn) def wrapped(*args, **kwargs): orig_mode = config.mode if orig_mode in ["DebugMode", "DEBUG_MODE"]: config.mode = "FAST_RUN"
+raise ItemNotFoundError(course_key)
+self.user.is_staff = True self.user.save() self.client.login(username=self.user.username, password='foo')
+for X in [X_1row, X_1col, X_list_1row, X_list_1row]:
+try:
+pca = TruncatedSVD(n_components=2) X_reduced = pca.fit_transform(X_transformed)
+return np.dot(X.ravel(), Y.ravel())
+os.environ['REQUIRE_BUILD_PROFILE_OPTIMIZE'] = 'none'
+cache.clear()
+parse_result = reversed( [k for k in parse_result
+scaling = 0.3 selection_threshold = 0.5
+if not hasattr(xblock, '_published_on'): self.modulestore.compute_published_info_internal(xblock) return getattr(xblock, '_published_on', None)
+for max_leaf_nodes, name in product((None, 1000), ALL_TREES.keys()): TreeEstimator = ALL_TREES[name]
+lti_endpoint = self.server.config.get('lti_endpoint', self.DEFAULT_LTI_ENDPOINT) return lti_endpoint in self.path
+if use_post: response = self.client.post(url) else: response = self.client.get(url) self.assertEquals(response.status_code, 404)
+assert_bad({"files": [{"file_name": "test.mp4"}]})
+se = SpectralEmbedding(n_components=1, affinity="<unknown>", random_state=np.random.RandomState(seed)) assert_raises(ValueError, se.fit, S)
+if params.get('decision') == u'CANCEL': raise CCProcessorUserCancelled()
+FEATURES['ENABLE_TEAMS'] = True
+W[0, 1] = .5 W[0, 2] = 1. W[0, 3] = 2.
+with super(ViewPermissionsTestCase, cls).setUpClassAndTestData(): cls.course = CourseFactory.create()
+HANDLER_CLASS = StubHttpRequestHandler
+return self.q(css="span.current-page")[0].get_attribute('innerHTML')
+super(RegisterPage, self).__init__(browser) self._course_id = course_id
+def __unicode__(self): return u'SystemUser'
+self.assertContains( response, "<article class=\"course {}\">".format(self.MODE_CLASSES[status]) )
+assert_raises(ValueError, next, KFold(4).split(X1))
+import datetime import json
+self.course_key = course_key self.user_id = user_id self._locations_to_scores = {} self._has_fetched = False
+go_to_section("data_download")
+connection.drop_database(DB)
+log.exception('Unable to gather submission metadata, it will not be included in the event.')
+self.lc_block = store.get_item(self.lc_block.location) self.problem_in_course = store.get_item(self.problem_in_course.location)
+try: os.makedirs(PREREQS_STATE_DIR) except OSError: if not os.path.isdir(PREREQS_STATE_DIR): raise
+cache_key = CourseEnrollment.cache_key_name( instance.user.id, unicode(instance.course_id) ) cache.delete(cache_key)
+missing = [] for key in required_keys: if params.get(key) is None: missing.append(key)
+self.client.login(username=self.non_staff_usr, password='test') resp = self.client.get(self.url_locked) self.assertEqual(resp.status_code, 403)
+return self.q(css='.wrapper-last-publish').first.text[0]
+self.assertEqual( CohortPartitionScheme.get_group_for_user( self.course_key, self.student, partition or self.user_partition, use_cached=False ), group )
+digits = datasets.load_digits(n_class=9)
+if verification_deadline is not None: if upgrade_deadline is not None and verification_deadline < upgrade_deadline: raise forms.ValidationError("Verification deadline must be after the upgrade deadline.")
+db=None, collection=None, host=None, port=None, tz_aware=True, user=None, password=None, ** kwargs
+CONFIG_FILE = open(settings.REPO_ROOT / "docs" / "cms_config.ini") CONFIG = ConfigParser.ConfigParser() CONFIG.readfp(CONFIG_FILE)
+with self.assertRaises(TypeError): microsite.get_backend('microsite_configuration.microsite.get_backend', BaseMicrositeBackend)
+site_configuration = SiteConfigurationFactory.create( site=self.site, )
+rng = np.random.RandomState([2012, 10, 9]) batch_size = 5 rows = 10 cols = 9 channels = 3 filter_rows = 4 filter_cols = filter_rows num_filters = 6
+'ENABLE_MKTG_EMAIL_OPT_IN': False,
+self.user_preference.value = "new value" self.user_preference.save() self.assert_user_setting_event_emitted(setting=self.TEST_KEY, old=self.TEST_VALUE, new="new value")
+context = event.get('context', {}) if field in context: event[field] = context[field] del context[field] else: event[field] = default_value
+config.toggle()
+try: course_key = CourseKey.from_string(course_id) except InvalidKeyError: raise Http404
+return False if str is None else str.lower() == "true"
+if self.advertised_start: return u'string' elif self.start != DEFAULT_START_DATE: return u'timestamp' else: return u'empty'
+try: lti_consumer = LtiConsumer.get_or_supplement( params.get('tool_consumer_instance_guid', None), params['oauth_consumer_key'] ) except LtiConsumer.DoesNotExist: return HttpResponseForbidden()
+u = np.zeros((n_targets, n_eval))
+with mock.patch.object(requests, 'post') as mock_post: mock_post.return_value.text = snuggletex_resp
+processed = request.build_absolute_uri(prefix + rest) return quote + processed + quote
+if ( settings.FEATURES.get('AUTH_USE_SHIB') and course.enrollment_domain and course.enrollment_domain.startswith(SHIBBOLETH_DOMAIN_PREFIX) ): return redirect_with_get('shib-login', request.GET)
+symbol = 'courseware.grades.grade' with patch(symbol) as mock_grade: mock_grade.return_value = {'grade': 'Pass', 'percent': 0.75} yield
+def value_from_datadict(self, data, files, name): value = data.get(name, '') return value.lower() == 'true'
+self.assert_cookie_data_equal(safe_cookie_data_1, safe_cookie_data_2)
+urls = _get_default_profile_image_urls()
+pear_group = self.notes_page.tag_groups[group_index] self.assertEqual(tag_name + " (3)", pear_group.title) self.assertTrue(pear_group.scrolled_to_top(group_index))
+fancy = None
+link_pattern = '<a href="%s">%s</a>' orig_pattern = '<span class="n">%s</span>' period = '<span class="o">.</span>'
+value = loader.construct_scalar(node) if '.' not in value: raise yaml.YAMLError("import tag suffix contains no '.'") return try_to_import(value)
+answer_objs = SurveyAnswer.objects.filter( user=self.user, form=self.survey )
+inp = iter(inp) mlb = MultiLabelBinarizer(classes=[1, 3, 2]) assert_array_equal(mlb.fit(inp).transform(inp), indicator_mat)
+FEATURES['AUTOMATIC_AUTH_FOR_TESTING'] = True
+self._test_page("/logout", 302)
+assert_raises_regex(ValueError, "n_init", KMeans(n_init=0).fit, X) assert_raises_regex(ValueError, "n_init", KMeans(n_init=-1).fit, X)
+est = TreeEstimator(min_samples_split=0.2, max_leaf_nodes=max_leaf_nodes, random_state=0) est.fit(X, y) node_samples = est.tree_.n_node_samples[est.tree_.children_left != -1]
+self.user_partition = UserPartition( self.TEST_ID, self.TEST_NAME, self.TEST_DESCRIPTION, self.TEST_GROUPS, extensions[0].plugin, self.TEST_PARAMETERS, )
+warnings.warn("TODO: add unit test that iterators uneven property is set correctly.")
+if isinstance(space, CompositeSpace): return tuple(make_dtype_tree(dtype, component) for component in space.components) else: return super_self._clean_dtype_arg(dtype)
+eq_dir = np.dot(X.T[:n_active].T, least_squares) corr_eq_dir = np.dot(X.T[n_active:], eq_dir)
+continue
+op = optparse.OptionParser() op.add_option("--n-times", dest="n_times", default=5, type=int, help="Benchmark results are average over n_times experiments")
+BROKER_POOL_LIMIT = 0 BROKER_CONNECTION_TIMEOUT = 1
+for i, val in minibatch: if val is not None: activations[i] = val
+email_label = _(u"Email")
+if step_score: self.scores_.append(step_score(estimator, features)) support_[features[ranks][:threshold]] = False ranking_[np.logical_not(support_)] += 1
+attempts_left_open = CapaFactory.create(showanswer='closed', max_attempts="1", attempts="0", due=self.tomorrow_str) self.assertFalse(attempts_left_open.answer_available())
+spca_lasso = MiniBatchSparsePCA(n_components=3, method='cd', alpha=alpha, random_state=0).fit(Y) assert_array_almost_equal(spca_lasso.components_, spca_lars.components_)
+if library_role: library_role(self.lib_key).add_users(self.non_staff_user) if course_role: course_role(course.location.course_key).add_users(self.non_staff_user)
+user = None email = None language = None try: user = get_student_from_identifier(identifier) except User.DoesNotExist: email = identifier else: email = user.email language = get_user_email_language(user)
+modulestore().request_cache = None modulestore().metadata_inheritance_cache_subsystem = None
+self.publish_unit_and_verify_groups_in_lms(courseware_page, [u'Group A', u'Group B'])
+bulk_write_record = self._get_bulk_ops_record(course_key) if bulk_write_record.active: return bulk_write_record.modules[version_guid].get(block_id, None) else: return None
+user = UserFactory.create() self.obj.user = user self.assert_user_has_object_permission(user, True)
+with check_mongo_calls(1): self._run_command()
+UPSELL_TO_VERIFIED_MODES = [HONOR, AUDIT]
+temp_poll_answers = self.poll_answers
+super(OverrideFieldDataTests, cls).setUpClass() cls.course = CourseFactory.create(enable_ccx=True)
+if y.ndim > 2 or (y.dtype == object and len(y) and not isinstance(y.flat[0], string_types)):
+self.wait_for_ajax() return self.q(css='#u-field-select-account_privacy').visible
+self.wait_for( lambda: "added to this cohort" in self.get_cohort_confirmation_messages(wait_for_messages=True)[0], "Student(s) added confirmation message." )
+with self.assertRaises(ObjectDoesNotExist): CertificateInvalidation.objects.get( generated_certificate=self.generated_certificate, invalidated_by=self.global_staff, active=True, )
+self.assertEqual(len(course_summaries), 1)
+accepts = request.META.get('HTTP_ACCEPT', '*/*')
+currency = models.CharField(default="usd", max_length=8)
+expected_url = reverse( "about_course", args=[self.course.id.to_deprecated_string()] )
+with patch('student.views.get_credit_provider_display_names') as mock_method: mock_method.return_value = providers_list response = self._load_dashboard()
+V = np.zeros((N, n_neighbors, n_neighbors)) nev = min(d_in, n_neighbors) evals = np.zeros([N, nev])
+self.assertEqual(len(mail.outbox), 1) self.assertEqual("Verification photos received", mail.outbox[0].subject)
+for i in range(1, 3): self.tab_nav.go_to_tab("PDF Book {}".format(i))
+K.flat[::n_samples + 1] += alpha[0]
+optional_fields = params.get('fields', '').split(',') return DEFAULT_FIELDS + [field for field in optional_fields if field in OPTIONAL_FIELDS]
+self.assertEqual(response.status_code, 400)
+if (isinstance(role, (CourseStaffRole, CourseBetaTesterRole)) and CourseInstructorRole(role.course_key).has_user(user)): return True return False
+self.assertEquals(block_counts_for_course['problem'], 6) self.assertEquals(block_counts_for_chapter_x['problem'], 3)
+A = np.empty(n_nodes, dtype=object) inertia = list()
+if not is_mysql_running(): msg = colorize('red', "MySQL is not running locally.") print msg sys.exit(1)
+self.wait_for_field(field_id) query = self.q(css='.u-field-{} .u-field-value'.format(field_id)) if not query.present: return None return query.text[0]
+message_type = param_dict['message']
+ridge_gcv.fit(filter_(X_diabetes), y_diabetes, sample_weight=np.ones(n_samples)) assert_equal(ridge_gcv.alpha_, alpha_)
+return course_metadata_utils.course_starts_within(self.start, days)
+with mock_create_basket(expect_called=False): response = self._post_to_view()
+self.mapbias = sharedX( numpy.zeros(self.nmap), name='mb', borrow=True )
+return self._get_modulestore_for_courselike(course_id).get_modulestore_type()
+url(r'^lang_pref/session_language', 'lang_pref.views.update_session_language', name='session_language'),
+for mode_slug, min_price in modes_and_prices: self.create_mode(mode_slug, mode_slug.capitalize(), min_price=min_price)
+all_assets = SortedAssetList(iterable=[], key=key_func) for asset_type, val in course_assets.iteritems(): all_assets.update(val)
+X = np.eye(4) y = np.array(['a', 'b', 'c', 'd'])
+world.wait(1) continue
+error_response(response, "Can't find transcripts in storage for {}".format(old_name))
+return len(self.q(css='.page-content-secondary .team-member'))
+import collections import json import logging from pkg_resources import resource_string
+@patch.object(OrderItem, 'purchased_callback')
+additional_noise[np.abs(additional_noise) < .997] = 0
+clf = svm.NuSVC(nu=0.0) assert_raises(ValueError, clf.fit, X, Y)
+signal_handler.send.assert_called_with('course_deleted', course_key=course_key)
+return _('{section_or_subsection} "{display_name}"').format( section_or_subsection=xblock_type_display_name(xblock), display_name=xblock.display_name_with_default)
+self.assertEqual(302, response.status_code) self.assertEqual('/login', response.get('Location'))
+log.exception(u"Error occurred while retrieving course enrollment details from the cache")
+test_invalid_token("AAAAAAAAAAAAAAAAAAAAAC6iLXGhjkFytJoJSBJZzJ4=", "padding")
+self.assertNotIn( 'start', new_version.get_explicitly_set_fields_by_scope(scope=Scope.settings) ) self.assertNotIn( 'graded', new_version.get_explicitly_set_fields_by_scope(scope=Scope.settings) )
+return self.wrap_xblock(block, view_name, Fragment(), context)
+row = next(reader)
+'datadog',
+has_score = False
+iris = datasets.load_iris() X = iris.data y = iris.target
+event_unmasked = copy.deepcopy(event_info) self.unmask_event(event_unmasked) self.runtime.publish(self, title, event_unmasked)
+user = User.objects.get(email=staff_email) token = default_token_generator.make_token(user) uidb36 = int_to_base36(user.id)
+self.navigate_to_video()
+continue
+request = api.create_credit_request(self.course_key, self.PROVIDER_ID, self.USER_INFO['username'])
+responseparam_element = etree.SubElement(response_element, 'responseparam') responseparam_element.set('partial_answers', partial_answers)
+(n, d) = a.frac() (n2, d2) = b.frac() return Progress(n + n2, d + d2)
+h5file, node = self.init_hdf5(h_file_n, ([sizes[which_set], image_size], [sizes[which_set], 1]), title="SVHN Dataset", y_dtype='int')
+self.instructor_dashboard_page = InstructorDashboardPage(self.browser, self.course_id) self.instructor_dashboard_page.visit() self.cohort_management_page = self.instructor_dashboard_page.select_cohort_management()
+self.split_modulestore.fix_not_found(course_version_locator, user_id)
+config = XDomainProxyConfiguration.current() config.enabled = is_enabled if whitelist: config.whitelist = "\n".join(whitelist) config.save() cache.clear()
+with outer_atomic(read_committed=True):
+pass
+student_views.create_account(strategy.request) self.assert_json_failure_response_is_username_collision(student_views.create_account(strategy.request))
+args.date = parse_datestring(args.date).date()
+assert_almost_equal(errors, errors2) assert_almost_equal(values, values2)
+return Bunch(data=faces.reshape(len(faces), -1), images=faces, target=target, target_names=target_names, DESCR="LFW faces dataset")
+if not hasattr(self.user, '_roles'): self.user._roles = RoleCache(self.user)
+response = self._send_bad_redirection_login() self.assertEquals(response.status_code, 302)
+return self.get_item(xblock.location.for_version(new_id))
+ret_dense = test_func(DENSE_FILTER) ret_sparse = test_func(SPARSE_FILTER) if ret_dense is not None and ret_sparse is not None: assert_array_almost_equal(ret_dense, ret_sparse, decimal=3)
+self.assert_no_xpath(xml, "//label[@class='choicetextgroup_incorrect']", self.context)
+return self.q(css='.team-edit-fields').present
+verify_file_presence(False)
+return finders.FileSystemFinder().find(path)
+course = modulestore().get_course(course_id, depth=4)
+viewer_is_visible = self.q(css=self._bounded_selector(self.VIEWER_SELECTOR)).visible editor_is_visible = self.q(css=self._bounded_selector(self.EDITOR_SELECTOR)).visible return viewer_is_visible or editor_is_visible
+self.q(css=self._bounded_selector("a.link-cross-reference[data-section=data_download]")).first.click()
+assert_page_correct( page=1, page_size=10, expected_start=0, expected_stop=10, expected_next=None, expected_prev=None )
+try: verify_signatures(resp_params)
+self._verify_unit_warning( self.UnitState(is_released=True, publish_state=self.PublishState.UNPUBLISHED_CHANGES, is_locked=False), self.LIVE_UNPUBLISHED_WARNING )
+with remove_ccx(course_key) as (course_key, restore): return restore(self._modulestore.create_xblock( runtime, course_key, block_type, block_id=block_id, fields=fields, **kwargs ))
+TEST_ROOT = REPO_ROOT / "test_root" LOG_DIR = (TEST_ROOT / "log").abspath()
+FEATURES['ENABLE_COURSE_DISCOVERY'] = True
+AFFILIATE_COOKIE_NAME = 'affiliate_id'
+self.set_many({key: value})
+link_map = settings.MKTG_URL_LINK_MAP enable_mktg_site = microsite.get_value( 'ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False) )
+xblock.group_access = value self.store.update_item(xblock, self.user.id)
+config_course_cohorts(course, is_cohorted=True)
+from __future__ import print_function
+from mpl_toolkits.mplot3d import Axes3D Axes3D
+return self.estimators_[index]
+'result': {'start_index': 2, 'end_index': 16, 'quote_length': 3}
+self.dummy_leaf_ = _CFNode(threshold, branching_factor, is_leaf=True, n_features=n_features) self.dummy_leaf_.next_leaf_ = self.root_ self.root_.prev_leaf_ = self.dummy_leaf_
+#)
+return sum(estimator.decision_function(X[:, features]) for estimator, features in zip(estimators, estimators_features))
+definition, children = cls.load_definition(definition_xml, runtime, def_id, id_generator)
+num_braces = 0
+check_ortho(Wx, "x weights are not orthogonal") check_ortho(Wy, "y weights are not orthogonal")
+return rows
+return not self == block_data
+classifier.set_params(n_iter=1000)
+errstring = "migrate_to_split requires at least two arguments" with self.assertRaisesRegexp(CommandError, errstring): self.command.handle()
+X_pred_transformed = kpca.transform(X_pred) assert_equal(X_pred_transformed.shape[1], X_fit_transformed.shape[1])
+assert_array_equal(mb_k_means.predict(X), mb_k_means.labels_)
+y = 0.5 * X.ravel() + rng.randn(n_samples, 1).ravel()
+if isinstance(input_space, CompositeSpace): return any(find_sequence_space(component) for component in input_space.components) if isinstance(input_space, SequenceDataSpace): return True return False
+first_addend = random.randint(-100, 100) second_addend = 10 - first_addend
+return self.conditional.sample_from_conditional( conditional_params=theta, num_samples=num_samples )
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+if not isinstance(r, numbers.Number) or \ r < 0 or \ math.isnan(r) or \ math.isinf(r): return False
+course_module = modulestore().get_course(course_id)
+return get_instructions(xmltree)
+self.course_hierarchy = self.get_course_hierarchy() self.blocks = self.build_course(self.course_hierarchy) self.course = self.blocks['course']
+self._aborting = True
+self.client.logout() resp = self.client.get(self.url_locked) self.assertEqual(resp.status_code, 403)
+from __future__ import unicode_literals
+master_doc = 'index'
+for i in range(X.shape[0]): assert_almost_equal(np.linalg.norm(X[0].data, 1), 1.0)
+LogoutPage(self.browser).visit() AutoAuthPage(self.browser, course_id=self.course_id, staff=False).visit()
+if state is not None: state = json.loads(state)
+self.q( css='#paging-header-select option[value={sort_order}]'.format(sort_order=sort_order) ).click() self.wait_for_ajax()
+certs_api.set_cert_generation_enabled(self.course.id, True)
+mock_logger.exception.assert_called_once_with(expected_log_msg)
+modulestore().update_item(course_module, request.user.id)
+return theano.tensor.constant(np.asarray(value, dtype=theano.config.floatX))
+return Fragment(self.FRAG_CONTENT)
+self.context['return_to_annotation'] = True xml = self.render_to_xml(self.context) self.assert_has_xpath(xml, xpath, self.context)
+return self.data_specs
+return CourseMode.objects.get_or_create( course_id=self.course_key, mode_display_name=mode_name, mode_slug=mode_slug, min_price=min_price, suggested_prices=suggested_prices, currency=currency, _expiration_datetime=expiration_datetime, )
+('body_stats', Pipeline([ ('selector', ItemSelector(key='body')),
+credit_course = CreditCourse.objects.get(course_key=credit_course.course_key) self.assertTrue(credit_course.enabled)
+super(CourseRole, self).__init__(role, course_key.org, course_key)
+self.assert_grade(problem, 'choice_3', 'incorrect') self.assert_grade(problem, 'not_a_choice', 'incorrect')
+if isinstance(self, ClassifierMixin): if self.n_outputs_ == 1: return self.classes_.take(np.argmax(proba, axis=1), axis=0)
+monitoring_dataset = DenseDesignMatrix(X=X)
+context['accomplishment_copy_more_about'] = _("More about {fullname}'s accomplishment").format( fullname=user_fullname )
+from notification_prefs.views import enable_notifications
+_logger.info('loading file %s' % datasets['test_batch']) data = serial.load(datasets['test_batch'])
+reindex_course_and_check_access(self.course.id, self.user)
+self._assert_enable_certs_button_is_disabled()
+self._fields[key.field_name] = value
+t_start = datetime.now() clf.fit(X) delta = (datetime.now() - t_start) time_to_fit = compute_time(t_start, delta)
+css = '.action-close' return self.find_css(css).first.click()
+'corsheaders', 'cors_csrf',
+data_train = fetch_20newsgroups(data_home=data_home, subset='train', categories=None, shuffle=True, random_state=12, remove=remove)
+response = self.client.post(reverse('admin:student_courseaccessrole_add'), data=data) self.assertRedirects(response, reverse('admin:student_courseaccessrole_changelist'))
+assert_equal(grid_search_no_score.best_params_, grid_search.best_params_) assert_equal(grid_search.score(X, y), grid_search_no_score.score(X, y))
+delayed_grade_func = lambda: self._send_grade_response( callback_url, xqueue_header, self.post_dict['xqueue_body'] )
+xT_AT = self.lmul_T(self.transpose_right(x, False)) rval = self.transpose_left(xT_AT, False) return rval
+def _get_coef(self): return (self.feature_log_prob_[1:] if len(self.classes_) == 2 else self.feature_log_prob_)
+merged_start_value = max(min_all_parents_start_date, block_start)
+DEPRECATION_VSCOMPAT_EVENT = 'deprecation.vscompat'
+self.assertFalse(mock_send.called)
+self.update_masquerade(role='staff') self.verify_show_answer_present(True)
+with self.assertNumQueries(0): self._assert_group_assignment(user, VerificationPartitionScheme.DENY)
+REQUIRE_EXCLUDE = ("build.txt",)
+rng = np.random.RandomState(0) X = rng.uniform(size=(10, 3))
+average_times_exact = [] average_times_approx = [] std_times_approx = [] accuracies = [] std_accuracies = [] average_speedups = [] std_speedups = []
+self.set_state_from_lcp()
+self.assertEqual(len(site_configuration_history), 2)
+dog_stats_api.increment( 'DjangoXBlockUserStateClient.{}'.format(evt_name), timestamp=evt_time, sample_rate=self.API_DATADOG_SAMPLE_RATE, )
+self.assertTrue(self._is_valid_key(key), msg="Failed for unicode character {0}".format(unicode_char))
+for sub_grid in self.param_grid: if not sub_grid: if ind == 0: return {} else: ind -= 1 continue
+problem = self.build_problem( choice_type='checkbox', choices=[False, False, True, True], credit_type='edc' )
+response = None
+try: course_assets = self._find_course_assets(course_key) self.asset_collection.remove(course_assets.doc_id) except ItemNotFoundError: pass
+area = area.dtype.type(area)
+self.assertTrue(element_has_text( page=course_outline_page, css_selector='.add-item a.button-new', text='New Unit' ))
+folds_iter = self.iterator(mode="random_slice", num_batches=nfolds, rng=rng) folds = list(folds_iter) return folds
+version = IntegerField()
+return association_response
+self.provide_info(email, password) self.submit()
+self.assertFalse(user.badgeassertion_set.all())
+n_samples = 100 n_features = 500 rank = 5 k = 10
+X, y = datasets.make_hastie_10_2(n_samples=12000, random_state=1)
+module = CapaFactory.create(max_attempts="1", attempts="1") self.assertTrue(module.closed())
+page_size = TEAM_MEMBERSHIPS_PER_PAGE
+email_label = _(u"Email")
+return nltk.tree.Tree(n.node, n[2:])
+plt.figure(figsize=(20, 6))
+X, y = make_classification(n_samples=500, n_features=25, n_clusters_per_class=1, n_informative=15, random_state=RANDOM_STATE)
+yield (check_non_transformer_estimators_n_iter, name, estimator, 'Multi' in name)
+self.check_get_and_set_methods(tab)
+self.request.user = student self.request.session = {}
+assert_raises(ValueError, lambda: GradientBoostingClassifier().feature_importances_)
+VS = VectorSpace(dim=27) VS_sparse = VectorSpace(dim=27, sparse=True)
+self.data = { "access_token": self.access_token, "client_id": self.client_id, }
+store.get_items(SlashSeparatedCourseKey('abc', 'def', 'ghi'), qualifiers={'category': 'vertical'})
+ret = ret[self.quoteCharLen:-self.endQuoteCharLen]
+elif access_point == self.ENROLLMENT_ACCESS_POINT: message_dict = messages.ENROLL_MESSAGES elif access_point == self.COURSEWARE_ACCESS_POINT: message_dict = messages.COURSEWARE_MESSAGES
+np.testing.assert_equal(list(cv), list(wrapped_old_skf.split()))
+self.assert_has_text(xml, "//span[@class='status']/span[@class='sr']", status_mark, exact=False)
+node = mock.Mock(due=1, extended_due=None) self.assertEqual(self.call_fut(node), 1)
+module = CapaFactory.create(rerandomize=RANDOMIZATION.ALWAYS, done=False) self.assertTrue(module.should_show_save_button())
+response = self.send_get( client=self.client, url=reverse('bookmarks'), query_parameters='course_id=invalid' ) bookmarks_data = response.data['results']
+if value_to_mask == "NaN" or np.isnan(value_to_mask): return np.isnan(X) else: return X == value_to_mask
+return LtiConsumer( consumer_name='Consumer Name', consumer_key='Consumer Key', consumer_secret='Consumer Secret' )
+return sum(self.stack_calls(stack) for stack in self._stacks)
+xpath = "//div[@class='%s inline']" % div_class self.assert_has_xpath(xml, xpath, self.context)
+if total_recipients <= settings.BULK_EMAIL_JOB_SIZE_THRESHOLD: routing_key = settings.BULK_EMAIL_ROUTING_KEY_SMALL_JOBS
+assert len(image.shape) == 3 assert len(shape) == 2 shrunk = fit_inside(image, shape) letterboxed = letterbox(shrunk, shape) return letterboxed
+self.assertFalse(library_container.has_validation_not_configured_warning)
+with remove_ccx(location) as (location, restore): return restore( self._modulestore.unpublish(location, user_id, **kwargs) )
+course_id=course_overview.id
+splits = iter(cval.KFold(4, 2)) train, test = next(splits) assert_array_equal(test, [0, 1]) assert_array_equal(train, [2, 3])
+num_examples = {'train': 32561, 'test': 16281}[which_set] assert len(content) == num_examples, (len(content), num_examples)
+multi_db = True
+assert_raises(ValueError, km.fit, [[0., 1.]])
+logging.getLogger().setLevel(logging.ERROR)
+X = 1. / (np.arange(1, 11) + np.arange(0, 10)[:, np.newaxis]) y = np.ones(10)
+self.avg()
+self.assertNotIn(test_discussion.location, self.store.get_orphans(course.id))
+sections_list = [] for chapter in self.get_progress_summary(): sections_list.extend(chapter['sections'])
+return dict(enumerables)[enum_value]
+self._check_params()
+assert_raises(ValueError, AdaBoostClassifier(learning_rate=-1).fit, X, y_class)
+pass
+super(CourseKeyField, self).__init__(**kwargs)
+self.assertEqual( res_json['message'], u"{user} does not exist in the LMS. Please check your spelling and retry.".format(user=invalid_user) )
+PAID_COURSE_REGISTRATION_CURRENCY = ['usd', '$']
+assert_array_almost_equal(clf.coef_, clf_balanced.coef_, 6)
+self.add_credit_course()
+try: problem.grade_answers({'1_2_1': '42'})
+if not self.hyperparameter_periodicity.fixed: periodicity_gradient = \ 4 * arg / self.length_scale**2 * cos_of_arg \ * sin_of_arg * K periodicity_gradient = periodicity_gradient[:, :, np.newaxis]
+return etree.Element('multiplechoiceresponse')
+return _graph_connected_component(graph, 0).sum() == graph.shape[0]
+self._subcluster_norms = row_norms( self.subcluster_centers_, squared=True)
+req_factory_method = getattr(self.request_factory, method.lower()) request = req_factory_method('/dummy-url') request.user = self.user
+counter = [0, 0, 0] for chosen in self.permut: index = counter[chosen] counter[chosen] = (counter[chosen] + 1) % self.limit[chosen] yield chosen, index
+if self.store_precision: precision = self.precision_ else: precision = pinvh(self.covariance_) return precision
+context['document_title'] = _("Invalid Certificate")
+self.annotation.delete() self.assertEqual(u"", self.reg.csv_report_comments)
+pass
+attempt = SoftwareSecurePhotoVerification.objects.create(user=self.user) attempt.mark_ready() attempt.submit() attempt.approve()
+return self._cohort_name(self.q(css=self._bounded_selector(".group-header-title .title-value")).text[0])
+the_html2 = problem.get_html() self.assertEquals(the_html, the_html2)
+MESSAGE = _('Unable to switch to specified branch. Please check your branch name.')
+for backend_path in settings.AUTHENTICATION_BACKENDS: backend = auth.load_backend(backend_path) if backend.get_user(user.id): return backend_path
+if self.eigen_solver == 'auto': if K.shape[0] > 200 and n_components < 10: eigen_solver = 'arpack' else: eigen_solver = 'dense' else: eigen_solver = self.eigen_solver
+assert_array_almost_equal( X_dense.astype(dtype), X2_dense, 15) assert_array_almost_equal( y_dense.astype(dtype), y2, 15)
+self._auto_publish_no_children(item.location, item.location.category, user_id, **kwargs) self._auto_publish_no_children(parent_usage_key, item.location.category, user_id, **kwargs) return item
+with dog_stats_api.timer('instructor_tasks.time.overall', tags=[u'action:{name}'.format(name=action_name)]): task_progress = task_fcn(entry_id, course_id, task_input, action_name)
+override_field_for_ccx(self.ccx, self.course, field, value)
+y1 = np.array([[0, 1, 1], [1, 0, 1]]) y2 = np.array([[0, 0, 1], [1, 0, 1]])
+response = self.client.get(self.url) self.assertEqual(response.status_code, 200)
+self.assertIn(self.provider.name, response.content)
+self.assertEquals(preview.latex_preview('2*3'), r'2\cdot 3')
+credit_api.set_credit_requirement_status( self.user.username, self.course.id, "reverification", "midterm", status="failed", reason={} )
+return json.loads(response.content)["access_token"]
+axes = self._output_axes assert len(axes) == 4
+default_store=ModuleStoreEnum.Type.mongo
+hint_index = int(data['hint_index']) return self.get_demand_hint(hint_index)
+self.assertFalse(self._search_for_content(self.EDITED_SEARCH_STRING))
+PASSWORD_MIN_LENGTH = 2 PASSWORD_MAX_LENGTH = 75
+url = self.homework.location.to_deprecated_string() found_unit = tools.find_unit(self.course, url) self.assertEqual(found_unit.location, self.homework.location)
+idx = 0 start_idx = end_idx for rd in rings: start_idx = downsample_ring(img, idx, rd, output, start_idx) idx += rd
+X, y = make_classification(n_samples=200, n_features=20, n_informative=3, n_redundant=2, n_repeated=0, n_classes=8, n_clusters_per_class=1, flip_y=0.0, class_sep=10, shuffle=False, random_state=0)
+return _("{currency_symbol}{price}").format(currency_symbol=currency_symbol, price=price)
+plt.subplot(2, 3, pairidx + 1)
+for index, cert in enumerate(certificates_list): if certificate_id is not None: if int(cert['id']) == int(certificate_id): match_cert = cert
+BASE_URL = os.environ.get('test_url', 'http://localhost:8003')
+self.user_partition.scheme.current_group = groups[1] group2_id = self.partition_service.get_user_group_id_for_partition(user_partition_id) self.assertEqual(group2_id, groups[1].id)
+X = make_low_rank_matrix(n_samples=n_samples, n_features=n_features, effective_rank=effective_rank, tail_strength=tail_strength, random_state=generator)
+CertificateGenerationConfiguration.objects.create(enabled=True)
+response = client.delete(url) self.assertEqual(expected_status, response.status_code) return response
+chapter = modulestore().get_item(chapter.location.version_agnostic()) del chapter.visible_to_staff_only modulestore().update_item(chapter, self.user_id)
+return CaselessPreservingLiteral(char)
+with self.assertNumQueries(0): RestrictedCourse.is_restricted_course(course_id) RestrictedCourse.is_disabled_access_check(course_id)
+if self._user_info is None: user_info = self.get_user_info() if user_info is not None: self._user_info = self.get_user_info() return self._user_info
+if strategy == "mean": if missing_values != 0: n_non_missing = n_zeros_axis
+self.check_anonymous_request_rejected('post') self.assertFalse(mock_log.info.called)
+self.courseware_page.go_to_sequential_position(position) self.problem_page.wait_for_element_presence( self.problem_page.CSS_PROBLEM_HEADER, 'wait for problem header' ) self.assertEqual(self.problem_page.problem_name, problem_name)
+return get_endpoint(settings.EDXNOTES_PUBLIC_API, path)
+start = request.json.get('start', CourseFields.start.default) run = request.json.get('run')
+self.case_sensitive = True
+fullname_with_subpath = content_path.replace(static_dir, '') if fullname_with_subpath.startswith('/'): fullname_with_subpath = fullname_with_subpath[1:] asset_key = StaticContent.compute_location(target_id, fullname_with_subpath)
+raise NotImplementedError
+MAX_ASSET_UPLOAD_FILE_SIZE_URL = ""
+labels_csr, new_inertia_csr = _labels_inertia( X_mb_csr, x_mb_squared_norms_csr, new_centers_csr) assert_greater(new_inertia_csr, 0.0) assert_less(new_inertia_csr, old_inertia_csr)
+if self.category == 'course': node.set('org', self.location.org) node.set('course', self.location.course)
+components = rng.binomial(1, 0.5, (n_components, n_features)) * 2 - 1 return 1 / np.sqrt(n_components) * components
+return data_key + 't1.val1.' + unicode(block_key)
+def __init__(self): super(NoBatchSizeError, self).__init__("Neither the " "TrainingAlgorithm nor the model were given a specification " "of the batch size.")
+L = np.empty((max_features, max_features), dtype=Gram.dtype)
+with patch_edxnotes_api_settings(None): self.assertRaises(ImproperlyConfigured, get_endpoint_function)
+rules_for_course = CountryAccessRule.objects.select_related('country').filter( restricted_course__course_key=course_id )
+return CourseUserGroup.objects.filter(course_id=course_key, group_type=CourseUserGroup.COHORT, name=name).exists()
+'messages': messages,
+self.section = get_module_for_descriptor( self.effective_user, self.request, self.section, self.field_data_cache, self.course_key, self.position, course=self.course, )
+return self.q(css=self._bounded_selector("a.link-to-group-settings")).first.click()
+query = self._qs(self.browser.current_url) return 'code' in query
+if (self.is_model_valid is not None and not self.is_model_valid(base_estimator, X_subset, y_subset)): continue
+htmlhelp_basename = 'theanodoc'
+output_buffer = StringIO() csvwriter = csv.writer(output_buffer) csvwriter.writerows(self._get_utf8_encoded_rows(rows)) self.store(course_id, filename, output_buffer)
+hyper_parameters = expand(flatten(state.hyper_parameters), dict_type=ydict)
+user_answer = json.loads(user_answer)
+assert((display_src and display_class) or (not display_src and not display_class))
+compress = 3
+self.login() self.enroll(course_id)
+clf = GradientBoostingClassifier(n_estimators=10, random_state=1) clf.fit(iris.data, iris.target)
+print "Failed with load_factor of {}".format(load_factor)
+post_params['signature'] = "invalid"
+self.assertInCourseListing(existent_course_key)
+est = DBSCAN().fit(X, sample_weight=sample_weight) core4 = est.core_sample_indices_ label4 = est.labels_ assert_array_equal(core1, core4) assert_array_equal(label1, label4)
+return cls.objects.get(default=True).icon
+for browser_lang in lang_headers: if browser_lang in system_released_languages: if request.session.get(LANGUAGE_SESSION_KEY, None) is None: request.session[LANGUAGE_SESSION_KEY] = unicode(browser_lang) break
+self.assertDeserializeEqual(False, 'false') self.assertDeserializeEqual(True, 'true')
+'dark_lang',
+if self.tokenizer is not None: return self.tokenizer token_pattern = re.compile(self.token_pattern) return lambda doc: token_pattern.findall(doc)
+assert_array_equal(clf.feature_log_prob_, (num - denom))
+return self.q(css='.wrapper-release .copy').first.text[0]
+from third_party_auth.tasks import SAML_XML_NS XMLDSIG_XML_NS = 'http://www.w3.org/2000/09/xmldsig#'
+response = self.client.get(url) self.assertEquals(response.status_code, 403)
+children = [unicode(child) for child in children] return children.index(usage_key)
+self.add_to_cart() self.request.user = self.user context = user_has_cart_context_processor(self.request) self.assertFalse(context['should_display_shopping_cart_func']())
+pass
+X = self._validate_X_predict(X)
+pass
+url(r'^{}/problem_grade_distribution/(?P<section>\d+)$'.format(settings.COURSE_ID_PATTERN), 'class_dashboard.views.section_problem_grade_distrib', name="section_problem_grade_distrib"),
+if published_parents > 1: non_orphan_parents = self._get_non_orphan_parents(location, all_parents, revision) return cache_and_return(non_orphan_parents[0].replace(run=location.course_key.run))
+score_css = 'div.problem-progress' expected_text = '({})'.format(score) world.wait_for(lambda _: world.css_has_text(score_css, expected_text))
+return self.q(css='.action-edit-members').present
+if not self.is_cohorted: return False return bool(self.cohort_config.get( "auto_cohort", False))
+fallback_url = settings.STATIC_URL + settings.DEFAULT_COURSE_ABOUT_IMAGE_URL course_overview = self._assert_image_urls_all_default(modulestore_type, course_image, fallback_url)
+partitioned_fields = self.partition_fields_by_scope(block_type, fields)
+all_item_keys = self._locations_in_subtree(self) newrelic.agent.add_custom_parameter('seq.num_items', len(all_item_keys))
+boston = load_boston() perm = rng.permutation(boston.target.size) boston.data = boston.data[perm] boston.target = boston.target[perm]
+if (not partial and param.kind != _VAR_POSITIONAL and param.default is _empty): raise TypeError('{arg!r} parameter lacking default value'. \ format(arg=param_name))
+NON_VERIFIED_MODES = [HONOR, AUDIT, NO_ID_PROFESSIONAL_MODE]
+f = ignore_warnings X = sp.lil_matrix((3, 1)) X[0, 0] = -1 X[2, 0] = 1
+return (self.start_line, self.start_column, self.rule.rule_id)
+(['honor', 'verified', 'audit', 'credit'], 'credit'),
+clf_balanced = PassiveAggressiveClassifier(C=0.1, n_iter=1000, class_weight="balanced") clf_balanced.fit(X2, y2)
+FEATURES['AUTOMATIC_AUTH_FOR_TESTING'] = True
+val_course_data = self.get_cached_val_data_for_course(video_profile_names, self.location.course_key) val_video_data = val_course_data.get(self.edx_video_id, {})
+self.q(css='nav.%s * .previous-page-link' % position)[0].click() self.wait_until_ready()
+response = self.session.post( url, data=self._encode_post_dict(self._advanced_settings), headers=self.headers, )
+if self.n_components_ == 0: return np.eye(n_features) / self.noise_variance_ if self.n_components_ == n_features: return linalg.inv(self.get_covariance())
+return key_checker(['type'])(tab_dict, raise_error)
+BULK_EMAIL_DEFAULT_FROM_EMAIL = 'no-reply@example.com'
+if block_type == 'course': block_id = course_key.run xblock = self.create_xblock(runtime, course_key, block_type, block_id, fields) return self.update_item(xblock, user_id, allow_not_found=True)
+self.update_state( course_key=destination_course_key, new_state=self.State.IN_PROGRESS, user=user, allow_not_found=True, source_course_key=source_course_key, display_name=display_name, )
+continue
+print("Estimated B") print(np.round(pls2.coef_, 1)) pls2.predict(X)
+assert_almost_equal(mcc, 0.)
+self.assertIsNone(get_template_request_context())
+KT = np.zeros_like(KT) for i in range(len(T)): for j in clf.support_: KT[i, j] = np.dot(T[i], X[j])
+if "TRACKING_IGNORE_URL_PATTERNS" in ENV_TOKENS: TRACKING_IGNORE_URL_PATTERNS = ENV_TOKENS.get("TRACKING_IGNORE_URL_PATTERNS")
+return self.descriptor.validate()
+B, IR, IC, C = ishp4 K, KR, KC, CH = kshp4
+self.assertContains(response, 'course-container', 3) self._assert_responses(response, program_count)
+with remove_ccx(course_key) as (course_key, restore): return restore(self._modulestore.get_orphans(course_key, **kwargs))
+created = models.DateTimeField(db_index=True) state = models.TextField(null=True, blank=True) grade = models.FloatField(null=True, blank=True) max_grade = models.FloatField(null=True, blank=True)
+raise TypeError('Expected sequence or array-like, got ' 'estimator %s' % x)
+self.cohort_default_student_username = "cohort_default_student" self.cohort_default_student_email = "cohort_default_student@example.com" StudioAutoAuthPage( self.browser, username=self.cohort_default_student_username, email=self.cohort_default_student_email, no_login=True ).visit()
+choose_track_url = reverse('course_modes_choose', args=[unicode(self.course.id)]) self.client.post(choose_track_url, self.POST_PARAMS_FOR_COURSE_MODE[CourseMode.DEFAULT_MODE_SLUG])
+course = modulestore().get_course(course_id, depth=4)
+'student_id': self.student_id, 'module_state_key': self.module_state_key, 'state': str(self.state)[:20],
+self.notes = list()
+return self.system.render_template('lti.html', self.get_context())
+self.store_precision = True
+assert_true(id1, id2)
+pass
+raw_student_words = data.getall('student_words[]') student_words = filter(None, map(self.good_word, raw_student_words))
+assert_array_equal(ransac_estimator.inlier_mask_, ref_inlier_mask)
+get_response = self.send_get(self.client) self.assertEqual(new_name, get_response.data["name"])
+video = self.store.get_item(child_to_move_location) self.assertEqual( old_parent_location, video.get_parent().location.for_branch(None) )
+time_last_reset = history[0].time_set
+from __future__ import unicode_literals
+mocked_attr.return_value = {'foo': 'bar'} self.assertEqual(utils.get_course_chapters(self.course_key), [])
+return URLPath.create_article(parent, slug, title=slug)
+self.assertEqual(new_draft_version, new_published_version)
+self.add_credit_course()
+self.export_fs = None
+self.generated_certificate.invalidate()
+y = np.dot(X, w)
+if len(self.classes_) == 2: return dec_func[:, 1] - dec_func[:, 0] return dec_func
+return cls._categories[int(scalar_label)]
+response = requests.get(self.url) self.assertEqual(response.status_code, 400)
+order_item_dict = dict((feature, getattr(purchased_course, feature, None)) for feature in order_item_features)
+X_checked = assert_warns(DeprecationWarning, check_array, [42], ensure_2d=True) assert_array_equal(np.array([[42]]), X_checked)
+import matplotlib matplotlib.use('Agg')
+for student in students[:2]: GeneratedCertificateFactory.create( user=student, course_id=self.course.id, status=status, )
+self.field_data = inheriting_field_data(kvs=DictKeyValueStore())
+expected_y = y.mf_update( state_below = v.upward_state(v_state))
+response = self._get_page( 'verify_student_upgrade_and_verify', course.id, expected_status_code=302 ) self._assert_redirects_to_dashboard(response)
+meta = {} if user_info.profile.meta: meta = json.loads(user_info.profile.meta)
+url = reverse('verify_student_start_flow', kwargs={'course_id': unicode(course_id)}) self.assertRedirects(response, url)
+return ' '.join(scopes)
+for directory in dirs: filepath = path(directory) / filename if filesystem.exists(filepath): return filepath raise ResourceNotFoundError(u"Could not find {0}".format(filename))
+unicode_text = "好 各位同学".decode('utf-8') self.assertIn(unicode_text, self.video.captions_text)
+self.assertEqual(url_path, '/embargo/blocked-message/courseware/default/')
+csv_rows = [row for row in unicodecsv.DictReader(csv_file)]
+return int(label.split(' (')[1].split(')')[0])
+('started', 'started'),
+super(DuplicateCourseError, self).__init__( u'Cannot create course {}, which duplicates {}'.format(course_id, existing_entry) ) self.course_id = course_id self.existing_entry = existing_entry
+y = np.zeros((10, 2))
+'oauth2_provider',
+possible_params = selector._get_param_names() possible_params.remove('score_func') selector.set_params(**{possible_params[0]: self.param})
+return (p.name != 'self' and p.kind != p.VAR_KEYWORD and p.kind != p.VAR_POSITIONAL)
+inv = not callable(kernel)
+from theano.tensor.nnet.conv import conv2d, ConvOp
+if is_staff: user.is_staff = True user.save() CourseEnrollment.enroll(user, course_key)
+return self._batch_size(is_numeric=True, batch=batch)
+if 0 not in classes_k and y_nnz[k] < y.shape[0]: classes_k = np.insert(classes_k, 0, 0) class_prior_k = np.insert(class_prior_k, 0, zeros_samp_weight_sum)
+used_ids = set(p.id for p in course.user_partitions) return generate_int_id(used_ids=used_ids)
+assert all(np.all(this_point.cv_validation_scores == 0.0) for this_point in gs.grid_scores_ if this_point.parameters['parameter'] == FailingClassifier.FAILING_PARAMETER)
+a = "this is \xe0 test" expected = 'this is a test' assert_equal(strip_accents_ascii(a), expected)
+return cls.objects.create( enrolled_by=user, enrolled_email=email, state_transition=state_transition, reason=reason, enrollment=enrollment )
+assert_raises(ValueError, plot_partial_dependence, clf, X, [{'foo': 'bar'}])
+return PROCESSOR_MODULE.render_purchase_form_html(cart, **kwargs)
+exception_type = _mk_exception(exception.etype)[0] exception = exception_type(report)
+rval_axes = self.output_axes assert len(rval_axes) == 4
+#keep_warnings = False
+grad = numpy.gradient(a) grad_x, grad_y = grad
+mlp = MLPClassifier(hidden_layer_sizes=(50,), max_iter=10, alpha=1e-4, algorithm='sgd', verbose=10, tol=1e-4, random_state=1, learning_rate_init=.1)
+course = store.get_course(course_key) self.enroll(course, True)
+y = (y > 4).astype(np.int)
+if raw: self.set_raw_content(content) else: self.set_content(content) self.save()
+return dict((feature, getattr(student, feature)) for feature in features)
+pass
+cache_key = self._cache_key_for_kvs_key(kvs_key) if cache_key not in self._cache: raise KeyError(kvs_key.field_name) return self._cache[cache_key][kvs_key.field_name]
+np.array([[], []]),
+descending_grades = sorted(grade_cutoffs, key=lambda x: grade_cutoffs[x], reverse=True) for possible_grade in descending_grades: if percentage >= grade_cutoffs[possible_grade]: letter_grade = possible_grade break
+try: AdaGrad(-1.0) allows_null = True except AssertionError: allows_null = False assert not allows_null
+key = safe_key('key', 'a' * 300, 'version') self.assertTrue(self._is_valid_key(key))
+response_dict = self._get_page_data(response) self.assertEqual(response_dict['full_name'], full_name)
+library = self.store.get_library(library_key) self.assertEqual(library.location.library_key, library_key)
+(False, False), (False, True),
+super(NoneToEmptyManager, self).__init__()
+patcher = patch('shoppingcart.models.analytics') self.mock_tracker = patcher.start() self.addCleanup(patcher.stop)
+self.store.convert_to_draft(self.vertical_y1a, self.user_id)
+preview_lang = request.GET.get('preview-lang', None) if not preview_lang and auth_user: preview_lang = get_user_preference(request.user, DARK_LANGUAGE_KEY)
+mock_create.return_value = None
+'correct': 'is_correct',
+TRACKING_IGNORE_URL_PATTERNS = [r'^/event', r'^/login', r'^/heartbeat']
+contribution_amount = request.session.get( 'donation_for_course', {} ).get(unicode(course_key), '')
+CountryAccessRule.objects.create( rule_type=CountryAccessRule.BLACKLIST_RULE, restricted_course=self.restricted_course, country=Country.objects.get(country='US') )
+password_label = _(u"Password")
+else: from . import __check_build from .base import clone
+'ENABLE_ONLOAD_BEACON': False,
+return {}
+value = json.loads(value)
+if is_staff: user = User.objects.get(email=email) user.is_staff = True user.save()
+from django.template.base import ( TemplateSyntaxError, Library, token_kwargs, TemplateDoesNotExist ) from django.template.loader_tags import IncludeNode
+TEST_DATA = None
+response_providers = get_credit_provider_display_names(self.course_key) self.assertListEqual(self.PROVIDERS_LIST, response_providers)
+raise NotImplementedError("Package resources do not support URLs")
+self.browser.refresh()
+rng = np.random.RandomState([2012, 10, 9]) batch_size = 5 rows = 10 cols = 9 channels = 3 filter_rows = 4 filter_cols = filter_rows + 1 num_filters = 6
+course_id = CourseKeyField( max_length=255, db_index=True, help_text="Which course is this group associated with?", )
+oh = OneHotEncoder(handle_unknown='42') oh.fit(X) assert_raises(ValueError, oh.transform, y)
+cm = confusion_matrix(y_true, y_pred, labels=[0, 1]) assert_array_equal(cm, [[19, 4], [4, 3]])
+return self.default_modulestore
+self.command.handle('fake/course/id', all=False) self.assertTrue(mock_log.exception.called)
+with self.assertRaisesRegexp(CommandError, "^No courses found for orgs:"): self._run_command("other_org")
+with override_settings(REGISTRATION_EXTRA_FIELDS=extra_fields_setting): response = self.client.get(self.url) self.assertHttpOK(response)
+sampling_updates = model.get_sampling_updates(layer_to_state, theano_rng) assert layer_to_state[model.visible_layer] in sampling_updates
+self.assertNotIn('error_code', json.loads(response.content))
+from __future__ import unicode_literals
+X = self._validate_X_predict(X)
+self._base_test_extauth_auto_activate_user_with_flag(log_user_string="inactive@stanford.edu")
+mock_get.return_value.content = json.dumps({}) self.assertRaises(EdxNotesParseError, helpers.get_notes, self.request, self.course)
+current_users_state = self._get_users_state() self._check_response(users_state_before_fail, current_users_state)
+self.assertEqual(len(mail.outbox), 0)
+def capture(f, mapping=mapping): new_f = lambda *args: f(mapping.flatten(args, return_tuple=True)) return new_f
+team = self.post_create_team(data=self.build_team_data( name="New team", course=self.test_course_1, description="Another fantastic team", ), user=user)
+self.assertTrue(self.store.has_changes(xblock))
+RateLimitConfiguration.objects.create(enabled=False)
+else: if bootstrap: indices = random_state.randint(0, n_samples, max_samples) else: indices = sample_without_replacement(n_samples, max_samples, random_state=random_state)
+super(SAMLProviderConfig, self).clean() self.other_settings = clean_json(self.other_settings, dict)
+if decision in self.FAILED_DECISIONS: signed_field_names.remove("auth_amount")
+data = {} if headers and 'Accept' in headers: data['CONTENT_TYPE'] = headers['Accept'] response = self.client.get(url, data)
+config_course_cohorts(course, is_cohorted=False, discussion_topics=["General", "Feedback"])
+action_name = ugettext_noop('generated') task_fn = partial(upload_problem_responses_csv, xmodule_instance_args) return run_main_task(entry_id, task_fn, action_name)
+pass
+self.q(css='button.signatory-panel-save').click() self.mode = 'details' self.wait_for_ajax() self.wait_for_signatory_detail_view()
+loss, grad, p = _multinomial_loss_grad(w, X, Y, alpha, sample_weight) sample_weight = sample_weight[:, np.newaxis]
+if tasks.environment.dry_run: tasks.environment.info("install npm_assets") return
+if bulk_ops_record.active: return
+resp = self.client.get_html('/home/') self.assertContains( resp, '<h1 class="page-header">Studio Home</h1>', status_code=200, html=True )
+termination_criterion = EpochCounter(5)
+STUDIO_VIEW = 'studio_view'
+coefs2 = ridge_regression( X * np.sqrt(sample_weight)[:, np.newaxis], y * np.sqrt(sample_weight), alpha=alpha, solver=solver) assert_array_almost_equal(coefs, coefs2)
+n_samples = 100
+from sklearn import datasets, svm, metrics
+project = u'edX' copyright = u'2013, EdX Doc Team'
+return user_profile.requires_parental_consent()
+if course_key is None: return self._bulk_ops_record_type()
+return event['event_type'].startswith('edx.team.')
+if settings.COMPREHENSIVE_THEME_DIR: enable_comprehensive_theme(settings.COMPREHENSIVE_THEME_DIR)
+self.cart.start_purchase() self.cart.purchase()
+self.assertEqual(self.team_membership11.last_activity_at, current_last_activity)
+n_samples, n_features = X.shape
+X = [X] if isinstance(X, Mapping) else X
+DAG_CHILDREN_MAP = [[1, 2], [3], [3, 4], [5, 6], [], [], []]
+call_command('manage_group', TEST_GROUP, '--permissions', 'auth:Group:change_group') self.check_groups([TEST_GROUP]) self.check_permissions(TEST_GROUP, ['change_group'])
+return self.find_css("#start_date").first.attrs('value')[0]
+if not self.fields['download_video'].is_set_on(self): self.download_video = self.download_video self.force_save_fields(['download_video'])
+if delete_published: item['_id']['revision'] = MongoRevisionKey.published to_be_deleted.append(item['_id'])
+self.login_page.login(email=email, password=password)
+overview = CourseOverview.get_from_id(self.course_default.id) with self.assertRaises(ValueError): access.has_access(self.user, '_non_existent_action', overview)
+response = render_to_response('provider_login.html', { 'error': error, 'return_to': return_to })
+data_home = get_data_home(data_home) shutil.rmtree(data_home)
+for field in self.fields.values(): if field.scope in (Scope.parent, Scope.children): continue
+account_settings = get_account_settings(self.default_request) self.assertEqual("Mickey Mouse", account_settings["name"])
+assert_equal(v_measure_score(true_labels, labels), 1.0) assert_greater(inertia, 0.0)
+self.X_topo_space = view_converter.topo_space
+#html_show_sourcelink = True
+mode_result = 6
+FEATURES['ENFORCE_PASSWORD_POLICY'] = False FEATURES['ENABLE_MAX_FAILED_LOGIN_ATTEMPTS'] = False FEATURES['SQUELCH_PII_IN_LOGS'] = False FEATURES['PREVENT_CONCURRENT_LOGINS'] = False FEATURES['ADVANCED_SECURITY'] = False PASSWORD_MIN_LENGTH = None PASSWORD_COMPLEXITY = {}
+super(ContainerBase, self).setUp(is_staff=is_staff)
+group_id, user_partition_id = get_masquerading_group_info(self.test_user, self.course.id) self.assertIsNone(group_id) self.assertIsNone(user_partition_id)
+return OrderedDict()
+return self._is_element_visible("#comment_{} .response-body".format(comment_id))
+problem_info = prob_grade_distrib[child.location]
+'Content-Type': 'application/x-www-form-urlencoded',
+return self._tfidf.transform(X, copy=False)
+return self.q(css=".xblock-message.information").first.text[0]
+'ENABLE_FOOTER_MOBILE_APP_LINKS': False,
+if user: state_object.updated_user = user
+TRACK_MAX_EVENT = 50000
+wrappers.insert(0, wrap_with_license)
+from __future__ import unicode_literals
+return self.client.patch(url, data=kwargs.get('data', None))
+self.wait_for_field(field_id) self.wait_for_ajax() return self.q(css='.u-field-{} .u-field-value .u-field-value-readonly'.format(field_id)).text[0]
+return self.q(css=self.xblock_component_selector)
+self.addCleanup(patcher.stop) self.addCleanup(self._mock_paver_needs.stop)
+self.assertFalse( CourseEnrollment.objects.filter(course_id=self.course.id, user=student).exists() )
+self.assertEqual(result['contents'], 'Test HTML')
+reserved = _("All rights reserved") context['copyright_text'] = u'&copy; {year} {platform_name}. {reserved}.'.format( year=settings.COPYRIGHT_YEAR, platform_name=platform_name, reserved=reserved )
+def test_no_auth(self): self.logout() self.api_response(expected_response_code=401)
+new_module_store_setting['default']['OPTIONS']['stores'] = convert_old_stores_into_list( module_store_setting ) module_store_setting = new_module_store_setting
+total_amount = PaidCourseRegistration.get_total_amount_of_purchased_item(self.course_key) self.assertEqual(total_amount, 36)
+return [mock.call(self.store, course.id) for course in courses]
+for type_list in valid_types: if r in type_list: return True if int(r / 10.) in type_list and (r % 10) == 0: return True
+return xmodule_instance_args.get('xqueue_callback_url_prefix', '') if xmodule_instance_args is not None else ''
+effective_diff = np.sum((new_centers - old_centers) ** 2) assert_almost_equal(incremental_diff, effective_diff)
+if 'minimum_grade_credit' in request.json: update_credit_course_requirements.delay(unicode(course_key))
+self.assertEquals(self.conn.get_definitions.call_count, 0)
+return self._expiration_datetime
+root = CourseFactory.build(days_early_for_beta="null") sequence = SequenceFactory.build(parent=root) ProblemFactory.build(parent=sequence)
+fig = plt.figure() fig.subplots_adjust(left=0.05, right=0.95, wspace=0.05)
+for _ in xrange(30): response = self.client.post('/admin/login/', post_params) self.assertEquals(response.status_code, 200)
+self.do_shuffle(self.xml, problem) self.do_answer_pool(self.xml, problem)
+if not preview_lang: return
+tagger_get_structure.sample_rate = 1
+cls.engine().remove(cls.DOCUMENT_TYPE_NAME, [course_team.team_id])
+self.client.logout() response = self.client.post(reverse('donation')) self.assertEqual(response.status_code, 404)
+self.assertEqual(len(courses_list), 2) self.assertTrue(all(isinstance(course, CourseSummary) for course in courses_list))
+if self._get_version(draft_block) != self._get_version(published_block): return True
+self.position = position
+if not settings.FEATURES.get('ENABLE_EXPORT_GIT'): filtered_list.append('giturl')
+self._initialize_mixed(mappings={})
+if grad.shape[0] > n_features: grad[-1] = z0.sum() return out, grad
+self.centroids_ = np.empty((n_classes, n_features), dtype=np.float64) nk = np.zeros(n_classes)
+return JsonResponse(result, encoder=EdxJSONEncoder)
+return aside_id.definition_key
+name_instructions = _(u"Your legal name, used for any certificates you earn.")
+assert test.X.shape[0] % batch_size == 0
+self.assertEqual(test, expected)
+authentication_classes = (authentication.SessionAuthentication,) permission_classes = (ApiKeyHeaderPermission,) queryset = User.objects.all().prefetch_related("preferences") serializer_class = UserSerializer paginate_by = 10 paginate_by_param = "page_size"
+y = np.array([3, 7, 5, 9, 8, 7, 10]) x = np.arange(len(y))
+msg = msg.replace('&#60;', '&lt;')
+resp = self.assert_enrollment_status(expected_status=status.HTTP_400_BAD_REQUEST)
+xblock_info = self._get_xblock_info(chapter.location) self._verify_visibility_state(xblock_info, VisibilityState.live)
+save_button_css = '%s %s' % (self.discussion_form_selectors[key], '.action-save') self.q(css=self._bounded_selector(save_button_css)).first.click()
+iterator = SequentialSubsetIterator(10, 3, 4) for i in range(4): iterator.next()
+self.navigate_to_video() execute_video_steps(tab1_video_names)
+#epub_post_files = []
+if not permissions.can_access_self_blocks(requesting_user, course_key): raise PermissionDenied( "Course blocks for '{requesting_username}' cannot be accessed." .format(requesting_username=requesting_user.username) ) return requesting_user
+self.verify_my_team_count(1)
+try: return CourseTeam.objects.get(team_id=team_id) except CourseTeam.DoesNotExist: raise Http404
+return True
+self._access = {}
+return etree.Element("javascriptinput")
+pass
+user_partititons = self.course.user_partitions
+self.course_nav.go_to_vertical('Test Problem 1')
+url_path = "course_team"
+self._params = {}
+if self._impl in ['c_svc', 'nu_svc'] and len(self.classes_) == 2: return -dec_func.ravel()
+self.assertEquals( preview.latex_preview('f(3^2)', functions=['f']), r'\text{f}\left(3^{2}\right)' )
+self.white_label_course = CourseFactory.create() self.white_label_course_mode = CourseModeFactory.create( course_id=self.white_label_course.id, mode_slug=CourseMode.HONOR, min_price=10, suggested_prices='10', )
+self.refresh_course()
+check_node(child.location, None, after_create, self.user_id, None, after_create, self.user_id)
+gs.fit(X, y)
+DOCMODULES = ['sklearn', 'matplotlib', 'numpy', 'scipy']
+ground_truth = np.zeros((n_features, n_targets)) ground_truth[:n_informative, :] = 100 * generator.rand(n_informative, n_targets)
+LETTUCE_SERVER_PORT = 8003 XQUEUE_PORT = 8040 YOUTUBE_PORT = 8031 LTI_PORT = 8765 VIDEO_SOURCE_PORT = 8777
+CourseEnrollment.unenroll(self.user, course_key)
+self.course_fixture.add_course_details({'start_date': datetime.now() + timedelta(days=1)})
+if self.edx_video_id and edxval_api: val_youtube_id = edxval_api.get_url_for_profile(self.edx_video_id, "youtube") if val_youtube_id: video_id = val_youtube_id
+self.verify_expected_team_id(team, 'fully-specified-team') del team['id']
+'splash',
+return datetime.now(UTC()) > self.start
+self.create_programs_config() self.mock_programs_api(data={'results': []})
+self.client.logout() ModuleStoreTestCase.tearDown(self)
+'edxmako.shortcuts.marketing_link_context_processor',
+BASE_URL = os.environ.get('test_url', 'http://localhost:8031')
+return '{}.xml'.format(block_id)
+from student.roles import CourseCcxCoachRole, CourseInstructorRole, CourseStaffRole course_locator = course_id
+user = models.ForeignKey(User, db_index=True) site = models.CharField(max_length=255, db_index=True)
+with mock.patch.dict('django.conf.settings.FEATURES', {'ENABLE_MKTG_SITE': True}): result = get_email_params(self.course, True)
+self._updates.append(update)
+return string.replace('\r\n', '\n').replace('\r', '\n')
+return self.client.post(url, post_args)
+self._studio_add_content(0)
+raise NotImplementedError("__eq__ not implemented in class %s." % type(self))
+depth = len(samples)
+#add_function_parentheses = True
+msg = EmailMessage(subject, None, from_address, [to_address]) msg.attach(notification_msg) msg.send()
+type_in_codemirror(self, index, text, find_prefix='$("{}").find'.format(self.editor_selector))
+course = course or self.course self.register_get_threads_response(threads, page, num_pages) ret = get_thread_list(self.request, course.id, page, page_size, topic_id_list) return ret
+if expected_n_iter is not None: assert_equal(len(cv), expected_n_iter) else: expected_n_iter = len(cv)
+return self.q(css='button.start-timed-exam[data-start-immediately="false"]').is_present()
+self.resid = np.array(v0, copy=True) info = 1
+for mode in ('honor', 'verified'): CourseModeFactory.create(mode_slug=mode, course_id=self.course.id)
+output_buffer = StringIO(render_to_string("instructor/instructor_dashboard_2/executive_summary.html", data_dict))
+user = User.objects.get(username=self.USERNAME) request = RequestFactory().get('/url') request.user = user account_settings = get_account_settings(request)
+record = 0 clean = intersect while len(clean) > 0: bad_channel = [] for channel in clean: channel_0 = channels_0[channel] channel_1 = channels_1[channel]
+n_samples = 200
+_, n_features = self.means_.shape
+locator = xblock.location parent_location = modulestore().get_parent_location(locator) if parent_location is None: return None return modulestore().get_item(parent_location)
+man_pages = [ ('index', 'getting_started', u'getting_started Documentation', [u'EdX Doc Team'], 1) ]
+title = getattr(node, 'display_name', None) if not title: title = node.location.to_deprecated_string() return title
+return self.conditional.get_params()
+]
+'LOG_POSTPAY_CALLBACKS': True,
+tags = tags or [u'auto_refund'] create_zendesk_ticket(name, email, subject, body, tags)
+neigh_ind = np.empty(n_samples, dtype='object') neigh_ind[:] = neigh_ind_list
+course2 = CourseFactory.create() CourseModeFactory.create( course_id=course2.id, mode_slug="verified", expiration_datetime=self.PAST ) CourseEnrollmentFactory( course_id=course2.id, user=self.user, mode="verified" )
+new_tab = self.get_item_from_modulestore(usage_key) self.assertEquals(new_tab.display_name, 'Empty')
+CourseModeFactory.create(mode_slug=CourseMode.NO_ID_PROFESSIONAL_MODE, course_id=self.course.id, min_price=100)
+pass
+assert_raise_message(ValueError, msg, check_X_y, X, y, ensure_min_samples=2, ensure_2d=False)
+return not self.q(css='div.ui-loading').visible
+is_author_mode = True
+content = get_cached_content(location) if content is None: try: content = AssetManager.find(location, as_stream=True) except (ItemNotFoundError, NotFoundError): raise
+children = xblock_info['child_info']['children'] self.assertTrue(len(children) > index) return children[index]
+CourseOverviewImageSet.objects.create(course_overview=overview)
+action_name = ugettext_noop('deleted') update_fcn = partial(delete_problem_module_state, xmodule_instance_args) visit_fcn = partial(perform_module_state_update, update_fcn, None) return run_main_task(entry_id, visit_fcn, action_name)
+labels, new_inertia = _labels_inertia( X_mb, x_mb_squared_norms, new_centers) assert_greater(new_inertia, 0.0) assert_less(new_inertia, old_inertia)
+self.certificate_page = CertificatePage(self.browser, self.user_id, self.course_id)
+request = mock.Mock() self.view.check_throttles(request)
+self.current_view = self.MAPPING[tab_name](self.browser) self.current_view.visit()
+abc = RestrictedCourse.objects.get(course_key=new_course_id) abc.delete() with self.assertNumQueries(1): RestrictedCourse.is_restricted_course(new_course_id)
+assert_array_equal(X_2.astype(bool), univariate_filter.inverse_transform(X_r.astype(bool)))
+check_is_fitted(self, 'n_components_') return np.dot(W, self.components_)
+if hasattr(self._dataset, 'get'): rval = self._next(next_index) else: rval = self._fallback_next(next_index)
+response = self.client.get('/?clear-lang') self.assert_tag_has_attr(response.content, "html", "lang", site_lang)
+#latex_paper_size = 'letter'
+if block.date is None: return datetime.max.replace(tzinfo=pytz.UTC) return block.date
+coef_grads, intercept_grads = self._compute_loss_grad( last, n_samples, activations, deltas, coef_grads, intercept_grads)
+X, y = _rescale_data(X, y, sample_weight)
+self.check_event_response_by_key('handle_vote', resource, 'newVotes', test_case['new_votes'])
+CountryAccessRule.objects.create( restricted_course=self.restricted_course, country=self.countries['US'], rule_type=CountryAccessRule.WHITELIST_RULE )
+call_command('reindex_course_team', self.team1.team_id, self.team2.team_id) mock_index.assert_any_call(self.team1) mock_index.assert_any_call(self.team2) mock_index.reset_mock()
+WORKS_WITH_STORES = (ModuleStoreEnum.Type.split, )
+return _check_stop_list(self.stop_words)
+assert len(key) <= 250 self.cache[key] = value
+expected_msg = u'Error: ȧƈƈḗƞŧḗḓ ŧḗẋŧ ƒǿř ŧḗşŧīƞɠ' self.assertEqual(expected_msg, result['success'])
+self.course_outline.select_advanced_tab()
+store = self._verify_modulestore_support(location.course_key, 'unpublish') return store.unpublish(location, user_id, **kwargs)
+'python_bin': None, 'user': 'sandbox',
+if not settings.FEATURES['ADVANCED_SECURITY']: return False min_diff_pw = settings.ADVANCED_SECURITY_CONFIG.get( 'MIN_DIFFERENT_STAFF_PASSWORDS_BEFORE_REUSE', 0 ) return min_diff_pw > 0
+#html_title = None
+return tasks.environment.messages
+self._handouts.append(asset_name)
+reg_codes = cls.objects.filter(course_enrollment=course_enrollment).order_by('-redeemed_at') if reg_codes: return reg_codes[0]
+diabetes_X = diabetes.data[:, np.newaxis, 2]
+pass
+self.assertEqual(module.attempts, 1)
+v_mean, v_var = self.mean_var_v_given_h_s(h_sample, s_sample) v_mean_shape = (batch_size, self.nvis) v_sample = rng.normal(size=v_mean_shape) * tensor.sqrt(v_var) + v_mean
+epoch_num = 1
+return get_test_descriptor_system(*args, **kwargs)
+@task(default_retry_delay=settings.CREDIT_TASK_DEFAULT_RETRY_DELAY, max_retries=settings.CREDIT_TASK_MAX_RETRIES)
+self.assertAcceptEquals( 'rel-ter;q=1.0, rel-ter;q=0.5', self.process_request(accept='rel-ter;q=1.0, rel;q=0.5') )
+AutoAuthPage(self.browser, username=username, email=email, course_id=self.course_id, staff=staff).visit()
+seed_permissions_roles(course_key)
+rng = check_random_state(0) X_train, X_test, y_train, y_test = train_test_split(boston.data, boston.target, random_state=rng)
+response = requests.get(self._get_url("api/v1/annotations"), params={"user": "dummy-user-id"})
+for value in settings.MICROSITE_CONFIGURATION.itervalues(): org_filter = value.get('course_org_filter', None) if org_filter == org: return value.get(val_name, default) return default
+def _complete_linkage(*args, **kwargs): kwargs['linkage'] = 'complete' return linkage_tree(*args, **kwargs)
+K = squareform(K) np.fill_diagonal(K, 1)
+return Mode( self.mode_slug, self.mode_display_name, self.min_price, self.suggested_prices, self.currency, self.expiration_datetime, self.description, self.sku, self.bulk_sku )
+size += (stat.st_size // 512 + 1) * 512
+if instance.id and not instance.contacted: old_instance = ApiAccessRequest.objects.get(pk=instance.id) if instance.status != old_instance.status: _send_decision_email(instance)
+queue_msg = u"<span>{0}</span>".format(_("Error running code."))
+assert_array_almost_equal(X_truth[:, 2], out_X_unstructured[4]) assert_array_almost_equal(X_truth[:, 2], out_X_structured[4])
+UserCourseTagFactory( user=self.student_user, course_id=self.course.id, key='xblock.partition_service.partition_{0}'.format(self.partition.id), value=str(user_partition_group) )
+predictions = [pred_block_i for pred_block_i, _ in prediction_blocks] test_indices = np.concatenate([indices_i for _, indices_i in prediction_blocks])
+min_price = models.IntegerField(default=0)
+task_input = {'statuses_to_regenerate': [CertificateStatuses.deleted, CertificateStatuses.generating]}
+world.clear_courses()
+pass
+assert_array_almost_equal(tpr, tpr_correct, decimal=2) assert_equal(fpr.shape, tpr.shape) assert_equal(fpr.shape, thresholds.shape)
+self._configure_testshib_provider() super(TestShibIntegrationTest, self).test_register()
+batch_axis = self.output_space.get_batch_axis() return self.nonlin.cost(Y=Y, Y_hat=Y_hat, batch_axis=batch_axis)
+X, y = make_blobs(n_samples=500, n_features=2, centers=4, cluster_std=1, center_box=(-10.0, 10.0), shuffle=True,
+certs_api.set_cert_generation_enabled(self.course.id, True)
+url_path = "course_info" def is_browser_on_page(self): return self.q(css='body.view-updates').present
+response_dict = self._get_page_data(response) self.assertEqual(response_dict['current_step'], expected_current_step) self.assertEqual(expected_steps, [ step['name'] for step in response_dict['display_steps'] ])
+if not self.theme_location: return False
+self.register_comment() update_comment(self.request, "test_comment", {}) for request in httpretty.httpretty.latest_requests: self.assertEqual(request.method, "GET")
+from __future__ import division
+course_file = StringIO(xml_data.encode('ascii', 'ignore')) xml_obj = etree.parse(course_file, parser=edx_xml_parser).getroot()
+endorsement = obj.get("endorsement") if endorsement: return self._get_user_label(int(endorsement["user_id"])) else: return None
+if is_css_present(css_selector): return retry_on_exception(lambda: css_find(css_selector)[index].value) else: return ""
+VIDEO_CDN_URL = ENV_TOKENS.get('VIDEO_CDN_URL', {})
+return course_id in [ item.course_id for item in order.orderitem_set.all().select_subclasses("courseregcodeitem") if isinstance(item, cls) ]
+old_group = RandomUserPartitionScheme.get_group_for_user(self.MOCK_COURSE_ID, self.user, self.user_partition) self.assertIn(old_group.id, [0, 1])
+from urllib.error import HTTPError from urllib.parse import quote from urllib.request import urlopen
+return CourseLocator(org, course, run)
+self._start_time = time.time()
+module = CapaFactory.create(rerandomize=RANDOMIZATION.ALWAYS, max_attempts=0, done=True, correct=False) self.assertTrue(module.should_show_reset_button())
+git_import.add_repo(self.TEST_REPO, repo_dir / 'edx4edx_lite', self.TEST_BRANCH)
+super(LibraryNavigationTest, self).setUp() self.lib_page = LibraryEditPage(self.browser, self.library_key) self.lib_page.visit() self.lib_page.wait_until_ready()
+for correctness in ['correct', 'incorrect']: self.problem.correct_map = CorrectMap()
+for layer, state in safe_izip(dbm.hidden_layers, H_hat): upward_state = layer.upward_state(state) layer.get_output_space().validate(upward_state)
+output = FilterActs()(images, filters)
+provider_ids = self.request.GET.get('provider_ids', None)
+for cookie_name in [settings.EDXMKTG_LOGGED_IN_COOKIE_NAME, settings.EDXMKTG_USER_INFO_COOKIE_NAME]: cookie = self.client.cookies[cookie_name] self.assertIn("01-Jan-1970", cookie.get('expires'))
+return self.page.q(css=self.MODAL_SELECTOR).present
+self.assertIn(SESSION_KEY, self.client.session)
+model_ransac = linear_model.RANSACRegressor(linear_model.LinearRegression()) model_ransac.fit(X, y) inlier_mask = model_ransac.inlier_mask_ outlier_mask = np.logical_not(inlier_mask)
+self.assert_register_response_in_pipeline_looks_correct( student_views.register_user(strategy.request), pipeline.get(request)['kwargs'])
+email, password = self._setup_user() self._login(email, password) email, password = self._setup_user(is_staff=True) self._login(email, password)
+self.course_outline.visit() self.course_outline.open_subsection_settings_dialog(0) self.course_outline.select_access_tab() self.course_outline.make_gating_prerequisite()
+self._set_group_access({0: [3]})
+raise NotImplementedError
+microsites_root = settings.MICROSITE_ROOT_DIR if self.has_configuration_set(): settings.DEFAULT_TEMPLATE_ENGINE['DIRS'].append(microsites_root)
+target = iris.target_names[iris.target] clf = GradientBoostingClassifier(n_estimators=10, random_state=1) clf.fit(iris.data, target)
+data = { 'username': username, 'course_key': unicode(course_id) } return self.client.post(self.path, json.dumps(data), content_type=JSON)
+_sample_even_odd(W_list, b_list, new_nsamples, beta, odd=marginalize_odd) _activation_even_odd(W_list, b_list, new_nsamples, beta, odd=not marginalize_odd)
+deadline = models.DateTimeField( default=default_deadline_for_credit_eligibility, help_text=ugettext_lazy("Deadline for purchasing and requesting credit.") )
+some_range = range(10) joined_range = list(chain(*[some_range[slice] for slice in gen_even_slices(10, 3)])) assert_array_equal(some_range, joined_range)
+response = self._generate(username=self.STUDENT_USERNAME) self.assertEqual(response.status_code, 400)
+context["autoSubmitRegForm"] = True
+if len(key) > 250: return False
+resp = self.create_xblock(category='vertical', parent_usage_key=parent_usage_key) self.assertEqual(resp.status_code, 200) return self.response_usage_key(resp)
+clf = svm.SVC(kernel=my_kernel) clf.fit(X, Y)
+for (name, TreeEstimator), dtype in product(ALL_TREES.items(), [np.float64, np.float32]): est = TreeEstimator(random_state=0)
+raise NotImplementedError('get_response is not implemented.')
+settings.LOCALE_PATHS = (theme_root / 'conf/locale',) + settings.LOCALE_PATHS
+assert not isinstance(batch, list)
+self._check_is_symbolic(batch) self._validate(is_numeric=False, batch=batch)
+new_group_2 = RandomUserPartitionScheme.get_group_for_user(self.MOCK_COURSE_ID, self.user, user_partition) self.assertEqual(new_group, new_group_2)
+'corsheaders.middleware.CorsMiddleware', 'cors_csrf.middleware.CorsCSRFMiddleware', 'cors_csrf.middleware.CsrfCrossDomainCookieMiddleware', 'django.middleware.csrf.CsrfViewMiddleware',
+x, y, z = repr.get_value(borrow=True).T do_3d_scatter(x, y, z)
+merged_start_value = min_all_parents_start_date
+X2 = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]]
+kernel = self.kernel return kernel == "precomputed" or callable(kernel)
+self.current_view.close() self.current_view = self.MAPPING["recent"](self.browser)
+TEST_COURSE = (COURSE_NAME, )
+script_element = rendered_html.find('script') self.assertEqual(None, script_element)
+response = self._generate(course_key=self.EXISTED_COURSE_KEY_2) self.assertEqual(response.status_code, 400)
+print _pep8_output(count, violations_list)
+return self.eof_index
+self._assert_courses_in_overview(self.course_key_1, self.course_key_2)
+(plaintext, err_from_stderr) = process.communicate( input=html_message.encode('utf-8') )
+return self.q(css='.wrapper-last-draft').first.text[0]
+euclidean_pkl = pickle.loads(pickle.dumps(euclidean)) pyfunc_pkl = pickle.loads(pickle.dumps(pyfunc))
+self.cohort_management_page.select_cohort(cohort_name) self.cohort_management_page.set_cohort_associated_content_group(content_group) self._verify_settings_saved_and_reload(cohort_name)
+from __future__ import unicode_literals
+X, y = make_regression(random_state=random_state)
+with self.store.branch_setting(ModuleStoreEnum.Branch.draft_preferred, source_course_key): component = self.store.get_item(published_xblock.location) self.assertEqual(component.display_name, updated_display_name)
+if user_must_complete_entrance_exam(request, user, course): return redirect(reverse('courseware', args=[unicode(course.id)]))
+self.courseware_page.visit() csh_problem_page = CrowdsourcehinterProblemPage(self.browser) self.assertGreater(len(self.browser.find_elements_by_class_name('crowdsourcehinter_block')), 0) return csh_problem_page
+return BASE_URL + "/courses/" + self.course_id + "/" + self.url_path
+item = self.cart.orderitem_set.all().select_subclasses()[0] self.assertEquals(item.unit_cost, self.get_discount(self.cost))
+CouponRedemption.remove_code_redemption_from_item(item, user)
+launch_mcd_on_dataset(500, 1, 100, 0.001, 0.001, 350)
+self.assertIn("Some Rights Reserved", self.lms_courseware.course_license)
+overrides = overrides.copy() if overrides else {} overrides.setdefault("course_id", unicode(self.course.id)) return make_minimal_cs_thread(overrides)
+self.update_structure(parent_usage_key.course_key, new_structure)
+source_videos = list(get_videos_for_course(source_course.id)) target_videos = list(get_videos_for_course(destination_course_key)) self.assertEqual(1, len(source_videos)) self.assertEqual(source_videos, target_videos)
+return render_to_string('shoppingcart/cybersource_form.html', { 'action': get_purchase_endpoint(), 'params': get_signed_purchase_params(cart), })
+value = loader.construct_scalar(node) return float(value)
+course_names = self.dashboard_page.wait_for_page().available_courses self.assertIn(self.course_info["display_name"], course_names)
+zendesk_tags = list(tags.values()) + ["LMS"]
+this_yaml = test_yaml_which_set % {'which_set': 'valid'} try: trainer = yaml_parse.load(this_yaml) trainer.main_loop() raise AssertionError except ValueError: pass
+sp = SpectralClustering(n_clusters=2, affinity='<unknown>') assert_raises(ValueError, sp.fit, X)
+plot_calibration_curve(LinearSVC(), "SVC", 2)
+self.find_css('.action-primary').first.click() self.page.wait_for_ajax()
+num_bytes = count * numpy.dtype(num_type).itemsize string = file_handle.read(num_bytes) return numpy.fromstring(string, dtype=num_type)
+plt.figure()
+if isinstance(block, XModuleDescriptor):
+if isinstance(block_key, BlockUsageLocator): return block_key.map_into_course(course_key) elif not isinstance(block_key, BlockKey): block_key = BlockKey(*block_key)
+domain = domain.split(':')[0] microsites = cls.objects.filter(site__domain__iexact=domain)
+if is_completed: msg = Messages.ORDER_COMPLETED.format(order_number=TEST_ORDER_NUMBER) self.assertResponseMessage(response, msg) else: self.assertResponsePaymentData(response)
+key_values = {}
+else: return False
+urls = get_xmodule_urls() return HttpResponse(json.dumps(urls), content_type="application/json")
+self.assertEqual(False, data["accomplishments_shared"])
+width = self.ext.config['vimeo_width'][0] height = self.ext.config['vimeo_height'][0] return flash_object(url, width, height)
+with remove_ccx(course_key) as (course_key, restore): return restore(self._modulestore.create_item( user_id, course_key, block_type, block_id=block_id, fields=fields, **kwargs ))
+del expected_event['event']['currentTime']
+try: length = int(self.headers.getheader('content-length')) except (TypeError, ValueError): return "" else: return self.rfile.read(length)
+for checkpoint in checkpoints: cls.objects.create(checkpoint=checkpoint, user=user, status=status)
+from __future__ import unicode_literals
+second_group = self.user_partition.groups[1] self.user_partition.scheme.current_group = second_group
+response = getattr(self.client, method)(self.url) self.assertEqual(405, response.status_code)
+Xt = X for name, transform in self.steps: Xt = transform.transform(Xt) return Xt
+if not hasattr(self, 'needs_reformat'): self.needs_reformat = self.needs_reshape del self.needs_reshape
+course_locator = self._map_revision_to_branch(course_locator) return super(DraftVersioningModuleStore, self).get_course_history_info(course_locator)
+if node.attr == 'display_name_with_default_escaped': self.results.violations.append(ExpressionRuleViolation( Rules.python_deprecated_display_name, self.node_to_expression(node) )) self.generic_visit(node)
+problem1_content_before_switch = self.problem_page.problem_content
+self.pdf.insert_page_break() self.draw_border() y_pos = self.draw_logos() return y_pos
+for i in range(5): i += 1 registration_code_redemption = RegistrationCodeRedemption( registration_code_id=i, redeemed_by=self.instructor ) registration_code_redemption.save()
+plt.matshow(ranking, cmap=plt.cm.Blues) plt.colorbar() plt.title("Ranking of pixels with RFE") plt.show()
+self.assert_error(params, "honor_code", expected_error)
+rng = check_random_state(0)
+raise NotImplementedError
+def __init__(self, array): self.array = array self.shape = array.shape self.ndim = array.ndim self.iloc = ArraySlicingWrapper(array)
+chapters = courses2[0].get_children() self.assertEquals(2, len(chapters)) self.assertIn(new_chapter_display_name, [item.display_name for item in chapters])
+#modindex_common_prefix = []
+d = np.diag(prec).reshape(1, prec.shape[0]) d = 1. / np.sqrt(d)
+Y = rng.random_sample((3, 4)) assert_raises(ValueError, paired_distances, X, Y)
+if start[1] != indent[depth]: yield (start, "E124 closing bracket does not match " "visual indentation")
+from pylearn2.datasets.mnist import MNIST dataset = MNIST(which_set='train') data = numpy.asarray(dataset.X, dtype=config.floatX)
+usage_key = self._map_revision_to_branch(usage_key) return super(DraftVersioningModuleStore, self).get_block_original_usage(usage_key)
+class Meta(object): model = CourseCohort
+celery_task_patcher = patch.object( sync_cohort_with_mode, 'apply_async', mock.Mock(wraps=sync_cohort_with_mode.apply_async) ) self.mocked_celery_task = celery_task_patcher.start() self.addCleanup(celery_task_patcher.stop)
+self.post_create_membership( 200, self.build_membership_data(user, self.solar_team), user=user )
+footer_style.append(('BACKGROUND', (1, 6), (1, 6), '#EEEEEE'))
+else: response = self.client.get(reverse(url_name), params)
+module.done = True
+context['ask_for_fullname'] = eamap.external_name.strip() == ''
+item = self.store.get_item(item_location) item.visible_to_staff_only = True self.store.update_item(item, self.user.id)
+self._create_a_timed_exam_and_attempt()
+return self.enabled and self.program_listing_enabled
+delete_user_preference(request.user, DARK_LANGUAGE_KEY) user_pref = get_user_preference(request.user, LANGUAGE_KEY) if user_pref: request.session[LANGUAGE_SESSION_KEY] = user_pref
+self.q(css=self._bounded_selector(".annotator-edit")).first.click() self.wait_for_editor_visibility() return self
+safe_exec("a = int(math.pi)", g) self.assertEqual(g['a'], 3)
+return self.page_num < self.num_pages
+EXCLUDE_ALL = '*'
+ndim = _read_int32(f) if debug: logger.debug('header ndim {0}'.format(ndim))
+self.assertTrue('success' in result and result['success'])
+num_braces = 0
+mako_middleware_process_request(request) response = views.course_about(request, unicode(course.id)) self.assertEqual(response.status_code, 200) self.assertNotIn(in_cart_span, response.content)
+subtask_status.increment(state=SUCCESS) return subtask_status, None
+if not os.path.exists(local_name):
+return XBlockFixtureDesc( 'problem', self.problem_name, data=self.factory.build_xml(**self.factory_kwargs), metadata={'rerandomize': 'always'} )
+gated_content = gating_api.get_gated_content(course, user)
+self._bind_module(lc_block) chosen_child = get_child_of_lc_block(lc_block) chosen_child_defn_id = chosen_child.definition_locator.definition_id lc_block.save()
+super(CoursePage, self).__init__(browser) self.course_id = course_id
+return self.q(css=self.search_bar_selector).present
+with translation.override("fr"):
+value = answers[name] defaults = {"field_value": value} if course_key: defaults['course_key'] = course_key
+email_opt_in = request.POST.get('email_opt_in') if email_opt_in is not None: email_opt_in_boolean = email_opt_in == 'true' preferences_api.update_email_opt_in(request.user, org, email_opt_in_boolean)
+self._global_clustering() return self
+assert_true((ovr_clf.coef_ != cs_clf.coef_).all())
+if structure is None: structure = self.db_connection.get_structure(version_guid, course_key) bulk_write_record.structures[version_guid] = structure if structure is not None: bulk_write_record.structures_in_db.add(version_guid)
+subset_idxs = sample_without_replacement(n_samples, min_samples, random_state=random_state) X_subset = X[subset_idxs] y_subset = y[subset_idxs]
+assert_array_equal(y, [1, 2, 3, 4, 1, 2])
+self.course.advanced_modules = ["notes"] self.assertFalse(self.has_notes_tab(self.course, self.user))
+self.assertEqual(views.get_cosmetic_display_price(self.course, registration_price), "$10")
+if num_violations > violations_limit > -1: raise BuildFailure("Failed. Too many pylint violations. " "The limit is {violations_limit}.".format(violations_limit=violations_limit))
+self._auto_auth("STAFF_TESTER", "staff101@example.com", True)
+return StaticContent.compute_location(course_key, path)
+self.enroll_staff(self.staff_user) self.attempt_upload_file_and_verify_result(test_case, 'import_resources', self.initial_configuration)
+self.import_children(source_courselike, courselike, courselike_key, dest_id)
+self.load_extra_content( system, course_descriptor, 'course_info', self.data_dir / course_dir / 'info', course_dir, url_name )
+all_folds[te2] = 1
+fields = {}
+seed_permissions_roles(self.course.id)
+self.course_info['number'] = self.unique_id[0:6]
+self.course_nav.go_to_vertical('Test Vertical-1') self.video.wait_for_video_player_render() self.video.speed = '0.50'
+cls.objects.create( invoice=invoice, snapshot=json.dumps(invoice.snapshot()) )
+raise ValueError("class_weight provided should be a " "dict or 'balanced'")
+self.teams_page.click_all_topics() self.verify_my_team_count(1)
+params = pipe.get_params(deep=True) params2 = pipe2.get_params(deep=True)
+current_leaf = birch_instance.dummy_leaf_.next_leaf_ while current_leaf: subclusters = current_leaf.subclusters_ for sc in subclusters: assert_greater_equal(threshold, sc.radius) current_leaf = current_leaf.next_leaf_
+CourseEnrollment.unenroll(self.user, self.courses[0].id, skip_refund=True)
+train_obj = pylearn2.config.yaml_parse.load(final_yaml_str)
+config.groups[0].remove() config.save()
+with self.assertRaises(SearchIndexingError): CoursewareSearchIndexer.do_course_reindex(modulestore(), self.course.id)
+other_icrv = ItemFactory.create(parent=self.verticals[3], category='edx-reverification-block') self._update_partitions()
+if self._assertion_errors: raise BulkAssertionError(self._assertion_errors)
+if (not directed) and isspmatrix_csc(csgraph): csgraph = csgraph.T
+mean = X.mean(axis=0) std = X.std(axis=0) X = (X - mean) / std
+course_page.wait_for_page()
+constants = random_state.randn(5)
+return self.store.get_modulestore_type(self.course.id) == ModuleStoreEnum.Type.mongo
+registration_code = CourseRegistrationCode.objects.all()[0].code redeem_url = reverse('register_code_redemption', args=[registration_code]) self.login_user()
+new_stores = [store for store in get_mixed_stores(new_mixed_setting) if store['NAME'] != 'split'] old_stores = get_mixed_stores(self.OLD_MIXED_CONFIG_WITH_DICT)
+self._expanded_class_weight = compute_class_weight(self.class_weight, self.classes_, y) sample_weight = self._validate_sample_weight(sample_weight, n_samples)
+return {}
+return all([ self.q(css='body.view-profile .account-settings-container').present, not self.q(css='ui-loading-indicator').visible ])
+pos_v = data neg_v = self.sampler.particles
+y_true = rng.randint(0, 3, size=10) assert_raise_message(ValueError, "multiclass format is not supported", average_precision_score, y_true, y_pred)
+self.code = None answer = None try: answer = xml.xpath('//*[@id=$id]//answer', id=xml.get('id'))[0] except IndexError:
+text_present = False text_list = page.q(css=css_selector).text if len(text_list) > 0 and (text in text_list): text_present = True return text_present
+repo_dir = self.git_repo_dir if not os.path.isdir(repo_dir): os.mkdir(repo_dir) self.addCleanup(shutil.rmtree, repo_dir)
+if enrollment_mode is None and is_active is None: return True
+self.q(css=self._bounded_selector('span.message-text a')).first.click()
+add_user_with_status_granted(self.admin, self.admin) self.assertIsNone(get_course_creator_status(self.admin))
+pass
+self.q(css="body.discussion .forum-nav-sort-control option[value='{0}']".format(sort_by)).click()
+n_candidates = 0 candidate_set = set() min_candidates = self.n_candidates * self.n_estimators while (max_depth > self.min_hash_match and (n_candidates < min_candidates or len(candidate_set) < n_neighbors)):
+self.create_programs_config(enable_certification=False)
+return BASE_URL + "/" + self.url_path + "/user/" + self.user_id + "/course/" + self.course_id
+default_store = os.environ.get('DEFAULT_STORE', 'draft') return CourseLocator(org, number, run, deprecated=(default_store == 'draft'))
+checkpoint = VerificationCheckpoint(course_id=self.course_id, checkpoint_location=reverification.location) checkpoint.save()
+params = dict([param.strip().replace('"', '').split('=') for param in params.split(',')])
+XBlockDisableConfig.objects.create( disabled_create_blocks='', enabled=True )
+VerificationDeadline.set_deadline(course_key, verification_deadline)
+return { 'Content-type': 'application/json', 'Accept': 'application/json', 'X-CSRFToken': self.session_cookies.get('csrftoken', '') }
+clf = svm.NuSVC() clf.fit(X, Y)
+if items_for_task: yield items_for_task num_items_queued += len(items_for_task)
+check_entrance_exam_problems_for_rescoring(usage_key)
+password = generate_random_string(password_length) while password in generated_passwords: password = generate_random_string(password_length) generated_passwords.append(password) return password
+return ( "Staff" if user_id in self.context["staff_user_ids"] else "Community TA" if user_id in self.context["ta_user_ids"] else None )
+clf.fit(X, y, sample_weight=[0.001] * 3 + [1] * 2)
+submissions_score_reset_handler(None, **SUBMISSION_RESET_KWARGS) self.get_user_mock.assert_called_once_with('anonymous_id')
+self.send_response(200)
+X, _, X_offset, _, X_scale = _preprocess_data(X, y, fit_intercept, normalize=normalize) return X, y, X_offset, y, X_scale
+self.course = self.store.get_course(self.course.id)
+return _ENROLLMENTS
+return meth
+data = { 'parent_locator': unicode(parent_usage_key), 'duplicate_source_locator': unicode(source_usage_key) } if display_name is not None: data['display_name'] = display_name
+'SHOW_LANGUAGE_SELECTOR': False,
+self.video.edx_video_id = self.TEST_EDX_VIDEO_ID self.setup_val_video(associate_course_in_val=False) result = self.get_result(allow_cache_miss) if allow_cache_miss: self.verify_result_with_val_profile(result) else: self.verify_result_with_fallback_and_youtube(result)
+results = (course for course in results if self.user_can_access_course(self.request.user, course))
+parent_block.edit_info.source_version = None self.decache_block(usage_locator.course_key, new_id, parent_block_key)
+assert self.get_dbm() is None self.dbm = dbm
+U, V = svd_flip(U, V)
+self.provider.enable_integration = True self.provider.save()
+self._assert_num_attempts(students, initial_attempts) self._test_run_with_task(reset_problem_attempts, 'reset', 0, expected_num_skipped=num_students) self._assert_num_attempts(students, 0)
+self.assertContains(response, "Email is not enabled for this course.", status_code=403)
+xpath = "//option[@selected='true']/b" self.assert_has_text(xml, xpath, 'Option 2')
+scaler_batch = MinMaxScaler().fit(X)
+self.assertFalse(any(settings.PDF_RECEIPT_TERMS_AND_CONDITIONS in s for s in pdf_content))
+X, y = datasets.make_hastie_10_2(n_samples=100, random_state=1) for Cls in [GradientBoostingRegressor, GradientBoostingClassifier]: est = Cls(n_estimators=100, max_depth=1) est.fit(X, y)
+train, test = set(train), set(test)
+add_enrollment(user.username, unicode(course_key), mode)
+for course in [shib_course, open_enroll_course]: for student in [shib_student, other_ext_student, int_student]: request = self.request_factory.post('/change_enrollment')
+self.writable_chapter_location = self.store = self.fake_location = None self.course_locations = {}
+from __future__ import division import warnings import numpy as np
+self.user = User.objects.create_user(uname, email, self.user_password)
+boston = datasets.load_boston()
+setattr(_MovedItems, move.name, move)
+request.POST['queuekey'] = fake_key self.mock_module.handle_ajax.assert_called_once_with(self.dispatch, request.POST)
+raise SkipTest("XFailed Test") diabetes = datasets.load_diabetes() X, y = diabetes.data, diabetes.target
+assertNumProblems(expected_display_name, 1)
+'provider', 'provider.oauth2', 'edx_oauth2_provider',
+self.send_response(200) self.send_header('Content-type', 'application/json') self.end_headers() self.wfile.write(response)
+service = super(DescriptorSystem, self).service(block=block, service_name=service_name) if callable(service): return service(block) return service
+context['document_banner'] = _("{platform_name} acknowledges the following student accomplishment").format( platform_name=platform_name )
+del team['date_created'] del team['discussion_topic_id']
+if "language_proficiencies" in update: old_language_proficiencies = legacy_profile_serializer.data["language_proficiencies"]
+__, nonstaff_user = self.create_non_staff_authed_user_client() auth.add_users(self.user, CourseStaffRole(self.course.id), nonstaff_user)
+from scipy import misc face = misc.face(gray=True)
+self.groups = [] for group_num in range(1, num_groups + 1): self.groups.append(Group(group_num, 'Group ' + unicode(group_num)))
+closest_dist_sq = euclidean_distances( centers[0, np.newaxis], X, Y_norm_squared=x_squared_norms, squared=True) current_pot = closest_dist_sq.sum()
+if is_entrance_exams_enabled(): graders = [grader for grader in graders if grader.get('type') != u'Entrance Exam'] return graders
+self.assertEqual(second_request["parameters"]["user_full_name"], "Bobby")
+super(BaseLmsIndexTest, self).setUp()
+multi_db = True
+bd = BinomialDeviance(2)
+response = external_auth.views.redirect_with_get('root', request.GET)
+D = generator.randn(n_features, n_components) D /= np.sqrt(np.sum((D ** 2), axis=0))
+course_key, _ = strip_ccx(course_key) return self._modulestore.delete_course(course_key, user_id)
+scores = cross_val_score(clf, X, y2) assert_array_equal(scores, clf.score(X, y2))
+self.rule = rule self.full_path = '' self.is_disabled = False
+Y_proba = clf_sprs.predict_proba(X_test)
+descriptor = modulestore().get_course(course_key) descriptor.grade_cutoffs = cutoffs modulestore().update_item(descriptor, user.id) return cutoffs
+if not self.has_partial_credit: return self.grade_without_partial_credit(student_answer=student_answer)
+return self._get_head(xblock, ModuleStoreEnum.BranchName.published) is not None
+with patch('student.models.cc.User.save'): uname = 'student' email = 'student@edx.org'
+non_editable_fields = super(SequenceDescriptor, self).non_editable_metadata_fields non_editable_fields.append(self.fields['is_entrance_exam']) return non_editable_fields
+cost_weights = rng.normal(size=(num_filters, rows - filter_rows + 1, cols - filter_cols + 1, batch_size)) cost = (constant(cost_weights) * output).sum()
+if reload_items:
+return site_prefix() + reverse( 'certificates:html_view', kwargs={'user_id': user_id, 'course_id': unicode(course_key)}) + '?evidence_visit=1'
+html_use_index = False
+SEARCH_ENGINE = "search.elastic.ElasticSearchEngine"
+raise NotImplementedError
+component = self.store.create_child( self.user_id, test_course.location, 'vertical', )
+if login_when_done: user = authenticate(username=username, password=password) login(request, user)
+return get_test_system(*args, **kwargs)
+X_train = check_array(X_train, 'csc', dtype=dtype, order=X_order) alphas, coefs, _ = path(X_train, y_train, **path_params) del X_train, y_train
+rng = np.random.RandomState(0) X = generate_clustered_data(n_clusters=3, n_features=3, n_samples_per_cluster=10)
+with mock_create_refund(status=500): self.send_signal() self.assertTrue(mock_log_exception.called)
+'edx_proctoring',
+colors_hsv = np.ones((n_colors, 3)) colors_hsv[:, 2] *= .75 colors_hsv[:, 0] = colors_hue
+return self.find_css("#due_time").present
+user_list[0].course_groups.add(*cohort_list) user_list[0].course_groups.clear() assert_events("removed", user_list[:1], cohort_list) mock_tracker.reset_mock()
+latest_timestamp = datetime.strptime( datetime.strftime(latest_timestamp, dateformat), dateformat ).replace(tzinfo=UTC)
+python_block_regex = re.compile(r'<%\s(?P<code>.*?)%>', re.DOTALL)
+p_shared = sharedX(zv[:, 0:rows:pool_rows, 0:cols:pool_cols, :]) h_shared = sharedX(zv) z_shared = sharedX(zv)
+for i, file_path in enumerate(file_paths): if i % 1000 == 0: logger.info("Loading face #%05d / %05d", i + 1, n_faces)
+return self.model.current()
+Y = np.dot(X, B) + np.random.normal(size=n * q).reshape((n, q)) + 5
+return '.send-email {}'.format(selector)
+'openedx.core.djangoapps.theming',
+return request.POST.get('client_id')
+strides = None total_buffer_len = None
+return super(ChooseModeView, self).dispatch(*args, **kwargs)
+return self._get_bulk_ops_record(course_key, ignore_case).active
+for param_name, param in self.parameters.items(): if (param._partial_kwarg and param_name not in kwargs): kwargs[param_name] = param.default
+return self._library_key
+return sorted(set(estimators), key=itemgetter(0))
+super(VectorSequenceSpace, self)._validate_impl(is_numeric, batch)
+return (loads, (dumps(np.asarray(a), protocol=HIGHEST_PROTOCOL),))
+clf = IsolationForest(max_samples=100, random_state=rng).fit(X_train)
+self[asset_idx] = metadata_to_insert
+course_key = request.data.get('course_key') try: course_key = CourseKey.from_string(course_key) except InvalidKeyError: raise InvalidCourseKey(course_key)
+multi_db = True
+problem = new_loncapa_problem(xml_str) problem.done = True problem.student_answers = {'1_2_1': 'choice_1'}
+CertificateGenerationConfiguration(enabled=True).save()
+log.warning("User [%s] was not authorized to initiate a refund for user [%s] " "upon unenrollment from course [%s]", request_user.id, unenrolled_user.id, course_key_str) return []
+SupportedFieldType(None, BlockCountsTransformer, BlockCountsTransformer.BLOCK_COUNTS),
+for student in students[7:]: GeneratedCertificateFactory.create( user=student, course_id=self.course.id, status=CertificateStatuses.generating, mode='honor', grade=default_grade )
+return dict([item for d in dicts for item in d.items()])
+stats = celery.control.inspect().stats() or {} return HttpResponse(json.dumps(stats, indent=4), content_type="application/json")
+with open(self.TEST_INDEX_FILENAME, "w+") as index_file: json.dump({}, index_file) self.addCleanup(remove_file, self.TEST_INDEX_FILENAME)
+with self.assertNumQueries(0): self.assertEquals('a_value', self.kvs.get(user_state_key('a_field')))
+clf = svm.SVC().fit(X, Y) assert_raises(ValueError, clf.predict, sparse.lil_matrix(X))
+THRESHOLDED_MULTILABEL_METRICS = [ "log_loss", "unnormalized_log_loss",
+out += 1. continue
+MobileApiConfig(video_profiles="mobile_low,mobile_high,youtube").save()
+STATICFILES_STORAGE = 'openedx.core.lib.django_require.staticstorage.OptimizedCachedRequireJsStorage'
+resp = self.client.put( '/shoppingcart/payment_fake', data="decline", content_type='text/plain' ) self.assertEqual(resp.status_code, 200)
+shutil.move(src_filename, dst_filename)
+from defusedxml import defuse_stdlib defuse_stdlib() import lxml import lxml.etree from . import etree as safe_etree lxml.etree = safe_etree
+if CourseMode.is_white_label(course_id): course_mode = CourseMode.DEFAULT_SHOPPINGCART_MODE_SLUG else: course_mode = None
+try: module = getattr(self, '_xmodule', None) if not module: module = self except UndefinedContext: module = self
+course_overview_2 = CourseOverview.get_from_id(course.id) self.assertFalse(course_overview_2.mobile_available)
+if not isinstance(library_key, LibraryLocator): library_key = LibraryLocator.from_string(library_key) try: return self.store.get_library( library_key, remove_version=False, remove_branch=False, head_validation=False ) except ItemNotFoundError: return None
+raw_video = cls.fetch_about_attribute(course_key, 'video') if raw_video: return cls.parse_video_tag(raw_video)
+X_, y_ = make_classification(n_samples=200, n_features=100, random_state=0)
+label_type_to_index = {'category': 0, 'instance': 1, 'elevation': 2, 'azimuth': 3, 'lighting': 4}
+sparse_classifier = IsolationForest( n_estimators=10, random_state=1, **params).fit(X_train_sparse) sparse_results = sparse_classifier.predict(X_test_sparse)
+self.reset_password_page.fill_password_reset_form(self.user_info['email'])
+context['certificate_id_number_title'] = _('Certificate ID Number')
+new_group = RandomUserPartitionScheme.get_group_for_user(self.MOCK_COURSE_ID, self.user, user_partition) self.assertEqual(old_group.id, new_group.id)
+_fulfill_content_milestones( user, course_id, descriptor.location, )
+return min(self.cleaned_data.get("page_size") or 10, 100)
+user = User.objects.get(email=self.user.email) self.assertFalse(auth.user_has_role(user, CourseStaffRole(self.course.id)))
+action_name = ugettext_noop('generated') task_fn = partial(upload_may_enroll_csv, xmodule_instance_args) return run_main_task(entry_id, task_fn, action_name)
+raise WorkerInterrupt()
+self.update_enrollement("enroll", "newuser@hotmail.com") self.check_outbox("You have been")
+input_dict = {'1_2_1': '0'} correct_map = problem.grade_answers(input_dict)
+course_overview.delete() course_overview = None
+self.assertEqual(self.course.user_partitions, [])
+x = sp.arange(6).reshape(2, 3) datasets.mldata.urlopen = mock_mldata_urlopen({dataname: {'x': x}})
+msg = "No merge commit for {commit} in {branch}!".format( commit=commit, branch=branch, ) raise DoesNotExist(msg, commit, branch)
+for element in self.q(css=self._bounded_selector(selector)): note = EdxNoteHighlight(self.browser, element, self.item_id) note.show().remove()
+response = self._regenerate(username=self.STUDENT_USERNAME) self.assertEqual(response.status_code, 400)
+self.assertEqual(len(httpretty.httpretty.latest_requests), 3)
+knn_graph = kneighbors_graph(X, 30, include_self=False)
+A = np.abs(random_state.randn(30, 10)) NMF(n_components=15, random_state=0, tol=1e-2).fit(A)
+microsite_url = get_microsite_url(name) if microsite_url != EMPTY_URL: return microsite_url
+kde = KernelDensity(bandwidth, kernel=kernel).fit(X) samp = kde.sample(100) assert_equal(X.shape, samp.shape)
+return "{}/badges".format(self._base_url)
+from .overrides import get_override_for_ccx return get_override_for_ccx(self, self.course, 'max_student_enrollments_allowed')
+model = SelectFromModel(clf, prefit=False) model.fit(data, y) assert_array_equal(model.transform(data), X_transform)
+sindex = get_data(searchindex_url) filenames, objects = parse_sphinx_searchindex(sindex)
+if self.whiten: W = W / tensor.sqrt(self.v[:self.component_cutoff])
+is_increasing = assert_no_warnings(check_increasing, x, y) assert_false(is_increasing)
+python_suite = suites.PythonTestSuite('Python Tests', **opts) js_suite = suites.JsTestSuite('JS Tests', mode='run', with_coverage=True)
+self.go_to_tab_and_assert_problem(1, self.problem1_name)
+try:
+if self._module_store is None: self._module_store = modulestore() return self._module_store
+if mode_slug is None: mode_slug = self.course_mode.mode_slug course_reg_code = CourseRegistrationCode( code=self.reg_code, course_id=course_key, created_by=self.user, mode_slug=mode_slug, is_valid=is_valid ) course_reg_code.save()
+rval, xdummy = z_hs.owner.op.grad((dummy_v, sqfilt), (x,))
+cls._assert_block_values(block_structure, cls.transform_data_key)
+return numpy.array(img.getdata()) / 255.
+max_scores_cache.fetch_from_remote(field_data_cache.scorable_locations)
+self.assertEqual(certificate_grades.count('0.0'), 8) self.assertEqual(certificate_grades.count(default_grade), 2)
+CELERYD_PREFETCH_MULTIPLIER = 1
+return [(unicode(path_item.usage_key), path_item.display_name) for path_item in path]
+self.sequential.children = [self.vertical.location] self.sequential = self.store.update_item(self.sequential, ModuleStoreEnum.UserID.test)
+self.store.delete_item( self.icrv.location, ModuleStoreEnum.UserID.test, revision=ModuleStoreEnum.RevisionOption.published_only )
+modulestore()
+load(filename, mmap_mode=self._mmap_mode).max()
+return None
+module.get_score = lambda: {'score': 1, 'total': 1}
+try: correctness = self.check_formula( correct_answer, given, samples ) except Exception: correctness = 'incorrect' if correctness == 'correct': hints_to_show.append(name)
+keys, values_lists = zip(*sorted(sub_grid.items())[::-1]) sizes = [len(v_list) for v_list in values_lists] total = np.product(sizes)
+('INNERGRID', (1, 1), (-2, -1), 0.50, '#cccccc'),
+problem = new_loncapa_problem(xml_str)
+dupe_counters[title] += 1 title = u"{title} ({counter})".format(title=title, counter=dupe_counters[title])
+if deadline is None: return candidates[0]
+y = y[:m]
+msg = "Specified problem does not support rescoring." raise UpdateProblemModuleStateError(msg)
+self.factory(learning_rate="<unknown>")
+self.logout_page.visit() AutoAuthPage(self.browser, username=username, email=email, course_id=self.course_id, staff=staff).visit()
+grid_search = GridSearchCV(km, param_grid=dict(n_clusters=[2, 3, 4])) grid_search.fit(X) assert_equal(grid_search.best_params_["n_clusters"], 4)
+return models.Client.objects.get(**filters)
+final_yaml_str = yaml_template % hyper_parameters
+'course_modes',
+if uid is None: return None try: return User.objects.get(anonymoususerid__anonymous_user_id=uid) except ObjectDoesNotExist: return None
+self.youtube_configuration.update({ 'youtube_api_blocked': True, })
+self.assertEquals(render.get_score_bucket(11, 10), 'incorrect') self.assertEquals(render.get_score_bucket(-1, 10), 'incorrect')
+problem = self.build_problem(answer=".*tre+", regexp=True) self.assert_grade(problem, "There is a tree", "correct")
+epoch_num = 15 termination_criterion = EpochCounter(epoch_num)
+self.course_id = course_key self.cached_metadata = cached_metadata
+self.client.logout() ModuleStoreTestCase.tearDown(self)
+autosummary_generate = True
+func_code, source_file, first_line = get_func_code(self.func) func_dir = self._get_func_dir() func_code_file = os.path.join(func_dir, 'func_code.py')
+return
+indptr_3 = X_sparse_unpruned.indptr[3] indptr_4 = X_sparse_unpruned.indptr[4] X_sparse_unpruned.data[indptr_3:indptr_4] = 0.0
+cohort_name = 'I AM A RANDOM COHORT' data = {'name': cohort_name, 'assignment_type': CourseCohort.RANDOM} response_dict = self.put_handler(self.course, data=data)
+pass
+storage = get_profile_image_storage() for name in profile_image_names.values(): storage.delete(name)
+return all([ self.q(css='body.view-group-configurations').present, self.q(css='div.ui-loading.is-hidden').present ])
+compare_branch = getattr(options, 'compare_branch', None) compare_branch_string = u'' if compare_branch: compare_branch_string = u'--compare-branch={0}'.format(compare_branch)
+sample_dict = {'x': (-10, 10)}
+pass
+sorted_dists_exact = np.sort(distances_exact[0]) sorted_dists_approx = np.sort(distances_approx[0])
+new_chapter = self.store.create_child(self.user_id, courses[0].location, 'chapter', 'new_chapter') asides = new_chapter.runtime.get_asides(new_chapter)
+ScopeIds(None, node.tag, def_id, usage_id), field_data,
+self.courseware_page.click_previous_button_on_top() self.assert_navigation_state('Test Section 1', 'Test Subsection 1,2', 0, next_enabled=True, prev_enabled=True)
+METRIC_UNDEFINED_BINARY_MULTICLASS = set(METRIC_UNDEFINED_BINARY).union( set(METRIC_UNDEFINED_MULTICLASS))
+ensemble = BaggingClassifier(SVC(decision_function_shape='ovr'), n_jobs=3, random_state=0).fit(X_train, y_train)
+options = dict(d) task_id = options['task_id'] del options['task_id'] return SubtaskStatus.create(task_id, **options)
+self.store_builders = store_builders self.mappings = mappings or {} self.mixed_modulestore = None
+self.block_type = block_data.get('block_type', None)
+CHAPTER = 'Test Section' SECTION = 'Test Subsection' EXPECTED_SCORES = [(0, 3), (0, 1)]
+if not hasattr(request, '_xblock_token'): request._xblock_token = uuid.uuid1().get_hex()
+} track_created_event(request, event_name, course, thread, event_data)
+UserCourseTagFactory( user=self.student, course_id=self.course.id, key='xblock.partition_service.partition_{0}'.format(self.partition.id), value=str(user_tag) )
+resp = self._change_enrollment('enroll') self.assertEqual(resp.status_code, 200) self.assertEqual(resp.content, full_url)
+self.workd[yslice] = self.OP(self.workd[xslice])
+display_id = slugify(chapter.display_name_with_default_escaped) local_hide_from_toc = False if required_content: if unicode(chapter.location) not in required_content: local_hide_from_toc = True
+return [ self._cohort_name(opt.text) for opt in self._get_cohort_options().filter(lambda el: el.get_attribute('value') != "") ]
+gender_label = _(u"Gender")
+width = self.ext.config['youtube_width'][0] height = self.ext.config['youtube_height'][0] return flash_object(url, width, height)
+self._upload_file('image.jpg')
+z = zr.astype(self.tp.upper())
+EmptyPromise( lambda: self.current_form != login_form, "Finish toggling to the password reset form" ).fulfill()
+rbmA_params = [numpy.asarray(q, dtype=config.floatX) for q in rbmA_params] rbmB_params = [numpy.asarray(q, dtype=config.floatX) for q in rbmB_params]
+coef_init = np.zeros((n_features, n_classes), dtype=np.float64, order='C')
+x_squared_norms = row_norms(X, squared=True)
+wrapper_frag = Fragment(content=new_content) wrapper_frag.add_frag_resources(fragment) return wrapper_frag
+self.create_mode('no-id-professional', 'no-id-professional', min_price=5) self.assertTrue(CourseMode.has_payment_options(self.course_key))
+@ddt.data(*flatten(CONTAINER_XMODULES))
+assert self.match_social_auth(social_auth) return social_auth.uid
+with self.assertNumQueries(20): api.set_credit_requirement_status( "bob", self.course_key, requirements[1]["namespace"], requirements[1]["name"] )
+PIPELINE_COMPILE_INPLACE = True
+if user is None: return False if user.is_authenticated(): return CourseEnrollment.is_enrolled(user, course.id) else: return False
+def test_ransac_residual_metric(): residual_metric1 = lambda dy: np.sum(np.abs(dy), axis=1) residual_metric2 = lambda dy: np.sum(dy ** 2, axis=1)
+self.login_page.password_reset(email="nobody@nowhere.com")
+pass
+transformer_clone = clone(transformer) X_pred = transformer_clone.fit_transform(X, y=y_)
+TEST_ROOT = path("test_root") STATIC_ROOT = TEST_ROOT / "staticfiles"
+test_invalid_token(self.tokens[self.user][:-4], "aes")
+CourseFixture(**self.course_info).install() course_id = self.course_id if enroll else None AutoAuthPage(self.browser, course_id=course_id).visit()
+return view_course_access(depth=depth, access_action='load_mobile', check_for_milestones=True)
+return
+self.name = self.user.profile.name self.status = "ready" self.save()
+rp = SparseRandomProjection(n_components=10, dense_output=False, random_state=0) rp = rp.fit(data) assert isinstance(rp.transform(data), np.ndarray)
+rendered_html = etree.XML(problem.get_html())
+for i, n_outliers in enumerate(range_n_outliers): for j in range(repeat):
+self.assertEqual(response.status_code, 400) res_json = json.loads(response.content)
+queryset = (
+new_mods = [m for m in sys.modules if m not in self.mods] for m in new_mods: del sys.modules[m]
+response = self._change_password(email=self.NEW_EMAIL) self.assertEqual(response.status_code, 400)
+'status',
+dict_delitem(self, key) link_prev, link_next, key = self.__map.pop(key) link_prev[1] = link_next link_next[0] = link_prev
+req_to_update = next(( req for req in reqs if req.namespace == req_namespace and req.name == req_name ), None)
+dot_product = -2 * np.dot(self.linear_sum_, self.centroid_) return sqrt( ((self.squared_sum_ + dot_product) / self.n_samples_) + self.sq_norm_)
+import logging logging.basicConfig(filename=TEST_ROOT / "log" / "cms_acceptance.log", level=logging.ERROR)
+clf = self.factory() assert_raises(ValueError, clf.fit, X2, Y2, intercept_init=np.zeros((1,)))
+pred = mb_k_means.predict(mb_k_means.cluster_centers_) assert_array_equal(pred, np.arange(n_clusters))
+draft = 'draft' published = None
+self._test_view('sitemap_xml', 'application/xml')
+instructor_task.api.submit_cohort_students(request, course_key, filename)
+self.addCleanup(YouTubeStubConfig.reset)
+self.find_css('.certificate-description-input').first.fill(value)
+actions.do_complete(backend, social_views._do_login, user=unlinked_user)
+add_user_to_cohort(first_cohort, self.student.username) self.assert_student_in_group(None)
+source = utils.find_release_date_source(item) self.assertEqual(source.location, expected_source.location) self.assertEqual(source.start, expected_source.start)
+libv = LibVersion() libv.print_versions() libv.print_exp_env_info(args.print_theano)
+server_thread = threading.Thread(target=self.server.serve_forever) server_thread.daemon = True server_thread.start()
+super(CourseKeyVerificationTestCase, self).setUp() self.course = CourseFactory.create(org='edX', number='test_course_key', display_name='Test Course')
+with patch_edxnotes_api_settings("http://example.com"): self.assertEqual("http://example.com/some_path/", get_endpoint_function("/some_path"))
+youtube_str = '1.00:p2Q6BrNhdh8' youtube_str_hack = '1.0:p2Q6BrNhdh8' self.assertEqual( VideoDescriptor._parse_youtube(youtube_str), VideoDescriptor._parse_youtube(youtube_str_hack) )
+angle = 0.0 perplexity = 10 n_samples = 100 for n_components in [2, 3]: n_features = 5 degrees_of_freedom = float(n_components - 1.0)
+self.assertEqual(len(courses), 3)
+X_mm, y_mm, y_ml_mm, ESTIMATORS = None, None, None, None shutil.rmtree(TEMP_FOLDER)
+disable_left_right = (is_blank(grid_indices) and not (grid_dimension[0] in (0, 5)))
+CourseEnrollmentFactory(user=self.moderator, course_id=self.course.id) self.moderator.roles.add(Role.objects.get(name="Moderator", course_id=self.course.id))
+for microsite in settings.MICROSITE_CONFIGURATION.itervalues(): org_filter = microsite.get('course_org_filter') if org_filter: org_filter_set.add(org_filter)
+response = self._get_page(payment_flow, course.id) self._assert_contribution_amount(response, "12.34")
+return redirect('about_course', course_id.to_deprecated_string())
+return self.best_estimator_.decision_function(X)
+test_configuration = [ { "urlname": "two_done_block_test_case_0", #"olx": self.olx_scenarios[0],
+length = int(self.headers.getheader('content-length')) data_string = self.rfile.read(length) post_dict = json.loads(data_string)
+self._assert_can_reverify()
+ransac_estimator.fit(X, yyy)
+return self._get_groups(self.content_groups_css)
+cls.team_commentable_id = "team_discussion_id" cls.team = CourseTeamFactory.create( name=u'The Only Team', course_id=cls.course.id, topic_id='topic_id', discussion_topic_id=cls.team_commentable_id )
+return start
+au_rule.delete() self._assert_history([])
+content = "<p><br><br></p>" payload = get_response(content, 'January 11, 2013') self.assertHTMLEqual(content, payload['content'])
+self.assertEquals(11, self.response.content.count('grade_F'))
+response = self.client.get(test_url) self.assertIn(str(self.cert.verify_uuid), response.content)
+response = self._auto_auth({ 'username': 'test', 'redirect': True, 'staff': 'true', }, status_code=302)
+except RateLimitException: return JsonResponse({ "success": False, "value": _('Too many failed login attempts. Try again later.'),
+if key.scope not in self._allowed_scopes: raise InvalidScopeError(key, self._allowed_scopes)
+self.modules = defaultdict(dict) self.definitions = {} self.definitions_in_db = set() self.course_key = None
+from course_modes.models import CourseMode cert_set = cls.objects.create(course_key=course_key)
+tab_id = self._active_sequence_tab.attrs('id')[0] return int(tab_id.split('_')[1])
+redirect_to = get_next_url_for_login_page(request)
+return self.mapbias + tensor.dot( self._factorsX(inputs) * self._factorsY(inputs), self.whf_in.T)
+response = self._get_reverify_page() self.assertContains(response, "reverify-container")
+self.assert_grade(problem, "Other String", "incorrect") self.assert_grade(problem, "second", "incorrect")
+question = etree.SubElement(root, "p") question.text = question_text
+pass
+_, sa, _ = randomized_svd(X, k, n_iter=0, power_iteration_normalizer=normalizer, random_state=0)
+check_firefox_version()
+return name.replace(':', '/')
+incorrect = y_predict != y
+cls.create_image(prefix, (1, 1), 'yellow', 'special/{}_lock.png', locked=True)
+self.configure_google_provider(enabled=True) self.configure_facebook_provider(enabled=True)
+with warnings.catch_warnings(record=True): transformer = Transformer() set_random_state(transformer) set_testing_parameters(transformer)
+idx = idx.item(0)
+return HttpResponseRedirect(reverse('shoppingcart.views.show_receipt', args=[result['order'].id]))
+super(HtmlResponse, self).__init__(html, content_type='text/plain')
+output = self.old_ugettext(*args, **kwargs) return "XYZ " + output
+return self.best_estimator_.transform(Xt)
+with self.assertRaises(AssertionError): self.kvs.get(self.other_key_factory(self.existing_field_name))
+lines = StringLines(data['string']) self.assertEqual(lines.line_number_to_line(data['line_number']), data['line'])
+self.cleaned_data['requested_fields'] |= {'field1', 'field2', 'student_view_data', 'block_counts'} self.assert_equals_cleaned_data()
+if form_value: user.follow(cc_content) else: user.unfollow(cc_content)
+self.reset_tracker()
+tmp_dir = mkdtemp() try: course_dir = export_course_to_directory(course_key, tmp_dir) compress_directory(course_dir, filename) finally: shutil.rmtree(tmp_dir, ignore_errors=True)
+self.get_user_mock = self.setup_patch('courseware.models.user_by_anonymous_id', None) submissions_score_set_handler(None, **SUBMISSION_SET_KWARGS) self.signal_mock.assert_not_called()
+if self.is_captions_visible() != captions_new_state: self.click_player_button('transcript_button')
+history = PasswordHistory.objects.filter(user=user).order_by('-time_set')[:min_diff_passwords_required]
+choose_track_url = reverse('course_modes_choose', args=[unicode(self.course.id)]) self.client.post(choose_track_url, self.POST_PARAMS_FOR_COURSE_MODE['verified'])
+self.assertIn( "No user with the provided email address exists.", self.login_page.wait_for_errors() )
+return self.kernel.is_stationary()
+data.extend([np.ones((1, 784))] * 2)
+return _write_js(output_root, _list_modules())
+rng = np.random.RandomState(0) n_samples, n_features, n_components = 500, 2, 2
+course = self.store.create_course('org_x', 'course_y', 'run_z', self.user_id) signal_handler.send.assert_called_with('course_published', course_key=course.id)
+if FEATURES.get('ENABLE_CSMH_EXTENDED'): INSTALLED_APPS += ('coursewarehistoryextended',)
+REGISTRATION_EMAIL_PATTERNS_ALLOWED = None
+return json.loads(self._cohorted_discussions)
+self.assertIn( {'type': 'html_textbooks'}, list(xmodule_tabs.CourseTabList.iterate_displayable(self.course, inline_collections=False)), )
+from __future__ import unicode_literals
+assert_raises(ValueError, precision_recall_fscore_support, y_true, y_pred, beta=0.0)
+rng = np.random.RandomState([2014, 11, 4]) start = 0 stop = 990 num_examples = 1000 num_feat = 5 num_classes = 2
+for i in range(self.n_layers_ - 1): activations[i + 1] = safe_sparse_dot(activations[i], self.coefs_[i]) activations[i + 1] += self.intercepts_[i]
+root_dir = self.server.config.get('root_dir') path = '{}{}'.format(root_dir, path) return path.split('?')[0]
+X, y = make_classification(n_classes=2, random_state=0)
+#html_use_modindex = True
+np.random.RandomState(j).shuffle(X[:, j]) np.random.RandomState(j).shuffle(X_true[:, j])
+htmlhelp_basename = 'scikit-learndoc'
+rng = np.random.RandomState(0) X = rng.rand(10, 2)
+self.wait_for_element_visibility( '#settings-language-value', 'Language selector element is available' ) return self.q(css='#settings-language-value')
+assert_raises(ValueError, precision_recall_fscore_support, [0, 1, 2], [1, 2, 0], average='mega')
+X = np.zeros((5, 5)) assert_array_equal(clf.predict(X), np.zeros(5))
+'ENABLE_COSMETIC_DISPLAY_PRICE': False,
+from openedx.core.lib.block_structure.transformer_registry import TransformerRegistry TransformerRegistry.USE_PLUGIN_MANAGER = False
+return self.name + " for " + (self.course_id.to_deprecated_string() if self.course_id else "all courses")
+return HttpResponse()
+submission = student_answers[self.answer_id]
+grandkids = [] for descendant in descendants: grandkids.extend(descendant.children)
+store_fields = ["OPTIONS", "DOC_STORE_CONFIG"] for field in store_fields: self.assertEqual(store_setting1[field], store_setting2[field])
+pass
+return [[False]]
+self.course_info_page.visit() self.tab_nav.go_to_tab('Test Static Tab') self.assertTrue(self.tab_nav.is_on_tab('Test Static Tab'))
+resource['event'] = test_case['event_second'] self.check_event_response_by_key('handle_vote', resource, 'newVotes', test_case['new_votes'])
+for block_type in ['course', 'html', 'video']: self.assertNotIn(block_type, block_counts_for_course) self.assertNotIn(block_type, block_counts_for_chapter_x)
+for mode in configured_modes: CourseModeFactory.create( course_id=self.course.id, mode_slug=mode, mode_display_name=mode, )
+y = zca_dataset.adjust_for_viewer(x.T).T z = x/np.abs(x).max(axis=0) assert_allclose(z, y)
+return os.sep.join(__file__.split(os.sep)[:-5]) + '/data/uploads/' + filename
+GlobalStaff().add_users(self.user) self.assertTrue(GlobalStaff().has_user(self.user))
+django_settings.SOCIAL_AUTH_RAISE_EXCEPTIONS = False
+wf = wf_cls(window_shape=(3, 3), randomize=[ddata], flip=flip)
+self.assertContains(response, 'programData') self.assertContains(response, self.data['name'])
+self._change_library_content_settings(count=count, capa_type=capa_type) self._auto_auth(self.USERNAME, self.EMAIL, False) self._goto_library_block_page() return self.library_content_page.children_headers
+return CourseLocator(org, course, run, deprecated=True)
+self.grading_policy['GRADER'] return self._grading_policy['RAW_GRADER']
+self.addCleanup(shutil.rmtree, self.temp_dir_1) self.addCleanup(shutil.rmtree, self.temp_dir_2)
+return store.asset_collection
+X = X_digits_binary[:100] y = y_digits_binary[:100]
+super(AutoAuthDisabledTestCase, self).setUp() self.url = '/auto_auth' self.client = Client()
+item['location'] = item['_id'] del item['_id']
+return UserPreference.get_value(user, LANGUAGE_KEY)
+layer_to_state = model.make_layer_to_state(m) vis_sample = layer_to_state[model.visible_layer]
+datasetCache = cache.datasetCache im_path = datasetCache.cache_file(im_path)
+self.video.wait_for_position('0:05') self.video.click_player_button('skip_bumper')
+n_samples_per_label = np.bincount(labels)
+tuned_parameters = [{'shrinkage': shrinkages}] cv = GridSearchCV(ShrunkCovariance(), tuned_parameters) cv.fit(X_train)
+return pprint.pformat((args, kwargs)).decode()
+return {'access_token', 'token_type', 'expires_in', 'scope'}
+split_test.add_missing_groups(self.request) split_test = self._assert_children(3) self.assertEqual(group_id_to_child, split_test.group_id_to_child)
+try: ccx = CustomCourseForEdX.objects.get( id=ccx_id, course_id=course.id, coach=coach ) except CustomCourseForEdX.DoesNotExist: return None return ccx
+penalty = penalty + abs(var ** self.p).sum()
+X, y = datasets.make_classification(n_samples=2000, n_features=10, n_informative=3, n_redundant=0, n_repeated=0, shuffle=False, random_state=0)
+with mock.patch.dict('django.conf.settings.FEATURES', {'ENABLE_CREATOR_GROUP': True}): self.assert_created_course()
+choicegroup = mult_choice_response.xpath('./choicegroup[@type="MultipleChoice"]')[0] choices_list = list(choicegroup.iter('choice'))
+assert_almost_equal(metric(y1_1d, y2_list), measure, err_msg="%s is not representation invariant " "with mix np-array-1d and list" % name)
+choose_track_url = reverse('course_modes_choose', args=[unicode(self.course.id)]) response = self.client.post(choose_track_url, self.POST_PARAMS_FOR_COURSE_MODE[course_mode])
+self.coach = coach = AdminFactory.create() self.client.login(username=coach.username, password="test")
+value = sp.sparse.linalg.svds(A, k=1, return_singular_vectors=False)
+X = Xboston y = yboston
+X, y = datasets.make_friedman2(n_samples=1200, random_state=random_state) X_train, y_train = X[:200], y[:200] X_test, y_test = X[200:], y[200:]
+retval = self.service.remove_credit_requirement_status( 0, self.course.id, 'grade', 'grade' ) self.assertIsNone(retval)
+self.n_nonzero_coefs_ = max(int(0.1 * n_features), 1)
+if namespace in LOOKUP: del LOOKUP[namespace]
+clf = ElasticNet() brc3 = Birch(n_clusters=clf) assert_raises(ValueError, brc3.fit, X)
+if 'FEATURES' in ENV_TOKENS: del ENV_TOKENS['FEATURES']
+raise NotImplementedError()
+textvalue = 'correct string' if correct else 'incorrect string' self.problem_page.fill_answer(textvalue)
+num_braces = 0
+XBLOCK_REMOVED_HTML_ELEMENTS = [ '<div class="wrap-instructor-info"', ]
+for mode in ('audit', 'honor', 'verified'): CourseModeFactory.create(mode_slug=mode, course_id=self.course.id)
+self.assertTrue( self.user.roles.filter(name="Student", course_id=new_course_key) )
+(thumbnail_content, thumbnail_location) = contentstore().generate_thumbnail( content, tempfile_path=tempfile_path, )
+kernel = (large_kernel.sum(axis=2))
+clf = TreeClassifier(class_weight=1, random_state=0) assert_raises(ValueError, clf.fit, X, _y)
+return LOOKUP[namespace].get_template(name)
+if hasattr(self, 'mlp'): return self.mlp return None
+files = files_string.split(",") upload_css = 'a.upload-button' world.css_click(upload_css)
+self.verify_lists_expected_cohorts([])
+spmatrix = spmatrix.asformat(accept_sparse[0]) changed_format = True
+clf_sparse = SVC(kernel="linear") rfe_sparse = RFE(estimator=clf_sparse, n_features_to_select=4, step=0.1) rfe_sparse.fit(X_sparse, y) X_r_sparse = rfe_sparse.transform(X_sparse)
+homework_1_score = 1.0 / 2 homework_2_score = 1.0 / 1 self.check_grade_percent(round((homework_1_score + homework_2_score) / 2, 2))
+ae = Autoencoder(5, 7, act_enc='tanh', act_dec='cos', tied_weights=True) model = UntiedAutoencoder(ae) model._ensure_extensions()
+'python_bin': None, 'user': 'sandbox',
+return True
+credit_course = self.add_credit_course() credit_course.enabled = False credit_course.save()
+course_fix = CourseFixture( self.course_info['org'], self.course_info['number'], self.course_info['run'], self.course_info['display_name'] )
+pipeline.items.append(preprocessing.GlobalContrastNormalization( sqrt_bias=10., use_std=True))
+attempt = SoftwareSecurePhotoVerification.objects.create(user=self.user) attempt.mark_ready() attempt.submit()
+response = problem.responders.values()[0] self.assertFalse(response.has_mask()) self.assertFalse(response.has_answerpool())
+elem.clear() elem.send_keys(value) elem.send_keys(Keys.TAB) self.save()
+land_reference = data.coverages[6]
+certs_api.set_cert_generation_enabled(self.COURSE_KEY, False) self._assert_enabled_for_course(self.COURSE_KEY, False)
+return self.q(css=self._bounded_selector('.add-admin-role')).present
+VerificationStatus.add_status_from_checkpoints( checkpoints=[self.first_checkpoint], user=user, status=status )
+self.initiate_rerun()
+X = random_state.randn(100, 2) assert_equal(trustworthiness(X, 5.0 + X / 10.0), 1.0)
+script = "calculated_ans = 'x+x'"
+from __future__ import unicode_literals
+raise NotImplementedError()
+self.ignored_asset_keys.add(key_name)
+sparse_results = sparse_classifier.staged_predict(X_test_sparse) dense_results = dense_classifier.staged_predict(X_test) for sprase_res, dense_res in zip(sparse_results, dense_results): assert_array_equal(sprase_res, dense_res)
+self.auth_page.visit() self.user_info = self.auth_page.user_info self.course_info_page.visit() self.tab_nav.go_to_tab('Course')
+skf = StratifiedKFold(n_folds=4) train_index, test_index = next(iter(skf.split(iris.data, iris.target)))
+return modulestore().update_item(xblock, user.id)
+if record == channel_0.length: bad_channel.append(channel) continue
+self.video.a11y_audit.config.set_scope( include=["div.video"] ) self.video.a11y_audit.check_for_accessibility_errors()
+self.navigate_to_video()
+self.q(css=self.VIEW_MODE_OPTIONS_CSS).filter(lambda el: el.text.strip() == view_mode).first.click() self.wait_for_ajax()
+from random import choice characters = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)' SECRET_KEY = ''.join([choice(characters) for i in range(50)])
+return MembershipPageAutoEnrollSection(self.browser)
+link = reverse('download_transcripts') resp = self.client.get(link, {'locator': 'BAD_LOCATOR'}) self.assertEqual(resp.status_code, 404)
+return self.q(css='#my-bookmarks').present
+self.descriptor = descriptor self._runtime = None super(XModule, self).__init__(*args, **kwargs) self.runtime.xmodule_instance = self
+'debug': False
+fancy = False
+get_tracker.side_effect = Exception self.assertEquals( self.middleware.process_response(self.request, self.response), self.response )
+eligibilities = api.get_eligibilities_for_user("staff") self.assertEqual(eligibilities, [])
+assert_bad({"files": [{"content_type": "video/mp4"}]})
+with self.assert_logged(r'SafeCookieData .* is not bound to user'): yield
+'service_status',
+model.fit(X_scaled, y) assert_true(np.isfinite(model.coef_).all())
+uuid = request["parameters"]["request_uuid"] with self.assertNumQueries(3): api.update_credit_request_status(uuid, self.PROVIDER_ID, "approved")
+model = self.model
+self.assertEquals( preview.latex_preview('f(3)', functions=['f']), r'\text{f}(3)' )
+import sklearn version = sklearn.__version__ release = sklearn.__version__
+url( r'^courses/{}/survey$'.format( settings.COURSE_ID_PATTERN, ), 'courseware.views.views.course_survey', name='course_survey', ),
+ForestEstimator = FOREST_ESTIMATORS[name]
+num_braces = 0
+self._assert_redirects_to_instructor_dash(response)
+httpretty.enable()
+return ItemFactory.create( category='library_content', parent_location=course.location, user_id=self.user.id, publish_item=False, source_library_id=unicode(library_key), **(other_settings or {}) )
+assert_array_equal(X_transformed_sparse.toarray(), X_transformed_dense)
+self.assertFalse(self.cohort_management_page.is_category_selected())
+all_links = self.q(css='a.enter-course').map(lambda el: el.get_attribute('href')).results
+patched_client_login = Client.login
+with self.assertRaises(ItemNotFoundError): self.publish((('html', 'html00'),))
+asset_key = StaticContent.get_asset_key_from_path(course_key, relative_path)
+self.assertEqual(resp.data, {"state": desired_state})
+return u"Course '{}' is {}Embargoed".format(self.course_id.to_deprecated_string(), not_em)
+REQUIRE_DEBUG = False
+self.assert_no_events_emitted() try: response = segmentio.segmentio_event(request) self.assertEquals(response.status_code, 200)
+super(CourseViewMixin, self).perform_authentication(request) if request.user.is_anonymous() and not settings.DEBUG: raise AuthenticationFailed
+response_element = etree.Element('symbolicresponse')
+self._do_create_preferences_test(False)
+return self.q(css=".badges-modal").visible
+return
+return { 'item_description': 'Course %s Description' % index, 'quantity': index, 'list_price': 10, 'discount': discount, 'item_total': 10 }
+'ENFORCE_PASSWORD_POLICY': True,
+self.assertEqual(certificate_grades.count('0.0'), 5) self.assertEqual(certificate_grades.count(default_grade), 5)
+self.assertFalse(thread_page.check_if_selector_is_focused(selector='.thread-wrapper'))
+if self.current_language() != code: self.select_language(code)
+'USE_MICROSITES': False,
+if self.index is None: return []
+return Select(select_browser_query.first.results[0]).options
+self.weighted_setup() self.submit_question_answer('FinalQuestion', {'2_1': 'Correct', '2_2': 'Correct'}) self.check_grade_percent(0.75)
+return {'idp': self.idp_slug}
+return self.reset_attempts_button.click()
+if 'FEATURES' in ENV_TOKENS: del ENV_TOKENS['FEATURES']
+VerificationCheckpoint.get_or_create_verification_checkpoint(course_key, related_assessment_location)
+rng = np.random.RandomState(42) X = rng.randn(4, 5)
+charged_amt = Decimal(params['ccAuthReply_amount'])
+copy_course_videos(source_course_key, destination_course_key)
+prior = DiagonalGaussianPrior() vae = DummyVAE() prior.set_vae(vae) prior.initialize_parameters(nhid=5) prior.sample_from_p_z(10)
+config['course_org_filter'] = organizations[0] self.current_request_configuration.data = config
+train, valid, test, transfer = utlc.load_ndarray_dataset("ule", normalize=True, transfer=True) assert train.shape[0] == transfer.shape[0]
+if self.list_path: self.path = reverse(self.list_path)
+pass
+REQUIRE_JS = "js/vendor/requiresjs/require.js"
+default_z += T.alloc(*([0.]+[shape[elem] for elem in self.h_space.axes])).astype(default_z.dtype) assert default_z.ndim == 4
+edxval_api.import_from_xml( video_asset_elem, field_data['edx_video_id'], course_id=course_id )
+fermat_weber = fmin_bfgs(cost_func, median, disp=False) assert_array_almost_equal(median, fermat_weber) assert_warns(ConvergenceWarning, _spatial_median, X, max_iter=30, tol=0.)
+if content.get('group_id') is not None: content['group_name'] = get_cohort_by_id(course_key, content.get('group_id')).name
+course_outline.visit() subsection = course_outline.section_at(0).subsection_at(0) subsection.expand_subsection() unit = subsection.unit_at(0) unit.publish()
+else: course_path = "/".join((static_asset_path or data_directory, rest))
+assert_array_equal(reg.predict([[0.2, -1.0]]), np.array([-1]))
+args = [ 'lms', 'studio', '--settings={}'.format(asset_settings), '--skip-collect' ] call_task('pavelib.assets.update_assets', args=args)
+self._create_course_unit(subtitles=True) self.video.hide_captions() self.assertFalse(self.video.is_captions_visible())
+form = self._admin_form("verified", upgrade_deadline=self.UPGRADE_DEADLINE)
+section_description = { 'section_descriptor': section, 'xmoduledescriptors': [child for child in xmoduledescriptors if child.has_score] }
+m = 15 monitoring_dataset = get_topological_dataset(rng, rows, cols, channels, m)
+self._check_linkedin_visibility(False)
+wrapped = obj.__wrapped__
+self.no_labels = Attribute('no_labels', default="False").parse_from_xml(self.xml)
+dec_mock(request) self.assertTrue(self.mock.called) self.assertEqual(0, len(ExternalAuthMap.objects.all()))
+return frozenset()
+report_comments = models.TextField(default="")
+return xblock._edit_info.get('subtree_edited_by')
+alpha = float(alpha) random_state = check_random_state(random_state)
+TestScenario( (self.demo_course.id, '='), "course_MVSFQL2EMVWW6WBOGEXUMYLMNRPTEMBRGQ======" ), TestScenario( (self.html_course.id, '~'), "course_MNXXK4TTMUWXMMJ2KVXGS5TFOJZWS5DZLAVUGUZNGIYDGK2ZGIYDSNQ~" ),
+is_course_full = False if course.max_student_enrollments_allowed is not None: is_course_full = self.num_enrolled_in_exclude_admins(course.id) >= course.max_student_enrollments_allowed return is_course_full
+request = Request.blank('') response = self.item_descriptor.studio_transcript(request=request, dispatch='translation') self.assertEqual(response.status, '400 Bad Request')
+from __future__ import unicode_literals
+for field_name, field in cls.fields.items(): if field.scope == Scope.settings and xml_object.get(field_name) is not None: del xml_object.attrib[field_name]
+tsne = TSNE(early_exaggeration=0.99) assert_raises_regexp(ValueError, "early_exaggeration .*", tsne.fit_transform, np.array([[0.0]]))
+settings.WIKI_ENABLED = True self.course.allow_public_wiki_access = True self.assertIsNotNone(self.get_wiki_tab(self.user, self.course))
+escaped_encoded_from_addr = escape(encoded_from_addr) if len(escaped_encoded_from_addr) >= 320 and truncate: from_addr = format_address(course_name)
+estimator_weight = (-1. * self.learning_rate * (((n_classes - 1.) / n_classes) * inner1d(y_coding, np.log(y_predict_proba))))
+if not validate_trust_root(openid_request): return default_render_failure(request, "Invalid OpenID trust root")
+(y,x) = (oy,ox) if mode=='full' else (oy,ox) - topleft
+descriptor = CapaDescriptor(get_test_system(), scope_ids=1) descriptor.data = xml if name: descriptor.display_name = name return descriptor
+termination_criterion = EpochCounter(5)
+clf = svm.SVC(kernel='rbf', gamma=1, decision_function_shape='ovo') clf.fit(X, Y)
+self.assertEqual(len(exported_static_files), 1) self.assertTrue(filesystem.exists(expected_displayname)) self.assertEqual(exported_static_files[0], expected_displayname)
+return [self.create_student('robot%d' % i) for i in xrange(num_students)]
+try: self._find_one(usage_key) return True except ItemNotFoundError: return False
+(['verified', 'audit'], 'course_modes_choose', CourseMode.DEFAULT_MODE_SLUG),
+if len(dbm.hidden_layers) > 2: state_below = dbm.hidden_layers[-3].upward_state(H_hat[-3]) else: state_below = dbm.visible_layer.upward_state(V)
+course_publish_orphans = self.store.get_orphans(course_locator_publish)
+module = CapaFactory.create(rerandomize=RANDOMIZATION.ALWAYS, done=True) self.assertTrue(module.should_show_reset_button())
+if y.dtype.kind == 'f' and np.any(y != y.astype(int)): return 'continuous' + suffix
+node.visible_to_staff_only = True self.mstore.update_item(node, self.coach.id)
+dtype = 'uint8' ntrain = 50000
+assert_in('attempts', seq.xml_attributes)
+response = self.client.post(self.url, { "email": self.EMAIL, "password": "invalid" }) self.assertHttpForbidden(response)
+try: return CourseEmailTemplate.objects.get(name=name) except CourseEmailTemplate.DoesNotExist: log.exception("Attempting to fetch a non-existent course email template") raise
+simultaneous_sort(dist, ind)
+lookup_tag = customrender.registry.get_class_for_tag
+X = [[3, 2], [1, 6]] y = [1, 0] clf = MLPClassifier
+iterator = itertools.islice(iterator, pre_dispatch)
+self.X_memmap_info = None self.y_memmap_info = None
+re.compile(r'^/api/course_structure/v[\d+]/courses/{}/$'.format(settings.COURSE_ID_PATTERN)),
+if not self.q(css="input.timed_exam").present: return False
+docs_train, docs_test, y_train, y_test = train_test_split( dataset.data, dataset.target, test_size=0.25, random_state=None)
+return super(NullBackend, self).get_value(val_name, default, **kwargs)
+beta = linalg.solve_triangular(G, np.dot(Q.T, Yt))
+pass
+for partition in self.course_partitions: if partition.id == user_partition_id: return partition return None
+diff_threshold = int(getattr(options, 'percentage', -1)) percentage_string = u'' if diff_threshold > -1: percentage_string = u'--fail-under={0}'.format(diff_threshold)
+self._assert_steps_displayed( response, PayAndVerifyView.PAYMENT_STEPS, PayAndVerifyView.PAYMENT_CONFIRMATION_STEP, )
+return ( 'change_date', 'changed_by', 'enabled', 'entity_id', 'org_info_str', 'key_summary', )
+if session_status[courselike_string] != 4: _save_request_status(request, courselike_string, -abs(session_status[courselike_string]))
+PROFILE_COUNTRY_CACHE_KEY = u"user.{user_id}.profile.country"
+for user in users: get_cohort(user, self.course.id)
+course_cohort = user_group.cohort return course_cohort.assignment_type
+self.q(css=".login-button").click()
+progress = {'message': TEST_FAILURE_MESSAGE, 'exception': TEST_FAILURE_EXCEPTION, } return self._create_entry(task_state=FAILURE, task_output=progress)
+students_to_generate_certs_for = students_to_generate_certs_for.filter( certificatewhitelist__course_id=course_id, certificatewhitelist__whitelist=True ).exclude( generatedcertificate__course_id=course_id, generatedcertificate__status__in=CertificateStatuses.PASSED_STATUSES )
+for __ in xrange(certificate_count): self.generate_certificate( course_id=self.course.id, mode='verified', status=CertificateStatuses.downloadable )
+return self._base * min(1, self._anneal_start / self._count)
+resp = self.client.get_html(self.url) self.assertEquals(resp.status_code, 200) self.assertContains(resp, "Export My Course Content")
+self.grid_scores_ = scores[::-1] / cv.get_n_splits(X, y) return self
+resp = self.client.post(reverse('shoppingcart.views.use_code'), {'code': 'coupon1'}) self.assertEqual(resp.status_code, 200)
+X = sp.csr_matrix(X, dtype=np.float64, copy=copy)
+X = iris.data
+course = CourseFactory.create(default_store=modulestore_type, emit_signals=True)
+test_score = heldout_score(clf, X_test, y_test)
+wait_for_visible(css_selector, index=index) retry_on_exception(lambda: css_find(css_selector)[index].fill(text)) wait_for(lambda _: css_has_value(css_selector, text, index=index)) return True
+if not parent_location: return None
+if unsafely: exec_fn = codejail_not_safe_exec else: exec_fn = codejail_safe_exec
+if self.dataset_local_dir == "": return filename
+self.assert_can_access(self.beta_user, self.alpha_module.discussion_id, thread_id, False)
+assert_raises( AssertionError, monitor.update_channels, ['train_objective'], start=2, end=1 )
+thumbnail_location = asset.get('thumbnail_location', None) if thumbnail_location: thumbnail_location = course_key.make_asset_key( 'thumbnail', thumbnail_location[4])
+default="images_course_image.jpg"
+y_true = np.ones((1, n_labels)) assert_equal(lrap_score(y_true, y_score), 1.) assert_equal(lrap_score(y_true, y_score_ties), 1.)
+return modulestore().get_item(self.xblock_keys[block_index])
+extra_data = [ unicode(course_id) if course_id else "", "donation_course" if course_id else "donation_general" ]
+return (200, headers, self.read_data_file('testshib_metadata.xml'))
+site_configuration = SiteConfigurationFactory.create( site=self.site, )
+expr = stripXML(self.mathml_start + expr + self.mathml_end) expected = stripXML(self.mathml_start + expected + self.mathml_end)
+margin = 1 / np.sqrt(np.sum(clf.coef_ ** 2)) yy_down = yy + a * margin yy_up = yy - a * margin
+primitive_command = -2
+names_inv_actual = sel.inverse_transform([feature_names_t]) assert_array_equal(feature_names_inv, names_inv_actual.ravel())
+request = mock.Mock() with self.assertRaises(Throttled): self.view.check_throttles(request)
+cid = cid if cid > 0 else self._id return reverse_course_url( 'certificates.certificates_detail_handler', self.course.id, kwargs={'certificate_id': cid}, )
+countdown = ((2 ** retry_index) * base_delay) * random.uniform(.75, 1.25)
+clf_multi_loss = log_loss(y, clf_multi.predict_proba(X)) clf_wrong_loss = log_loss(y, clf_multi._predict_proba_lr(X)) assert_greater(clf_wrong_loss, clf_multi_loss)
+html5_id_to_remove = [x for x in videos['html5'] if x != html5_id] if html5_id_to_remove: remove_subs_from_store(html5_id_to_remove, item)
+error_code = 'course_id_not_provided' if not is_ccx: log.info('Master course ID not provided') error_code = 'master_course_id_not_provided'
+return courseware.views.views.courses(request)
+self.assertIn('Traceback', result['success'])
+course.certificates['certificates'].pop(index) store.update_item(course, request.user.id) break
+assert_raises(ValueError, mlb.inverse_transform, np.array([[1]])) assert_raises(ValueError, mlb.inverse_transform, np.array([[1, 1, 1]]))
+'context_processors.doc_url',
+if not courses: raise CommandError( u"No courses found for orgs: {orgs}".format( orgs=", ".join(org_list) ) )
+self._update_head(course_key, index_entry, asset_key.branch, new_structure['_id'])
+le = LabelEncoder() le.fit([1, 2, 3, 1, -1]) assert_raises(ValueError, le.inverse_transform, [-1])
+if bypass_activation_email: self.assertFalse(mock_send_mail.called) else: self.assertTrue(mock_send_mail.called)
+from pylearn2.gui.patch_viewer import PatchViewer
+PLATFORM_TWITTER_ACCOUNT = ENV_TOKENS.get('PLATFORM_TWITTER_ACCOUNT', PLATFORM_TWITTER_ACCOUNT) PLATFORM_FACEBOOK_ACCOUNT = ENV_TOKENS.get('PLATFORM_FACEBOOK_ACCOUNT', PLATFORM_FACEBOOK_ACCOUNT)
+super(BaggingClassifier, self)._validate_estimator( default=DecisionTreeClassifier())
+return parameter in signature(estimator.fit).parameters
+query_features = task_input.get('features') student_data = list_may_enroll(course_id, query_features) header, rows = format_dictlist(student_data, query_features)
+css = self._bounded_selector(self.assignment_type_buttons_css) self.q(css=css).filter(lambda el: el.get_attribute('value') == assignment_type).first.click()
+sparse_results = sparse_classifier.predict_log_proba(X_test_sparse) dense_results = dense_classifier.predict_log_proba(X_test) assert_array_equal(sparse_results, dense_results)
+files_to_fingerprint = list(PYTHON_REQ_FILES)
+self._studio_reindex()
+raise SkipTest("Test too slow.")
+class MockEstimator(object): def predict_proba(self, X): assert_array_equal(X.shape, probs.shape) return probs mock = MockEstimator()
+if user_attr_name == 'user_anonymous': user = AnonymousUserFactory() else: user = getattr(self, user_attr_name) user = User.objects.get(id=user.id)
+other_cmap = CorrectMap() other_cmap.update(self.cmap)
+response = self._enroll_through_view(self.course) self.assertEqual(response.status_code, 400)
+return self.q(css=self._bounded_selector('.flag-role .value')).text[0]
+self.q(css="#verify_now_button").click() PaymentAndVerificationFlow(self.browser, self._course_id, entry_point='verify-now').wait_for_page()
+raise NotImplementedError
+html_use_smartypants = True
+current_pred = _samme_proba(estimator, n_classes, X)
+return ", ".join(DOC_PATHS.keys())
+counts[center_idx] += count
+time.sleep(2)
+from functools import wraps import random
+0.416...
+if os.path.isdir(base_dir / url_name): self._load_extra_content(system, course_descriptor, category, base_dir / url_name, course_dir)
+orig_view_name = None if hasattr(self, '_view_name'): orig_view_name = self._view_name self._view_name = None rt_repr = super(TestModuleSystem, self).__repr__() self._view_name = orig_view_name return rt_repr
+class ObjectiveSmallGradient: def __init__(self): self.it = -1
+instructor_task = _reserve_task(course_key, task_type, task_key, task_input, request.user)
+class_sep = 1e6 make = partial(make_classification, class_sep=class_sep, n_redundant=0, n_repeated=0, flip_y=0, shift=0, scale=1, shuffle=False)
+return self.browser.get_cookie(cookie_name)
+try: from StringIO import StringIO except: from io import StringIO
+self.assertEqual(response.status_code, 400) res_json = json.loads(response.content)
+if revision == ModuleStoreEnum.RevisionOption.published_only: return get_published()
+if request is not None and hasattr(request, 'META') and header_name in request.META: return request.META[header_name] else: return default
+if answer_name in self.correct_inputs and not partial_correct: inputs_correct = False
+X = [[1], [2]] Y = [1, 2]
+self.assertGreater(len(block.children), 0, "meaningless test") moved_child = block.children.pop()
+course = CourseFactory.create(display_name="Test Course")
+unit['hidden'] = False for child in unit.get('children', ()): unhide(child)
+data = fetch_olivetti_faces() targets = data.target
+if not username: return redirect(reverse('api_admin:catalog-search')) return redirect(reverse('api_admin:catalog-list', kwargs={'username': username}))
+utils.get_programs(self.user)
+preprocessor = GlobalContrastNormalization(subtract_mean=False, sqrt_bias=0.0, use_std=False)
+is_increasing = y_[0] < y_[-1] assert_false(is_increasing)
+for role_name in role_names: role = Role.objects.get(name=role_name, course_id=course_key) user.roles.add(role)
+visit_scenario_item('SECTION')
+face_image, photo_id_image, response = self._decode_image_data( params["face_image"], params.get("photo_id_image") )
+assert_equal(10 + 9, n_lines)
+source_course_key = CourseKeyField(max_length=255, db_index=True)
+if descriptor_orig_usage_key is not None: tracking_context['module']['original_usage_key'] = unicode(descriptor_orig_usage_key) tracking_context['module']['original_usage_version'] = unicode(descriptor_orig_version)
+world.scenario_dict['CHAPTER'] = world.ItemFactory.create( parent_location=world.scenario_dict['COURSE'].location, category='chapter', display_name='Test Chapter',
+if coefs.ndim > 1: ranks = np.argsort(safe_sqr(coefs).sum(axis=0)) else: ranks = np.argsort(safe_sqr(coefs))
+if asset_idx is None: raise ItemNotFoundError(asset_key) all_asset_info.pop(asset_idx) return all_asset_info
+return tuple([alias if alias else source for alias, source in safe_zip(self._aliases, self._sources)])
+raise ItemNotFoundError(locator)
+self.assertTrue('Activate Course Enrollment' in response.content)
+self.fake_payment_page.submit_payment()
+EDX_PLATFORM_REVISION = 'unknown'
+self.do_targeted_feedback(self.tree) html = contextualize_text(etree.tostring(self._extract_html(self.tree)), self.context) return html
+with self.assertRaises(TestException): module = self.descriptor._xmodule
+assert_raises(ValueError, partial_dependence, GradientBoostingClassifier(), [0], X=X)
+world.wait_for(lambda _driver: len(world.browser.find_by_css('div.ui-loading.is-hidden')) > 0)
+precompute = self.precompute if hasattr(precompute, '__array__'): Gram = precompute elif precompute == 'auto': Gram = 'auto' else: Gram = None return Gram
+if 'children' in qualifiers: settings['children'] = qualifiers.pop('children')
+url_path = ""
+x_weights_sign_flip = pls_ca.x_weights_ / x_weights
+if path.startswith('/static/'): path = path[len('/static/'):]
+self.assertEqual(len(email_info), 0)
+module = CapaFactory.create(rerandomize=RANDOMIZATION.ALWAYS, max_attempts=0, done=True) self.assertTrue(module.should_show_reset_button())
+_upload_file(self.srt_file, self.item_descriptor.location, os.path.split(self.srt_file.name)[1])
+pass
+self.assertRaises( Http404, views.container_handler, request, usage_key_string='i4x://InvalidOrg/InvalidCourse/vertical/static/InvalidContent', )
+students = User.objects.filter(courseenrollment__course_id=course_key) if len(students) == 0: self.stdout.write("No students enrolled in %s" % course_key.to_deprecated_string()) return
+memory = Memory(os.path.join(get_data_home(), 'mnist_benchmark_data'), mmap_mode='r')
+request.META["HTTP_HOST"] = "edge.edx.org" response = index(request)
+ascending = 1 descending = 2
+return { 'username': user.username, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name, }
+self.certificates_section.refresh()
+elif value["version"] >= 2: if "scheme" not in value: raise TypeError("UserPartition dict {0} missing value key 'scheme'".format(value))
+instructor = self.make_instructor() self.assertTrue(CourseInstructorRole(self.course.id).has_user(instructor))
+wait_for( func=lambda _: EC.element_to_be_clickable((By.CSS_SELECTOR, css_selector,)), timeout=timeout, timeout_msg="Timed out waiting for {} to be clickable.".format(css_selector) )
+pass
+self.assertTrue(video_xblocks == 2)
+copy_or_rename_transcript(video_name, sub_attr, item, user=request.user)
+if problem_type in ("radio_text", "checkbox_text"): selector_template = "input#{}_2_{input}" else: selector_template = "input#input_{}_2_{input}"
+if settings.WIKI_ENABLED: from wiki.urls import get_pattern as wiki_pattern from django_notify.urls import get_pattern as notify_pattern
+b = np.zeros((self.dim,))
+error_msg = 'Error not available'
+('completed', 'completed'),
+if l2_reg != 0.: HHt.flat[::n_components + 1] += l2_reg if l1_reg != 0.: XHt -= l1_reg
+return False
+fn = getattr(model, '%s_data_specs' % self.method)
+for pool_size in [1, 2, 5]: do_test(pool_size)
+warnings.simplefilter('ignore', _NonBLASDotWarning)
+self.assertContains(response, checkbox_html, html=True) self.assertContains(response, org_name_string)
+self.set_group_access(self.chapter_location, {self.animal_partition.id: [self.dog_group.id]}) self.check_access(self.red_cat, self.vertical_location, False)
+exclude_patterns = []
+line_number = self.index_to_line_number(index) return self.line_number_to_start_index(line_number)
+from __future__ import unicode_literals
+#show_authors = False
+if not args.show_plot: print(n, np.mean(time_per_iteration))
+donation = Donation.add_to_order(self.cart, self.COST) self._assert_donation( donation, donation_type="general", unit_cost=self.COST, line_desc="Donation for edX" )
+y_grid_pred = trees.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1]
+self._convert_to_draft(xblock.location, user_id, ignore_if_draft=True)
+v_1 = DictVectorizer().fit([d_sorted]) v_2 = DictVectorizer().fit([d_shuffled])
+'django.middleware.locale.LocaleMiddleware',
+from __future__ import unicode_literals
+return {k: dic.get(k) for k in keys}
+valid_repr = numpy.floor((valid_repr / valid_repr.max())*999) test_repr = numpy.floor((test_repr / test_repr.max())*999)
+if not has_files: input_element = etree.SubElement(response_element, "textbox") input_element.set("mode", "python")
+return self.q(css='.action-delete').first
+self.assertIn(expected_copyright, json_data['copyright'])
+return None
+handout_links = self.course_info_page.handout_links self.assertEqual(len(handout_links), 1) self.assertIn('demoPDF.pdf', handout_links[0])
+dists = pairwise_distances(query, X, metric='cosine').ravel()
+response_msg_div.set("class", "response_message")
+X_inf = np.arange(4).reshape(2, 2).astype(np.float) X_inf[0, 0] = np.inf assert_raises(ValueError, check_array, X_inf)
+self._login_as_non_staff_user() self.assertFalse(self._can_access_library(self.library))
+self.assertEqual(len(all_modes[other_course_key]), 1) self.assertEqual(all_modes[other_course_key][0], CourseMode.DEFAULT_MODE)
+assert isinstance(course_key, CourseKey) store = self._get_modulestore_for_courselike(course_key) return store.make_course_usage_key(course_key)
+msg = u"Skipping {}, already enrolled in destination course {}" print msg.format(user.username, unicode(dest_key))
+super(ContainsFormatVisitor, self).__init__(file_contents, results) self.contains_format_call = False
+orig_tab_ids = [tab.tab_id for tab in self.course.tabs] tab_ids = list(orig_tab_ids) num_orig_tabs = len(orig_tab_ids)
+course_id = CourseKeyField(max_length=255, db_index=True, unique=True)
+try: return self.checkpoint_status.filter(user_id=user_id).latest() except ObjectDoesNotExist: return None
+return self.find_css('.signatory-panel-body .signatory-name-value').first.text[0]
+Y = Y.astype(np.float64) if sample_weight is not None: sample_weight = np.atleast_2d(sample_weight) Y *= check_array(sample_weight).T
+mock_model_log_exception.assert_called_once_with( 'Error sending API user notification email for request [%s].', self.api_access_request.id ) self.assertIsNotNone(self.api_access_request.id)
+good_states = ['AZ', 'FR'] blocked_states = ['US', 'AQ'] currently_blocked = EmbargoedState.current().embargoed_countries_list
+if y.ndim == 1: y = y.reshape((-1, 1))
+iris = datasets.load_iris()
+s = (y != 4) X = X[s, :] y = y[s] y = (y != 1).astype(int)
+self.course.save() self.store.update_item(self.course, self.user.id)
+y_train, y_test = data_train.target, data_test.target
+clf = GradientBoostingClassifier(n_estimators=100, random_state=1)
