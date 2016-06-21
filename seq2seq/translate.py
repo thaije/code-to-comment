@@ -308,7 +308,7 @@ def train():
                 sys.stdout.flush()
 
         
-def calc_accuracy(trans_file, ref_file):
+def calc_precision(trans_file, ref_file):
     counter = 0
     equal = 0
     
@@ -328,10 +328,10 @@ def calc_accuracy(trans_file, ref_file):
                 ref_sent = reference_file.readline()
                 trans_sent = translated_file.readline()
                 
-            accuracy = 0.00
+            precision = 0.00
             if(equal != 0):
-                accuracy = (equal / float(counter))
-            print ("Accuracy is: %s" % accuracy )
+                precision = (equal / float(counter))
+            print ("precision is: %s" % precision )
 
 def evaluate():
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
@@ -343,7 +343,7 @@ def evaluate():
         # score, scores = meteor.compute_score(dev_en_file, translated_dev_code)
         # print ( "Meteor score: %0.3f" %  score)
         os.system("perl evaluation/bleu/multi-bleu.perl " + test_en_file + "<" + translated_dev_code)
-        calc_accuracy(translated_dev_code, dev_en_file)
+        calc_precision(translated_dev_code, dev_en_file)
         
 def decode():
     with tf.Session() as sess:
