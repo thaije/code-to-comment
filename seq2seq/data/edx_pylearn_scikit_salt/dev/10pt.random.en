@@ -1,0 +1,3127 @@
+This string comes from footer.html  This string comes from header.html
+Import Python libs
+Nuclear option  Blow away the entire stack. Used primarily by the test runner but also  useful in custom wrappers of the HighState class, to reset the stack  to a fresh state.
+Now the user should have access
+fit on stopwords only
+Set parent date (vertical has same dates as subsections)
+check the singular vectors too (while not checking the sign)
+Make sure a name was passed
+Returns a dictionary of extra content necessary for rendering this InputType. `input_type` is either 'radio' or 'checkbox' indicating whether the choices for this problem will have radiobuttons or checkboxes.
+Check that relationship decreases
+create certificate
+Get logging started
+drop inner nodes
+Enroll student to the course
+Remove a required parameter
+Add a title at the top of each column
+Import Salt Libs
+the diagonal elements of a laplacian kernel are 1
+Define the module's virtual name
+Segment - must explicitly turn it on for production
+Parameters  W: {array-like, sparse matrix}, shape (n_samples, n_components) Transformed Data matrix Returns  X: {array-like, sparse matrix}, shape (n_samples, n_features) Data matrix of original shape .. versionadded:: 0.18
+Same issue as ReadTimeoutError.  When it 'works', python-etcd  throws EtcdConnectionFailed, so we'll do that for it.
+run the generated sqlfile in the db
+encoding: utf-8
+Import Salt Libs
+Make sure that the problem has been completely rendered before  starting to input an answer.
+Click the delete button  Click the confirmation dialog button
+Tracks the number of times on_monitor has been called
+don't really know how tight this should be  but you can try to pose an equivalent problem  and implement it in another way  using a numpy implementation in softmax_acc.py  I got a max error of .17
+Return group configuration description.
+merge with data from state
+Repo content would not be modified but the remote  URL would be modified, so we can't just say that  the repo is up-to-date, we need to inform the  user of the actions taken.
+Set the specified `kvs_key` to the field value `value`. Arguments: kvs_key (`DjangoKeyValueStore.Key`): The field value to delete value: The field value to store
+Track certificate view events
+export to the same directory--that way things like the custom_tags/ folder  will still be there.
+Don't rely on a real staff grading backend
+we can have two users with the same password, so this should succeed
+Add an orphan to test course
+Create a course with mode 'audit'
+Import python libs
+Author: Nikolay Mayorov <n59_ru@hotmail.com>  License: 3-clause BSD
+Test: Django default translator should in use if we have an empty block
+Self-paced course configuration
+Online contextual help
+Second test: train and test add up to all the data
+This dataset is not trivial enough for the model to converge in one pass.
+Import Salt Testing Libs
+Import Salt Testing Libs
+adjust verbose frequency (powers of 10)
+Enable partner support link in Studio footer
+Get any programs associated with courses being displayed.  This is passed along in the template context to allow rendering of  program-related information on the dashboard.
+makes url with the query params including pagination params for pagination next and previous urls
+Returns the item identified by usage_key and revision.
+Import Salt Testing Libs
+Define the module's virtual name
+There's a configuration setting defining this log file  logging level, i.e., `key_log_file_level` if the cli tool is  `salt-key`
+A non existing function should, of course, not exist
+No initial verification for the user
+keep lint from choking on _get_conn and _cache_id
+set mocked exception response
+Import salt libs
+Whether or not this summary block should be shown. By default, the summary is only shown if its date is in the future.
+First try a lookup in VAL. If we have a YouTube entry there, it overrides the  one passed in.
+Check if the pool_name is already being used
+Check that the child does not inherit a value for due
+Submit face image data, but not photo ID data.  Since the user doesn't have an initial verification attempt, this should fail
+This error is raised if the caller is not allowed to access the requested data.
+Return `input_str` with PKCS#7 padding added to match AES block length
+Vote a non-existing resource
+something bad happened
+Import Salt Testing Libs
+Check whether we're in a microsite that overrides our configuration  If so, find the microsite-specific configuration in the 'microsites'  sub-key of the normal processor configuration.
+Returns whether the given course has the given visibility type
+Returns True if both errors are visible, False otherwise.
+check if the distances are the same
+staged_score
+Non-euclidean Scipy distance (callable)
+Returns team location/country.
+The middleware should clean up the context when the request is done
+Generate sample data
+file being updated to verify using check_cmd  Reset ret
+Returns the number of non-fixed hyperparameters of the kernel.
+Import Salt Testing libs
+Import Python libs
+numpy random_state expects Python int and not long as size argument  under Windows
+Not set? Get the main salt log_level setting on the  configuration file  Also not set?! Default to 'error'
+Given an XBlock's usage locator as a string, return one of its action buttons. action is 'edit', 'duplicate', or 'delete'
+course didn't exist, or requesting user does not have access to it.
+Globals
+set the hash_type as it is determined by config-- so mechanism won't change that
+find the eigenvectors and eigenvalues of each local covariance  matrix. We want V[i] to be a [n_neighbors x n_neighbors] matrix,  where the columns are eigenvectors
+Set up logging
+Verify that the existing course continues to be in the course listing
+Sadly, this sleep is necessary in order to ensure that  sorting by last_activity_at works correctly when running  in Jenkins.
+Normalize path converting any os.sep as needed
+Verify that the proper auto enroll mode is returned
+Store a reference to the temporary queue logging handler
+Create the file
+__setstate__ and __getstate__ are only used on Windows.  We do this so that __init__ will be invoked on Windows in the child  process so that a register_after_fork() equivalent will work on  Windows.
+Import python libs
+Waits for the expected status indicator. Args: status: one of ("correct", "incorrect", "unanswered)
+HTML from `tail` should NOT be escaped.  We should be able to traverse it as part of the XML tree
+Import Salt Testing Libs
+Expect that the problem is graded as true  (That is, our script verifies that the context  is what we expect)
+Create a test partition
+(Re)mount worked!
+Globals
+Import Salt Libs
+code structure from ForestClassifier/predict_proba  Check data
+Slave devices are controlled by the master.  Source 'interfaces' aren't brought down.
+these hold the scope that our sls file will be executed with
+Get the key for a location in a policy file.  (Since the policy file is specific to a course, it doesn't need the full location url).
+Make sure there are no files in the directory before continuing
+Infer P(y | v) using mean field
+Bias^2 + Variance + Noise decomposition of the mean squared error
+Convert string `user_answer` to object.
+Verify `multi_parent_html` is child of both `Vertical1` and `OrphanVert`
+if it exists
+Base exception class for all exceptions related to assets.
+Import Salt Testing Libs
+Initial delay used for retrying tasks.  Additional retries use longer delays.  Value is in seconds.
+Returns a browser query object representing the video modal element
+Returns delete student state button.
+Test allow beta against list beta.
+Dashboard search feature
+The calculation of delta[last] here works with following  combinations of output activation and loss function:  sigmoid and binary cross entropy, softmax and categorical cross  entropy, and identity with squared loss
+Verify that no data is retrieved if the provided config model is disabled.
+everything is allowed
+If we have no books, asking for the first book will fail with a 404.
+Import Salt Testing Libs
+Import python libs
+ensure it doesn't exist
+Expect a <p> with the status
+Serializes a CreditCourse to a Python dict.
+Check that the human-friendly name given is valid (will  be able to pick up a value from the query) and unique  (since we're using it as the key in a dictionary)
+Jumps should appear last, except for any arguments that are passed to  jumps, which of course need to follow.
+Build a mock object with the passed id
+Configure TestShib before running the register test
+check that efficient and brute-force LOO give same results
+Import Python libs
+check that both courses exported successfully
+use merged_group_access which takes group access on the block's  parents / ancestors into account  check for False in merged_access, which indicates that at least one  partition's group list excludes all students.
+re-arrange these random-images so that the channel data is the minor  dimension: (batch rows cols channels)
+Create temp job cache dir without files in it.
+pylint: disable=unexpected-keyword-arg
+Returns the data_specs specifying how the data is internally stored. This is the format the data returned by `self.get_data()` will be.
+look up based on the HTTP request domain name  this will need to be a full domain name match,  not a 'startswith' match
+cwd may not exist if it was removed but salt was run from it
+Clear the cache between test runs.
+Estimate the covariance
+Import Python libs
+Should load from env variable, not the default configuration file
+Import python libs
+check arguments:  let exceptions return up to the caller.
+Update the document.
+no self.sub and no self.youtube_1_0, no non-en transcritps
+no autoplay here, maybe video is too small, so pause is not switched
+Flush any remaining data out of the compressor
+Test that staff may enter in an expression as the answer.
+otherwise calculate rotation and continue
+Returns true iff the library content area has been loaded
+Get the Websocket connection to Salt
+Since using "provider: <provider-engine>" is deprecated, alias provider  to use driver: "driver: <provider-engine>"
+Clickjacking protection can be enabled by setting this to 'DENY'
+Import Salt Testing Libs
+Globals
+keep lint from choking on _get_conn and _cache_id
+this is unexpected, so log
+Return a display name for the module: use display_name if defined in metadata, otherwise convert the url name.
+check arguments:  make sure that the usage_key is defined  (since that's currently typed in).  If the corresponding module descriptor doesn't exist,  an exception will be raised.  Let it pass up to the caller.
+e.g. master: localhost:1234  e.g. master: 127.0.0.1:1234  e.g. master: ::1:1234
+Submit photos and proceed to the enrollment confirmation step
+The next time we create a CourseOverview, the images are explicitly  *not* regenerated.
+Assert that the JID dir was removed
+Check that memcache is running
+Create a thumbnail of the images.
+Seed the grains dict so cython will build
+Import python libs
+Distribute samples by adding the largest weight to the lightest fold
+We remove the branch, because publishing always means copying from draft to published
+Check good means matrix
+Import Python libs
+no modes, should get 0
+Set seed according to the following priority:        1. Contained in problem's state        2. Passed into capa_problem via constructor
+Import Python libs
+The rest of the function is the num_steps = 1 case  Current code assumes this, though we could certainly relax this  constraint
+Arguments: kvs: The KeyValueStore to wrap. session: The Django session used to store temporary data in.
+Import Python Libs
+Redirects to the registration page.
+Import python libs
+Publish and verify again
+Expect that we can grade an answer without  getting an exception
+We use the same hashing function as the software under test,  because it mainly uses standard libraries, and I want  to avoid duplicating that code.
+No matter what data goes in, there should only be one close-script tag.
+Add the certificate request to the queue
+Check consistency on dataset boston house prices.
+Import Salt Testing libs
+First call sets the status to approved
+I _hate_ you for not giving me an object boto.  Policy is url encoded
+Import salt libs
+Import Salt Testing Libs
+not close to any other subclusters, and we still  have space, so add.
+Outside-facing function that lets us compare two numerical answers, with this problem's tolerance.
+Allow user access to course modification. `level` is one of ['instructor', 'staff', 'beta']
+verify that we are not returning the default 403  clear the ratelimit cache so that we don't fail other logins
+this now because the image to emboss
+Verifies that going to the courseware which does not have a survey does not redirect to a survey
+theoretically there could be more than one (e.g. someone self-unenrolls  then re-enrolls with a different regcode)  return the first one. In all normal use cases of registration codes  the user will only have one
+Import Salt libs
+get the spaces for layers that we have costs at
+Be sure to set up images for course modes using the BadgeImageConfiguration model in the certificates app.  Do not add the trailing slash here.  Number of seconds to wait on the badging server when contacting it before giving up.
+Normal Usage
+Verify that user_partitions is still the same.
+check that the created user has the right email, either taken from shib or user input
+Import Salt Libs
+Subsuites to be added to the main suite
+ensure that states in yyy run AFTER states in this file.
+Import salt libs
+Ensure that the current pillar_dir is first in the list, so that  the pillar top.sls is sourced from the correct location.
+Build command
+Fire the complete event back along with the list of schedule
+Don't use a connection pool, since connections are dropped by ELB.
+See if the survey form returns the expected unicode string
+import Python Third Party Libs  pylint: disable=import-error
+Fit the solution to the original, less regularized version of the  problem but from the solution of the highly regularized variant of  the problem as a better starting point. This should also converge  faster than the original model that starts from zero.
+Update submodule and ensure it is initialized (before 2015.8.0)  Update submodule and ensure it is initialized (2015.8.0 and later)
+Works around a caching bug which supposedly can't happen in prod. The instance here is not ==  the instance fetched from the email above which had its cache cleared
+Returns the current request's microsite configuration. if request's microsite configuration is not present returns empty dict.
+Import python libs
+A list of all core samples found.
+Enable Custom Courses for EdX
+Even though we don't care about testing mock_strftime_localized,  we still need to test it with a bad format string in order to  satisfy the coverage checker.
+expected answer (if given as attribute)
+A list of additional directories to search for salt outputters in
+grid of equidistant points in 2D, n_components = n_dim
+We shouldn't forget any metrics
+Make Start Times  Clean out the fileserver backend cache  Clean out pub auth
+Allow pillar.data to also be used to return pillar data
+List of usage keys of this block's parents.  list [UsageKey]
+Test _incremental_mean_and_var with whole data
+get the size of the image file and ensure it's square jpeg
+Collects block data for the block structure.
+Import salt libs
+Create any new communities.
+Answer radio problem.
+See the docs for xmodule.modulestore.mixed.MixedModuleStore
+Define the module's virtual name
+One element class
+Verify that access is denied to non-authorized users.
+test if prediction for last stage equals ``predict``
+Create a second user for use in these tests:
+Instances incorrectly classified
+is_active is `None` if the user is not enrolled in the course
+Check now `get_items` with `include_orphans` kwarg does not retrieves an orphan block.
+Define the module's virtual name
+Release 'es-419, es, es-es'
+If necessary, update the user's full name
+Set the answer attribute
+Logout and login with given credentials.
+Import Salt Testing libs
+Trained on sparse format
+Import Salt Testing Libs
+Plot calibration curve for Gaussian Naive Bayes
+Import Python Libs
+get the established connections to 4505 and 4506  these would only show up in tcpdump if data is transferred  but then with different flags (PSH, etc.)
+Unicode representation of the attribute.
+Add additional requested_fields that are specified as separate  parameters, if they were requested.
+Import Salt Libs
+Try to use shell version in case of errors w/python bindings
+Flush any remaining data out of the compressor
+Courseware search endpoints
+Clear the cache (only needed because we skip saving/re-loading the block) pylint: disable=protected-access
+disable defaultdict behaviour
+Redirects to the login page.
+0,     os.path.abspath(         os.path.normpath(             os.path.dirname(__file__) + '/../../../..'         )    )
+Import Python libs
+The hint button rotates through multiple hints
+Submit answers for problem in Section 1, which is visible to all students.
+Visit the page courseware page containing the hinter
+Interact with the payment button.
+If position is specified in system, then use that instead.
+look up sampled parameter settings in parameter grid
+Test mean at the end of the process
+Avoid having to run collectstatic before the unit test suite  If we don't add these settings, then Django templates that can't  find pipelined assets will raise a ValueError.  http://stackoverflow.com/questions/12816941/unit-testing-with-django-pipeline
+Verify the data was persisted
+string_max_length: The maximum characters of a string that should be  stored.
+Expect that equivalent symbolic strings are marked correct
+Import salt libs
+special case - means somewhere up the hierarchy, merged access rules have eliminated  all group_ids from this partition, so there's no possible intersection.  otherwise, if the parent defines group access rules for this partition,  intersect with the local ones.
+Append to results offsetting 1 column to the right.
+Patch old pickle files that don't have the axes attribute.
+Active immediately before expiration date
+PYLEARN2_DATA_PATH may or mayn't be defined
+Update the old details with our overrides
+Mock of __module__
+update the docstring of the descriptor
+Setup covariance matrix with correlation coeff. equal 0.5.
+It is possible to ask for the original data without any croping or color  conversion
+Mock of Runner
+n_components=None (default) => remove_zero_eig is True
+patch old pkl files
+Get the student module for the given user for the given block. Arguments: user (User) course_key (CourseLocator) block_key (BlockUsageLocator) Returns: StudentModule if exists, or None.
+X is already a transformed view of raw_documents so  we set copy to False
+Import Salt Testing Libs
+Only enable URLs for those marketing links actually enabled in the  settings. Disable URLs by marking them as None.  Skip disabled URLs
+Import python libs
+Import third party libs
+Verify that get_total_input_dimension works.
+Try to pickle the input function, to catch the problems early when  using with multiprocessing:
+Transform the event with necessary modifications if it is one of the expected types of events.
+Check if the "My Teams" tab is being viewed.
+Software secure fake page feature flag
+if there was an error return the entire response so the  alterer can get what it wants
+Given a dictionary of headers and a dictionary of the JSON for the body, will return a str that represents the normalized version of this messsage that will be used to generate a signature.
+Import Salt Testing Libs
+test that the sample interval is set correctly
+Sparse VectorSpaces throw an exception if batch_size is specified.
+Make sure we were called (i.e. we tried to create the thumbnail)
+Check correctness of export_graphviz
+Check that the user was created correctly
+Expect an equivalent formula to be marked correct  2x - x + y + y = x + 2y
+No need to check all the URLs
+(bad inputs, error message expected)
+Add a group
+Run the appropriate grader.
+Import salt libs
+Enroll the student in a verified mode, but don't  create any verified course mode.  This won't happen unless someone deletes a course mode,  but if so, make sure we handle it gracefully.
+Actual test method(s) defined in CohortedDiscussionTestMixin.
+Updates installed
+pylint: disable=import-error,no-name-in-module,redefined-builtin
+this block only applies to Debian without systemd
+Create the user (automatically logs us in)
+Import Salt Testing Libs
+Selects the file which will generate errors and warnings and clicks the upload button.
+Tests user creation without sending activation email when settings.FEATURES['BYPASS_ACTIVATION_EMAIL_FOR_EXTAUTH']=True and doing external auth
+Import Salt Libs
+Count raw events from data before updating the class log prior  and feature log probas
+Globals
+Test set_params()
+Only add to return dict if package is in the list of packages  passed, otherwise dependencies will make their way into the  return data.
+Initialize the PyCom system
+get user invoice copy preference.
+Author: Mathieu Blondel <mathieu@mblondel.org>  License: BSD 3 clause
+button with text 'New Unit' should be present.
+Import salt libs
+np.nan can appear when using pandas to load text fields from a csv file  with missing values.
+Import Python libs
+Shim to produce output similar to what __virtual__() should do  but __salt__ isn't available in __virtual__()
+don't break, just log a warning
+add OpenID headers to response
+Also stop the workers
+We're either not running any integration test suites, or we're  only running unit tests by passing --unit or by passing only  `unit.<whatever>` to --name.  We don't need the tests daemon  running
+Update the event's `event_type` to the value specified by `self.legacy_event_type`.
+Support old "repo" argument
+Not a typo. See:  http://en.wikipedia.org/wiki/HTTP_refererOrigin_of_the_term_referer
+Clean up phase
+Raise error if handle_unknown is neither ignore or error.
+Define the module's virtual name
+Import Python libs
+Import Salt Libs
+fallback
+Kick the user back to the "Invalid" screen if the feature is disabled
+check for missing task_output
+Main method called externally to get the HTML to be rendered for this capa Problem.
+This used to cause an exception since the code assumed that  only one partition would be available.
+Import salt libs
+Scenario: Verify that a new user's profile defaults to public. Given that I am a new user. When I go to my profile page. Then I see that the profile visibility is set to public.
+Tooltip parameters for subsection in open_distribution view
+Test that error is raised for input in selected incorrect choice.
+Import Salt Testing libs
+This is either a Schema or a Basetem, return it in it's  serialized form
+Check that svd_flip works in both situations, and reconstructs input.
+We read at least one piece of data
+Import Salt Testing libs
+Converter to return the matched tokens as a list - useful for returning tokens of ZeroOrMore and OneOrMore expressions.
+Translators: 'SymbolicResponse' is a problem type and should not be translated.
+For the last layer
+update db record  remove status key
+The view should return an error status code
+This will generate a CourseOverview and verify that we get the  source image back for all resolutions.
+Import Python libs
+Note : `get_scalar_constant_value` returns a ndarray not a  int
+Check that the "verification good until" date is displayed
+not yet implemented or not applicable
+Select the grading format with `value` in the drop-down list.
+Import 3rd-party libs
+Test render_to_string() when makomiddleware has not initialized the threadlocal REQUEST_CONTEXT.context. This is meant to run in CMS.
+This module really has no adjustable parameters -- once train()  is called once, they are frozen, and are not modified via gradient  descent.
+Import Salt libs
+Gradient due to the intercept.
+Import Salt Libs
+Generate sample data
+Import Salt Testing Libs
+CodeResponse requires internal CorrectMap state. Build it now in the unqueued state
+Import python libs
+For consistency's sake
+Sometimes language is not clicked correctly. So, if the current language code  differs form the expected, we try to change it again.
+Usage key strings might not include the course run, so we add it back in with map_into_course
+Other strings and the lowercase version of the string are incorrect
+Set the w_lock and go
+remove everything we had in the config so far  set up new value
+Creates new group configuration.
+Make the sdist
+Connect to the server
+In 'LM' mode try to be clever about small eigenvalues.  Otherwise in 'SM' mode do not try to be clever.
+deepcopy so that manipulations of fields does not pollute the source
+for course creator table
+100 lines for n_estimators==100
+Return to the video
+Determine if any views are missing from the design doc stored on the  server..  If we come across one, simply set the salt view and return out.  set_salt_view will set all the views, so we don't need to continue t  check.
+if it exists
+remove destdir if it is a regular file to avoid an OSError when  running os.makedirs below
+Only do redirect for English
+success without data
+Globals
+Check the tag doesn't exit
+Import salt libs
+Import Python Libs
+This file was auto-generated by salt's setup on \
+'units' and 'blocks' are draftable types
+Verify the partition_id was saved.
+A non-zero return code means fail
+Import salt libs
+create a course via the view handler
+constructed url should only has these params if present in api url
+Check the values of the fields.  The content and settings fields should be the default values
+select language with code "zh"
+A context manager that will capture all assertion failures made by self.assert* methods within its context, and raise a single combined assertion error at the end of the context.
+Restore signals
+Import python libs
+Returns a problem component with parent ``parent`` that is intended to be displayed to group ``group``.
+Event tracker backend that uses a python logger.:Parameters: - `name`: identifier of the logger, which should have been configured using the default python mechanisms.
+If not '', a 'Last updated on:' timestamp is inserted at every page bottom,  using the given strftime format.
+Return the query based on include_self param
+wrap dictionary in a singleton list to support either dict  or list of dicts
+django_comment_client calls GET comment before doing a DELETE, so that's what this is here to support.
+Verify that the changes in the draft unit still exist.
+test on five random datasets
+Verify that child was last edited between after_create and after_edit by edit_user
+Attempt to import msgpack  There is a serialization issue on ARM and potentially other platforms  for some msgpack bindings, check for it
+Assert that 'display_course_number' is being set to "" (as display_coursenumber was None).
+Return the legacy event_type of the current event
+Attribute(expr value, identifier attr, expr_context ctx)
+{ partition.id: set(IDs of groups that can access partition) }  If partition id is absent in this dict, no group access  restrictions exist for that partition.
+Update x except if it will become too big
+Don't shadow built-in's.
+Disable student view button if user is staff and  course is not yet visible to students.
+simple linear function without noise
+We're unable to findout how many PTY's are open
+make sure it updates correctly
+first argument must be an instance of BaseGradientBoosting
+Verifies that the LTI launch succeeds when passed a valid request.
+Import python libs
+First byte is the number of unused bits. This should be 0  http://msdn.microsoft.com/en-us/library/windows/desktop/bb540792(v=vs.85).aspx  Now get the signature itself
+Modulestore-level field override providers. These field override providers don't  require student context.
+Verify that the profile page is currently private.
+Skip test if cuda_ndarray is not available.
+get_data_home will point to a pre-existing folder
+this function accepts **kwargs, pack in the publish data
+Mock of delete method
+fit the model
+How to merge multiple top files from multiple salt environments  (saltenvs); can be 'merge' or 'same'
+Import salt libs
+For backwards compatibility -- if we've got XML data, parse it out and set the metadata fields
+Unique identifier for the transformer's class; same identifier used in setup.py.
+Check that extmath.randomized_svd can handle noisy matrices
+Make a physical copy of the original estimator parameters before fitting.
+Click on the subsection to see the content
+Munge course id - common  Validation shouldn't work
+Get all the team cards on the page.
+test fit_transform:
+compute exact kernel  abbreviations for easier formula
+a JSON dump of the CC processor response, for completeness
+Enable a parental consent age limit for testing
+Allow "version" to work for single package target
+Saving config
+Submit an HTTP GET request to the view for the given course
+Are we dealing with an "old-style" problem location?
+Although throwing a 400 might be reasonable, the default DRF behavior with ModelSerializer  is to convert to None, which also seems acceptable (and is difficult to override).
+Test L1 regularization
+pylint: disable=unused-import
+Return list of component names in a tab in a category. Arguments: category_type (str): category type tab_index (int): tab index in a category Returns: list
+We need CSR format for fast row manipulations.
+Define the module's virtual name
+Get assignment type for cohort.
+Expect that the number of attempts is incremented by 1
+Request well-formed and credentials good.
+should be rejected
+Import salt libs
+Import salt libs
+Defaults for iterators
+avoid causing a server error when the LMS chokes attempting  to find a group name for the group_id, when we're testing with  an invalid one.
+Import Python libs
+Ensure that minions are shutdown
+Scope.settings default values copied from a template block (used e.g. when  blocks are copied from a library to a course)
+favor longest fqdn
+pylint: disable=protected-access
+Remove all whitespace from body
+Raise an error if libcuda_convnet_so is still not available
+Also fingerprint this source file, so that if the logic for installations  changes, we will redo the installation.
+if 'virt-what' returns nothing, it's either an undetected platform  so we default just as virt-what to 'physical', otherwise use the  platform detected/returned by virt-what
+Import 3rd party libs
+Testing adjust_for_viewer()
+Import Python libs
+Import Salt Testing libs
+Special case to avoid picklability checks in delayed
+used for statistics gathering
+does a round trip
+Check that PCA output has unit-variance
+Some noisy data not correlated
+Transfer students from the old demoX class into two new classes.
+Returns boolean indicating presence entrance exam status message container div.
+Pop the user that was emailed off the end of the list only once they have  successfully been processed.  (That way, if there were a failure that  needed to be retried, the user is still on the list.)
+Test method on train set
+Provider information:  Information about the user expected from the provider:
+this file is stored in HDF format, which transposes everything
+Import salt libs
+Import 3rd-party libs
+Function that wraps estimator.score
+test for when one has been created
+1 mongo call is made to get the course About overview text.
+Return the key used in this DjangoOrmFieldCache for the specified KeyValueStore key. Arguments: key (:class:`~DjangoKeyValueStore.Key`): The key representing the cached field
+Correctness oracle
+financial reports
+Determine the photo verification status
+This condition could be relaxed, but current code assumes it
+Import python libs
+The response should have a "Sign In" button with the URL  that preserves the querystring params
+Any supplemental fields that get added to the index for the specified item. Base implementation returns an empty dictionary
+Now we're going to muck with this and set it a version higher in  the database.
+handle corner cases first
+Enable student notes
+Generate Cython sources, unless building from source release
+return gettext.translation for given language
+Finally, return if we're allowed to write in the parent directory of the  provided path
+unset mappings
+Delete cookies indicating that the user is logged in. Arguments: response (HttpResponse): The response sent to the client. Returns: HttpResponse
+check that the labels assignment are perfect (up to a permutation)
+pylint: disable=no-member
+Parse xml_element 'sources' attr and return a list of location strings.
+The directory to store all cache files.
+Make courses that have an announcement date have a lower  score than courses than don't, older courses should have a  higher score.
+wait until stopped
+Fetch and load defaults formula files from states.
+the default is reg_param=0. and will cause issues  when there is a constant variable
+Import salt libs
+wrap the provided modulestore
+The datetime of the last change to this xblock content, children, or settings.
+uniform class weights
+smoketest grid search
+ANOVA SVM-C  1) anova filter, take 3 best ranked features  2) svm
+Import salt libs
+No metrics support "multiclass-multioutput" format
+Test one vs. rest RocAucChannel.
+This method return data that should be associated with the "check_problem" event
+Import python libs
+While we are supporting Python2.6, hide nested with-statements warnings
+Generating the sample data from make_blobs  This particular setting has one distinct cluster and 3 clusters placed close  together.
+Clear handout from settings
+Get baseline provider count
+Import Python Libs
+Import third party libs
+check if any new connections were made
+create index file
+Test with group_access set to Falsey values.
+Plot the predicted probabilities. For that, we will assign a color to  each point in the mesh [x_min, m_max]x[y_min, y_max].
+Gate access to Ecommerce tab
+hash the password
+get a group assigned to the user
+Set default retcode to 0
+Let's generate salt/_version.py to include in the sdist tarball
+check best alpha
+make sure all entries are IPs
+Import Python libs
+Get the seed  By this point, the module should have persisted the seed
+Validates configuration text field.
+And visit the Allowance Section of Instructor Dashboard's Special Exams tab
+Maximum number of retries per task for errors that are not related  to throttling.
+Import python libs
+Test transformer with default version number (0).
+Click 'Add Exception' button with invalid username/email field
+Update the cholesky decomposition for the Gram matrix
+Make closed captions invisible.
+Update the user's profile, linking the user to the embargoed country.
+Non-annotated tag
+export course to xml
+Verify `OrphanVert` is an orphan
+Import Salt Testing libs
+Import python libs
+Get user partition for saving in course.
+salt cloud providers
+Mock the grading function to always return a passing grade.
+Build course.
+Dense label indicator matrix format
+make sure the newline
+Import Salt Libs
+Expect that the number of attempts is NOT incremented
+verify that the error message isn't shown by default
+Restore default list_display behavior. ConfigurationModelAdmin overrides this, but in a way that doesn't respect the ordering. This lets us customize it the usual Django admin way.
+Non-required field. External services can add any arbitrary codes as time  goes on. We don't try to define an exhuastive list -- this is just  capturing it so that we can later query for the common problems.
+Just make sure descriptor loads without error
+the ind of minibatch goes beyond the boundary
+Figure out full path of location of backup folder in minion cache
+debugging, make sure V didn't get changed in this function
+Import Salt libs
+Find the button whose text matches what you're looking for
+Import Salt Libs
+construct indices and index pointers for sparse matrix
+Get the Studio URL of the page that is passed in. Args: course (CourseDescriptor)
+could be done in parallel threads if needed
+Should have a dummy default
+msg += "<p/> dot test " + to_latex(dot(sympy.Symbol('x'),sympy.Symbol('y')))
+Internal method used to calculate and return the locator and course module for the view functions in this file.
+Transform value into a shared variable of type floatX Parameters  value : WRITEME name : WRITEME borrow : WRITEME dtype : str, optional data type. Default value is theano.config.floatX Returns  WRITEME
+Check the length
+Generate a binary classification dataset.
+Set up the utils_dirs location from the extension_modules location
+Test that celery handles permanent SMTPDataErrors by failing and not retrying.
+Run it this way:    ./manage.py cms --settings dev edit_course_tabs --course Stanford/CS99/2013_spring
+Error thrown if validation fails.
+For verification, iterate through the window titles and make sure that  both are there.
+now with our own grid
+Globals
+Ensure jquery is loaded before running a jQuery  This text appears towards the end of the work that jQuery is performing on the page
+Import python libs
+Remove duplicate alphas in case alphas is provided.
+Expand the dict reader generator so we don't lose it's content
+Wow, we passed the test, run this sucker!
+Edit Subsection page in Studio
+Monitoring signals
+want an exact match.
+Authors: Clay Woolam <clay@woolam.org>  Licence: BSD
+Type for assets uploaded by a course author in Studio.
+Clear the cache to remove the effects of previous embargo tests
+Import third party libs
+Add an auto_cohort_group to the course...
+This is about 2x faster than the implementation above on 3.2+
+Save all the names of all the imported modules.
+Return the the current page number.
+Import Salt Testing libs
+If an integer, return that integer  If a fraction, return the fraction
+Import python libs
+Import Salt Testing Libs
+offset from the backing memmap
+Import Salt Libs
+Import python libs
+Patch the xml libs before anything else.
+It would fetch list of milestones completed by user
+Print this chunk in a terse way and continue in the  loop
+label junk food as -1, the others as +1
+Given an AccessToken object, return the associated client application.
+These represent a "real time" view into Salt's jobs.
+Test successful CDN request.
+Verify that all course summary objects have the required attributes.
+with even monitoring datasets
+Import salt libs
+CodeResponse requires internal CorrectMap state. Build it now in the unqueued state
+Add specialized claims.
+Use python sets to get more informative assertion failure messages
+Import Python libs
+Only set the value in the config file IF it was explicitly  specified by the user, this makes it possible to tweak settings  on the configuration files bypassing the shell option flags'  defaults
+Same generator as __iter__, but yield only the chosen indexes
+Set up logger
+Patch old pickle files
+third-party libs for netapi modules
+if test instance is still present, delete it
+Missing  Need to change username/email because user was created above
+Enable URL that shows information about the status of various services
+This exception occurs when two processes are trying to write  to the git config at once, go ahead and pass over it since  this is the only write. This should place a lock down.
+we're good
+Try to list the service.  If it can't be listed, it's not enabled
+Unique identifier for the transformer's class; same identifier used in setup.py.
+Import Python Libs
+Globals
+Define the module's virtual name
+Choose a practice exam but do not press enter
+Download the required DLLs
+Checks to see if the indexing feature is enabled
+size needs to have a fixed length at compile time or the  theano random number generator will be angry
+Fire off the disconnect pipeline to unlink.
+Test if not allowed header present in request.
+Verifies that the correct event is emitted when a report is downloaded.
+pylint: disable=abstract-method
+Import salt libs
+Time moves forward so we might not reenter the loop if we step too long
+Course Content Bookmarks Settings
+return the new draft item (does another fetch)  get_item will wrap_draft so don't call it here (otherwise, it would override the is_draft attribute)
+Learn PCA preprocessing and apply it to the training set  Now apply the same transformation to the test set
+Wait 5 seconds and press "skip" button.
+make sure that the Agg backend is set before importing any  matplotlib
+Check that method 'get_initial_verification' returns the correct  initial verification attempt
+The name of the signing key-pair
+test for Value error on unfitted/empty vocabulary
+Import Third Party Libs
+Exact string should be correct  Other strings and the lowercase version of the string are incorrect
+open using LoncapaSystem OSFS filestore
+Backwards compatibility with themes  created for earlier implementations of the embargo app.
+allow both "sys" and "sys." to match sys, without also matching  sysctl
+Branch or tag not found in repo, try the next
+3 fold cv is used --> atleast 3 samples per class  Smoke test
+Median
+Get the root path directory where salt is installed
+Randomly pick a v to condition on  (Random numbers are generated via dbm.rng)
+Import Python libs  Remove unused-import from disabled pylint checks when we uncomment the logic  in _get_exec_driver() which checks the docker version
+Tests LedoitWolf module on a simple dataset.  test shrinkage coeff on a simple data set
+Instantiate the local client
+firstly generating downloadable certificates with 'honor' mode
+In future, there should be a check here that the resulting JSON  will fit in the column.  In the meantime, just return an exception.
+Sometimes tuples are returned???
+Choose a single cross-validation fold to represent. Parameters  k : int Index of selected fold.
+Verify the status code returned by the Program authoring view.
+We only want numbers
+check if an already added requirement is modified
+Not a number!?
+Create the cloud instance name to be used throughout the tests
+check get and set methods
+Import external libs
+This code is taken from within the GenericAPIViewpaginate_queryset method.  We need need access to the page outside of that method for our paginate_search_results method
+Invalid choices should be marked incorrect
+Currently this test file does nothing but make sure the module can be  imported.
+If this assert fails, we need to find a new target. This test  needs to be able to test successful installation of the package, so  the target needs to not be installed before we run the states  below
+Serialize a list of values for including in a SQL "IN" statement.
+Our raw training set is 32x32 color images
+Verify that the view can be disabled via ApiAccessConfig.
+make sure the depends thing worked (double check of the depends testing,  since the loader does the calling magically
+failed to resolve
+Create a user and enroll in a course
+ensure the pool is present
+Import python libs
+Function aliases
+Submits a task to generate a CSV containing detailed enrollment info. Raises AlreadyRunningError if said CSV is already being updated.
+Test that grid search works with both dense and sparse matrices
+Import Python libs
+handle case where y is 2-d
+Create the deadlines
+Import 3rd-party libs
+update the index entry if appropriate
+Copies the `Validation` object to a `StudioValidation` object. This is a shallow copy. Args: validation (Validation): A `Validation` object to be converted to a `StudioValidation` instance. Returns: StudioValidation: A `StudioValidation` instance populated with the messages from supplied `Validation` object
+Set up logging
+See :meth: cms.lib.xblock.runtime.EditInfoRuntimeMixin.get_edited_by
+These will be hidden from the user anyway since they're starting  after the payment step.  We're already including the payment  steps, so it's easier to include these as well.
+Return the count of errors and warnings for this file.
+Bookmarks
+Use _aligned_zeros to work around a f2py bug in Numpy 1.9.1
+throws CalledProcessError if return  return code is not zero.
+Wait for the problem to finish re-rendering
+Total weight of each fold
+Transfer 'queuekey' from xqueue response header to the data.  This is required to use the interface defined by 'handle_ajax'
+Import ioflo libs
+Check if the version is already installed  Desired version number already installed
+if eval_master finds a new master for us, self.connected  will be True again on successful master authentication
+Logistic regression with no calibration as baseline
+Parameters  extra: string to be added to the deprecation messages
+general eigenvalue problem
+Bookmark metadata.
+Filter out numpy-specific warnings in numpy >= 1.9
+Merge parser options  --version does not have dest attribute set for example.  All options defined by us, even if not explicitly(by kwarg),  will have the dest attribute set
+Import salt libs
+Let's create the virtualenv  Something went wrong. Let's bail out now!
+If there was an error, do not try again
+But will output 0
+Virtual disks can be shared between virtual machines on any server
+Return the orientation value for the given Image object, or None if the value is not set.
+Get salt minion ID  Try to get kubernetes master
+Set the group we expect users to be placed into
+Re-submit certificates for particular courses
+The original splits
+check if user exists with a different password
+Copy the tar down
+Verify chapter1 is parent of vertical1.
+Prerequisite courses feature flag
+1 is an important corner case  We must also run with a larger number to test the general case
+initialize the mixed modulestore
+Import Salt Libs
+error indices
+We've reached the last page, so there's no next page.
+Settings
+Check 2nd - 4th octets  Passed all of the checks
+Variables for manifold learning.
+Globals
+Fall back to django settings's SOCIAL_AUTH_LOGIN_ERROR_URL.
+Print the feature ranking
+delayed import of numpy, to avoid tight coupling
+Represent an address as 16 packed bytes in network (big-endian) order.Args: address: An integer representation of an IPv6 IP address. Returns: The integer address packed as 16 bytes in network (big-endian) order.
+JSON is unsupported.
+Test kneighbors_graph to build the k-Nearest Neighbor graph  for sparse input.
+Load the array from the disk
+python 2.6 test
+Increment the rate limit counter
+Disable INFO level logs from requests/urllib3
+Release the session lock before starting the long-running response
+Return as a array so the difflib works
+Import python libs
+Function aliases
+We're skipping these tests because the iter_all_by_block and iter_all_by_course  are not implemented in the DjangoXBlockUserStateClient
+teams feature
+Device already listed, just grab the index
+Verify that if all providers are in-active than method return empty list.
+Don't perform this test on FreeBSD since version specification is not  supported.
+-*- coding: utf-8 -*-
+To test that the context is set up correctly,  we create a script that sets *correct* to true  if and only if we find the *submission* (list)
+Let's keep a reference to the current logging handlers
+Sets the (flattened, log-transformed) non-fixed hyperparameters.Parameters  theta : array, shape (n_dims,) The non-fixed, log-transformed hyperparameters of the kernel
+We're now able to import salt
+CSS for the course pacing button which is currently checked.
+Provides:    pythonpath
+True if this tab is a default for the course (when enabled)
+Brew doesn't support local package installation - So, let's  Grab some small packages available online for brew
+does this virtual exist?
+Second: Halves grading style
+Enroll above test user in the course
+Store variable in self.mean_square_grads for monitoring.
+return the published version if ModuleStoreEnum.RevisionOption.published_only is requested
+Add an name/value pair as an attribute for the given user. Overwrites any previous value for that name, if it exists.
+now the student should see it
+pylint: disable=protected-access
+The two Lasso implementations on Sparse data
+given a course id and thread id vote for this thread ajax only
+The system prefers to set this automatically based on default settings. But  if the field is set manually we want a way to indicate that so we don't  overwrite the manual setting of the field.
+n_sq_outliers includes the weight give to the outliers while  num_outliers is just the number of outliers.
+Ensure that the vendor directory exists
+Import Salt Testing libs
+Parse the detail clauses.
+for use in openedx/core/djangoapps/profile_images/images.py
+Let students save and manage their annotations
+Show only the most recent row for each key.
+each iteration has different find count, pop this iter's find count
+ensure it's still a child of the other parent even tho it doesn't claim the other parent as its parent  children rather than get_children b/c the instance returned by get_children != shared_item
+Returns whether this answer is in a valid form.
+Make sure we can't create two surveys of the same name
+convert dtype
+Would happen if some wiseguy requests a tag ending in a colon  (e.g. 'somerepo:')
+Getting the student's course completion date
+Check that the data hasn't been modified
+If there is no stdout and the retcode is 0, then verification  succeeded, but if the retcode is nonzero, then the command failed.
+Thin wrapper for the Library Import Manager. See ImportManager for details.
+Now fetch the StudentModule entry for p1 so we can corrupt its state
+Credit eligibility email should be sent
+Import python libs
+Tests for AccessTokenExchangeView used with Google using django-oauth-toolkit backend.
+VS[compat]:  Check if XML uses the ExternalResponse format or the generic  CodeResponse format
+both dictionaries for fast search  (but are semantically lists)
+Test bulk email with unicode characters in course image name
+Import third party libs
+Now generate the CourseOverview...
+Patch old pickle files
+if wipe was incomplete & part layout remains the same,  this is one condition set where udev would make it accidentally popup again
+Check for required profile parameters before sending any API calls.
+remove the redemption entry from the database.
+with a different shape, this may break the scaler unless the internal  state is reset
+Create a snapshot of the invoice item.This is the same as a snapshot for other invoice items, with the addition of a `course_id` field. Returns: dict
+Import python libs
+See the docs for xmodule.modulestore.mixed.MixedModuleStore
+Returns the submatrix corresponding to bicluster `i`.Works with sparse matrices. Only works if ``rows_`` and ``columns_`` attributes exist.
+Should NOT mark individual options
+Import Salt Testing Libs
+The number of seconds for the syndic to spend polling the event bus
+Gets a user's record, and fixes any duplicates that may have arisen due to get_or_create race conditions. See https://code.djangoproject.com/ticket/13906 for details. Use this method in place of `LoginFailures.objects.get(user=user)`
+generate training ground truth labels
+compute the test kernel matrix
+Import Salt Libs
+Test check_javascript_file_is_safe with JQuery insert to target functions that take a target as an argument, like appendTo() and prependTo().
+A stub publish method that doesn't emit any events from XModuleDescriptors.
+Instead of AuthenticationMiddleware, we use a cached backed version  Enable SessionAuthenticationMiddleware in order to invalidate  user sessions after a password change.
+Can't test for forbiddenness if CodeJail isn't configured for python.
+Check X=None in prediction
+Return the longhand version of the IP address as a string.
+Test curvy parens with the tall parameter.
+Verify that the behavior is the same for sending None.
+step 3: check that sparse and dense updates lead to the same results
+Import Python libs
+Translators: This is a past-tense verb that is inserted into task progress messages as {action}.
+Populate wua_found  Found using GUID so there should only be one  Add it to the collection  Not found using GUID  Try searching the title for the Name or KB
+0       /      1     /    2   /  3
+Test for 403 error code when the url
+Restore initial window size
+unknown will be returned while inside a kickstart environment, since  this is usually a server deployment it should be safe to assume runlevel  3.  If not all service related states will throw an out of range  exception here which will cause other functions to fail.
+Mock of State
+put the inputs + outputs in shared variables so we don't pay GPU  transfer during test
+Generate the random projection matrixParameters  n_components : int, Dimensionality of the target projection space. n_features : int, Dimensionality of the original source space. Returns  components : numpy array or CSR matrix [n_components, n_features] The generated random matrix.
+According to http://www.imsglobal.org/lti/ltiv2p0/ltiIMGv2p0.html_Toc361225514  PUTting a JSON object with no "resultScore" field is equivalent to a DELETE.
+Verify that the new password continues to be valid
+go to video
+Inverse hyperbolic cosecant
+FIXME Remove l1/l2 support in 1.0
+Set host to specified value or default to localhostname if no value provided
+Update status:
+authentication succeeded, so fetch user information  that was requested  remove error from session since login succeeded
+Logout redirects.
+Import Salt Libs
+The only supported mode is currently 'random'.  Add the mode field to non_editable_metadata_fields so that it doesn't  render in the edit form.
+Import Python libs
+Import Salt Testing Libs
+Waiting for visibility of note editor.
+Disable caching while testing the API
+Test render_to_string() when makomiddleware has not initialized the threadlocal REQUEST_CONTEXT.context. This is meant to run in LMS.
+Import Salt Libs
+check the discussion topic.
+Apply simple filtering based on CAPA problem types:
+Returns least common multiple of a, b Args: a, b: floats Returns: float
+Calculate the values where |y - X'w -c / sigma| > epsilon  The values above this threshold are outliers.
+Construct an equivalent MLP which gives the same output  after flattening both.
+Now add the student to the specified group.
+An organization staff member
+Shouldn't happen, but just in case a future pygit2 API change  breaks things, avoid a traceback and log an error.
+Import python libs
+Valid function names should be escaped.
+Grade percent is .63. Here is the calculation
+test with X and y as list
+When editing an existing record, all fields should be read-only.VerificationStatus records should be immutable; to change the user's status, create a new record with the updated status and a more recent timestamp.
+salt-call tls.create_csr my_little CN=www.example.com
+Now make more submissions by our original user
+Assert that percent grade is as expected.
+Number of records to read at a time when making  multiple queries over a potentially large dataset.
+Make life easier
+This table contains information about users registering via Micro-Sites
+wait for a bit as to not burn through api calls
+update index if appropriate and structures
+The queue size for workers in the reactor
+Set group_access for the specified item to the specified group ids within the content partition.
+Import Python Libs
+Initialize variables in convnet_available
+Get a list of the packages before install so we can diff after to see  what got installed.
+Test std until the end of partial fits, and
+See NotifierUserSerializer for notes about related tables
+pylint: enable=import-error
+Bookmarks
+Library should contain single Dropdown problem, so now there should be no errors again
+Test if warm start equals fit - set n_estimators.
+test create_item of NOT direct-only category to make sure we aren't autopublishing
+If preload is specified, we must send a raw event (this is  slower because it has to independently authenticate)
+Make DBM
+Verify using manual computation with dense eigh
+Number of candidates considered including duplicates  XXX: not sure whether this is being calculated correctly wrt       duplicates from different iterations through a single tree
+Returns a URL that can be used to view eligibility data.
+Reimport and get the video back
+Actual max is 256KB, but need overhead for badge baking. This should be more than enough.
+pick a non-zero document length by rejection sampling
+The comments service returns the last page of results if the requested  page is beyond the last page, but we want be consistent with DRF's general  behavior and return a PageNotFoundError in that case
+Render the HTML
+Compress train and label arrays according to condition
+-*- coding: utf-8 -*-
+Display progress logs on stdout
+Add in security token if we have one
+Import Salt libs
+Note: the following is identical to X[rows[:, np.newaxis], cols].sum() but  much faster in scipy <= 0.16
+Assert that no POST was made to the catalog API
+Import Python libs
+Check that the version is set
+Import salt libs
+check that response status is 200 not 400
+Extend the block's new edit_info with any extra edit_info fields from the source (e.g. original_usage):
+HTML files shat should be inserted after the pages created by sphinx.  The format is a list of tuples containing the path and title.
+maybe py2exe went by
+Get list of enabled services
+Import Salt Libs
+Parse through well known bools
+set (m|a)time of file 5 days into the past
+Simulate users who registered accounts before the country field was introduced.  We need to manipulate the database directly because the country Django field  coerces None values to empty strings.
+Globals
+Import python libs
+Find the earliest start date for the entries in this category
+Import salt libs
+Import Python libs
+edx-ora2
+fit_transform()
+couldn't convert octet to an integer
+CDN experiment/monitoring flags
+At least one neighbor should be returned when the radius is the  mean distance from the query to the points of the dataset.
+Empty, too short
+A higher order function implemented on top of the block_structure.get_collected function that returns the block structure in the cache for the given course_key. Returns: BlockStructureBlockData - The collected block structure, starting at root_block_usage_key.
+verify children
+_folds contains a StackedBlocks instance for each CV fold
+Preps this instance for results reporting. Arguments: full_path: Path of the file in violation. string_lines: A StringLines containing the contents of the file in violation.
+Define the module's virtual name
+Local imports
+Note that we use student.course_groups.all() here instead of  student.course_groups.filter(). The latter creates a fresh query,  therefore negating the performance gain from prefetch_related().
+Newer versions of scipy have face in misc
+Check if service is already present
+Getting the students's enrollment date
+Site info  NOTE: Please set ALLOWED_HOSTS to some sane value, as we do not allow the default '*'
+Amount column (header + data items)
+Import 3rd-party libs
+Transform the output from the handler into the requested output format
+If it's any of these statuses, they don't have anything outstanding
+in this case 'auto' is equivalent to transpose
+Test scikit linkage with full connectivity (i.e. unstructured) vs scipy
+Import Salt Testing libs
+Set new value
+Import Python Libs
+None.
+Import salt libs
+Wraps the decorated function.
+create vertical
+Return just one repo
+Any left over value in the saltfile can now be safely added
+Missing
+Create a rule
+Import Python libs
+Value Error course price should be a numeric value
+test shrinkage coeff on a simple data set (without saving precision)
+Import salt libs
+Things like server locations, ports, etc.
+Verify users are not in honor mode yet
+Import python libs
+check if credentials and datacenter_id present
+Perform inference
+check dates and graders--forces loading of descriptor
+Import python libs
+execute the search
+Finally, add back in a cohort user_partition
+Access the problem's score
+Ensure that the user IS staff
+import python libs
+Create and start
+Import salt libs
+create another one for the same user, make sure the right one is  returned
+Helper method for getting preview view name (student_view or author_view) for a given module.
+Create a generated Certificate of some user with status 'downloadable'
+hack to iterate only once for multinomial case.
+Click on Bookmarks button
+Import Salt Testing Libs
+URL to the "User Access" page for the given library.
+be happy it is already there....however, if you are trying to change the  major/minor, you will need to unlink it first as os.mknod will not overwrite  quick pass at verifying the permissions of the newly created block device
+Check that the course exists
+returns the parent locations for a given location
+Takes an answer_id Returns true if the problem is partially correct.
+Returns the new post button.
+Check parameters
+Deletes of non-existent files are considered successful
+Retrieve the region for a particular AWS service based on configured region and/or profile.
+Refresh our reference to the library
+Update status in task result object itself:
+Import salt libs
+Verify the requirements are shown only if the user is in a credit-eligible mode.
+Click on the duplicate button for the given XBlock
+Test that same global labels are obtained after calling partial_fit  with None
+Return selector fo signatory container
+This Cost does not depend on any data, and get_data_specs does not  ask for any data, so we should not be provided with some.
+empty file before configure
+The {}.has_key() method is removed in the Python 3. Use the 'in' operation instead. Okay: if "alph" in d:\n    print d["alph"] W601: assert d.has_key('alph')
+First try wrapping the text in a <div> and parsing  it as an XHTML tree
+Import Third Party Libs
+Instantiate the paginator and use it to paginate the queryset
+compare published state
+Fields not in the inherited_names list won't be inherited.
+Import Salt libs
+build the pruned variant using the regular constructor
+stack the k-th block from each layer
+If the problem is closed (past due / too many attempts)  then we do NOT show the "check" button  Also, do not show the "check" button if we're waiting  for the user to reset a randomized problem
+Verify the API was actually hit (not the cache).
+Import python libs
+enable added beacon
+Returns True if background task history table is present.
+Return Students that have Generated Certificates and the generated certificate status  lies in 'statuses_to_regenerate'  Fetch results otherwise subsequent operations on table cause wrong data fetch
+set proper ownership/permissions
+Test that `set_summary` errors if argument is not a ValidationMessage.
+This end-point is available to anonymous users,  so do not require authentication.
+We should wait 300 ms for event handler invocation + 200ms for safety.
+Use the response parameters to simulate a successful payment
+If it's not a "No such process" error, raise it  Otherwise, it's a dead process, remove it from the process map
+There's a known bug in Debian based distributions, at least, that  makes the command exit with 12, see:   https://bugs.launchpad.net/ubuntu/+source/shadow/+bug/1023509
+if it doesn't exist  else something else was returned
+Instrument the pipeline to get to the dashboard with the full  expected state.
+Check that the model could approximately learn the identity function
+Configure the LMS to use our stub EdxNotes implementation
+We report the index of this hint, the client works out what index to use to get the next hint
+Import Salt Testing Libs
+Expect that the inputs are graded correctly
+Variadic helper used to create course enrollments.
+Import python libs
+Check that the username and email are set
+The default settings use DEBUG mode for running the server which means that  the optimized assets are ignored, so we skip collectstatic in that case  to save time.
+Meta class for this Django model
+Check if the service is available
+check if this data set has been already downloaded
+Import Salt Libs
+We express mu in terms of the pre-sigmoid activations. See  `log_conditional` for more details.
+No reason to stop, return True
+Import Python libs
+Ensure that, on receipt of a score_set signal from the Submissions API that does not have the correct kwargs, the courseware model does not generate a signal.
+CSS indices are 1-indexed, so add one to the list index
+Returns the subject and message rendered in the specified language for CCX.
+remove instance
+Import Salt Testing Libs
+New emails for the users
+File didn't match the strp format string, so it's not a backup  for this file. Move on to the next one.
+cache is empty so pull template from DB and fill cache.
+This appears to be an unused context parameter, at least for the master templates...
+Import Python Libs
+report = classification_report(y_true, y_pred) assert_equal(report, expected_report) expected_report = \
+Dry method for getting expected program credentials response data.
+Keyword arguments mapped by 'functools.partial'  (Parameter._partial_kwarg is True) are mapped  in 'BoundArguments.kwargs', along with VAR_KEYWORD &  KEYWORD_ONLY
+Clean up our tar
+Expect that an exception gets raised when we check the answer
+Import Salt Libs
+salt imports
+Center X and y to avoid fit the intercept
+Split the data into training/testing sets
+The supplied CourseKey is of the wrong type, so it can't possibly be stored in this modulestore.
+Now just throw in some fake data to this image set, something that  couldn't possibly work.
+submodules with build utilities
+Update after the callback so any changes made in the callback will get persisted.
+Check that the grain is present  Check that the grains are merged
+Returns the number of batches the model has learned on (assuming that the learning code has been calling Monitor.report_batch correctly).
+dot(x, A)
+Asserts that the logger was called when the SafeCookieData object could not be parsed successfully.
+We'll make use of the fact that coverages[6] has measurements at all  land points.  This will help us decide between land and water.
+Set up a temp directory for storing filesystem content created during import
+Backwards compatibility
+Verify the receipt page
+Log out then try to retrieve the page
+Copy all the course assets from source_course_key to dest_course_key
+Import salt libs
+create new with correct sparse
+System does not supports all accounts descriptions, just skipping.
+Returns the partition that this split module is currently using, or None if the currently selected partition ID does not match any of the defined partitions.
+No API provides this info, so the result will never  match, and we will always update. Result is still  idempotent  'DisplayName': ???,
+Returns a named tuple that annotates the pk of this instance with its class, to fully represent a pk of a subclass (inclusive) of OrderItem
+Import Salt Testing libs
+Stubbed out Enrollment data request.
+Fill in the public profile fields of a user.
+Returns all named result keys.
+Static tabs are viewable to everyone, even anonymous users.
+the means of classes 1 and 2 should lie on the second component
+Make sure that we have targets that match the os_family. If this  fails then the _PKG_TARGETS dict above needs to have an entry added,  with two packages that are not installed before these tests are run
+Delete the first block:
+Disable on these platforms, specific service modules exist:
+Mock of get method
+Test check_javascript_file_is_safe with JQuery insertion functions other than append(), prepend() and html() that take content as an argument (e.g. before(), after()).
+return tab for any additional tests
+Return whether the supplied django user has access to this role.
+this is a string when we get it here  add staff check to make sure it's safe if it's accidentally deployed.
+Import salt libs
+Explicitly set the content and settings fields
+Email is not saved until user confirms, so no events should have been  emitted.
+Perform the covariance M step for spherical cases.
+Check that errors are raised if there is not enough samples
+set mocked exception response
+Otherwise assign the user a cohort.
+does non-draft exist in the collection  if so, replace it
+bucket files cache expired or does not exist
+Various constants
+Courses in the same modulestore can be handled by the modulestore itself.
+Trigger an error in the wait_for_ip function
+Whether to run django-require in debug mode.
+The group is not present, make it!
+Import Python libs
+Verify the a headers dict from a requests call matches the proper auth info.
+Import Salt libs
+Create the desired permission
+Import ioflo libs
+Import Salt Testing Libs
+If there are any remaining open events, clean them up.
+return anything except None to test LMS
+Finds the StudentModule object for this history record, even if our data is split across multiple data stores.  Django does not handle this correctly with the built-in student_module property.
+get_children
+transform phase
+Multiple environments per buckets
+Verify that the correct banner is rendered on the dashboard
+No exception should be raised
+for some reason loader overwrites __opts__['test'] with default  value of False, thus store and then load it again after action
+Mock of list_ipsecpolicies method
+Gramian matrices have real non-negative eigenvalues.
+init things that need to be done after the process is forked
+Want logging!
+delete a component
+Return a string if only one package name passed
+Configure the LMS to use our stub XQueue implementation
+Transplant configuration
+Import python libs
+First, check that we don't have the "bad" output that was displaying in  Issue 31330 where only the highstate outputter was listed
+For the Dummy provider, the provider redirect URL is self.complete_url
+raw documents as an iterator
+Add an honor mode to the course
+Import Salt Libs
+Patch a function with a given return value, and return the mock
+If a password wasn't supplied in the profile or provider config, set it now.
+Wait for the xblock javascript to finish initializing
+Returns the group ID, or None if none is available.
+Long key
+Documents to append as an appendix to all manuals.
+Return all selected visibility options.
+First update assets for both LMS and Studio but don't collect static yet
+Set a users emabargo state.
+If anything happens in the top generation, log it and move on
+Derives from the class under test for testing purposes. Since `ResourceTemplates` is intended to be used as a mixin, we need to derive a class from it in order to fill in some data it's expecting to find in its mro.
+Returns the verification status for use in grade report.
+write out the relative name
+Import Python Libs
+plot the line, the points, and the nearest vectors to the plane
+Make many consecutive bad requests in an attempt to trigger the rate limiter
+number of data samples
+Check that a all the samples appear at least once in a test fold
+Add the certificate request to the queue
+Create user and redirect to 'home' (cms) or 'dashboard' (lms)
+Only non-error return case is a True return, so just return the response
+Defined in setup(). A dict that maps Datasets in self._randomize and  self._randomize_once to zero-padded versions of their topological  views.
+Ensure that the event subscriber is connected.  If not, we won't get a response, so error out
+no Content-Range header, so make one that will work
+when intercept_scaling is sufficiently high, the intercept value  doesn't depend on intercept_scaling value
+Check that params are set  Smoke test the repr:
+Call get_preview_fragment directly.
+remove from self.intervals
+Import Salt libs
+Let's assign back the computed providers configuration
+No custom signal handling was added, install our own
+Import python libs
+These 2 services might return in different orders so test separately
+Assign default modes if nothing available in the database
+the first 4 students have passing certificate statuses since  they either were whitelisted or had one before
+Make the API call
+finish one, lets see who finishes
+can't use auth.add_users here b/c it requires user to already have Instructor perms in this course
+Load the course and user objects
+Scenario: teams tab should not be present if team configuration does not specify topics Given I am enrolled in a course with no topics in the team configuration When I view the course info page Then I should not see the Teams tab
+Create a shell expansion of passed in parameter and iteratively remove them.  Must only expand to directories.
+Specific setting for the File Upload Service to store media in a bucket.
+Get the unique set of labels
+Generate test certificate
+Branch or tag not matched, check if 'tgt_env' is a commit  Not a valid commit, likely not a commit SHA
+Import Salt Testing libs
+Assert Request is successful  Assert Message
+Email subject *must not* contain newlines
+Unsupervised transformation based on totally random trees
+verify content of the course
+keeps quotes around strings
+The weights are all 1. for SAMME.R
+Test in JSON
+Cannot reverify because the user is already verified.
+Set signatory organization.
+Returns a dict of the max points for each input: input id -> maxpoints.
+Tell Django to clean out all databases, not just default
+Width of the video container in css equal 75% of window if transcript enabled
+Make sure the 'total_rows' is returned.. if not error out.
+Executes validate_new_email, returning any resulting error message.
+Except that xrange only supports machine integers, not longs, so...
+Import Salt Testing Libs
+Pack the parameters into a single vector.
+Import 3rd-party libs
+If not defined, we default to 0 because this is the default  protocol used by cPickle.dump (and because it results in  maximum portability)
+Import python libs
+Import Salt Libs
+Empty, too short
+Audit / Verified / Honor course modes, with three course enrollments.
+Import Salt Libs
+Import Python Libs
+Expect that the anonymous_student_id was converted to "student"
+set mocked exception response
+Import salt libs
+Verify that an error is displayed
+Note(pabelanger): We still reference pub_key and priv_key when  deploy is disabled.
+Expect that the number of attempts is not incremented
+Import Salt Testing Libs
+second call with different status code
+Required: the app that is included in INSTALLED_APPS
+Returns join team message
+taking the mean over each term independently allows for different  mini-batch sizes in the positive and negative phase.
+Import salt libs
+Make the test fail if algorithm does not  respect get_input_space  Multiplying by P ensures the shape as well  as ndim is correct
+Define this module's virtual name
+Mock was not needed for some tests, testing to see if it's needed at all.
+These users will be created and linked to third party accounts:
+Create the cloud instance name to be used throughout the tests
+Override this method to specify how to update event fields to maintain compatibility with legacy events.
+dismiss ui and verify
+Test that LassoLars and Lasso using coordinate descent give the  same results.
+check to be sure that nothing has changed
+Looks for a filename in a list of dirs on a filesystem, in the specified order. filesystem: an OSFS filesystem dirs: a list of path objects filename: a string Returns d / filename if found in dir d, else raises ResourceNotFoundError.
+Test that a User can use reverify link for initial verification.
+Load the given engine
+Test if oob improvement has correct shape.
+the provider URL must be converted to an absolute URL in order to be  used as an openid provider.
+Tests that released unpublished changes locked units display staff only warnings
+This function tests the deprecated old GMM class  Create sample data
+Python libs
+Make sure cuda is available
+send finished
+Patch a method with a given return value, and return the mock
+Sets up the test course.
+Import Salt Testing Libs
+Return the key used in this DjangoOrmFieldCache for the specified KeyValueStore key. Arguments: key (:class:`~DjangoKeyValueStore.Key`): The key representing the cached field
+create the create an extra ephemeral disk
+A flag to indicate that highstate runs should force refresh the modules prior to execution
+Hash compare local copy with master and skip download  if no difference found.
+check that CorrectNotFittedError inherit from either ValueError  or AttributeError
+Add assets of a single type to the sorted list.
+Import python libs
+custom XRDS header necessary for discovery process
+We've enrolled the student, so make sure they have the Student role
+Expect an AJAX alert message in 'success'
+Login with the instructor account
+Mock of list_floatingips method
+select language with code "zh"
+Import salt libs
+No System Exit is expected
+BUilds a list of mock.call instances representing calls to reindexing method
+max of merged-start-from-all-parents and this block
+We do a find_or_create for every block (rather than re-using field objects  that were queried in get_many) so that if the score has  been changed by some other piece of the code, we don't overwrite  that score.
+Find the service key based on the given service_name
+get man location
+We return a little bit of metadata helpful for debugging.  What is in this is not a defined part of the API contract.
+Import Python libs
+Clean up our tar
+Still not implemented on windows
+PyLint wrongly reports an error when calling super, hence the above  disable call
+account should not be locked out after just one attempt
+reorder children
+no arguments are required
+Import python libs
+Delete the ICRV block, so the number of ICRV blocks is zero
+Get the Master's instance info, primarily the region
+max(0.001, tol) to force alternating minimizations of W and H
+Globals
+Import 3rd-party libs
+finally: check that the user has a satisfactory group assignment  for each partition.
+filter out ones which were fetched from earlier stores but locations may not be ==  library is indeed unique. save it in result
+Clear users from non-cohort group
+Test-only implementation of load_item that simply returns static xblocks.
+Define the module's virtual name
+If filename is '-' save to a temp file
+Keep track of any empty t_path dirs that need to be removed later
+Import Salt Testing Libs
+delete the original  remove from cache
+add tree to ensemble
+Check if browser is showing correct page.
+Copied from python3 tokenize
+Only mark explicitly defined sparse examples as valid sparse  multilabel-indicators
+Import Python libs
+Expect that an exception gets raised when we check the answer
+Show the OpenEdX logo in the footer
+make sure that cross-validation is stratified
+Increment the "retried_nomax" counter, update other counters with progress to date,  and set the state to RETRY:
+Get credit requirement of a given course. Args: course_key(CourseKey): The identifier for a course namespace(str): Namespace of credit course requirements name(str): Name of credit course requirement Returns: CreditRequirement object if exists
+Test behaviour of "Language" field.
+edx-milestones service
+Set up `self.url_path` on instantiation, since it dynamically reflects the current topic.  Note that `topic` is a dict representation of a topic following the same convention as a course module's topic.
+Create a new course user group. Args: name: Name of group course_id: course id group_type: group type
+check inverse transform
+Removes all answers that a user has submitted
+The name of the Pygments (syntax highlighting) style to use.
+Import python libs
+Since there's a small chance we might get the  same seed again, give it 5 chances  to generate a different seed
+Mocking the API responses from programs and credentials
+Import Salt Testing Libs
+Import Python libs
+Disable transaction management because we are using a worker. Views  that request a task and wait for the result will deadlock otherwise.
+Target is a network?
+mountpoint not specified
+Remove the testing handler
+Assure that estimators receiving multidimensional y do the right thing
+Test if the address is unspecified.Returns: A boolean, True if this is the unspecified address as defined in RFC 2373 2.5.2.
+Fit the ARD Regression
+Returns true if the user is enrolled or is staff.
+Time tracking
+Since the test is using the dummy cache, it's not actually caching  anything
+Loose the initial log records
+User does not exist
+drop the modulestore to force re init
+with bootstrap, trees are no longer perfect on the training set
+Class property that specifies whether the tab can be moved within a course's list of tabs
+NumPy implementation of the logistic sigmoid function. Parameters  x : ndarray Arguments to the logistic sigmoid function Returns  y : ndarray The output of the logistic sigmoid function applied element-wise to x
+this will warm the cache.
+default is not present in dict1, and no merge, should get None
+Import 3rd-party libs
+Import python libs
+Since using "provider: <provider-engine>" is deprecated, alias provider  to use driver: "driver: <provider-engine>"
+2) Within variance scaling  SVD of centered (within)scaled data
+Load problem via ajax by clicking next.
+Validate VM and snapshot names
+compute the singular values of X using the fast approximate method
+if the statefile provides multiple identities, they need to be tried  (but also allow a string instead of a list)  force it into a list
+safety net in case something blows up in edx_proctoring  as this is just informational descriptions, it is better  to log and continue (which is safe) than to have it be an  unhandled exception
+Find index of median prediction for each sample
+Set the value of input field by selector.
+Inherited fields should NOT be explicitly set
+allow for additional options that can be keyed on a name, e.g. 'trashcan'
+The bulk op has ended. However, the signal tasks below still need to use the  built-up bulk op information (if the signals trigger tasks in the same thread).  So re-nest until the signals are sent.
+can override with '--contracts' argument
+don't attempt to find URL query arguements in the path
+import some data to play with
+Notify the observers.
+Failed to commit, return the error
+Import Salt Testing Libs
+Create new group configuration
+Create a new certificate.
+Create the Library.xml file, which acts as the index of all library contents.
+Look for a tab with the specified 'url_slug'.  Returns the tab or None if not found.
+The eauth system is not enabled, fail
+stop when there are no more sequences left
+Get the settings post-change so that we can verify tht all properties  were modified successfully. Track the ones that weren't.
+Get rid of the colons at the end of the field labels.
+Import Salt Testing libs
+Return the relative root, if present
+Import Salt Testing Libs
+Convert a timestamp (number of seconds since Jan 1, 1970 UTC) into a timezone-aware datetime. If the timestamp cannot be converted, returns None instead.
+When there is no positive or no negative labels, those values should  be consider as correct, i.e. the ranking doesn't matter.
+create fake data set in cache
+get the first certificate  Split based on defined headers
+Display status message to students
+Import Python libs
+Navigate to the track selection page
+got converted
+Start with a completely empty course to easily test adding things to it
+aliyun Access Key ID  aliyun Access Key Secret
+Only the sample in the middle of the dense area is core. Its two  neighbors are edge samples. Remaining samples are noise.
+There's no use creating the empty-directory ourselves at this  point, the minions have already synced, it wouldn't get pushed to  them
+Destroy the object view
+Preparation
+Import Python libs
+test with and without edx_video_id specified.
+if caller wants kvs, caller's assuming it's up to date; so, decache it
+Parse the response as JSON and check the contents
+Get configuration
+Get the full path to a resource on the private notes API.
+set mocked exception response
+go back to first sequential position  we are again playing tab 1 videos to ensure that switching didn't broke some video functionality.
+SAG supports sample_weight directly. For other solvers,  we implement sample_weight via a simple rescaling.
+Create the stack
+test shuffling and subset
+data=<p><span class="{}">Annotate this!</span></p>.format(self.selector)
+Import python libs
+Parent
+click video button "fullscreen"
+Cycle through the milestone fulfillment scenarios to see if any are now applicable  thanks to the updated grading information that was just submitted
+An exception class for safe cookie related errors.
+Try to set tag in wrong scope
+Print info about what's duplicated
+Smoke tests for graph methods.
+Intersect the list of valid language tuples with the list  of release language codes
+Import Salt Testing libs
+Import salt libs
+Verify that the raised exception has the error message
+Fetch the item from the modulestore location
+the settings of subtract_mean and use_norm are not relevant to  the test  std_bias = 0.0 is the only value for which there should be a risk  of failure occurring
+User-uploaded content
+Define a function alias in order not to shadow built-in's
+Function alias to not shadow built-ins.
+Default is an empty string string
+Then load the proxy module
+We know it's an ImportError, but is it an ImportError related to  this path,  or did the module we're importing have an unrelated ImportError?  and yes, this test can still have false positives, feel free to  improve it
+XXX : for some reason all probas can be 0
+Import Python libs
+Don't watch assets when performing a dry run
+HuberRegressor depends on scipy.optimize.fmin_l_bfgs_b  which doesn't return a n_iter for old versions of SciPy.
+Check enrollment list course details
+otherwise run it in the main process
+Enable courseware search for tests
+Returns a constant of value `value` with floatX dtype Parameters  variable : WRITEME Returns  WRITEME
+Fiddle with the cache, then try it again.
+Import third party libs
+Return the 'translation' of `text`.
+Import python libs
+Return false if unable to ping server
+Computing whether the rows and columns are broadcastable requires doing  arithmetic on quantities that are known only at runtime, like the specific  shape of the image and kernel
+The last matched group can be None if the version  is something like 3.1 and that will work properly
+Convenience function for testing command failures
+Click on the "All Topics" breadcrumb
+Check that we exited with a failure status code.
+Visit course outline page in studio.
+Monitoring
+Run command and return process info structure
+Returns True if the timed/proctored exam timer bar is visible on the courseware.
+Some standard non-linear functions.  XXX: these should be optimized, as they can be a bottleneck.
+Get a course with orphan modules
+Import Salt Testing Libs
+Convert between key types for certain attributes --  necessary for backwards compatibility.  example: 'start_time': cls._example_convert_start_time
+Unenroll the user
+Run classifier, using a model that is too regularized (C too low) to see  the impact on the results
+Compute the arithmetic mean of the predictions of the calibrated  classifiers
+LogLevelMixIn attributes
+crypt defaults to 'aes'
+Verify that the initial attempt sent a new ID photo for the reverification attempt
+check the case where coeffs is a scalar
+Inserts a new page and includes the border and the logos.
+Check that the marketing site cookies have been deleted  (cookies are deleted by setting an expiration date in 1970)
+File not found or repo_path points to a directory
+Returns the User Enrollment information.
+Create new container  Already validated input
+Make sure the jail was created
+Removed this assert until a summary message is added back to the author view (SOL-192)
+make sure the test gets good coverage, ie, that it includes many  different activation probs for both detector and pooling layer
+Add the default public keys
+Given a course_id, filename, and rows (each row is an iterable of strings), write this data out.
+Import Salt Libs
+Verifies the changed topics.
+for verified enrollment view the program detail button will have  the class 'base-btn'  for other modes view the program detail button will have have the  class border-btn
+Verify that no cards appear when the user has no enrollments.
+Uppercasing the title here since CSS does it on the front-end
+dot(x, A)  = dot(A.T, x.T).T
+Should be able to generate
+Organization that contain other organizations
+Plot the support vectors by placing circles over thecorresponding data points and adds the circle collection to the contours list.
+Clear all button.
+Fit OneHotEncoder to X, then transform X.Equivalent to self.fit(X).transform(X), but more convenient and more efficient. See fit for the parameters, transform for the return value.
+Queue state only tracks up to second
+Display a form to search for catalogs belonging to a user.
+The long version, added for consistency
+Construct unique element selector. Arguments: class_name (str): css class name for an element. vertical (bool): do we need vertical css selector or not. vertical css selector is not present in Studio Returns: str: Element Selector.
+Sets the release date for the specified xblock.
+Import Salt Testing Libs
+Construct argument list
+Returns a milestones-friendly representation of a user object
+construct module
+AuthenticationFailed is a subclass of drf_exceptions.AuthenticationFailed,  but we don't want to post-process the exception detail for our own class.
+Set country, accept the terms, and submit the form:
+Import Salt Libs
+Returns the wire version for mongo. Only used to unit tests which instrument the connection.
+the course block should now point to two children, one of which  doesn't actually exist
+Verify that this order does have a dump of information from the payment processor.
+Logout and login as a staff.
+load license if it exists
+Process STDOUT >
+If format call has nested Text() or HTML(), then the caller,  or left-hand-side of the format() call, must be a call to  Text() or HTML().
+we also want to test that everything still works when some weights are 0
+Only emit mode change events when the user's enrollment  mode has changed from its previous setting
+Don't add the message if course_message is blank.
+delete temporary file
+Create a credit request for the given user and course.
+Import salt libs
+export out to a tempdir
+Specify Gaussian Process
+-*- coding: utf-8 -*-  Import Python libs
+XML store allows published_only branch setting
+for stability
+wildcards are valid in confs
+Returns list of enabled providers.
+Run the state.pkg command on the target
+set variable identifying the chroot you work in (used in the prompt below)
+Ensure the pre_requisite_course_options dropdown selector is displayed
+set covariance  set precision
+Not a git repository
+compressed face
+Passes a bad value for task_id to test update_subtask_status
+also load the boston dataset  and randomly permute it
+Test model for testing ``ConfigurationModels``.
+These shouldn't
+delayed import of numpy, to avoid tight coupling
+search results list showing
+This is a hack.  If a proxy minion is started by other  means, e.g. a custom script that creates the minion objects  then this will fail.
+Quick check in case __init__ was never called, e.g. by a derived  class.
+Enable certificate generation
+Convert PIL.Image to numpy.ndarray. :param img: numpy.ndarray
+Test course export does not fail
+Request sys.doc  Did we fire it?
+Check the problem
+First perform any additional indexing from the structure object
+make sure we don't have a specific vertical which should be at depth=3
+update the item at the given location
+color cropped nodes grey
+verify that only normal courses (non-programs courses) appear on  the student dashboard.
+Get's library key as it is passed to indexer
+Reset the version attribute if existing
+Change the vertical's user_partitions value to the empty list. Now red_cat can view the vertical.
+This will make sure the app is always imported when  Django starts so that shared_task will use this app.
+staff get to see all the details
+if matches returns the most recent entry in the table filtered by email else returns None.
+Asserts the block structure was transformed.
+Import Salt Libs
+Initialize base sysadmin dashboard class with modulestore, modulestore_type and return msg
+log(a / b) should be calculated as log(a) - log(b) for  possible loss of precision
+Matrix containing on its *rows*:  - the current unnormalized eigen vector estimates  - the observations since the last reevaluation
+Then I can add Allowance to that exam for a student
+Course should still be authorized (invalid attempt had no effect)
+If group is not present, fall back to the gid.
+Send the request to the mock cs server
+Go back to dashboard and verify newly created course exists there
+If it's not a section, it may already exist as a  commented-out key/value pair
+Simulate a callback from CyberSource indicating that the payment was rejected
+Add a wrapper with child beneath a child vertical
+It took until .NET v4.0 for Microsoft got the hang of making installers,  this should work under any version of Windows
+Build a forest and compute the feature importances
+By default don't use a worker, execute tasks as if they were local functions
+JSON GET request not supported
+Verify correct url structure.
+Import Salt libs
+Make a note of this minion for the external job cache
+Return the message indicating that course pacing cannot be toggled.
+The user's order went through, but the order was erroneously left  in 'paying'.
+Local cache seems to be deactivated
+Map of xblock field name to the field's value for this block.  dict {string: any picklable type}
+Import Salt Libs
+SSL external authentication settings
+Expect that an exception gets raised when we check the answer
+limit dataset to 5000 people (don't care who they are!)
+Gets the primary key of the logged in Django user
+Import salt libs
+`attribute` is added to the constructed sequence, because  it's in the InheritanceMixin
+Calling _end_bulk_operation without a corresponding _begin...  is a noop
+Import Salt Testing Libs
+assert that staff and instructors of master course has staff and instructor roles on ccx
+Display progress logs on stdout
+Out is a list of triplet: score, estimator, n_test_samples
+Import salt libs
+Only query for the definitions that aren't already cached.
+Return the course export filename for a block.
+Edit chapter name on studio course page under specified section
+DiagonalGaussianPrior.initialize_parameters works without crashing
+test tf-idf with new data
+Parameters of the study
+Prepare xqueue request
+Verify that the user's enrollment remains unchanged
+No LMS_BASE, nor is ENABLE_MKTG_SITE True
+Country list
+Create a CCX coach.
+Translators: This is a legal document users must agree to  in order to register a new account.
+Assert that studio_view and get_html render the same.
+Mock of showBackends method
+Return the key used in this DjangoOrmFieldCache to store the specified field_object. Arguments: field_object: A Django model instance that stores the data for fields in this cache
+Import python libs
+See :class: cms.lib.xblock.runtime.EditInfoRuntimeMixin
+Test that all estimators check their input for NaN's and infs
+Student Identity Reverification
+Name of the asset metadata XML schema definition file.
+Add permutation record tuple: (one of:'shuffle'/'answerpool', [as-displayed list])
+Wait until captions rendered completely.
+Overridden Methods >
+pylint: disable=import-error,no-name-in-module  pylint: enable=import-error,no-name-in-module
+Import Salt Testing libs
+Returns the username for a given user. Implemented to make sorting by username instead of by user object.
+Checks if the skip-to containers in transcripts are present and visible. Returns: bool
+MySQLdb import failed, try to import PyMySQL
+Expect that we do NOT see the message yet
+mark the grade as satisfied
+Test removing a subsection as a prerequisite
+Import Salt Testing libs
+clean up /static/ prefix from bumper transcripts
+func_dir = _cache_key_to_dir(self.cachedir, self.func, None) if mkdir: mkdirp(func_dir) return func_dir def _hash_func(self): Hash a function to key the online cache
+source_version records which revision a block was copied from. In this method, we're updating  the block, so it's no longer a direct copy, and we can remove the source_version reference.
+Add the donation to the user's cart
+The page in the URL used to go right on the page.  It's no longer possible to use a non-integer page.
+Translators: 'Discussion' refers to the tab in the courseware that leads to the discussion forums
+Load the list of python-social-auth backend classes from Django settings
+Import Python libs
+Convert the image into a graph with the value of the gradient on the  edges.
+Import python libs
+This part is for ability to get xblock instance in xblock_noauth handlers, where user is unauthenticated.
+Globals
+The number of minutes between the minion refreshing its cache of grains
+pylint: disable=no-member
+Copy params so we can modify it; we can't just do dict(params) because if  params is request.POST, that results in a dict containing lists of values
+Create a new BlockUsageLocation with the given type and ID.
+Single environment per bucket
+Special case for course pointers:  add org and course attributes on the pointer tag
+The requested password is not in a valid format.
+load configuration
+Get the URL of the Studio instance under test
+Create the course modes
+Let's make sure we exit the process!
+Too long
+Reset internal state before fitting
+While there's data to be read, the process is alive
+Define the module's virtual name
+Try to reset the problem
+catches any uncaught RateLimitExceptions and returns a 403 instead of a 500
+If the errno is not 2(The system cannot find the file  specified), raise the exception so it can be catch by the  developers
+Set maximum number of items that will be written to the history file
+default to encrypted passwords  maybe encrypt if if not already and necessary
+import python libs
+Test returns proper value when have proper access
+set the row number 3 to zero
+Import third party libs
+!/usr/bin/env python
+Choose lengths close to memcached's cutoff (250)
+Fill in the form
+Add beacon to disable
+Perform the actual upload
+Returns whether the input is array-like
+In case the staff_only state was set, return the updated xblock.
+Change 'display_coursenumber' field and update the course.
+Check that copy can be forced, and is the case by default:
+make sure we have some assets in our contentstore
+Define the module's virtual name
+convert to "valid" input space coords  used to determine column index to write to in sparse mat  determine raster-index of input pixel...
+Returns True if show background task history for student button is present.
+Fire off the auth pipeline to link.
+Initialize the two dictionaries that are returned
+Perform a Click action on the given selector.
+Import salt libs
+Simulate a callback from the credit provider with an invalid signature  Since the signature is invalid, we respond with a 403 Not Authorized.
+Import 3rd-party libs
+Define the module's virtual name
+check consistency of input shape for predict
+Ensures that the specified tab_dict is valid.
+Test new course creation -- course creation group enabled, staff, group is empty.
+Check other columns are empty
+Cache repo-ng locally
+Import Python libs
+This is called on each item in a purchased order to generate receipt instructions. This should return a list of `ReceiptInstruction`s in HTML string Default implementation is to return an empty set
+Don't shadow built-in's.
+upload image
+Initialize the page.Arguments: browser (Browser): The browser instance.
+make sure captions are opened
+check if we see "Welcome to edX." text in the captions
+Wait for the upload field to display an error.
+Return a hash based on the object ID (to avoid hashing unhashable namedtuple elements).
+Handles a single host or a vCenter connection when no esxi_hosts are provided.  format the response stdout into something useful
+item_id was provided,  return code 0 indicates, that resource already exists
+Verify user credentials data can be retrieve.
+Import Salt libs
+Set up logger
+These are actual answers we get from the responsetypes
+It's a commented cron job
+Import python libs
+With default configuration settings, email is not shared with other (non-staff) users.
+Skip the minion if we didn't get any rows back. ( IE function that  they're looking for has a typo in it or some such ).
+Enable the course for credit
+Import python libs
+Actual cache implementations have limits on key length
+Attempt to create the account, expecting an error response
+check button text
+cannot compute the kernel values with custom function
+Import salt libs
+go to last sequential position
+Perform an IDF normalization on the output of HashingVectorizer
+Set the location, display name, and parent to be the same so we can make sure the rest of the  duplicate is equal.
+POST params embedded in the HTML success form
+Return the batch in the original storage space
+if this fails install using
+Create the supported course modes
+Use BestFirst if max_leaf_nodes given; use DepthFirst otherwise
+Pull image
+Initialize the model parameters of the derived class.Parameters  X : array-like, shape  (n_samples, n_features) resp : array-like, shape (n_samples, n_components)
+Removes <instructions> from the xmltree and returns them as a string, otherwise None.
+Import 3rd-party libs
+To avoid cycles among states when each state requires the one before it:    explicit require/watch can only contain states before it    explicit require_in/watch_in can only contain states after it
+roc_curve for hard decisions
+Import third party libs
+% {'selector': selector}return page.browser.execute_script(js_script) def is_404_page(browser):  Check if page is 404
+Re-open the modal and inspect its selected inputs
+Let's populate a minion configuration file with some basic  settings
+This file was auto-generated by salt's setup on \
+Return comma separated string of valid file types.
+Ensures the username is provided unless the request is made as an anonymous user.
+Aliases for orchestrate runner
+bridge name bridge id       STP enabled interfaces  br0       8000.e4115bac8ddc   no      eth0                                        foo0  br1       8000.e4115bac8ddc   no      eth1
+Import Salt Libs
+Check if the DOCKER_HOST environment variable has been set
+Expect an error response
+refit=False because we want to test the behaviour of the grid search part
+Import Python libs
+Answer drop down problem.
+Return the set of keys provided when requesting an access token
+Returns deprecated warning component list heading text.
+If there is no weighting, or weighting can't be applied, return input.
+Mock override for ugettext translation operation
+Get logging started
+Import Salt Libs
+Restart the service: will raise an error if it fails
+override cross_zone_load_balancing:enabled
+Use super(BulkAssertionTest) to make sure we get un-adulturated assertions
+check normalization
+Tag group "review"
+if not loaded,
+Predict
+-*- coding: utf-8 -*-
+Get the inventory
+Predict not supported when affinity="precomputed".
+pylint: disable=super-method-not-called
+Whether to run django-require in debug mode.
+lock an asset
+If this is the only repo in the file, delete the file itself
+Verify only authenticated users can access the view.
+Assume input argument to be string or any object representation  which converts into a formatted IP prefix string.
+Show the traceback if the debug logging level is enabled
+If we're expecting a non-empty string, give the page  a chance to fill in values
+Those metrics don't support multiclass inputs
+Verify that certificate invalidation successfully removed from database
+we are zero if dict is empty and loaded is true
+Get logging started
+Check that the response redirects to the certificates section.
+Import 3rd-party libs
+Whether or not a minion should send the results of a command back to the master  Useful when a returner is the source of truth for a job result
+Maps azimuth labels (ints) to their actual values, in degrees.
+Assert that the JID dir was removed
+Import Salt Libs
+Clicks save button, waits for confirmation unless otherwise specified
+login the user to the platform.
+python libs
+have we stored a 'last visited' in session? NOTE: first time access after login  this key will not be present in the session data  compute the delta since last time user came to the server
+verify that draft and publish point to different versions
+Execute shim
+Import Salt Testing Libs
+Test when step is an integer
+including a monitoring datasets lets us test that  the monitor works with supervised data
+Directory to install static vendor files
+Since registration_price is not set, cosmetic_display_price should be returned
+Import python libs
+0.125 is really too fast on some systems
+Does this have a warning in place of the promote/demote buttons?
+Sparsify the array a little bit
+Asserts data was collected for the block structure.
+This is the view that will be rendered to display the XBlock in the LMS.  It will also be used to render the block in "preview" mode in Studio, unless  the XBlock also implements author_view.
+This attribute here won't actually do anything. But, if you need to  specify an order or a dependency within the mix-ins, please define the  attribute on your own MixIn
+User account does not exist
+Import Python libs
+Install a course with sections/problems, tabs, updates, and handouts
+Import Python libs
+Mock of delete_vpnservice method
+These are standard regexes for pulling out info like course_ids, usage_ids, etc.  They are used so that URLs with deprecated-format strings still work.
+Import python libs
+Now we expect to be in the unlinked state, with no backend entry.
+Something went wrong: add xml to message, but keep the traceback
+Expect that the response has been turned into a <span>
+check the case where points are arbitrarily close on both axes  close to machine epsilon - y axis
+We reached this far! Set the Saltfile value on the option
+Add any paths that contain custom themes here, relative to this directory.
+Create a searcher object
+Unused abstract method from super class. See documentation in RequestValidator
+Import salt libs
+Import 3rd-party libs  pylint: disable=import-error
+Expect that the number of attempts is NOT incremented
+Import salt libs
+Run command
+Import Salt Testing Libs
+Give the user the ability to change the basedir
+make sure nobody creates another Null value
+Verify that ancestors still have changes
+Test k-neighbors in multi-output regression with uniform weight
+Set up logging
+project M to the (k + p) dimensional space using the basis vectors
+Call predict_log_proba on the estimator with the best found parameters.Only available if ``refit=True`` and the underlying estimator supports ``predict_log_proba``. Parameters  X : indexable, length n_samples Must fulfill the input assumptions of the underlying estimator.
+Find out which packages will be targeted in the call to pkg.remove  Check current versions against specified versions  FreeBSD pkg supports `openjdk` and `java/openjdk7` package names
+Connect to the task scheduler
+Test whether the relative univariate feature selection  gets the correct items in a simple classification problem  with the fdr, fwe and fpr heuristics
+Slave devices are controlled by the master.
+Add in any sysvinit services that are enabled
+Sets a summary message on this instance. The summary is optional. Args: message (ValidationMessage): A validation message to set as this instance's summary.
+Backwards compatibility
+Import salt libs
+The event will be lost in case of a connection error or any error  that occurs when trying to insert the event into Mongo.  pymongo will re-connect/re-authenticate automatically  during the next event.
+Ignore name and state for this function
+Applies the filters wyf to the second input and returns the corresponding factors
+Verify that the header and article tags are still added
+Perform the edit
+verify count of chapters
+Import Python libs
+Verify HTTP 400 is returned for requests with an invalid timestamp.
+Import Python libs
+Somehow we got a urlpath without an article. Just delete it and  recerate it.
+create api method for POST  create api method integration for POST
+Because lms calls get_parent_locations frequently (for path generation):
+make sure we are on "Linked Accounts" tab after the account settings  page is reloaded
+If the pdf upload section has not yet been toggled on, click on the upload pdf button
+go to second sequential position  import ipdb; ipdb.set_trace()
+if we have a nested exception, then we'll show the more generic error message
+Compute the embedding vectors for data XParameters  X : array-like of shape [n_samples, n_features] training set. Returns  self : returns an instance of self.
+Ignore IP addresses on this network for bootstrap
+Auto-auth register for the course.
+Calculate the posterior log probability of the samples X
+If *msg* is an empty string, then the code below  will return "</html>".  To avoid this, we first check  that *msg* is a non-empty string.
+Get the first select element that matches the query and select the desired value.
+Set `time` value to input pointed by `input_selector` Not using the time picker to make sure it's not being rounded up
+sut is an abbreviation for System Under Test
+get the folder to delete the folder from
+Per edX support, we would like to be able to route white label feedback items  via tagging
+if it exists
+No reason to stop, return ret
+create a chapter
+Filter out types
+update the course information on ccxcon using celery  import here, because signal is registered at startup, but items in tasks are not yet able to be loaded
+not necesary, keys will timeout
+Returns the User Payment information.
+Returns True if there is a page before this one, otherwise False
+Return the number of calls to the supplied ``stack``.
+if the blugger is empty, the results are nil.
+Unlike other solvers, we need to support sample_weight directly  because K might be a pre-computed kernel.
+Come back to our original unit in the sequence and assert that the content hasn't changed.
+delete leaf problem (will make parent vertical a draft)
+Does the file/folder exists
+If there are no user partitions, this transformation is a  no-op, so there is nothing to collect.
+Child.  Close parent FDs
+Import Python Libs
+Home page for Studio when not logged in.
+Border case not worth mentioning in doctests
+Inline editor for country access rules.
+Check for convergence.
+Import salt libs
+Don't block the embargo message pages; otherwise we'd  end up in an infinite redirect loop.
+Get the login page
+Import Python libs
+Makes sure tables module has been imported
+These ports are carefully chosen so that if the browser needs to  access them, they will be available through the SauceLabs SSH tunnel
+Import Salt Testing libs
+Import Salt Libs
+The paper size ('letter' or 'a4').
+Selects the student admin tab and returns the MembershipSection
+create a test notification
+test with multioutput y
+Do exhaustive checks on just the last sample
+Import python libs
+Try to match stalled state functions
+return t[0][1:-1] def upcaseTokens(s,l,t): Helper parse action to convert tokens to upper case.
+Return the names of each team on the page.
+Rerandomize is a known value coming from policy, and shouldn't appear  in xml_attributes
+Add a single entry for the course DB referenced by the tests below.
+Import salt libs
+Import python libs
+Turns a numpy matrix (any n-dimensional array) into tuples.  Tuplify each sub-array in the input.  Single dimension input, just return tuple of contents.
+This flag disables the requirement of having to agree to the TOS for users registering  with Shib.  Feature was requested by Stanford's office of general counsel
+In the fit_intercept=False case, the feature vector of ones is  penalized. This should be taken care of.
+Periodically update task status (this is a cache write)
+get old score, for comparison:
+Import external deps
+handle changes
+Make missing classes' weight zero
+Translators: Accomplishments describe the awards/certifications obtained by students on this platform
+Translators: 'SchematicResponse' is a problem type and should not be translated.
+Grade the inputs (everything correct)
+Requirements file does not exist in the given saltenv.
+Check whether the user has been enrolled in the course.  There was a bug in which users would be automatically enrolled  with is_active=False (same as if they enrolled and immediately unenrolled).  This verifies that the user doesn't have *any* enrollment record.
+Verify that users who have already requested access are redirected to the client creation page to see their status.
+These can be set to syslog, so, not actual paths on the system
+Import salt libs
+Find the tolerance
+No n_iter_ in old SciPy (<=0.9)  And as said above, the first iteration seems to be run anyway.
+Import Salt Libs
+An update to the account failed. More detailed information is present in developer_message, and depending on the type of error encountered, there may also be a non-null user_message field.
+Returns mode_slug NOTE (CCB): This is a silly hack needed because all of the class methods use tuples with a property named slug instead of mode_slug.
+Let the XQueue know that we handled the response
+Append organization info
+Import Third Party Libs
+Check that the overall message (for the whole response) was received
+The below line is where OPTIONS can be redefined with internal options  (rather than cli arguments) when the shim is bundled by  client.ssh.Single._cmd_str()  pylint: disable=block-comment-should-start-with-cardinal-space
+All available user partitions (with value and display name). This is updated each time  editable_metadata_fields is called.  Default value used for user_partition_id
+Test that CCX courses are filtered out.
+Note: these are older versions of the User API that will eventually be  subsumed by api/user listed below.
+Import Salt Libs
+Effectively a no-op, since we can't really return without an event system
+Local head, ignore it
+Check that the user's request status is pending
+Create a second user, but do not activate it
+MATCH EXTENSIONS
+Ensures that the receiver function does nothing when the programs API configuration is not enabled.
+Check whether steps in the flow are displayed to the user.
+if it exists by name
+We can only use wildcards in python_shell which is  sent by the macpackage state
+Check for common error: using enabled option instead of enable
+Y[i, j] gives the probability that sample i has the label j.  In the multi-label case, these are not disjoint.
+Converts usage_key_string to a UsageKey, adding a course run if necessary
+Import Salt Libs
+check if X has negative values. Doesn't play well with np.log.  zeroth component  1/cosh = sech  cosh(0) = 1.0
+Import Salt Libs
+User should be able access after completing required course
+Extract course information from the course block for split.
+opts = _master_opts()  opts['output'] = 'quiet'
+Plot the three one-against-all classifiers
+Object constructor, converts data (if provided) to JSON
+Label by quantile
+check if video aligned correctly with enabled transcript
+Check that the next_step_button is enabled before returning control to the caller
+An update to a user preference failed. More detailed information is present in developer_message, and depending on the type of error encountered, there may also be a non-null user_message field.
+Defaults to root  Optional
+Construct the login URL to start third party authentication.
+First, upload something.
+Globals
+Common version related attributes - NO NEED TO CHANGE >  < Common version related attributes - NO NEED TO CHANGE
+Special case for sparse matrices
+Figure out full path of location of backup file in minion cache
+Access should be denied if the user is not course staff.
+Return source with all non-allowed tags removed, preserving the text content
+Import python libs
+Call transform on the estimator with the best found parameters.Only available if the underlying estimator supports ``transform`` and ``refit=True``. Parameters  X : indexable, length n_samples Must fulfill the input assumptions of the underlying estimator.
+Add instructor to invalid ee course
+Show the traceback if the debug logging level is enabled
+Import Python Libs
+No need to validate
+Retrieve the verification deadline for a particular course. Arguments: course_key (CourseKey): The identifier for the course. Returns: datetime or None
+now set toy course to share the wiki with simple course
+Mock of show_ipsec_site_connection method
+Create an unreleased draft version of the xblock
+now the student course enrollment should be false.
+Trigger a failure in the wait for IP function
+Verifies the item with given location has a published version and no draft (unpublished changes).
+Verify that the endpoint returns a 400 when program certification is disabled.
+Helper class that has no default JSON encoding
+A payment/refund was promised, but was cancelled before  money had been transferred.  An example would be  cancelling a refund check before the recipient has  a chance to deposit it.
+check that the coefs are sparse
+Store the input space
+Define the module's virtual name
+run diff-quality for pylint.
+Standard library imports
+if the add fails, then it will only get called once.
+Compute noise covariance using Probabilistic PCA model  The sigma2 maximum likelihood (cf. eq. 12.46)
+init not None and not correct format:
+If the __virtual__ function returns True and __virtualname__  is set then use it
+the ccx detail view cannot call this function with a "None" value  so the following `error_code` should be never used, but putting it  to avoid a `NameError` exception in case this function will be used  elsewhere in the future
+Here, we go through some effort to be robust to dynamically  changing code and collision. We cannot inspect.getsource  because it is not reliable when using IPython's magic "%run".
+Return a display organization if it has been specified, otherwise return the 'org' that is in the location
+do one more login when there is no bad login counter row at all in the database to  test the "ObjectNotFound" case
+< Process STDOUT
+Returns token url for the course.
+mock programs and credentials apis
+Logfile is not using Syslog, verify
+This is a test of the test setup,  so it does not need to run as part of the unit test suite  You can re-enable it by commenting out the line below
+left behind... Don't fail because of this!
+Convert the command line arg into a course key
+Import python libs
+introspection on obj_b keys only
+__setstate__ and __getstate__ are only used on Windows.  We do this so that __init__ will be invoked on Windows in the child  process so that a register_after_fork() equivalent will work on Windows.
+Grab packages and log file (or just log file if build failed)
+create a staff user  add staff role to the staff user
+fit the model
+Import 3rd-party libs
+Return the current message in a field.
+Import python libs
+Now manually intervene to give non_staff_user access to library2_key:
+Since using "provider: <provider-engine>" is deprecated, alias provider  to use driver: "driver: <provider-engine>"
+Globals
+Using the course_id, find the course asset metadata document.  A single document exists per course to store the course asset metadata.  When deleting asset metadata, if a course's asset metadata is not present, no big deal.
+Find the best parameters by comparing on the mean validation score:  note that `sorted` is deterministic in the way it breaks ties
+salt-call tls.create_csr my_little CN=MasterDBReplica_No.2  \
+Overload the ioloop for the func call-- since it might call .current()
+Make this unique to the course, and down to 64 characters.  We don't do this to badges without issuing_component set for backwards compatibility.
+Create a honor mode for a course.
+Test if settings service returns correct bucket
+Do not show custom 500 error when test fails
+Files with null bytes are binary
+Create a second course to be filtered out of queries.
+check for pool
+Returns either the first or last child based on the value of the requested_child parameter.  If requested_child is None, returns the first child.
+In this case, allow the pre-existing entry to be "correct"
+Clear all covered matrix cells
+Import Salt Testing libs
+Import python libs
+Verify correct url structure for a default profile image.
+If no definition id is provide, generate an in-memory id
+Add any paths that contain templates here, relative to this directory.
+Import Python libs
+Import Python libs
+Import 3rd-party libs
+Import python libs
+Entry doesn't exist in set return false
+Check if problem has been queued  Flag indicating that the problem has been queued, 'msg' is length of  queue
+The user should not be eligible (because only one requirement is satisfied)
+Capturing all exceptions thrown while tracking analytics events. We do not want  an operation to fail because of an analytics event, so we will capture these  errors in the logs.
+as the DP will not use every component it has access to  unless it needs it, we shouldn't plot the redundant  components.
+'download_track': True,
+instantiate capa Response  save in list in self
+Import python libs
+Import salt libs
+Verify that CodeMirror editor is not hidden  Verify that TinyMCE Editor is not present
+Either memdump or quiesce should be set to True
+Normalize inertia to be able to compare values when  batch_size changes
+Hack to detect whether we are running by the sphinx builder
+This end-point is available to anonymous users,  so do not require authentication.
+Site info
+Specify whether the master should store end times for jobs as returns come in
+Import Python Libs
+Import Python Libs
+Import 3rd-party libs
+Scaled predictor
+Set assignment type for selected cohort. Arguments: assignment_type (str): Should be 'random' or 'manual'
+Import python libs
+Keep track of the lowest loop interval needed in this variable
+check for the override currency settings in the context
+it should come from cache
+Import Salt Libs
+Global staff can see the certificates section
+Import Python libs
+Next, generate a fresh LoncapaProblem
+Get same type even for self.n_outputs_ == 1
+delete this course and recreate this course with same user
+check to see if there is a required survey that must be taken before  the user can access the course.
+Import python libs
+First check that _logistic_grad_hess is consistent  with _logistic_loss_and_grad
+Make STDOUT the controlling PTY >  Disconnect from controlling tty. Harmless if not already  connected  which exception, shouldn't we catch explicitly .. ?
+Return True iff any a in `args` is a theano Variable
+Import salt libs
+TBD: Add ability to run commands in this branch
+We are creating transcripts for every video source, if in future some of video sources would be deleted.  Updates item.sub with `video_name` on success.
+Translators: This label appears above a dropdown menu on the registration  form used to select the country in which the user lives.
+Enroll in all the courses
+Trigger the action
+Different Course Modes
+In order for mapping to work, the locator must be minimal--no version, no branch-- as we never store one version or one branch in one ms and another in another ms. :param locator: the CourseKey
+Returns a query corresponding to the given CSS selector within the scope of this discussion page
+center here because sparse matrices are usually not centered  labels should not be centered
+Add a course run if necessary.
+Load templates
+Check that folds have approximately the same size
+including a monitoring datasets lets us test that  the monitor works with supervised data
+keep lint from choking on _get_conn and _cache_id
+Not implemented for XMLModulestore, which is used by test_cohorts.
+Get errors and list of affeced minions
+we try to refresh the inheritance tree for each update_item in the import
+Converting _id to a string  will avoid the most common serialization error cases, but DBRefs  and whatnot will still cause problems.
+Update connection dictionary with the user's password
+Import Salt libs
+checks if self and space have compatible sizes for formatting.
+Do the unmask translates on a copy of event_info,  avoiding problems where an event_info is unmasked twice.
+Initialize the biases of the first set of visible units.
+Default grade for students
+Mock out the template renderer
+Get top-level key for later reference
+Verifies that going to the courseware with an answered survey, there is no redirect
+Adds a parent to child relationship in this block structure. Arguments: parent_key (UsageKey) - Usage key of the parent block. child_key (UsageKey) - Usage key of the child block.
+Return video handler URL for the given course
+Import Salt Testing Libs
+This is a no-op.
+Return whether the 'next page' button can be clicked.
+Does the user have read access to the given course/library?
+Retrieve the reverification page and return the response.
+import some data to play with
+PDF_RECEIPT_TERMS_AND_CONDITIONS not displayed in the receipt pdf
+De-activate the user
+Ensure unbound children are indeed children.
+Theme overrides
+Dummy implementation of gettext, so we don't need Django.
+Filter out any events that are not "settings changed" events.
+Import Python libs
+Mock the paver @needs decorator
+creates a BlockDictSerializer
+Check that compensating for the dot size works properly.
+Finally, validate the entire response for consistency
+this will remove rc.subr and all non executable files
+freebsd-version was introduced in 10.0.  derive osrelease from kernelversion prior to that
+saw_prompt = False
+Non 200 response, sent back the error response'
+add another parent (unit) "vertical_x1b" for problem "problem_x1a_1"
+this is where we get all the things! i.e. download updates.
+Orthogonality of latent scores  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Only 2 students in the list and response_max_exceeded is True
+Import Python Libs
+Users marked as is_staff will not be added to the course creator table.
+Translators: This line appears as a byline to a header image and describes the purpose of the page
+Prevent jQuery menu animations from interferring with the clicks
+patch old pickle files
+dscl buffers changes, sleep 1 second before checking if new value  matches desired value
+Import Salt Libs
+Return root of the block.
+Harmless second unenroll
+Import python libs
+Import Python libs
+check if gid is already in use
+format the response dictionary to be sent in the post request by adding the above prefix to each key
+the extract_dir needs to be passed as a relative dir to  import_library_from_xml
+Include an extra neighbor to account for the sample itself being  returned, which is removed later
+for microsites, we want to filter and only show enrollments for courses within  the microsites 'ORG'
+Since the user has no initial verification and we're not sending the ID photo,  we should expect a 400 bad request
+Access should be granted if the proper access token is supplied.
+this is the first call partial_fit on this object:  initialize the cluster centers
+should handle negations for string match-sets
+We found what we wanted, let's break out of the loop
+Import salt libs
+Create a paid course mode.
+Reauth in the case our key is deleted on the master side.
+Import python libs
+can see after due date
+Convert numpy.ndarray to PIL.Image :param arr: numpy.ndarray :param os: integer, size of output image.
+The URL can't be empty.
+Un-enroll from the course. The learner stays in the verified cohort, but is no longer active.
+Check to see if we don't allow top-level access to the wiki via the /wiki/xxxx/yyy/zzz URLs  this will help prevent people from writing pell-mell to the Wiki in an unstructured way
+Check fast dot blas wrapper function
+Test has_passed_entrance_exam method with anonymous user
+Only instructor for this particular course can request this information
+Returns the block keys in the block structure. Returns: iterator(UsageKey) - An iterator of the usage keys of all the blocks in the block structure.
+adding instructor to master course.
+Conflate classes 0 and 1 and train clf1 on this modified dataset
+Query string parameters that can be passed to the "finish_auth" view to manage  things like auto-enrollment.
+Import Salt Testing libs
+Import third party libs
+Globals
+Unused abstract method from super class. See documentation in RequestValidator
+Import Salt Testing Libs
+Add version of Master to output
+Find our identifiers
+Return a string if only one package name passed
+Waiting for the page load and verify that we've landed on course outline page
+Edits an advanced problem (assumes only on page), types the provided XML, and saves the component.
+If the versions don't match, refresh is True, otherwise  no need to refresh
+This can be used to return a binary object wholesale
+fit the model
+Test returns proper value when have proper access
+Assert that orphan sequential is root of the discussion module.
+try-finally block for proper clean up after receiving last chunk.  This was the last chunk.
+Default to ZeroMQ for now
+Returns the desired text corresponding the course's start date and time in UTC.  Prefers .advertised_start, then falls back to .start.
+check for subtree_edited_on because old XML courses doesn't have this attribute
+Create an additional credit provider
+ConfigDirMixIn attributes
+repoint children
+verify other block types are not counted
+Check if median is solution of the Fermat-Weber location problem  Check when maximum iteration is exceeded a warning is emitted
+Look for the right KLIntegrator if it's not specified
+delete the instance
+allow the filters to use "assert" to filter out events
+training score becomes worse (2 -> 1), test error better (0 -> 1)
+Set to first group configuration.
+Return the key used in this DjangoOrmFieldCache for the specified KeyValueStore key. Arguments: key (:class:`~DjangoKeyValueStore.Key`): The key representing the cached field
+if the last connect finished, then we need to make a new one
+Import salt libs
+... or get the file from S3
+Given a list of scopes, return a space-separated list of those scopes.
+ARPACK iteration did not converge Attributes  eigenvalues : ndarray Partial result. Converged eigenvalues. eigenvectors : ndarray Partial result. Converged eigenvectors.
+Check that the page redirects to the start of the payment/verification flow.
+Get grains
+Get the POST params that the view would send back to us
+Import salt libs
+Import Salt Testing Libs
+Scopes  (currently only allows per-course tags.  Can be expanded to support  global tags (e.g. using the existing UserPreferences table))
+Returns all notes on the page.
+Import Salt Libs
+Bad beta
+Import Salt Testing Libs
+Make sure the gradient updates were run the right amount of times
+os.path.join behavior  os.sep.join behavior
+had a problem where index showed course but has_access failed to retrieve it for non-staff
+Publish the other child
+Advance random state to state after training  the first n_estimators
+Check whether the given modes is_verified or not.Args: course_mode_tuple(Mode): Mode tuple Returns: bool: True iff the course modes is verified else False.
+Errors that are known to indicate an inability to send any more emails,  and should therefore not be retried.  For example, exceeding a quota for emails.  Also, any SMTP errors that are not explicitly enumerated above.
+go to video
+Salt testing libs
+Add an extra fallback in case a forked process leaks through
+set the merged value for this block  merge visible_to_staff_only from all parents and this block
+target in units of 100,000
+Returns the number of team members in this team
+Given a tuple of parameters, samples from the :math:`p_\\theta(\\mathbf{x} \\mid \\mathbf{z})` conditional distribution Parameters  num_samples : int Number of samples theta : tuple of tensor_like Tuple of parameters for the conditional distribution Returns  x : tensor_like Samples
+If value is not None then it's a string  Use YAML to parse the data  YAML strips whitespaces unless they're surrounded by quotes
+Check whether the conv2d has stored the correct filters
+note that we can't call self.enroll here since that goes through  the Django student views, which doesn't allow for enrollments  for paywalled courses
+Module Variables
+FIXME We'll need to handle this differently for Windows.  Import third party libs
+Define the module's virtual name
+Whitelist an IP address
+Import salt libs
+Backport of numpy function in1d 1.8.1 to support numpy 1.6.2  Ravel both arrays, behavior for the first array could be different
+List all of the .pkg files
+The amount of braces that must be closed at the end
+Returns the course key associated with the course.
+Get the installer settings from winrepo.p
+Check that remote is present and set to correct url
+Binarize the output
+dashboard link hidden
+Route to master event bus  Process locally
+Ensure that grid scores were set to zero as required for those fits  that are expected to fail.
+Find the value of the entire tree.
+Mock the XQueueInterface.
+this won't be reached unless we add more arrow types, but keep it to avoid explosions when  that happens.
+Mock of list_security_group_rules method
+Authenticate users, but allow inactive users (with u.is_active == False) to authenticate.
+A list of additional directories to search for salt states in
+Import 3rd-party libs
+stop word found automatically by the vectorizer DF thresholding  words that are high frequent across the complete corpus are likely  to be not informative (either real stop words of extraction  artifacts)
+Helper method that creates a mock profile for the specified user.
+Import Salt Testing libs
+We draw from the random state to get the random state we  would have got if we hadn't used a warm_start.
+recognize methods
+There is no public IP on this interface
+Returns None if there is no 'blank' category (e.g. if we're using  the small NORB dataset.
+Test if warm start equals fit.
+HTTP Host changed to edge.
+numpy.argpartition was introduced in v 1.8.0
+Return the stringified version of the generated xml
+Display progress logs on stdout
+method = 'POST'  undo the URL encoding of the POST arguments
+Unset the UserPartition.scheme_extensions cache.
+Refresh the page again and confirm the prerequisite course selection is properly reflected
+Common options to virtualenv and pyvenv
+Validate Composer is there
+Import Third Party Libs
+Predict probabilities.
+collapse the response into a bytestring
+Assert False for item that does not exist.
+we only need recurrent inference if there are multiple layers
+Base Settings
+Test that right data structure will be created if content group is not used.
+extract patch from texture database. Note that texture 14  does not exist.
+Import Salt Testing Libs
+if it's a string, and it's not empty check for none  return None
+Define the module's virtual name
+Define the state's virtual name
+Cleanup empty dirs
+Force random_start type to int
+Returns a boolean if a path is believed to be a c4x link based on the leading element
+Connect to Service Control Manager
+Returns the Space that the layer's total state lives in.
+Add documentation to a function.
+Now let's update the requirements file, which is now cached.
+Navigate to the dashboard
+Courses that change 'course_edit_method' setting can hide 'View in Studio' links.
+Ensure all events are written out to mongo before querying.
+Should NOT mark the whole problem
+Different variance
+Get information from current task's request:
+Some fields will change depending on when the test runs,  so we just check that they're set to a non-empty string
+test trying to open a tar outside of the normal data directory
+Ignore the context error during grain generation
+remove first and last line: Listing ... - ...done
+Generate a Mongo doc from the metadata and update the course asset info.
+Returns the shown response count text, or None if not present
+The retcode status comes from the first kill signal
+Check if response is escaped
+First add the privileged user to a team.
+Import Salt Testing Libs
+Returns True/False whether a Microsite has a definition for the specified named value
+make sure the urls for the various encodings are included as part of the alternative sources.
+Effectively a no-op, since we can't really return without an event system
+This behaviour is somewhat inconsistent: None string fields  objects are converted to "None", but non-JSON serializable fields  are converted to an empty string.
+Skip the validation check if the partition has been disabled
+Ensure the asset collection exists.
+LogLevelMixIn attributes
+no yield from in Python2.X
+Returns true if this xblock has a 'delete' button
+Not yet published, so changes are present
+Compute Affinity Propagation
+Only add to the changes dict if layers were pulled
+the following packages depend on cblas, so they have to be build  after the above.
+remove the color dimension if useless
+Run the file through the renderer
+Surveys
+Catalogs live in course discovery, so we do not create any  tables in LMS. Instead we override the save method to not  touch the database, and use our API client to communicate  with discovery.
+Globals
+Standard deviation and covariance do not depend on output
+Author: Mathieu Blondel <mathieu@mblondel.org>          Arnaud Joly <a.joly@ulg.ac.be>          Maheshakya Wijewardena <maheshakya.10@cse.mrt.ac.lk>  License: BSD 3 clause
+Import Python Libs
+Translators:  'All rights reserved' is a legal term used in copyrighting to protect published content
+pylint: disable=missing-docstring
+Note that this is the Studio key for Segment. There is a separate key for the LMS.
+Import Salt Libs
+Define the module's virtual name
+clicks delete student state button.
+Define the module's virtual name
+Save button enabled.
+Construct the contentstore for storing the first import  Construct the modulestore for storing the first import (using the previously created contentstore)  Create the course.
+Exact match
+Set the URL for tests
+Open the staff debug window Return the page object for it.
+This will set the transaction isolation level to READ COMMITTED for the next transaction.
+Extracting OrderItem information of unit_cost, list_price and status
+import some data to play with
+retreive snapshots
+Helper method for sending a GET to the server. Verifies the expected status and returns the response.
+Global staff have access
+Assert that `response_data` indicates a failed request that returns `expected_error`
+Only available on POSIX systems, nonfatal on windows
+Override the display_name and weight:
+simple -> simple
+Test LOF
+save twice, no changes
+make sure the minions is a set (since we do set operations on it)
+We only take the two corresponding features
+Construct the fake request.  This can be used to construct absolute  URIs to other paths.
+if salt.utils.is_true(refresh):     refresh_db()
+Clearing the language should go back to site default
+Import Python Libs
+Check with sample weights
+Answer checkbox problem.
+The cost of returning `output` when the truth was `target` Parameters  target : Theano tensor The ground truth output : Theano tensor The model's output
+Return whether it is acceptable to show the student a certificate download link.
+Login as a staff user
+Save the task
+Return course key for coursetalk widget CourseTalk unique key for a course contains only organization and course code. :param course_key: SlashSeparatedCourseKey instance :type course_key: SlashSeparatedCourseKey :return: CourseTalk course key :rtype: str
+General information about the project.
+Using a profile from pillars
+Import 3rd-party libs
+Ensure that files whose extension is not supported fail validation.
+Should be marked as "skipped" (opted out)
+For each server, iterate on its parameters.
+Validate layer_to_clamp / make sure layer_to_clamp is a fully  populated dictionary
+service does not exist
+module store accessor - retain result for subsequent uses
+Returns the matching mock emails for the given id
+This test needs to use a course that has already started --  discussion topics only show up if the course has already started,  and the default start date for courses is Jan 1, 2030.
+until a hash gets published that we can verify the newest setup against  just go ahead and download a new one.
+Click the 'view' button of the first team card on the page.
+Pg's bigserial is implicitly unsigned (doesn't allow negative numbers) and  goes 1-9.2x10^18
+Returns the currently-logged in user, as an instance of XBlockUser
+Check that the decision is "REJECT"
+Don't create a file that is not already present
+always attempt to return an error to the minion
+Import salt libs
+Should grab common point between this page module and the data folder.
+Display progress logs on stdout
+Import Salt Libs
+Simulate that the user has purchased credit and initiated a request,  but we haven't yet heard back from the credit provider.
+Should NOT mark the whole problem
+use the course as the block to test
+Import salt libs
+Initialize coefficient and intercept layers
+unable to create it  an error occurred
+Helper to split the netmask and raise AddressValueError if needed
+Returns the course license text, if present. Else returns None.
+Cancel group configuration.
+If repo nor added neither modified, error should be thrown
+Import Salt Testing Libs
+True if the response has an answer-pool transformation.
+get module info (json)
+Error for an invalid student input. For example, submitting a string when the problem expects a number
+Globals
+Only one type of credit at a time.
+Recall 'T' is a default constant, with value 298.15
+Define the module's virtual name
+Import 3rd-party libs  pylint: disable=import-error  pylint: disable=no-name-in-module  pylint: enable=import-error,no-name-in-module
+Predictor
+collect ids and then query for those
+Run the JavaScript tests and print results to the console
+Change the privacy setting if it is not the desired one already
+Create a request for a second course
+Parse out a comma-separated list of usernames.
+If we got here, there's a bug somewhere.
+w = inv(X^t X + alpha*Id) * X.T y
+'label': '',
+Import salt libs
+Override setUp and set this:
+Import Salt Testing libs
+Whether or not to enable instructor email
+Save module with updated metadata to database."
+Import 3rd-party libs  pylint: disable=import-error  pylint: enable=import-error
+Returns list of providers that can be used to initiate logins currently
+No need to validate
+Creates a student for the test course.
+split the branch, repo name and optional extra (key=val) parameters.
+Import Salt Libs
+get the first: [alias][driver][vm_name]
+Check if response is escaped
+Make a number of fake AssetMetadata objects.
+Returns a browser query object representing the video modal element
+Wait for the upload button to appear.
+Create temp job cache dir and jid file
+to redirected unenrolled students to the course info page
+does nothing, no cache implemented  yet.
+Backwards compatibility
+Return physical path of file if found.
+Add a closing ')' for each item left in unmatched
+Import python libs
+Verify that mask is valid
+Create the course modes
+FIXME NotFittedError_ --> NotFittedError in 0.19
+clicks let student skip entrance exam button.
+Checkout is handled by the ecommerce service when the course mode's sku is nonempty.
+Don't shadow built-in's.
+Check that when capa modules are copied, their "markdown" fields (Scope.settings) are removed.  (See note in split.py:copy_from_template())
+handle license specifically
+if microsite config does not exist
+Logging options
+Better safe than sorry here. Even though sqlite3 is included in python
+Ignore IP addresses on this network for bootstrap
+Creates a course and associated enrollment.
+If eventtime in epoch not passed as optional argument use current system time in epoch
+Make it possible to pass a custom multiprocessing context as  backend to change the start method to forkserver or spawn or  preload modules on the forkserver helper process.
+Return the locator string for the course handouts
+saturate=start, so just jump straight to final momentum
+Do the regex string replacement on the minion id
+those should be integer:  those should be str:  those should be list:  those should be dict:
+Check wrong shape raises error
+Import Salt Testing Libs
+Overriding defaults but otherwise treated as HtmlModule.
+Hash file won't exist if no files have yet been served up
+TransactionManagementError used below actually *does* derive from the standard "Exception" class.  pylint: disable=nonstandard-exception
+if user is staff or instructor then he can view ccx coach dashboard.
+Initializing the test variables
+Indicates the user's preference that all their account information be private.
+Student module history table will fail this migration otherwise
+Initialize the PyCom system
+Import Salt libs
+only true if working on it
+Tests no results.
+Import salt cloud libs
+Verify video URL
+make sure captions are opened
+parse out the course into a coursekey  if it's not a new-style course key, parse it from an old-style  course key
+divide by the amount of overlap  XXX: is this the most efficient way? memory-wise yes, cpu wise?
+Should not be too high to avoid stragglers: long jobs running alone  on a single worker while other workers have no work to process any more.
+It's not a directory? Remove it from the search path
+check whether the configuration is encapsulated within Mixed.
+increase n_init to make random init stable enough
+Audit mode does not have a banner.  Assert no banner element.
+Inverse cosecant
+This tempdir path is defined on tests.integration.__init__
+Clear iteration count for multiple call to fit.
+Import salt libs
+Make & register a staff member
+Path at which to store the mock index
+pylint: disable=unexpected-keyword-arg
+The sequential already has a child defined in the setUp (a problem).  Children must be on the sequential to reproduce the original bug,  as it is important that the parent (sequential) NOT be in the draft store.
+Import salt libs
+Some fields are formatted like '{data}'. Salt/Python converts these to dicts  automatically on input, so convert them back to the proper format.
+First the assertion  Then wait for the terminal child to exit
+Enroll the user in a course
+Convert relative to absolute paths if necessary
+If a thread returns context other than "course", the access check is not done, and the beta user  can see the alpha discussion module.
+for expiring inactive sessions
+Import python libs
+Trim string to fit on terminal (assuming 80-column display)Create the initial verification attempt with some dummy  value set for field 'photo_id_key'
+go to video
+Logged in should work.
+Create a new course mode
+remove version and branch, by default
+pylint: disable=attribute-defined-outside-init
+Bootstrap
+Special Exams, aka Timed and Proctored Exams
+The partition function makes this intractable. Parameters  model : DBM data : Batch in get_data_specs format
+The yaml file is probably to blame.  Report the problem with the full module path from the YAML  file
+hit Enter to apply the changes
+Creates a InstructorTask entry representing a successful task.
+Submit payment
+Is this provider being used for this UserSocialAuth entry?
+Always restart on watch
+Use url_name for split mongo because course_run is not used when loading policies.
+Implements the DELETE method for the instance endpoint as described in the class docstring
+Course action state
+Returns whether the kernel is stationary.
+Click the Save button.
+Changes the display name of item from old_name to new_name, then verifies that its value is expected_name.
+Get tar.gz file, using HTTP_ACCEPT.
+load the module and apply the inherited metadata
+Scale data
+Revert to INFO if an invalid string is passed in
+Import third party libs
+Display details view  Check that warning icon and message are not present
+Test for assert failure when a user who didn't create the kvs tries to get from it it
+Whitelisted URL query parameters retrained in the pipeline session.  Params not in this whitelist will be silently dropped.
+return a list of sorted keys to ensure consistent order
+only got here if no expression matched, raise exception for match that made it the furthest
+ensure paths are using the right slashes
+wrong sample shape
+Go to sequential position 1 and assert that we are on problem 1.
+Do the search again, this time we expect results from courses A & B, but not C
+Another comment
+if the job is disabled and show_disabled is False, skip job
+Backward compat for Python 2
+create data to post
+Create a `self_paced` course and add a beta tester in it
+TASK: print the cross-validated scores for the each parameters set  explored by the grid search
+Display results
+Import third party libs
+When applying dropout to a layer's input, use this for masked values.  Usually this will be 0, but certain kinds of layers may want to override  this behaviour.
+This should be fine, we have enough examples for 4 batches  (with one to spare).
+Import Python Libs
+For these tests, two third party auth providers are enabled by default:
+Retrieve the block_type of a particular definitionArgs: def_id: The id of the definition to query Returns: The `block_type` of the definition
+Mapping from label index to fold index
+Tests microsite.has_override_value works as expected.
+Filename of all asset metadata exported as XML.
+There should never be both a password and an ssh key passed in, so  tell SSH to skip password authentication  Make sure public key authentication is enabled  do only use the provided identity file  No Keyboard interaction!  Also, specify the location of the key file
+Construct the response content
+Default HTTP headers dict.
+Return validation message.
+Mock of incr method
+ssh_gateway_port
+Used for single ESXi host connection information
+Translators: 'partial_credit' and the items in the 'graders' object  are attribute names or values and should not be translated.
+we give a small weights to class 1
+test some precise values
+raw documents
+Loads the badging backend.
+Default (no course modes in the database)  Expect automatically being enrolled as "honor".
+Loop through each package
+Respond to request with correct lti endpoint
+Allow switch from '*' or not present to 'random'
+What does the demote user button say?
+Create the course modes
+use SVD solver if matrix is singular
+Import third party libs
+Verifies that team leave link is present
+the apt_pkg module needs to be manually initialized
+Mock getting the proper template files
+Return True if given user can skip entrance exam for given course otherwise False.
+called should cache the compilation results, including those  inside cg
+Import python libs
+Each worker should only fetch one message at a time
+ConfigDirMixIn config filename attribute
+Set up tests
+Import Salt Libs
+Theme options are theme-specific and customize the look and feel of a theme  further.  For a list of options available for each theme, see the  documentation.
+Check transactions (payments/refunds) in the latest history record.
+Robustly fit linear model with RANSAC algorithm
+Target is an address?
+Store an instance of the current logging logger class
+See the docs for xmodule.modulestore.mixed.MixedModuleStore
+Parallel loop
+We can't have more than one value on y_type => The set is no more needed
+Allows us to dark-launch particular languages
+new_instance = conn.get_vm_by_name(vm_['name'])  ret = new_instance.get_properties()
+If an there is an implicit zero and it is not in classes and  class_prior, make an entry for it
+Define the module's virtual name
+Test input validation of partial dependence.
+Configure database used by the backend. :Parameters: - `name` is the name of the database as specified in the project settings.
+2 step rendering to be sure not to open/wipe the config  before as_string succeeds.
+Cached region
+Adding another verification with different course.  Its created_at is greater than course deadline.
+extract a small minibatch
+Import Salt Testing Libs
+Import Salt Libs
+Define the module's virtual name
+republish course
+now use different one
+perform label assignment using the sparse CSR input
+Set up groups
+-*- coding: utf-8 -*-
+mix letters accentuated and not
+Create the input within the response
+Assert the expected error message from the email validation method for an email address that is already in use by another account.
+Check if the focus is on element
+Some duplicated fields are passed into event-tracking via the context by track.middleware.  Remove them from the event here since they are captured elsewhere.
+determine output shape
+don't really know how tight this should be  but you can try to pose an equivalent problem  and implement it in another way  using a numpy implementation in softmax_acc.py  I got a max error of .17
+Fetch static files out of the pipeline's static root
+check single axis
+Assume input argument to be string or any object representation  which converts into a formatted IP string.
+Editor must be open already. This will replace any content in the editor with new content
+Tests that deprecated types defined in both settings and config model are read.
+check the children in the draft
+Import salt libs
+Import third party libs
+There was no preference with that key, raise a 404.
+Override the receipt ID if one is provided.  This allow us to construct S3 keys to images submitted in previous attempts  (used for reverification, where we send a new face photo with the same photo ID  from a previous attempt).
+If we use [] at the end of a key name, we should always  get a list, even if there's just one value
+Export the course from a modulestore and then re-import the course.
+Returns how many layers the GSN has.
+Set up logging
+Ensure that the client key supplied with the LTI launch is on that has been generated by our platform, and that it has an associated client secret. :return: True if the key is valid, False if it is not.
+Import Salt Testing libs
+Import Python libs
+Import Salt's libs
+if we enable warm_start, we will have a unique initialisation
+Add an additional function that will merge the shell options with  the config options and if needed override them
+This is ultimately probablistic since we could randomly select a good character 100000 consecutive times.
+Run a lookup on the part after 'redirect=' (9 chars)
+Make sure that we don't repeatedly nest LmsFieldData instances
+A domain line didn't exist so we'll add one in  with the new domainname
+Create a student who will end up in the default cohort group
+VM has been created. Starting..
+when
+True if this tab can be included more than once for a course.
+Update index with course_team object (if feature is enabled).
+This only happens if the string ends with a %, which is not legal.
+Respond with failure
+Make a list since we will be iterating multiple times over the folds
+Generate the plots for the gallery
+Mock of update_network method
+Import Salt libs
+np.asarray(probs) doesn't make a numpy vector, so I do it manually
+Import Salt Testing Libs
+Redefine the null handler to None so it can be garbage collected
+No keys have been generated
+Check data
+Import Salt Testing Libs
+Note: This currently requires libcloud trunk
+Navigate to the root of the repo to init, stage, and commit  Initialize a new git repository
+Fit regression model
+standardize
+Make sure that we don't repeatedly nest CmsFieldData instances
+Loads a file into a string. Arguments: file_full_path: The full path of the file to be loaded. Returns: A string containing the files contents.
+Get logging started
+export course to xml
+Check for existing task
+Configuration for ps beacon should be a list of dicts
+Import python libs
+this is used for sag regression
+Import Python libs
+Assert 400 status code in response
+Assert that it has all the same properties
+Executes the the main_loop() Parameters  yaml_file: string Configuration yaml
+__contains__
+Import Salt Libs
+Test whether label mismatch between target y and classes raises  an Error  FIXME Remove this test once the more general partial_fit tests are merged
+If this is an inheritable field and an override is set above,  then we want to return False here, so the field_data uses the  override and not the original value for this block.
+Import Salt Libs
+have we already loded everything?
+Test performance report with added digits in floating point values
+Instead of SessionMiddleware, we use a more secure version  'django.contrib.sessions.middleware.SessionMiddleware',
+Ensure a clean AddressValueError
+Assert courses exists in course overviews.
+Pick whether to iterate over visible or hidden states.
+Import Salt Testing libs
+A weak assertion for the timestamp as well
+Click username dropdown.
+last resort, just use MatchFirst
+Check that params are set  Smoke test the repr:
+Test the actual attribute:
+Import python libs
+Use the wrong HTTP method
+Remove unspecified algorithm
+re-fetch the course from the database so the object is up to date
+Import salt libs
+The second check should require no database queries
+Test that pylint is NOT called by counting calls
+only return the return data
+Generate dataset
+prepare course structure
+Use Google customized search or use Sphinx built-in JavaScript search
+Recursive helper function that searches the (possibly nested) input space to see if it contains SequenceSpace
+Gaussian mixture parameters estimators (used by the M-Step)
+Apply the roles
+Verify that the VAL copies videos to the rerun
+If auth error, return control back to the caller, continue when authentication succeeds
+Test that locked assets behave appropriately in case user is staff.
+Delete the file since its incomplete (either corrupted or incomplete)
+Renormalize
+Load the history entry and verify the message keys
+Define the module's virtual name
+Construct file path to be uploaded to assets. Arguments: filename (str): asset filename
+Return list of usages.
+Wait for the element to be visible in the DOM.
+1) within (univariate) scaling by with classes std-dev  avoid division by zero in normalization
+Import python libs
+connect to the task scheduler
+time again the get courses by reversing django groups
+Import Salt Testing Libs
+'course_id' is a deprecated field, please use 'id' instead.
+Monkey patch and defuse all stdlib xml packages and lxml.
+Special Exams, aka Timed and Proctored Exams
+If max_count has been decreased, we may have to drop some previously selected blocks:
+we want to discard the original key
+Verify that the attempt is created in the database
+Confirm that if we get a certificate with a no-id-professional mode we still can download our certificate
+enter the search term into the box
+Thrown when a module cannot be exported to XML
+If is_active is False, then the student is not considered to be enrolled  in the course (is_enrolled() will return False)
+If an event is above this size, it will be trimmed before putting it on the event bus
+s3 query returned nothing
+The default iterator for a block structure is get_block_keys() since we need to filter blocks as a list. A topological traversal can be used to support DAGs.
+Returns the category string corresponding to an integer category label.
+Import third party libs  pylint: disable=import-error
+Import Salt Testing Libs
+Initialize the page.Arguments: browser (Browser): The browser instance. user_id: id of the user whom certificate is awarded course_id: course key of the course where certificate is awarded
+We set up each dataset with a different batch size  check here that we're getting the right one  Each dataset has different content, make sure we  get the right one
+Read current configuration and store default values
+now parse each hostname string for host and optional port
+Outer loop: our Newton iteration  Compute a search direction pk by applying the CG method to   del2 f(xk) p = - fgrad f(xk) starting from 0.
+store state via the UserStateClient
+Import Python libs
+transfer during test
+Mark the name of the service used to evaluate this attempt (e.g  Software Secure).
+Add any paths that contain custom static files (such as style sheets) here,  relative to this directory. They are copied after the builtin static files,  so a file named "default.css" will overwrite the builtin "default.css".
+Import Salt Testing Libs
+Sanitize kwargs and make sure that no invalid ones were passed. This  allows us to accept 'all' as an argument to this function without  shadowing all(), while also not allowing unwanted arguments to be passed.
+Returns PaidCourseRegistration object if user has payed for the course enrollment else Returns None
+Expiration date in the past
+NOTE, there's a bug in Django (http://bugs.python.org/issue18012) which necessitates this being a str()
+Import salt libs
+pylint: disable=invalid-name
+Maybe some original features where good, too?
+Globals
+this might raise a LinalgError if G is singular and has trace  zero
+Import salt libs
+Clicks "Preview", which will open the draft version of the unit page in the LMS. Switches the browser to the newly opened LMS window.
+if we have all the minion returns, lets just return
+Python 2 compat
+Trained on sparse format
+Create content in studio without publishing.
+Add some files which do not match fake_strptime_format
+Safe error, arg may be in kwargs
+invalid token, delete it!
+The training data folder must be passed as first argument
+https://github.com/zeromq/pyzmq/issues/173issuecomment-4037083  Assertion failed: get_load () == 0 (poller_base.cpp:32)
+Delete CHANGE_USER
+Submit the new course form.
+Middleware is not supported by the request factory. Simulate a  logged-in user by setting request.user manually.
+Import salt libs
+if it doesn't exist
+Fetches the body of a request specified by params
+Import salt libs
+Import salt libs
+bleh, have to parse the XML here to just pull out the url_name attribute  I don't think it's stored anywhere in the instance.
+Return True iff user is allowed to view this course/library in studio. Will also return True if user has write access in studio (has_course_author_access) There is currently no such thing as read-only course access in studio, but there is read-only access to content libraries.
+Put GECOS info into a list  Make sure our list has at least four elements
+Translators: This label appears above a field on the registration form  meant to hold the user's public username.
+Waits for the loading indicator to be hidden.
+Expect that the problem was reset
+The mode needs to change...
+all_answers is real_answers + blanks for other answer_ids for which the  responsetypes can't provide us pre-canned answers (customresponse)
+try to locate the resource by any of the identifier_fields that are specified in data
+If a block was inherited into another structure using copy_from_template, this will return the original block usage locator from which the copy was inherited.
+Clear all assets for location.
+test that from_json produces no exceptions
+this secret key should be the same as cms/envs/bok_choy.py's
+Import python libs
+Return a valid :class:`~opaque_keys.edx.keys.UsageKey` for the modulestore that matches the supplied course_key.
+Import Python Libs
+x coordinate of center of leftmost pixel  x coordinate of center of rightmost pixel
+Create a certificate with status 'error'
+Verify staff has been enrolled to the given course
+-*- coding: utf-8 -*-
+Non-regression test: TfidfVectorizer used to ignore its "binary" param.
+Returns the template which has the specified display name.
+Set context var to make cmd.run_chroot run cmd.run instead of  cmd.run_all.
+Patch the run method at runtime because decorating the run method  with a function with a similar behavior would be ignored once this  class'es run method is overridden.
+Exception class for handling the typical errors in a git import.
+Look for an override value for the field named `name` in `block`. Returns the overridden value or `default` if no override is found.
+add a staff user, whose access will be unconditional in spite of group access.
+Import python libraries
+get the separating hyperplane
+fallthrough case, which basically never happens
+If we are installing a package file and not one from the repo,  and version_num is not None, then we can assume that pkgname is  not None, since the only way version_num is not None is if DEB  metadata parsing was successful.
+decision function only estimator. Fails in current implementation.
+compute merged value of start date from all parents
+Avoid non-useful msg:  "Ignoring attempt to set 'name' (from ... "
+This should only read from the cache, not the database
+fit with just the necessary data
+Subclasses override to return an etree elementrepresenting the capa response XML (e.g. <numericalresponse>). The tree should NOT contain any input elements (such as <textline />) as these will be added later.
+Returns True on the 10th iteration.
+Import Python libs
+Tests for the deprecated profile_image remove endpoint. Actual tests defined on DeprecatedProfileImageTestMixin
+-*- coding: utf-8 -*-
+Import third party libs
+Ancestors of /Phy101/Mechanics/Acceleration/ is a list of URLPaths  ['Root', 'Phy101', 'Mechanics']
+Import Python libs
+First check whether this is a restricted course.  The list of restricted courses is cached, so this does  not require a database query.
+Have to use the right method to create the request to get the HTTP method that we want
+no actual parent found
+Import python libs
+Enable two providers - Google and LinkedIn:
+Set up the data grid
+Create the checkpoint
+register a non-staff member and try to delete the course branch
+Check whether a poster is show.
+Initialize model parameters. Parameters  nhid : int Number of latent units for z
+must be larger than -1
+close raet channel here
+Getter for the CCX Course ID
+This condition could be relaxed, but current code assumes it
+-*- coding: utf-8 -*-
+Returns whether the requesting_user can access the blocks for other users in the given course.
+Group controlling perms is not present
+Expect that the problem HTML is retrieved
+Conveniently import all assertions in one place.
+test that staged_functions make defensive copies
+If true, SmartyPants will be used to convert quotes and dashes to  typographically correct entities.
+If the enrollment has no created date, we are explicitly excluding the course  from the list of recent enrollments.
+need to get user_name from the user object
+-*- coding: utf-8 -*-
+Users 1-5 attempted Homework 1 (and get Fs) [4]  Users 1-10 attempted any homework (and get Fs) [10]  Users 4-10 scored enough to not get rounded to 0 for the class (and get Fs) [7]  One use at top of the page [1]
+Mock of create_router method
+do NOT delete the original course, only update the status
+Import Salt Testing libs
+Always clean up the tests temp files
+Setting the session language to the browser language, if it is supported.
+move child problem_x1a_1 to vertical_y1a
+Test for 500 error: a CCXConnServerError exception is raised
+Remove ids from the response. We cannot predict IDs, because they're generated randomly. We use this method to clean up response when creating new certificate.
+Remove all choices in the choices_list (we will add some back in later)
+For consistency in user-experience, keep the value of this setting in sync with  the one in lms/envs/test.py
+make sure it is not returned by default
+sample_weight should work with estimator
+if we don't have a third group in the matches object it means  that we're importing everything
+Define the module's virtual name
+If a choice does not have an id, assign 'A' 'B', .. used by CompoundHint
+Import salt libs
+Import Python libs
+Try to use the 'email' field to identify the user.  If it's not present, use 'username'.
+fixed parameters
+The MLP defines f(x) = (x W)^2, with df/dW = 2 W x^2
+Provided intercept_ does match dataset.
+Invalid entry
+Set custom tracking based method
+Scenario: A message is displayed on the textbooks page when there are no uploaded textbooks Given that I am viewing the Textbooks page in Studio And I have not yet uploaded a textbook Then I see a message stating that I have not uploaded any textbooks
+Import python libs
+Test a key that contains non-ASCII unicode characters  This should return `None` and log an error; the caller  is then responsible for logging the appropriate errors  so we can fix the misconfiguration.
+Import salt libs
+Exclude deprecated fields
+Yum's versionlock plugin doesn't support passing just the package name  when removing a lock, so we need to get the full list and then use  fnmatch below to find the match.
+Only relevant labels
+if search setting has it as off, confirm that nothing is indexed
+Return the rendered text for the page to be verified
+Lastly, see if the developer has any local overrides.
+Verify that no email messages have been sent
+Social media links for the page footer
+inplace sum with new points members of this cluster
+Libraries do not support advanced components at this time.
+override implementation to use PATCH method.
+Import salt libs
+pos_label support deprecated; to be removed in 0.18:
+Normal object manager, which should only be used when ineligible  certificates (i.e. new audit certs) should be included in the  results. Django requires us to explicitly declare this.
+transpose back the results according to the input convention
+Translators: {action} is a past-tense verb that is localized separately. {succeeded} and {attempted} are counts.
+Reset estimation of the smoothed mean batch duration: this  estimate is updated in the multiprocessing apply_async  CallBack as long as the batch_size is constant. Therefore  we need to reset the estimate whenever we re-tune the batch  size.
+No /proc/modules? Are we on Windows? Or Solaris?
+Test when name contains an invalid character
+Import salt libs
+Import Third Party Libs
+center kernel
+Set up logging
+Get course topics for self.course, using the given user or self.user if not provided, and generating absolute URIs with a test scheme/host.
+full index again
+Note this is not a perfect 1:1 backwards migration - targets can hold more information than to_option can.  We use the first valid value from targets, or 'myself' if none can be found
+Course discovery feature
+Returns true if these are w/in a minute of each other. (in case secs saved to db or timezone aren't same) :param dt1: :param dt2:
+Set up template environment
+Transform the event with legacy fields and other necessary modifications.
+Import 3rd-party libs
+top is a single file module
+Args: `correct` (bool): Inputs correct answer if True, else inputs incorrect answer.
+Import Python libs
+Verify that the target binding exists.
+Create some libraries as the staff user:
+Verify the signal sets deadline to course end when no deadline exists.
+See :class: cms.lib.xblock.runtime.EditInfoRuntimeMixin
+Create four pages worth of XBlocks, and offset by one so each is named after the number they should be in line by the user's perception.
+Import Python libs
+Import Python libs
+Test for when a course key is malformed
+Ensure POSTs made with the token succeed.
+Returns the disabled state of button
+Tests that arg_of_sigmoid works when given a good input.
+previous takes us to previous chapter
+display trace in error message for debugging on jenkins
+Import Python libs
+Computing whether the rows and columns are broadcastable requires doing  arithmetic on quantities that are known only at runtime, like the specific  shape of the image and kernel
+this happens if not callable
+Separate terms of service and honor code checkboxes
+Create the prod ed mode.
+This is the first partial_fit
+assert that the edX partners tag line is not in the HTML
+Page past the end
+Configure users permissions
+Replace the contents of the response editor
+Subclasses should override this
+Missing username
+Import Python libs
+Parse through both the blockdev & the FS
+Returns the category name represented by a category label int. Parameters  label: int Category label.
+Compute step score on the previous selection iteration  because 'estimator' must use features  that have not been eliminated yet
+Import Salt Testing Libs
+Create an unlocked image in a subdirectory.
+Query for first two elements of train_objective data
+We are at first page, so there's no previous page.
+adding any constant to a log-scaled matrix should make it  bistochastic
+Expect that certificate generation started  Cert generation will fail here because XQueue isn't configured,  but the status should at least not be None.
+Serializer that generates a represenation of a UserPreference entity
+Backwards compatibility with themes created for  earlier implementations of the embargo app.
+Indicates some error(s) occured during indexing
+Set the log level of our logger, either to DEBUG or INFO.
+get About page url
+-*- coding: utf-8 -*-
+second login should log out the first
+Attempt to import pyVim and pyVmomi libs
+Public interface
+This is often substantially faster than X[indices]
+found a user... updating
+Check if the installer was cached successfully
+Login as staff
+Disable the jquery animation for the transition to the menus.
+Call `confirm_email_change` and assert that the content was generated as expected`expected_template`: The name of the template that should have been used to generate the content `expected_context`: The context dictionary that should have been used to generate the content
+checks if self or other is not empty list (empty lists  = false)
+generate the new map
+Dispatch more data for parallel processingThis method is meant to be called concurrently by the multiprocessing callback. We rely on the thread-safety of dispatch_one_batch to protect against concurrent consumption of the unprotected iterator.
+If the name already exists, then we don't want  to override it.  Raise an error instead
+Import Salt Libs
+The instance is booted and accessible, let's Salt it!
+Import Salt Testing libs
+Densify sparse examples before testing
+Tamper with the signature
+Import salt libs
+Prepare the feature settings that must be enabled before django.setup() or autostartup() during the startup script
+Returns the usage key for the given key parameters using the default modulestore
+Import third party libs
+To ensure that array flags are maintained
+Perform classification on an array of test vectors X.Parameters  X : array-like, shape = (n_samples, n_features) Returns  C : array, shape = (n_samples,) Predicted target values for X, values are from ``classes_``
+Set the timeout value for the cache to 1 day as a fail-safe  in case the signal to invalidate the cache doesn't come through.
+mark 2 students to have certificates generated already
+There are prefixes like 'Tools' and '>', but the text itself is not in a span.
+Bind the module to another student, which will remove "correct_map"  from the module's _field_data_cache and _dirty_fields.
+check inputs that support the no-copy optim
+Import 3rd-party libs
+Author: Gael Varoquaux <gael.varoquaux@normalesup.org>  License: BSD 3 clause  Copyright: INRIA
+Update component cutoff, in case min_variance or num_components has  changed (or both).
+Clicks edit button.
+Creates a biclustering for X.Parameters  X : array-like, shape (n_samples, n_features)
+on revocation, the result's result doesn't contain anything  but we cannot rely on the worker thread to set this status,  so we set it here.
+Import Salt Libs
+Now without a score, and without y
+Just in case a previous test was interrupted, remove the  directory and try adding it again.
+Import Salt Testing Libs
+if we did not found any sls in the fileserver listing, this  may be because the sls was generated or added later, we can  try to directly execute it, and if it fails, anyway it will  return the former error
+This exception occurs when two processes are trying to write  to the git config at once, go ahead and pass over it since  this is the only write. This should place a lock down.
+Import Salt Testing libs
+Create a user, log them in, and enroll them in the honor mode
+Delete all of the assets which use this course_key as an identifier :param course_key:
+Import python libs
+Import salt libs
+Get XML logging logger and capture debug to parse results
+Import python libs
+Gram matrix for test data but compute KT[i,j]  for support vectors j only.
+take values from initial
+multiply the input by each transform  join the resuls
+parameters
+VersioningModulestoreBuilder(),   FUTUREDO: LMS-11227
+Arguments: user (:class:`~User`): An already-loaded django user. If this user matches the username supplied to `set_many`, then that will reduce the number of queries made to store the user state.
+mock request
+dictionary of InputType objects associated with this problem    input_id string -> InputType object
+check if ccx dashboard is open.
+Accept find_job so the CLI will function cleanly
+Use standard SGD updates with fixed learning rate.
+grab only the files/dirs in the bucket
+dual coef for class1 SVs:  dual coef for class2 SVs:  build weight for class1 vs class2
+Translators: This is the header for a CSV file column  containing URLs for video encodings for the named profile  (e.g. desktop, mobile high quality, mobile low quality)
+remove microsite root directory paths first
+Define some class level attributes to make PyLint happier
+Bind the CSS to a particular tabpanel (e.g. My Teams or Browse).
+Dummy save method for dummy model.
+Import Python libs
+un-cohorted user should see no videos
+cleanup
+and finally...
+Scaleway organization and token
+Schedule a mine update every n number of seconds
+Import salt libs
+Re-initialize the tracking system using updated django settings. Use this if you make use of the @override_settings decorator to customize the tracker configuration.
+Discard changes and verify that there are no changes
+Ensure the estimator has implemented the passed decision function
+Reconfigure multiprocessing logging after daemonizing
+Function alias to set mapping.
+Creates a vertical, returning its UsageKey.
+Returns whether the current request is masquerading as a student.
+Import salt libs
+Import python libs
+Check if quality button is active or not. Returns: bool: active status
+Click .setting-replace button after first hovering to it.
+Simulate that the problem is closed
+first pass to extract the state configuration
+Destination file does not exist or could not be accessed
+this script can be imported by nosetest to find tests to run: we should not  impose the matplotlib requirement in that case.
+These are URLs to the app store for mobile.
+If we're getting user data, we expect that the key matches the  user we were constructed for.
+Import 3rd party libs
+unpack a 4-byte integer from the current position in file f
+Import Salt Libs
+First main option
+Avoid recursively re-adding this same pillar
+Check if tenant is already present
+generate spherical data centered on (20, 20)
+Given a course's end datetime, returns whether (a) it is not None, and (b) the current time is past it. Arguments: end_date (datetime): The end datetime of the course in question.
+Returns the Studio URL to a static resource.
+Expect that the seed is the same
+Mocks out a django method
+salt-call tls.create_csr my_little CN=MasterDBReplica_No.2 \
+Non-regression: before fit, there should be not fitted attributes.
+-*- coding: utf-8 -*-
+Import Python libs
+We should be redirected back to the complete page, setting  the "logged in" cookie for the marketing site.
+Filters provided `data(list)` by the `course_id(str)`.
+The 'pretty' name that can be translated and displayed
+if it exists
+Import salt libs
+User does not exist
+Import salt libs
+collect all of the affected entries (only the key is  important in this dict; would have used an OrderedSet if  there was one)
+Import Salt Testing libs
+Let's filter out any courses in an "org" that has been declared to be  in a Microsite
+Get logging started
+no history, then let's take the date the user joined
+Enable users admin
+make an attempt for the 'first_checkpoint'
+Populate the children of the test course fixture.
+Case insensitive but case preserving
+Returns the factors corresponding to the mapping units.
+Test
+Create color maps
+sorted_types is sorted from greatest to least bitmask.
+Import Salt Testing Libs
+This line is a comment or is empty
+nested model check
+django-debug-toolbar monkeypatches the connection  cursor wrapper and adds extra information in each  item in connection.queries. The query time is stored  under the key "duration" rather than "time" and is  in milliseconds, not seconds.
+Helper function to remove the branch and version information from the given value, which could be a single object or a list.
+Import python libs
+Kill the process group since sending the term signal  would only terminate the shell, not the command  executed in the shell
+Multiple points
+Case 3. Combine Case 1 and Case 2.
+Mock of list_networks method
+Yield the redirect url so the tests don't need to know  the embargo messaging URL structure.
+Now deactive
+Verify that the appropriate certs were added to the queue
+Finally, validate the entire response for consistency
+Pydoc does a poor job on other objects
+Import first time
+When source_library_id is set but the block needs to be updated, the summary should say so:
+Import 3rd Party Libs
+This value is set by observation, so that later changes to the student  id computation don't break old data
+Update Xt, G and minibatch_index
+runs through the .../package_name/scripts/  directory and executes the scripts in a  specific order (which shouldn't display  much unless they fail)
+Uninstall the software  Check Use Scheduler Option
+Show the traceback if the debug logging level is enabled
+Whether to run django-require in debug mode.
+Verify that ancestors now have no changes
+Check the signature
+Set a number which is not equal to batch_size for comfort debugging  creating masks that have different zero values.  Non-zeros is 15 out of 20
+since we sorted by SORT_REVISION_FAVOR_DRAFT, the 0'th parent is the one we want
+Assert that the given response has the status code 200
+Check if the service_name provided is a valid one.  If we don't have a valid service, return. The service will be invalid for all hosts.
+Test the error cases for the "dispatch" argument to the LTI 2.0 handler.  Anything that doesn't fit the form user/<anon_id>
+reload user from DB
+Translators: {action} is a past-tense verb that is localized separately. {succeeded} and {attempted} are counts.
+Extract seconds part from current video slider position. Returns: str
+Returns a list of display names of all invalid settings.
+catch deprecation warnings  separate estimators to control random seeds
+Invalid GUID raises error
+Generate static i18n JS files.
+Check that registration button is not present
+Course content API
+rexp parses lines that look like the following:     * Safari6.1.2MountainLion-6.1.2          Safari (6.1.2), 51679K [recommended]
+Generate a key with that character
+If we have no books, asking for the first book will fail with a 404.
+Check whether locs is a reordering of the array np.arange(n)Parameters  locs : ndarray integer array to test n : int number of expected elements Returns  is_partition : bool True iff sorted(locs) is range(n)
+If we can't find the creds, then they aren't authorized
+Stubbed out Enrollment creation request.
+Import Salt Libs
+Import 3rd-party libs
+Generate a URL based on internal service URL and API version number.
+copy __dict__  remove interpolation method
+keep lint from choking on _get_conn and _cache_id
+-*- coding: utf-8 -*-
+normal cElementTree install
+Import salt libs
+kick off complete reindex of the course
+Return the name of the key to use to cache the current configurationArguments: user(User): user object course_key(CourseKey): CourseKey Returns: string: cache key name
+without bootstrap, all trees are perfect on the training set
+Audit / Verified / Honor  We should always go to the "choose your course" page.  We should also be enrolled as "honor" by default.
+Check if the course is in restricted list Args: course_id (str): course_id to look for Returns: Boolean True if course is in restricted course list.
+Import Salt Testing Libs
+predict_proba
+Iterate between `doc_topic_d` and `norm_phi` until convergence
+git config --get exits with retcode of 1 when key does not exist  Should never happen but I'm paranoid and don't like tracebacks
+Closes the current view.
+Ignore UserProfileFactory creation events.
+Initially, all samples are noise.
+make sure it starts empty  get something, and make sure its a func
+Set up logging
+cleanup
+Returns whether the user can enroll in the course.
+Let's create the testing virtualenv
+Since using "provider: <provider-engine>" is deprecated, alias provider  to use driver: "driver: <provider-engine>"
+Plot the nodes using the coordinates of our embedding
+Returns dummy request object for CCX coach tab test

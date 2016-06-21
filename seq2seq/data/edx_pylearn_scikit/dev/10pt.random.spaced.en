@@ -1,0 +1,2057 @@
+Split training and testing . Switch train and test subset compared to LYRL2004 split , to have a larger training dataset .
+Ensure about video don ' t have asides
+Expect that the <startouttext /> and <endouttext /> were converted to <span></span> tags
+The ' pretty ' name that can be translated and displayed
+User 6 is honor
+The vertical line for average silhouette score of all the values
+only compare the persisted/serialized members: ' type ' and ' name '
+Given an AccessToken object , return the associated client application .
+Expect that the anonymous_student_id was converted to " student "
+For content serving
+labels can be encoded as float , int , or string literals np . unique sorts in asc order; largest class id is positive class
+We got a require . js error Sometimes requireJS will throw an error with requireType=require This doesn ' t seem to cause problems on the page , so we ignore it
+Returns the best parameters up to now for the model .
+This application object is used by the development server as well as any WSGI server configured to use this file .
+Test that the length is correct
+Compare the state of the model parameters with the original parameters
+Returns the model ' s prior distribution parameters
+Decorator: @outer_atomic ( . . . ) or context manager: with outer_atomic ( . . . ) : . . .
+custom XRDS header necessary for discovery process
+Make ' _ ' a no-op so we can scrape strings . Using lambda instead of ` django . utils . translation . ugettext_noop ` because Django cannot be imported in this file
+Unenroll the instructor on ccx .
+return a dictionary with the fixture ' s data serialized for PUTting to the stub server ' s config endpoint .
+Don ' t call verify_grad . There was problem with the test and we already assert that 2 version are equals . Also , it will be slower to verify like that then the comparison .
+Verifies that the zmq module is present . If not , raises SkipTest .
+An XBlock we can use in these tests .
+Verify that get_client_secret returns the right value for the correct key
+Returns list of friendly titles for our selected children only; without thi , all possible children ' s titles would be seen in the sequence bar in the LMS . This overwrites the get_content_titles method included in x_module by default .
+Go to sequential position 1 and assert that we are on problem 1 .
+Sets up the course to use cohorting with a single defined cohort .
+Mocking the grades . grade If user has above passing marks then True will return
+We remove the branch , because publishing always means copying from draft to published
+MEDIA_ROOT specifies the directory where user-uploaded files are stored .
+Initialize embedding randomly
+Include the theme ' s templates in the template search paths
+The optimization continues until the countdown has reached 0 , meaning that N epochs have passed without the model improving enough .
+Wait until all xblocks rendered .
+Defaults for iterators
+Make it possible to pass a custom multiprocessing context as backend to change the start method to forkserver or spawn or preload modules on the forkserver helper process .
+-*- coding: utf-8 -*-
+Copy params so we can modify it; we can ' t just do dict ( params ) because if params is request . POST , that results in a dict containing lists of values
+Initialize coefficient and intercept layers
+Update the user ' s profile , linking the user to the embargoed country .
+See :py:meth: xmodule . modulestore . split_mongo . split . SplitMongoModuleStore . clone_course
+If true , do not generate a @detailmenu in the " Top " node ' s menu .
+If there is no label , it results in a Nan instead , we set the jaccard to 1: lim_ { x->0 } x/x = 1 Note with py2 . 6 and np 1 . 3: we can ' t check safely for nan .
+Return an iterator for this dataset
+Constructor that will be called everytime another ' s class constructor is called ( if the " __metaclass__ = MetaLibVersion " line is present in the other class definition ) . Parameters cls : WRITEME name : WRITEME bases : WRITEME dict : WRITEME
+verify org course and run don ' t already exist
+Check all indices are returned in the test folds
+Test whether the relative univariate feature selection gets the correct items in a simple regression problem with the k best heuristic
+Create a shell expansion of passed in parameter and iteratively remove them . Must only expand to directories .
+pylint: disable=missing-docstring
+reset server configuration
+Logout and login with given credentials .
+this is the only real delete in the system . should it do something else?
+Returns a browser query object representing the video modal element
+Should not be too high to avoid stragglers: long jobs running alone on a single worker while other workers have no work to process any more .
+Batching is never beneficial with the threading backend
+Create instructor account create an instance of modulestore
+Create the given ` ticket ` in Zendesk . The ticket should have the format specified by the zendesk package .
+Log out the user created during test setup , to prevent the view from selecting the logged-in user ' s email address over the email provided in the POST data
+Helper method for getting the client and user and logging in . Returns client .
+add alternative plain text message
+Sets a given directory to a created , but empty state
+Do all checks and complain before changing any state .
+Returns its MLP ' s weights
+Check that duplicate entries and correspondingly increased sample weights yield the same result
+Make sure the repr works
+compute the singular values of X using the slow exact method
+Verification deadlines are allowed only for verified modes
+We need a lot of components for the reconstruction to be " almost equal " in all positions . XXX Test means or sums instead?
+load data for all of the ' about ' modules for this course into a dictionary
+Backwards compatibility with themes created for earlier implementations of the embargo app .
+Discard changes and verify that there are no changes
+Callback used by PyYAML when a " !import: " tag is encountered .
+clone a default ' about ' overview module as well
+np . median ( [ ] ) raises a TypeError for numpy >= 1 . 10 . 1
+Add any paths that contain custom themes here , relative to this directory .
+Try to render the module with DEBUG turned off
+Upload a handout file to assets Arguments: handout_filename ( str ) : handout file name
+Parse tree
+Signal that fires when a user is graded ( in lms/courseware/grades . py )
+edited_on is updated upon import .
+Client API operation adapter/wrapper
+Default ( no course modes in the database ) Expect that we ' re redirected to the dashboard and automatically enrolled
+Try another upload and make sure that a second event is emitted .
+check shape consistency for number of samples at fit time
+make an attempt for the ' first_checkpoint '
+Returns boolean indicating presence of passed message .
+Update if only no priors is provided Empirical prior , with sample_weight taken into account
+Clears out any microsite configuration from the current request/thread
+Returns the weights of the first layer of the decoding network
+Clicks save button .
+Check that the best model found by grid search is 100% correct on the held out evaluation set .
+if we reset the password , we should be able to log in
+Removes all instructor and staff users from the given course .
+Create a temporary folder for the data fetcher
+Override any global settings with the course settings
+Event for the entire delete_many call .
+Remove the last item so list length is exactly MAX_SCREEN_LIST_LENGTH
+Add a video component to Group 1 Duplicate the first item in Group A
+Get a key from the cache . Args: key: The key to update . default: The value to return if the key hasn ' t been set previously .
+Test that sub-ing doesn ' t work without subtags
+Click on the breadcrumb for a specific topic
+Plot result
+pylint: disable=no-member
+Convert the name of a numtolerance_input into the name of the binary choice that it is contained within , and append it to the list if the numtolerance_input ' s parent binary_choice is contained in ` selected_choices ` .
+The number of queries is one for the users plus one for each prefetch in NotifierUsersViewSet ( roles__permissions does one for each table ) .
+Construct a URL to the page within the course .
+pylint: disable=no-member
+Helper method for changing state
+check shape consistency
+Enables staff only for the specified xblock .
+Fit label encoder and return encoded labelsParameters y : array-like of shape [ n_samples ] Target values . Returns y : array-like of shape [ n_samples ]
+update the index entry if appropriate
+staged_predict
+match things like the last example-- the second item in msub is an mrow with the first character equal to \u200b
+Returns a string , stating the source for the input . By default the model expects only one input source , which is called ' features ' .
+return the thread-local cache , if found
+Note: the following is identical to X [ rows [ : , np . newaxis ] , cols ] . sum ( ) but much faster in scipy <= 0 . 16
+Fit OneHotEncoder to X . Parameters X : array-like , shape [ n_samples , n_feature ] Input array of type int . Returns self
+module_styles_lines . append ( { selector } . xmodule_ { class_ } { { . format (
+EM algorithms reset self . converged_ to False
+Release es-419
+Expect that number of attempts IS incremented
+Asserts the response is a valid response sent when the E-Commerce API is unavailable .
+Assert no setting changed event has been emitted thus far .
+Return boolean indicating user ' s administrator status . For our purposes an administrator is any user with is_staff set to True .
+Deletes the block structure for the given root_block_usage_key from the given cache . Arguments: root_block_usage_key ( UsageKey ) - The usage_key for the root of the block structure that is to be removed from the cache .
+Use an in-memory database since this settings file is only used for updating assets
+decache pending children field settings
+Helper method for sending a GET to the server . Verifies the expected status and returns the response .
+Scenario: When uploading a library or course , a link appears for me to view the changes . Given that I upload a library or course A button will appear that contains the URL to the library or course ' s main page
+make sure we pre-fetched a known sequential which should be at depth=2
+Returns the current value of the release time . Default is u ' '
+Perform mean field inference , using the model ' s inference procedure .
+Construct the URL .
+Use of zip rather than safe_zip intentional; norb . label_to_value_funcs will be shorter than label_to_value_maps if norb is small NORB .
+test centered case
+MAD ( median absolute deviation )
+Distinguish between r1norm = ||b - Ax|| and r2norm = rnorm in current code = sqrt ( r1norm^2 + damp^2*||x||^2 ) . Estimate r1norm from r1norm = sqrt ( r2norm^2 - damp^2*||x||^2 ) . Although there is cancellation , it might be accurate enough .
+mock programs and credentials apis
+For the zero vector case , the corrcoef cannot be calculated and should result in a RuntimeWarning
+Helper method to get IP from a request ' s META dict , if present .
+verify input conditions: can only convert to draft branch; so , verify that ' s the setting
+Generate this many different variants of problems with rerandomize=per_student Never produce more than this many different seeds , no matter what .
+Same setup as in test_isomap_simple_grid , with an added dimension
+A message indicating a request for a list of channels being monitored .
+Otherwise , return None and so the view knows to respond with a 404 .
+Class property that specifies whether the tab is hidden for a particular course
+save connected asides
+Read the contents of a file in the data folder
+Unicode representation of this attribute .
+Check if this content is locked or not .
+Note: these are older versions of the User API that will eventually be subsumed by api/user listed below .
+Time is " HH:MM " string .
+Returns True if the algorithm should continue running , or False if it has reached convergence / started overfitting and should stop . Parameters model : a Model instance
+Returns whether the block with the given block_key in the given block_structure should be visible to staff only per computed value from ancestry chain .
+Put together the result , pushing most of the work onto rng . shuffle ( )
+Eliminate the worse features
+Introduce a point into a quad tree where a similar point already exists . Test will hang if it doesn ' t complete .
+Return a valid :class: ` ~opaque_keys . edx . locator . CourseLocator ` for this modulestore that matches the supplied ` org ` , ` course ` , and ` run ` . This key may represent a course that doesn ' t exist in this modulestore .
+Verify that a referral attribution is recorded if an affiliate cookie is present upon a new user ' s registration .
+Return the batch in the original storage space
+Predict probabilities .
+Return the current problem name .
+Returns a query corresponding to the given CSS selector within the scope of this thread page
+If max_iter is 0 , number of iterations returned should be zero
+simple -> simple
+Hit the Credentials API twice .
+Check that extmath . randomized_svd can handle noisy matrices
+Second: Halves grading style
+Un-Jsonify the cohorted_discussions
+Signal a new file .
+Support old password reset URLs that used base36 encoded user IDs . https://github . com/django/django/commit/1184d077893ff1bc947e45b00a4d565f3df81776diff-c571286052438b2e3190f8db8331a92bR231
+Parameters left_slope : float , optional left slope for the linear response of the rectifier function . default is 0 . 0 .
+This is needed as otherwise DebugMode will consider that BaseActs . make_thunk do something else then the default code , and would duplicate verification .
+Create a problem block in the library:
+get the destination ' s index , and source and destination structures .
+Return the descriptor loaded for ` location `
+use a recurrent call to compute the channel and store it in the output
+The entire Table won ' t fit in the available space and requires splitting . Draw the part that can fit , start a new page and repeat the process with the rest of the table .
+Analytics data source
+Do not duplicate the parameters if some are shared between layers
+corrcoef of same vectors must be 1
+Do nothing and return the estimator unchangedThis method is just there to implement the usual API and hence work in pipelines .
+Then popup should be visible
+deals with non-atomic move
+Return the CourseSerializer for the specified course .
+Gets the index of the end of the line of the given index . Arguments: index: The index into the original string . Returns: The index of the end of the line of the given index .
+If we don ' t have data stored , generate it and return an error .
+Active immediately before expiration date
+Updates the note with ` note_id ( str ) ` by the ` note_info ( dict ) ` to the stub EdxNotes service .
+Subclasses override to return an etree elementrepresenting the capa response XML ( e . g . <numericalresponse> ) . The tree should NOT contain any input elements ( such as <textline /> ) as these will be added later .
+Test that celery handles permanent SMTPDataErrors by failing and not retrying .
+Verify that the child is removed .
+Returns the group visibility label shown for the thread .
+This returns a configuration value for a microsite which has an org_filter that matches what is passed in
+Check the predictive probabilities are correct
+Shouldn ' t be able to get to the instructor pages
+Ignore deprecation warnings ( so we don ' t clutter Jenkins builds/production ) https://docs . python . org/2/library/warnings . htmlthe-warnings-filter Change to " default " to see the first instance of each hit or " error " to convert all into errors
+A layer that we build for the test that just uses a state as its downward message .
+Note: this is per-example mean across pixels , not the per-pixel mean across examples . So it is perfectly fine to subtract this without worrying about whether the current object is the train , valid , or test set .
+Test Kluger methods on a checkerboard dataset .
+If we have no underscores in the name , then the key is invalid
+Register signal handlers
+Perform the covariance M step for diagonal cases .
+Verify the CreditCourse was actually created
+Retrieve a max score from the cache
+Test proper NaN handling . Regression test for Issue 252: fit used to go into an infinite loop .
+click video button " fullscreen "
+Short term fix to make sure old audit users with certs still see their certs only do this if there if no honor mode
+prepare preprocessing without batch_size there is a high chance that you might encounter memory error or pytables crashes
+Returns the preferred language for the actual user making the request .
+Tell Django to clean out all databases , not just default
+Returns the checked always_cohort_inline_discussions radio button .
+Expect that the seed is the same
+get json representation of ccx schedule
+Simulate answering a problem that raises the exception
+User has requested course creator access . This changes the user state to CourseCreator . PENDING , unless the user state is already CourseCreator . GRANTED , in which case this method is a no-op .
+Then , probabilities should be normalized to 1 .
+The comment also ends a physical line
+Estimate parameters of corrupted data
+horizontal shift
+Testing where youtube is the default video over mobile_high
+Reset internal state before fitting
+This won ' t work when we move to data that isn ' t on the filesystem
+This is the a change we ' ve made from the django-rest-framework-oauth version of these tests .
+Plot the three one-against-all classifiers
+Test the good cases for the " dispatch " argument to the LTI 2 . 0 handler . Anything that does fit the form user/<anon_id>
+Always log cache misses , because they are unexpected
+make sure we scramble the indices
+Test that graders can also be used instead of lists of dictionaries
+Dry method for getting expected program credentials response data .
+To make sure at least one empty label is present
+Assert Request not successful
+Hack to detect whether we are running by the sphinx builder
+Assert 400 status code in response
+transposing the data array
+Verify that the server still has access to this endpoint .
+Create a test user
+We should NOT get a hint for Michigan ( the correct answer )
+Compute DBSCAN
+set mocked exception response
+Return the XBlock runtime ( backwards compatibility alias provided for XModules ) .
+filter out ones which were fetched from earlier stores but locations may not be == course is indeed unique . save it in result
+create block structure
+At this point , we know ' name ' is not set in a [ OAuth2|LTI|SAML ] ProviderConfig row . It ' s probably a global Django setting like ' FIELDS_STORED_IN_SESSION ' :
+Test with a fully-restricted course
+log into a staff account
+make sure it is not returned by default
+Adds user tags to tracking events Must go before TrackMiddleware , to get the context set up
+Go back to dashboard and verify newly created course exists there
+Clear iteration count for multiple call to fit .
+Decides whether it is time to stop trainingParameters msg : str Message passed in for verbose output verbose : bool Print message to stdin if True Returns is_stopping : bool True if training needs to stop
+Test ' force_publish ' command with no arguments
+Returns the matching mock emails for the given id
+Make ' _ ' a no-op so we can scrape strings . Using lambda instead of ` django . utils . translation . ugettext_noop ` because Django cannot be imported in this file
+Auto-auth register for the course
+ { { " @context " : " http://purl . imsglobal . org/ctx/lis/v2/Result " , " @type " : " Result " , " resultScore " : { score } , " comment " : " This is awesome . " } } )
+the target is whether the person is the same or not
+If the order is not found , the view should return a 404 .
+A test function with multiple parameters whose results are to be memoized in the request_cache .
+Calling UserPreference directly because this method is called from a couple of places , and it is not clear that user is always the user initiating the request .
+Check line item info in the latest history record .
+Sparse matrix , axis = 0
+Should NOT mark individual options
+Add our solution instead to the targetedfeedbackset and change its tag name
+Create a provider
+Put the result into a color plot
+In Python 3 , quote is elsewhere
+To refresh the hash values of static xmodule content
+Add the certificate request to the queue
+decache any pending field settings from init
+Student failed to receive minimum grade
+Empty , too short
+Concatenate the sets , and give different one hot labels for valid and test
+Return the joined path of the required asset .
+check all data source path information
+Expect an error response
+If true , SmartyPants will be used to convert quotes and dashes to typographically correct entities .
+When a function is recognized , store it in ` functions_used ` .
+Outermost block exit when autocommit was enabled .
+Helper function to create empty CAPA problem definition
+switch to JavaScript context
+Non-keyword-only parameters w/o defaults .
+Try to get tag in wrong scope
+Instrument the pipeline to get to the dashboard with the full expected state .
+l2 penalty , l1 loss
+number of data samples
+Assert that no profile is created .
+Dummy secret key for dev
+-*- coding: utf-8 -*-
+get a course given a key
+Selects the cohort_some_inline_discussions radio button .
+Create and activate an account
+At least one neighbor should be returned when the radius is the mean distance from the query to the points of the dataset .
+Create a cohort for testing .
+Load data from the fixture
+If the user has no language specified , return the default one .
+Ensure the notification function is triggered when refunds are initiated
+With filtering .
+If the module has a run method , run it .
+If this is true , random scores will be generated for the purpose of debugging the profile graphs
+Temporary file infrastructure
+Test for when a course key is malformed
+Pull " extended hint " information out the xml based on the student answers , installing it in the new_map for display . Implemented by subclasses that have extended hints .
+Use functools . wraps so that wrapped . func_name matches fn . func_name . Otherwise nosetests won ' t recognize the returned function as a test .
+The supplied CourseKey is of the wrong type , so it can ' t possibly be stored in this modulestore .
+Makes the test user staff and logs them in
+Test scaling of dataset along single axis
+Lastly , see if the developer has any local overrides .
+Visualize result using PCA
+Trace of np . dot ( X , Y . T ) .
+Disable uglify when tests are running ( used by build . js ) . 1 . Uglify is by far the slowest part of the build process 2 . Having full source code makes debugging tests easier for developers
+Since rate limit counts are cached , we need to clear this before each test .
+ ` reduce ` will go from left to right; reverse the list .
+Check randomized lasso
+See :class: cms . lib . xblock . runtime . EditInfoRuntimeMixin
+test both DepthFirstTreeBuilder and BestFirstTreeBuilder by setting max_leaf_nodes
+Return a boolean indicating whether the URL path is a valid LTI end-point .
+Helper method to assert that a given url will return a 404 status code
+Entry missing content_type
+Test that SpectralClustering fails with an unknown affinity type
+First see if the user cancelled the transaction if so , then not all parameters will be passed back so we can ' t yet verify signatures
+teams feature
+Column 0 tests the case where a column has zero norm Column 1 tests the case where a column is smaller than the limit Column 2 tests the case where a column is on the limit Column 3 tests the case where a column is too big
+pylint: disable=super-method-not-called
+Subclasses override this to provide the handler class to use . Should be a subclass of ` StubHttpRequestHandler `
+Returns the page number as the page represents it , in string form .
+Course ID is currently of the form " edx/999/2013_Spring " but this format could change .
+pylint: disable=abstract-method
+Verify that the correct banner color is rendered
+Check that errors are raised if there is not enough samples
+pylint:disable=missing-docstring , no-member
+Basic constructor . from_field_data_cache ( ) is more appopriate for most uses .
+Go to the data download section of the instructor dash
+Destroy the test db .
+NOTE: The above process requires deep inspection of capa structures that may break for some uncommon problem types . Ensure that it does not prevent answer submission in those cases . Any occurrences of errors in this block should be investigated and resolved .
+Refresh our reference to the block
+Create the directory for storing the hashes , if it doesn ' t exist already .
+Invalidate the cache of CourseEnrollment model .
+Check for required values
+Test that locked assets behave appropriately in case user is logged in in but not registered for the course .
+Returns the last published message as displayed in the sidebar .
+Utility for checking that our test student comes up as assigned to the specified partition ( or , if None , no partition at all )
+The digits dataset
+Verification deadline must be after the upgrade deadline , if an upgrade deadline is set . There are cases in which we might want to set a verification deadline , but not an upgrade deadline ( for example , a professional education course that requires verification ) .
+temporary parms to enable backward compatibility . remove once all envs migrated allow lower level init args to pass harmlessly
+Open and parse the configuration file when the module is initialized
+invalid class or class name is a method
+try to add a duplicate entry
+Tests that running FilterActs with a of filters per group that is not 16 is an error
+Enable organizational email opt-in
+Verify that we emit an event when a user preference is updated .
+Move a field from the context to the top level of the event .
+Collapse the configuration
+Make a CourseKey from the course_id , raising a 404 upon parse error .
+Converts " true " ( case-insensitive ) to the boolean True . Everything else will return False ( including None ) . An error will be thrown for non-string input ( besides None ) .
+Returns the type of the course ' s ' start ' field .
+Get the consumer information from either the instance GUID or the consumer key
+Ordinary Kriging
+Simulate what the Snuggletex server would respond
+Function to actually do a single relative -> absolute url replacement
+now the dispatching conditionals . Only shib for now shib-login takes care of both registration and login flows
+Mock the grading function to always return a passing grade .
+A checkbox widget that only accepts " true " ( case-insensitive ) as true .
+compare
+when user does not have profile it raises exception , when exception occur we can simply get default image .
+Because all the notes ( with tags ) have the same tags , they will end up ordered alphabetically .
+Does this return subsets that need fancy indexing? ( i . e . lists of indices ) Needs to be set before initialization . See Examples section in class docs
+patterns for replacement
+Callback used by PyYAML when a " !import <str> " tag is encountered . This tag exects a ( quoted ) string as argument .
+however we want to make sure we persist the course_id
+ensure fit is no-op as iterable is not consumed
+Use the auto_auth workflow for creating users and logging them in
+Logout redirects .
+two regression tests on bad n_init argument previous bug: n_init <= 0 threw non-informative TypeError ( 3858 )
+test for float parameter count samples on nodes , -1 means it is a leaf
+Create a test partition
+Note: if the monitor starts supporting variable batch sizes , take this out . Maybe move it to a new test that the iterator ' s uneven property is set accurately assert X . shape [ 0 ] == mon_batch_size
+Creates a nested tuple tree that mirrors the tree structure of <space> , populating the leaves with <dtype> .
+equiangular direction of variables in the active set correlation between each unactive variables and eqiangular vector
+even_sequences iterator does not support specifying a fixed number of minibatches .
+Option parser
+Don ' t use a connection pool , since connections are dropped by ELB .
+set minibatch
+Translators: This label appears above a field on the registration form meant to hold the user ' s email address .
+Compute step score on the previous selection iteration because ' estimator ' must use features that have not been eliminated yet
+can ' t see because attempts left
+Test that CD gives similar results
+Assign roles:
+First try to get a user object from the identifer
+Turn off cache .
+render in LMS again
+If there ' s an active bulk_operation , see if it ' s cached this module and just return it Don ' t do any extra work to get the ones which are not cached . Make the caller do the work & cache them .
+Owners should be permitted .
+Re-submit all certificates with status ' error '
+Modes that are allowed to upsell
+FIXME: fix this , when xblock support mutable types . Now we use this hack .
+Course is created here and shared by all the class ' s tests .
+Invalid inputs
+Check if profile visibility selector is shown or not . Returns: True/False
+Expect the confirmation message substring . ( The full message will differ depending on 1 or >1 students added )
+Verify that certificate invalidation successfully removed from database
+Verify course summaries
+Use the content type to decide what representation to serve
+the currency these prices are in , using lower case ISO currency codes
+make sure we redirect to the course about page
+The user should have the option to purchase credit
+find the eigenvectors and eigenvalues of each local covariance matrix . We want V [ i ] to be a [ n_neighbors x n_neighbors ] matrix , where the columns are eigenvectors
+Verify that photo submission confirmation email was sent
+Verify each PDF textbook tab by visiting , it will fail if correct tab is not loaded .
+Only one penalty , we can solve multi-target problems in one time .
+Returns names of fields which should be included in the response . Arguments: params ( dict ) : The request parameters .
+Assert error on request
+if not , then check inferred permissions
+verify count of problems
+create inertia heap and connection matrix
+Check that mysql is running
+Return the value in a readonly field .
+see if we are running in a microsite and that there is an activation email template definition available as configuration , if so , then render that
+check that we get same best alpha with sample weights
+Returns True if the course starts with-in given number of days otherwise returns False .
+Place an order
+Initialize the biases of the mapping units .
+Returns a type which identifies which modulestore is servicing the given course_id . The return can be one of: " xml " ( for XML based courses ) , " mongo " for old-style MongoDB backed courses , " split " for new-style split MongoDB backed courses .
+Update session view
+Create the modes and min prices
+Add assets of all types to the sorted list .
+Test that the OvO doesn ' t mess up the encoding of string labels
+Wait a bit , and try again , when the browser has reloaded the page .
+subtitles file ` item . sub ` is not presented in the system . Nothing to copy or rename .
+Returns the number of team members in this team
+pylint: disable=abstract-method
+We patch the purchased callback because we ' re using the OrderItem base class , which throws an exception when item doest not have a course id associated
+Make the noise sparse
+impossible value of nu
+Verify that the signal was emitted
+Returns a string representation of the xblock ' s type and display name
+Asserts a response would redirect to /login .
+The cache backend could raise an exception ( for example , memcache keys that contain spaces )
+Invalid padding ( ends in byte > 16 ) Encrypted value: " testusertestuser "
+Inherited fields should NOT be explicitly set
+Renders a placeholder XBlock .
+Discard header
+Monitoring
+This indicates whether the xmodule is a problem-type . It should respond to max_score ( ) and grade ( ) . It can be graded or ungraded ( like a practice problem ) .
+import some data to play with
+Do the unmask translates on a copy of event_info , avoiding problems where an event_info is unmasked twice .
+now use different one
+go to video
+skip multiclass
+Initiate a request with automatic integration disabled
+The line below throws a false positive pylint violation , so it ' s excepted .
+get numerators + denominators
+The table size for y is being set to [ sizes [ which_set ] , 1 ] since y contains the labels . If you are using the old one-hot scheme then this needs to be set to 10 .
+go to the membership page on the instructor dashboard
+clean up orphans in published version: in old mongo , parents pointed to the union of their published and draft children which meant some pointers were to non-existent locations in ' direct '
+Enable or disable the end-point and configure the whitelist .
+This block will transactionally commit updates to CohortMembership and underlying course_user_groups . Note the use of outer_atomic , which guarantees that operations are committed to the database on block exit . If called from a view method , that method must be marked with @transaction . non_atomic_requests .
+this means it ' s already been done
+Create twice: once successfully , and once causing a collision .
+user passed in a custom date , so we need to parse it
+check that efficient and brute-force LOO give same results
+pack the results as a Bunch instance
+pylint: disable=protected-access
+Test to see that we can handle login redirection properly
+fetch and return the new item--fetching is unnecessary but a good qc step
+test dense matrix test sparse matrix test that the outputs are the same
+Should NOT mark individual options
+Check if we ' re on the create team page for a particular topic .
+Verify the file was deleted .
+Return physical path of file if found .
+Retrieve course object down to problems
+Returns True if the note is visible .
+Click on the link to the Data Download Page .
+Only page
+Check that the client accepts these
+Tests that released unpublished changes unlocked units display ' Unpublished changes to live content '
+See the docs for xmodule . modulestore . mixed . MixedModuleStore
+Redirect to the test_root folder within the repo
+Enable Course Discovery
+Affiliate cookie tracking
+Set a single value in the KeyValueStore
+link_map maps URLs from the marketing site to the old equivalent on the Django site
+Sets group_access to specified value and calls update_item to persist the change .
+Make the course cohorted . . .
+Third-party imports
+This import is needed to modify the way figure behaves
+Returns the index ' th estimator in the ensemble .
+ ' template ' : ' $ { triple } ' ,
+To enable getting back subclusters .
+0 , os . path . abspath ( os . path . normpath ( os . path . dirname ( __file__ ) + ' / . . / . . / . . / . . ' ) )
+Private function used to compute decisions within a job .
+Note: removes metadata .
+The amount of braces that must be closed at the end
+Orthogonality of weights ~~~~~~~~~~~~~~~~~~~~~~~~
+Return the output as a list of dictionaries
+Just define this as not self . __eq__ ( block_data )
+This is a very small dataset , default n_iter are likely to prevent convergence
+Test the arg length error
+transform new data
+check that models trained on sparse input also works for dense input at predict time
+simple linear function with noise
+Recursive helper function that searches the ( possibly nested ) input space to see if it contains SequenceSpace
+Correct answer is any two integers that sum to 10
+Given a tuple of parameters , samples from the :math: ` p_\\theta ( \\mathbf { x } \\mid \\mathbf { z } ) ` conditional distribution Parameters num_samples : int Number of samples theta : tuple of tensor_like Tuple of parameters for the conditional distribution Returns x : tensor_like Samples
+Fetch static files out of the pipeline ' s static root
+Step 1: Discount things which are not numbers
+Ensure the course exists
+Removes <instructions> from the xmltree and returns them as a string , otherwise None .
+Build course .
+Stop dispatching any new job in the async callback thread
+Test that locked assets behave appropriately in case the user is not logged in .
+-*- coding: utf-8 -*-
+The master toctree document .
+Check that the rows are normalized
+Logout and login as a student .
+If the state is serialized json , then load it
+Sort the list of topics by the given ` sort_order ` .
+Enable certificate generation for this course
+Verify that the error logger is called This will include the stack trace for the original exception because it ' s called with log level " ERROR "
+now update mongo
+Returns a constant of value ` value ` with floatX dtype Parameters variable : WRITEME Returns WRITEME
+Add to the student view
+If return_to_annotation set , then show the link
+Returns the data_specs specifying how the data is internally stored . This is the format the data returned by ` self . get_data ( ) ` will be .
+Create a new course mode
+Pipeline for pulling ad hoc features from post ' s body
+Verify the data was persisted
+Args: course_key ( CourseKey )
+Invalid choices should be marked incorrect ( we have no choice 3 )
+Classification
+including a monitoring datasets lets us test that the monitor works with supervised data
+Translators: This line leads the reader to understand more about the certificate that a student has been awarded
+Note that this lives in LMS , so this dependency should be refactored .
+load test data
+Start manual reindex
+Initially , no example certs are generated , so the enable button should be disabled
+xml backed courses are read-only , but they do have some computed fields
+start time stop time
+Remove the group .
+CORS and cross-domain CSRF
+we shuffle but use a fixed seed for the memoization
+adding new role from django admin page
+check that best params are equal check that we can call score and that it gives the correct result
+Wait a bit before POSTing back to the callback url with the grade result configured by the server Otherwise , the problem will not realize it ' s queued and it will keep waiting for a response indefinitely
+dot ( A , x ) = dot ( x . T , A . T ) . T
+XXX The following is a stopgap measure; we need to set the dimensions of class_log_prior_ and feature_log_prob_ correctly .
+max of merged-start-from-all-parents and this block
+Stats event sent to DataDog in order to determine if old XML parsing can be deprecated .
+Ensure the certificate was not generated
+Toggle masquerade back to staff
+no db queries this time .
+A tuple of files to exclude from the compilation result of r . js .
+test that staged_functions make defensive copies
+Metrics to collect for the plots
+Save the user ' s state before failing
+Make sure two entries ( one for save and one for update ) are saved for SiteConfiguration
+DataDog increment method .
+The key should now be valid
+This is used to make discrete sampling without replacement memory efficient . XXX: could memoize information used here
+First: Every Decision Counts grading style
+Default to a ` None ` response , indicating that external auth is not handling the request .
+Using the course_id , find the course asset metadata document . A single document exists per course to store the course asset metadata . When deleting asset metadata , if a course ' s asset metadata is not present , no big deal .
+Reductions such as . sum used internally in np . trapz do not return a scalar by default for numpy . memmap instances contrary to regular numpy . ndarray instances .
+button with text ' New Unit ' should be present .
+This function splits the dataset using the random_slice and into the n folds . Returns the folds . Parameters nfolds : int The number of folds for the dataset . rng : WRITEME Random number generation class to be used .
+Cache entry versioning .
+Only return the user matched by email if their email has been activated . Otherwise , an illegitimate user can create an account with another user ' s email address and the legitimate user would now login to the illegitimate account .
+Attempt to log in using ` email ` and ` password ` .
+pylint: disable=no-member
+Check that extmath . randomized_svd can handle noisy matrices
+Test GradientBoostingClassifier on synthetic dataset used by Hastie et al . in ESLII Example 12 . 7 .
+Attempts = Max attempts --> closed
+Paginate the user ' s teams .
+Translators: This label appears above a field on the login form meant to hold the user ' s email address .
+if suffix is explicitly 1 , like ^1- strip 1 , leave only sign: ^-
+Display results
+Generate a binary classification dataset .
+Multitask models related to ENet cannot handle if y is mono-output .
+check get and set methods
+Needed for access control in grading .
+test fit before feature importance
+VectorSpace and Conv2DSpace
+Initialize to minimal data
+fix was to allow get_items ( ) to take the course_id parameter
+strip off quotes
+The access point determines which set of messages to use . This allows us to show different messages to students who are enrolling in a course than we show to students who are enrolled and accessing courseware .
+Check if split works correctly
+Expect that we get a <span> with class= " status " ( used to by CSS to draw the green check / red x )
+Test due date without extension .
+pre-studio default , DO show the save button
+Invalid course id .
+Compute the boolean mask X == missing_values .
+Helper method for all Signature Validator tests to get an LtiConsumer object .
+Return the total number of stacks recorded .
+Expect that we get a <div> with correct class
+if there are few enough emails , send them through a different queue to avoid large courses blocking emails to self and staff
+Scales image down to shape . Preserves proportions of image , introduces black letterboxing if necessary . Parameters image : WRITEME shape : WRITEME Returns WRITEME
+precondition check - the library block should be configured before we remove the library setting
+See the docs for xmodule . modulestore . mixed . MixedModuleStore
+Line comment with ' to throw off parser
+Manually check that KFold preserves the data ordering on toy datasets
+verify of examples
+Tell Django to clean out all databases , not just default
+check error on dataset being too small
+set root logger level
+X is the 10x10 Hilbert matrix
+To be called after each SGD step . Updates the Polyak averaged-parameters for this model Parameters algorithm : WRITEME
+Assert that created discussion module is not an orphan .
+list of grade summaries for each section
+Get the human readable value from an enumerable list of key-value pairs .
+Run input checks
+Test that it gives proper exception on deficient input .
+The user has not satisfied eligibility requirements for credit .
+it ' d be useful to add init args such as support_deprecated , force_deprecated
+Assert Error Message
+Setting for PAID_COURSE_REGISTRATION , DOES NOT AFFECT VERIFIED STUDENTS
+Make sure that in the balanced case it does not change anything to use " balanced "
+Configure a credit course with no requirements
+Expect that we can grade an answer without getting an exception
+gradient with respect to p
+Create the <multiplechoiceresponse> element
+dense graph , find all connected components start from node 0
+To use in predict to avoid recalculation .
+Have to use the right method to create the request to get the HTTP method that we want
+Same generator as __iter__ , but yield only the chosen indexes
+Getter for the precision matrix . Returns precision_ : array-like , The precision matrix associated to the current covariance object .
+Translators: This text is bound to the HTML ' title ' element of the page and appears in the browser title bar when a requested certificate is not found or recognized
+delete the matching annotation
+An exception that is raised whenever we need to ` fall back ` to fetching *all* courses available to a user , rather than using a shorter method ( i . e . fetching by group )
+Simulate a successful verification attempt
+Return cohort name as shown in cohort header .
+Check that calling it multiple times yields the same thing
+Translators: Error message shown when they have asked for a git repository branch , a specific version within a repository , that doesn ' t exist , or there is a problem changing to it .
+Return the path to the first found authentication backend that recognizes the given user .
+compute eigenvectors
+allow a rounding error at the last decimal place
+Publish both the child and the parent , if the child is a direct-only category
+Now do the work
+Create a field override for the test CCX on <field> with <value>
+Dense label indicator matrix format
+Verify that a logged-in can see the API request form .
+The combined login/registration page dynamically generates the register button , but we can still check that the provider name is passed in the data attribute for the container element .
+r Simple products should combine with a ' \cdot ' .
+Mark the user as having failed both requirements
+Returns the access token from the response payload .
+Format the output based on the output space
+Use mongo so that we can get a test with a SlashSeparatedCourseKey
+Hint button handler , returns new html using hint_index from the client .
+Do a search , there should be no results shown .
+The minimum and maximum length for the password account field
+Test finding a nested unit .
+start by downsampling the periphery of the images downsample the ring with top-left corner ( idx , idx ) of width rd results are written in output [ start_idx: ]
+Test whether the F test yields meaningful results on a simple simulated classification problem
+Translators: This will look like ' $50 ' , where { currency_symbol } is a symbol such as ' $ ' and { price } is a numerical amount in that currency . Adjust this display as needed for your language .
+Plot the decision boundary
+pylint: disable=unused-variable
+Get the URL of the instance under test
+switch to the second group and verify that it is returned for the user
+Randomly generate a low rank , fat tail input set
+Enable the feature
+Helper method for sending a DELETE to the server . Verifies the expected status and returns the response .
+unset on parent , retrieve child , verify unset
+Case insensitive but case preserving
+it should come from cache
+A dictionary containing details about the user account .
+Mean
+Test that an anonymous client ( not logged in ) cannot call POST .
+Go to sequential tab and assert that we are on problem whose name is given as a parameter . Args: position: Position of the sequential tab problem_name: Name of the problem
+Get the full path to a resource on the public notes API .
+force the start date for reruns and allow us to override start via the client
+Case sensitive
+strip away leading path from the name
+Copy all the course assets from source_course_key to dest_course_key
+FAQ url to direct users to if they upload a file that exceeds the above size
+compute the new inertia on the same batch to check that it decreased
+Special case for course pointers: add org and course attributes on the pointer tag
+skip index generation if totally dense
+Returns a unique deterministic value for the given block key and data key .
+An exception raised when the user does not specify a batch size anywhere .
+new scipy , don ' t need to initialize because check_finite=False
+url is not configured
+Retrieve all rules in one database query , performing the " join " with the Country table
+Check if a cohort already exists .
+the list of messages to be filled in by the check function
+Bind section to user
+When no content groups have been defined , a messages appears with a link to go to Studio group settings . This method assumes the link is visible and clicks it .
+Checks that ' code ' appears in the browser ' s current url .
+check if estimated model is valid
+Output file base name for HTML help builder .
+Given a course_id , filename , and rows ( each row is an iterable of strings ) , write this data out .
+Convert nested DD into nested ydict .
+Convert string ` user_answer ` to object .
+Both display_src and display_class given , or neither given
+By default , if compress is enabled , we want to be using 3 by default
+Shortcut for both login and enrollment of the user .
+Test partial dependence plot function on multi-class input .
+Catch any exception here to see when we fail
+Tamper with the signature
+Verify that the existing course continues to be in the course listing
+sample_weight should work with estimator
+Fall back to default , if there is one .
+Setting the session language to the browser language , if it is supported .
+False can be parsed as a float ( converts to 0 ) True can be parsed as a float ( converts to 1 )
+Dark-launching languages
+Return a function that splits a string into a sequence of tokens
+Check manual estimate matches
+Returns the release date of the unit ( with ancestor inherited from ) , as displayed in the publishing sidebar component .
+Define some XML namespaces:
+then the rate limiter should kick in and give a HttpForbidden response
+Returns an index of the child with ` usage_key ` .
+Tests when FEATURES [ ' ENABLE_SHOPPING_CART ' ] is not set
+Dummy Xblock class
+Check data
+Exception to be raised when looking up a UserPartition Group by its ID fails .
+Json request data for metrics for particular section
+since we sorted by SORT_REVISION_FAVOR_DRAFT , the 0 ' th parent is the one we want
+The problem progress is changed by cms/static/xmodule_js/src/capa/display . js so give it some time to render on the page .
+Checks if the edit membership button is present
+Return whether the course is auto-cohorted . Note: No longer used . See openedx . core . djangoapps . course_groups . models . CourseCohortSettings .
+Because we ' re sending None and ' ' , we expect to get the generic fallback URL for course images .
+do the import
+Count of all modules ( leaf nodes ) in this sequence ( e . g . videos , problems , etc . ) The units ( verticals ) themselves are not counted .
+also load the boston dataset and randomly permute it
+We have no value for this parameter . It ' s fine though , if it has a default value , or it is an ' *args ' -like parameter , left alone by the processing of positional arguments .
+Modes that allow a student to pursue a non-verified certificate
+Test ElasticNet for various values of alpha and l1_ratio with sparse X training samples X [ 1 , 0 ] = 0
+Returns a key that can be sorted on
+Audit / Verified / Honor We should always go to the " choose your course " page . We should also be enrolled as " honor " by default .
+Already balanced , so " balanced " weights should have no effect
+Use the auto_auth workflow for creating users and logging them in
+get and cache bulk VAL data for course
+Clicks one of the forward nav buttons . Position can be ' top ' or ' bottom ' .
+POST advanced settings to Studio
+handle corner cases first
+Validates the given dict-type tab object to ensure it contains the expected keys . This method should be overridden by subclasses that require certain keys to be persisted in the tab .
+Suffix used to construct ' from ' email address for bulk emails . A course-specific identifier is prepended .
+Simple implementation of overwriting any existing xblock
+To be called when a new rerun is initiated for the given course by the given user .
+don ' t load these
+compare pls2 . coef_ with B
+But will output 0
+requestcontext should be None .
+Gram matrix for test data but compute KT [ i , j ] for support vectors j only .
+Event Tracking
+Validates the state of this Library Content Module Instance .
+start by computing output dimensions , size , etc
+count total courses appearing on student dashboard
+See the docs for xmodule . modulestore . mixed . MixedModuleStore
+This should be populated from the modified field in StudentModule
+Don ' t get num_samples from an ensembles length!
+Create a student who will end up in the default cohort group
+Explicitly select the honor mode ( POST request )
+Retrieve course object down to problems
+We use the student_id instead of username to avoid a database hop . This can actually matter in cases where we ' re logging many of these ( e . g . on a broken progress page ) .
+Removes all notes to the stub EdxNotes service .
+Renders parameters to template .
+The base class needs this for the score method
+check that coef_ haven ' t been re-allocated
+Error signaling a fatal condition while updating problem modules . Used when the current module cannot be processed and no more modules should be attempted .
+Student words from client . FIXME: we must use raw JSON , not a post data ( multipart/form-data )
+check that mask is correct
+Verify the new name was also stored .
+re-fetch video from published store
+first element should be the last time we reset password
+-*- coding: utf-8 -*-
+Test the case where the course has an unexpected structure .
+Creates an article at /parent/slug and returns its URLPath
+verify that draft and publish point to same versions now
+Configure a credit course with no requirements
+This is used by XModules to write out separate files during xml export
+Invalidate user certificate
+simple linear function without noise
+handle special case of two classes
+Returns the category string corresponding to an integer category label .
+Expect failure when we do not proivde the param
+Extracting OrderItem information of unit_cost , list_price and status
+But this works if the input data is forced to look like a 2 array with one sample and one feature:
+make sure that the Agg backend is set before importing any matplotlib
+mark 2 students to have certificates generated already
+All field data will be stored in an inheriting field data .
+Infer P ( y | v ) using mean field
+Already verified and paid , so redirect to the dashboard
+extended user profile fields are stored in the user_profile meta column
+Check that the page redirects to the start of the payment/verification flow .
+Given a list of scopes , return a space-separated list of those scopes .
+Looks for a filename in a list of dirs on a filesystem , in the specified order . filesystem: an OSFS filesystem dirs: a list of path objects filename: a string Returns d / filename if found in dir d , else raises ResourceNotFoundError .
+check if we see " 好 各位同学 " text in the captions
+Use a default path
+Expand the dict reader generator so we don ' t lose it ' s content
+Returns the count for the cohort ( as specified in the label in the selector ) .
+A payment/refund is in process , but money has not yet been transferred
+existing_entry will have the who , when , and other properties of the existing entry
+y has a constantly absent label
+django-oauth-toolkit
+Now perform some acrobatics to set the right named parameter in the selector
+Identify hyper parameters of an estimator
+histogram kernel produces singular matrix inside linalg . solve XXX use a least-squares approximation?
+msg= ' Conv2d { %s } ' %self . _message )
+Note: this flag makes the user global staff - that is , an edX employee - not a course staff . See courseware . tests . factories for StaffFactory and InstructorFactory .
+Returns the batch size of a numeric ( numpy/scipy . sparse ) batch . Parameters batch : WRITEME
+If an there is an implicit zero and it is not in classes and class_prior , make an entry for it
+Exclude all previously used IDs , even for partitions that have been disabled ( e . g . if the course author deleted an in-course reverifification block but there are courseware components that reference the disabled partition ) .
+Ensure that grid scores were set to zero as required for those fits that are expected to fail .
+mix letters accentuated and not
+saves the student manual enrollment information
+not valid features value
+Render an HTML form with POSTs to the hosted payment processor . Args: cart ( Order ) : The order model representing items in the user ' s cart . Returns: unicode: the rendered HTML form
+Convert this to a JoblibException
+Format the output based on the output space
+If true , keep warnings as " system message " paragraphs in the built documents .
+find the gradient ( it is two arrays: grad_x and grad_y ) getting the unit incident ray
+mlp = MLPClassifier ( hidden_layer_sizes= ( 100 , 100 ) , max_iter=400 , alpha=1e-4 , algorithm= ' sgd ' , verbose=10 , tol=1e-4 , random_state=1 )
+Enroll in the course before trying to access pages
+classify small against large digits
+Types content into the html component and presses Save . Arguments: content ( str ) : The content to be used . raw ( bool ) : If true , edits in ' raw HTML ' mode .
+Build dict containing information about a single student .
+TEMPORARY: Thrown if asset metadata is actually found in the course modulestore .
+Return the django model object specified by ` kvs_key ` from the cache . Arguments: kvs_key ( ` DjangoKeyValueStore . Key ` ) : The field value to delete Returns: A django orm object from the cache
+empty second dimension
+Possible grades , sorted in descending order of score
+the value must be positive
+Long prefix
+Check the user detail information on the page .
+Now load with get_library and make sure it works:
+OpenEdX
+Args: field_names: The list of field names to initialize the :class: ` NoneToEmptyQuerySet ` with .
+Add mock tracker for event testing .
+make draft of vertical
+Get the user ' s preview lang - this is either going to be set from a query param ` ?preview-lang=xx ` , or we may have one already set as a dark lang preference . Get the request user ' s dark lang preference
+Do not create the modulestore if it does not exist .
+if problem is full points
+We ' re already logging events , and we don ' t want to capture user names/passwords . Heartbeat events are likely not interesting .
+If the user set a contribution amount on another page , use that amount to pre-fill the price selection form .
+Add a country to the blacklist
+Translators: This label appears above a field on the login form meant to hold the user ' s password .
+We are not importing the rest of the scikit during the build process , as it may not be compiled yet
+enable beacons for lms onload event statistics
+Subclasses can override this to return extra context that should be passed to their templates for rendering . This is useful when the input type requires computing new template variables from the parsed attributes .
+Dictionary .
+manually twiddle the is_staff bit , if needed
+Because we want to match the original loader_tags . py file as closely as possible , we should disable pylint so it doesn ' t complain about the violations that are already in that file pylint: skip-file
+TEST_DATA must be overridden by subclasses
+Warm up the cache .
+Note: package resources do not support URLs
+Refresh the certificate page
+Tests that running FilterActs with a non-square kernel is an error
+Note: groups associated with particular runs of a course . E . g . Fall 2012 and Spring 2013 versions of 6 . 00x will have separate groups .
+Raise error if handle_unknown is neither ignore or error .
+compute confusion matrix with only first two labels considered
+return the default store
+Test keys not found are logged .
+No course available for this particular org
+Retrieve the registration form description
+Now compile the full sampling update
+If no Authorization header is provided that contains a bearer token , authorization passes to the next registered authorization class , or ( in this case ) to standard DRF fallback code , so no error_code is provided ( yet ) .
+-*- coding: utf-8 -*-
+Check data
+Wrapper to run base_test_extauth_auto_activate_user_with_flag with { ' SQUELCH_PII_IN_LOGS ' : False }
+Tests the result if an empty response is received .
+4 .
+Check the outbox
+obj_prereqs has to be a list of function f called with f ( *data ) , where data is a data tuple coming from the iterator . this function enables capturing " mapping " and " f " , while enabling the " *data " syntax
+Verify that staff do not automatically get added to a team when they create one .
+Not yet published , so changes are present
+Disable rate limiting using model-based config
+Draw samples , using a mask , and then fit
+Standardize and validate fields
+if decision is in FAILED_DECISIONS list then remove auth_amount from signed_field_names list .
+method = ' GET '
+not cohorted
+Translators: This is a past-tense verb that is inserted into task progress messages as { action } .
+Returns a type which identifies which modulestore is servicing the given course_id . The return can be either " xml " ( for XML based courses ) or " mongo " for MongoDB backed courses
+Click on the save button .
+ ` loss ` is unused . Refactoring to avoid computing it does not significantly speed up the computation and decreases readability
+Skip processing of the libraries if this is just a dry run
+If this wasn ' t the outermost context , then don ' t close out the bulk operation .
+Test viewing the index page with no courses
+We need to include this so the test actually stops running at some point
+The view used to render an editor in Studio . The editor rendering can be completely different from the LMS student_view , and it is only shown when the author selects " Edit " .
+Sample weight can be implemented via a simple rescaling for the square loss .
+Number of samples per component
+Import datasets , classifiers and performance metrics
+General information about the project .
+Returns a boolean representing whether the user requires parental controls .
+handle split specific things and defer to super otherwise
+Filter out all non-team events .
+Comprehensive theming needs to be set up before django startup , because modifying django template paths after startup has no effect .
+Purchase the item
+Verify that we only change the last activity_at when it doesn ' t already exist .
+We are generating 1 - weights , and not weights
+Process everything as sparse regardless of setting
+0 / \ 1 2 \ / \ 3 4 / \ 5 6
+check removing a permission
+Returns the unit ' s release date . Date is " mm/dd/yyyy " string .
+Force download_video field to default value if it ' s not explicitly set for backward compatibility .
+delete the old PUBLISHED version if requested
+Now login with username and password:
+Check that calling has_access with an unsupported action raises a ValueError .
+display login page
+Delete all the content of the data home cache .
+Clear out any cached field data scoped to the old user .
+Verify that the name change happened , even though the attempt to send the email failed .
+check that the labels assignment are perfect ( up to a permutation )
+self . X_topo_space stores a " default " topological space that will be used only when self . iterator is called without a data_specs , and with " topo=True " , which is deprecated .
+If true , links to the reST sources are added to the pages .
+set this up so that each row should have a weighted mode of 6 , with a score that is easily reproduced
+Default to advanced security in common . py , so tests can reset here to use a simpler security model
+Ensure that the superclass sets up
+Verify that there is no masquerading group initially
+Get monitoring channels from the parameters of the conditional distribution . By default , no monitoring channel is computed . Parameters conditional_params : tuple of tensor_like Parameters of the conditional distribution
+Returns true if the comment is viewable onscreen
+Get max_grade , grade_distribution for this problem
+This is needed for body encoding:
+X is already a transformed view of raw_documents so we set copy to False
+Returns an information message for the container page .
+Show the mobile app links in the footer
+some state changes may not be user-initiated so override the user field only when provided
+FIXME: Should we be doing this truncation?
+stick the license wrapper in front
+-*- coding: utf-8 -*-
+override implementation to use PATCH method .
+Return value of field in ` display ` or ` placeholder ` mode .
+Return the xblock components within the unit on the page .
+Cleanup mocks
+a CcxMembership does not exists for this student
+Expect that we get the ( mocked ) HTML
+Translators: ' All rights reserved ' is a legal term used in copyrighting to protect published content
+Test Mixin for testing APIs decorated with mobile_view .
+copy the old configurations into the new settings
+Total amount of a particular course that is purchased by different users
+Builds a list of mock . call instances representing calls to reindexing method
+Step 4: Check if we ' re a valid EIA value
+Gets prefix to use when constructing xqueue_callback_url .
+check that the incremental difference computation is matching the final observed value
+update credit course requirements if ' minimum_grade_credit ' field value is changed
+If no definitions to get , then get_definitions ( ) should *not* have been called .
+Return _expiration_datetime .
+Test that the string inherited fields are passed through ' deserialize_field ' , which converts the string " null " to the python value None
+Plot map of South America with distributions of each species
+try logging in 30 times , the default limit in the number of failed login attempts in one 5 minute period before the rate gets limited
+Rearrangements run late in the __init__ process . Cannot do these at response init time , as not enough other stuff exists at that time .
+User doesn ' t have a dark lang preference , so just return
+Always log cache misses , because they are unexpected
+Remove course_team from the index ( if feature is enabled ) .
+Logged out -- should still be a 404
+Verify fetched accessible courses list is a list of CourseSummery instances and test expacted course count is returned
+check if the draft has changed since the published was created
+Update the position attribute of the generated ModuleRuntime .
+Do not show giturl if feature is not enabled .
+initialize the mixed modulestore
+Case where we fit the intercept .
+Mask mapping each class to its members . Number of clusters in each class .
+Note that children aren ' t being returned until we have a use case .
+Retrieve the XBlock ` definition_id ` associated with this aside definition id . Args: aside_id: The usage id of the XBlockAside . Returns: The ` definition_id ` of the usage the aside is commenting on .
+Translators: These instructions appear on the registration form , immediately below a field meant to hold the user ' s full name .
+The averaging math assumes batches are all same size
+success?
+DRF class for interacting with the User ORM object
+Set y and x
+Replace < characters
+Enroll in the course , this will fail if the mode is not explicitly professional .
+Check that in self paced course content has live state now
+Saves the discussion topics .
+This should be fine , we have enough examples for 4 batches ( with one under-sized batch ) .
+go to video
+HTML files shat should be inserted after the pages created by sphinx . The format is a list of tuples containing the path and title .
+Verifies whether the requesting user can access blocks in the course .
+Verify that if one switches to " My Team " without reloading the page , the newly created team is shown .
+Returns the team with team_id , or throws Http404 if it does not exist .
+Used as a side effect when mocking ` verify_student . ssencrypt . has_valid_signature ` .
+ { partition . id: set ( IDs of groups that can access partition ) } If partition id is absent in this dict , no group access restrictions exist for that partition .
+Create the <javascriptinput> element
+Perform update to learning rate and potentially other states at theend of an iteration
+Verify that user_partitions is properly updated in the course .
+Navigate to Test Problem 1
+Course Team page in Studio .
+Create query string parameters if provided
+In binary case , we need to flip the sign of coef , intercept and decision function .
+r Functions surrounding a tall element should have \left , \right
+Create a course with mode ' honor ' and with price
+re-fetch the course from the database so the object is up to date
+but child didn ' t change
+Should not raise an error
+modules for which we embed links into example code
+Generate a ground truth model with only n_informative features being non zeros ( the other features are not correlated to y and should be ignored by a sparsifying regularizers such as L1 or elastic net )
+These ports are carefully chosen so that if the browser needs to access them , they will be available through the SauceLabs SSH tunnel
+Unenroll the user from a course .
+Set the course start date to tomorrow in order to allow setting pacing
+First try a lookup in VAL . If we have a YouTube entry there , it overrides the one passed in .
+Verify the id ( it ends with a unique hash , which is the same as the discussion_id ) .
+Splash screen
+Return True if the CCX start date is in the past
+When no data is provided , expect creation prompt .
+Reverse the setup
+Hack to get required link URLs to password reset templates
+Get the URL of the instance under test
+Return the course export filename for a block .
+To avoid circular imports .
+This table contains information about users registering via Micro-Sites
+For a site with a marketing front end , what do we expect to get for the URLs? Also make sure ` auto_enroll ` is properly passed through .
+Add an update to the course . ` update ` should be a ` CourseUpdateDesc ` .
+Replace CR and CRLF with LF within ` string ` .
+call url again , this time with username and password
+Create content in studio without publishing .
+Returns true iff space . format_as ( batch , self ) and space . format_as ( batch , other ) return the same formatted batch .
+There ' s as much layers in the DBM as there are bias vectors
+If true , ' ( ) ' will be appended to :func: etc . cross-reference text .
+send the root email message
+Set the text of a CodeMirror editor that is part of this xblock ' s settings .
+Register the appropriate comments service response , then call get_thread_list and return the result .
+Check that a all the samples appear at least once in a test fold
+Returns True if the timed/proctored exam timer bar is visible on the courseware .
+ARPACK overwrites its initial resid , make a copy
+Create the supported course modes
+Use the data dict and html template to generate the output buffer
+Verify the user ' s account
+Print numerical differences between the channels
+Generate data
+Attributes computation
+Returns the xblock that is the parent of the specified xblock , or None if it has no parent .
+One entry per manual page . List of tuples ( source start file , name , description , authors , manual section ) .
+Returns the ` display_name ` attribute of the passed in node of the course tree , if it has one . Otherwise returns the node ' s url .
+Returns the model ' s conditional distribution parameters
+attribute is set to false .
+log all information from cybersource callbacks
+Call the create_zendesk_ticket function .
+See https://github . com/numpy/numpy/issues/5456 if you want to understand why this is initialized this way .
+Adding another verification with different course . Its created_at is greater than course deadline .
+Check that its name is not None
+Create the course modes
+The status is not either " approved " or " rejected " .
+The same message is raised if the data has 2 dimensions even if this is not mandatory
+Returns true iff the Loading indicator is not visible
+xmodules can check for this attribute during rendering to determine if they are being rendered for preview ( i . e . in Studio )
+See if we can load this item from cache . Not in cache , so just try and load it from the asset manager .
+Returns the child xblock info at the specified index .
+Now create an ImageSet by hand . . .
+Translators: This is a past-tense verb that is inserted into task progress messages as { action } .
+compute the new inertia on the same batch to check that it decreased
+Load certificate web view page for use by the tests
+With rate-limiting disabled , the request should get through . The ` check_throttles ( ) ` call should return without raising an exception .
+Switches to the appropriate tab ` tab_name ( str ) ` .
+deleting an object will delete cache also . and hit db on get the is_restricted course
+Check inverse_transform respects dtype
+Parameters W: { array-like , sparse matrix } , shape ( n_samples , n_components ) Transformed Data matrix Returns X: { array-like , sparse matrix } , shape ( n_samples , n_features ) Data matrix of original shape . . versionadded:: 0 . 18
+If the dataset is incompatible with the new interface , fall back to the old one
+Clearing the language should go back to site default
+The paper size ( ' letter ' or ' a4 ' ) .
+If the block ' s date is None , return the maximum datetime in order to force it to the end of the list of displayed blocks .
+Compute gradient for the last layer
+SAG supports sample_weight directly . For other solvers , we implement sample_weight via a simple rescaling .
+Test
+Create a rule
+Test that command indexes multiple passed teams .
+libraries work only with split , so do library indexer
+Build or fetch the effective stop words list
+Actual cache implementations have limits on key length
+Expect an AJAX alert message in ' success '
+select advanced settings tab
+Save a current draft to the underlying modulestore Returns the newly unpublished item .
+Path to a sandboxed Python executable . None means don ' t bother . User to run as in the sandbox .
+Returns whether the configuration which limits password reuse has been turned on
+The name for this set of Sphinx documents . If None , it defaults to " <Studio> v<release> documentation " .
+Returns the messages output by the Paver task .
+Add the handout named ` asset_name ` to the course info page . Note that this does not actually *create* the static asset; it only links to it .
+theoretically there could be more than one ( e . g . someone self-unenrolls then re-enrolls with a different regcode ) return the first one . In all normal use cases of registration codes the user will only have one
+Use only one feature
+Fall back to the default Django translator if the XBlock translator is not found .
+Expect that the number of attempts is NOT incremented
+sample v given ( s , h )
+We need to include this so the test actually stops running at some point
+See documentation from :meth: ` factory . Factory . _build `
+pylint: disable=not-callable
+Since we have only released " rel-ter " , the requested code " rel " will fuzzy match to " rel-ter " , in addition to " rel-ter " exact matching " rel-ter "
+Logout and login with given credentials .
+seed the forums
+Check that oob prediction is a good estimation of the generalization error .
+Without any pagination parameters
+Filter at the setting file
+Matching names to tree-building strategies
+convert from upper-triangular matrix to square matrix
+Takes a mode model and turns it into a model named tuple . Returns: A ' Model ' namedtuple with all the same attributes as the model .
+on some platform st_blocks is not available ( e . g . , Windows ) approximate by rounding to next multiple of 512 We need to convert to int to avoid having longs on some systems ( we don ' t want longs to avoid problems we SQLite )
+Send decision email after status changed .
+If neither can parse queue_msg , it contains invalid xml .
+check that the distances are correct
+Now add the student to the specified group .
+Concatenate the predictions
+minimum price in USD that we would like to charge for this mode of the course
+Regenerated certificates for students having generated certificates with status ' deleted ' or ' generating '
+Clear existing courses to avoid conflicts
+Error occurred while logging in to the Studio API .
+compare tpr and tpr_correct to see if the thresholds ' order was correct
+Configure TestShib before running the register test
+Notes The cost method calls ` self . nonlin . cost `
+Generating the sample data from make_blobs This particular setting has one distinct cluster and 3 clusters placed close together .
+Enable certificate generation for this course
+Course Updates page .
+Check whether steps in the flow are displayed to the user .
+Nothing can be themed if we don ' t have a theme location .
+Check that an empty update does not make any modifying requests .
+Compute grades using real division , with no integer truncation
+bleh , have to parse the XML here to just pull out the url_name attribute I don ' t think it ' s stored anywhere in the instance .
+Returns the role label ( i . e . " Staff " or " Community TA " ) for the endorsing user
+Wait for the css selector to appear
+Video Caching . Pairing country codes with CDN URLs . Example: { ' CN ' : ' http://api . xuetangx . com/edx/video?s3_url= ' }
+Is the course defined by course_id contained in the order?
+Changing the name of the group shouldn ' t affect anything get a group assigned to the user - should be group 0 or 1
+Python 3+
+Return a valid :class: ` ~opaque_keys . edx . keys . CourseKey ` for this modulestore that matches the supplied ` org ` , ` course ` , and ` run ` . This key may represent a course that doesn ' t exist in this modulestore .
+Start the timer .
+If the question is not correct DO show the reset button
+Attempt to check out the same branch again to validate branch choosing works
+Ensure a library exists and navigate to the library edit page .
+Incorrect queuekey , state should not be updated
+Run some checks on the output
+bench . py should always be run in gpu mode so we should not need a gpu_from_host here
+Filter by provider ID
+Check that the marketing site cookies have been deleted ( cookies are deleted by setting an expiration date in 1970 )
+Return whether or not the modal defined by self . MODAL_SELECTOR is shown .
+Make sure that even though we logged out , we have logged back in
+Robustly fit linear model with RANSAC algorithm
+At this point we know the pipeline has resumed correctly . Next we fire off the view that displays the registration form .
+Makes sure default behavior is correct when we don ' t have this turned on
+Make the first subsection a prerequisite
+Select a group that is not defined in the partition
+Returns true if the navigation takes the focus out of the current sequence .
+The TEMPLATE_ENGINE directory to search for microsite templates in non-mako templates must be loaded before the django startup
+now with symbol labels
+Create a credit request for the given user and course .
+Contribution from model B , at temperature beta_k
+Deadline for when credit eligibility will expire . Once eligibility expires , users will no longer be able to purchase or request credit . We save the deadline as a database field just in case we need to override the deadline for particular students .
+check that gen_even_slices contains all samples
+Missing course key
+As a reliable way of " skipping " the registration form , we just submit it automatically
+Check the length
+Creates a vertical , returning its UsageKey .
+we create an instance of SVM and fit out data .
+Check that it works no matter the memory layout
+Method that instantiates a response message for a given request message . It is not necessary to implement this function on response messages .
+Include theme locale path for django translations lookup
+Catches any CompositeSpace batches that were mistakenly hand-constructed using nested lists rather than nested tuples .
+Runs all validate_callbacks , then checks that batch lies in this space . Raises an exception if the batch isn ' t symbolic , or if any of these checks fails . Parameters batch : a symbolic ( Theano ) variable that lies in this space .
+We should get the same group over multiple calls
+CORS and CSRF
+Take the first 3 columns
+no value on this block so take value from parents
+Manually check that KFold preserves the data ordering on toy datasets
+Used by cross_val_score .
+Closes the current view .
+A list of courses to test - only one .
+Expect that the script element has been removed from the rendered HTML
+Missing username
+Print number of violations to log
+an exclusive index in the case that the file didn ' t end with a newline .
+CourseOverview will be populated with all courses in the modulestore
+use lynx to get plaintext
+Returns the last saved message as displayed in the publishing sidebar component .
+Check if both callable metric and predefined metric initialized DistanceMetric object is picklable
+Links a cohort to a content group . Saves the changes and verifies the cohort updated properly . Then refreshes the page and selects the cohort .
+-*- coding: utf-8 -*-
+Test multiple-outcome linear regressions
+Verify that the changes in the draft vertical still exist .
+If the user needs to take an entrance exam to access this course , then we ' ll need to send them to that specific course module before allowing them into other areas
+Visit the page courseware page containing the hinter
+Construct a URL to the page within the course .
+unit price should be updated for that course
+remove any redemption entry associated with the item
+1D data set
+The course_license text will include a bunch of screen reader text to explain the selected options
+Create a thread with the given overrides , plus the course_id if not already in overrides .
+db update
+Verify that the VAL copies videos to the rerun
+Renders the HTML of the hidden POST form that must be used to initiate a purchase with CyberSource
+Callback used by PyYAML when a " !float <str> " tag is encountered . This tag exects a ( quoted ) string as argument .
+Expect that we reach the dashboard and we ' re auto-enrolled in the course
+Tag all issues with LMS to distinguish channel in Zendesk; requested by student support team
+improper label ( iterator only returns ' train ' and ' test ' subsets )
+raise error on unknown affinity
+Plot calibration curve for Linear SVC
+Save group configuration .
+Reads 4 bytes from file , returns it as a 32-bit integer .
+Visualize learning curves
+Validate direct XModule access as well
+if this was taken from cache , then its fields are already converted
+remove any port number from the hostname
+Validate the response content
+Validate the values before actually setting them .
+Else , deny access .
+View function that returns XModule URLs as a JSON list; meant to be used as an API
+Badges aren ' t on by default , so should not be present .
+pylint: disable=no-member
+See the docs for xmodule . modulestore . mixed . MixedModuleStore
+We use the same expected payload for all of these types of events , but the load video event is the only one that is not actually expected to contain a " current time " field . So we remove it from the expected event here .
+Retrieve the content of the request .
+Create new verification status objects for a user against the givencheckpoints . Arguments: checkpoints ( list ) : list of VerificationCheckpoint objects user ( User ) : user object status ( str ) : Status from VERIFICATION_STATUS_CHOICES Returns: None
+-*- coding: utf-8 -*-
+Now select a new target group
+Verify that the view only responds to POST operations .
+Applies transforms to the data , and the transform method of thefinal estimator . Valid only if the final estimator implements transform . Parameters X : iterable Data to predict on . Must fulfill input requirements of first step of the pipeline .
+patch old pickle files
+See :py:meth ` xmodule . modulestore . split_mongo . split . SplitMongoModuleStore . get_course_history_info `
+Checks for uses of deprecated ` display_name_with_default_escaped ` . Arguments: node: An AST node .
+Save problem 1 ' s content state as we ' re about to switch units in the sequence .
+Inserts a new page and includes the border and the logos .
+Spent ( used ) Registration Codes
+Plot pixel ranking
+Assert that requesting account creation results in the expected error
+Check parallel regression .
+Unused abstract method from super class . See documentation in RequestValidator
+have shape an length but don ' t support indexing . ugly hack to make iloc work .
+check that aside for the new chapter was exported/imported properly
+A list of ignored prefixes for module index sorting .
+Form the diagonal vector into a row matrix
+Test that a value error is raised when the lengths of X and Y should not differ
+closing bracket for visual indent
+load data to set visible biases to ML solution
+If a block was inherited into another structure using copy_from_template , this will return the original block usage locator from which the copy was inherited .
+Factory for constructing mock course cohort .
+Spy on number of calls to celery task .
+First add the privileged user to a team .
+TERMS AND CONDITIONS body styling
+Do NOT simulate a running pipeline
+Simulate that the problem is completed
+detect if full name is blank and ask for it from user
+Make an item visible to staff only .
+Given that an exam has been configured to be a proctored exam .
+Indicates whether we want to show program listing page
+Reset user ' s dark lang preference to null Get & set user ' s preferred language
+Clicks edit button .
+Math is always available .
+Returns True if there is a page after this one , otherwise False
+When blacklists are this , all children should be excluded
+what is the rank of the tensor?
+Expect that the request was successful
+The amount of braces that must be closed at the end
+Set up the edxmako middleware for this request to create the RequestContext
+All went well . Update counters with progress to date , and set the state to SUCCESS: Successful completion is marked by an exception value of None .
+If the file does not exist locally , consider creating it
+Generate the problem XML using capa . tests . response_xml_factory
+Check for gated content
+Check which child a student will see:
+Course ID is currently of the form " edx/999/2013_Spring " but this format could change .
+did we find the search bar in the UI
+Activate french , so that if the fr files haven ' t been loaded , they will be loaded now .
+See if there is an answer stored for this user , form , field_name pair or not this will allow for update cases . This does include an additional lookup , but write operations will be relatively infrequent
+Helper function used to hit the profile API if email opt-in is enabled .
+Perform just the final global clustering step .
+classifiers shouldn ' t be the same
+The structure hasn ' t been loaded from the db yet , so load it
+choose random sample set
+test y
+module is enabled and the setting is not enabled
+Since registration_price is not set , cosmetic_display_price should be returned
+Fail number of violations is greater than the limit
+Login as staff
+If we couldn ' t parse the path , just let compute_location figure it out . It ' s most likely a path like /image . png or something .
+Test the function for importing all resources into the Recommender .
+Import all children
+now import all pieces of course_info which is expected to be stored in <content_dir>/info or <content_dir>/info/<url_name>
+Set all test indices in successive iterations of kf2 to 1
+We should use the ' fields ' kwarg for newer module settings/values ( vs . metadata or data )
+Seed forum roles for course .
+self . course_info [ ' number ' ] must be shorter since we are accessing the wiki . See TNL-1751
+select the " 0 . 50 " speed on video " B "
+Save a snapshot of the invoice ' s current state . Arguments: invoice ( Invoice ) : The invoice to save .
+ ' auto ' is deprecated and will be removed in 0 . 19
+Verify that if one switches to " My Team " without reloading the page , the newly joined team is shown .
+Check that apart from estimators , the parameters are the same
+Use the leaf linked list for traversal
+Unenroll from the course
+Instantiate an object from YAML string
+Remove Group A Save the configuration
+Start manual reindex and check error in response
+Add an additional ICRV block in another section
+Raise a BulkAssertionError containing all of the captured AssertionErrors , if there were any .
+if undirected and csc storage , then transposing in-place is quicker than later converting to csr .
+Standardize
+We should now be redirected to the course page
+test with 2d array
+ ` ` True ` ` when modulestore under test is a MongoModuleStore .
+get the first registration from the newly created registration codes
+exclude split when comparing old and new , since split was added as part of the migration
+Allocate datastructures from input arguments
+Object is new , so fields haven ' t technically changed . We ' ll return an empty dict as a default value .
+Check if browser is showing correct page .
+Compute SML cost
+y_true contains three different class values
+the <answer> . . . </answer> stanza should be local to the current <customresponse> . So try looking there first . print " xml = " , etree . tostring ( xml , pretty_print=True )
+Return true if the given text is present in the list .
+Build repo dir
+Return ` true ` if user is not enrolled in course
+Go to the Group Configuration used by the component .
+Users marked as is_staff will not be added to the course creator table .
+An internal error occurred in the User API .
+Change the option of sorting by clicking on new option .
+Number of candidates considered including duplicates XXX: not sure whether this is being calculated correctly wrt duplicates from different iterations through a single tree
+Disable certification to prevent the task from being triggered when setting up test data ( i . e . , certificates with a passing status ) , thereby skewing mock call counts .
+Construct a URL to the page
+Makes a CourseLocator from org , number and run
+Create checkpoint
+Parse headers to pass to template as part of context:
+Initialize the deprecated modules settings with empty list
+Set the verification deadline
+Default HTTP headers dict .
+fit the model
+yield remainder items for task , if any
+check problems for rescoring: let exceptions return up to the caller .
+generate a unique password for each student .
+Returns the role label ( i . e . " Staff " or " Community TA " ) for the user with the given id .
+we give a small weights to class 1
+Ensure that the score_reset handler properly calls the user_by_anonymous_id method to convert from an anonymized ID to a user object
+Respond to an HTTP HEAD request
+Center the data in X but not in y
+Reloads the course object from the database
+Stubbed out Enrollment data request .
+Once ' __signature__ ' will be added to ' C ' -level callables , this check won ' t be necessary
+pylint: disable=no-member
+Show Language selector .
+Tests retrieving a video that is stored in VAL but not associated with a course in VAL .
+Ensure only courses accessible by the user are returned .
+remove the source_version reference
+Assigns this layer to a DBM . Parameters dbm : WRITEME
+flip eigenvectors ' sign to enforce deterministic output
+Enable provider integration
+check that entries were set correctly run the task check that entries were reset
+We should get back a HttpResponseForbidden ( status code 403 )
+Should have the correct option selected
+Test std until the end of partial fits , and
+PDF_RECEIPT_TERMS_AND_CONDITIONS not displayed in the receipt pdf
+Test if warm start with equal n_estimators does nothing
+Use python sets to get more informative assertion failure messages
+Enroll the user in the course .
+Tests the two case for courses , limited and not
+define attrs which get set in initdb to quell pylint
+avoid division truncation
+Create the user so we can log them in .
+also load the boston dataset
+Add an item to six . moves .
+Verify that handle ajax is called with the correct data
+Test BayesianRidge on diabetes
+there should be only 1 problem with the expected_display_name
+django-oauth2-provider ( deprecated )
+Send a response back to the client
+getting the service from parent module . making sure of block service declarations . Passing the block to service if it is callable e . g . ModuleI18nService . It is the responsibility of calling service to handle the passing argument .
+Translators: This text appears near the top of the certficate and describes the guarantee provided by edX
+Remove date_created and discussion_topic_id because they change between test runs
+We have not found a way using signals to get the language proficiency changes ( grouped by user ) . As a workaround , store old and new values here and emit them after save is complete .
+Create a non_staff user and add it to course staff only
+Newer versions of scipy have face in misc
+Set up groups
+Initialize list of closest distances and calculate current potential
+If the entrance exams feature is enabled we need to hide away the grader from views/controls like the ' Grade as ' dropdown that allows a course author to select the grader type for a given section of a course
+Request should use the updated information
+Some state is constructed by the parent setUp ( ) routine
+Tell Django to clean out all databases , not just default
+Check binomial deviance loss . Check against alternative definitions in ESLII .
+SSL login doesn ' t require a view , so redirect branding and allow that to process the login if it is enabled and the header is in the request .
+generate dictionary
+See xmodule . modulestore . __init__ . ModuleStoreWrite . delete_course
+Smoke test
+Init method . Arguments: rule: The Rule which was violated .
+Test predict_proba
+Create or update the grade cutoffs for the given course . Returns sent in cutoffs ( ie . , no extra db fetch ) .
+No partial credit? Get grade right now .
+Returns whether this xblock has a published version ( whether it ' s up to date or not ) .
+Patch the comment client user save method so it does not try to create a new cc user when creating a django user
+ ` is_entrance_exam ` should not be editable in the Studio settings editor .
+Proper random projection , like verify_grad does .
+Reload each component so we can see the changes
+Generates a URL to the user ' s Certificate HTML view , along with a GET variable that will signal the evidence visit event .
+If false , no index is generated .
+Use ElasticSearch as the search engine herein
+Unused abstract method from super class . See documentation in RequestValidator
+Create a dummy component to test against
+Log in as the user
+See documentation from :meth: ` factory . Factory . _build `
+Do the ordering and type casting here , as if it is done in the path , X is copied and a reference is kept here
+Test the predict method predicts the nearest centroid .
+Ensure that unexpected Exceptions are logged as errors ( but do not break program flow ) .
+edX Proctoring
+Set the color in HSV format
+Check if the input box for the due time exists in the subsection ' s settings window
+Clear cohorts from user
+Queue state only tracks up to second
+Finds Python blocks such as <% . . . %> , skipping other Mako start tags such as <%def> and <%page> .
+transfer during test
+iterate over the collected file path to load the jpeg files as numpy arrays
+Return the currently active configuration
+each Yj = 1*X1 + 2*X2 + noize
+Return ` selector ` , but limited to the bulk-email context .
+Theming
+Return the client_id from the provided request
+If the array is a contiguous view , no need to pass the strides
+Disable atomicity for the view . Otherwise , we ' d be unable to commit to the database until the request had concluded; Django will refuse to commit when an atomic ( ) block is active , since that would break atomicity .
+Return whether a bulk operation is active on ` course_key ` .
+Support for binding arguments to ' functools . partial ' objects . See ' functools . partial ' case in ' signature ( ) ' implementation for details . Simulating ' functools . partial ' behavior
+Get the LibraryLocator for this library , as a string .
+drop duplicates , sort for reproducibility itemgetter is used to ensure the sort does not extend to the 2nd item of the tuple
+checks that batch isn ' t a tuple , checks batch . type against self . dtype
+This memmap instance is actually backed by a regular in-memory buffer: this can happen when using binary operators on numpy . memmap instances
+fit the model
+Replace existing metadata .
+Validate the course key
+Tell Django to clean out all databases , not just default
+The student choses one with no feedback , but alwaysShowCorrectChoiceExplanation is in force , so we should see the correct solution feedback .
+Enable the feature , but do not enable it for this course
+this is a known limitation; commerce service does not presently support the case of a non-superusers initiating a refund on behalf of another user .
+set the block_field_name to None so the entire data for the transformer is serialized
+mark 3 students to have generated certificates with status ' generating '
+Return the union of dicts Arguments: dicts: tuple of dicts
+A view that returns Celery stats
+create test file in which index for this test will live
+This should only read from the cache , not the database
+predict with sparse input when trained with dense
+Threshold-based metrics with " multilabel-indicator " format support
+If all labels are relevant or unrelevant , the score is also equal to 1 . The label ranking has no meaning .
+Set requested profiles
+Use RequireJS optimized storage
+Configure the view to declined payments
+an atomic move is performed ( both files are on the same device , or the destination doesn ' t exist )
+Monkey patch and defuse all stdlib xml packages and lxml .
+for white labels we use ' shopping cart ' which uses CourseMode . DEFAULT_SHOPPINGCART_MODE_SLUG as course mode for creating course enrollments .
+If this descriptor has been bound to a student , return the corresponding XModule . If not , just use the descriptor itself
+Make sure that when we load the CourseOverview again , mobile_available is updated .
+Given a library key like " library-v1:ProblemX+PR0B " , return the ' library ' XBlock with meta-information about the library . A specific version may be specified . Returns None on error .
+Returns the course about video ID .
+Test that grid search will capture errors on data with different length
+Maps a label type to its index within a label vector .
+Trained on sparse format
+Navigate to the password reset form and try to submit it
+Translators: The Certificate ID Number is an alphanumeric value unique to each individual certificate
+Now , get a new group using the same call
+Cycle through the milestone fulfillment scenarios to see if any are now applicable thanks to the updated grading information that was just submitted
+Return given valid page_size ( capped at 100 ) or default of 10
+reload user from DB
+Translators: This is a past-tense verb that is inserted into task progress messages as { action } .
+We capture the KeyboardInterrupt and reraise it as something different , as multiprocessing does not interrupt processing for a KeyboardInterrupt
+Student is unknown , so the platform language should be used
+Incorrect answer
+Throw away old versions of CourseOverview , as they might contain stale data .
+Sanity check -- initially user partitions should be empty
+create fake data set in cache
+no merge commit!
+Removes the note by the selector .
+Missing course key
+Verify that three requests have been made ( one for student , two for staff ) .
+Create a graph capturing local connectivity . Larger number of neighbors will give more homogeneous clusters to the cost of computation time . A very large number of neighbors gives more evenly distributed cluster sizes , but may not impose the local manifold structure of the data
+Smoke test for the case of more components than features .
+If a microsite URL override exists , return it . Otherwise return the marketing URL .
+draw a tophat sample
+URL for generating a new Badge specification
+avoid circular import problems
+Check that the model is rewritten if prefit=False and a fitted model is passed
+download and initialize the search index
+this proprocessing is already done
+Check that we got increasing=False and no warnings
+Subsuites to be added to the main suite
+Go to sequential position 1 and assert that we are on problem 1 .
+if present , ' resultScore ' must be a number between 0 and 1 inclusive
+module store accessor - retain result for subsequent uses
+add dummy registration code into models
+image_shape=self . _img_shape , filter_shape=self . _filters_shape , kernel_stride=self . _kernel_stride , pad = self . pad )
+Asserts the block structure was transformed .
+Convert PIL . Image to numpy . ndarray . :param img: numpy . ndarray
+For the moment , we have to get scorable_locations from field_data_cache and not from scores_client , because scores_client is ignorant of things in the submissions API . As a further refactoring step , submissions should be hidden behind the ScoresClient .
+grades will be ' 0 . 0 ' as students are white-listed and have not completed any tasks grades will be ' -1 ' for students that have not been processed
+Each worker should only fetch one message at a time
+Return the data from a list of PathItems ready for serialization to json .
+Orphan the orphaned xblock
+Delete the ICRV block , so the number of ICRV blocks is zero
+Trigger a forced initialization of our modulestores since this can take a while to complete and we want this done before HTTP requests are accepted .
+Warm up the data to avoid concurrent disk access in multiple children processes
+student doesn ' t have a cohort
+Could set the internal state formally , but here we just jam in the score .
+pylint: disable=broad-except
+Reverse so most frequent cycling parameter comes first
+Innergrid around the data rows .
+Create the problem
+If we ' ve already seen this title , append an incrementing number to disambiguate the category from other categores sharing the same title in the course discussion UI .
+If there ' s no deadline , then return the most recently created verification
+discard any zero-padding that was used to give the batches uniform size
+This should also not happen , since it should be already checked in the caller , but check here to be sure .
+Check whether expected ValueError on bad learning_rate
+Logout and login with given credentials .
+Now without a score , and without y
+Get the oauth client application with the specified filters . Wraps django ' s queryset . get ( ) method .
+This will be the complete yaml string that should be executed
+for managing course modes
+Return user by anonymous_user_id using AnonymousUserId lookup table . Do not raise ` django . ObjectDoesNotExist ` exception , if there is no user for anonymous_student_id , because this function will be used inside xmodule w/o django access .
+configure youtube server
+get_score_bucket calls error cases ' incorrect '
+test with case_sensitive not specified
+We need to include this so the test actually stops running at some point
+cdodge: other Systems have a course_id attribute defined . To keep things consistent , let ' s define an attribute here as well , even though it ' s None
+Reverse the setup
+generate autosummary even if no references
+Here , we go through some effort to be robust to dynamically changing code and collision . We cannot inspect . getsource because it is not reliable when using IPython ' s magic " %run " .
+Don ' t embed hyperlinks when a latex builder is used .
+set the row number 3 to zero without pruning ( can happen in real life )
+Create a new cohort with random assignment
+Allow keyword args or defaults: foo ( bar=None ) .
+Physically remove the image files specified in ` profile_image_names `
+Verify that the browser is on the page and it is not still loading .
+Set up for diff-quality pylint call Set the string , if needed , to be used for the diff-quality --compare-branch switch .
+Sample x in the range [ -10 , 10 ]
+here ' s where we need logic for looking up in other structures when we allow cross pointers but it ' s also getting this during course creation if creating top down w/ children set or migration where the old mongo published had pointers to privates
+Radius-based queries do not sort the result points and the order depends on the method , the random_state and the dataset order . Therefore we need to sort the results ourselves before performing any comparison .
+create a new block and ensure its aside magically appears with the right fields
+We ' re loading a descriptor , so student_id is meaningless
+previous takes us to previous chapter
+Metric undefined with " binary " or " multiclass " input
+decision_function
+Construct a SubtaskStatus object from a dict representation .
+Args: store_builders: A list of modulestore builder objects . These will be instantiated , in order , as the backing stores for the MixedModuleStore . mappings: Any course mappings to pass to the MixedModuleStore on instantiation .
+XBlock type ID .
+We haven ' t answered any problems yet , so assume scores are zero Only problems should have scores; so there should be 2 scores .
+pylint: disable=protected-access
+There is a stated desire for an ' origin ' property that will state whether this thread was created via courseware or the forum . However , the view does not contain that data , and including it will likely require changes elsewhere .
+This explicitly sets the user_tag for self . student to ` ` user_tag ` `
+Enroll in the course and verify the URL we get sent to
+initialization
+Only show required content , if there is required content chapter . hide_from_toc is read-only ( bool )
+Returns , as a list , the names of the available cohorts in the drop-down , filtering out " Select a cohort " .
+Translators: This label appears above a dropdown menu on the registration form used to select the user ' s gender .
+pylint: disable=no-member
+Selects an image file and clicks the upload button .
+Arrange the eigenvectors: complex eigenvectors are stored as real , imaginary in consecutive columns
+Wait for the password reset form to load
+make sure parameters are in floatX format for GPU support
+assume fit_intercept is False
+precompute squared norms of data points
+Returns a new Fragment that has ` new_content ` and all as its content , and all of the resources from fragment
+Has payment options .
+Test that when an xmodule is generated from descriptor_cls with only xblock children , the test property holds
+This is generally the same thing as the UID , expect when one backend is used for multiple providers
+Satisfy the other requirement
+Setting that will only affect the edX version of django-pipeline until our changes are merged upstream
+Return True if user is registered for course , else False
+XXX: Remove in 0 . 20
+User account does not exist
+Could not complete a request to the credit API because there was a problem with the request ( as opposed to an internal error ) .
+fit_transform method should work on non fitted estimator
+Local Directories Want static files in the same dir for running on jenkins .
+Token length not a multiple of AES block length
+Authenticate , enrolling the user in the configured course if requested .
+Method decorator for a mobile API endpoint that verifies the user has access to the course in a mobile context .
+Returns the actual template for the microsite with the specified URI , default implementation returns None , which means that the caller framework should use default behavior
+At any point prior to this , they can change their names via their student dashboard . But at this point , we lock the value into the attempt .
+the output can be left to a sparse matrix instead output for dense input will stay dense:
+Render the html
+computation
+Assert 400 status code in response
+Retrieve the IDs of generated certificates with error status in the set of courses we ' re considering .
+Get a list of modules that didn ' t exist when we were created and delete them all so another import will run code for real again .
+Send the view an email address not tied to any user
+Display status message to students
+Deleting an existing item uses self . __map to find the link which is then removed by updating the links in the predecessor and successor nodes .
+Find the requirement we ' re trying to set
+Return radius of the subcluster
+Output Django logs to a file
+Provided intercept_ does not match dataset
+sanity check: predict centroid labels
+Key Revision constants to use for Location and Usage Keys in the Mongo modulestore Note: These values are persisted in the database , so should not be changed without migrations
+Test the sitemap view
+The task will assume the default file storage .
+reset youtube stub server
+Set certificate description .
+pylint: disable=protected-access
+place student 0 into first cohort
+Helper to verify that the release date source of a given item matches the expected source
+Obtain versions of the various Python packages .
+Start the server in a separate daemon thread
+Create test course .
+url with path that starts with " / "
+Make sure that inconsistent speed keys are parsed correctly .
+When Barnes-Hut ' s angle=0 this corresponds to the exact method .
+Should have gotten 3 draft courses .
+GC closes the mmap file descriptors
+Disables left/right key if we ' re currently showing a blank , and the current index type is neither ' category ' ( 0 ) nor ' image number ' ( 5 )
+Enroll the moderator and give them the appropriate roles
+Get the orgs in the db
+Expect that the contribution amount is pre-filled ,
+if a user is logged in , but not authorized to see a page , we ' ll redirect them to the course about page set the course onto here so that the wiki template can show the course navigation
+Call decision_function on the estimator with the best found parameters . Only available if ` ` refit=True ` ` and the underlying estimator supports ` ` decision_function ` ` . Parameters X : indexable , length n_samples Must fulfill the input assumptions of the underlying estimator .
+This is a stop-gap until we can load OLX and/or OLX from normal workbench scenarios
+Retrieve the POST data into a dict . It should have been sent in json format
+Can re-verify because an attempt has already been submitted .
+Estimate parameters of corrupted data
+Return list of the content groups for the course .
+Create a team .
+bail early if no beta testing is set up
+Delete the second rule
+set to valid html which would break an xml parser
+Users 1-5 have 60% > grades > 0 on Homeworks [ 5 ] Users 1-5 have 60% > grades > 0 on the class [ 5 ] One use at top of the page [ 1 ]
+Validate certificate
+Create user and redirect to ' home ' ( cms ) or ' dashboard ' ( lms )
+this occurs when there are too many attempts from the same IP address
+Raise an InvalidScopeError if key . scope is not in self . _allowed_scopes .
+dict ( version_guid , dict ( BlockKey , module ) )
+Import here instead of top of file since this module gets imported before the course_modes app is loaded , resulting in a Django deprecation warning .
+Returns the position of the active tab in the sequence .
+Determine the URL to redirect to following login/registration/third_party_auth
+Returns the mapping units .
+Check that the reverification flow is rendered .
+Other strings and the lowercase version of the string are incorrect
+The problem has a child <p> with question text
+Don ' t do anything , for replacing prerequisite tasks we want to skip .
+compute the singular values of X using the fast approximate method without the iterated power method
+No exception should be raised
+Convert a location name for use in a path: replace ' : ' with ' / ' . This allows users of the xml format to organize content into directories
+Instances incorrectly classified
+Create a locked image in a subdirectory .
+For these tests , two third party auth providers are enabled by default:
+catch deprecation warnings
+In most cases a scalar will have been made an array
+Otherwise , send the user to the receipt page
+Object constructor , brokers provided HTML to caller
+custom function
+Call inverse_transform on the estimator with the best found parameters . Only available if the underlying estimator implements ` ` inverse_transform ` ` and ` ` refit=True ` ` . Parameters Xt : indexable , length n_samples Must fulfill the input assumptions of the underlying estimator .
+Test for assert failure when a user who didn ' t create the kvs tries to get from it it
+Test line_number_to_line .
+verify the requested_fields in cleaned_data includes all fields
+follow/unfollow thread for the user
+Ignore events fired from UserFactory creation
+Exports a course into a tar . gz file
+Ensure that , on receipt of a score_set signal from the Submissions API that has an invalid user ID , the courseware model does not generate a signal .
+toggle captions visibility state if needed
+just limit the result set to the number of different password we need
+Choose the mode ( POST request )
+Expect that we ' re shown a failure message
+Returns whether the kernel is stationary .
+white block to indicate end of chain
+Write all registered XModule js and coffee files to output root .
+use equation Nk * Sk / N = S_tied
+Course creation and publication should fire the signal
+The extended StudentModule history table
+Optional setting to restrict registration / account creation to only emails that match a regex in this list . Set to None to allow any email ( default ) .
+Jsonify the cohorted_discussions
+test including non-empty collections
+-*- coding: utf-8 -*-
+Bad beta
+Preparation
+Iterate over the hidden layers
+Remove any extra parameters from the path . For example /gizmo . mp4?1397160769634 becomes /gizmo . mp4
+Test Crammer-Singer formulation in the binary case
+If false , no module index is generated .
+Shuffle them the same way
+Output file base name for HTML help builder .
+test bad parameters
+return language selector
+Bad average option
+Dummy data such that the decision function becomes zero .
+Enable the display of cosmetic course price display ( set in course advanced settings )
+Disable the use of the plugin manager in the transformer registry for better performant unit tests .
+pylint: disable=no-member
+Otherwise , there is only one mode available ( the default )
+Note that submission can be a file
+Now remove any non-direct descendants .
+Tests whether the fields in the given store_settings are equal .
+A message containing the list of channels being monitored .
+Report being disconnected to all inputs in order to have no gradient at all . Parameters node : WRITEME
+From the course info page , navigate to the static tab
+Test
+verify other block types are not counted
+Configure a set of modes for the course .
+Testing adjust_for_viewer ( )
+Construct file path to be uploaded to assets . Arguments: filename ( str ) : asset filename
+Assign & verify staff role to the user
+Disable exceptions by default for prod so you get redirect behavior instead of a Django error page . During development you may want to enable this when you want to get stack traces rather than redirections .
+no zero-padding .
+Verify that program data is present .
+Sets library content XBlock parameters , saves , publishes unit , goes to LMS unit page and gets children XBlock headers to assert against them
+Return a valid :class: ` ~opaque_keys . edx . keys . CourseKey ` for this modulestore that matches the supplied ` org ` , ` course ` , and ` run ` . This key may represent a course that doesn ' t exist in this modulestore .
+force the caching of the xblock value so that it can detect the change pylint: disable=pointless-statement
+Clean temp directories
+Mongo modulestore beneath mixed . Returns the entire collection with *all* courses ' asset metadata .
+Test that larger alpha yields weights closer to zero " " "
+Patching the settings . FEATURES [ ' AUTOMATIC_AUTH_FOR_TESTING ' ] value affects the contents of urls . py , so we need to call super . setUp ( ) which reloads urls . py ( because of the UrlResetMixin )
+Renames the ' _id ' field in item to ' location '
+Calling UserPreference directly instead of get_user_preference because the user requesting the information is not " user " and also may not have is_staff access .
+Make shared variables representing the sampling state of the model Seed the sampling with the data batch
+Locally cache the files before reading them
+Wait 5 seconds and press " skip " button .
+Weight labels by their number of occurrences
+GridSearch for an optimal shrinkage coefficient
+Pretty-print the args and kwargs . Allows us to not depend on any actual template rendering mechanism , while still returning a unicode object
+Return the set of keys provided when requesting an access token
+Call add_missing_groups again -- it should be a no-op .
+Finds a CCX of given coach on given master course . Arguments: course ( CourseDescriptor ) : Master course coach ( User ) : Coach to ccx ccx_id ( long ) : Id of ccx Returns: ccx ( CustomCourseForEdX ) : Instance of CCX .
+Absolute value handles odd-valued p cases
+Check variable importances .
+Test new course creation -- course creation group enabled , staff , group is empty .
+Grab the first choicegroup ( there should only be one within each <multiplechoiceresponse> tag )
+Mix format support
+Choose the mode ( POST request )
+Create instructor account
+s = sp . linalg . norm ( A , ord=2 ) slow
+Test partial_fit on regression . ` partial_fit ` should yield the same results as ' fit ' for regression .
+Friedman2
+remove the requirement status with the invalid user id
+default for n_nonzero_coefs is 0 . 1 * n_features but at least one .
+Remove mako template lookups for the given namespace .
+Test that the wrong global clustering step raises an Error .
+Delete keys from ENV_TOKENS so that when it ' s imported into settings it doesn ' t override what was set above
+This would be a pretty weird feature to want but I put the interface here for compatibility with the L2 norm constraint class .
+Answer string problem .
+The amount of braces that must be closed at the end
+DOM elements that appear in an xBlock , but are excluded from the xBlock-only rendering .
+Create the course modes
+check that user has his default " Student " forum role again for this course ( with changed name case )
+first let ' s see if a thumbnail can be created
+reduce to n_samples_x x n_samples_y by summing over features
+Not a list or preset for multi-output
+Look up a Mako template by namespace and name .
+Returns the MLP that this layer belongs to . Returns mlp : MLP The MLP that this layer belongs to , or None if it has not been assigned to an MLP yet .
+files_string should be comma separated with no spaces .
+verify the default cohort is not yet created until a user is assigned
+create new with correct sparse
+sparse model
+Grade percent is . 75 . Here is the calculation
+Tests that UntiedAutoencoder calls the Model superclass constructor
+Path to a sandboxed Python executable . None means don ' t bother . User to run as in the sandbox .
+Mocked version of microsite helper method to always return true
+Configure a credit eligibility for a disabled course
+Install a course with sections/problems , tabs , updates , and handouts
+Next we contrast normalize the patches . The default arguments use the same " regularization " parameters as those used in Adam Coates , Honglak Lee , and Andrew Ng ' s paper " An Analysis of Single-Layer Networks in Unsupervised Feature Learning "
+The deadline has passed , and we ' ve asked the student to reverify ( through the support team ) .
+attributes *not* present
+Clear the current value , set the new one , then Tab to move to the next field ( so change event is triggered ) .
+We ' ll make use of the fact that coverages [ 6 ] has measurements at all land points . This will help us decide between land and water .
+Disable for the course
+Can this user be promoted to a more powerful role?
+Adding the verification status for a user .
+initiate
+Affine transformation
+Calculate the answer using a script
+-*- coding: utf-8 -*-
+Return symbolic updates to apply .
+Add an asset key to the list of keys to be ignored when comparing assets . Args: key_name: The name of the key to ignore .
+staged_predict
+Register for the course and navigate to the video unit
+Break up the dataset into non-overlapping training ( 75% ) and testing ( 25% ) sets . Only take the first fold .
+Update after the callback so any changes made in the callback will get persisted .
+Quit scanning channels that we ' ve read all of
+limit the scope of the audit to the video player only .
+go to video
+Set the current view mode , e . g . " Staff " , " Student " or a content group .
+Generate a SECRET_KEY for this build
+Returns the MembershipPageAutoEnrollSection page object .
+Test for raising ` InvalidLocationError ` exception .
+Check if bookmarks results are present
+Set the descriptor first so that we can proxy to it
+Change ' debug ' in your environment settings files - not here .
+Does this return subsets that need fancy indexing? ( i . e . lists of indices )
+Even if the tracker blows up , the middleware should still return the response
+The eligibility should NOT show up in the user ' s list of eligibilities
+Entry missing file_name
+Asserts that the logger was called upon finding that the SafeCookieData object is not bound to the expected user .
+Monitor the status of services
+smoke test: model is stable on scaled data
+- 2 queries: Retrieve and update the request - 1 query: Update the history table for the request .
+Meta information for AutoConfigModelSerializer .
+Valid function names should be escaped .
+The version info for the project you ' re documenting , acts as replacement for |version| and |release| , also used in various other places throughout the built documents . The short X . Y version . The full version , including alpha/beta/rc tags .
+Survey associated with a course
+Test if leaves contain more than leaf_count training examples
+The amount of braces that must be closed at the end
+Expect a redirect back to the instructor dashboard
+Mock out HTTP requests that may be made to TestShib:
+Helper method to add a LibraryContent block to a course . The block will be configured to select content from the library specified by library_key . other_settings can be a dict of Scope . settings fields to set on the block .
+Assert that dense and sparse hashers have same array .
+category should not be selected .
+Get the link hrefs for all courses
+Override Client . login method to update cookies with safe cookies .
+MODULESTORE_DIFFERENCE: In Split , you cannot publish an item whose parents are unpublished . Split will raise an exception when the item ' s parent ( s ) aren ' t found in the published branch .
+Convert our path to an asset key if it isn ' t one already .
+pylint: disable=no-member
+pylint: disable=no-member
+Whether to run django-require in debug mode .
+The middleware normally emits an event , make sure it doesn ' t in this case .
+Ensures that the user is authenticated ( e . g . not an AnonymousUser ) , unless DEBUG mode is enabled .
+Construct the <symbolicresponse> element
+Test that a client ( logged in but not active ) can create her own preferences information .
+The modal is on the page at large , and not a subelement of the badge div .
+These only work on 2d , so this test makes no sense
+return the dictionary with the dummy data
+whether to use password policy enforcement or not
+grades will be ' 0 . 0 ' as students are either white-listed or ending in error grades will be ' -1 ' for students that were skipped
+Check if ' thread-wrapper ' is focused after expanding thread
+Sometimes language is not clicked correctly . So , if the current language code differs form the expected , we try to change it again .
+Turn on/off Microsites feature
+If no course index has been set , then no branches have changed
+Returns all the options for the given select .
+Test that the exam section has the proper weight .
+Get a dict of GET parameters to append to login links for this provider
+clicks reset student attempts button .
+Delete keys from ENV_TOKENS so that when it ' s imported into settings it doesn ' t override what was set above
+Get-or-create the verification checkpoint
+Check that StandardScaler . fit does not change input
+Moved reading of charged_amount here from the valid_params loop above because only ' ACCEPT ' messages have a ' ccAuthReply_amount ' parameter
+call edxval to attach videos to the rerun
+DiagonalGaussianPrior . sample_from_p_z works without crashing
+just take the first one for now , we ' ll have to change the upstream logic to allow for more than one ORG binding
+Test loading of transfer data
+This value must be set here , as setting it outside of a method results in issues with CMS/Studio tests .
+Toggle in-course reverification ( ICRV ) status emailsDisabled by default . When disabled , ICRV status emails will not be sent . When enabled , ICRV status emails are sent .
+The name of the require . js script used by your project , relative to REQUIRE_BASE_URL .
+work around theano bug with broadcasted stuff
+Allow ValCannotCreateError to escape
+Check if median is solution of the Fermat-Weber location problem Check when maximum iteration is exceeded a warning is emitted
+Augment the specified thread info to include the group name if a group id is present .
+Publish content in first section on studio course page .
+Otherwise , look the file up in staticfiles_storage , and append the data directory if needed
+now the hyperplane should rotate clock-wise and the prediction on this point should shift
+First update assets for both LMS and Studio but don ' t collect static yet
+Scenario: Captions are hidden correctly Given I have created a Video component with subtitles And I have hidden captions Then when I view the video it does not show the captions
+Create the course mode Django admin form
+The xmoduledescriptors included here are only the ones that have scores .
+including a monitoring datasets lets us test that the monitor works with supervised data
+until we set up the configuration , the LinkedIn action button should not be visible
+Was this function wrapped by a decorator?
+add labels to images?:
+Call decorated mock function to make sure it passes the call through without hitting the external_auth functions and thereby creating an external auth map object .
+Allow no variation at all .
+general purpose field , not user-visible . Used for reporting
+See :class: cms . lib . xblock . runtime . EditInfoRuntimeMixin
+Avoid integer division problems
+Test with a Mongo course and ' = ' as padding . Test with a Split course and ' ~ ' as padding .
+Returns a boolean value regarding whether a course has already reached it ' s max enrollment capacity
+No language
+-*- coding: utf-8 -*-
+Remove any attribute named for a field with scope Scope . settings from the supplied xml_object
+Early exaggeration factor must be >= 1 .
+Test wiki tab when Enabled setting is True and the wiki is open to the public .
+It seems that this value is also escaped when set out to amazon , judging from our logs
+Boost weight using multi-class AdaBoost SAMME . R alg
+don ' t allow invalid trust roots
+convert oy , ox values to output space coordinates
+Creates a CapaDescriptor to run test against
+We need to include this so the test actually stops running at some point
+kernel binary:
+Verify that asset have been overwritten during export .
+Create students for testing
+Returns True if location exists in this ModuleStore .
+Audit / Verified We should always go to the " choose your course " page . We should also be enrolled as the default mode .
+Last layer before Y does not need its weights doubled because it already has top down input
+No published oprhans after delete , except in old mongo , which still creates orphans
+pre studio default value , DO show the reset button
+check float and contains non-integer float values [ . 1 , . 2 , 3 ] or [ [ . 1 , . 2 , 3 ] ] or [ [ 1 . , . 2 ] ] and not [ 1 . , 2 . , 3 . ]
+Helper function to set the node ` visible_to_staff_only ` property to True and save the change
+we define here:
+attempts is an unknown attribute , so we should include it in xml_attributes so that it gets written out ( despite the misleading name )
+Invalid password
+Fetch the current template If one isn ' t stored , an exception is thrown .
+simultaneous sort rows using function
+just a handy shortcut
+Test that invalid parameters raise value error " " "
+The main thread will consume the first pre_dispatch items and the remaining items will later be lazily dispatched by async callbacks upon task completions .
+Needed for pickling / unpickling . These are set during pickling , by __getstate__ ( )
+Do not block access to course metadata . This information is needed for sever-to-server calls .
+The Timed exam radio button
+split the dataset in training and test set:
+Returns a value associated with the request ' s microsite , if present
+Universal Kriging
+The outermost nested bulk_operation call: do the actual begin of the bulk operation . Implementing classes must override this method; otherwise , the bulk operations are a noop
+Look for a user partition with a matching id in the course ' s partitions . Returns: A UserPartition , or None if not found .
+Set the string , if needed , to be used for the diff-quality --fail-under switch .
+There are no other steps , so stay on the payment confirmation step
+Shorten the public/private keys in the change view
+set failed stage number with negative sign in case of unsuccessful import
+cache key format e . g user . <user_id> . profile . country = ' SG '
+mimic users accessing the discussion forum Default Cohort will be created here
+Get assignment type for cohort .
+Submit it
+view task entry for task failure
+Whitelist students who did not get certificates already .
+Now generating downloadable certificates with ' verified ' mode
+Returns the current desired learning rate according to the annealing schedule .
+Get the HTML for the page .
+Fixing a normalization error , n is equal to get_n_splits ( X , y ) - 1 here , the scores are normalized by get_n_splits ( X , y )
+apply the coupon code to the item in the cart
+convert counts or binary occurrences to floats
+Test that IncrementalPCA and PCA are approximate ( to a sign flip ) .
+Creating a new course will trigger a publish event and the course will be cached
+Compute best n_estimator for test data
+Set the value of the element to the specified text . Note that this will replace the current value completely . Then for synchronization purposes , wait for the value on the page .
+Orphaned xblocks set their own staff lock
+Decide which code executor to use .
+Check if a local directory for data has been defined . Otherwise , do not locally copy the data
+Beta user does not have access to alpha_module .
+Test bad start/end combination
+note , due to the schema change we may not have a ' thumbnail_location ' in the result set
+Ensure that courses imported from XML keep their image
+Only relevant labels
+Helper method to retrieve the requested block ( index ) from the modulestore
+Add extra to make it easier to track transactions
+Return a cached copy of TestShib ' s metadata by reading it from disk
+add SiteConfiguration to database
+wrap
+plot the parallels to the separating hyperplane that pass through the support vectors
+user ID to use for primitive commands
+Check 1d list and other dtype:
+By default , should enforce rate limiting Since our fake throttle always rejects requests , we should expect the request to be rejected .
+Return url for the handler .
+Skew the new countdown value by a random factor , so that not all retries are deferred by the same amount .
+Predicted probabilites using the soft-max function should give a smaller loss than those using the logistic function .
+find rejected html5_id and remove appropriate subs from store
+the ccx detail view cannot call this function with a " None " value so the following ` error_code ` should be never used , but putting it to avoid a ` NameError ` exception in case this function will be used elsewhere in the future
+we do not expect this case to be reached in cases where marketing is enabled or the courses are not browsable
+We DO include traceback information for staff users
+Now drop the certificate record
+Wrong shape
+Online contextual help
+If no courses are found , abort
+update the index entry if appropriate
+Fail on unseen labels
+check that send_mail is called
+plot maps of the estimation error , this is to see if it has some spatial pattern this is useful for detecting bugs like not handling the border correctly , etc .
+For displaying on the receipt . At Stanford PLATFORM_NAME != MERCHANT_NAME , but PLATFORM_NAME is a fine default
+Check the estimator and set the base_estimator_ attribute .
+Checks whether the estimator ' s fit method supports the given parameter . Examples >>> from sklearn . svm import SVC >>> has_fit_parameter ( SVC ( ) , " sample_weight " ) True
+Compute result table and format it
+Set assignment type for selected cohort . Arguments: assignment_type ( str ) : Should be ' random ' or ' manual '
+predict_log_proba
+Include all of the requirements files in the fingerprint .
+Do a ReIndex from studio to ensure that our stuff is updated before the next stage of the test
+This test is slow .
+_samme_proba calls estimator . predict_proba . Make a mock object so I can control what gets returned .
+get a fresh user object that won ' t have any cached role information
+Create a second cmap , then update it to have the same properties as the first cmap
+now try to enroll that student
+Get this user ' s role , as displayed .
+Interact with the immediate verification button .
+URL to this page - override in subclass
+If true , SmartyPants will be used to convert quotes and dashes to typographically correct entities .
+The weights are all 1 . for SAMME . R
+Return a comma-separated string of valid doc types .
+update the count statistics for this center
+then wait a bit and see if we get timed out
+TransactionManagementError used below actually *does* derive from the standard " Exception " class . pylint: disable=nonstandard-exception
+doctest: +ELLIPSIS
+then look in a override folder based on the course run
+Custom hacky repr . XBlock . Runtime . render ( ) replaces the _view_name attribute while rendering , which causes rendered comparisons of blocks to fail as unequal . So make the _view_name attribute None during the base repr - and set it back to original value afterward .
+Test stopping conditions of gradient descent .
+check to see if task is already running , and reserve it otherwise:
+Create very separate clusters; check that vertices are unique and correspond to classes
+Searches for and returns ` cookie_name `
+Try Python 2 first , otherwise load from Python 3
+Assert 400 status code in response
+return the published version if ModuleStoreEnum . RevisionOption . published_only is requested
+Helper method to get header values from a request ' s META dict , if present .
+Ignore the results of the comparisons which were just for Numerical Validation . If any input is not correct , set the return value to False
+Test LinearRegression on a simple dataset . a simple dataset
+reorder children
+Create a test course
+Recursively unhide a unit and all of its children in the CCX schedule .
+Load the faces datasets
+If no username is provided , bounce back to this page .
+Warm up the cache .
+the setting of subtract_mean is not relevant to the test the test only applies when std_bias = 0 . 0 and use_std = False
+Check that relationship decreases
+Apply the roles
+Go to the one section in the factory-created course which should be loaded with the correct problem
+Retrieve the image data Validation ensures that we ' ll have a face image , but we may not have a photo ID image if this is a reverification .
+one for 1-10 and then 9 for 20-100
+FIELDS Original course that is being rerun
+For blocks that are inherited from a content library , we add some additional metadata:
+Add a chapter to the course to contain problems
+Get ranks
+Remove the item if it was found
+Returns the aliases ( if defined , sources otherwise ) provided when the HDF5 object was created Returns A string or a list of strings .
+The supplied locator is of the wrong type , so it can ' t possibly be stored in this modulestore .
+check button text
+Submit payment
+Not a git repository
+Main method called externally to get the HTML to be rendered for this capa Problem .
+Test that a broken error descriptor doesn ' t cause an infinite loop
+Gradient boosting estimator must be fit
+Waits for the loading indicator to be hidden .
+precompute if n_samples > n_features
+don ' t expect caller to know that children are in fields
+Overridden by subclasses to provide the relative path within the course Does not need to include the leading forward or trailing slash
+x_weights_sign_flip holds columns of 1 or -1 , depending on sign flip between R and python
+Clean up the path , removing any static prefix and any leading slash .
+Emails list should be empty
+If survey question for capa ( max_attempts = 0 ) , DO show the reset button
+Upload non-english transcript .
+We don ' t have a course-specific message , so pass .
+Check for invalid ' usage_key_strings '
+Figure out which students are enrolled in the course
+Memoize the data extraction and memory map the resulting train / test splits in readonly mode
+HTTP Host changed to edge .
+Values for sorting asset metadata .
+convert user into dicts for json view
+Revisit Page & verify that added exceptions are also synced with backend
+Version changes should be backwards compatible in case the code gets rolled back . If we see a version number greater than the current version , we should try to read it rather than raising an exception .
+adding instructor to master course .
+Wait for the element to be present and clickable .
+Actual test method ( s ) defined in NonCohortedDiscussionTestMixin .
+Total video xblock components count should be equals to 2 Why 2? One video component is created by default for each test . Please see test_studio_video_module . py:CMSVideoTest . _create_course_unit And we are creating second video component here .
+We are creating transcripts for every video source , if in future some of video sources would be deleted . Updates item . sub with ` video_name ` on success .
+this is necessary due to naming requirement for this problem type
+Multicourse wiki ( Note: wiki urls must be above the courseware ones because of the custom tab catch-all )
+b is the bias
+this string is not marked for translation because we don ' t have access to the user context , and this will only be seen by staff
+A payment/refund has completed successfully This should be set ONLY once money has been successfully exchanged .
+L2 regularization corresponds to increase of the diagonal of HHt adds l2_reg only on the diagonal L1 regularization corresponds to decrease of each element of XHt
+want an exact match .
+To be compatible with earlier scripts , try ( self . method ) _data_specs
+1 is an important corner case We must also run with a larger number to test the general case
+Silenced by default to reduce verbosity . Turn on at runtime for performance profiling .
+Verify that the email opt-in checkbox appears , and that the expected organization name is displayed .
+Initially , " red_cat " user can ' t view the vertical .
+List of patterns , relative to source directory , that match files and directories to ignore when looking for source files .
+Gets the index of the start of the line of the given index . Arguments: index: The index into the original string . Returns: The index of the start of the line of the given index .
+-*- coding: utf-8 -*-
+If true , sectionauthor and moduleauthor directives will be shown in the output . They are ignored by default .
+If we ' re not plotting , dump the timing to stdout
+No course ID provided , so this is a donation to the entire organization
+transform grid using ExtraTreesClassifier
+ignore any descendants which are already draft
+check that the memory layout does not impact the resulting vocabulary
+Detects user-requested locale from ' accept-language ' header in http request
+-*- coding: utf-8 -*-
+Returns a subset of keys from the provided dictionary
+Quantitize data
+Create the input within the response
+Returns the ' delete team ' button .
+Verify that the translation occurred
+Mimic the behavior of removed get_video_from_cdn in this regard and return None causing the caller to use the original URL .
+Expect a link to the demo handout pdf
+Compute the exact cosine distances of the query to the four points of the dataset
+Set the css class of the message <div>
+force_all_finite
+Login as a non_staff_user:
+Check that we get a default mode for when no course mode is available
+Return a valid :class: ` ~opaque_keys . edx . keys . UsageKey ` for the modulestore that matches the supplied course_key .
+Un Enroll from source course but don ' t mess with the enrollment in the destination course .
+Init function . Arguments: file_contents: The contents of the Python file . results: A file results objects to which violations will be added .
+get the original tab ids
+The course to embargo
+Get the status of the latest checkpoint attempt of the given user . Args: user_id ( str ) : Id of user Returns: VerificationStatus object if found any else None
+Return signatory name .
+LabelBinarizer ( ) . fit_transform ( ) returns arrays with dtype=np . int64 . We convert it to np . float64 to support sample_weight consistently; this means we also don ' t have to cast X to floating point
+Verify that initial save logs email errors properly Verify object saved
+Azerbaijan and France should not be blocked Gah block USA and Antartica
+Ensure y is 2D
+import some data to play with
+we remove data with label 4 normal data are then those of class 1
+Updates the course object in the database
+split a training set and a test set
+Test with non-integer class labels .
