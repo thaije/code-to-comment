@@ -513,6 +513,52 @@ BLEU = 0.72 (Bravity Penalty=0.343, Length ratio=0.483, Translated length=58424,
   4-gram: 0.5
 Accuracy is: 0.0206980519481
 
+#### all code dataset 90/10, code_vocab=100.000, en_vocab= 25.000, 3x512
+BLEU = 0.43 (Bravity Penalty=0.077, Length ratio=0.281, Translated length=33950, Reference length=120936)
+  1-gram: 21.2
+  2-gram: 7.2
+  3-gram:3.5
+  4-gram: 1.8
+Accuracy is: 0.0466720779221
+
+
+
+#### all code dataset cleaned 90/10, code_vocab = 40.000, en_vocab=20.000, 
+global step 6200 learning rate 0.5000 step-time 0.59 perplexity 9.55
+  eval: bucket 0 perplexity 6.57
+  eval: bucket 1 perplexity 32.38
+  eval: bucket 2 perplexity 31.92
+  eval: bucket 3 perplexity 35.08
+BLEU = 3.10 (Bravity Penalty=0.396, Length ratio=0.519, Translated length=25341, Reference length=48784)
+  1-gram: 25.0
+  2-gram: 9.2
+  3-gram:5.4
+  4-gram: 3.0
+Accuracy is: 0.0789067665858
+
+
+
+
+#### all code dataset cleaned 90/10, code_vocab = 40.000, en_vocab=20.000, 3x512
+
+BLEU = 6.69 (Bravity Penalty=0.701, Length ratio=0.738, Translated length=35996, Reference length=48784)
+  1-gram: 24.9
+  2-gram: 10.5
+  3-gram:6.8
+  4-gram: 4.6
+Accuracy is: 0.103592682389
+
+global step 18600 learning rate 0.5000 step-time 0.76 perplexity 1.61
+  eval: bucket 0 perplexity 11.52
+  eval: bucket 1 perplexity 66.76
+  eval: bucket 2 perplexity 580.03
+  eval: bucket 3 perplexity 245.23
+BLEU = 7.54 (Bravity Penalty=0.795, Length ratio=0.813, Translated length=39685, Reference length=48784)
+  1-gram: 24.2
+  2-gram: 10.4
+  3-gram:6.9
+  4-gram: 4.7
+Accuracy is: 0.106678421865
 
 
 
