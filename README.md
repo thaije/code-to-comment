@@ -553,7 +553,7 @@ BLEU = 6.69 (Bravity Penalty=0.701, Length ratio=0.738, Translated length=35996,
   2-gram: 10.5
   3-gram:6.8
   4-gram: 4.6
-Accuracy is: 0.103592682389
+Accuracy is: 0.10359268238950
 
 global step 18600 learning rate 0.5000 step-time 0.76 perplexity 1.61
   eval: bucket 0 perplexity 11.52
