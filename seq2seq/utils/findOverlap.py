@@ -19,7 +19,13 @@ for extension in extensions:
     with open(trainFile + extension) as f:
         trainF = f.readlines()
 
-    overlap = len(set(testF) & set(trainF))
+    overlap = 0
+    for line in testF:
+    	if line in trainF:
+    		overlap += 1
+
+
+    # overlap = len(set(testF) & set(trainF))
     testLines = len(testF)
     overlapPercentage = (overlap / (testLines * 1.0)) * 100
 

@@ -392,6 +392,8 @@ after 9800 steps BLEU ~13.30. Accuracy 14.xx
 #### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, vocab=5000, beam search=7 (torch implementation)
 35 epochs, 296 steps each = 10360 steps
 BLEU = 51.80, 79.1/63.1/53.1/44.4 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len=24092)
+Precision: 38.891966759
+Unique annotations: 32.7635327635% 
 
 #### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, vocab=5000, beam search=7, repl unk with source attention words (torch implementation)
 32 epochs, 296 steps each = 9400 steps
@@ -566,6 +568,7 @@ BLEU = 7.54 (Bravity Penalty=0.795, Length ratio=0.813, Translated length=39685,
   3-gram:6.9
   4-gram: 4.7
 Accuracy is: 0.106678421865
+Unique annotations: 0%
 
 
 #### edx_pylearn_scikit dataset cleaned 90/10, code_vocab = 25.000, en_vocab=12.000, 2x512
