@@ -536,11 +536,18 @@ BLEU = 3.10 (Bravity Penalty=0.396, Length ratio=0.519, Translated length=25341,
   4-gram: 3.0
 Accuracy is: 0.0789067665858
 
-
+step:9.400
+BLEU = 5.06 (Bravity Penalty=0.770, Length ratio=0.792, Translated length=38656, Reference length=48784)
+  1-gram: 22.1
+  2-gram: 7.8
+  3-gram:4.3
+  4-gram: 2.5
+Accuracy is: 0.083535375799
 
 
 #### all code dataset cleaned 90/10, code_vocab = 40.000, en_vocab=20.000, 3x512
 
+10.000 steps +
 BLEU = 6.69 (Bravity Penalty=0.701, Length ratio=0.738, Translated length=35996, Reference length=48784)
   1-gram: 24.9
   2-gram: 10.5
@@ -559,6 +566,79 @@ BLEU = 7.54 (Bravity Penalty=0.795, Length ratio=0.813, Translated length=39685,
   3-gram:6.9
   4-gram: 4.7
 Accuracy is: 0.106678421865
+
+
+#### edx_pylearn_scikit dataset cleaned 90/10, code_vocab = 25.000, en_vocab=12.000, 2x512
+global step 10000 learning rate 0.4950 step-time 0.62 perplexity 1.54
+  eval: bucket 0 perplexity 110.03
+  eval: bucket 1 perplexity 91.02
+  eval: bucket 2 perplexity 163.57
+  eval: bucket 3 perplexity 719.93
+BLEU = 6.78 (Bravity Penalty=0.694, Length ratio=0.733, Translated length=18739, Reference length=25571)
+  1-gram: 26.4
+  2-gram: 10.7
+  3-gram:6.7
+  4-gram: 4.8
+Accuracy is: 0.0442391832766
+
+global step 14000 learning rate 0.4950 step-time 0.64 perplexity 1.19
+  eval: bucket 0 perplexity 158.36
+  eval: bucket 1 perplexity 1105.41
+  eval: bucket 2 perplexity 766.66
+  eval: bucket 3 perplexity 958.09
+BLEU = 8.19 (Bravity Penalty=0.758, Length ratio=0.783, Translated length=20013, Reference length=25571)
+  1-gram: 25.9
+  2-gram: 11.2
+  3-gram:7.8
+  4-gram: 6.0
+Accuracy is: 0.0612542537676
+
+global step 16400 learning rate 0.4950 step-time 0.69 perplexity 1.12
+  eval: bucket 0 perplexity 250.31
+  eval: bucket 1 perplexity 1125.74
+  eval: bucket 2 perplexity 7054.63
+  eval: bucket 3 perplexity 1717.69
+BLEU = 8.77 (Bravity Penalty=0.795, Length ratio=0.813, Translated length=20798, Reference length=25571)
+  1-gram: 25.8
+  2-gram: 11.4
+  3-gram:8.0
+  4-gram: 6.3
+Accuracy is: 0.0670879922217
+
+#### edx_pylearn_scikit_salt dataset cleaned 90/10, code_vocab = 35.000, en_vocab=18.000, 2x512
+
+global step 16800 learning rate 0.5000 step-time 0.63 perplexity 1.27
+  eval: bucket 0 perplexity 12.71
+  eval: bucket 1 perplexity 167.17
+  eval: bucket 2 perplexity 274.48
+  eval: bucket 3 perplexity 858.49
+ Line 500 translated
+ Line 1000 translated
+ Line 1500 translated
+ Line 2000 translated
+ Line 2500 translated
+ Line 3000 translated
+ File translated
+BLEU = 10.45 (Bravity Penalty=0.834, Length ratio=0.847, Translated length=28594, Reference length=33777)
+  1-gram: 27.5
+  2-gram: 13.6
+  3-gram:9.6
+  4-gram: 6.9
+Accuracy is: 0.157978893508
+
+#### edx_pylearn_scikit_salt dataset cleaned 90/10, code_vocab = 32.000, en_vocab=16.000, 3x512
+global step 11600 learning rate 0.5000 step-time 0.74 perplexity 1.88
+  eval: bucket 0 perplexity 9.31
+  eval: bucket 1 perplexity 75.00
+  eval: bucket 2 perplexity 158.42
+  eval: bucket 3 perplexity 170.58
+BLEU = 7.49 (Bravity Penalty=0.636, Length ratio=0.688, Translated length=23250, Reference length=33777)
+  1-gram: 29.7
+  2-gram: 13.7
+  3-gram:8.6
+  4-gram: 5.5
+Accuracy is: 0.129197313719
+
 
 
 
