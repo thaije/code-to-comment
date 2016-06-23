@@ -389,6 +389,18 @@ after 9800 steps BLEU ~13.30. Accuracy 14.xx
 - Accuracy is: 0.273684210526
 
 
+#### Spaced file for BLEU, 3x512, vocab=5000, testfile=1805, enters fixed in python code, random train/test set, seq2seq cell without attention
+global steps: 9600
+
+BLEU = 40.43 (Bravity Penalty=0.901, Length ratio=0.905, Translated length=21812, Reference          length=24092)
+  1-gram: 73.3
+  2-gram: 50.8
+  3-gram:38.2
+  4-gram: 28.6
+Accuracy is: 0.270914127424
+
+
+
 #### Spaced file for BLEU, 2x512, vocab=5000, testfile=1805, enters fixed in python code, vocab=5000, beam search=7 (torch implementation)
 35 epochs, 296 steps each = 10360 steps
 BLEU = 51.80, 79.1/63.1/53.1/44.4 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len=24092)
@@ -399,6 +411,7 @@ Unique annotations: 32.7635327635%
 32 epochs, 296 steps each = 9400 steps
 BLEU = 52.58, 79.7/63.9/54.0/45.5 (BP=0.884, ratio=0.890, hyp_len=21452, ref_len=24092)
 Accuracy is: 0.413850415512
+
 
 
 
