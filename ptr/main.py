@@ -133,7 +133,7 @@ class PointerNetwork(object):
         with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
             merged = tf.merge_all_summaries()
             writer = tf.train.SummaryWriter("/tmp/pointer_logs", sess.graph)
-            init = tf.initialize_all_variables()
+            init = tf.global_variables_initializer()
             sess.run(init)
             for i in range(10000):
                 encoder_input_data, decoder_input_data, targets_data = dataset.next_batch(

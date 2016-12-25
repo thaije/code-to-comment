@@ -1,6 +1,6 @@
 from os.path import basename, splitext
 import sys
-import util 
+import util
 
 
 commentList = ["# ", "#!"]
@@ -83,7 +83,7 @@ def filterDocString(source, startLine, codeFile, commentFile, maxBucket):
     # loop through all the lines in the source, get the comment 
     # and the corresponding code
     with open(commentFile, "a") as commentF:
-        with open(codeFile, "a") as codeF:      
+        with open(codeFile, "a") as codeF:
             for i in xrange(startLine, len(source)):
                 # print "i in comment loop is:" , i
                 globalI = i
@@ -117,10 +117,10 @@ def filterDocString(source, startLine, codeFile, commentFile, maxBucket):
 
                     # first if we are at another indentation level, we found an deeper
                     # docstring, thus exit
-                    if currIndent != indentation or not inComment: 
+                    if currIndent != indentation or not inComment:
                         # print ">>>It is a new comment, return error"
                         return(i,False)
-                    
+
                     # otherwise end the comment
                     else:
                         # print ">>>Closed comment"
@@ -153,7 +153,7 @@ def filterDocString(source, startLine, codeFile, commentFile, maxBucket):
                     commentF.write(util.cleanComment(comment) + "\n!@#$%!@#$%!@#$%!@#$%!@#$%")
 
                     return(i, True)
-                
+
                 # if we are still here, add the current line to the code
                 code.append(line.strip())
 
@@ -200,6 +200,6 @@ def isDef(source, startLine, i):
 
 if __name__ == '__main__':
     import sys
-    
+
     with open(sys.argv[1]) as fp:
         make_pairs(fp)
