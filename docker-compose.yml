@@ -1,0 +1,21 @@
+seq2seq:
+  restart: always
+  build: ./seq2seq
+  expose:
+    - "8000"
+  volumes:
+    - /usr/src/app/static
+  env_file: .env
+  command: /usr/local/bin/gunicorn -w 2 -b :8000 app:app
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  volumes:
+    - /www/static
+  volumes_from:
+    - seq2seq
+  links:
+    - seq2seq:seq2seq

@@ -52,8 +52,30 @@ import seq2seq_model
 from evaluation.meteor.meteor import Meteor
 
 import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning) 
+import logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+                    datefmt='%m-%d %H:%M',)
+logger = logging.getLogger(__file__)
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+DATA_PATH = os.path.dirname(os.path.abspath(__file__))
+
+tf.app.flags.DEFINE_boolean("decode", False,
+                            "Set to True for interactive decoding.")
+tf.app.flags.DEFINE_boolean("evaluate", False,
+                            "Run evaluation metrics on the output.")
+tf.app.flags.DEFINE_boolean("self_test", False,
+                            "Run a self-test if this is set to True.")
+
+tf.app.flags.DEFINE_integer("num_layers", 1, "Number of layers in the model.")
+tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
+                            "How many training steps to do per checkpoint.")
+
+tf.app.flags.DEFINE_string("data_dir", os.path.join(DATA_PATH, "data/"), "Data directory")
+tf.app.flags.DEFINE_string("train_dir", os.path.join(DATA_PATH, "data/"), "Training directory.")
+tf.app.flags.DEFINE_string("dataset", "allCode", "Specify the name of which dataset to use.")
+tf.app.flags.DEFINE_string("dev_files", "dev/10pt.random", "The file path to the English dev file, relative from the data_dir.")
 
 tf.app.flags.DEFINE_float("learning_rate", 0.5, "Learning rate.")
 tf.app.flags.DEFINE_float("learning_rate_decay_factor", 0.99,
@@ -63,24 +85,12 @@ tf.app.flags.DEFINE_float("max_gradient_norm", 5.0,
 tf.app.flags.DEFINE_integer("batch_size", 64,
                             "Batch size to use during training.")
 tf.app.flags.DEFINE_integer("size", 256, "Size of each model layer.")
-tf.app.flags.DEFINE_integer("num_layers", 1, "Number of layers in the model.")
 tf.app.flags.DEFINE_integer("code_vocab_size", 100000, "Program vocabulary size.")
 tf.app.flags.DEFINE_integer("en_vocab_size", 100000, "English vocabulary size.")
-tf.app.flags.DEFINE_string("data_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/data/", "Data directory")
-tf.app.flags.DEFINE_string("train_dir", "/home/tjalling/Desktop/thesis/tensorflow/implementations/seq2seq/train/", "Training directory.")
-tf.app.flags.DEFINE_string("dataset", "allCode", "Specify the name of which dataset to use.")
-tf.app.flags.DEFINE_string("dev_files", "dev/10pt.random", "The file path to the English dev file, relative from the data_dir.")
 tf.app.flags.DEFINE_string("translated_dev_code", "dev/translated.en", "The dev file with Code translated into English.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
-tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
-                            "How many training steps to do per checkpoint.")
-tf.app.flags.DEFINE_boolean("decode", False,
-                            "Set to True for interactive decoding.")
-tf.app.flags.DEFINE_boolean("self_test", False,
-                            "Run a self-test if this is set to True.")
-tf.app.flags.DEFINE_boolean("evaluate", False, 
-                            "Run evaluation metrics on the output.")
+
 
 FLAGS = tf.app.flags.FLAGS
 data_dir = FLAGS.data_dir  + FLAGS.dataset + "/"
@@ -137,7 +147,7 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
     with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
         # Create model and load parameters.
-        model = create_model(sess, True)
+        model = create_model(sess, True, FLAGS)
         model.batch_size = 1  # We decode one sentence at a time.
 
         # Load vocabularies.
@@ -179,7 +189,7 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
                     # Get output logits for the sentence.
                     _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
                                                                     target_weights, bucket_id, True)
-                                                                    
+
                                                                     
                     # This is a greedy decoder - outputs are just argmaxes of output_logits.
                     outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
@@ -189,7 +199,7 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
                         outputs = outputs[:outputs.index(data_utils.EOS_ID)]
                         
                     # Write translated sentence to translation file.
-                    translated_file.write(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]) + "\n")
+                    translated_file.write(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs if output in rev_en_vocab]) + "\n")
                     
                     # print ("> %s" % sentence)
                     # print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]))
@@ -204,20 +214,20 @@ def translate_file(source_path=dev_code_file, target_path=translated_dev_code):
                 
 
 
-def create_model(session, forward_only):
+def create_model(session, forward_only, flags):
   """Create translation model and initialize or load parameters in session."""
   model = seq2seq_model.Seq2SeqModel(
-      FLAGS.code_vocab_size, FLAGS.en_vocab_size, _buckets,
-      FLAGS.size, FLAGS.num_layers, FLAGS.max_gradient_norm, FLAGS.batch_size,
-      FLAGS.learning_rate, FLAGS.learning_rate_decay_factor,
+      flags.code_vocab_size, flags.en_vocab_size, _buckets,
+      flags.size, flags.num_layers, flags.max_gradient_norm, flags.batch_size,
+      flags.learning_rate, flags.learning_rate_decay_factor,
       forward_only=forward_only)
-  ckpt = tf.train.get_checkpoint_state(FLAGS.train_dir)
-  if ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
+  ckpt = tf.train.get_checkpoint_state(flags.train_dir)
+  if ckpt and ckpt.model_checkpoint_path:
     print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
     model.saver.restore(session, ckpt.model_checkpoint_path)
   else:
     print("Created model with fresh parameters.")
-    session.run(tf.initialize_all_variables())
+    session.run(tf.global_variables_initializer())
   return model
 
 
@@ -233,7 +243,7 @@ def train():
     with tf.Session(config = tf.ConfigProto(gpu_options = gpu_options)) as sess:
         # Create model.
         print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
-        model = create_model(sess, False)
+        model = create_model(sess, False, FLAGS)
 
         # Read data into buckets and compute their sizes.
         print ("Reading development and training data (limit: %d)."
@@ -348,7 +358,7 @@ def evaluate():
 def decode():
     with tf.Session() as sess:
         # Create model and load parameters.
-        model = create_model(sess, True)
+        model = create_model(sess, True, FLAGS)
         model.batch_size = 1  # We decode one sentence at a time.
 
         # Load vocabularies.
@@ -386,7 +396,7 @@ def decode():
             if data_utils.EOS_ID in outputs:
                 outputs = outputs[:outputs.index(data_utils.EOS_ID)]
             # Print out French sentence corresponding to outputs.
-            print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs]))
+            print(" ".join([tf.compat.as_str(rev_en_vocab[output]) for output in outputs if output in rev_en_vocab]))
             print("> ", end="")
             sys.stdout.flush()
             sentence = sys.stdin.readline()
@@ -399,7 +409,7 @@ def self_test():
     # Create model with vocabularies of 10, 2 small buckets, 2 layers of 32.
     model = seq2seq_model.Seq2SeqModel(10, 10, [(3, 3), (6, 6)], 32, 2,
                                        5.0, 32, 0.3, 0.99, num_samples=8)
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
 
     # Fake data set for both the (3, 3) and (6, 6) bucket.
     data_set = ([([1, 1], [2, 2]), ([3, 3], [4]), ([5], [6])],
@@ -413,14 +423,20 @@ def self_test():
 
 
 def main(_):
+    logger.info("Start")
     if FLAGS.self_test:
+        logger.info("Self testing")
         self_test()
     elif FLAGS.decode:
+        logger.info("Decoding")
         decode()
-    elif FLAGS.evaluate:  
+    elif FLAGS.evaluate:
+        logger.info("Evaluating")
         evaluate()
     else:
+        logger.info("Training")
         train()
+    logger.info("Stop")
 
 if __name__ == "__main__":
     tf.app.run()

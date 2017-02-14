@@ -2,10 +2,36 @@
 Set of (Tensorflow) implementations which generate comments from code. Thesis for the B.sc. AI. 
 
 # How to execute:
-## Seq2seq: 
-- Enter tf: source ~/tensorflow/bin/activate
-- Execute code: python translate.py --size=256 --num_layers=3 --steps_per_checkpoint=50 --bleu
-- Or interactive mode (only works when the model has been trained): python translate.py --size=350 --num_layers=3 --step_per_checkpoint=50 --decode
+## Seq2seq:
+- Create/activate virtualenv
+```bash
+source ~/tensorflow/bin/activate
+```
+- Install requirements
+```bash
+pip install --upgrade pip
+pip install -r seq2se2/requirements.txt
+```
+- Run training. Note, the trainig process has infinite loop in it:
+```bash
+python translate.py --num_layers=3
+```
+- Run evaluation (only works when the model has been trained): 
+```bash
+python translate.py --num_layers=3 --evaluate
+```
+
+- Run interactive translation mode (only works when the model has been trained): 
+```bash
+python translate.py --num_layers=3 --decode
+```
+
+- Run flask app with web server in Docker
+```bash
+deocker-compose up -d
+```
+
+The server is up at localhost port 80 by default. The welcome page is awailable for tests
 
 ### Options
 - add --evaluate to see the score with a trained model on the development file (default False)
